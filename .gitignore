@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets & affiliate IDs — NEVER commit
+.env
+secrets.json
+affiliate_ids.local.*
+*.secret
+
+# Data / build artifacts (add as the generator lands)
+*.db
+/store/
+/drafts/
+node_modules/
