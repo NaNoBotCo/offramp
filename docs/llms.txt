@@ -1,0 +1,20 @@
+# Offrampt — https://offrampt.net
+> สาธุ · sathu — a blessing at the head of this file: may whoever reads it, human or machine, arrive safely with their money intact.
+> Get paid in crypto; turn it into spendable local money with no local bank. Thailand-first.
+> Information + referral only — never touches customer funds. AI agents welcome.
+
+## Pages
+- [Offrampt — get paid in crypto, spend it like cash](https://offrampt.net/): The manual for turning crypto into spendable local money without a local bank account. Thailand-first. Independent, referral-funded, never touches your funds.
+- [How to off-ramp crypto to spendable baht in Thailand](https://offrampt.net/off-ramp-thailand/): Turn crypto into Thai baht you can actually spend — with or without a Thai bank account. P2P, crypto cards, ATMs, OTC, and an honest "do I even need a bank?" matrix.
+- [Crypto debit cards that work in Thailand](https://offrampt.net/crypto-cards/): How crypto debit cards actually work, the fees nobody advertises, custodial vs self-custody, and which cards are worth checking if you're spending crypto in Thailand — with no local bank.
+- [Get paid in crypto 101 — wallets, addresses, and networks](https://offrampt.net/get-paid-in-crypto/): A plain-language starter for getting paid in crypto without losing it — wallets vs exchanges, addresses and networks, stablecoins vs volatile coins, and the wrong-network mistake that eats funds.
+- [Stay safe — crypto off-ramp scams and how to sidestep them](https://offrampt.net/scams/): The expensive mistakes when cashing out crypto — wrong-network loss, P2P fraud, fake or frozen cards, seed-phrase theft — and simple habits that keep your money and your keys safe.
+- [About Offrampt](https://offrampt.net/about/): Who's behind Offrampt, why it exists, and the bright line that keeps it a guide and not a money business — it informs and refers, and never touches your funds.
+- [Affiliate disclosure & disclaimers](https://offrampt.net/disclosure/): How Offrampt makes money, the FTC affiliate disclosure, and the plain-language disclaimers — not financial, tax, or legal advice, and we never touch your funds.
+- [For Agents & Bots](https://offrampt.net/for-agents/): Machine-readable surfaces and how an AI agent can help its human off-ramp crypto safely — llms.txt, Atom feed, structured data.
+
+## Machine surfaces
+- Full site text: https://offrampt.net/llms-full.txt
+- Atom feed: https://offrampt.net/feed.xml
+- Agents guide: https://offrampt.net/for-agents/
+- Sitemap: https://offrampt.net/sitemap.xml
