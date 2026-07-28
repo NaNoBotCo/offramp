@@ -3,7 +3,7 @@
 **Status:** Phase 0 not started (spec only). Created 2026-07-25.
 **One line:** The manual for getting paid in crypto and turning it into spendable
 local money when you don't have a local bank account.
-**Owner:** NaN / Annika. Sibling to [Defiant](../defiant-site) — same expat audience,
+**Owner:** NaN. Sibling to [Defiant](../defiant-site) — same expat audience,
 different pain. Thailand-first, hub-expandable.
 
 Born from a real moment: paying Defiant's owner (Thailand-based, no Thai bank) is
