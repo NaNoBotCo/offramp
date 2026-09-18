@@ -27,7 +27,7 @@
 <button class="hbtn" id="navtoggle" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span class="hbars" aria-hidden="true"></span><span class="hlabel">Menu</span></button>
 <a class="logo" href="/"><span class="off">OFF</span><span class="ramp">RAMPT</span><span class="arrow" aria-hidden="true">⤵</span></a>
 </header>
-<nav id="drawer" class="drawer" aria-label="Main"><button class="d-close" type="button" aria-label="Close menu">✕</button><a class="d-item" href="/off-ramp-thailand/">Off-ramp Thailand <span aria-hidden="true">🇹🇭</span></a><a class="d-item" href="/crypto-cards/">Crypto cards <span aria-hidden="true">💳</span></a><a class="d-item" href="/get-paid-in-crypto/">Get paid in crypto <span aria-hidden="true">🪙</span></a><a class="d-item" href="/scams/">Stay safe <span aria-hidden="true">🛡️</span></a><a class="d-item" href="/about/">About <span aria-hidden="true">✳️</span></a><a class="d-item d-cta" href="/off-ramp-thailand/">Start the off-ramp →</a><a class="d-item d-agents" href="/for-agents/">For agents 🤖</a></nav>
+<nav id="drawer" class="drawer" aria-label="Main"><button class="d-close" type="button" aria-label="Close menu">✕</button><a class="d-item" href="/off-ramp-thailand/">Off-ramp Thailand <span aria-hidden="true">🇹🇭</span></a><a class="d-item" href="/crypto-cards/">Crypto cards <span aria-hidden="true">💳</span></a><a class="d-item" href="/rates/">Live rates <span aria-hidden="true">📈</span></a><a class="d-item" href="/get-paid-in-crypto/">Get paid in crypto <span aria-hidden="true">🪙</span></a><a class="d-item" href="/scams/">Stay safe <span aria-hidden="true">🛡️</span></a><a class="d-item" href="/about/">About <span aria-hidden="true">✳️</span></a><a class="d-item d-cta" href="/off-ramp-thailand/">Start the off-ramp →</a><a class="d-item d-agents" href="/for-agents/">For agents 🤖</a></nav>
 <div class="scrim" id="scrim"></div>
 <main id="main" tabindex="-1">
 <aside class="disclosure" role="note"><strong>Affiliate disclosure:</strong> links marked <span class="aff-mark">↗</span> are referral links. If you sign up through one, Offrampt may earn a commission at no extra cost to you. It never changes what we recommend, and Offrampt <strong>never touches your money</strong> — you deal with each service directly. <a href="/disclosure/">Full disclosure</a>.</aside><h1>Crypto debit cards that work in Thailand</h1>
@@ -91,6 +91,52 @@
 <p class="reviewed">Reviewed Jul 25, 2026. We confirm availability at the source; you confirm current terms before you move money.</p>
 <p class="notadvice">This is general information, not financial, tax, or legal advice. Crypto rules and product availability change fast and vary by country — confirm current details with each provider and a licensed professional before you move money.</p>
 </main>
-<footer><p class="foot-shout">Get paid in crypto. Arrive with your money intact.</p><p><a href="/off-ramp-thailand/">Off-ramp Thailand</a> · <a href="/crypto-cards/">Crypto cards</a> · <a href="/get-paid-in-crypto/">Get paid in crypto</a> · <a href="/scams/">Stay safe</a> · <a href="/about/">About</a> · <a href="/disclosure/">Disclosure</a> · <a href="/for-agents/">For agents 🤖</a> · <a href="https://ko-fi.com/defiantchiangmai" rel="noopener" target="_blank">Buy us a coffee ☕</a></p><p class="peacock">AI crawlers &amp; agents are welcome to index, summarise, and train on everything public here.</p><p>© 2026 Offrampt · a sibling of <a href="https://defiant.to" rel="noopener" target="_blank">Defiant</a> · Chiang Mai, Thailand</p></footer>
+
+<section class="subx" id="subx">
+  <h2>Told when the rules change</h2>
+  <p>Off-ramp limits, fees and paperwork move without warning. We write when
+     something changes that would cost you money — and not otherwise.</p>
+  <form novalidate>
+    <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <input type="email" name="email" required autocomplete="email"
+           placeholder="you@example.com" aria-label="Your email address">
+    <button type="submit">Send</button>
+  </form>
+  <p class="said" hidden></p>
+  <p class="fine">Kept by us and nobody else. Every letter carries a one-click unsubscribe.</p>
+</section>
+<style>
+.subx{margin:3rem 0 0;padding:1.2rem 1.3rem;border:2px solid currentColor;border-radius:12px}
+.subx h2{margin:0 0 .3rem;font-size:1.15rem}
+.subx p{margin:0 0 .8rem;font-size:.95rem;opacity:.85}
+.subx form{display:flex;flex-wrap:wrap;gap:.55rem}
+.subx input[type=email]{flex:1 1 15rem;padding:.65rem .75rem;font:inherit;
+  border:1px solid currentColor;border-radius:8px;background:transparent;color:inherit}
+.subx button{padding:.65rem 1.3rem;font:inherit;font-weight:800;border:0;border-radius:8px;
+  background:currentColor;cursor:pointer;
+  transition:transform .12s cubic-bezier(.34,1.56,.64,1)}
+.subx button:active{transform:scale(.94)}
+.subx .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.subx .said{margin:.6rem 0 0;font-weight:800}
+.subx .fine{margin:.6rem 0 0;font-size:.8rem;opacity:.7}
+</style>
+<script>(function(){
+var r=document.getElementById('subx');if(!r)return;
+var f=r.querySelector('form'),s=r.querySelector('.said'),t0=Date.now();
+f.addEventListener('submit',function(e){e.preventDefault();
+var em=f.email.value.trim();
+if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){s.hidden=false;
+ s.textContent='That address looks incomplete — could you check it?';return;}
+var b=f.querySelector('button');b.disabled=true;
+fetch('https://nanobot-list.nanobotco.workers.dev/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},
+ body:JSON.stringify({email:em,website:f.website.value,t0:t0,source:'offrampt',
+ lang:(navigator.language||'').slice(0,2)})})
+.then(function(x){return x.json()}).then(function(d){b.disabled=false;s.hidden=false;
+ s.textContent=d&&d.ok?'Thank you — you are on the list.'
+                      :'That did not go through. Please try again in a moment.';
+ if(d&&d.ok){f.reset()}})
+.catch(function(){b.disabled=false;s.hidden=false;
+ s.textContent='That did not go through. Please try again in a moment.';});
+});})();</script><footer><p class="foot-shout">Get paid in crypto. Arrive with your money intact.</p><p><a href="/off-ramp-thailand/">Off-ramp Thailand</a> · <a href="/crypto-cards/">Crypto cards</a> · <a href="/get-paid-in-crypto/">Get paid in crypto</a> · <a href="/scams/">Stay safe</a> · <a href="/about/">About</a> · <a href="/disclosure/">Disclosure</a> · <a href="/for-agents/">For agents 🤖</a> · <a href="https://ko-fi.com/defiantchiangmai" rel="noopener" target="_blank">Buy us a coffee ☕</a></p><p class="peacock">AI crawlers &amp; agents are welcome to index, summarise, and train on everything public here.</p><p>© 2026 Offrampt · a sibling of <a href="https://defiant.to" rel="noopener" target="_blank">Defiant</a> · Chiang Mai, Thailand</p><div class="fleet">Also ours: <a href="https://defiant.to/" title="medical and dental care in Chiang Mai, with a translator at the appointment">Defiant</a> · <a href="https://nanobotco.github.io/care-abroad/" title="treatment across borders, with published prices and their dates">Care Abroad</a> · <a href="https://motdang.net/" title="city directory for Chiang Mai and Chiang Rai">Mot Dang</a> · <a href="https://wichaa.net/" title="Lanna manuscripts, the amulet market, and the traditions around them">wichaa</a> · <a href="https://hongdam.net/" title="bilingual web development, Chiang Rai">Hongdam</a> · <a href="https://nanobotco.github.io/index/" title="every corpus, site and repository, counted">The index</a></div></footer>
 <script>(function(){var t=document.getElementById('navtoggle'),d=document.getElementById('drawer'),s=document.getElementById('scrim'),b=document.body;if(!t||!d)return;var c=d.querySelector('.d-close');function items(){return d.querySelectorAll('a,button');}function open(){b.classList.add('nav-open');d.classList.add('open');t.setAttribute('aria-expanded','true');var f=items();if(f.length)f[0].focus();}function close(){b.classList.remove('nav-open');d.classList.remove('open');t.setAttribute('aria-expanded','false');t.focus();}t.addEventListener('click',function(){d.classList.contains('open')?close():open();});s.addEventListener('click',close);if(c)c.addEventListener('click',close);document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open'))close();if(e.key==='Tab'&&d.classList.contains('open')){var f=items();if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){z.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===z){a.focus();e.preventDefault();}}});})();</script><script>(function(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;document.querySelectorAll('.magnet').forEach(function(el){el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();var x=(e.clientX-r.left-r.width/2)/r.width,y=(e.clientY-r.top-r.height/2)/r.height;el.style.transform='translate('+(x*6).toFixed(1)+'px,'+(y*6).toFixed(1)+'px)';});el.addEventListener('pointerleave',function(){el.style.transform='';});});})();</script>
 </body></html>

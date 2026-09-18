@@ -275,3 +275,7 @@ footer a { color: var(--chain); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto; }
 }
+
+/* the roster of sibling sites, rendered by fleet.py */
+.fleet { margin: .8rem 0 0; font-size: .85rem; line-height: 2; opacity: .85 }
+.fleet a { margin: 0 .35rem; white-space: nowrap }

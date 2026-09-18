@@ -1,0 +1,15 @@
+name = "offrampt-rates"
+main = "index.js"
+compatibility_date = "2026-08-01"
+account_id = "fe332688b1b25b543f8429d7f08292a3"
+
+kv_namespaces = [
+  { binding = "RATES", id = "ea0e07c2a1c44953afbab939b4346064" }
+]
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+# Secrets (set via `wrangler secret put`, never in this file):
+#   BOT_TOKEN      — Bank of Thailand portal token (raw, no Bearer)
+#   COINGECKO_KEY  — CoinGecko demo key
