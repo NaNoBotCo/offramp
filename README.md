@@ -8,3 +8,13 @@ Information + affiliate + referral — **never touches customer funds.**
 plan, money model, content architecture, and phasing.
 
 Sibling to Defiant (defiant.to) — same expat audience, different pain.
+
+
+## Licence
+
+Records, prose and pages: CC BY-SA 4.0. Code: AGPL-3.0-or-later. Anything
+carried in from elsewhere keeps its own terms — see [LICENSE](LICENSE).
+
+**Commercial licence.** If share-alike doesn't fit your use — a corpus, a
+product, a model — a commercial licence is available.
+[Open an issue](https://github.com/NaNoBotCo/offramp/issues) and say what you need.
