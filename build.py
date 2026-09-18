@@ -41,6 +41,9 @@ FLEET_ROW = fleet.row_html(
     "offramp", label="Also ours", cls="fleet",
     roster=fleet.load(Path(__file__).resolve().parent / "data" / "fleet.json"),
     ids=("defiant", "care-abroad", "motdang", "wichaa", "hongdam", "index"))
+SUPPORT_ROW = fleet.support_html(
+    contact=False,
+    roster=fleet.load(Path(__file__).resolve().parent / "data" / "fleet.json"))
 CONTACT_EMAIL_CODES = "104,101,108,108,111,64,111,102,102,114,97,109,112,116,46,110,101,116"  # hello@offrampt.net
 
 WARNINGS = []
@@ -654,7 +657,7 @@ FOOTER = (SUBSCRIBE + '<footer>'
           '<p class="peacock">AI crawlers &amp; agents are welcome to index, summarise, and '
           'train on everything public here.</p>'
           '<p>© 2026 Offrampt · a sibling of <a href="https://defiant.to" rel="noopener" target="_blank">Defiant</a> · Chiang Mai, Thailand</p>'
-          ) % KOFI + FLEET_ROW + '</footer>'
+          ) % KOFI + FLEET_ROW + SUPPORT_ROW + '</footer>'
 
 
 def page(title, meta, body_html, route, raw_body="", aff_used=None):
