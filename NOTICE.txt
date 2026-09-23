@@ -1,0 +1,17 @@
+Offrampt (offrampt.net) — what is in this repository, and under what terms.
+
+CODE — tools/, js/, tests/, publish.sh, deploy.sh
+    SPDX-License-Identifier: MIT — see LICENSE-CODE.
+
+TEXT, FIGURES AND DATA — the pages in docs/, the pictures in docs/img/, data/*.json, README.md
+    SPDX-License-Identifier: CC-BY-4.0 — see LICENSE. Credit line: "Nan · hongdam.net · CC BY 4.0",
+    with a link to https://offrampt.net/ .
+    Every picture was computed by tools/draw.py or tools/figures.py; none is a photograph.
+
+DATA FROM OTHERS
+    data/raw/ holds prices and rates as published by Bitkub, Binance, the Bank of Thailand,
+    DefiLlama, mempool.space and CoinGecko, fetched through their public APIs. data/research/
+    holds facts gathered from public sources, each with its URL; the sources page lists them.
+
+NOT ADVICE
+    Nothing in this repository is advice about money, tax or law.

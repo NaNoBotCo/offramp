@@ -1,0 +1,280 @@
+{
+ "question": {
+  "lede_en": "Three situations, three sets of routes. One question decides which set is yours: is there a Thai bank account in your own name? Licensed Thai exchanges pay baht only into one.",
+  "lede_th": "สามสถานการณ์ สามชุดเส้นทาง คำถามเดียวที่ตัดสินว่าคุณอยู่ชุดไหน: มีบัญชีธนาคารไทยในชื่อของคุณเองหรือไม่ ศูนย์ซื้อขายไทยที่ได้รับอนุญาตจ่ายเงินบาทเข้าบัญชีแบบนั้นเท่านั้น"
+ },
+ "notes": [
+  {
+   "cls": "red",
+   "head_en": "FROZEN ACCOUNTS.",
+   "head_th": "บัญชีถูกอายัด",
+   "text_en": "Since August 2024 Thai banks share mule-account suspects: one flag can cut app and online access at every Thai bank a person uses, and block new accounts, with no police complaint needed. Frequent incoming transfers from unrelated people, the pattern of selling crypto peer to peer, is what the screening looks for.",
+   "text_th": "ตั้งแต่สิงหาคม 2024 ธนาคารไทยแชร์รายชื่อผู้ต้องสงสัยบัญชีม้าร่วมกัน การถูกติดธงครั้งเดียวอาจทำให้แอปและช่องทางออนไลน์ของทุกธนาคารที่คนนั้นใช้ถูกระงับ และเปิดบัญชีใหม่ไม่ได้ โดยไม่ต้องมีการแจ้งความ การมีเงินโอนเข้าบ่อยจากคนที่ไม่เกี่ยวข้องกัน ซึ่งเป็นรูปแบบของการขายคริปโตแบบ P2P คือสิ่งที่ระบบคัดกรองมองหา",
+   "refs": [
+    "rule:bot-mule-accounts-individual-level-2024",
+    "rule:bot-mule-measures-2025"
+   ]
+  },
+  {
+   "cls": "",
+   "head_en": "IN CONSULTATION.",
+   "head_th": "อยู่ระหว่างรับฟังความเห็น",
+   "text_en": "The SEC proposed in September 2026 that stablecoins move through licensed Thai platforms only to and from wallets verified as the customer's own, with a cap of 5 million baht per person, per operator, per day each way. Comments close 25 September 2026. Separately, proof that a personal wallet belongs to the account holder is required from 27 February 2027.",
+   "text_th": "ก.ล.ต. เสนอเมื่อกันยายน 2026 ให้สเตเบิลคอยน์ที่ผ่านแพลตฟอร์มไทยที่ได้รับอนุญาต โอนเข้าออกได้เฉพาะกระเป๋าที่ยืนยันแล้วว่าเป็นของลูกค้าเอง และจำกัดไม่เกิน 5 ล้านบาทต่อคน ต่อผู้ประกอบการ ต่อวัน ในแต่ละทิศทาง ปิดรับความเห็น 25 กันยายน 2026 นอกจากนี้ ตั้งแต่ 27 กุมภาพันธ์ 2027 ต้องพิสูจน์ว่ากระเป๋าส่วนตัวเป็นของเจ้าของบัญชี",
+   "refs": [
+    "rule:stablecoin-transfer-rules-2026",
+    "rule:travel-rule-2026"
+   ]
+  },
+  {
+   "cls": "blue",
+   "head_en": "TAX.",
+   "head_th": "ภาษี",
+   "text_en": "180 days in Thailand in a calendar year makes a person a Thai tax resident. Since 1 January 2024 a resident's foreign income is taxed in the year it is brought in. Gains on crypto sold through an SEC-licensed Thai exchange, broker or dealer are exempt from personal income tax for sales from 2025 to 2029; sales on a platform abroad are not covered by that exemption.",
+   "text_th": "อยู่ในไทยครบ 180 วันในปีปฏิทินใด ถือเป็นผู้มีถิ่นที่อยู่ทางภาษีของไทยในปีนั้น ตั้งแต่ 1 มกราคม 2024 เงินได้จากต่างประเทศของผู้มีถิ่นที่อยู่ต้องเสียภาษีในปีที่นำเข้าประเทศ กำไรจากคริปโตที่ขายผ่านศูนย์ซื้อขาย นายหน้า หรือผู้ค้าที่ได้รับอนุญาตจาก ก.ล.ต. ได้รับยกเว้นภาษีเงินได้บุคคลธรรมดาสำหรับการขายระหว่างปี 2025 ถึง 2029 การขายบนแพลตฟอร์มต่างประเทศไม่อยู่ในข้อยกเว้นนี้",
+   "refs": [
+    "rule:tax-residence-180-days",
+    "rule:por-161-2566",
+    "rule:mr-399-capital-gains-exemption"
+   ]
+  }
+ ],
+ "situations": [
+  {
+   "id": "visiting",
+   "pill_cls": "amber",
+   "pill_en": "no Thai bank",
+   "pill_th": "ไม่มีบัญชีธนาคารไทย",
+   "title_en": "Visiting",
+   "title_th": "มาเยือน",
+   "lede_en": "A short stay opens no Thai bank account: Kasikornbank's published rules turn away visa exemption stamps and visas on arrival, and Binance TH's list of accepted visas leaves them out. The crypto has to become money somewhere that accepts a passport alone.",
+   "lede_th": "การพักระยะสั้นเปิดบัญชีธนาคารไทยไม่ได้: กฎที่กสิกรไทยเผยแพร่ไม่รับการยกเว้นวีซ่าและวีซ่าเมื่อเดินทางมาถึง และรายการวีซ่าที่ Binance TH รับก็ไม่มีสองแบบนี้ คริปโตจึงต้องแปลงเป็นเงินในที่ที่รับพาสปอร์ตอย่างเดียว",
+   "routes": [
+    {
+     "name_en": "A crypto card",
+     "name_th": "บัตรคริปโต",
+     "needs_en": "A card whose issuer serves your country of residence. On the issuers' own pages, ether.fi Cash and Wirex Pay list Thailand, and RedotPay's exclusion lists leave it out; the Cards exit has the rest.",
+     "needs_th": "บัตรที่ผู้ออกให้บริการในประเทศที่คุณพำนัก ตามหน้าของผู้ออกบัตรเอง ether.fi Cash และ Wirex Pay ระบุประเทศไทย และรายชื่อประเทศที่ RedotPay ไม่ให้บริการไม่มีไทย ดูใบอื่นได้ในหน้าบัตร",
+     "cost_en": "The card's conversion and FX fees, its own ATM fee, and the Thai bank's fee on each withdrawal: 250 THB on a foreign Visa card, 350 THB on a foreign Mastercard.",
+     "cost_th": "ค่าแปลงและค่า FX ของบัตร ค่ากดเงินของบัตรเอง และค่าธรรมเนียมของธนาคารไทยทุกครั้งที่กด: 250 บาทสำหรับบัตร Visa ต่างประเทศ 350 บาทสำหรับบัตร Mastercard ต่างประเทศ",
+     "limits_en": "The issuer's daily ATM and spending limits, and the ATM's own per-withdrawal cap.",
+     "limits_th": "วงเงินกดเงินและใช้จ่ายรายวันของผู้ออกบัตร และวงเงินต่อครั้งของตู้ ATM",
+     "risk_en": "The issuer holds the coins you load; an issuer can close cards by country with short notice.",
+     "risk_th": "ผู้ออกบัตรถือเหรียญที่คุณเติม และปิดบัตรตามประเทศได้โดยแจ้งล่วงหน้าไม่นาน",
+     "refs": [
+      "prod:other_rails:thai-atm-fee-foreign-cards",
+      "prod:cards:redotpay",
+      "prod:cards:etherfi-cash",
+      "prod:cards:wirex-pay"
+     ],
+     "aff": [
+      "redotpay",
+      "etherfi-cash"
+     ]
+    },
+    {
+     "name_en": "TouristDigiPay",
+     "name_th": "TouristDigiPay",
+     "needs_en": "Foreign visitors on a temporary stay only. A licensed Thai exchange paired with an e-money wallet.",
+     "needs_th": "เฉพาะนักเดินทางต่างชาติที่พำนักชั่วคราว ผ่านศูนย์ซื้อขายไทยที่ได้รับอนุญาต คู่กับกระเป๋าเงินอิเล็กทรอนิกส์",
+     "cost_en": "Set by each operator.",
+     "cost_th": "แล้วแต่ผู้ให้บริการแต่ละราย",
+     "limits_en": "Reported: 50,000 THB a month per person at small vendors, up to 500,000 THB a month at merchants that completed checks; no cash withdrawal. Bitkub announced it joined in August 2025. No SEC English release through September 2026 names an operator that has gone live, and in July 2026 the SEC listed a copycat site, touristdigipay.net, as unlicensed.",
+     "limits_th": "ตามที่รายงาน: 50,000 บาทต่อคนต่อเดือนที่ร้านค้ารายย่อย และสูงสุด 500,000 บาทต่อเดือนที่ร้านค้าที่ผ่านการตรวจสอบ ถอนเงินสดไม่ได้ Bitkub ประกาศเข้าร่วมเมื่อสิงหาคม 2025 แต่ข่าวภาษาอังกฤษของ ก.ล.ต. จนถึงกันยายน 2026 ยังไม่ระบุผู้ให้บริการที่เปิดใช้งานจริง และในเดือนกรกฎาคม 2026 ก.ล.ต. ระบุว่าเว็บลอกเลียนแบบ touristdigipay.net ไม่ได้รับอนุญาต",
+     "risk_en": "Copycat sites use the name.",
+     "risk_th": "มีเว็บลอกเลียนแบบใช้ชื่อนี้",
+     "refs": [
+      "rule:touristdigipay-sandbox",
+      "prod:other_rails:touristdigipay"
+     ]
+    },
+    {
+     "name_en": "Sell at home, spend a home card",
+     "name_th": "ขายที่ประเทศบ้านเกิด ใช้บัตรจากบ้าน",
+     "needs_en": "An exchange and a bank account in your home country.",
+     "needs_th": "บัญชีศูนย์ซื้อขายและบัญชีธนาคารในประเทศของคุณ",
+     "cost_en": "The home exchange's fee, your card's foreign-transaction fee, and the Thai ATM fee.",
+     "cost_th": "ค่าธรรมเนียมศูนย์ซื้อขายที่บ้าน ค่าธุรกรรมต่างประเทศของบัตร และค่ากดเงินของตู้ ATM ไทย",
+     "limits_en": "Your home bank's card limits.",
+     "limits_th": "วงเงินบัตรของธนาคารที่บ้าน",
+     "risk_en": "Low; the money moves through regulated banks at both ends.",
+     "risk_th": "ต่ำ เงินผ่านธนาคารที่มีการกำกับดูแลทั้งสองฝั่ง",
+     "refs": []
+    }
+   ]
+  },
+  {
+   "id": "living",
+   "pill_cls": "blue",
+   "pill_en": "long stay",
+   "pill_th": "พำนักระยะยาว",
+   "title_en": "Living here, unbanked",
+   "title_th": "อยู่ที่นี่ ยังไม่มีบัญชีธนาคาร",
+   "lede_en": "The same wall, for longer. Kasikornbank's published rules exclude the DTV; its accepted visas are Non-Immigrant visas with papers that match the purpose of stay. SCB's FAQ names a work permit. Bangkok Bank leaves it to the branch. No Bank of Thailand rule lists which visas a bank must accept.",
+   "lede_th": "กำแพงเดียวกัน แต่นานกว่า กฎที่กสิกรไทยเผยแพร่ไม่รับวีซ่า DTV และรับวีซ่า Non-Immigrant พร้อมเอกสารที่ตรงกับวัตถุประสงค์การพำนัก คำถามที่พบบ่อยของ SCB ระบุใบอนุญาตทำงาน ธนาคารกรุงเทพให้สาขาเป็นผู้พิจารณา และไม่มีกฎของ ธปท. ที่กำหนดว่าธนาคารต้องรับวีซ่าประเภทใด",
+   "routes": [
+    {
+     "name_en": "A crypto card",
+     "name_th": "บัตรคริปโต",
+     "needs_en": "A card whose issuer serves your country of residence. On the issuers' own pages, ether.fi Cash and Wirex Pay list Thailand, and RedotPay's exclusion lists leave it out; the Cards exit has the rest.",
+     "needs_th": "บัตรที่ผู้ออกให้บริการในประเทศที่คุณพำนัก ตามหน้าของผู้ออกบัตรเอง ether.fi Cash และ Wirex Pay ระบุประเทศไทย และรายชื่อประเทศที่ RedotPay ไม่ให้บริการไม่มีไทย ดูใบอื่นได้ในหน้าบัตร",
+     "cost_en": "The card's conversion and FX fees, its own ATM fee, and the Thai bank's fee on each withdrawal: 250 THB on a foreign Visa card, 350 THB on a foreign Mastercard.",
+     "cost_th": "ค่าแปลงและค่า FX ของบัตร ค่ากดเงินของบัตรเอง และค่าธรรมเนียมของธนาคารไทยทุกครั้งที่กด: 250 บาทสำหรับบัตร Visa ต่างประเทศ 350 บาทสำหรับบัตร Mastercard ต่างประเทศ",
+     "limits_en": "The issuer's limits.",
+     "limits_th": "วงเงินของผู้ออกบัตร",
+     "risk_en": "Custodial issuer; country support changes.",
+     "risk_th": "ผู้ออกบัตรถือเหรียญแทนคุณ และรายชื่อประเทศที่รองรับเปลี่ยนได้",
+     "refs": [
+      "prod:other_rails:thai-atm-fee-foreign-cards",
+      "prod:cards:redotpay",
+      "prod:cards:etherfi-cash",
+      "prod:cards:wirex-pay"
+     ],
+     "aff": [
+      "redotpay",
+      "etherfi-cash"
+     ]
+    },
+    {
+     "name_en": "Wise, with a Thai address",
+     "name_th": "Wise ด้วยที่อยู่ในไทย",
+     "needs_en": "A Wise personal account registered to a Thai address. Wise's help page says non-immigrant visas including the DTV are accepted for verification. Wise announced five Thai licences on 17 March 2026 and is rolling features out from August to October 2026.",
+     "needs_th": "บัญชี Wise ส่วนบุคคลที่ลงทะเบียนด้วยที่อยู่ในไทย หน้าช่วยเหลือของ Wise ระบุว่ารับวีซ่า Non-Immigrant รวมถึง DTV ในการยืนยันตัวตน Wise ประกาศได้รับใบอนุญาตในไทยห้าใบเมื่อ 17 มีนาคม 2026 และทยอยเปิดฟีเจอร์ตั้งแต่สิงหาคมถึงตุลาคม 2026",
+     "cost_en": "Wise's conversion at the mid-market rate plus its fee, after the coins are sold on an exchange abroad.",
+     "cost_th": "ค่าแปลงของ Wise ที่อัตรากลางตลาดบวกค่าธรรมเนียม หลังขายเหรียญบนศูนย์ซื้อขายต่างประเทศ",
+     "limits_en": "Paying by Thai QR or PromptPay starts at 30,000 THB a day; receiving by PromptPay is capped at 10,000 THB a transaction. The Thai-address Wise card does not withdraw cash at ATMs in Thailand.",
+     "limits_th": "การจ่ายด้วย Thai QR หรือพร้อมเพย์เริ่มที่ 30,000 บาทต่อวัน การรับผ่านพร้อมเพย์จำกัด 10,000 บาทต่อรายการ บัตร Wise ที่ใช้ที่อยู่ในไทยกดเงินสดจากตู้ ATM ในไทยไม่ได้",
+     "risk_en": "A rollout in progress: another Wise help page still says it has paused account details for customers in Thailand.",
+     "risk_th": "อยู่ระหว่างทยอยเปิดใช้: หน้าช่วยเหลืออีกหน้าของ Wise ยังระบุว่าหยุดออกรายละเอียดบัญชีให้ลูกค้าในไทยชั่วคราว",
+     "refs": [
+      "prod:other_rails:wise-thailand-resident-account"
+     ]
+    },
+    {
+     "name_en": "Open a Thai account first",
+     "name_th": "เปิดบัญชีธนาคารไทยก่อน",
+     "needs_en": "A visa the bank accepts, in person at a branch: at Kasikornbank a Non-Immigrant visa plus purpose documents; at SCB a work permit. With the account, the Banked route below opens.",
+     "needs_th": "วีซ่าที่ธนาคารรับ และไปเปิดด้วยตัวเองที่สาขา: กสิกรไทยรับวีซ่า Non-Immigrant พร้อมเอกสารตามวัตถุประสงค์ SCB ต้องการใบอนุญาตทำงาน เมื่อมีบัญชีแล้ว เส้นทางแบบมีบัญชีด้านล่างจะเปิดให้ใช้",
+     "cost_en": "Free to open at most banks; branch practice varies.",
+     "cost_th": "ธนาคารส่วนใหญ่เปิดฟรี แต่แต่ละสาขาปฏิบัติต่างกัน",
+     "limits_en": "Mobile-app transfers above 50,000 baht need a face scan matched to the passport on file.",
+     "limits_th": "การโอนผ่านแอปเกิน 50,000 บาทต้องสแกนใบหน้าให้ตรงกับพาสปอร์ตที่ให้ไว้",
+     "risk_en": "None beyond the paperwork.",
+     "risk_th": "ไม่มี นอกจากเรื่องเอกสาร",
+     "refs": [
+      "rule:kbank-foreigner-accounts",
+      "rule:scb-foreigner-accounts",
+      "rule:bangkok-bank-foreigner-accounts",
+      "rule:bot-app-and-biometric-rules-2023"
+     ]
+    },
+    {
+     "name_en": "Sell abroad, bring the money in",
+     "name_th": "ขายในต่างประเทศ แล้วนำเงินเข้ามา",
+     "needs_en": "An exchange and an account in another country, and a way to spend it here: a debit card, or a transfer service.",
+     "needs_th": "บัญชีศูนย์ซื้อขายและบัญชีในประเทศอื่น และช่องทางใช้เงินในไทย เช่น บัตรเดบิตหรือบริการโอนเงิน",
+     "cost_en": "The foreign exchange's fee, the transfer or card fees, and the ATM fee.",
+     "cost_th": "ค่าธรรมเนียมศูนย์ซื้อขายต่างประเทศ ค่าโอนหรือค่าบัตร และค่ากดเงิน",
+     "limits_en": "Set by the foreign bank or service.",
+     "limits_th": "แล้วแต่ธนาคารหรือบริการในต่างประเทศ",
+     "risk_en": "Tax: a Thai tax resident's foreign income is taxable in the year it is brought in, and the 2025–2029 exemption covers only licensed Thai platforms.",
+     "risk_th": "ภาษี: เงินได้จากต่างประเทศของผู้มีถิ่นที่อยู่ทางภาษีไทยต้องเสียภาษีในปีที่นำเข้า และข้อยกเว้นปี 2025–2029 ใช้กับแพลตฟอร์มไทยที่ได้รับอนุญาตเท่านั้น",
+     "refs": [
+      "rule:por-161-2566",
+      "rule:crypto-sold-abroad"
+     ]
+    },
+    {
+     "name_en": "Selling to a person (P2P)",
+     "name_th": "ขายให้บุคคล (P2P)",
+     "needs_en": "Someone who pays baht, in cash or into an account.",
+     "needs_th": "คนที่จ่ายเงินบาท เป็นเงินสดหรือโอนเข้าบัญชี",
+     "cost_en": "Whatever spread the two of you agree.",
+     "cost_th": "ส่วนต่างตามที่ตกลงกัน",
+     "limits_en": "No Thai law bars a person from selling their own coins; buying and selling for others as a regular business needs an SEC licence, with no volume threshold stated.",
+     "limits_th": "ไม่มีกฎหมายไทยห้ามบุคคลขายเหรียญของตัวเอง แต่การซื้อขายแทนผู้อื่นเป็นธุรกิจปกติต้องมีใบอนุญาตจาก ก.ล.ต. โดยไม่ได้ระบุเกณฑ์ปริมาณ",
+     "risk_en": "The highest on this page. Baht from a buyer can be a scam victim's money, which gets the receiving account frozen across every Thai bank; lending an account for it is itself an offence.",
+     "risk_th": "สูงที่สุดในหน้านี้ เงินบาทจากผู้ซื้ออาจเป็นเงินของเหยื่อมิจฉาชีพ ทำให้บัญชีที่รับถูกอายัดในทุกธนาคารไทย และการให้ผู้อื่นใช้บัญชีเพื่อการนี้ก็เป็นความผิดในตัวเอง",
+     "refs": [
+      "rule:p2p-trading-position",
+      "rule:bot-mule-measures-2025",
+      "rule:mule-account-penalties"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "banked",
+   "pill_cls": "go",
+   "pill_en": "Thai bank",
+   "pill_th": "มีบัญชีธนาคารไทย",
+   "title_en": "Banked here",
+   "title_th": "มีบัญชีธนาคารที่นี่",
+   "lede_en": "With a Thai bank account in your own name, the licensed route opens: a Thai exchange takes the coins in and pays baht to that account. It is also the only route the 2025–2029 tax exemption covers.",
+   "lede_th": "เมื่อมีบัญชีธนาคารไทยในชื่อของคุณเอง เส้นทางที่ได้รับอนุญาตก็เปิด: ศูนย์ซื้อขายไทยรับเหรียญเข้าและจ่ายเงินบาทเข้าบัญชีนั้น และเป็นเส้นทางเดียวที่ข้อยกเว้นภาษีปี 2025–2029 ครอบคลุม",
+   "routes": [
+    {
+     "name_en": "A licensed Thai exchange, to your own account",
+     "name_th": "ศูนย์ซื้อขายไทยที่ได้รับอนุญาต เข้าบัญชีของคุณเอง",
+     "needs_en": "KYC with your passport and visa papers. Binance TH lists the visas it accepts, and the DTV and visa exemption are not on it; other exchanges publish less.",
+     "needs_th": "ยืนยันตัวตนด้วยพาสปอร์ตและเอกสารวีซ่า Binance TH ระบุวีซ่าที่รับ และไม่มี DTV หรือการยกเว้นวีซ่า ศูนย์ซื้อขายอื่นเผยแพร่ข้อมูลน้อยกว่า",
+     "cost_en": "The trading fee and the baht withdrawal fee; the calculator below uses published schedules.",
+     "cost_th": "ค่าซื้อขายและค่าถอนเงินบาท เครื่องคำนวณด้านล่างใช้ตารางที่เผยแพร่",
+     "limits_en": "Baht moves only through your own registered Thai account. The stablecoin cap above is a proposal.",
+     "limits_th": "เงินบาทเข้าออกได้เฉพาะบัญชีธนาคารไทยของคุณที่ลงทะเบียนไว้ วงเงินสเตเบิลคอยน์ด้านบนยังเป็นร่าง",
+     "risk_en": "Account holds when deposits come from third parties or look like mule activity.",
+     "risk_th": "บัญชีอาจถูกระงับเมื่อเงินเข้ามาจากบุคคลที่สาม หรือมีรูปแบบคล้ายบัญชีม้า",
+     "refs": [
+      "rule:exchange-deposits-own-account",
+      "rule:exchange-kyc-foreigners-binance-th",
+      "rule:da-operator-antifraud-standards-2025",
+      "rule:mr-399-capital-gains-exemption"
+     ]
+    },
+    {
+     "name_en": "A wire from abroad",
+     "name_th": "โอนเงินจากต่างประเทศ",
+     "needs_en": "Coins sold on an exchange abroad, and dollars wired to your Thai account.",
+     "needs_th": "ขายเหรียญบนศูนย์ซื้อขายต่างประเทศ แล้วโอนดอลลาร์เข้าบัญชีไทยของคุณ",
+     "cost_en": "The bank's buying rate, a median 0.5% below the interbank mid since 2018, plus sending and receiving fees.",
+     "cost_th": "อัตรารับซื้อของธนาคาร ซึ่งต่ำกว่าอัตรากลางระหว่างธนาคารค่ามัธยฐาน 0.5% ตั้งแต่ปี 2018 บวกค่าส่งและค่ารับเงินโอน",
+     "limits_en": "The sending bank's.",
+     "limits_th": "แล้วแต่ธนาคารผู้ส่ง",
+     "risk_en": "Tax on foreign income brought in; keep the records that show when it was earned.",
+     "risk_th": "ภาษีเงินได้จากต่างประเทศที่นำเข้า เก็บหลักฐานที่แสดงว่าได้รับเงินเมื่อใด",
+     "refs": [
+      "bot",
+      "rule:por-161-2566",
+      "rule:por-162-2566"
+     ]
+    }
+   ]
+  }
+ ],
+ "checklist": [
+  {
+   "text_en": "Match the network at both ends. The deposit screen names the network it expects; pick that one in the sender's menu.",
+   "text_th": "เลือกเครือข่ายให้ตรงกันทั้งสองฝั่ง หน้าฝากเงินระบุเครือข่ายที่รองรับ ให้เลือกเครือข่ายนั้นในเมนูของผู้ส่ง"
+  },
+  {
+   "text_en": "Paste the address into the checker on Tools, then compare the first and last six characters with the source.",
+   "text_th": "วางที่อยู่ลงในตัวตรวจในหน้าเครื่องมือ แล้วเทียบหกตัวแรกและหกตัวท้ายกับต้นทาง"
+  },
+  {
+   "text_en": "Send a small test first, and wait for it to arrive.",
+   "text_th": "ส่งจำนวนเล็กน้อยทดสอบก่อน แล้วรอให้ถึง"
+  },
+  {
+   "text_en": "TON and XRP deposits to an exchange need the memo or destination tag the exchange gives you.",
+   "text_th": "การฝาก TON และ XRP เข้าศูนย์ซื้อขายต้องใส่ memo หรือ destination tag ที่ศูนย์ซื้อขายให้มา"
+  },
+  {
+   "text_en": "USDT on Tron needs TRX in the sending wallet to pay the fee.",
+   "text_th": "การส่ง USDT บน Tron ต้องมี TRX ในกระเป๋าผู้ส่งไว้จ่ายค่าธรรมเนียม"
+  },
+  {
+   "text_en": "Keep the date and baht value of each purchase and sale; tax residence and the exemption both turn on them.",
+   "text_th": "เก็บวันที่และมูลค่าเป็นบาทของการซื้อและขายแต่ละครั้ง ทั้งสถานะผู้มีถิ่นที่อยู่ทางภาษีและข้อยกเว้นภาษีขึ้นอยู่กับข้อมูลเหล่านี้"
+  }
+ ]
+}

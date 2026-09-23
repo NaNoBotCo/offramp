@@ -1,0 +1,11 @@
+{
+  "_what": "Receiving addresses and referral links. A slot left null renders nothing; a filled one appears on the site at the next build.",
+  "receive": {
+    "btc": null,
+    "lightning": null,
+    "evm": null,
+    "tron": null,
+    "sol": null
+  },
+  "referral": {}
+}
