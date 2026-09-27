@@ -40,7 +40,7 @@ KOFI = "https://ko-fi.com/defiantchiangmai"
 FLEET_ROW = fleet.row_html(
     "offramp", label="Also ours", cls="fleet",
     roster=fleet.load(Path(__file__).resolve().parent / "data" / "fleet.json"),
-    ids=("defiant", "care-abroad", "motdang", "wichaa", "hongdam", "index"))
+    ids=("defiant", "chiangmaivisadesk", "care-abroad", "motdang", "wichaa", "hongdam", "index"))
 SUPPORT_ROW = fleet.support_html(
     contact=False,
     roster=fleet.load(Path(__file__).resolve().parent / "data" / "fleet.json"))
