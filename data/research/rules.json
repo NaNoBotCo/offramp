@@ -413,7 +413,7 @@
    "body_th": "สำนักงาน ก.ล.ต. (ประกาศที่ สธ. 22/2568) ภายใต้พระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยีที่แก้ไขเพิ่มเติม",
    "what": "Sets cybercrime-prevention standards for licensed digital asset operators; an operator that fails them shares liability for a client's losses. The rules took effect on 13 August 2025 and sit alongside an industry mule-account standard the SEC and the Thai Digital Asset Operators Trade Association (TDO) adopted on 12 March 2025. Operators receive lists of suspected mule accounts from the authorities and screen clients against them.",
    "what_th": "กำหนดมาตรฐานป้องกันอาชญากรรมทางไซเบอร์สำหรับผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ได้รับอนุญาต ผู้ประกอบธุรกิจที่ไม่ปฏิบัติตามต้องร่วมรับผิดชอบความเสียหายของลูกค้า หลักเกณฑ์นี้มีผลตั้งแต่วันที่ 13 สิงหาคม 2025 และใช้ควบคู่กับมาตรฐานเรื่องบัญชีม้าของภาคธุรกิจ ที่ ก.ล.ต. และสมาคมผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลไทย (TDO) ร่วมกันกำหนดเมื่อวันที่ 12 มีนาคม 2025 ผู้ประกอบธุรกิจได้รับรายชื่อบัญชีที่ต้องสงสัยว่าเป็นบัญชีม้าจากหน่วยงานรัฐ และนำไปคัดกรองลูกค้า",
-   "for_foreigners": "Expect extra checks, holds or questions on a Thai exchange account when deposits come from third parties or the pattern matches mule activity.",
+   "for_foreigners": "A Thai exchange account can get extra checks, holds or questions when deposits come from third parties or the pattern matches mule activity.",
    "for_foreigners_th": "บัญชีศูนย์ซื้อขายในไทยอาจถูกตรวจสอบเพิ่มเติม ถูกพักธุรกรรม หรือถูกสอบถาม เมื่อมีเงินฝากจากบุคคลอื่น หรือเมื่อรูปแบบธุรกรรมตรงกับลักษณะบัญชีม้า",
    "sources": [
     {

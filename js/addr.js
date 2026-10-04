@@ -145,7 +145,7 @@
     }
     if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(s))
       return r("amber", t("A Lightning address, or an email", "Lightning address หรืออีเมล"), [t("name@domain: a Lightning wallet looks this up over the web and fetches an invoice. It only works if the domain runs a Lightning service.", "ชื่อ@โดเมน: กระเป๋า Lightning จะค้นหาผ่านเว็บแล้วดึงใบแจ้งหนี้มา ใช้ได้เฉพาะเมื่อโดเมนนั้นให้บริการ Lightning")]);
-    return r("red", t("Not a format this checker knows", "ตัวตรวจไม่รู้จักรูปแบบนี้"), [t("Check for a missing character, a space, or a line break in the middle.", "ตรวจดูว่ามีตัวอักษรขาด ช่องว่าง หรือการขึ้นบรรทัดใหม่ตรงกลางหรือไม่")]);
+    return r("red", t("Not a format this checker knows", "ตัวตรวจไม่รู้จักรูปแบบนี้"), [t("A missing character, a space or a line break in the middle puts an address outside every known format.", "ตัวอักษรที่ขาดไป ช่องว่าง หรือการขึ้นบรรทัดใหม่ตรงกลาง ทำให้ที่อยู่ไม่ตรงกับรูปแบบใดเลย")]);
   }
 
   G.OFR = G.OFR || {};

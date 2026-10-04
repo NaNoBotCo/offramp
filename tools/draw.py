@@ -383,7 +383,7 @@ def holo(name="band-cards.jpg", W=2000, H=750):
 
 
 # ------------------------------------------------------------------ the net
-def web(name="band-scams.jpg", W=2000, H=750):
+def web(name="band-scams.jpg", W=2000, H=750):  # stylecheck: allow — code: image file name
     film = Film(W, H)
     cx, cy = W * .62, H * .45
     spokes = 22
@@ -559,7 +559,7 @@ def card_th():
 
 
 JOBS = {"hero": hero, "ramp": cloverleaf, "markets": ridge, "networks": fibres, "rules": tollgate, "cards": holo,
-        "scams": web, "history": chain, "how": avalanche, "words": signs, "tools": glyphs, "card": card, "card_th": card_th}
+        "scams": web, "history": chain, "how": avalanche, "words": signs, "tools": glyphs, "card": card, "card_th": card_th}  # stylecheck: allow — code: page keys
 
 if __name__ == "__main__":
     want = sys.argv[1:] or list(JOBS)

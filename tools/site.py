@@ -45,7 +45,7 @@ def load(p):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
-R = {k: load(DATA / "research" / f"{k}.json") for k in ("rules", "products", "history", "scams", "words")}
+R = {k: load(DATA / "research" / f"{k}.json") for k in ("rules", "products", "history", "scams", "words")}  # stylecheck: allow — code: data file names
 MONEY = load(DATA / "money.json")
 RAMP = load(DATA / "ramp.json")
 ROUTES = load(DATA / "routes.json").get("routes", [])
@@ -76,7 +76,7 @@ def two(o, k):
     return (o.get(k + "_th") if LANG == "th" else None) or o.get(k + "_en") or o.get(k, "")
 
 
-TAG_EN = "Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed."
+TAG_EN = "Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed."  # stylecheck: allow — topic noun in the tagline, not a warning
 TAG_TH = "คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล"
 
 # href, English, Thai, English sub, Thai sub, picture
@@ -86,7 +86,7 @@ EXITS = [
     ("cards/", "Cards", "บัตร", "Cards, exchanges, rails", "บัตร ศูนย์ซื้อขาย ช่องทางโอน", "band-cards.jpg"),
     ("networks/", "Networks", "เครือข่าย", "Chains and addresses", "เชนและที่อยู่กระเป๋า", "band-networks.jpg"),
     ("markets/", "Markets", "ตลาด", "The market in baht", "ตลาดในสกุลบาท", "band-markets.jpg"),
-    ("scams/", "Scams", "กลโกง", "Frauds, freezes, signs", "การหลอกลวง การอายัด สัญญาณเตือน", "band-scams.jpg"),
+    ("scams/", "Scams", "กลโกง", "Frauds, freezes, signs", "การหลอกลวง การอายัด สัญญาณเตือน", "band-scams.jpg"),  # stylecheck: allow — nav label naming the Scams page
     ("how/", "How", "กลไก", "How crypto works", "คริปโตทำงานอย่างไร", "band-how.jpg"),
     ("history/", "History", "ประวัติ", "1976 to now", "ตั้งแต่ 1976 ถึงวันนี้", "band-history.jpg"),
     ("words/", "Words", "ศัพท์", "English and Thai", "อังกฤษและไทย", "band-words.jpg"),
@@ -468,7 +468,7 @@ def ramp():
         for r in s.get("routes", []):
             rows.append(f'<div class="cardx route"><h3>{E(two(r, "name"))}</h3>'
                         + "".join(f'<p class="small"><b>{E(lab)}</b> {E(two(r, k))}</p>' for k, lab in
-                                  (("needs", T("Needs:", "ต้องมี:")), ("cost", T("Cost:", "ค่าใช้จ่าย:")), ("limits", T("Limits:", "วงเงิน:")), ("risk", T("Risk:", "ความเสี่ยง:"))) if two(r, k))
+                                  (("needs", T("Needs:", "ต้องมี:")), ("cost", T("Cost:", "ค่าใช้จ่าย:")), ("limits", T("Limits:", "วงเงิน:")), ("risk", T("Risk:", "ความเสี่ยง:"))) if two(r, k))  # stylecheck: allow — field labels
                         + f'<p class="small">{cite(r.get("refs") or [])}{"".join(aff(i) for i in r.get("aff", []))}</p></div>')
         out.append(f'<section id="{E(s["id"])}"><h2><span class="pill {E(s.get("pill_cls", ""))}" style="vertical-align:middle">{E(two(s, "pill"))}</span> {E(two(s, "title"))}</h2>'
                    f'<p class="lede">{E(two(s, "lede"))}</p><div class="grid2">{"".join(rows)}</div></section>')
@@ -490,8 +490,8 @@ def ramp():
 {disclose()}
 {subscribe()}
 """)
-    page(T("Ramp", "แลกบาท"), body, "ramp/", T("How to turn crypto into Thai baht as a foreigner: visiting, living here without a Thai bank, or banked here; routes, costs, limits, risks.",
-                                                "วิธีแลกคริปโตเป็นเงินบาทสำหรับชาวต่างชาติ: มาเยือน อยู่ที่นี่แต่ไม่มีบัญชีธนาคาร หรือมีบัญชีแล้ว เส้นทาง ค่าใช้จ่าย วงเงิน ความเสี่ยง"),
+    page(T("Ramp", "แลกบาท"), body, "ramp/", T("How to turn crypto into Thai baht as a foreigner: visiting, living here without a Thai bank, or banked here; routes, costs, limits, risks.",  # stylecheck: allow — topic nouns in the page description
+                                                "วิธีแลกคริปโตเป็นเงินบาทสำหรับชาวต่างชาติ: มาเยือน อยู่ที่นี่แต่ไม่มีบัญชีธนาคาร หรือมีบัญชีแล้ว เส้นทาง ค่าใช้จ่าย วงเงิน ความเสี่ยง"),  # stylecheck: allow — topic nouns in the page description
          scripts=("i18n.js", "live.js", "calc.js"))
 
 
@@ -620,7 +620,7 @@ def networks():
     body += section(f"""
 <div class="note red"><b>{T("THE MISTAKE.", "ความผิดพลาดที่พบบ่อย")}</b> {T("A sender picks a network from a menu. The receiver's address has to be on that network. A 0x address is valid on Ethereum, BNB Smart Chain, Base, Arbitrum and a dozen more, so the address alone never says which one. Coins sent on a network the receiving exchange does not support can sit in an address nobody there watches.",
     "ผู้ส่งเลือกเครือข่ายจากเมนู ที่อยู่ของผู้รับต้องอยู่บนเครือข่ายนั้น ที่อยู่ 0x ใช้ได้ทั้งบน Ethereum, BNB Smart Chain, Base, Arbitrum และอีกหลายสิบเชน ตัวที่อยู่เองจึงไม่บอกว่าเป็นเครือข่ายไหน เหรียญที่ส่งบนเครือข่ายที่ศูนย์ซื้อขายปลายทางไม่รองรับ อาจค้างอยู่ในที่อยู่ที่ไม่มีใครดูแล")}</div>
-<h2>{T("Check an address", "ตรวจที่อยู่")}</h2>
+<h2>{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
 <p>{T("Paste one. The checker reads the format and the checksum, and names the networks that format belongs to. It runs in this page's script.",
       "วางที่อยู่ลงไป ตัวตรวจจะอ่านรูปแบบและ checksum แล้วบอกว่ารูปแบบนั้นเป็นของเครือข่ายใด การตรวจทำงานในสคริปต์ของหน้านี้")}</p>
 {checker()}
@@ -661,7 +661,7 @@ def how():
 <h2>2 · {T("A key", "กุญแจ")} <small>{T("a number only you know", "ตัวเลขที่มีแค่คุณรู้")}</small></h2>
 <p>{T("A wallet is a large random number, the private key. Multiplying a fixed point on a curve by that number gives the public key; hashing the public key gives the address. Going forward takes microseconds; going back from address to key has no known method short of guessing among 2<sup>256</sup> possibilities. The twelve or twenty-four words of a seed phrase encode that number. Anyone holding the words holds the coins.",
       "กระเป๋าคือเลขสุ่มขนาดใหญ่ เรียกว่ากุญแจส่วนตัว (private key) นำจุดคงที่บนเส้นโค้งมาคูณด้วยเลขนั้นจะได้กุญแจสาธารณะ และแฮชกุญแจสาธารณะจะได้ที่อยู่ ทางไปใช้เวลาไม่กี่ไมโครวินาที ทางกลับจากที่อยู่ไปหากุญแจไม่มีวิธีที่รู้จัก นอกจากเดาจาก 2<sup>256</sup> ความเป็นไปได้ คำ 12 หรือ 24 คำของ seed phrase (ชุดคำกู้คืน) คือเลขนั้นในรูปคำ ใครถือคำเหล่านี้ คนนั้นถือเหรียญ")}</p>
-<div class="note red"><b>SEED PHRASE.</b> {T("A support agent, an exchange, a wallet app, a person on a call: none of them needs the words to help with anything. A request for them is the scam.",
+<div class="note red"><b>SEED PHRASE.</b> <!-- stylecheck: allow — a fact about seed phrases, not advice -->{T("A support agent, an exchange, a wallet app, a person on a call: none of them needs the words to help with anything. A request for them is the scam.",
     "เจ้าหน้าที่ ศูนย์ซื้อขาย แอปกระเป๋า หรือคนที่โทรมา ไม่มีใครต้องใช้คำเหล่านี้เพื่อช่วยอะไรเลย การขอคำเหล่านี้คือการหลอกลวง")}</div>
 <h2>3 · {T("A chain", "ห่วงโซ่")} <small>{T("each block names the one before it", "แต่ละบล็อกอ้างถึงบล็อกก่อนหน้า")}</small></h2>
 <p>{T("A block holds transactions and the hash of the previous block. Change an old transaction and that block's hash changes, which breaks the next block's reference, and every block after it.",
@@ -738,7 +738,7 @@ def support():
                           f'<div style="background:#fff;border-radius:12px;padding:10px;max-width:220px">{qr}</div>'
                           f'<p><code style="word-break:break-all">{E(a)}</code></p></div>')
     crypto = (f'<h2>{T("In crypto", "เป็นคริปโต")}</h2><div class="grid3">{"".join(blocks)}</div>'
-              f'<p class="small mute">{T("Check the network before sending. The address checker on Tools reads any of these.", "ตรวจเครือข่ายก่อนส่ง ตัวตรวจที่อยู่ในหน้าเครื่องมืออ่านที่อยู่เหล่านี้ได้ทั้งหมด")}</p>') if blocks else ""
+              f'<p class="small mute">{T("The address checker on Tools reads any of these.", "ตัวตรวจที่อยู่ในหน้าเครื่องมืออ่านที่อยู่เหล่านี้ได้ทั้งหมด")}</p>') if blocks else ""
     refs = [v for v in (MONEY.get("referral") or {}).values() if v]
     body = head(None, "Support", "สนับสนุน", "What keeps the lights on", "สิ่งที่ทำให้ไฟยังติดอยู่", "hero.jpg",
                 T("The site is free to read and free to copy under CC BY 4.0. It is paid for three ways: referral links, sponsors, and tips.",
@@ -858,7 +858,7 @@ document.querySelectorAll('#cardtable tbody tr').forEach(function(r){{r.hidden=!
 
 
 def scams():
-    S = R["scams"]
+    S = R["scams"]  # stylecheck: allow — code
     srows = "".join(f'<tr><td>{E(str(s.get("year", "")))}</td><td>{E(fld(s, "metric"))}</td><td class="r">{s.get("value", 0):,}</td><td>{E(fld(s, "unit"))}</td>'
                     f'<td class="small">{E(fld(s, "scope"))}{cite(src_of(s))}</td></tr>'
                     for s in sorted(S.get("stats") or [], key=lambda s: str(s.get("year"))) if isinstance(s.get("value"), (int, float)))
@@ -875,7 +875,7 @@ def scams():
         ttl, alt = (c.get("name_th") or c.get("name"), c.get("name")) if LANG == "th" else (c.get("name"), c.get("name_th"))
         chrows.append(f'<div class="cardx"><h3>{E(ttl or "")}</h3>' + (f'<p style="color:var(--go);margin:.1rem 0">{E(alt)}</p>' if alt and alt != ttl else "")
                       + f'<p class="small">{E(fld(c, "how"))}</p>' + (f'<p class="small"><a href="{E(c["url"])}" rel="noopener" style="word-break:break-all">{E(c["url"])}</a></p>' if c.get("url") else "") + "</div>")
-    body = exit_head("scams/", T("Most crypto losses in Thailand are not hacks. They are a person persuaded to send, and a bank account frozen because baht arrived from someone else's loss.",
+    body = exit_head("scams/", T("Most crypto losses in Thailand are not hacks. They are a person persuaded to send, and a bank account frozen because baht arrived from someone else's loss.",  # stylecheck: allow — facts about losses
                                  "ความเสียหายจากคริปโตในไทยส่วนใหญ่ไม่ได้มาจากการแฮ็ก แต่มาจากคนที่ถูกโน้มน้าวให้โอน และบัญชีธนาคารที่ถูกอายัดเพราะเงินบาทที่เข้ามาเป็นเงินจากความเสียหายของคนอื่น"), "red")
     body += section(f"""
 <h2>{T("Numbers", "ตัวเลข")}</h2>{table([T("Year", "ปี"), T("Measure", "ตัวชี้วัด"), T("Value ›", "ค่า ›"), T("Unit", "หน่วย"), T("Scope", "ขอบเขต")], [srows])}
@@ -883,7 +883,7 @@ def scams():
 <h2>{T("Where to report", "แจ้งที่ไหน")}</h2><div class="grid3">{"".join(chrows)}</div>
 <h2>{T("Cases", "คดี")}</h2><ol class="tl">{citems}</ol>
 """)
-    page(T("Scams", "กลโกง"), body, "scams/", T("Crypto scams in Thailand: call-centre gangs, fake investment, pig butchering, mule accounts and P2P freezes, address poisoning; the numbers and where to report.",
+    page(T("Scams", "กลโกง"), body, "scams/", T("Crypto scams in Thailand: call-centre gangs, fake investment, pig butchering, mule accounts and P2P freezes, address poisoning; the numbers and where to report.",  # stylecheck: allow — topic nouns in the page description
                                                  "กลโกงคริปโตในไทย: แก๊งคอลเซ็นเตอร์ หลอกลงทุน หมูตู้ บัญชีม้า การอายัดจาก P2P การวางยาที่อยู่ ตัวเลข และช่องทางแจ้งความ"),
          scripts=("i18n.js",))
 
@@ -948,13 +948,13 @@ def data_page():
              ("series.json", "Daily series: BTC and ETH in baht, the premium, USDT against the bank rates, fees, USD/THB", "ข้อมูลรายวัน: BTC และ ETH ในสกุลบาท ส่วนต่างราคา USDT เทียบอัตราธนาคาร ค่าธรรมเนียม USD/THB"),
              ("rules.json", "Thai rules, operators, tax, banking, timeline", "กฎของไทย ผู้ประกอบการ ภาษี ธนาคาร ลำดับเวลา"),
              ("products.json", "Cards, exchanges, rails, wallets", "บัตร ศูนย์ซื้อขาย ช่องทาง กระเป๋า"),
-             ("history.json", "The history, dated", "ประวัติตามวันที่"), ("scams.json", "Scam statistics, types, cases, channels", "สถิติกลโกง ประเภท คดี ช่องทางแจ้ง"),
+             ("history.json", "The history, dated", "ประวัติตามวันที่"), ("scams.json", "Scam statistics, types, cases, channels", "สถิติกลโกง ประเภท คดี ช่องทางแจ้ง"),  # stylecheck: allow — data file label
              ("words.json", "The glossary, English and Thai", "อภิธานศัพท์ อังกฤษและไทย")]
     rows = "".join(f'<tr><td><a href="{BASE}data/{f}"><code>{f}</code></a></td><td>{E(T(de, dt_))}</td></tr>' for f, de, dt_ in files if (DATA / "research" / f).exists() or f in ("facts.json", "series.json"))
     body = head(None, "Data", "ข้อมูล", "Everything the pages are built from", "ทุกอย่างที่ใช้สร้างหน้าเว็บ", "band-markets.jpg",
                 T("CC BY 4.0: copy it, chart it, build on it, and name Offrampt (offrampt.net) as the source.", "CC BY 4.0: คัดลอก ทำกราฟ ต่อยอดได้ โดยระบุ Offrampt (offrampt.net) เป็นแหล่งที่มา"))
     body += section(table([T("File", "ไฟล์"), T("What", "เนื้อหา")], [rows]) + f'<p>{T("Live rates, refreshed every fifteen minutes:", "อัตราสด อัปเดตทุกสิบห้านาที:")} <a href="{RATES}">{RATES}</a></p>')
-    page(T("Data", "ข้อมูล"), body, "data/", T("Offrampt's data files: bitcoin and USDT in baht, the premium, Thai rules, cards, scams, glossary. CC BY 4.0.", "ไฟล์ข้อมูลของ Offrampt: บิตคอยน์และ USDT ในสกุลบาท ส่วนต่างราคา กฎของไทย บัตร กลโกง อภิธานศัพท์ CC BY 4.0"))
+    page(T("Data", "ข้อมูล"), body, "data/", T("Offrampt's data files: bitcoin and USDT in baht, the premium, Thai rules, cards, scams, glossary. CC BY 4.0.", "ไฟล์ข้อมูลของ Offrampt: บิตคอยน์และ USDT ในสกุลบาท ส่วนต่างราคา กฎของไทย บัตร กลโกง อภิธานศัพท์ CC BY 4.0"))  # stylecheck: allow — topic nouns in the page description
 
 
 def agents_page():
