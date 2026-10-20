@@ -1,0 +1,645 @@
+{
+ "as_of": "2026-09-23",
+ "words": [
+  {
+   "en": "digital asset",
+   "th": "สินทรัพย์ดิจิทัล",
+   "roman": "sinsap dichithan",
+   "def": "Thailand's legal term covering both cryptocurrencies and digital tokens. The SEC licenses and supervises businesses that deal in them.",
+   "source_url": "https://www.sec.or.th/th/pages/investors/digitalassetproduct.aspx",
+   "def_th": "คำตามกฎหมายไทยที่ครอบคลุมทั้งคริปโทเคอร์เรนซีและโทเคนดิจิทัล สำนักงาน ก.ล.ต. เป็นผู้ออกใบอนุญาตและกำกับดูแลธุรกิจที่เกี่ยวข้องกับสินทรัพย์เหล่านี้"
+  },
+  {
+   "en": "cryptocurrency",
+   "th": "คริปโทเคอร์เรนซี",
+   "roman": "khripthokhoenrensi",
+   "def": "A unit of electronic data created to serve as a medium of exchange for goods, services or other digital assets, where users accept it. The SEC notes that central banks do not recognise it as legal tender.",
+   "source_url": "https://www.sec.or.th/th/pages/investors/digitalassetproduct.aspx",
+   "def_th": "หน่วยข้อมูลอิเล็กทรอนิกส์ที่สร้างขึ้นเพื่อใช้เป็นสื่อกลางแลกเปลี่ยนสินค้า บริการ หรือสินทรัพย์ดิจิทัลอื่น ในกรณีที่ผู้ใช้ยอมรับ สำนักงาน ก.ล.ต. ระบุว่าธนาคารกลางไม่รับรองให้เป็นเงินที่ใช้ชำระหนี้ได้ตามกฎหมาย"
+  },
+  {
+   "en": "cryptocurrency (Royal Society coinage)",
+   "th": "เงินตราเข้ารหัสลับ",
+   "roman": "ngoentra khao rahat lap",
+   "def": "The Thai word the Office of the Royal Society listed for cryptocurrency in 2019, next to the transliterated loanword. Literally 'encrypted currency'.",
+   "source_url": "https://efinancethai.com/LastestNews/app.index.aspx?id=YXQ3WUgybktxSUk9&lang=T&month=8&security=&v=2018&year=2019",
+   "def_th": "คำไทยที่สำนักงานราชบัณฑิตยสภากำหนดไว้สำหรับคำว่า cryptocurrency ในปี 2019 คู่กับคำทับศัพท์ ความหมายตามตัวคือ 'เงินตราที่เข้ารหัส'"
+  },
+  {
+   "en": "digital token",
+   "th": "โทเคนดิจิทัล",
+   "roman": "thoken dichithan",
+   "def": "A unit of electronic data that gives its holder a right, such as a share in a project or access to goods or services. Thai rules split tokens into investment tokens and utility tokens.",
+   "source_url": "https://www.sec.or.th/th/pages/investors/digitalassetproduct.aspx",
+   "def_th": "หน่วยข้อมูลอิเล็กทรอนิกส์ที่ให้สิทธิแก่ผู้ถือ เช่น สิทธิร่วมลงทุนในโครงการ หรือสิทธิได้รับสินค้าหรือบริการ หลักเกณฑ์ของไทยแบ่งโทเคนเป็นโทเคนเพื่อการลงทุนและโทเคนเพื่อการใช้ประโยชน์"
+  },
+  {
+   "en": "investment token",
+   "th": "โทเคนดิจิทัลเพื่อการลงทุน",
+   "roman": "thoken dichithan phuea kan longthun",
+   "def": "A digital token that gives the holder a stake in a project and a return, such as a share of revenue. Offering one to the public needs SEC approval.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2567/280867.pdf",
+   "def_th": "โทเคนดิจิทัลที่ให้ผู้ถือมีส่วนร่วมในโครงการและได้รับผลตอบแทน เช่น ส่วนแบ่งรายได้ การเสนอขายให้ประชาชนต้องได้รับอนุญาตจาก ก.ล.ต."
+  },
+  {
+   "en": "utility token",
+   "th": "โทเคนดิจิทัลเพื่อการใช้ประโยชน์",
+   "roman": "thoken dichithan phuea kan chai prayot",
+   "def": "A digital token that gives the holder a right to specific goods, services or other benefits. Some kinds need SEC approval before sale and some do not.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2567/280867.pdf",
+   "def_th": "โทเคนดิจิทัลที่ให้ผู้ถือมีสิทธิได้รับสินค้า บริการ หรือประโยชน์อื่นที่ระบุไว้ บางประเภทต้องได้รับอนุญาตจาก ก.ล.ต. ก่อนขาย บางประเภทไม่ต้อง"
+  },
+  {
+   "en": "Emergency Decree on Digital Asset Businesses B.E. 2561 (2018)",
+   "th": "พระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล พ.ศ. 2561",
+   "roman": "phraratchakamnot kan prakop thurakit sinsap dichithan pho so 2561",
+   "def": "The 2018 law that defines digital assets in Thailand and requires businesses dealing in them to hold a licence. It also requires them to keep customer assets separate from their own.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/020168.pdf",
+   "def_th": "กฎหมายปี 2018 ที่กำหนดความหมายของสินทรัพย์ดิจิทัลในไทย และกำหนดให้ธุรกิจที่เกี่ยวข้องต้องมีใบอนุญาต กฎหมายนี้ยังกำหนดให้ธุรกิจแยกทรัพย์สินของลูกค้าออกจากทรัพย์สินของตนเอง"
+  },
+  {
+   "en": "digital asset business operator",
+   "th": "ผู้ประกอบธุรกิจสินทรัพย์ดิจิทัล",
+   "roman": "phu prakop thurakit sinsap dichithan",
+   "def": "A company licensed to run a digital asset business in Thailand, such as an exchange, broker, dealer or custodian. The Minister of Finance grants the licence and the SEC supervises the holder.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "บริษัทที่ได้รับใบอนุญาตให้ประกอบธุรกิจสินทรัพย์ดิจิทัลในไทย เช่น ศูนย์ซื้อขาย นายหน้า ผู้ค้า หรือผู้รับฝากสินทรัพย์ดิจิทัล รัฐมนตรีว่าการกระทรวงการคลังเป็นผู้ออกใบอนุญาต และ ก.ล.ต. เป็นผู้กำกับดูแลผู้ได้รับใบอนุญาต"
+  },
+  {
+   "en": "digital asset exchange",
+   "th": "ศูนย์ซื้อขายสินทรัพย์ดิจิทัล",
+   "roman": "sun sue khai sinsap dichithan",
+   "def": "A platform that matches buyers and sellers of digital assets as a regular business. Running one in Thailand needs a licence.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "แพลตฟอร์มที่จับคู่ผู้ซื้อกับผู้ขายสินทรัพย์ดิจิทัลเป็นทางค้าปกติ การเปิดศูนย์ซื้อขายในไทยต้องมีใบอนุญาต"
+  },
+  {
+   "en": "digital asset broker",
+   "th": "นายหน้าซื้อขายสินทรัพย์ดิจิทัล",
+   "roman": "naina sue khai sinsap dichithan",
+   "def": "A business that buys, sells or exchanges digital assets on behalf of customers for a fee or other payment.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "ธุรกิจที่ซื้อ ขาย หรือแลกเปลี่ยนสินทรัพย์ดิจิทัลแทนลูกค้า โดยได้รับค่าธรรมเนียมหรือค่าตอบแทนอื่น"
+  },
+  {
+   "en": "digital asset dealer",
+   "th": "ผู้ค้าสินทรัพย์ดิจิทัล",
+   "roman": "phu kha sinsap dichithan",
+   "def": "A business that buys and sells digital assets in its own name, outside an exchange, as a regular business. The SEC counts a booth or online post offering to swap coins for the public as dealer business.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "ธุรกิจที่ซื้อขายสินทรัพย์ดิจิทัลในนามของตนเองนอกศูนย์ซื้อขายเป็นทางค้าปกติ ก.ล.ต. ถือว่าการตั้งบูธหรือโพสต์ออนไลน์รับแลกเหรียญให้ประชาชนเป็นธุรกิจผู้ค้า"
+  },
+  {
+   "en": "digital asset custodial wallet provider",
+   "th": "ผู้ให้บริการรับฝากสินทรัพย์ดิจิทัล",
+   "roman": "phu hai borikan rap fak sinsap dichithan",
+   "def": "A business that holds digital assets for customers, or manages the cryptographic keys that control them, for a fee.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "ธุรกิจที่เก็บรักษาสินทรัพย์ดิจิทัลแทนลูกค้า หรือดูแลกุญแจเข้ารหัสที่ใช้ควบคุมสินทรัพย์นั้น โดยเก็บค่าธรรมเนียม"
+  },
+  {
+   "en": "initial coin offering (ICO)",
+   "th": "การเสนอขายโทเคนดิจิทัล",
+   "roman": "kan sanoe khai thoken dichithan",
+   "def": "Raising money by selling newly issued digital tokens to the public. In Thailand the issuer needs SEC approval, files an offering document and sells through an approved ICO portal.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2567/280867.pdf",
+   "def_th": "การระดมเงินด้วยการขายโทเคนดิจิทัลที่ออกใหม่ให้ประชาชน ในไทย ผู้ออกโทเคนต้องได้รับอนุญาตจาก ก.ล.ต. ยื่นเอกสารการเสนอขาย และขายผ่านผู้ให้บริการระบบเสนอขายโทเคนดิจิทัล (ICO portal) ที่ได้รับอนุญาต"
+  },
+  {
+   "en": "ICO portal",
+   "th": "ผู้ให้บริการระบบเสนอขายโทเคนดิจิทัล",
+   "roman": "phu hai borikan rabop sanoe khai thoken dichithan",
+   "def": "An SEC-approved platform that screens token issuers and runs the sale of their tokens to investors.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2567/280867.pdf",
+   "def_th": "แพลตฟอร์มที่ได้รับอนุญาตจาก ก.ล.ต. ทำหน้าที่คัดกรองผู้ออกโทเคน และจัดการขายโทเคนของผู้ออกให้ผู้ลงทุน"
+  },
+  {
+   "en": "whitepaper",
+   "th": "เอกสารประกอบการเสนอขาย",
+   "roman": "ekkasan prakop kan sanoe khai",
+   "def": "The document a token issuer publishes to describe the project and the rights attached to its tokens. A token holder's rights are the ones written in it.",
+   "source_url": "https://www.sec.or.th/TH/Documents/DigitalAsset/DigitalAssetInvestment-Guide.pdf",
+   "def_th": "เอกสารที่ผู้ออกโทเคนเผยแพร่เพื่ออธิบายโครงการและสิทธิที่มากับโทเคน ผู้ถือโทเคนมีสิทธิตามที่เขียนไว้ในเอกสารนี้"
+  },
+  {
+   "en": "G-Token (Government Token)",
+   "th": "โทเคนดิจิทัลที่ออกและดำเนินการโดยกระทรวงการคลัง",
+   "roman": "thoken dichithan thi ok lae damnoenkan doi krasuang kan khlang",
+   "def": "A digital token issued and operated by Thailand's Ministry of Finance. Licensed digital asset businesses offer it to customers under SEC rules.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "โทเคนดิจิทัลที่กระทรวงการคลังของไทยเป็นผู้ออกและดำเนินการ ผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ได้รับใบอนุญาตเสนอขายให้ลูกค้าตามหลักเกณฑ์ของ ก.ล.ต."
+  },
+  {
+   "en": "staking",
+   "th": "การฝากสินทรัพย์ดิจิทัลเพื่อรับผลตอบแทน",
+   "roman": "kan fak sinsap dichithan phuea rap phon topthaen",
+   "def": "Depositing or locking digital assets with a service to earn a return, usually paid in more coins. The SEC has issued a circular on how licensed firms may offer it.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "การฝากหรือล็อกสินทรัพย์ดิจิทัลไว้กับผู้ให้บริการเพื่อรับผลตอบแทน ซึ่งมักจ่ายเป็นเหรียญเพิ่ม ก.ล.ต. ออกหนังสือเวียนว่าด้วยวิธีที่ผู้ได้รับใบอนุญาตจะให้บริการนี้ได้"
+  },
+  {
+   "en": "regulatory sandbox",
+   "th": "โครงการทดสอบและพัฒนานวัตกรรม",
+   "roman": "khrongkan thotsop lae phatthana nawattakam",
+   "def": "A test scheme in which a regulator lets approved firms try a new financial service within set limits and under supervision, before or without a full licence.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "โครงการทดสอบที่หน่วยงานกำกับอนุญาตให้บริษัทที่ผ่านการคัดเลือกทดลองให้บริการทางการเงินแบบใหม่ ภายในขอบเขตที่กำหนดและภายใต้การกำกับดูแล ก่อนมีใบอนุญาตเต็มรูปแบบ หรือโดยไม่ต้องมี"
+  },
+  {
+   "en": "cryptographic key",
+   "th": "กุญแจเข้ารหัส",
+   "roman": "kunchae khao rahat",
+   "def": "The secret code that approves a transfer of a digital asset. Thai law uses this term to describe what a custodian manages for its customers.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "รหัสลับที่ใช้อนุมัติการโอนสินทรัพย์ดิจิทัล กฎหมายไทยใช้คำนี้เรียกสิ่งที่ผู้รับฝากดูแลแทนลูกค้า"
+  },
+  {
+   "en": "private key",
+   "th": "กุญแจส่วนตัว",
+   "roman": "kunchae suantua",
+   "def": "The secret code that controls a wallet and signs transfers out of it. Whoever holds it can move the funds.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1249810",
+   "def_th": "รหัสลับที่ควบคุมกระเป๋าสินทรัพย์ดิจิทัลและใช้ลงนามอนุมัติการโอนออกจากกระเป๋า ใครถือกุญแจนี้ก็โอนเงินในกระเป๋าได้"
+  },
+  {
+   "en": "wallet",
+   "th": "กระเป๋าสินทรัพย์ดิจิทัล",
+   "roman": "krapao sinsap dichithan",
+   "def": "Software or a device that holds the keys needed to store and send digital assets. In a custodial wallet a provider holds the private key; in a non-custodial wallet the user does.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2566/180166.pdf",
+   "def_th": "ซอฟต์แวร์หรืออุปกรณ์ที่เก็บกุญแจที่ใช้เก็บและส่งสินทรัพย์ดิจิทัล กระเป๋าแบบมีผู้รับฝาก ผู้ให้บริการเป็นผู้ถือกุญแจส่วนตัว ส่วนกระเป๋าแบบเก็บเอง ผู้ใช้ถือกุญแจส่วนตัวเอง"
+  },
+  {
+   "en": "wallet address",
+   "th": "บัญชีเก็บสินทรัพย์ดิจิทัล",
+   "roman": "banchi kep sinsap dichithan",
+   "def": "The public string of characters that identifies where digital assets are sent, similar to an account number.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/020168.pdf",
+   "def_th": "ชุดตัวอักษรที่เปิดเผยได้ ใช้ระบุปลายทางที่จะส่งสินทรัพย์ดิจิทัลไป คล้ายเลขที่บัญชี"
+  },
+  {
+   "en": "hardware wallet",
+   "th": "ฮาร์ดแวร์วอลเล็ต",
+   "roman": "hatwae wonlet",
+   "def": "A small physical device that keeps private keys offline and signs transfers when connected. It is one form of cold storage.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1246570",
+   "def_th": "อุปกรณ์ขนาดเล็กที่เก็บกุญแจส่วนตัวไว้แบบออฟไลน์ และลงนามอนุมัติการโอนเมื่อเชื่อมต่อ เป็นการเก็บแบบออฟไลน์ (cold storage) รูปแบบหนึ่ง"
+  },
+  {
+   "en": "blockchain",
+   "th": "บล็อกเชน",
+   "roman": "blokchen",
+   "def": "A shared record of transactions, grouped into blocks linked in time order and copied across a network, which makes past entries hard to alter.",
+   "source_url": "https://www.sec.or.th/th/pages/investors/digitalassetproduct.aspx",
+   "def_th": "บันทึกธุรกรรมที่ใช้ร่วมกัน จัดเป็นบล็อกที่เชื่อมต่อกันตามลำดับเวลา และมีสำเนาอยู่ทั่วเครือข่าย ทำให้แก้ไขรายการในอดีตได้ยาก"
+  },
+  {
+   "en": "Bitcoin",
+   "th": "บิตคอยน์",
+   "roman": "bitkhoi",
+   "def": "The first cryptocurrency, launched in 2009, which runs on its own blockchain. The Office of the Royal Society lists this Thai spelling.",
+   "source_url": "https://efinancethai.com/LastestNews/app.index.aspx?id=YXQ3WUgybktxSUk9&lang=T&month=8&security=&v=2018&year=2019",
+   "def_th": "คริปโตสกุลแรก เปิดตัวในปี 2009 ทำงานบนบล็อกเชนของตัวเอง สำนักงานราชบัณฑิตยสภากำหนดการสะกดภาษาไทยแบบนี้"
+  },
+  {
+   "en": "smart contract",
+   "th": "สัญญาอัจฉริยะ",
+   "roman": "sanya atchariya",
+   "def": "Code on a blockchain that carries out the terms of an agreement automatically when set conditions are met.",
+   "source_url": "https://www.sec.or.th/TH/Documents/DigitalAsset/DigitalAssetInvestment-Guide.pdf",
+   "def_th": "โค้ดบนบล็อกเชนที่ทำตามเงื่อนไขของข้อตกลงโดยอัตโนมัติ เมื่อเกิดเหตุตามเงื่อนไขที่กำหนดไว้"
+  },
+  {
+   "en": "decentralised finance (DeFi)",
+   "th": "บริการทางการเงินแบบกระจายศูนย์",
+   "roman": "borikan thang kan ngoen baep krachai sun",
+   "def": "Financial services such as lending and token swaps that run on smart contracts on a blockchain, without a company in the middle.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2564/070664.pdf",
+   "def_th": "บริการทางการเงิน เช่น การให้กู้ยืมและการแลกโทเคน ที่ทำงานด้วยสัญญาอัจฉริยะบนบล็อกเชน โดยไม่มีบริษัทเป็นตัวกลาง"
+  },
+  {
+   "en": "non-fungible token (NFT)",
+   "th": "ไม่สามารถทดแทนกันได้",
+   "roman": "mai samat thotthaen kan dai",
+   "def": "A token in which each unit is unique and cannot be swapped one-for-one, used for items such as art, music or collectibles. The Thai phrase is the SEC's rendering of 'non-fungible'.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2565/060165.pdf",
+   "def_th": "โทเคนที่แต่ละหน่วยมีลักษณะเฉพาะ แลกกันแบบหนึ่งต่อหนึ่งไม่ได้ ใช้กับสิ่งต่าง ๆ เช่น งานศิลปะ เพลง หรือของสะสม คำไทยนี้เป็นคำที่ ก.ล.ต. ใช้แปลคำว่า 'non-fungible'"
+  },
+  {
+   "en": "stablecoin",
+   "th": "สเตเบิลคอยน์",
+   "roman": "sateboenkhoi",
+   "def": "A cryptocurrency built to hold a steady value by tracking a currency such as the US dollar or the baht, or another asset.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/Article_2Aug2021.html",
+   "def_th": "คริปโตที่ออกแบบให้มูลค่าคงที่ โดยอิงกับสกุลเงิน เช่น ดอลลาร์สหรัฐหรือเงินบาท หรืออิงกับสินทรัพย์อื่น"
+  },
+  {
+   "en": "meme coin",
+   "th": "เหรียญมีม",
+   "roman": "rian mim",
+   "def": "A cryptocurrency that starts as an internet joke or meme and has little stated use. Its price tends to rise and fall with social-media attention.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1116996",
+   "def_th": "คริปโตที่เริ่มจากมุกตลกหรือมีมบนอินเทอร์เน็ต และแทบไม่มีการระบุประโยชน์ใช้งาน ราคามักขึ้นลงตามกระแสความสนใจบนโซเชียลมีเดีย"
+  },
+  {
+   "en": "mining",
+   "th": "การขุด",
+   "roman": "kan khut",
+   "def": "Using computers to validate blockchain transactions in return for newly created coins. The Revenue Department taxes income from selling mined coins.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "การใช้คอมพิวเตอร์ตรวจสอบยืนยันธุรกรรมบนบล็อกเชน เพื่อแลกกับเหรียญที่สร้างขึ้นใหม่ กรมสรรพากรเก็บภาษีจากเงินได้จากการขายเหรียญที่ขุดได้"
+  },
+  {
+   "en": "volatility",
+   "th": "ความผันผวน",
+   "roman": "khwam phanphuan",
+   "def": "How far and how fast a price moves up and down over a period.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/Article_2Aug2021.html",
+   "def_th": "ราคาขึ้นลงมากแค่ไหนและเร็วแค่ไหนในช่วงเวลาหนึ่ง"
+  },
+  {
+   "en": "fee",
+   "th": "ค่าธรรมเนียม",
+   "roman": "kha thamniam",
+   "def": "A charge for a service, such as a trading commission, a withdrawal charge or a network transfer cost.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "เงินที่เรียกเก็บเป็นค่าบริการ เช่น ค่าคอมมิชชันการซื้อขาย ค่าถอน หรือค่าโอนบนเครือข่าย"
+  },
+  {
+   "en": "legal tender",
+   "th": "ชำระหนี้ได้ตามกฎหมาย",
+   "roman": "chamra ni dai tam kotmai",
+   "def": "Money that the law says settles a debt. In Thailand that is the baht; the SEC states that cryptocurrency is not legal tender.",
+   "source_url": "https://www.sec.or.th/th/pages/investors/digitalassetproduct.aspx",
+   "def_th": "เงินที่กฎหมายกำหนดว่าใช้ชำระหนี้ได้ ในไทยคือเงินบาท ก.ล.ต. ระบุว่าคริปโตไม่ใช่เงินที่ชำระหนี้ได้ตามกฎหมาย"
+  },
+  {
+   "en": "means of payment",
+   "th": "สื่อกลางการชำระราคาค่าสินค้าและบริการ",
+   "roman": "sueklang kan chamra rakha kha sinkha lae borikan",
+   "def": "Something used to pay for goods and services. Thai regulators bar licensed digital asset businesses from supporting the use of crypto as a means of payment.",
+   "source_url": "https://www.bot.or.th/th/financial-innovation/resilient-regulation/digital-asset.html",
+   "def_th": "สิ่งที่ใช้จ่ายค่าสินค้าและบริการ หน่วยงานกำกับของไทยห้ามผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ได้รับใบอนุญาตสนับสนุนการใช้คริปโตเป็นสื่อกลางชำระค่าสินค้าและบริการ"
+  },
+  {
+   "en": "Securities and Exchange Commission, Thailand (SEC)",
+   "th": "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.)",
+   "roman": "samnakngan khana kammakan kamkap laksap lae talat laksap (ko lo to)",
+   "def": "The regulator that licenses and supervises digital asset businesses and approves token offerings in Thailand.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "หน่วยงานกำกับที่ออกใบอนุญาตและกำกับดูแลธุรกิจสินทรัพย์ดิจิทัล และอนุญาตการเสนอขายโทเคนในไทย"
+  },
+  {
+   "en": "Bank of Thailand (BOT)",
+   "th": "ธนาคารแห่งประเทศไทย (ธปท.)",
+   "roman": "thanakhan haeng prathet thai (tho po tho)",
+   "def": "Thailand's central bank. It issues the baht and oversees banks, payment systems, e-money and foreign exchange rules.",
+   "source_url": "https://www.bot.or.th/th/news-and-media/news/news-20210319-2.html",
+   "def_th": "ธนาคารกลางของไทย ทำหน้าที่ออกเงินบาท และกำกับดูแลธนาคาร ระบบการชำระเงิน เงินอิเล็กทรอนิกส์ และกฎเกณฑ์ด้านการแลกเปลี่ยนเงินตราต่างประเทศ"
+  },
+  {
+   "en": "Revenue Department",
+   "th": "กรมสรรพากร",
+   "roman": "krom sanphakon",
+   "def": "The Thai tax authority under the Ministry of Finance. It publishes guidance on how income from crypto and digital tokens is taxed.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "หน่วยงานจัดเก็บภาษีของไทย สังกัดกระทรวงการคลัง เผยแพร่แนวทางการเก็บภาษีจากเงินได้จากคริปโตและโทเคนดิจิทัล"
+  },
+  {
+   "en": "Anti-Money Laundering Office (AMLO)",
+   "th": "สำนักงานป้องกันและปราบปรามการฟอกเงิน (ปปง.)",
+   "roman": "samnakngan pongkan lae prappram kan fok ngoen (po po ngo)",
+   "def": "The Thai agency that enforces the anti-money-laundering law, receives reports of suspicious transactions and keeps lists of people linked to crime.",
+   "source_url": "https://www.bot.or.th/th/news-and-media/news/news-20250130.html",
+   "def_th": "หน่วยงานของไทยที่บังคับใช้กฎหมายป้องกันและปราบปรามการฟอกเงิน รับรายงานธุรกรรมที่น่าสงสัย และจัดทำรายชื่อบุคคลที่เชื่อมโยงกับอาชญากรรม"
+  },
+  {
+   "en": "Cyber Crime Investigation Bureau (CCIB)",
+   "th": "กองบัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี (บช.สอท.)",
+   "roman": "kong banchakan tamruat suepsuan sopsuan atchayakam thang theknoloyi (bo cho so o tho)",
+   "def": "The Thai police bureau that investigates online and technology crime. It works with the SEC on raids against unlicensed crypto services.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "หน่วยงานตำรวจไทยที่สืบสวนอาชญากรรมออนไลน์และอาชญากรรมทางเทคโนโลยี ทำงานร่วมกับ ก.ล.ต. ในการตรวจค้นบริการคริปโตที่ไม่ได้รับอนุญาต"
+  },
+  {
+   "en": "Anti Online Scam Operation Center (AOC 1441)",
+   "th": "ศูนย์ปฏิบัติการแก้ไขปัญหาอาชญากรรมออนไลน์",
+   "roman": "sun patibatkan kaekhai panha atchayakam onlai",
+   "def": "A government centre, reached on the 1441 hotline, that takes reports of online fraud in one place.",
+   "source_url": "https://www.bot.or.th/th/fraud/fraud-measure-development.html",
+   "def_th": "ศูนย์ของรัฐที่รับแจ้งเรื่องการฉ้อโกงออนไลน์ได้ในที่เดียว ติดต่อได้ทางสายด่วน 1441"
+  },
+  {
+   "en": "digital baht",
+   "th": "เงินบาทดิจิทัล",
+   "roman": "ngoen bat dichithan",
+   "def": "A digital form of the baht for public use that the Bank of Thailand has studied and piloted. It differs from crypto because the central bank would issue it.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/Article_2Aug2021.html",
+   "def_th": "เงินบาทในรูปแบบดิจิทัลสำหรับประชาชนทั่วไป ที่ธนาคารแห่งประเทศไทยศึกษาและทดลองใช้ ต่างจากคริปโตตรงที่ธนาคารกลางจะเป็นผู้ออก"
+  },
+  {
+   "en": "central bank digital currency (CBDC)",
+   "th": "สกุลเงินดิจิทัลที่ออกโดยธนาคารกลาง",
+   "roman": "sakun ngoen dichithan thi ok doi thanakhan klang",
+   "def": "Money in digital form issued directly by a central bank. It carries the same value as notes and coins.",
+   "source_url": "https://www.bot.or.th/th/financial-innovation/digital-finance/central-bank-digital-currency.html",
+   "def_th": "เงินในรูปแบบดิจิทัลที่ธนาคารกลางออกโดยตรง มีมูลค่าเท่ากับธนบัตรและเหรียญ"
+  },
+  {
+   "en": "e-money",
+   "th": "เงินอิเล็กทรอนิกส์",
+   "roman": "ngoen ilektronik",
+   "def": "Stored value that a licensed provider issues in return for cash and that people spend through apps or cards. The Bank of Thailand supervises it under the Payment Systems Act.",
+   "source_url": "https://www.bot.or.th/th/news-and-media/news/news-20210319-2.html",
+   "def_th": "มูลค่าเงินที่ผู้ให้บริการที่ได้รับอนุญาตออกให้เพื่อแลกกับเงินสด และผู้คนนำไปใช้จ่ายผ่านแอปหรือบัตร ธนาคารแห่งประเทศไทยกำกับดูแลตาม พ.ร.บ. ระบบการชำระเงิน"
+  },
+  {
+   "en": "PromptPay",
+   "th": "พร้อมเพย์",
+   "roman": "phromphe",
+   "def": "Thailand's instant transfer system, which links a bank account to a mobile phone number or national ID number so money can be sent to that number.",
+   "source_url": "https://www.bot.or.th/th/financial-innovation/digital-finance/digital-payment/promptpay.html",
+   "def_th": "ระบบโอนเงินทันทีของไทย ที่ผูกบัญชีธนาคารไว้กับหมายเลขโทรศัพท์มือถือหรือเลขประจำตัวประชาชน เพื่อให้โอนเงินเข้าหมายเลขนั้นได้"
+  },
+  {
+   "en": "exchange rate",
+   "th": "อัตราแลกเปลี่ยน",
+   "roman": "attra laekplian",
+   "def": "The price of one currency in another, such as baht per US dollar. The Bank of Thailand publishes daily reference rates.",
+   "source_url": "https://www.bot.or.th/th/statistics/exchange-rate.html",
+   "def_th": "ราคาของเงินสกุลหนึ่งเมื่อคิดเป็นอีกสกุลหนึ่ง เช่น บาทต่อดอลลาร์สหรัฐ ธนาคารแห่งประเทศไทยประกาศอัตราอ้างอิงทุกวัน"
+  },
+  {
+   "en": "money changer business",
+   "th": "การซื้อและขายธนบัตรต่างประเทศ",
+   "roman": "kan sue lae khai thanabat tang prathet",
+   "def": "The business of buying and selling foreign banknotes. Firms other than banks need a licence, and the Bank of Thailand publishes the list of licence holders.",
+   "source_url": "https://www.bot.or.th/th/our-roles/financial-markets/foreign-exchange-regulations.html",
+   "def_th": "ธุรกิจซื้อขายธนบัตรต่างประเทศ ผู้ประกอบการที่ไม่ใช่ธนาคารต้องมีใบอนุญาต และธนาคารแห่งประเทศไทยเผยแพร่รายชื่อผู้ได้รับใบอนุญาต"
+  },
+  {
+   "en": "Exchange Control Act",
+   "th": "พ.ร.บ. ควบคุมการแลกเปลี่ยนเงิน",
+   "roman": "pho ro bo khuapkhum kan laekplian ngoen",
+   "def": "The Thai law that governs foreign currency dealings and moving money into and out of the country. The Bank of Thailand administers it.",
+   "source_url": "https://www.bot.or.th/th/laws-and-rules/bot-takes-responsibilities-and-other-relevant-laws-and-regulations/law03.html",
+   "def_th": "กฎหมายไทยที่ควบคุมธุรกรรมเงินตราต่างประเทศ และการนำเงินเข้าออกประเทศ ธนาคารแห่งประเทศไทยเป็นผู้ดูแลการบังคับใช้"
+  },
+  {
+   "en": "international transfer",
+   "th": "การโอนเงินระหว่างประเทศ",
+   "roman": "kan on ngoen rawang prathet",
+   "def": "Sending money across borders, such as from a foreign bank account to a Thai one.",
+   "source_url": "https://www.bot.or.th/th/financial-innovation/digital-finance/digital-payment/promptpay.html",
+   "def_th": "การส่งเงินข้ามประเทศ เช่น จากบัญชีธนาคารในต่างประเทศเข้าบัญชีธนาคารในไทย"
+  },
+  {
+   "en": "deposit",
+   "th": "การฝากเงิน",
+   "roman": "kan fak ngoen",
+   "def": "Putting money into an account. Thai exchanges accept baht deposits only from a bank account in the customer's own name.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1252206",
+   "def_th": "การนำเงินเข้าบัญชี ศูนย์ซื้อขายสินทรัพย์ดิจิทัลในไทยรับฝากเงินบาทจากบัญชีธนาคารที่เป็นชื่อของลูกค้าเองเท่านั้น"
+  },
+  {
+   "en": "withdrawal",
+   "th": "การถอนเงิน",
+   "roman": "kan thon ngoen",
+   "def": "Taking money or assets out of an account. Thai exchanges may delay or cap withdrawals for new or small accounts as an anti-fraud measure.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1252206",
+   "def_th": "การนำเงินหรือสินทรัพย์ออกจากบัญชี ศูนย์ซื้อขายในไทยอาจชะลอหรือจำกัดวงเงินถอนของบัญชีใหม่หรือบัญชีขนาดเล็ก เพื่อป้องกันการฉ้อโกง"
+  },
+  {
+   "en": "Deposit Protection Agency",
+   "th": "สถาบันคุ้มครองเงินฝาก",
+   "roman": "sathaban khumkhrong ngoen fak",
+   "def": "The Thai agency that insures bank deposits. Money and crypto held with a digital asset business are not bank deposits, so its cover does not apply to them.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2566/180166.pdf",
+   "def_th": "หน่วยงานของไทยที่คุ้มครองเงินฝากในธนาคาร เงินและคริปโตที่ฝากไว้กับธุรกิจสินทรัพย์ดิจิทัลไม่ใช่เงินฝากธนาคาร จึงไม่อยู่ในความคุ้มครองนี้"
+  },
+  {
+   "en": "personal income tax",
+   "th": "ภาษีเงินได้บุคคลธรรมดา",
+   "roman": "phasi ngoen dai bukkhon thammada",
+   "def": "Tax on an individual's yearly income, filed on the PND 90 or PND 91 return. Gains from transferring crypto or digital tokens count toward it.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "ภาษีที่เก็บจากเงินได้ทั้งปีของบุคคล ยื่นแบบ ภ.ง.ด.90 หรือ ภ.ง.ด.91 กำไรจากการโอนคริปโตหรือโทเคนดิจิทัลนับรวมเป็นเงินได้ด้วย"
+  },
+  {
+   "en": "value added tax (VAT)",
+   "th": "ภาษีมูลค่าเพิ่ม",
+   "roman": "phasi munlakha phoem",
+   "def": "A consumption tax added to the price of goods and services.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "ภาษีการบริโภคที่บวกเพิ่มในราคาสินค้าและบริการ"
+  },
+  {
+   "en": "withholding tax",
+   "th": "ภาษีเงินได้หัก ณ ที่จ่าย",
+   "roman": "phasi ngoen dai hak na thi chai",
+   "def": "Tax the payer deducts from a payment and sends to the Revenue Department. The recipient can claim it as a credit on the yearly return.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "ภาษีที่ผู้จ่ายเงินหักไว้จากเงินที่จ่าย แล้วนำส่งกรมสรรพากร ผู้รับเงินนำไปเครดิตภาษีตอนยื่นแบบประจำปีได้"
+  },
+  {
+   "en": "gain from transfer (tax term)",
+   "th": "ผลประโยชน์ที่ได้รับจากการโอน",
+   "roman": "phon prayot thi dai rap chak kan on",
+   "def": "The Revenue Department's phrase for profit from selling or swapping cryptocurrency or digital tokens above cost. The Revenue Code counts it as assessable income.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "คำที่กรมสรรพากรใช้เรียกกำไรจากการขายหรือแลกเปลี่ยนคริปโทเคอร์เรนซีหรือโทเคนดิจิทัลในราคาที่สูงกว่าต้นทุน ประมวลรัษฎากรนับเป็นเงินได้พึงประเมิน"
+  },
+  {
+   "en": "capital gain",
+   "th": "กำไรจากการขาย",
+   "roman": "kamrai chak kan khai",
+   "def": "Profit from selling an asset for more than it cost.",
+   "source_url": "https://www.thairath.co.th/money/investment/digital_assets/2881566",
+   "def_th": "กำไรจากการขายทรัพย์สินได้ในราคาที่สูงกว่าต้นทุน"
+  },
+  {
+   "en": "income tax exemption",
+   "th": "การยกเว้นภาษีเงินได้",
+   "roman": "kan yokwen phasi ngoen dai",
+   "def": "Relief from income tax. A 2025 ministerial regulation exempts gains from transferring cryptocurrency or digital tokens through licensed Thai exchanges, brokers or dealers from 1 January 2025 to 31 December 2029.",
+   "source_url": "https://www.thairath.co.th/money/investment/digital_assets/2881566",
+   "def_th": "การได้รับยกเว้นไม่ต้องเสียภาษีเงินได้ กฎกระทรวงปี 2025 ยกเว้นภาษีให้กำไรจากการโอนคริปโทเคอร์เรนซีหรือโทเคนดิจิทัลผ่านศูนย์ซื้อขาย นายหน้า หรือผู้ค้าที่ได้รับใบอนุญาตในไทย ตั้งแต่ 1 มกราคม 2025 ถึง 31 ธันวาคม 2029"
+  },
+  {
+   "en": "first in, first out (FIFO)",
+   "th": "วิธีเข้าก่อนออกก่อน",
+   "roman": "withi khao kon ok kon",
+   "def": "A cost method that treats the first coins bought as the first ones sold. The Revenue Department accepts it for crypto.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "วิธีคิดต้นทุนที่ถือว่าเหรียญที่ซื้อก่อนคือเหรียญที่ขายออกไปก่อน กรมสรรพากรยอมรับวิธีนี้สำหรับคริปโต"
+  },
+  {
+   "en": "moving average cost",
+   "th": "วิธีต้นทุนถัวเฉลี่ยเคลื่อนที่",
+   "roman": "withi tonthun thua chalia khluean thi",
+   "def": "A cost method that recalculates the average price of holdings after each purchase. The Revenue Department accepts it, as it does FIFO.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "วิธีคิดต้นทุนที่คำนวณราคาเฉลี่ยของเหรียญที่ถืออยู่ใหม่ทุกครั้งที่ซื้อเพิ่ม กรมสรรพากรยอมรับวิธีนี้ เช่นเดียวกับวิธีเข้าก่อนออกก่อน (FIFO)"
+  },
+  {
+   "en": "offset (losses against gains)",
+   "th": "หักกลบ",
+   "roman": "hak klop",
+   "def": "Using a loss to reduce a taxable gain. The Revenue Department allows crypto losses to offset gains in the same year only for trades on SEC-licensed exchanges.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "การนำผลขาดทุนมาลดกำไรที่ต้องเสียภาษี กรมสรรพากรให้นำผลขาดทุนจากคริปโตมาหักกลบกับกำไรในปีเดียวกันได้ เฉพาะการซื้อขายบนศูนย์ซื้อขายที่ได้รับใบอนุญาตจาก ก.ล.ต."
+  },
+  {
+   "en": "source of income",
+   "th": "แหล่งเงินได้",
+   "roman": "laeng ngoen dai",
+   "def": "Where income counts as earned for tax. For crypto the Revenue Department looks at the country where the wallet used for trading is located.",
+   "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/information/manual_crypto_310165.pdf",
+   "def_th": "ที่ที่ถือว่าเกิดเงินได้ในทางภาษี สำหรับคริปโต กรมสรรพากรดูจากประเทศที่กระเป๋าสินทรัพย์ดิจิทัลที่ใช้ซื้อขายตั้งอยู่"
+  },
+  {
+   "en": "know your customer (KYC)",
+   "th": "การรู้จักลูกค้า",
+   "roman": "kan ruchak lukkha",
+   "def": "Checks a financial business runs to confirm a customer's identity before opening an account.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/article-20250415.html",
+   "def_th": "การตรวจสอบที่ธุรกิจการเงินทำเพื่อยืนยันตัวตนของลูกค้าก่อนเปิดบัญชี"
+  },
+  {
+   "en": "money laundering",
+   "th": "การฟอกเงิน",
+   "roman": "kan fok ngoen",
+   "def": "Passing money from crime through transactions that hide where it came from.",
+   "source_url": "https://www.sec.or.th/TH/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+   "def_th": "การนำเงินที่ได้จากการกระทำผิดไปผ่านธุรกรรมต่าง ๆ เพื่อปกปิดที่มาของเงิน"
+  },
+  {
+   "en": "Travel Rule",
+   "th": "หลักเกณฑ์การส่งต่อข้อมูลระหว่างผู้โอนและผู้รับโอน",
+   "roman": "lakken kan song to khomun rawang phu on lae phu rap on",
+   "def": "A rule that requires the business sending a crypto transfer to pass the names and account details of sender and receiver to the business receiving it. The SEC and AMLO consulted on Thai rules based on the FATF standard in 2026.",
+   "source_url": "https://www.sec.or.th/Documents/PHS/Main/1144/hearing092569.pdf",
+   "def_th": "กฎที่กำหนดให้ธุรกิจที่ส่งการโอนคริปโต ต้องส่งชื่อและข้อมูลบัญชีของผู้โอนและผู้รับโอนไปให้ธุรกิจที่รับการโอน ในปี 2026 ก.ล.ต. และ ปปง. เปิดรับฟังความเห็นต่อหลักเกณฑ์ของไทยที่อิงมาตรฐาน FATF"
+  },
+  {
+   "en": "mule account",
+   "th": "บัญชีม้า",
+   "roman": "banchi ma",
+   "def": "A bank or crypto account opened or rented out to receive and move scam money. Thai banks can block transfers out of such accounts and refuse the holder new ones.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/article-20250415.html",
+   "def_th": "บัญชีธนาคารหรือบัญชีคริปโตที่เปิดไว้หรือปล่อยเช่า เพื่อรับและโอนต่อเงินจากการหลอกลวง ธนาคารไทยระงับการโอนออกจากบัญชีแบบนี้ได้ และปฏิเสธไม่เปิดบัญชีใหม่ให้เจ้าของบัญชี"
+  },
+  {
+   "en": "call-centre gang",
+   "th": "แก๊งคอลเซ็นเตอร์",
+   "roman": "kaeng khonsentoe",
+   "def": "Organised fraud groups that phone or message victims and frighten them into transferring money.",
+   "source_url": "https://www.bot.or.th/th/fraud.html",
+   "def_th": "กลุ่มมิจฉาชีพที่ทำเป็นขบวนการ โทรหรือส่งข้อความหาเหยื่อ แล้วขู่ให้กลัวจนยอมโอนเงิน"
+  },
+  {
+   "en": "scammer",
+   "th": "มิจฉาชีพ",
+   "roman": "mitchachip",
+   "def": "The usual Thai word for a fraudster, used by banks, regulators and police in scam warnings.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/article-20250415.html",
+   "def_th": "คำไทยที่ใช้กันทั่วไปเรียกคนที่หลอกลวงเอาเงิน ธนาคาร หน่วยงานกำกับ และตำรวจใช้คำนี้ในคำเตือนเรื่องการหลอกลวง"
+  },
+  {
+   "en": "investment scam",
+   "th": "หลอกลงทุน",
+   "roman": "lok longthun",
+   "def": "A fraud that lures victims with promised returns, often in crypto, then blocks withdrawals or asks for more fees.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/prachachat-chayawadee-feb25.html",
+   "def_th": "การฉ้อโกงที่ล่อเหยื่อด้วยการสัญญาว่าจะได้ผลตอบแทน ซึ่งมักเกี่ยวกับคริปโต จากนั้นไม่ให้ถอนเงิน หรือเรียกเก็บค่าธรรมเนียมเพิ่ม"
+  },
+  {
+   "en": "freeze (of an account)",
+   "th": "อายัด",
+   "roman": "ayat",
+   "def": "A hold that stops money from leaving an account. Banks and authorities apply it to accounts and transactions linked to fraud.",
+   "source_url": "https://www.bot.or.th/th/news-and-media/news/news-20250915.html",
+   "def_th": "การระงับไม่ให้เงินออกจากบัญชี ธนาคารและหน่วยงานรัฐใช้กับบัญชีและธุรกรรมที่เชื่อมโยงกับการฉ้อโกง"
+  },
+  {
+   "en": "police report",
+   "th": "แจ้งความ",
+   "roman": "chaeng khwam",
+   "def": "Filing a complaint with the police. Thai banks use lists of people named in such reports when handling mule accounts.",
+   "source_url": "https://www.bot.or.th/th/news-and-media/news/news-20250130.html",
+   "def_th": "การร้องทุกข์ต่อตำรวจ ธนาคารไทยใช้รายชื่อบุคคลที่ถูกระบุในการแจ้งความเมื่อจัดการกับบัญชีม้า"
+  },
+  {
+   "en": "Emergency Decree on technology crime",
+   "th": "พ.ร.ก. มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี",
+   "roman": "pho ro ko mattrakan pongkan lae prappram atchayakam thang theknoloyi",
+   "def": "The emergency decree that sets duties for banks, telecom firms and other providers to prevent and trace online fraud, including through mule accounts.",
+   "source_url": "https://www.bot.or.th/th/research-and-publications/articles-and-publications/articles/article-20250415.html",
+   "def_th": "พระราชกำหนดที่กำหนดหน้าที่ให้ธนาคาร บริษัทโทรคมนาคม และผู้ให้บริการอื่น ป้องกันและติดตามการฉ้อโกงออนไลน์ รวมถึงการฉ้อโกงผ่านบัญชีม้า"
+  },
+  {
+   "en": "peer-to-peer (P2P) trade",
+   "th": "การแลกเปลี่ยนระหว่างบุคคล",
+   "roman": "kan laekplian rawang bukkhon",
+   "def": "Buying or selling crypto directly with another person, often paid by bank transfer. Such trades carry risks such as fake payment slips, mule-account money and frozen accounts.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1165818",
+   "def_th": "การซื้อหรือขายคริปโตกับบุคคลอื่นโดยตรง มักจ่ายเงินด้วยการโอนผ่านธนาคาร การซื้อขายแบบนี้มีความเสี่ยง เช่น สลิปโอนเงินปลอม เงินจากบัญชีม้า และบัญชีถูกอายัด"
+  },
+  {
+   "en": "fake transfer slip",
+   "th": "สลิปปลอม",
+   "roman": "salip plom",
+   "def": "A forged bank-transfer receipt shown to make a seller release goods or crypto before any money has arrived.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1165818",
+   "def_th": "หลักฐานการโอนเงินที่ปลอมขึ้น ใช้แสดงเพื่อให้ผู้ขายส่งสินค้าหรือคริปโตให้ ทั้งที่ยังไม่มีเงินเข้ามา"
+  },
+  {
+   "en": "grey money",
+   "th": "ทุนเทา",
+   "roman": "thun thao",
+   "def": "Thai press term for money of illegal or unexplained origin that its owners try to move through legal channels.",
+   "source_url": "https://www.bangkokbiznews.com/finance/cryptocurrency/1252206",
+   "def_th": "คำที่สื่อไทยใช้เรียกเงินที่มีที่มาผิดกฎหมายหรืออธิบายที่มาไม่ได้ ซึ่งเจ้าของพยายามนำผ่านช่องทางที่ถูกกฎหมาย"
+  },
+  {
+   "en": "coin exchange service",
+   "th": "การรับแลกเหรียญ",
+   "roman": "kan rap laek rian",
+   "def": "Offering the public a swap of crypto for cash or other coins. The SEC treats a regular service of this kind as dealer business that needs a licence.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "การเสนอรับแลกคริปโตเป็นเงินสดหรือเหรียญอื่นให้ประชาชน ก.ล.ต. ถือว่าการให้บริการแบบนี้เป็นประจำคือธุรกิจผู้ค้าที่ต้องมีใบอนุญาต"
+  },
+  {
+   "en": "in the ordinary course of business",
+   "th": "ทางค้าปกติ",
+   "roman": "thang kha pokkati",
+   "def": "The test in Thai law for when crypto trading becomes a business that needs a licence: offering the service to the public, for example by posting ads or setting up a booth, or earning from it.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "เกณฑ์ในกฎหมายไทยที่ใช้ตัดสินว่าการซื้อขายคริปโตกลายเป็นธุรกิจที่ต้องมีใบอนุญาตเมื่อใด คือการเสนอบริการต่อประชาชน เช่น โพสต์โฆษณาหรือตั้งบูธ หรือการมีรายได้จากบริการนั้น"
+  },
+  {
+   "en": "unlicensed digital asset business",
+   "th": "ประกอบธุรกิจสินทรัพย์ดิจิทัลโดยไม่ได้รับอนุญาต",
+   "roman": "prakop thurakit sinsap dichithan doi mai dai rap anuyat",
+   "def": "Running an exchange, broker, dealer or similar service without a licence. The penalty is 2 to 5 years in prison and a fine of 200,000 to 500,000 baht, plus up to 10,000 baht for each day the breach continues.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "การให้บริการศูนย์ซื้อขาย นายหน้า ผู้ค้า หรือบริการในลักษณะเดียวกันโดยไม่มีใบอนุญาต มีโทษจำคุก 2 ถึง 5 ปี และปรับ 200,000 ถึง 500,000 บาท และปรับเพิ่มอีกไม่เกินวันละ 10,000 บาทตลอดเวลาที่ยังฝ่าฝืน"
+  },
+  {
+   "en": "SEC Check First",
+   "th": "เช็กก่อนเชื่อ",
+   "roman": "chek kon chuea",
+   "def": "The SEC's website and app for checking whether a firm holds a Thai licence. The Thai tagline means 'check before you trust'.",
+   "source_url": "https://www.sec.or.th/TH/Template3/Articles/2568/131168.pdf",
+   "def_th": "เว็บไซต์และแอปของ ก.ล.ต. สำหรับตรวจสอบว่าบริษัทได้รับใบอนุญาตในไทยหรือไม่ สโลแกนภาษาไทยคือ 'เช็กก่อนเชื่อ'"
+  },
+  {
+   "en": "TouristDigiPay",
+   "th": "การนำสินทรัพย์ดิจิทัลมาเปลี่ยนเป็นเงินบาท เพื่อชำระค่าสินค้าและบริการในประเทศสำหรับนักท่องเที่ยวต่างชาติ",
+   "roman": "kan nam sinsap dichithan ma plian pen ngoen bat phuea chamra kha sinkha lae borikan nai prathet samrap nakthongthiao tangchat",
+   "def": "An SEC sandbox that lets foreign visitors convert digital assets into baht through licensed exchanges and dealers linked to e-money providers, to pay for goods and services in Thailand.",
+   "source_url": "https://www.thansettakij.com/finance/wealth-tech/639758",
+   "def_th": "โครงการทดสอบ (sandbox) ของ ก.ล.ต. ที่ให้ชาวต่างชาติที่เดินทางมาไทยแปลงสินทรัพย์ดิจิทัลเป็นเงินบาท ผ่านศูนย์ซื้อขายและผู้ค้าที่ได้รับใบอนุญาตซึ่งเชื่อมกับผู้ให้บริการเงินอิเล็กทรอนิกส์ เพื่อจ่ายค่าสินค้าและบริการในไทย"
+  }
+ ]
+}

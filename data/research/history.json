@@ -1,0 +1,2273 @@
+{
+ "as_of": "2026-09-23",
+ "events": [
+  {
+   "date": "1976-11",
+   "era": "prehistory",
+   "title": "Diffie-Hellman key exchange",
+   "title_th": "การแลกเปลี่ยนกุญแจแบบ Diffie-Hellman",
+   "what": "Whitfield Diffie and Martin Hellman publish a way for two parties to agree on a shared secret over an open channel. The paper starts public-key cryptography, the basis of the key pairs that crypto wallets hold.",
+   "what_th": "Whitfield Diffie และ Martin Hellman เผยแพร่วิธีที่ให้สองฝ่ายตกลงรหัสลับร่วมกันได้ผ่านช่องทางเปิด บทความนี้เป็นจุดเริ่มต้นของการเข้ารหัสแบบกุญแจสาธารณะ ซึ่งเป็นพื้นฐานของคู่กุญแจที่กระเป๋าสินทรัพย์ดิจิทัลเก็บไว้",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "New Directions in Cryptography",
+     "url": "https://ee.stanford.edu/~hellman/publications/24.pdf",
+     "publisher": "IEEE Transactions on Information Theory (copy at Stanford)",
+     "date": "1976-11"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1977",
+   "era": "prehistory",
+   "title": "RSA public-key system",
+   "title_th": "ระบบกุญแจสาธารณะ RSA",
+   "what": "Ron Rivest, Adi Shamir and Leonard Adleman describe RSA, a public-key system for encryption and digital signatures that rests on the difficulty of factoring large numbers.",
+   "what_th": "Ron Rivest, Adi Shamir และ Leonard Adleman อธิบายระบบ RSA ซึ่งเป็นระบบกุญแจสาธารณะสำหรับการเข้ารหัสและลายเซ็นดิจิทัล โดยอาศัยความยากของการแยกตัวประกอบจำนวนขนาดใหญ่",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "A Method for Obtaining Digital Signatures and Public-Key Cryptosystems",
+     "url": "https://people.csail.mit.edu/rivest/Rsapaper.pdf",
+     "publisher": "MIT",
+     "date": "1977"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1979-09-05",
+   "era": "prehistory",
+   "title": "Merkle's hash-tree signatures",
+   "title_th": "ลายเซ็นแบบต้นไม้แฮชของ Merkle",
+   "what": "Ralph Merkle files a US patent for digital signatures built from a tree of hashes, granted on 5 January 1982. Bitcoin blocks use a Merkle tree to summarise all their transactions in one hash.",
+   "what_th": "Ralph Merkle ยื่นขอสิทธิบัตรในสหรัฐฯ สำหรับลายเซ็นดิจิทัลที่สร้างจากโครงสร้างต้นไม้ของค่าแฮช และได้รับสิทธิบัตรเมื่อวันที่ 5 มกราคม 1982 บล็อกของบิตคอยน์ใช้ Merkle tree สรุปธุรกรรมทั้งหมดในบล็อกไว้ในแฮชเดียว",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "US4309569A: Method of providing digital signatures",
+     "url": "https://patents.google.com/patent/US4309569A/en",
+     "publisher": "Google Patents",
+     "date": "1982-01-05"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1982",
+   "era": "prehistory",
+   "title": "Chaum's blind signatures",
+   "title_th": "ลายเซ็นแบบปิดตาของ Chaum",
+   "what": "David Chaum presents blind signatures, which let a bank sign a digital coin without seeing it, so the coin can be spent without tracing it to the person who withdrew it.",
+   "what_th": "David Chaum เสนอลายเซ็นแบบปิดตา (blind signature) ซึ่งให้ธนาคารลงนามรับรองเหรียญดิจิทัลได้โดยไม่เห็นตัวเหรียญ ทำให้นำเหรียญไปใช้จ่ายได้โดยสืบย้อนไม่ได้ว่าใครเป็นผู้ถอนเหรียญนั้นออกมา",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Blind Signatures for Untraceable Payments",
+     "url": "http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF",
+     "publisher": "Advances in Cryptology: Proceedings of Crypto 82",
+     "date": "1982"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1989",
+   "era": "prehistory",
+   "title": "DigiCash and ecash",
+   "title_th": "DigiCash และ ecash",
+   "what": "David Chaum founds DigiCash to sell ecash, anonymous digital money built on blind signatures. By 1998 it has 5,000 users and 300 merchants, and it files for bankruptcy that year.",
+   "what_th": "David Chaum ก่อตั้ง DigiCash เพื่อขาย ecash เงินดิจิทัลแบบไม่ระบุตัวตนที่สร้างบนลายเซ็นแบบปิดตา ภายในปี 1998 มีผู้ใช้ 5,000 ราย และร้านค้า 300 แห่ง และในปีเดียวกันนั้นบริษัทก็ยื่นล้มละลาย",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "DigiCash",
+     "url": "https://en.wikipedia.org/wiki/DigiCash",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "Requiem for a Bright Idea",
+     "url": "https://www.forbes.com/forbes/1999/1101/6411390a.html",
+     "publisher": "Forbes",
+     "date": "1999-11-01"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1992",
+   "era": "prehistory",
+   "title": "Cypherpunks mailing list",
+   "title_th": "เมลลิงลิสต์ Cypherpunks",
+   "what": "Eric Hughes, Timothy C. May and John Gilmore start the Cypherpunks group in the San Francisco Bay Area and its mailing list, which has 700 subscribers by 1994. Many ideas behind Bitcoin are first argued there.",
+   "what_th": "Eric Hughes, Timothy C. May และ John Gilmore ตั้งกลุ่ม Cypherpunks ขึ้นในบริเวณอ่าวซานฟรานซิสโก พร้อมเมลลิงลิสต์ของกลุ่ม ซึ่งมีสมาชิก 700 คนภายในปี 1994 แนวคิดหลายอย่างที่อยู่เบื้องหลังบิตคอยน์ถูกนำมาถกกันครั้งแรกในเมลลิงลิสต์นี้",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Cypherpunk",
+     "url": "https://en.wikipedia.org/wiki/Cypherpunk",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1993-03-09",
+   "era": "prehistory",
+   "title": "A Cypherpunk's Manifesto",
+   "title_th": "แถลงการณ์ A Cypherpunk's Manifesto",
+   "what": "Eric Hughes publishes A Cypherpunk's Manifesto, arguing that privacy in an open society needs anonymous transaction systems.",
+   "what_th": "Eric Hughes เผยแพร่ A Cypherpunk's Manifesto โดยเสนอว่าความเป็นส่วนตัวในสังคมเปิดต้องอาศัยระบบธุรกรรมที่ไม่ระบุตัวตน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "A Cypherpunk's Manifesto",
+     "url": "https://www.activism.net/cypherpunk/manifesto.html",
+     "publisher": "activism.net",
+     "date": "1993-03-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1997-03-28",
+   "era": "prehistory",
+   "title": "Hashcash proof of work",
+   "title_th": "Hashcash กับ proof of work",
+   "what": "Adam Back announces hashcash on the cypherpunks list: a sender proves effort by finding a partial hash collision, which is costly to make and instant to check. Bitcoin mining uses the same proof-of-work idea.",
+   "what_th": "Adam Back ประกาศเปิดตัว hashcash ในเมลลิงลิสต์ Cypherpunks ผู้ส่งต้องพิสูจน์ว่าได้ลงแรงคำนวณ ด้วยการหาค่าแฮชที่ชนกันบางส่วน (partial hash collision) ซึ่งมีต้นทุนสูงในการสร้าง แต่ตรวจสอบได้ทันที การขุดบิตคอยน์ใช้แนวคิด proof of work แบบเดียวกันนี้",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "[ANNOUNCE] hash cash postage implementation",
+     "url": "http://www.hashcash.org/papers/announce.txt",
+     "publisher": "hashcash.org",
+     "date": "1997-03-28"
+    },
+    {
+     "title": "Hashcash - A Denial of Service Counter-Measure",
+     "url": "http://www.hashcash.org/papers/hashcash.pdf",
+     "publisher": "hashcash.org",
+     "date": "2002-08"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "1998",
+   "era": "prehistory",
+   "title": "b-money",
+   "title_th": "b-money",
+   "what": "Wei Dai posts b-money, a design for anonymous electronic cash in which participants keep the ledger and create money by solving computational problems. The Bitcoin white paper cites it as its first reference.",
+   "what_th": "Wei Dai เผยแพร่ b-money แบบร่างของเงินสดอิเล็กทรอนิกส์ที่ไม่ระบุตัวตน ซึ่งผู้เข้าร่วมเป็นผู้เก็บบัญชีธุรกรรม (ledger) ร่วมกัน และสร้างเงินขึ้นใหม่ด้วยการแก้โจทย์คำนวณ white paper ของบิตคอยน์อ้างถึง b-money เป็นเอกสารอ้างอิงลำดับแรก",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "b-money",
+     "url": "http://www.weidai.com/bmoney.txt",
+     "publisher": "weidai.com",
+     "date": "1998"
+    },
+    {
+     "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+     "url": "https://bitcoin.org/bitcoin.pdf",
+     "publisher": "bitcoin.org",
+     "date": "2008-10-31"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2005-12",
+   "era": "prehistory",
+   "title": "Bit gold",
+   "title_th": "Bit gold",
+   "what": "Nick Szabo writes up bit gold, a chain of proof-of-work puzzles whose solutions are time-stamped and owned through a registry. He first proposed it in 1998.",
+   "what_th": "Nick Szabo เขียนอธิบาย bit gold ซึ่งเป็นห่วงโซ่ของโจทย์ proof of work ที่คำตอบแต่ละข้อถูกประทับเวลา และบันทึกความเป็นเจ้าของไว้ในทะเบียน เขาเสนอแนวคิดนี้ครั้งแรกในปี 1998",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bit gold",
+     "url": "https://unenumerated.blogspot.com/2005/12/bit-gold.html",
+     "publisher": "Unenumerated (Nick Szabo)",
+     "date": "2005-12"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2008-10-31",
+   "era": "genesis",
+   "title": "Bitcoin white paper",
+   "title_th": "White paper ของบิตคอยน์",
+   "what": "Satoshi Nakamoto sends 'Bitcoin: A Peer-to-Peer Electronic Cash System' to the Cryptography mailing list: a 9-page design for digital cash with no bank, using proof of work to order transactions.",
+   "what_th": "Satoshi Nakamoto (ซาโตชิ นากาโมโตะ) ส่งเอกสาร 'Bitcoin: A Peer-to-Peer Electronic Cash System' ไปยังเมลลิงลิสต์ Cryptography เป็นแบบร่างความยาว 9 หน้าของเงินสดดิจิทัลที่ไม่ต้องพึ่งธนาคาร โดยใช้ proof of work เรียงลำดับธุรกรรม",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin P2P e-cash paper",
+     "url": "https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html",
+     "publisher": "Cryptography mailing list",
+     "date": "2008-10-31"
+    },
+    {
+     "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+     "url": "https://bitcoin.org/bitcoin.pdf",
+     "publisher": "bitcoin.org",
+     "date": "2008-10-31"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2009-01-03",
+   "era": "genesis",
+   "title": "Genesis block",
+   "title_th": "บล็อกแรก (Genesis block)",
+   "what": "Nakamoto mines block 0 at 18:15:05 UTC with a reward of 50 BTC. Its coinbase text quotes a Times headline: 'Chancellor on brink of second bailout for banks'.",
+   "what_th": "Nakamoto ขุดบล็อก 0 เมื่อเวลา 18:15:05 UTC ได้รางวัล 50 BTC ข้อความในธุรกรรม coinbase ของบล็อกนี้ยกพาดหัวข่าวของหนังสือพิมพ์ The Times ว่า 'Chancellor on brink of second bailout for banks' (รัฐมนตรีคลังใกล้ต้องอัดฉีดเงินช่วยธนาคารเป็นรอบที่สอง)",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 0",
+     "url": "https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+     "publisher": "mempool.space",
+     "date": "2009-01-03"
+    },
+    {
+     "title": "History of bitcoin",
+     "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2009-01-12",
+   "era": "genesis",
+   "title": "First bitcoin transaction",
+   "title_th": "ธุรกรรมบิตคอยน์ครั้งแรก",
+   "what": "Hal Finney receives 10 BTC from Nakamoto in block 170, the first transfer of bitcoin between two people.",
+   "what_th": "Hal Finney ได้รับ 10 BTC จาก Nakamoto ในบล็อก 170 นับเป็นการโอนบิตคอยน์ระหว่างคนสองคนเป็นครั้งแรก",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 170",
+     "url": "https://mempool.space/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee",
+     "publisher": "mempool.space",
+     "date": "2009-01-12"
+    },
+    {
+     "title": "History of bitcoin",
+     "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2010-05-22",
+   "era": "genesis",
+   "title": "Bitcoin Pizza Day",
+   "title_th": "Bitcoin Pizza Day (วันพิซซ่าบิตคอยน์)",
+   "what": "Laszlo Hanyecz pays 10,000 BTC for two pizzas, the first widely cited purchase of goods with bitcoin. He posts the offer on 18 May and confirms the trade on 22 May.",
+   "what_th": "Laszlo Hanyecz จ่าย 10,000 BTC แลกพิซซ่าสองถาด ซึ่งเป็นการซื้อสินค้าด้วยบิตคอยน์ครั้งแรกที่ถูกอ้างถึงกันแพร่หลาย เขาโพสต์ข้อเสนอเมื่อวันที่ 18 พฤษภาคม และยืนยันการแลกเปลี่ยนเมื่อวันที่ 22 พฤษภาคม",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Pizza for bitcoins?",
+     "url": "https://bitcointalk.org/index.php?topic=137.0",
+     "publisher": "Bitcointalk",
+     "date": "2010-05-22"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2012-11-28",
+   "era": "genesis",
+   "title": "First halving",
+   "title_th": "Halving ครั้งแรก",
+   "what": "Block 210,000 cuts the new-coin reward per block from 50 BTC to 25 BTC. Halvings repeat every 210,000 blocks, about every four years.",
+   "what_th": "บล็อกที่ 210,000 ลดรางวัลเหรียญใหม่ต่อบล็อกจาก 50 BTC เหลือ 25 BTC การลดรางวัลลงครึ่งหนึ่ง (halving) เกิดขึ้นซ้ำทุก 210,000 บล็อก หรือราวทุกสี่ปี",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 210,000",
+     "url": "https://mempool.space/block/000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e",
+     "publisher": "mempool.space",
+     "date": "2012-11-28"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2013-10-01",
+   "era": "genesis",
+   "title": "Silk Road shut down",
+   "title_th": "การปิด Silk Road",
+   "what": "The FBI arrests Ross Ulbricht in San Francisco and closes Silk Road, a dark-web drug market that took bitcoin, seizing roughly 26,000 BTC.",
+   "what_th": "FBI จับกุม Ross Ulbricht ที่ซานฟรานซิสโก และปิด Silk Road ตลาดค้ายาเสพติดบนดาร์กเว็บที่รับชำระด้วยบิตคอยน์ พร้อมยึดบิตคอยน์ได้ราว 26,000 BTC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Silk Road (marketplace)",
+     "url": "https://en.wikipedia.org/wiki/Silk_Road_(marketplace)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "How the feds took down the Dread Pirate Roberts",
+     "url": "https://arstechnica.com/tech-policy/2013/10/how-the-feds-took-down-the-dread-pirate-roberts/",
+     "publisher": "Ars Technica",
+     "date": "2013-10-03"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2014-02-28",
+   "era": "genesis",
+   "title": "Mt. Gox collapse",
+   "title_th": "การล่มสลายของ Mt. Gox",
+   "what": "Mt. Gox, then the largest bitcoin exchange, files for bankruptcy protection in Tokyo after reporting about 850,000 BTC missing. In March it says it found 199,999.99 BTC in an old wallet, cutting the loss to about 650,000 BTC.",
+   "what_th": "Mt. Gox ซึ่งขณะนั้นเป็นศูนย์ซื้อขายบิตคอยน์ที่ใหญ่ที่สุด ยื่นขอความคุ้มครองจากการล้มละลายที่โตเกียว หลังรายงานว่าบิตคอยน์หายไปราว 850,000 BTC ในเดือนมีนาคม บริษัทแจ้งว่าพบ 199,999.99 BTC ในกระเป๋าสินทรัพย์ดิจิทัลเก่า ทำให้ความเสียหายลดลงเหลือราว 650,000 BTC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Mt. Gox Files for Bankruptcy",
+     "url": "https://dealbook.nytimes.com/2014/02/28/mt-gox-files-for-bankruptcy/",
+     "publisher": "The New York Times",
+     "date": "2014-02-28"
+    },
+    {
+     "title": "Announcement regarding the balance of Bitcoin held by the company",
+     "url": "https://www.mtgox.com/img/pdf/20140320-btc-announce.pdf",
+     "publisher": "MtGox",
+     "date": "2014-03-20"
+    },
+    {
+     "title": "Mt. Gox",
+     "url": "https://en.wikipedia.org/wiki/Mt._Gox",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2011-10",
+   "era": "altcoins",
+   "title": "Litecoin",
+   "title_th": "Litecoin",
+   "what": "Charlie Lee announces Litecoin, 'a lite version of Bitcoin', one of the first coins built from Bitcoin's code.",
+   "what_th": "Charlie Lee ประกาศเปิดตัว Litecoin 'บิตคอยน์ฉบับเบา' (a lite version of Bitcoin) ซึ่งเป็นหนึ่งในเหรียญแรก ๆ ที่สร้างจากโค้ดของบิตคอยน์",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "[ANN] Litecoin - a lite version of Bitcoin. Launched!",
+     "url": "https://bitcointalk.org/index.php?topic=47417.0",
+     "publisher": "Bitcointalk",
+     "date": "2011-10"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2013-12",
+   "era": "altcoins",
+   "title": "Dogecoin",
+   "title_th": "Dogecoin",
+   "what": "Dogecoin, a coin named after the 'doge' dog meme, is announced on Bitcointalk.",
+   "what_th": "Dogecoin เหรียญที่ตั้งชื่อตามมีมสุนัข 'doge' ประกาศเปิดตัวบน Bitcointalk",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "[ANN][DOGE] Dogecoin - very currency many coin",
+     "url": "https://bitcointalk.org/index.php?topic=361813.0",
+     "publisher": "Bitcointalk",
+     "date": "2013-12"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2014-07",
+   "era": "altcoins",
+   "title": "Realcoin, later Tether",
+   "title_th": "Realcoin ต่อมาคือ Tether",
+   "what": "A Santa Monica startup announces Realcoin, a token meant to hold a steady value of one US dollar. It issues the first tokens on 6 October 2014 on the Bitcoin blockchain and renames itself Tether on 20 November 2014.",
+   "what_th": "สตาร์ทอัพในซานตาโมนิกาประกาศเปิดตัว Realcoin โทเคนดิจิทัลที่ออกแบบให้มีมูลค่าคงที่ 1 ดอลลาร์สหรัฐ บริษัทออกโทเคนชุดแรกเมื่อวันที่ 6 ตุลาคม 2014 บนบล็อกเชนของบิตคอยน์ และเปลี่ยนชื่อเป็น Tether เมื่อวันที่ 20 พฤศจิกายน 2014",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Tether (cryptocurrency)",
+     "url": "https://en.wikipedia.org/wiki/Tether_(cryptocurrency)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2015-07-30",
+   "era": "altcoins",
+   "title": "Ethereum launches",
+   "title_th": "อีเธอเรียมเปิดตัว",
+   "what": "Ethereum's Frontier release goes live. Conceived by Vitalik Buterin in a 2013 white paper, it adds programs (smart contracts) that run on the blockchain itself.",
+   "what_th": "อีเธอเรียมรุ่น Frontier เริ่มใช้งานจริง อีเธอเรียมเป็นแนวคิดของ Vitalik Buterin (วิทาลิก บูเทริน) จาก white paper ปี 2013 และเพิ่มความสามารถให้โปรแกรม (สัญญาอัจฉริยะ หรือ smart contract) ทำงานบนตัวบล็อกเชนได้โดยตรง",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Ethereum Launches",
+     "url": "https://blog.ethereum.org/2015/07/30/ethereum-launches",
+     "publisher": "Ethereum Foundation Blog",
+     "date": "2015-07-30"
+    },
+    {
+     "title": "Ethereum Whitepaper",
+     "url": "https://ethereum.org/en/whitepaper/",
+     "publisher": "ethereum.org",
+     "date": "2013"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2016-06-17",
+   "era": "altcoins",
+   "title": "The DAO hack",
+   "title_th": "การแฮก The DAO",
+   "what": "An attacker uses a flaw in The DAO, an Ethereum-based investment fund that had raised the equivalent of $120 million, to move out about one-third of its funds, then worth about $50 million.",
+   "what_th": "ผู้โจมตีใช้ช่องโหว่ใน The DAO กองทุนลงทุนที่ทำงานบนอีเธอเรียมและระดมทุนได้เทียบเท่า 120 ล้านดอลลาร์สหรัฐ ย้ายเงินออกไปราวหนึ่งในสามของกองทุน ซึ่งขณะนั้นมีมูลค่าราว 50 ล้านดอลลาร์สหรัฐ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Digital currency Ethereum is cratering amid claims of a $50 million hack",
+     "url": "https://www.businessinsider.com/dao-hacked-ethereum-crashing-in-value-tens-of-millions-allegedly-stolen-2016-6",
+     "publisher": "Business Insider",
+     "date": "2016-06-17"
+    },
+    {
+     "title": "Automated company raises equivalent of $120M in digital currency",
+     "url": "https://www.cnbc.com/2016/05/17/automated-company-raises-equivalent-of-120-million-in-digital-currency.html",
+     "publisher": "CNBC / Financial Times",
+     "date": "2016-05-17"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2016-07-09",
+   "era": "altcoins",
+   "title": "Second halving",
+   "title_th": "Halving ครั้งที่ 2",
+   "what": "Block 420,000 cuts the block reward from 25 BTC to 12.5 BTC.",
+   "what_th": "บล็อกที่ 420,000 ลดรางวัลต่อบล็อกจาก 25 BTC เหลือ 12.5 BTC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 420,000",
+     "url": "https://mempool.space/block/000000000000000002cce816c0ab2c5c269cb081896b7dcb34b8422d6b74ffa1",
+     "publisher": "mempool.space",
+     "date": "2016-07-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2016-07-20",
+   "era": "altcoins",
+   "title": "Ethereum hard fork after The DAO",
+   "title_th": "อีเธอเรียม hard fork หลังเหตุ The DAO",
+   "what": "Ethereum changes its rules to return The DAO's funds. The unchanged chain carries on as Ethereum Classic.",
+   "what_th": "อีเธอเรียมเปลี่ยนกฎของเครือข่ายเพื่อคืนเงินของ The DAO ส่วนเชนเดิมที่ไม่เปลี่ยนกฎยังดำเนินต่อไปในชื่อ Ethereum Classic",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Hard Fork Completed",
+     "url": "https://blog.ethereum.org/2016/07/20/hard-fork-completed",
+     "publisher": "Ethereum Foundation Blog",
+     "date": "2016-07-20"
+    },
+    {
+     "title": "The DAO",
+     "url": "https://en.wikipedia.org/wiki/The_DAO",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2017-07-25",
+   "era": "ico",
+   "title": "SEC report on The DAO",
+   "title_th": "รายงานของ ก.ล.ต. สหรัฐฯ เรื่อง The DAO",
+   "what": "The US Securities and Exchange Commission finds that DAO tokens were securities, signalling that tokens sold in initial coin offerings (ICOs) can fall under securities law.",
+   "what_th": "คณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์สหรัฐฯ (SEC) สรุปว่าโทเคนของ The DAO เป็นหลักทรัพย์ เป็นสัญญาณว่าโทเคนที่ขายผ่านการเสนอขายเหรียญครั้งแรก (ICO) อาจอยู่ภายใต้กฎหมายหลักทรัพย์ได้",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Report of Investigation Pursuant to Section 21(a) of the Securities Exchange Act of 1934: The DAO",
+     "url": "https://www.sec.gov/litigation/investreport/34-81207.pdf",
+     "publisher": "US SEC",
+     "date": "2017-07-25"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2017-08-01",
+   "era": "ico",
+   "title": "Bitcoin Cash split and SegWit",
+   "title_th": "Bitcoin Cash แยกตัว และ SegWit",
+   "what": "After a dispute over block size, Bitcoin Cash splits from Bitcoin after block 478,558 and starts trading near $240 while bitcoin is near $2,700. SegWit, a soft fork that moves signature data out of the base block, activates on 24 August at block 481,824.",
+   "what_th": "หลังข้อพิพาทเรื่องขนาดบล็อก Bitcoin Cash แยกตัวออกจากบิตคอยน์หลังบล็อกที่ 478,558 และเริ่มซื้อขายที่ราว 240 ดอลลาร์สหรัฐ ขณะที่บิตคอยน์อยู่ที่ราว 2,700 ดอลลาร์สหรัฐ ส่วน SegWit ซึ่งเป็น soft fork ที่ย้ายข้อมูลลายเซ็นออกจากส่วนฐานของบล็อก เริ่มใช้งานเมื่อวันที่ 24 สิงหาคม ที่บล็อก 481,824",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin Cash",
+     "url": "https://en.wikipedia.org/wiki/Bitcoin_Cash",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "BIP 141: Segregated Witness",
+     "url": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+     "publisher": "Bitcoin BIPs repository",
+     "date": "2015-12"
+    },
+    {
+     "title": "Bitcoin block 481,824",
+     "url": "https://mempool.space/block/0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893",
+     "publisher": "mempool.space",
+     "date": "2017-08-24"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2017-09-04",
+   "era": "ico",
+   "title": "China bans ICOs",
+   "title_th": "จีนห้าม ICO",
+   "what": "China's central bank bans ICO fundraising and orders platforms to refund investors.",
+   "what_th": "ธนาคารกลางจีนสั่งห้ามการระดมทุนแบบ ICO และสั่งให้แพลตฟอร์มคืนเงินแก่ผู้ลงทุน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "China bans ICO fundraising, orders platforms to refund investors",
+     "url": "https://www.reuters.com/article/us-china-bitcoin-ico-idUSKCN1BI0N9",
+     "publisher": "Reuters",
+     "date": "2017-09-04"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2017-11",
+   "era": "ico",
+   "title": "CryptoKitties and the NFT standard",
+   "title_th": "CryptoKitties และมาตรฐาน NFT",
+   "what": "CryptoKitties launches on Ethereum using an early form of ERC-721, the standard for non-fungible tokens (NFTs), tokens that are each unique.",
+   "what_th": "CryptoKitties เปิดตัวบนอีเธอเรียม โดยใช้ ERC-721 ในรูปแบบแรกเริ่ม ซึ่งเป็นมาตรฐานของโทเคนที่ทดแทนกันไม่ได้ (NFT) คือโทเคนที่แต่ละชิ้นไม่ซ้ำกัน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Non-fungible token",
+     "url": "https://en.wikipedia.org/wiki/Non-fungible_token",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2017-12-17",
+   "era": "ico",
+   "title": "Bitcoin tops $20,000",
+   "title_th": "บิตคอยน์ทะลุ 20,000 ดอลลาร์สหรัฐ",
+   "what": "At the height of the ICO boom bitcoin reaches $20,089 intraday on CoinMarketCap data, up from under $1,000 at the start of 2017.",
+   "what_th": "ในช่วงที่กระแส ICO ขึ้นถึงจุดสูงสุด บิตคอยน์แตะ 20,089 ดอลลาร์สหรัฐระหว่างวัน ตามข้อมูลของ CoinMarketCap เพิ่มขึ้นจากต่ำกว่า 1,000 ดอลลาร์สหรัฐเมื่อต้นปี 2017",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2018-01-26",
+   "era": "ico",
+   "title": "Coincheck hack",
+   "title_th": "การแฮก Coincheck",
+   "what": "Hackers take about 500 million NEM tokens, worth about $530 million, from Tokyo exchange Coincheck. Japan's regulator orders checks across the industry.",
+   "what_th": "แฮกเกอร์ขโมยโทเคน NEM ราว 500 ล้านโทเคน มูลค่าราว 530 ล้านดอลลาร์สหรัฐ ไปจาก Coincheck ศูนย์ซื้อขายสินทรัพย์ดิจิทัลในโตเกียว หน่วยงานกำกับดูแลของญี่ปุ่นสั่งตรวจสอบทั่วทั้งอุตสาหกรรม",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Japan raps Coincheck, orders broader checks after $530 million cryptocurrency theft",
+     "url": "https://www.reuters.com/article/us-japan-cryptocurrency/japan-raps-coincheck-orders-broader-checks-after-530-million-cryptocurrency-theft-idUSKBN1FI06S",
+     "publisher": "Reuters",
+     "date": "2018-01-28"
+    },
+    {
+     "title": "Coincheck",
+     "url": "https://en.wikipedia.org/wiki/Coincheck",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2018-02",
+   "era": "ico",
+   "title": "Bitkub founded",
+   "title_th": "ก่อตั้ง Bitkub",
+   "what": "Jirayut Srupsrisopa founds Bitkub in Bangkok with registered capital of 50 million baht. In January 2019 it is one of the first four exchanges licensed by the Thai SEC, with Bx, Coins and Satang Pro.",
+   "what_th": "Jirayut Srupsrisopa (จิรายุส ทรัพย์ศรีโสภา) ก่อตั้ง Bitkub ในกรุงเทพฯ ด้วยทุนจดทะเบียน 50 ล้านบาท ในเดือนมกราคม 2019 Bitkub เป็นหนึ่งในศูนย์ซื้อขายสินทรัพย์ดิจิทัลสี่รายแรกที่ได้รับใบอนุญาตจาก ก.ล.ต. ร่วมกับ Bx, Coins และ Satang Pro",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Bitkub",
+     "url": "https://en.wikipedia.org/wiki/Bitkub",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "Thailand issues its first licenses to 4 crypto exchanges",
+     "url": "https://techcrunch.com/2019/01/09/thailand-crypto-exchange-license/",
+     "publisher": "TechCrunch",
+     "date": "2019-01-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2018-05",
+   "era": "ico",
+   "title": "Thailand's digital asset decree",
+   "title_th": "พ.ร.ก. สินทรัพย์ดิจิทัลของไทย",
+   "what": "Thailand's Emergency Decree on Digital Asset Businesses B.E. 2561 (2018), given on 10 May 2018, takes effect the day after its Royal Gazette publication. It requires SEC licences for digital asset exchanges, brokers and dealers, and covers token offerings.",
+   "what_th": "พระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล พ.ศ. 2561 (2018) ซึ่งให้ไว้ ณ วันที่ 10 พฤษภาคม 2018 มีผลใช้บังคับตั้งแต่วันถัดจากวันประกาศในราชกิจจานุเบกษา กำหนดให้ศูนย์ซื้อขาย นายหน้า และผู้ค้าสินทรัพย์ดิจิทัลต้องได้รับใบอนุญาตภายใต้ ก.ล.ต. และครอบคลุมการเสนอขายโทเคนดิจิทัลด้วย",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Emergency Decree on Digital Asset Businesses B.E. 2561 (2018) (unofficial translation, as amended)",
+     "url": "https://www.sec.or.th/EN/Documents/ActandRoyalEnactment/RoyalEnactment/enactment-digitalasset2018.pdf",
+     "publisher": "Thai SEC",
+     "date": "2018-05-10"
+    },
+    {
+     "title": "Digital Asset Business Operators",
+     "url": "https://www.sec.or.th/EN/Pages/LawandRegulations/DigitalAssetBusiness.aspx",
+     "publisher": "Thai SEC",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2018-09",
+   "era": "ico",
+   "title": "USDC launches",
+   "title_th": "USDC เปิดตัว",
+   "what": "Circle and Coinbase launch USD Coin (USDC), a stablecoin pegged to the US dollar, through their joint Centre consortium.",
+   "what_th": "Circle และ Coinbase เปิดตัว USD Coin (USDC) สเตเบิลคอยน์ที่ตรึงมูลค่าไว้กับดอลลาร์สหรัฐ ผ่านกลุ่มความร่วมมือ Centre ที่ทั้งสองบริษัทตั้งขึ้นร่วมกัน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Cryptocurrency giants Coinbase and Circle form a joint venture to boost adoption of dollar-backed stable coins",
+     "url": "https://www.cnbc.com/2018/10/23/cryptocurrency-giants-coinbase-and-circle-form-a-joint-venture-to-boost-adoption-of-dollar-backed-stable-coins.html",
+     "publisher": "CNBC",
+     "date": "2018-10-23"
+    },
+    {
+     "title": "USDC (cryptocurrency)",
+     "url": "https://en.wikipedia.org/wiki/USDC_(cryptocurrency)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2018-12-15",
+   "era": "ico",
+   "title": "Crypto winter bottom",
+   "title_th": "จุดต่ำสุดของฤดูหนาวคริปโต (crypto winter)",
+   "what": "Bitcoin falls to $3,191 (CoinMarketCap daily low), about 84% below its December 2017 high.",
+   "what_th": "บิตคอยน์ลดลงไปที่ 3,191 ดอลลาร์สหรัฐ (ราคาต่ำสุดรายวันของ CoinMarketCap) ต่ำกว่าจุดสูงสุดเมื่อเดือนธันวาคม 2017 ราว 84%",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2019-06-18",
+   "era": "ico",
+   "title": "Facebook announces Libra",
+   "title_th": "Facebook ประกาศโครงการ Libra",
+   "what": "Facebook announces Libra, a planned global stablecoin, with a wallet called Calibra. Regulators push back; renamed Diem, the project shuts down in January 2022 and its assets go to Silvergate.",
+   "what_th": "Facebook ประกาศแผนออก Libra สเตเบิลคอยน์ระดับโลก พร้อมกระเป๋าสินทรัพย์ดิจิทัลชื่อ Calibra หน่วยงานกำกับดูแลคัดค้าน โครงการเปลี่ยนชื่อเป็น Diem และปิดตัวลงในเดือนมกราคม 2022 โดยสินทรัพย์ของโครงการตกไปอยู่กับ Silvergate",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Facebook's Calibra cryptocurrency wallet launches in 2020",
+     "url": "https://www.engadget.com/2019/06/18/facebook-calibra-libra-cryptocurrency-digital-wallet/",
+     "publisher": "Engadget",
+     "date": "2019-06-18"
+    },
+    {
+     "title": "Diem (digital currency)",
+     "url": "https://en.wikipedia.org/wiki/Diem_(digital_currency)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2020-05-11",
+   "era": "defi",
+   "title": "Third halving",
+   "title_th": "Halving ครั้งที่ 3",
+   "what": "Block 630,000 cuts the block reward from 12.5 BTC to 6.25 BTC.",
+   "what_th": "บล็อกที่ 630,000 ลดรางวัลต่อบล็อกจาก 12.5 BTC เหลือ 6.25 BTC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 630,000",
+     "url": "https://mempool.space/block/000000000000000000024bead8df69990852c202db0e0097c1a12ea637d7e96d",
+     "publisher": "mempool.space",
+     "date": "2020-05-11"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2020-06",
+   "era": "defi",
+   "title": "DeFi summer",
+   "title_th": "DeFi summer (ฤดูร้อนของ DeFi)",
+   "what": "Compound, a lending protocol, starts paying its COMP token to lenders and borrowers, setting off a rush into decentralized finance (DeFi): lending and trading apps that run as smart contracts.",
+   "what_th": "Compound โปรโตคอลกู้ยืม เริ่มจ่ายโทเคน COMP ให้ผู้ให้กู้และผู้กู้ จุดกระแสแห่เข้าสู่การเงินแบบกระจายศูนย์ (DeFi) ซึ่งเป็นแอปกู้ยืมและซื้อขายที่ทำงานในรูปของสัญญาอัจฉริยะ (smart contract)",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Decentralized finance",
+     "url": "https://en.wikipedia.org/wiki/Decentralized_finance",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "Decentralized Finance: On Blockchain- and Smart Contract-Based Financial Markets",
+     "url": "https://www.stlouisfed.org/publications/review/2021/02/05/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets",
+     "publisher": "Federal Reserve Bank of St. Louis Review",
+     "date": "2021"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2020-08-11",
+   "era": "defi",
+   "title": "MicroStrategy buys bitcoin",
+   "title_th": "MicroStrategy ซื้อบิตคอยน์",
+   "what": "Software firm MicroStrategy (now Strategy) buys 21,454 BTC for $250 million and makes bitcoin its main treasury reserve asset, the start of company bitcoin treasuries.",
+   "what_th": "MicroStrategy (ปัจจุบันคือ Strategy) บริษัทซอฟต์แวร์ ซื้อ 21,454 BTC ด้วยเงิน 250 ล้านดอลลาร์สหรัฐ และให้บิตคอยน์เป็นสินทรัพย์สำรองหลักในคลังของบริษัท ถือเป็นจุดเริ่มต้นของการที่บริษัทต่าง ๆ ถือบิตคอยน์เป็นทุนสำรอง",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "MicroStrategy Adopts Bitcoin as Primary Treasury Reserve Asset",
+     "url": "https://www.microstrategy.com/press/microstrategy-adopts-bitcoin-as-primary-treasury-reserve-asset_08-11-2020",
+     "publisher": "MicroStrategy",
+     "date": "2020-08-11"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2021-03-11",
+   "era": "defi",
+   "title": "Beeple NFT sells for $69.3 million",
+   "title_th": "NFT ของ Beeple ขายได้ 69.3 ล้านดอลลาร์สหรัฐ",
+   "what": "Christie's sells Beeple's NFT artwork 'Everydays: the First 5000 Days' for $69.3 million.",
+   "what_th": "Christie's ขายผลงาน NFT ของ Beeple ชื่อ 'Everydays: the First 5000 Days' ในราคา 69.3 ล้านดอลลาร์สหรัฐ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Beeple NFT Sells For $69.3 Million, Becoming Most-Expensive Ever",
+     "url": "https://www.forbes.com/sites/abrambrown/2021/03/11/beeple-art-sells-for-693-million-becoming-most-expensive-nft-ever/",
+     "publisher": "Forbes",
+     "date": "2021-03-11"
+    },
+    {
+     "title": "Everydays: the First 5000 Days",
+     "url": "https://en.wikipedia.org/wiki/Everydays:_the_First_5000_Days",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2021-06-09",
+   "era": "defi",
+   "title": "El Salvador makes bitcoin legal tender",
+   "title_th": "เอลซัลวาดอร์ให้บิตคอยน์เป็นเงินที่ชำระหนี้ได้ตามกฎหมาย",
+   "what": "El Salvador's Legislative Assembly votes 62 of 84 to make bitcoin legal tender. The law takes effect on 7 September 2021; the government buys 400 BTC, worth about $20.9 million, the day before.",
+   "what_th": "สภานิติบัญญัติของเอลซัลวาดอร์ลงมติ 62 จาก 84 เสียง ให้บิตคอยน์เป็นเงินที่ชำระหนี้ได้ตามกฎหมาย กฎหมายมีผลบังคับใช้เมื่อวันที่ 7 กันยายน 2021 โดยรัฐบาลซื้อ 400 BTC มูลค่าราว 20.9 ล้านดอลลาร์สหรัฐ ในวันก่อนหน้า",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin in El Salvador",
+     "url": "https://en.wikipedia.org/wiki/Bitcoin_in_El_Salvador",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "El Salvador bought $21 million of bitcoin as it becomes first country to make it a legal currency",
+     "url": "https://www.cnbc.com/2021/09/07/el-salvador-buys-400-bitcoin-ahead-of-law-making-it-legal-currency.html",
+     "publisher": "CNBC",
+     "date": "2021-09-07"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2021-11-10",
+   "era": "defi",
+   "title": "2021 bitcoin peak",
+   "title_th": "จุดสูงสุดของบิตคอยน์ปี 2021",
+   "what": "Bitcoin reaches $68,789.63 intraday on CoinMarketCap data, the high of the 2020-2021 cycle.",
+   "what_th": "บิตคอยน์แตะ 68,789.63 ดอลลาร์สหรัฐระหว่างวัน ตามข้อมูลของ CoinMarketCap เป็นจุดสูงสุดของรอบปี 2020-2021",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2021-11-14",
+   "era": "defi",
+   "title": "Taproot activates",
+   "title_th": "Taproot เริ่มใช้งาน",
+   "what": "The Taproot soft fork activates at block 709,632, adding Schnorr signatures and cheaper, more private complex spending rules.",
+   "what_th": "Taproot ซึ่งเป็น soft fork เริ่มใช้งานที่บล็อก 709,632 เพิ่มลายเซ็นแบบ Schnorr และทำให้เงื่อนไขการใช้จ่ายที่ซับซ้อนมีต้นทุนถูกลงและเป็นส่วนตัวมากขึ้น",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 709,632",
+     "url": "https://mempool.space/block/0000000000000000000687bca986194dc2c1f949318629b44bb54ec0a94d8244",
+     "publisher": "mempool.space",
+     "date": "2021-11-14"
+    },
+    {
+     "title": "BIP 341: Taproot",
+     "url": "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+     "publisher": "Bitcoin BIPs repository",
+     "date": "2020-01"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-03-23",
+   "era": "crash",
+   "title": "Thailand bars crypto as payment",
+   "title_th": "ไทยห้ามใช้คริปโตชำระค่าสินค้าและบริการ",
+   "what": "Thailand's SEC bars licensed digital asset businesses from offering crypto as payment for goods and services from 1 April 2022; trading and holding stay legal. Thais' digital asset holdings stand at 114.5 billion baht, up from 9.6 billion baht two years earlier.",
+   "what_th": "ก.ล.ต. ห้ามผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ได้รับใบอนุญาตให้บริการใช้คริปโตชำระค่าสินค้าและบริการ ตั้งแต่วันที่ 1 เมษายน 2022 ส่วนการซื้อขายและการถือครองยังทำได้ตามกฎหมาย มูลค่าสินทรัพย์ดิจิทัลที่คนไทยถือครองอยู่ที่ 114.5 พันล้านบาท เพิ่มขึ้นจาก 9.6 พันล้านบาทเมื่อสองปีก่อน",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Govt bars use of cryptocurrencies as method of payment",
+     "url": "https://www.bangkokpost.com/business/2283918/govt-bars-use-of-cryptocurrencies-as-method-of-payment",
+     "publisher": "Bangkok Post",
+     "date": "2022-03-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-05",
+   "era": "crash",
+   "title": "Terra and LUNA collapse",
+   "title_th": "การล่มสลายของ Terra และ LUNA",
+   "what": "TerraUSD, an algorithmic stablecoin, loses its dollar peg and its sister token LUNA collapses, wiping out almost $45 billion of market value in a week.",
+   "what_th": "TerraUSD สเตเบิลคอยน์แบบอัลกอริทึม หลุดการตรึงมูลค่ากับดอลลาร์ และ LUNA ซึ่งเป็นโทเคนคู่กันก็ล่มตามไป มูลค่าตลาดหายไปเกือบ 45 พันล้านดอลลาร์สหรัฐภายในหนึ่งสัปดาห์",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Terra $45 Billion Face Plant Creates Crowd of Crypto Losers",
+     "url": "https://www.bloomberg.com/news/articles/2022-05-14/terra-s-45-billion-face-plant-creates-a-crowd-of-crypto-losers",
+     "publisher": "Bloomberg",
+     "date": "2022-05-13"
+    },
+    {
+     "title": "Terra (blockchain)",
+     "url": "https://en.wikipedia.org/wiki/Terra_(blockchain)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-06-12",
+   "era": "crash",
+   "title": "Celsius freezes withdrawals",
+   "title_th": "Celsius ระงับการถอน",
+   "what": "Crypto lender Celsius pauses all withdrawals and transfers, citing 'extreme market conditions', and files for Chapter 11 bankruptcy on 13 July 2022.",
+   "what_th": "Celsius ผู้ให้กู้ยืมคริปโต ระงับการถอนและการโอนทั้งหมด โดยอ้าง 'สภาวะตลาดที่รุนแรงสุดขีด' และยื่นล้มละลายตาม Chapter 11 เมื่อวันที่ 13 กรกฎาคม 2022",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Crypto firm Celsius pauses all transfers, withdrawals as markets tumble",
+     "url": "https://finance.yahoo.com/news/crypto-firm-celsius-pauses-transfers-032204607.html",
+     "publisher": "Reuters via Yahoo Finance",
+     "date": "2022-06-13"
+    },
+    {
+     "title": "Crypto Crash Drags Lender Celsius Network Into Bankruptcy",
+     "url": "https://www.wsj.com/articles/crypto-crash-drags-lender-celsius-network-into-bankruptcy-11657758483",
+     "publisher": "The Wall Street Journal",
+     "date": "2022-07-14"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-07-20",
+   "era": "crash",
+   "title": "Zipmex freezes withdrawals",
+   "title_th": "Zipmex ระงับการถอน",
+   "what": "Zipmex, a Singapore-based exchange with a large Thai business, suspends withdrawals, citing $53 million of exposure to troubled partners Babel Finance and Celsius. Thai withdrawals resume late the same day except from one investment product.",
+   "what_th": "Zipmex ศูนย์ซื้อขายสินทรัพย์ดิจิทัลที่มีฐานในสิงคโปร์และมีธุรกิจขนาดใหญ่ในไทย ระงับการถอน โดยระบุว่ามีเงิน 53 ล้านดอลลาร์สหรัฐผูกอยู่กับพันธมิตรที่มีปัญหา คือ Babel Finance และ Celsius การถอนในไทยกลับมาเปิดได้ในช่วงดึกของวันเดียวกัน ยกเว้นการถอนจากผลิตภัณฑ์ลงทุนหนึ่งรายการ",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Southeast Asian crypto exchange Zipmex suspends withdrawals amid crypto turmoil",
+     "url": "https://www.reuters.com/technology/southeast-asian-crypto-exchange-zipmex-suspends-withdrawals-amid-crypto-turmoil-2022-07-21/",
+     "publisher": "Reuters",
+     "date": "2022-07-21"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-09-15",
+   "era": "crash",
+   "title": "The Merge",
+   "title_th": "The Merge",
+   "what": "Ethereum switches from proof-of-work mining to proof of stake. Its energy use drops by an estimated 99.95%.",
+   "what_th": "อีเธอเรียมเปลี่ยนจากการขุดแบบ proof of work มาเป็น proof of stake คาดว่าการใช้พลังงานลดลง 99.95%",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "The Merge",
+     "url": "https://ethereum.org/en/roadmap/merge/",
+     "publisher": "ethereum.org",
+     "date": "2022-09-15"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-11-11",
+   "era": "crash",
+   "title": "FTX bankruptcy",
+   "title_th": "FTX ล้มละลาย",
+   "what": "A 2 November CoinDesk report on Alameda Research's balance sheet sets off about $6 billion of withdrawals from FTX in 72 hours. On 11 November FTX, Alameda and over 100 affiliates file for bankruptcy.",
+   "what_th": "รายงานของ CoinDesk เมื่อวันที่ 2 พฤศจิกายน เกี่ยวกับงบดุลของ Alameda Research ทำให้เกิดการถอนเงินออกจาก FTX ราว 6 พันล้านดอลลาร์สหรัฐภายใน 72 ชั่วโมง วันที่ 11 พฤศจิกายน FTX, Alameda และบริษัทในเครือกว่า 100 แห่งยื่นล้มละลาย",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Divisions in Sam Bankman-Fried's Crypto Empire Blur on His Trading Titan Alameda's Balance Sheet",
+     "url": "https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/",
+     "publisher": "CoinDesk",
+     "date": "2022-11-02"
+    },
+    {
+     "title": "Crypto exchange FTX saw $6 bln in withdrawals in 72 hours",
+     "url": "https://www.reuters.com/business/finance/crypto-exchange-ftx-saw-6-bln-withdrawals-72-hours-ceo-message-staff-2022-11-08/",
+     "publisher": "Reuters",
+     "date": "2022-11-08"
+    },
+    {
+     "title": "Bankruptcy of FTX",
+     "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2022-11-21",
+   "era": "crash",
+   "title": "2022 bitcoin low",
+   "title_th": "จุดต่ำสุดของบิตคอยน์ปี 2022",
+   "what": "Bitcoin falls to $15,599 (CoinMarketCap daily low), about 77% below its November 2021 high.",
+   "what_th": "บิตคอยน์ลดลงไปที่ 15,599 ดอลลาร์สหรัฐ (ราคาต่ำสุดรายวันของ CoinMarketCap) ต่ำกว่าจุดสูงสุดเมื่อเดือนพฤศจิกายน 2021 ราว 77%",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2023-03-11",
+   "era": "crash",
+   "title": "USDC loses its peg",
+   "title_th": "USDC หลุดการตรึงมูลค่า",
+   "what": "Circle says $3.3 billion of USDC's reserves sit at the failed Silicon Valley Bank. USDC trades below $1 and regains its peg four days later.",
+   "what_th": "Circle แจ้งว่าเงินทุนสำรองของ USDC จำนวน 3.3 พันล้านดอลลาร์สหรัฐ อยู่ที่ Silicon Valley Bank ซึ่งล้มไปแล้ว USDC ซื้อขายต่ำกว่า 1 ดอลลาร์สหรัฐ และกลับมาตรึงมูลค่าได้อีกครั้งในอีกสี่วันต่อมา",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "USDC (cryptocurrency)",
+     "url": "https://en.wikipedia.org/wiki/USDC_(cryptocurrency)",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    },
+    {
+     "title": "Crypto Investors Cash Out $2 Billion in USD Coin After Bank Collapse",
+     "url": "https://www.wsj.com/articles/crypto-investors-cash-out-2-billion-in-usd-coin-after-bank-collapse-1338a80f",
+     "publisher": "The Wall Street Journal",
+     "date": "2023-03"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2023-11-21",
+   "era": "crash",
+   "title": "Binance pleads guilty",
+   "title_th": "Binance รับสารภาพ",
+   "what": "Binance pleads guilty to anti-money-laundering and sanctions violations and agrees to pay over $4 billion; founder Changpeng Zhao pleads guilty and steps down as CEO.",
+   "what_th": "Binance รับสารภาพว่าละเมิดกฎหมายต่อต้านการฟอกเงินและมาตรการคว่ำบาตร และตกลงจ่ายเงินกว่า 4 พันล้านดอลลาร์สหรัฐ ส่วน Changpeng Zhao (ฉางเผิง จ้าว) ผู้ก่อตั้ง รับสารภาพและลาออกจากตำแหน่ง CEO",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Binance and CEO Plead Guilty to Federal Charges in $4B Resolution",
+     "url": "https://www.justice.gov/opa/pr/binance-and-ceo-plead-guilty-federal-charges-4b-resolution",
+     "publisher": "US Department of Justice",
+     "date": "2023-11-21"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2023-06-09",
+   "era": "institutions",
+   "title": "EU MiCA regulation",
+   "title_th": "กฎ MiCA ของสหภาพยุโรป",
+   "what": "The EU publishes the Markets in Crypto-Assets Regulation (EU) 2023/1114. Stablecoin rules apply from 30 June 2024 and the rest, including licences for crypto-asset service providers, from 30 December 2024.",
+   "what_th": "สหภาพยุโรปประกาศ Markets in Crypto-Assets Regulation (EU) 2023/1114 กฎสำหรับสเตเบิลคอยน์มีผลตั้งแต่วันที่ 30 มิถุนายน 2024 ส่วนที่เหลือ รวมถึงใบอนุญาตสำหรับผู้ให้บริการด้านสินทรัพย์คริปโต มีผลตั้งแต่วันที่ 30 ธันวาคม 2024",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Regulation (EU) 2023/1114 on markets in crypto-assets",
+     "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj",
+     "publisher": "EUR-Lex",
+     "date": "2023-06-09"
+    },
+    {
+     "title": "Markets in Crypto-Assets Regulation (MiCA)",
+     "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+     "publisher": "ESMA",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-01-10",
+   "era": "institutions",
+   "title": "US spot bitcoin ETFs approved",
+   "title_th": "สหรัฐฯ อนุมัติ ETF บิตคอยน์แบบ spot",
+   "what": "The SEC approves listing and trading of spot bitcoin exchange-traded products, with staff reviewing registration statements for 10 funds at once.",
+   "what_th": "ก.ล.ต. สหรัฐฯ (SEC) อนุมัติให้จดทะเบียนและซื้อขายผลิตภัณฑ์ที่ซื้อขายในตลาดหลักทรัพย์ (exchange-traded products) ซึ่งถือบิตคอยน์จริง (spot) โดยเจ้าหน้าที่ตรวจพิจารณาแบบแสดงรายการข้อมูลของ 10 กองทุนพร้อมกัน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Statement on the Approval of Spot Bitcoin Exchange-Traded Products",
+     "url": "https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023",
+     "publisher": "US SEC",
+     "date": "2024-01-10"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2023-05-18",
+   "era": "institutions",
+   "title": "Gulf Binance licensed in Thailand",
+   "title_th": "Gulf Binance ได้รับใบอนุญาตในไทย",
+   "what": "Gulf Binance, a joint venture of Thailand's Gulf group and Binance, receives Ministry of Finance licences to run a digital asset exchange and brokerage under SEC supervision. It trades as Binance TH, with baht trading pairs.",
+   "what_th": "Gulf Binance บริษัทร่วมทุนระหว่างกลุ่ม Gulf ของไทยกับ Binance ได้รับใบอนุญาตจากกระทรวงการคลังให้ประกอบธุรกิจศูนย์ซื้อขายและนายหน้าซื้อขายสินทรัพย์ดิจิทัล ภายใต้การกำกับของ ก.ล.ต. และให้บริการในชื่อ Binance TH โดยมีคู่ซื้อขายกับเงินบาท",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "About Us | Binance TH",
+     "url": "https://www.binance.th/en/terms/about-us/22c0541e34e84ce19c94d79713c66f07",
+     "publisher": "Binance TH",
+     "date": "2023-09-04"
+    },
+    {
+     "title": "Gulf Development",
+     "url": "https://en.wikipedia.org/wiki/Gulf_Development",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-03-14",
+   "era": "institutions",
+   "title": "Bitcoin passes its 2021 high",
+   "title_th": "บิตคอยน์ทะลุจุดสูงสุดปี 2021",
+   "what": "Bitcoin reaches $73,750.07 (CoinMarketCap intraday high), its first record since 2021, as the new US spot ETFs see record inflows.",
+   "what_th": "บิตคอยน์แตะ 73,750.07 ดอลลาร์สหรัฐ (ราคาสูงสุดระหว่างวันของ CoinMarketCap) เป็นสถิติสูงสุดครั้งแรกนับตั้งแต่ปี 2021 ขณะที่ ETF แบบ spot ที่เพิ่งเปิดในสหรัฐฯ มีเงินไหลเข้าเป็นประวัติการณ์",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "History of bitcoin",
+     "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-03-28",
+   "era": "institutions",
+   "title": "Sam Bankman-Fried sentenced",
+   "title_th": "ศาลตัดสินจำคุก Sam Bankman-Fried",
+   "what": "FTX founder Sam Bankman-Fried, convicted in November 2023, is sentenced to 25 years in prison.",
+   "what_th": "Sam Bankman-Fried (แซม แบงก์แมน-ฟรายด์) ผู้ก่อตั้ง FTX ซึ่งถูกตัดสินว่ามีความผิดเมื่อเดือนพฤศจิกายน 2023 ถูกพิพากษาจำคุก 25 ปี",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Samuel Bankman-Fried Sentenced To 25 Years For His Orchestration Of Multiple Fraudulent Schemes",
+     "url": "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes",
+     "publisher": "US Attorney's Office, SDNY",
+     "date": "2024-03-28"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-04-20",
+   "era": "institutions",
+   "title": "Fourth halving",
+   "title_th": "Halving ครั้งที่ 4",
+   "what": "Block 840,000, mined at 00:09 UTC, cuts the block reward from 6.25 BTC to 3.125 BTC.",
+   "what_th": "บล็อกที่ 840,000 ซึ่งถูกขุดได้เมื่อเวลา 00:09 UTC ลดรางวัลต่อบล็อกจาก 6.25 BTC เหลือ 3.125 BTC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin block 840,000",
+     "url": "https://mempool.space/block/0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
+     "publisher": "mempool.space",
+     "date": "2024-04-20"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-07-23",
+   "era": "institutions",
+   "title": "US spot ether ETFs start trading",
+   "title_th": "ETF อีเธอเรียมแบบ spot ในสหรัฐฯ เริ่มซื้อขาย",
+   "what": "Spot ether funds from issuers including Grayscale, Bitwise, iShares and VanEck begin trading, after the SEC approves the exchange rules on 23 May 2024.",
+   "what_th": "กองทุนอีเธอเรียมแบบ spot จากผู้ออกกองทุนหลายราย รวมถึง Grayscale, Bitwise, iShares และ VanEck เริ่มซื้อขาย หลัง ก.ล.ต. สหรัฐฯ (SEC) อนุมัติกฎของตลาดหลักทรัพย์ที่เกี่ยวข้องเมื่อวันที่ 23 พฤษภาคม 2024",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Order Granting Accelerated Approval ... to List and Trade Shares of Ether-Based Exchange-Traded Products (Release No. 34-100224)",
+     "url": "https://www.sec.gov/files/rules/sro/nysearca/2024/34-100224.pdf",
+     "publisher": "US SEC",
+     "date": "2024-05-23"
+    },
+    {
+     "title": "Crypto Specialist Bitwise Launches Spot Ethereum ETP (ETHW)",
+     "url": "https://bitwiseinvestments.com/newsroom/crypto-specialist-bitwise-launches-spot-ethereum-etp-ethw",
+     "publisher": "Bitwise",
+     "date": "2024-07-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2024-12-05",
+   "era": "institutions",
+   "title": "Bitcoin passes $100,000",
+   "title_th": "บิตคอยน์ทะลุ 100,000 ดอลลาร์สหรัฐ",
+   "what": "Bitcoin trades above $100,000 for the first time, reaching $103,900 on CoinMarketCap data.",
+   "what_th": "บิตคอยน์ซื้อขายเหนือ 100,000 ดอลลาร์สหรัฐเป็นครั้งแรก โดยขึ้นไปถึง 103,900 ดอลลาร์สหรัฐ ตามข้อมูลของ CoinMarketCap",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-01-17",
+   "era": "now",
+   "title": "$TRUMP meme coin",
+   "title_th": "เหรียญมีม $TRUMP",
+   "what": "Donald Trump launches the $TRUMP meme coin on Solana three days before his inauguration. 200 million of 1 billion tokens go to the public; Trump-linked companies hold the other 800 million, and by 19 January the token's market value tops $9 billion.",
+   "what_th": "Donald Trump (โดนัลด์ ทรัมป์) เปิดตัวเหรียญมีม $TRUMP บน Solana สามวันก่อนพิธีสาบานตนเข้ารับตำแหน่ง โทเคน 200 ล้านจาก 1 พันล้านโทเคนเปิดให้สาธารณะ ส่วนอีก 800 ล้านโทเคนอยู่กับบริษัทที่เชื่อมโยงกับ Trump และภายในวันที่ 19 มกราคม มูลค่าตลาดของโทเคนสูงเกิน 9 พันล้านดอลลาร์สหรัฐ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Donald Trump Launches $TRUMP Meme Coin",
+     "url": "https://www.forbes.com/sites/tylerroush/2025/01/19/donald-trump-launches-trump-meme-coin-token-exceeds-12-billion-market-cap/",
+     "publisher": "Forbes",
+     "date": "2025-01-19"
+    },
+    {
+     "title": "$Trump",
+     "url": "https://en.wikipedia.org/wiki/$Trump",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-01-21",
+   "era": "now",
+   "title": "Ross Ulbricht pardoned",
+   "title_th": "Ross Ulbricht ได้รับอภัยโทษ",
+   "what": "Trump grants Silk Road founder Ross Ulbricht a full and unconditional pardon after 11 years of a life sentence.",
+   "what_th": "Trump ให้อภัยโทษแบบเต็มและไม่มีเงื่อนไขแก่ Ross Ulbricht ผู้ก่อตั้ง Silk Road หลังรับโทษจำคุกตลอดชีวิตมาแล้ว 11 ปี",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Trump Pardons Ross Ulbricht, Creator of Silk Road Drug Marketplace",
+     "url": "https://www.nytimes.com/2025/01/21/technology/trump-ross-ulbricht-silk-road.html",
+     "publisher": "The New York Times",
+     "date": "2025-01-21"
+    },
+    {
+     "title": "Ross Ulbricht",
+     "url": "https://en.wikipedia.org/wiki/Ross_Ulbricht",
+     "publisher": "Wikipedia",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-01-23",
+   "era": "now",
+   "title": "US executive order on digital assets",
+   "title_th": "คำสั่งฝ่ายบริหารของสหรัฐฯ ว่าด้วยสินทรัพย์ดิจิทัล",
+   "what": "An executive order creates the President's Working Group on Digital Asset Markets, gives it 180 days to propose a federal framework, and bars US agencies from creating a central bank digital currency (CBDC).",
+   "what_th": "คำสั่งฝ่ายบริหาร (executive order) ตั้งคณะทำงานของประธานาธิบดีด้านตลาดสินทรัพย์ดิจิทัล (President's Working Group on Digital Asset Markets) ให้เวลา 180 วันในการเสนอกรอบกำกับดูแลระดับรัฐบาลกลาง และห้ามหน่วยงานของสหรัฐฯ สร้างสกุลเงินดิจิทัลของธนาคารกลาง (CBDC)",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Strengthening American Leadership in Digital Financial Technology",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/01/strengthening-american-leadership-in-digital-financial-technology/",
+     "publisher": "The White House",
+     "date": "2025-01-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-01-29",
+   "era": "now",
+   "title": "El Salvador rolls back its bitcoin law",
+   "title_th": "เอลซัลวาดอร์ถอยจากกฎหมายบิตคอยน์",
+   "what": "El Salvador's Congress votes 55-2 to make accepting bitcoin voluntary for businesses, a condition of a $1.4 billion IMF loan deal.",
+   "what_th": "รัฐสภาเอลซัลวาดอร์ลงมติ 55 ต่อ 2 เสียง ให้การรับชำระด้วยบิตคอยน์เป็นเรื่องสมัครใจของภาคธุรกิจ ซึ่งเป็นเงื่อนไขของข้อตกลงเงินกู้ 1.4 พันล้านดอลลาร์สหรัฐกับ IMF",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "El Salvador amends bitcoin law following IMF loan deal",
+     "url": "https://www.electronicpaymentsinternational.com/news/el-salvador-amends-bitcoin-law-imf/",
+     "publisher": "Electronic Payments International",
+     "date": "2025-01"
+    },
+    {
+     "title": "El Salvador passes bill to revise bitcoin adoption strategy per IMF deal: Reuters",
+     "url": "https://www.theblock.co/post/337885/el-salvador-passes-bill-to-revise-bitcoin-adoption-strategy-per-imf-deal-reuters",
+     "publisher": "The Block",
+     "date": "2025-01-29"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-02-21",
+   "era": "now",
+   "title": "Bybit hack",
+   "title_th": "การแฮก Bybit",
+   "what": "Hackers take about $1.5 billion in ether from Dubai-based exchange Bybit, the largest crypto theft on record. The FBI attributes it to North Korea's 'TraderTraitor' group, also called Lazarus.",
+   "what_th": "แฮกเกอร์ขโมยอีเธอเรียม (ETH) มูลค่าราว 1.5 พันล้านดอลลาร์สหรัฐ จาก Bybit ศูนย์ซื้อขายสินทรัพย์ดิจิทัลที่มีฐานในดูไบ นับเป็นการขโมยคริปโตครั้งใหญ่ที่สุดเท่าที่มีบันทึก FBI ระบุว่าเป็นฝีมือของกลุ่ม 'TraderTraitor' ของเกาหลีเหนือ หรือที่รู้จักในชื่อ Lazarus",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "North Korea Responsible for $1.5 Billion Bybit Hack",
+     "url": "https://www.ic3.gov/PSA/2025/PSA250226",
+     "publisher": "FBI / IC3",
+     "date": "2025-02-26"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-03-06",
+   "era": "now",
+   "title": "US Strategic Bitcoin Reserve",
+   "title_th": "ทุนสำรองบิตคอยน์เชิงยุทธศาสตร์ของสหรัฐฯ",
+   "what": "Executive Order 14233 sets up a Strategic Bitcoin Reserve and a Digital Asset Stockpile, filled with coins forfeited in criminal and civil cases, and states that reserve bitcoin 'shall not be sold'.",
+   "what_th": "Executive Order 14233 จัดตั้งทุนสำรองบิตคอยน์เชิงยุทธศาสตร์ (Strategic Bitcoin Reserve) และคลังสินทรัพย์ดิจิทัล (Digital Asset Stockpile) โดยใช้เหรียญที่ถูกริบในคดีอาญาและคดีแพ่ง และระบุว่าบิตคอยน์ในทุนสำรอง 'จะต้องไม่ถูกขาย'",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Establishment of the Strategic Bitcoin Reserve and United States Digital Asset Stockpile",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/",
+     "publisher": "The White House",
+     "date": "2025-03-06"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-06-05",
+   "era": "now",
+   "title": "Circle goes public",
+   "title_th": "Circle เข้าตลาดหลักทรัพย์",
+   "what": "Circle, issuer of USDC, lists on the New York Stock Exchange as CRCL after pricing 34 million shares at $31.",
+   "what_th": "Circle ผู้ออก USDC เข้าจดทะเบียนในตลาดหลักทรัพย์นิวยอร์กด้วยชื่อย่อ CRCL หลังกำหนดราคาเสนอขาย 34 ล้านหุ้นที่ 31 ดอลลาร์สหรัฐต่อหุ้น",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Circle Announces Pricing of Upsized Initial Public Offering",
+     "url": "https://www.circle.com/pressroom/circle-announces-pricing-of-upsized-initial-public-offering",
+     "publisher": "Circle",
+     "date": "2025-06-04"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025",
+   "era": "now",
+   "title": "Thailand's crypto gains tax holiday",
+   "title_th": "ไทยยกเว้นภาษีกำไรจากคริปโต",
+   "what": "Thailand exempts individuals' capital gains on crypto sold through SEC-licensed Thai exchanges, brokers and dealers from 1 January 2025 to 31 December 2029 (Ministerial Regulation No. 399). Income from mining, staking and airdrops, and trades on foreign or unlicensed platforms, fall outside it.",
+   "what_th": "ไทยยกเว้นภาษีกำไรจากการขายคริปโตของบุคคลธรรมดา เมื่อขายผ่านศูนย์ซื้อขาย นายหน้า และผู้ค้าสินทรัพย์ดิจิทัลในไทยที่ได้รับใบอนุญาตจาก ก.ล.ต. ตั้งแต่วันที่ 1 มกราคม 2025 ถึง 31 ธันวาคม 2029 (กฎกระทรวง ฉบับที่ 399) รายได้จากการขุด การ staking และ airdrop รวมถึงการซื้อขายบนแพลตฟอร์มต่างประเทศหรือแพลตฟอร์มที่ไม่ได้รับอนุญาต ไม่อยู่ในข่ายยกเว้นนี้",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Thailand grants five-year personal income tax exemption on digital asset gains",
+     "url": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/thailand-exempts-tax-on-digital-asset-gains",
+     "publisher": "Forvis Mazars Thailand",
+     "date": "2025"
+    },
+    {
+     "title": "Thailand Waives Capital Gains Tax on Crypto for Five Years",
+     "url": "https://washingtondc.thaiembassy.org/en/content/thailand-waives-capital-gains-tax-on-crypto-for-fi?cate=64c93aa8fd9aa70789629292",
+     "publisher": "Royal Thai Embassy, Washington D.C.",
+     "date": "2025-07-07"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-07-18",
+   "era": "now",
+   "title": "GENIUS Act signed",
+   "title_th": "การลงนามกฎหมาย GENIUS Act",
+   "what": "Trump signs the GENIUS Act (S. 1582), the first US federal law for payment stablecoins, after the Senate (68-30, 17 June) and House (308-122, 17 July) pass it. The act bars issuers from paying yield to holders. On 17 July the House also passes the CLARITY market-structure bill, 294-134.",
+   "what_th": "Trump ลงนามในกฎหมาย GENIUS Act (S. 1582) ซึ่งเป็นกฎหมายระดับรัฐบาลกลางฉบับแรกของสหรัฐฯ สำหรับสเตเบิลคอยน์เพื่อการชำระเงิน หลังวุฒิสภา (68-30 เสียง, 17 มิถุนายน) และสภาผู้แทนราษฎร (308-122 เสียง, 17 กรกฎาคม) ผ่านร่างกฎหมาย กฎหมายนี้ห้ามผู้ออกสเตเบิลคอยน์จ่ายผลตอบแทนให้ผู้ถือ ในวันที่ 17 กรกฎาคม สภาผู้แทนราษฎรยังผ่านร่างกฎหมาย CLARITY ว่าด้วยโครงสร้างตลาด ด้วยคะแนน 294-134 เสียง",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Fact Sheet: President Donald J. Trump Signs GENIUS Act into Law",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+     "publisher": "The White House",
+     "date": "2025-07-18"
+    },
+    {
+     "title": "US Crypto Policy Tracker: Legislative Developments",
+     "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments",
+     "publisher": "Latham & Watkins",
+     "date": "2026-09"
+    },
+    {
+     "title": "The Stablecoin Market Shrank For The First Time In Four Years. Watch The Volumes Instead.",
+     "url": "https://www.forbes.com/sites/digital-assets/2026/07/27/the-stablecoin-market-shrank-for-the-first-time-in-four-years-watch-the-volumes-instead/",
+     "publisher": "Forbes",
+     "date": "2026-07-27"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-08-18",
+   "era": "now",
+   "title": "TouristDigiPay",
+   "title_th": "TouristDigiPay",
+   "what": "Thailand launches TouristDigiPay, a sandbox that lets foreign visitors convert crypto to baht through licensed firms and pay by e-wallet. Spending is capped at 50,000 baht a month at small vendors and 500,000 baht at vendors that complete merchant checks, for up to 18 months.",
+   "what_th": "ไทยเปิดตัว TouristDigiPay โครงการ sandbox ที่ให้นักท่องเที่ยวต่างชาติแลกคริปโตเป็นเงินบาทผ่านผู้ประกอบธุรกิจที่ได้รับใบอนุญาต แล้วชำระเงินผ่าน e-wallet วงเงินใช้จ่ายจำกัดไว้ที่ 50,000 บาทต่อเดือนที่ร้านค้ารายย่อย และ 500,000 บาทที่ร้านค้าที่ผ่านการตรวจสอบร้านค้าแล้ว เป็นเวลาไม่เกิน 18 เดือน",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Thailand Launches Initiative Supporting Digital Asset Use in Tourism",
+     "url": "https://www.austchamthailand.com/resources/news/thailand-launches-initiative-supporting-digital-asset-use-tourism",
+     "publisher": "Australian-Thai Chamber of Commerce",
+     "date": "2025-08-18"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-08-24",
+   "era": "now",
+   "title": "Ether passes its 2021 record",
+   "title_th": "อีเธอเรียมทำลายสถิติปี 2021",
+   "what": "Ether reaches $4,946 on CoinGecko data ($4,953.73 on CoinMarketCap), its first record since November 2021.",
+   "what_th": "อีเธอเรียม (ETH) แตะ 4,946 ดอลลาร์สหรัฐ ตามข้อมูลของ CoinGecko (4,953.73 ดอลลาร์สหรัฐ ตามข้อมูลของ CoinMarketCap) เป็นสถิติสูงสุดครั้งแรกนับตั้งแต่เดือนพฤศจิกายน 2021",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Ether, Ethereum's coin, breaks 2021 all-time high",
+     "url": "https://www.axios.com/2025/08/24/ether-all-time-high",
+     "publisher": "Axios",
+     "date": "2025-08-24"
+    },
+    {
+     "title": "Ethereum historical data",
+     "url": "https://coinmarketcap.com/currencies/ethereum/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10",
+   "era": "now",
+   "title": "Stablecoins pass $300 billion",
+   "title_th": "สเตเบิลคอยน์ทะลุ 300 พันล้านดอลลาร์สหรัฐ",
+   "what": "Dollar stablecoins in circulation pass $300 billion in early October 2025, up from about $205 billion at the start of the year.",
+   "what_th": "สเตเบิลคอยน์สกุลดอลลาร์ที่หมุนเวียนอยู่ทะลุ 300 พันล้านดอลลาร์สหรัฐ ในช่วงต้นเดือนตุลาคม 2025 เพิ่มขึ้นจากราว 205 พันล้านดอลลาร์สหรัฐเมื่อต้นปี",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Stablecoins circulating (peggedUSD)",
+     "url": "https://defillama.com/stablecoins",
+     "publisher": "DefiLlama",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "The Stablecoin Market Shrank For The First Time In Four Years. Watch The Volumes Instead.",
+     "url": "https://www.forbes.com/sites/digital-assets/2026/07/27/the-stablecoin-market-shrank-for-the-first-time-in-four-years-watch-the-volumes-instead/",
+     "publisher": "Forbes",
+     "date": "2026-07-27"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10-06",
+   "era": "now",
+   "title": "Bitcoin all-time high",
+   "title_th": "บิตคอยน์ทำราคาสูงสุดตลอดกาล",
+   "what": "Bitcoin reaches $126,198.07 on CoinMarketCap ($126,080 on CoinGecko), its all-time high as of September 2026, with a market value near $2.5 trillion.",
+   "what_th": "บิตคอยน์แตะ 126,198.07 ดอลลาร์สหรัฐ ตามข้อมูลของ CoinMarketCap (126,080 ดอลลาร์สหรัฐ ตามข้อมูลของ CoinGecko) เป็นราคาสูงสุดตลอดกาล ณ เดือนกันยายน 2026 โดยมีมูลค่าตลาดราว 2.5 ล้านล้านดอลลาร์สหรัฐ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Bitcoin Surges Past $126,000",
+     "url": "https://digitalchamber.org/bitcoin-surges-past-126000-record-breaking-rally-continues-into-october/",
+     "publisher": "The Digital Chamber",
+     "date": "2025-10"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10-10",
+   "era": "now",
+   "title": "Record $19 billion liquidation",
+   "title_th": "การบังคับปิดสถานะ 19 พันล้านดอลลาร์สหรัฐ สูงสุดเป็นประวัติการณ์",
+   "what": "After Trump threatens an extra 100% tariff on Chinese goods, more than $19 billion of margin positions are force-closed and more than 1.6 million traders liquidated, the largest liquidation Coinglass has recorded. Bitcoin's range that day runs from $122,510 down to $104,582 (CoinMarketCap).",
+   "what_th": "หลัง Trump ขู่เก็บภาษีนำเข้าเพิ่มอีก 100% กับสินค้าจีน สถานะที่ใช้มาร์จินมูลค่ากว่า 19 พันล้านดอลลาร์สหรัฐถูกบังคับปิด และเทรดเดอร์กว่า 1.6 ล้านรายถูกล้างสถานะ ถือเป็นการบังคับปิดสถานะ (liquidation) ครั้งใหญ่ที่สุดที่ Coinglass เคยบันทึกไว้ ราคาบิตคอยน์ในวันนั้นเคลื่อนไหวจาก 122,510 ดอลลาร์สหรัฐ ลงไปถึง 104,582 ดอลลาร์สหรัฐ (CoinMarketCap)",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Tariff Threat Triggers Record $19 Billion in Crypto Liquidations",
+     "url": "https://www.pymnts.com/cryptocurrency/2025/tariffs-trigger-record-19-billion-in-crypto-liquidations",
+     "publisher": "PYMNTS",
+     "date": "2025-10"
+    },
+    {
+     "title": "What Is October 10th? Crypto's 10/10 Mass Market Liquidation Event",
+     "url": "https://www.coingecko.com/learn/october-10-crypto-crash-explained",
+     "publisher": "CoinGecko",
+     "date": "2025-10"
+    },
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10-14",
+   "era": "now",
+   "title": "Prince Group sanctions and 127,271 BTC",
+   "title_th": "การคว่ำบาตร Prince Group และ 127,271 BTC",
+   "what": "The US and UK sanction Cambodia's Prince Group and its chairman Chen Zhi over scam compounds, and US prosecutors move to forfeit 127,271 BTC, worth over $14 billion, the largest crypto seizure action to date.",
+   "what_th": "สหรัฐฯ และสหราชอาณาจักรคว่ำบาตร Prince Group ของกัมพูชา และ Chen Zhi ประธานกลุ่ม จากกรณีศูนย์หลอกลวง (scam compound) ขณะที่อัยการสหรัฐฯ ดำเนินการขอริบ 127,271 BTC มูลค่ากว่า 14 พันล้านดอลลาร์สหรัฐ นับเป็นการดำเนินการยึดคริปโตครั้งใหญ่ที่สุดจนถึงปัจจุบัน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "UK and US take joint action to disrupt major online fraud network",
+     "url": "https://www.gov.uk/government/news/uk-and-us-take-joint-action-to-disrupt-major-online-fraud-network",
+     "publisher": "GOV.UK",
+     "date": "2025-10-14"
+    },
+    {
+     "title": "Bitcoin worth $14bn seized in US-UK crackdown on alleged scammers",
+     "url": "https://www.bbc.com/news/articles/c70jw436n0yo",
+     "publisher": "BBC News",
+     "date": "2025-10-15"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10-23",
+   "era": "now",
+   "title": "Changpeng Zhao pardoned",
+   "title_th": "Changpeng Zhao ได้รับอภัยโทษ",
+   "what": "Trump pardons Binance founder Changpeng Zhao, who pleaded guilty in 2023 and served four months in prison in 2024.",
+   "what_th": "Trump อภัยโทษให้ Changpeng Zhao (ฉางเผิง จ้าว) ผู้ก่อตั้ง Binance ซึ่งรับสารภาพในปี 2023 และถูกจำคุกสี่เดือนในปี 2024",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Trump pardons Binance founder Changpeng Zhao",
+     "url": "https://www.cnn.com/2025/10/23/politics/binance-founder-trump-pardon",
+     "publisher": "CNN",
+     "date": "2025-10-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-10-28",
+   "era": "now",
+   "title": "First US spot Solana ETF",
+   "title_th": "ETF Solana แบบ spot กองแรกของสหรัฐฯ",
+   "what": "Bitwise's BSOL starts trading on the NYSE, the first US fund holding SOL directly, and it stakes its holdings.",
+   "what_th": "BSOL ของ Bitwise เริ่มซื้อขายในตลาด NYSE เป็นกองทุนแรกของสหรัฐฯ ที่ถือ SOL โดยตรง และนำ SOL ที่ถืออยู่ไป stake",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitwise Launches BSOL, First Spot Solana ETP in U.S.",
+     "url": "https://bitwiseinvestments.com/newsroom/bitwise-launches-bsol-first-spot-solana-etp-in-us",
+     "publisher": "Bitwise",
+     "date": "2025-10-27"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2025-12-11",
+   "era": "now",
+   "title": "Do Kwon sentenced",
+   "title_th": "ศาลตัดสินจำคุก Do Kwon",
+   "what": "A Manhattan federal judge sentences Terraform Labs co-founder Do Kwon to 15 years in prison over the TerraUSD and LUNA collapse, which wiped out an estimated $40 billion.",
+   "what_th": "ผู้พิพากษาศาลรัฐบาลกลางในแมนแฮตตันพิพากษาจำคุก Do Kwon (โด ควอน) ผู้ร่วมก่อตั้ง Terraform Labs เป็นเวลา 15 ปี จากกรณีการล่มสลายของ TerraUSD และ LUNA ซึ่งทำให้มูลค่าหายไปราว 40 พันล้านดอลลาร์สหรัฐ ตามการประมาณการ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Crypto-Enabled Fraudster Sentenced For Orchestrating $40 Billion Fraud",
+     "url": "https://www.justice.gov/usao-sdny/pr/crypto-enabled-fraudster-sentenced-orchestrating-40-billion-fraud",
+     "publisher": "US Attorney's Office, SDNY",
+     "date": "2025-12-11"
+    },
+    {
+     "title": "Crypto mogul Do Kwon sentenced to 15 years in prison for $40 billion stablecoin fraud",
+     "url": "https://www.cnn.com/2025/12/11/business/cryptocurrency-do-kwon-fraud-sentencing-intl-hnk",
+     "publisher": "CNN",
+     "date": "2025-12-11"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-01-07",
+   "era": "now",
+   "title": "Chen Zhi sent to China",
+   "title_th": "Chen Zhi ถูกส่งตัวให้จีน",
+   "what": "Cambodia arrests Prince Group chairman Chen Zhi on 6 January with two associates and extradites him to China.",
+   "what_th": "กัมพูชาจับกุม Chen Zhi ประธาน Prince Group เมื่อวันที่ 6 มกราคม พร้อมผู้ร่วมงานอีกสองคน และส่งตัวเขาข้ามแดนให้จีน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Cambodia Extradites Chair of Alleged 'Criminal' Conglomerate to China",
+     "url": "https://www.occrp.org/en/news/chairman-of-alleged-criminal-conglomerate-arrested-in-cambodia-and-extradited-to-china",
+     "publisher": "OCCRP",
+     "date": "2026-01-07"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-02-06",
+   "era": "now",
+   "title": "Bitcoin falls to $60,000",
+   "title_th": "บิตคอยน์ลงไปที่ 60,000 ดอลลาร์สหรัฐ",
+   "what": "Bitcoin drops to $60,074 (CoinMarketCap daily low), about 52% below its October 2025 record, after a 15% one-day fall.",
+   "what_th": "บิตคอยน์ลดลงไปที่ 60,074 ดอลลาร์สหรัฐ (ราคาต่ำสุดรายวันของ CoinMarketCap) ต่ำกว่าสถิติเมื่อเดือนตุลาคม 2025 ราว 52% หลังราคาลดลง 15% ในวันเดียว",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Bitcoin drops 15%, briefly breaking below $61,000 as sell-off intensifies",
+     "url": "https://www.cnbc.com/2026/02/05/bitcoin-price-today-70000-in-focus.html",
+     "publisher": "CNBC",
+     "date": "2026-02-05"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-02-11",
+   "era": "now",
+   "title": "Quantum-resistant BIP-360 merged",
+   "title_th": "BIP-360 ที่ทนต่อควอนตัมเข้าคลัง BIPs",
+   "what": "BIP-360, Pay-to-Merkle-Root (P2MR), enters the Bitcoin BIPs repository as a draft. It proposes an optional new output type without Taproot's key-path spend, so coins in it are not exposed to a future quantum computer through a visible public key. It is a proposal, not an activated rule.",
+   "what_th": "BIP-360 หรือ Pay-to-Merkle-Root (P2MR) ถูกรวมเข้าคลัง BIPs ของบิตคอยน์ในสถานะร่าง โดยเสนอเอาต์พุตรูปแบบใหม่ที่เลือกใช้ได้ และไม่มีการใช้จ่ายผ่าน key path แบบ Taproot ทำให้เหรียญในเอาต์พุตแบบนี้ไม่เปิดช่องให้คอมพิวเตอร์ควอนตัมในอนาคตโจมตีผ่านกุญแจสาธารณะที่มองเห็นได้ นี่เป็นเพียงข้อเสนอ ยังไม่ใช่กฎที่เปิดใช้งานแล้ว",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "BIP360: Pay to Merkle Root (P2MR) (#1670)",
+     "url": "https://github.com/bitcoin/bips/commit/eae7d9fc57a5f3a2b0c4853c127cb4d27377dbf3",
+     "publisher": "Bitcoin BIPs repository",
+     "date": "2026-02-11"
+    },
+    {
+     "title": "BIP 360: Pay-to-Merkle-Root (P2MR)",
+     "url": "https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki",
+     "publisher": "Bitcoin BIPs repository",
+     "date": "2026-08"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-03-02",
+   "era": "now",
+   "title": "GENIUS Act rules proposed",
+   "title_th": "ร่างกฎตาม GENIUS Act",
+   "what": "The OCC proposes rules to carry out the GENIUS Act for stablecoin issuers it oversees, with comments due 1 May 2026. The act takes effect 18 months after enactment or 120 days after final rules, whichever comes first.",
+   "what_th": "สำนักงานผู้ควบคุมเงินตราสหรัฐฯ (OCC) เสนอร่างกฎเพื่อบังคับใช้ GENIUS Act กับผู้ออกสเตเบิลคอยน์ที่อยู่ภายใต้การกำกับของ OCC โดยเปิดรับความเห็นถึงวันที่ 1 พฤษภาคม 2026 กฎหมายนี้มีผลบังคับใช้เมื่อครบ 18 เดือนหลังประกาศใช้ หรือ 120 วันหลังออกกฎฉบับสมบูรณ์ แล้วแต่อย่างใดถึงก่อน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Implementing the GENIUS Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the OCC",
+     "url": "https://www.federalregister.gov/documents/2026/03/02/2026-04089/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+     "publisher": "Federal Register",
+     "date": "2026-03-02"
+    },
+    {
+     "title": "GENIUS Act Regulations: Notice of Proposed Rulemaking",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html",
+     "publisher": "OCC",
+     "date": "2026-03"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-03-31",
+   "era": "now",
+   "title": "Google cuts quantum estimate for crypto keys",
+   "title_th": "Google ลดตัวเลขประมาณการควอนตัมที่ใช้เจาะกุญแจคริปโต",
+   "what": "Google Quantum AI estimates that breaking the 256-bit elliptic-curve cryptography behind Bitcoin and Ethereum signatures needs fewer than 1,200-1,450 logical qubits, or fewer than 500,000 physical qubits running for a few minutes: about 20 times fewer physical qubits than earlier estimates.",
+   "what_th": "Google Quantum AI ประมาณการว่าการเจาะการเข้ารหัสแบบเส้นโค้งวงรี (elliptic-curve) ขนาด 256 บิต ที่อยู่เบื้องหลังลายเซ็นของบิตคอยน์และอีเธอเรียม ต้องใช้คิวบิตเชิงตรรกะ (logical qubit) น้อยกว่า 1,200-1,450 ตัว หรือคิวบิตเชิงกายภาพ (physical qubit) น้อยกว่า 500,000 ตัว ทำงานเพียงไม่กี่นาที ซึ่งใช้คิวบิตเชิงกายภาพน้อยกว่าประมาณการเดิมราว 20 เท่า",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
+     "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+     "publisher": "Google Research",
+     "date": "2026-03-31"
+    },
+    {
+     "title": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+     "url": "https://arxiv.org/abs/2603.28846",
+     "publisher": "arXiv (Babbush, Gidney, Neven et al.)",
+     "date": "2026-03-30"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-04-01",
+   "era": "now",
+   "title": "Drift Protocol hack",
+   "title_th": "การแฮก Drift Protocol",
+   "what": "Attackers drain $285 million from Drift, a Solana trading protocol, after a months-long operation that combines social engineering, oracle manipulation and a governance attack to take admin control. TRM Labs links it to North Korea.",
+   "what_th": "ผู้โจมตีดูดเงิน 285 ล้านดอลลาร์สหรัฐ ออกจาก Drift โปรโตคอลซื้อขายบน Solana หลังปฏิบัติการที่กินเวลาหลายเดือน ซึ่งผสมทั้งวิศวกรรมสังคม (social engineering) การบิดเบือนข้อมูล oracle และการโจมตีกลไก governance เพื่อยึดสิทธิ์ผู้ดูแลระบบ (admin) TRM Labs เชื่อมโยงเหตุนี้กับเกาหลีเหนือ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "North Korean Hackers Attack Drift Protocol In USD 285 Million Heist",
+     "url": "https://www.trmlabs.com/resources/blog/north-korean-hackers-attack-drift-protocol-in-285-million-heist",
+     "publisher": "TRM Labs",
+     "date": "2026-04"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-04-10",
+   "era": "now",
+   "title": "Hong Kong's first stablecoin licences",
+   "title_th": "ใบอนุญาตสเตเบิลคอยน์ชุดแรกของฮ่องกง",
+   "what": "The Hong Kong Monetary Authority grants the first stablecoin issuer licences under the Stablecoins Ordinance, to Anchorpoint Financial (a Standard Chartered joint venture) and HSBC.",
+   "what_th": "Hong Kong Monetary Authority (HKMA) ออกใบอนุญาตผู้ออกสเตเบิลคอยน์ชุดแรกภายใต้ Stablecoins Ordinance ให้แก่ Anchorpoint Financial (บริษัทร่วมทุนของ Standard Chartered) และ HSBC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Granting of stablecoin issuer licences",
+     "url": "https://www.info.gov.hk/gia/general/202604/10/P2026041000471.htm",
+     "publisher": "Hong Kong Government",
+     "date": "2026-04-10"
+    },
+    {
+     "title": "Hong Kong awards first stablecoin licenses to HSBC and Standard Chartered",
+     "url": "https://www.elliptic.co/insights/hong-kong-awards-first-stablecoin-licenses-to-hsbc-and-standard-chartered/",
+     "publisher": "Elliptic",
+     "date": "2026-04"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-04-18",
+   "era": "now",
+   "title": "Kelp DAO bridge exploit",
+   "title_th": "การเจาะบริดจ์ของ Kelp DAO",
+   "what": "An attacker forges a cross-chain message to Kelp DAO's LayerZero bridge and takes 116,500 rsETH, about $292 million and about 18% of the token's supply, stranding wrapped rsETH on 20+ chains.",
+   "what_th": "ผู้โจมตีปลอมข้อความข้ามเชน (cross-chain message) ส่งไปยังบริดจ์ LayerZero ของ Kelp DAO และนำ rsETH ออกไป 116,500 rsETH มูลค่าราว 292 ล้านดอลลาร์สหรัฐ หรือราว 18% ของอุปทานโทเคนทั้งหมด ทำให้ rsETH แบบ wrapped บนเชนกว่า 20 เชนติดค้างอยู่",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Kelp DAO exploited for $292 million with wrapped ether stranded across 20 chains",
+     "url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+     "publisher": "CoinDesk",
+     "date": "2026-04-19"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-07-01",
+   "era": "now",
+   "title": "MiCA transition ends",
+   "title_th": "ช่วงเปลี่ยนผ่านของ MiCA สิ้นสุด",
+   "what": "The EU's transitional period for crypto firms under MiCA ends. Firms without MiCA authorisation must stop serving EU clients; ESMA says a pending application does not count.",
+   "what_th": "ช่วงเปลี่ยนผ่านสำหรับบริษัทคริปโตภายใต้ MiCA ของสหภาพยุโรปสิ้นสุดลง บริษัทที่ไม่ได้รับอนุญาตตาม MiCA ต้องหยุดให้บริการลูกค้าในสหภาพยุโรป ESMA ระบุว่าคำขอที่อยู่ระหว่างพิจารณาไม่นับเป็นการได้รับอนุญาต",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Statement on the end of transitional periods under MiCA",
+     "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf",
+     "publisher": "ESMA",
+     "date": "2026-04-17"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-07-01",
+   "era": "now",
+   "title": "Bitcoin's 2026 low",
+   "title_th": "จุดต่ำสุดของบิตคอยน์ปี 2026",
+   "what": "Bitcoin falls to $57,748 (CoinMarketCap daily low), its lowest since 2024 and about 54% below its October 2025 record. Ether's 2026 low is $1,506.51 on 6 June.",
+   "what_th": "บิตคอยน์ลดลงไปที่ 57,748 ดอลลาร์สหรัฐ (ราคาต่ำสุดรายวันของ CoinMarketCap) ต่ำสุดนับตั้งแต่ปี 2024 และต่ำกว่าสถิติเมื่อเดือนตุลาคม 2025 ราว 54% ส่วนจุดต่ำสุดปี 2026 ของอีเธอเรียมอยู่ที่ 1,506.51 ดอลลาร์สหรัฐ เมื่อวันที่ 6 มิถุนายน",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Ethereum historical data",
+     "url": "https://coinmarketcap.com/currencies/ethereum/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Bitcoin price news: BTC pulls back after run above $64,000",
+     "url": "https://www.coindesk.com/markets/2026/07/07/bitcoin-drops-after-a-run-at-usd64-000-shrugging-off-strategy-s-usd213-million-btc-sale",
+     "publisher": "CoinDesk",
+     "date": "2026-07-07"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-07-06",
+   "era": "now",
+   "title": "Strategy sells bitcoin",
+   "title_th": "Strategy ขายบิตคอยน์",
+   "what": "Strategy, the largest company holder, sells 3,588 BTC for about $216 million at roughly $60,000 each to fund preferred-stock dividends, leaving 843,775 BTC. Its first sale since 2022, 32 BTC in late May, came weeks earlier.",
+   "what_th": "Strategy บริษัทที่ถือบิตคอยน์มากที่สุด ขาย 3,588 BTC ได้เงินราว 216 ล้านดอลลาร์สหรัฐ ที่ราคาราว 60,000 ดอลลาร์สหรัฐต่อเหรียญ เพื่อนำไปจ่ายเงินปันผลหุ้นบุริมสิทธิ เหลือถืออยู่ 843,775 BTC การขายครั้งแรกของบริษัทนับตั้งแต่ปี 2022 คือการขาย 32 BTC เมื่อปลายเดือนพฤษภาคม เพียงไม่กี่สัปดาห์ก่อนหน้า",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Michael Saylor's Strategy dramatically ups pace of bitcoin sales, raising $216 million",
+     "url": "https://www.coindesk.com/markets/2026/07/06/michael-saylor-s-strategy-dramatically-ups-pace-of-bitcoin-sales-raising-usd216-million",
+     "publisher": "CoinDesk",
+     "date": "2026-07-06"
+    },
+    {
+     "title": "Strategy sold 32 BTC for $2.5 million in late May, filing shows",
+     "url": "https://www.coindesk.com/markets/2026/06/01/strategy-sold-32-btc-for-usd2-5-million-in-late-may-filing-shows",
+     "publisher": "CoinDesk",
+     "date": "2026-06-01"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-07-13",
+   "era": "now",
+   "title": "Bank of Thailand screens USDT trades",
+   "title_th": "ธปท. คัดกรองการซื้อขาย USDT",
+   "what": "Bank of Thailand Governor Vitai Ratanakorn says the bank is screening abnormally large stablecoin trades, mainly Tether's USDT, as part of a crackdown on the grey economy, and passes findings to the SEC.",
+   "what_th": "Vitai Ratanakorn (วิทัย รัตนากร) ผู้ว่าการธนาคารแห่งประเทศไทย ระบุว่า ธปท. กำลังคัดกรองการซื้อขายสเตเบิลคอยน์ที่มีขนาดใหญ่ผิดปกติ โดยเฉพาะ USDT ของ Tether ซึ่งเป็นส่วนหนึ่งของการปราบปรามเศรษฐกิจสีเทา และส่งข้อมูลที่พบให้ ก.ล.ต.",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Bank of Thailand Flags Abnormal Stablecoin Trades in 'Grey Economy' Crackdown",
+     "url": "https://decrypt.co/373380/bank-of-thailand-flags-abnormal-stablecoin-trades-in-grey-economy-crackdown",
+     "publisher": "Decrypt",
+     "date": "2026-07-13"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-07-27",
+   "era": "now",
+   "title": "Stablecoin supply shrinks",
+   "title_th": "ปริมาณสเตเบิลคอยน์ลดลง",
+   "what": "Dollar stablecoin supply falls for the first time in four years after peaking at $320.9 billion on 17 May 2026 (DefiLlama), while June 2026 stablecoin volume hits a record $1.79 trillion.",
+   "what_th": "ปริมาณสเตเบิลคอยน์สกุลดอลลาร์ลดลงเป็นครั้งแรกในรอบสี่ปี หลังขึ้นไปสูงสุดที่ 320.9 พันล้านดอลลาร์สหรัฐเมื่อวันที่ 17 พฤษภาคม 2026 (DefiLlama) ขณะที่มูลค่าธุรกรรมสเตเบิลคอยน์ในเดือนมิถุนายน 2026 ทำสถิติสูงสุดที่ 1.79 ล้านล้านดอลลาร์สหรัฐ",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "The Stablecoin Market Shrank For The First Time In Four Years. Watch The Volumes Instead.",
+     "url": "https://www.forbes.com/sites/digital-assets/2026/07/27/the-stablecoin-market-shrank-for-the-first-time-in-four-years-watch-the-volumes-instead/",
+     "publisher": "Forbes",
+     "date": "2026-07-27"
+    },
+    {
+     "title": "Stablecoins circulating (peggedUSD)",
+     "url": "https://defillama.com/stablecoins",
+     "publisher": "DefiLlama",
+     "date": "2026-09-23"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-08-04",
+   "era": "now",
+   "title": "Coldcard seed-phrase flaw drained",
+   "title_th": "ช่องโหว่ seed phrase ของ Coldcard ถูกใช้ดูดเงิน",
+   "what": "At least a dozen attackers drain over $130 million from Coldcard hardware wallets, exploiting a flaw from 2021 in Coinkite's code that made seed phrases predictable. Offline devices are among those drained.",
+   "what_th": "ผู้โจมตีอย่างน้อย 12 รายดูดเงินกว่า 130 ล้านดอลลาร์สหรัฐ ออกจากกระเป๋าสินทรัพย์ดิจิทัลแบบฮาร์ดแวร์ Coldcard โดยใช้ช่องโหว่ในโค้ดของ Coinkite ที่มีมาตั้งแต่ปี 2021 ซึ่งทำให้ seed phrase ถูกคาดเดาได้ อุปกรณ์ที่ออฟไลน์อยู่ก็ถูกดูดเงินด้วย",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Hackers steal over $130M by exploiting bug in offline hardware wallets",
+     "url": "https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/",
+     "publisher": "TechCrunch",
+     "date": "2026-08-04"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-08-18",
+   "era": "now",
+   "title": "SEC proposes Regulation Crypto Assets",
+   "title_th": "ก.ล.ต. สหรัฐฯ เสนอ Regulation Crypto Assets",
+   "what": "The SEC proposes Regulation Crypto Assets: two offering exemptions, capped at $5 million over four years and $75 million per 12 months, plus a safe harbor for when a token sold under an investment contract leaves SEC oversight.",
+   "what_th": "ก.ล.ต. สหรัฐฯ (SEC) เสนอร่าง Regulation Crypto Assets ซึ่งมีข้อยกเว้นสำหรับการเสนอขาย 2 แบบ วงเงินไม่เกิน 5 ล้านดอลลาร์สหรัฐในระยะสี่ปี และ 75 ล้านดอลลาร์สหรัฐต่อ 12 เดือน พร้อมหลักเกณฑ์ safe harbor ที่กำหนดว่าเมื่อใดโทเคนที่ขายภายใต้สัญญาการลงทุน (investment contract) จะพ้นจากการกำกับดูแลของ SEC",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "SEC Proposes New Regulation Crypto Assets",
+     "url": "https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets",
+     "publisher": "US SEC",
+     "date": "2026-08-18"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-08-24",
+   "era": "now",
+   "title": "Biggest bitcoin rally since 2023",
+   "title_th": "บิตคอยน์ขึ้นแรงที่สุดนับตั้งแต่ปี 2023",
+   "what": "Bitcoin gains more than 20% in three days, its largest three-day rise since 2023, as about $2.7 billion of short positions are liquidated; spot bitcoin ETFs take in about $1.6 billion the week before.",
+   "what_th": "บิตคอยน์ปรับขึ้นกว่า 20% ในสามวัน เป็นการขึ้นในรอบสามวันมากที่สุดนับตั้งแต่ปี 2023 ขณะที่สถานะขายชอร์ต (short) มูลค่าราว 2.7 พันล้านดอลลาร์สหรัฐถูกบังคับปิด ส่วน ETF บิตคอยน์แบบ spot มีเงินไหลเข้าราว 1.6 พันล้านดอลลาร์สหรัฐในสัปดาห์ก่อนหน้า",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Crypto extends gains after biggest 3-day rally since 2023",
+     "url": "https://www.cnbc.com/2026/08/24/crypto-extends-gains-after-biggest-3-day-rally-since-2023.html",
+     "publisher": "CNBC",
+     "date": "2026-08-24"
+    }
+   ],
+   "confidence": "reported"
+  },
+  {
+   "date": "2026-09-03",
+   "era": "now",
+   "title": "Thai SEC proposes stablecoin transfer cap",
+   "title_th": "ก.ล.ต. เสนอเพดานการโอนสเตเบิลคอยน์",
+   "what": "The Thai SEC board approves consultation principles for stablecoins: transfers through licensed firms only to or from the customer's own verified wallets, and a cap of 5 million baht per person, per operator, per day each way. Comments close 25 September 2026.",
+   "what_th": "คณะกรรมการ ก.ล.ต. อนุมัติหลักการเพื่อรับฟังความคิดเห็นเรื่องสเตเบิลคอยน์ ได้แก่ การโอนผ่านผู้ประกอบธุรกิจที่ได้รับใบอนุญาตทำได้เฉพาะไปยังหรือจากกระเป๋าสินทรัพย์ดิจิทัลของลูกค้าเองที่ผ่านการยืนยันแล้ว และเพดาน 5 ล้านบาทต่อคน ต่อผู้ประกอบธุรกิจ ต่อวัน แยกกันทั้งขาเข้าและขาออก เปิดรับความคิดเห็นถึงวันที่ 25 กันยายน 2026",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Thailand's stablecoin proposal would block transfers to other people's wallets",
+     "url": "https://cryptoslate.com/thailands-stablecoin-proposal-would-block-transfers-to-other-peoples-wallets/",
+     "publisher": "CryptoSlate",
+     "date": "2026-09-12"
+    }
+   ],
+   "confidence": "reported"
+  },
+  {
+   "date": "2026-09-15",
+   "era": "now",
+   "title": "CLARITY Act fails in the Senate",
+   "title_th": "CLARITY Act ไม่ผ่านวุฒิสภา",
+   "what": "A Senate cloture vote on the CLARITY market-structure bill fails 49-50, short of the 60 needed; the dispute is over ethics limits on officials' crypto business ties. The bill passed the House 294-134 in July 2025 and the Senate Banking Committee 15-9 on 14 May 2026.",
+   "what_th": "การลงมติยุติการอภิปราย (cloture) ในวุฒิสภาสำหรับร่างกฎหมาย CLARITY ว่าด้วยโครงสร้างตลาด ไม่ผ่านด้วยคะแนน 49-50 ไม่ถึง 60 เสียงที่ต้องการ ประเด็นที่เห็นต่างคือข้อจำกัดด้านจริยธรรมเรื่องความเชื่อมโยงทางธุรกิจคริปโตของเจ้าหน้าที่รัฐ ร่างกฎหมายนี้ผ่านสภาผู้แทนราษฎรด้วยคะแนน 294-134 ในเดือนกรกฎาคม 2025 และผ่านคณะกรรมาธิการการธนาคารของวุฒิสภาด้วยคะแนน 15-9 เมื่อวันที่ 14 พฤษภาคม 2026",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Crypto's biggest Senate push falls flat as the Clarity Act fails",
+     "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote",
+     "publisher": "CoinDesk",
+     "date": "2026-09-15"
+    },
+    {
+     "title": "US Crypto Policy Tracker: Legislative Developments",
+     "url": "https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments",
+     "publisher": "Latham & Watkins",
+     "date": "2026-09"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-09-22",
+   "era": "now",
+   "title": "Where prices stand",
+   "title_th": "ราคา ณ ปัจจุบัน",
+   "what": "Bitcoin closes at $86,172 (CoinMarketCap), about 32% below its October 2025 record and 1.5% below its 2025 close of $87,509. Ether closes at $2,752.63, about 44% below its August 2025 record.",
+   "what_th": "บิตคอยน์ปิดที่ 86,172 ดอลลาร์สหรัฐ (CoinMarketCap) ต่ำกว่าสถิติเมื่อเดือนตุลาคม 2025 ราว 32% และต่ำกว่าราคาปิดสิ้นปี 2025 ที่ 87,509 ดอลลาร์สหรัฐ 1.5% ส่วนอีเธอเรียมปิดที่ 2,752.63 ดอลลาร์สหรัฐ ต่ำกว่าสถิติเมื่อเดือนสิงหาคม 2025 ราว 44%",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin historical data",
+     "url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Ethereum historical data",
+     "url": "https://coinmarketcap.com/currencies/ethereum/historical-data/",
+     "publisher": "CoinMarketCap",
+     "date": "2026-09-23"
+    },
+    {
+     "title": "Current price of Bitcoin for September 22, 2026",
+     "url": "https://fortune.com/article/price-of-bitcoin-09-22-2026/",
+     "publisher": "Fortune",
+     "date": "2026-09-22"
+    }
+   ],
+   "confidence": "confirmed"
+  }
+ ],
+ "prices": [
+  {
+   "date": "2013-11-30",
+   "asset": "BTC",
+   "usd": 1156.14,
+   "note": "2013 cycle high (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2015-01-14",
+   "asset": "BTC",
+   "usd": 171.51,
+   "note": "2015 bear-market low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2017-12-17",
+   "asset": "BTC",
+   "usd": 20089.0,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2018-12-15",
+   "asset": "BTC",
+   "usd": 3191.3,
+   "note": "2018 low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2020-03-13",
+   "asset": "BTC",
+   "usd": 4106.98,
+   "note": "COVID crash low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2021-11-10",
+   "asset": "BTC",
+   "usd": 68789.63,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2022-11-21",
+   "asset": "BTC",
+   "usd": 15599.05,
+   "note": "2022 low after FTX (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2024-03-14",
+   "asset": "BTC",
+   "usd": 73750.07,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2024-12-05",
+   "asset": "BTC",
+   "usd": 103900.47,
+   "note": "first trade above $100,000 (CMC intraday high)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-01-20",
+   "asset": "BTC",
+   "usd": 109114.88,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-04-07",
+   "asset": "BTC",
+   "usd": 74436.68,
+   "note": "2025 low, tariff sell-off (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-05-22",
+   "asset": "BTC",
+   "usd": 111970.17,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-07-14",
+   "asset": "BTC",
+   "usd": 123091.61,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-08-14",
+   "asset": "BTC",
+   "usd": 124457.12,
+   "note": "ATH at the time (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-10-06",
+   "asset": "BTC",
+   "usd": 126198.07,
+   "note": "ATH as of 2026-09-23 (CMC intraday; CoinGecko $126,080)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-10-10",
+   "asset": "BTC",
+   "usd": 104582.41,
+   "note": "low on the $19B liquidation day (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2025-12-31",
+   "asset": "BTC",
+   "usd": 87508.83,
+   "note": "2025 close (CMC)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2026-02-06",
+   "asset": "BTC",
+   "usd": 60074.2,
+   "note": "February 2026 low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2026-07-01",
+   "asset": "BTC",
+   "usd": 57747.76,
+   "note": "2026 low to date (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2026-09-22",
+   "asset": "BTC",
+   "usd": 86172.28,
+   "note": "close (CMC)",
+   "source_url": "https://coinmarketcap.com/currencies/bitcoin/historical-data/"
+  },
+  {
+   "date": "2017-12-19",
+   "asset": "ETH",
+   "usd": 881.94,
+   "note": "December 2017 high (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2018-12-15",
+   "asset": "ETH",
+   "usd": 82.83,
+   "note": "2018 low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2021-11-16",
+   "asset": "ETH",
+   "usd": 4891.7,
+   "note": "ATH at the time (CMC intraday; CoinGecko $4,878 on 2021-11-10)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2022-06-18",
+   "asset": "ETH",
+   "usd": 896.11,
+   "note": "2022 low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2025-04-09",
+   "asset": "ETH",
+   "usd": 1386.8,
+   "note": "2025 low (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2025-08-24",
+   "asset": "ETH",
+   "usd": 4953.73,
+   "note": "ATH as of 2026-09-23 (CMC intraday; CoinGecko $4,946.05)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2026-06-06",
+   "asset": "ETH",
+   "usd": 1506.51,
+   "note": "2026 low to date (CMC intraday)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  },
+  {
+   "date": "2026-09-22",
+   "asset": "ETH",
+   "usd": 2752.63,
+   "note": "close (CMC)",
+   "source_url": "https://coinmarketcap.com/currencies/ethereum/historical-data/"
+  }
+ ]
+}

@@ -1,20 +1,9 @@
-# OS / editor
-.DS_Store
-*.swp
-
-# Python
+build/
+data/raw/
 __pycache__/
-*.pyc
-.venv/
-
-# Secrets & affiliate IDs — NEVER commit
+.DS_Store
+.wrangler/
 .env
 secrets.json
 affiliate_ids.local.*
 *.secret
-
-# Data / build artifacts (add as the generator lands)
-*.db
-/store/
-/drafts/
-node_modules/

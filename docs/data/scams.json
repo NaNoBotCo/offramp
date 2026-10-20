@@ -1,0 +1,1204 @@
+{
+ "as_of": "2026-09-23",
+ "stats": [
+  {
+   "year": 2023,
+   "metric": "reported online-crime losses, first year of the reporting system",
+   "value": 32083,
+   "unit": "million baht",
+   "scope": "247,753 reports to Thai Police Online, 1 Mar 2022 to 21 Mar 2023",
+   "source": {
+    "title": "เปิดสถิติกลโกงออนไลน์ 1 ปี ร้องเรียนพุ่ง 2.5 แสนเรื่อง เสียหายกว่า 3.2 หมื่นล้านบาท",
+    "url": "https://www.mangozero.com/thai-police-online-crime/",
+    "date": "2023-04-02"
+   },
+   "metric_th": "ความเสียหายจากอาชญากรรมออนไลน์ที่มีการแจ้งความ ปีแรกของระบบรับแจ้งความ",
+   "unit_th": "ล้านบาท",
+   "scope_th": "แจ้งความผ่านระบบรับแจ้งความออนไลน์ 247,753 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 21 มี.ค. 2023"
+  },
+  {
+   "year": 2023,
+   "metric": "reported online-crime losses, cumulative",
+   "value": 38156125167,
+   "unit": "baht",
+   "scope": "296,243 reports to Thai Police Online, 1 Mar 2022 to 31 May 2023 (Royal Thai Police figures)",
+   "source": {
+    "title": "14 อันดับภัยออนไลน์ที่คนไทยโดนหลอกสูงสุด เสียหายรวมกว่า 3 หมื่นล้านบาท วัยทำงานโดนเยอะสุด",
+    "url": "https://droidsans.com/top-14-cyber-online-of-thailand/",
+    "date": "2023-06-20"
+   },
+   "metric_th": "ความเสียหายจากอาชญากรรมออนไลน์ที่มีการแจ้งความ ยอดสะสม",
+   "unit_th": "บาท",
+   "scope_th": "แจ้งความผ่านระบบรับแจ้งความออนไลน์ 296,243 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 31 พ.ค. 2023 (ตัวเลขของสำนักงานตำรวจแห่งชาติ)"
+  },
+  {
+   "year": 2023,
+   "metric": "investment-scam losses, cumulative",
+   "value": 11550,
+   "unit": "million baht (more than)",
+   "scope": "23,616 online reports of investment scams, 1 Mar 2022 to 30 Jun 2023; stated by a deputy government spokesperson",
+   "source": {
+    "title": "รัฐบาลย้ำเตือนประชาชนตกเป็นเหยื่อมิจฉาชีพ หลังพบประชาชนถูกหลอกให้ลงทุนผ่านระบบคอมพิวเตอร์ ตั้งแต่ 1 มี.ค.65 - 30 มิ.ย.66 ยอดความเสียหายรวมสูงกว่า 11,550 ล้านบาท",
+    "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/196536",
+    "date": "2023-07-10"
+   },
+   "metric_th": "ความเสียหายจากการหลอกลงทุน ยอดสะสม",
+   "unit_th": "ล้านบาท (มากกว่า)",
+   "scope_th": "แจ้งความออนไลน์เรื่องหลอกลงทุน 23,616 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 30 มิ.ย. 2023 ตามที่รองโฆษกรัฐบาลแถลง"
+  },
+  {
+   "year": 2024,
+   "metric": "reported online-crime losses, cumulative",
+   "value": 74893134395,
+   "unit": "baht",
+   "scope": "708,141 reports, 1 Mar 2022 to 31 Oct 2024; investment fraud 26.9 billion baht of the total",
+   "source": {
+    "title": "รองโฆษกรัฐบาล เผย สถิติแจ้งความออนไลน์ ตั้งแต่ 1 มีนาคม 65 – 31 ตุลาคม 67 มูลค่าความเสียหายรวม 74,893,134,395 บาท",
+    "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/338190",
+    "date": "2024-11-08"
+   },
+   "metric_th": "ความเสียหายจากอาชญากรรมออนไลน์ที่มีการแจ้งความ ยอดสะสม",
+   "unit_th": "บาท",
+   "scope_th": "แจ้งความ 708,141 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 31 ต.ค. 2024 ในยอดนี้เป็นความเสียหายจากการหลอกลงทุน 26.9 พันล้านบาท"
+  },
+  {
+   "year": 2024,
+   "metric": "average reported loss per day",
+   "value": 77,
+   "unit": "million baht",
+   "scope": "1 Mar 2022 to 31 Oct 2024; October 2024 alone averaged 89 million baht a day",
+   "source": {
+    "title": "รองโฆษกรัฐบาล เผย สถิติแจ้งความออนไลน์ ตั้งแต่ 1 มีนาคม 65 – 31 ตุลาคม 67 มูลค่าความเสียหายรวม 74,893,134,395 บาท",
+    "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/338190",
+    "date": "2024-11-08"
+   },
+   "metric_th": "ความเสียหายเฉลี่ยต่อวันที่มีการแจ้งความ",
+   "unit_th": "ล้านบาท",
+   "scope_th": "ระหว่าง 1 มี.ค. 2022 ถึง 31 ต.ค. 2024 เฉพาะเดือนตุลาคม 2024 เฉลี่ยวันละ 89 ล้านบาท"
+  },
+  {
+   "year": 2024,
+   "metric": "scam funds frozen",
+   "value": 8243782268,
+   "unit": "baht",
+   "scope": "Frozen out of 43,040,600,310 baht requested, across 544,183 accounts, 1 Mar 2022 to 31 Oct 2024",
+   "source": {
+    "title": "รองโฆษกรัฐบาล เผย สถิติแจ้งความออนไลน์ ตั้งแต่ 1 มีนาคม 65 – 31 ตุลาคม 67 มูลค่าความเสียหายรวม 74,893,134,395 บาท",
+    "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/338190",
+    "date": "2024-11-08"
+   },
+   "metric_th": "เงินจากการหลอกลวงที่ถูกอายัด",
+   "unit_th": "บาท",
+   "scope_th": "อายัดได้จากยอดที่ขออายัด 43,040,600,310 บาท ใน 544,183 บัญชี ระหว่าง 1 มี.ค. 2022 ถึง 31 ต.ค. 2024"
+  },
+  {
+   "year": 2024,
+   "metric": "reported online-crime losses, cumulative",
+   "value": 79569412608,
+   "unit": "baht",
+   "scope": "773,118 online reports, 1 Mar 2022 to 31 Dec 2024 (Royal Thai Police online reporting centre)",
+   "source": {
+    "title": "พิษอาชญากรรมออนไลน์ปี 68 เกือบ 2 เดือนสูญ 3.4 พันล้าน",
+    "url": "https://www.thaipbs.or.th/news/content/349248",
+    "date": "2025-02-13"
+   },
+   "metric_th": "ความเสียหายจากอาชญากรรมออนไลน์ที่มีการแจ้งความ ยอดสะสม",
+   "unit_th": "บาท",
+   "scope_th": "แจ้งความออนไลน์ 773,118 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 31 ธ.ค. 2024 (ศูนย์รับแจ้งความออนไลน์ของสำนักงานตำรวจแห่งชาติ)"
+  },
+  {
+   "year": 2025,
+   "metric": "reported online-crime losses",
+   "value": 6549576749,
+   "unit": "baht",
+   "scope": "75,728 reports, 1 Jan to 26 Mar 2025, about 874 a day (Cyber Crime Investigation Bureau data)",
+   "source": {
+    "title": "เปิดสถิติ 5 อันดับคดีออนไลน์ ที่คนไทยถูกหลอกมากสุด ปี 68",
+    "url": "https://www.thaipbs.or.th/verify/article/content/976",
+    "date": "2025-04-01"
+   },
+   "metric_th": "ความเสียหายจากอาชญากรรมออนไลน์ที่มีการแจ้งความ",
+   "unit_th": "บาท",
+   "scope_th": "แจ้งความ 75,728 เรื่อง ระหว่าง 1 ม.ค. ถึง 26 มี.ค. 2025 เฉลี่ยราววันละ 874 เรื่อง (ข้อมูลของกองบัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี หรือ บช.สอท.)"
+  },
+  {
+   "year": 2025,
+   "metric": "average reported loss per day",
+   "value": 65,
+   "unit": "million baht",
+   "scope": "February 2025, against an average of 117 million baht a day in early 2024 (Royal Thai Police data)",
+   "source": {
+    "title": "เปิดสถิติ 5 อันดับคดีออนไลน์ ที่คนไทยถูกหลอกมากสุด ปี 68",
+    "url": "https://www.thaipbs.or.th/verify/article/content/976",
+    "date": "2025-04-01"
+   },
+   "metric_th": "ความเสียหายเฉลี่ยต่อวันที่มีการแจ้งความ",
+   "unit_th": "ล้านบาท",
+   "scope_th": "เดือนกุมภาพันธ์ 2025 เทียบกับค่าเฉลี่ยวันละ 117 ล้านบาทในช่วงต้นปี 2024 (ข้อมูลของสำนักงานตำรวจแห่งชาติ)"
+  },
+  {
+   "year": 2025,
+   "metric": "call-scam losses per day",
+   "value": 50,
+   "unit": "million baht (less than)",
+   "scope": "Down from about 100 million baht a day before the February 2025 border cut-offs; stated by the Digital Economy and Society Minister",
+   "source": {
+    "title": "Call-scam losses halved to B50m a day, digital minister says",
+    "url": "https://www.bangkokpost.com/thailand/general/2972641/call-scam-losses-halved-to-b50m-a-day-digital-minister-says",
+    "date": "2025-03-04"
+   },
+   "metric_th": "ความเสียหายต่อวันจากการหลอกลวงทางโทรศัพท์",
+   "unit_th": "ล้านบาท (น้อยกว่า)",
+   "scope_th": "ลดลงจากราววันละ 100 ล้านบาท ก่อนมาตรการตัดไฟ น้ำมัน และอินเทอร์เน็ตตามแนวชายแดนเมื่อเดือนกุมภาพันธ์ 2025 ตามที่รัฐมนตรีว่าการกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคมระบุ"
+  },
+  {
+   "year": 2025,
+   "metric": "online fraud complaints, cumulative since 2022",
+   "value": 1.09,
+   "unit": "million complaints",
+   "scope": "Cumulative losses over 100 billion baht since 2022, per police at the launch of a mule-account operation",
+   "source": {
+    "title": "Police crackdown on 'mule accounts' aims to cut off 100-billion-baht scam network",
+    "url": "https://www.nationthailand.com/news/general/40058704",
+    "date": "2025-11-24"
+   },
+   "metric_th": "เรื่องร้องเรียนการฉ้อโกงออนไลน์ ยอดสะสมตั้งแต่ปี 2022",
+   "unit_th": "ล้านเรื่อง",
+   "scope_th": "ความเสียหายสะสมตั้งแต่ปี 2022 เกิน 100 พันล้านบาท ตามที่ตำรวจแถลงในวันเปิดปฏิบัติการปราบปรามบัญชีม้า"
+  },
+  {
+   "year": 2025,
+   "metric": "scam losses, survey estimate",
+   "value": 110,
+   "unit": "billion baht",
+   "scope": "Global Anti-Scam Alliance survey of the past year; average 12,956 baht per person; six in ten Thais report being scammed. A survey estimate, not police reports",
+   "source": {
+    "title": "Six in ten Thais have fallen victim to scams, causing record losses of 110 billion baht",
+    "url": "https://www.nationthailand.com/news/general/40058129",
+    "date": "2025-11-12"
+   },
+   "metric_th": "ความเสียหายจากการหลอกลวง ประมาณการจากผลสำรวจ",
+   "unit_th": "พันล้านบาท",
+   "scope_th": "ผลสำรวจของ Global Anti-Scam Alliance ในรอบปีที่ผ่านมา เสียหายเฉลี่ยคนละ 12,956 บาท คนไทย 6 ใน 10 คนตอบว่าเคยถูกหลอก ตัวเลขนี้ประมาณจากผลสำรวจ ไม่ใช่จากการแจ้งความกับตำรวจ"
+  },
+  {
+   "year": 2026,
+   "metric": "reported online-scam losses",
+   "value": 7.48,
+   "unit": "billion baht",
+   "scope": "More than 120,000 complaints, January to April 2026 (Anti-Cyber Scam Centre)",
+   "source": {
+    "title": "ACSC receives over 120k online scam complaints",
+    "url": "https://www.bangkokpost.com/thailand/general/3253098/acsc-receives-over-120k-online-scam-complaints",
+    "date": "2026-05-11"
+   },
+   "metric_th": "ความเสียหายจากการหลอกลวงออนไลน์ที่มีการแจ้ง",
+   "unit_th": "พันล้านบาท",
+   "scope_th": "เรื่องร้องเรียนกว่า 120,000 เรื่อง ระหว่างเดือนมกราคมถึงเมษายน 2026 (ศูนย์ต่อต้านการหลอกลวงทางไซเบอร์ หรือ Anti-Cyber Scam Centre)"
+  },
+  {
+   "year": 2026,
+   "metric": "online-scam losses",
+   "value": 9,
+   "unit": "billion baht (nearly)",
+   "scope": "More than 170,000 cases, January to June 2026; average loss above 52,000 baht per case; Facebook linked to over 61% of cases (Thailand Consumers Council)",
+   "source": {
+    "title": "Online scam losses in Thailand approach USD272 million over six months",
+    "url": "https://asianews.network/online-scam-losses-in-thailand-approach-usd272-million-over-six-months/",
+    "date": "2026-08-10"
+   },
+   "metric_th": "ความเสียหายจากการหลอกลวงออนไลน์",
+   "unit_th": "พันล้านบาท (เกือบ)",
+   "scope_th": "กว่า 170,000 กรณี ระหว่างเดือนมกราคมถึงมิถุนายน 2026 เสียหายเฉลี่ยเกินกรณีละ 52,000 บาท กว่า 61% ของกรณีเกี่ยวข้องกับ Facebook (สภาองค์กรของผู้บริโภค)"
+  },
+  {
+   "year": 2026,
+   "metric": "assets seized or frozen in the government anti-scam campaign",
+   "value": 24,
+   "unit": "billion baht",
+   "scope": "Nine-month campaign reported by Prime Minister Anutin Charnvirakul; 29,233 suspects arrested, 122,840 URLs blocked, 291,498 suspicious numbers blocked; online scam cases down 69.2%",
+   "source": {
+    "title": "Thailand seizes THB24bn as scam and nominee crackdown widens",
+    "url": "https://www.nationthailand.com/news/40067726",
+    "date": "2026-06-22"
+   },
+   "metric_th": "ทรัพย์สินที่ยึดหรืออายัดได้ในปฏิบัติการปราบปรามการหลอกลวงของรัฐบาล",
+   "unit_th": "พันล้านบาท",
+   "scope_th": "ผลปฏิบัติการ 9 เดือนที่นายกรัฐมนตรีอนุทิน ชาญวีรกูลรายงาน จับกุมผู้ต้องหา 29,233 คน ปิดกั้น URL 122,840 รายการ ปิดกั้นหมายเลขต้องสงสัย 291,498 หมายเลข คดีหลอกลวงออนไลน์ลดลง 69.2%"
+  }
+ ],
+ "types": [
+  {
+   "id": "call-centre",
+   "name": "Call-centre gangs",
+   "name_th": "แก๊งคอลเซ็นเตอร์",
+   "how": "Callers pose as police, anti-money-laundering officers or other officials and tell the victim their account is tied to a crime. They demand transfers for an 'asset check' or to clear the victim's name. Thai PBS reports gangs using deepfake video calls in police uniform and fake cyber-police websites; police record the category as ข่มขู่ทางโทรศัพท์ (Call Center).",
+   "signs": [
+    "A caller says your account is linked to money laundering",
+    "A request to transfer money so officials can check it",
+    "A video call from someone in police uniform",
+    "A website that claims to be the cyber police and asks for payment"
+   ],
+   "sources": [
+    {
+     "title": "พิษอาชญากรรมออนไลน์ปี 68 เกือบ 2 เดือนสูญ 3.4 พันล้าน",
+     "url": "https://www.thaipbs.or.th/news/content/349248",
+     "publisher": "Thai PBS",
+     "date": "2025-02-13"
+    },
+    {
+     "title": "Online scam reports rise to 5,588 in a week, losses top B207m",
+     "url": "https://www.nationthailand.com/news/general/40068316",
+     "publisher": "The Nation",
+     "date": "2026-07-06"
+    },
+    {
+     "title": "Bank of Thailand fraud warning (uses the term แก๊งคอลเซ็นเตอร์)",
+     "url": "https://www.bot.or.th/th/fraud.html",
+     "publisher": "Bank of Thailand",
+     "date": ""
+    }
+   ],
+   "how_th": "คนร้ายโทรมาแอบอ้างเป็นตำรวจ เจ้าหน้าที่ ปปง. หรือเจ้าหน้าที่รัฐอื่น แล้วบอกเหยื่อว่าบัญชีของเขาเกี่ยวข้องกับคดี จากนั้นสั่งให้โอนเงินเพื่อ 'ตรวจสอบทรัพย์สิน' หรือเพื่อพิสูจน์ความบริสุทธิ์ Thai PBS รายงานว่าแก๊งเหล่านี้ใช้วิดีโอคอลแบบ Deepfake ในเครื่องแบบตำรวจ และทำเว็บไซต์ตำรวจไซเบอร์ปลอม ตำรวจบันทึกคดีประเภทนี้ว่า ข่มขู่ทางโทรศัพท์ (Call Center)",
+   "signs_th": [
+    "ผู้โทรบอกว่าบัญชีของคุณเกี่ยวข้องกับการฟอกเงิน",
+    "ถูกขอให้โอนเงินเพื่อให้เจ้าหน้าที่ตรวจสอบ",
+    "วิดีโอคอลจากคนในเครื่องแบบตำรวจ",
+    "เว็บไซต์ที่อ้างว่าเป็นตำรวจไซเบอร์และให้จ่ายเงิน"
+   ]
+  },
+  {
+   "id": "investment",
+   "name": "Investment scams",
+   "name_th": "หลอกให้ลงทุนผ่านระบบคอมพิวเตอร์",
+   "how": "Ads, chat groups or new contacts promise unusually high returns and move the victim onto a platform that shows paper profits. Deposits go to accounts the scammers control. In police data from 1 Mar 2022 to 31 Oct 2024, investment fraud caused the largest losses of any category, 26.9 billion baht.",
+   "signs": [
+    "Returns described as far above normal",
+    "Investment ads on Facebook or LINE",
+    "A platform named by the contact that you cannot find on the SEC licence list",
+    "Pressure to invest more after early gains"
+   ],
+   "sources": [
+    {
+     "title": "รัฐบาลย้ำเตือนประชาชนตกเป็นเหยื่อมิจฉาชีพ หลังพบประชาชนถูกหลอกให้ลงทุนผ่านระบบคอมพิวเตอร์",
+     "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/196536",
+     "publisher": "Government Public Relations Department",
+     "date": "2023-07-10"
+    },
+    {
+     "title": "รองโฆษกรัฐบาล เผย สถิติแจ้งความออนไลน์ ตั้งแต่ 1 มีนาคม 65 – 31 ตุลาคม 67",
+     "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/338190",
+     "publisher": "Government Public Relations Department",
+     "date": "2024-11-08"
+    },
+    {
+     "title": "Online scam losses in Thailand approach USD272 million over six months",
+     "url": "https://asianews.network/online-scam-losses-in-thailand-approach-usd272-million-over-six-months/",
+     "publisher": "Asia News Network / The Nation",
+     "date": "2026-08-10"
+    }
+   ],
+   "how_th": "โฆษณา กลุ่มแชต หรือคนที่เพิ่งรู้จัก สัญญาว่าจะได้ผลตอบแทนสูงผิดปกติ แล้วพาเหยื่อไปใช้แพลตฟอร์มที่แสดงกำไรเป็นเพียงตัวเลขบนหน้าจอ เงินที่ฝากเข้าไปจะเข้าบัญชีที่มิจฉาชีพควบคุม ข้อมูลตำรวจระหว่าง 1 มี.ค. 2022 ถึง 31 ต.ค. 2024 ระบุว่าการหลอกลงทุนสร้างความเสียหายมากที่สุดในทุกประเภท คือ 26.9 พันล้านบาท",
+   "signs_th": [
+    "ผลตอบแทนที่อ้างว่าสูงกว่าปกติมาก",
+    "โฆษณาชวนลงทุนบน Facebook หรือ LINE",
+    "แพลตฟอร์มที่ผู้ติดต่อแนะนำ แต่หาไม่พบในรายชื่อผู้ได้รับใบอนุญาตของ ก.ล.ต.",
+    "ถูกเร่งให้ลงทุนเพิ่มหลังได้กำไรในช่วงแรก"
+   ]
+  },
+  {
+   "id": "pig-butchering",
+   "name": "Pig-butchering",
+   "name_th": "ขุนหมูให้อ้วนแล้วเชือด",
+   "how": "A scammer makes contact by text, dating app or social media, builds trust or a relationship over weeks, then introduces a crypto trading platform the scammer controls. The platform shows fabricated gains and may allow a small withdrawal; larger withdrawals meet demands for taxes or early-withdrawal fees. FinCEN says the scams are largely run by Southeast Asian criminal groups using trafficked workers.",
+   "signs": [
+    "A chance message or match that turns into a close online relationship",
+    "The contact brings up a crypto platform or app they use",
+    "Profits that look very large on the platform",
+    "A tax or fee demanded before a withdrawal",
+    "A request for remote access to your device or exchange account"
+   ],
+   "sources": [
+    {
+     "title": "FinCEN Alert on Prevalent Virtual Currency Investment Scam Commonly Known as \"Pig Butchering\" (FIN-2023-Alert005)",
+     "url": "https://www.fincen.gov/sites/default/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf",
+     "publisher": "US Treasury, FinCEN",
+     "date": "2023-09-08"
+    },
+    {
+     "title": "Chairman of Prince Group Indicted for Operating Cambodian Forced Labor Scam Compounds Engaged in Cryptocurrency Fraud Schemes",
+     "url": "https://www.justice.gov/opa/pr/chairman-prince-group-indicted-operating-cambodian-forced-labor-scam-compounds-engaged",
+     "publisher": "US Department of Justice",
+     "date": "2025-10-14"
+    }
+   ],
+   "how_th": "มิจฉาชีพติดต่อมาทางข้อความ แอปหาคู่ หรือโซเชียลมีเดีย ใช้เวลาหลายสัปดาห์สร้างความไว้ใจหรือความสัมพันธ์ แล้วแนะนำแพลตฟอร์มเทรดคริปโตที่มิจฉาชีพควบคุมอยู่ แพลตฟอร์มแสดงกำไรปลอม และอาจให้ถอนเงินจำนวนน้อยได้ แต่เมื่อจะถอนก้อนใหญ่ จะถูกเรียกเก็บภาษีหรือค่าธรรมเนียมถอนก่อนกำหนด FinCEN ระบุว่ากลุ่มอาชญากรในเอเชียตะวันออกเฉียงใต้เป็นผู้ดำเนินการหลอกลวงแบบนี้เป็นส่วนใหญ่ โดยใช้แรงงานที่ถูกค้ามนุษย์",
+   "signs_th": [
+    "ข้อความที่ทักมาเหมือนบังเอิญ หรือคู่ที่แมตช์ในแอป แล้วกลายเป็นความสัมพันธ์ใกล้ชิดทางออนไลน์",
+    "อีกฝ่ายพูดถึงแพลตฟอร์มหรือแอปคริปโตที่ตัวเองใช้",
+    "กำไรบนแพลตฟอร์มดูสูงมาก",
+    "ถูกเรียกเก็บภาษีหรือค่าธรรมเนียมก่อนถอนเงิน",
+    "ถูกขอสิทธิ์ควบคุมอุปกรณ์หรือบัญชีศูนย์ซื้อขายของคุณจากระยะไกล"
+   ]
+  },
+  {
+   "id": "romance",
+   "name": "Romance scams",
+   "name_th": "หลอกให้รักแล้วโอนเงิน",
+   "how": "A contact builds an online relationship and then asks for money, or steers the victim into an investment. Thai police log it as a separate category: 2,167 reports from 1 Mar 2022 to 31 May 2023. When the ask is a crypto investment, the pattern overlaps with pig-butchering.",
+   "signs": [
+    "A relationship that exists only in chat or video calls",
+    "Requests for money for an emergency, travel or fees",
+    "Talk of an investment the contact says has worked for them"
+   ],
+   "sources": [
+    {
+     "title": "14 อันดับภัยออนไลน์ที่คนไทยโดนหลอกสูงสุด เสียหายรวมกว่า 3 หมื่นล้านบาท",
+     "url": "https://droidsans.com/top-14-cyber-online-of-thailand/",
+     "publisher": "DroidSans (Royal Thai Police figures)",
+     "date": "2023-06-20"
+    },
+    {
+     "title": "FinCEN Alert on Prevalent Virtual Currency Investment Scam Commonly Known as \"Pig Butchering\"",
+     "url": "https://www.fincen.gov/sites/default/files/shared/FinCEN_Alert_Pig_Butchering_FINAL_508c.pdf",
+     "publisher": "US Treasury, FinCEN",
+     "date": "2023-09-08"
+    }
+   ],
+   "how_th": "คนที่ติดต่อมาสร้างความสัมพันธ์ทางออนไลน์ แล้วขอเงิน หรือชักนำเหยื่อไปลงทุน ตำรวจไทยแยกเป็นคดีอีกประเภทหนึ่ง มีการแจ้งความ 2,167 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 31 พ.ค. 2023 ถ้าสิ่งที่ขอคือการลงทุนคริปโต รูปแบบนี้จะคาบเกี่ยวกับการหลอกแบบขุนหมูให้อ้วนแล้วเชือด",
+   "signs_th": [
+    "ความสัมพันธ์ที่มีอยู่แค่ในแชตหรือวิดีโอคอล",
+    "ขอเงินสำหรับเหตุฉุกเฉิน ค่าเดินทาง หรือค่าธรรมเนียม",
+    "พูดถึงการลงทุนที่อีกฝ่ายอ้างว่าตัวเองทำแล้วได้ผล"
+   ]
+  },
+  {
+   "id": "fake-platform",
+   "name": "Fake exchange and trading apps",
+   "name_th": "หลอกลงทุน/เทรดคริปโต",
+   "how": "Victims are directed to a website or app built to look like an exchange. Balances on screen are set by the operator, and withdrawals are blocked or charged. The Thai SEC warns that unlicensed platforms carry scam risk and publishes both the list of licensed exchanges and a list of names that are not licensed.",
+   "signs": [
+    "The exchange is not on the SEC list of licensed digital asset exchanges",
+    "The name appears on the SEC Investor Alert list",
+    "A contact tells you which site or app to use",
+    "Withdrawal needs another payment first"
+   ],
+   "sources": [
+    {
+     "title": "ก.ล.ต. แจ้งเตือนการปิดกั้นแพลตฟอร์ม Bybit 1000X CoinEx OKX และ XT.COM วันที่ 28 มิถุนายน 2568",
+     "url": "https://www.sec.or.th/TH/Pages/News_Detail.aspx?SECID=11796",
+     "publisher": "Securities and Exchange Commission, Thailand",
+     "date": "2025-05-29"
+    },
+    {
+     "title": "เตือนภัย (CCIB warnings: หลอกลงทุน/เทรดคริปโต)",
+     "url": "https://www.ccib.go.th/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%A2",
+     "publisher": "Cyber Crime Investigation Bureau",
+     "date": ""
+    },
+    {
+     "title": "FBI Guidance for Cryptocurrency Scam Victims",
+     "url": "https://www.ic3.gov/PSA/2023/PSA230824",
+     "publisher": "FBI IC3",
+     "date": "2023-08-24"
+    }
+   ],
+   "how_th": "เหยื่อถูกพาไปที่เว็บไซต์หรือแอปที่ทำให้ดูเหมือนศูนย์ซื้อขายสินทรัพย์ดิจิทัล ยอดเงินบนหน้าจอเป็นตัวเลขที่ผู้ควบคุมระบบกำหนดเอง และถอนเงินไม่ได้หรือถูกเรียกเก็บเงินก่อนถอน สำนักงาน ก.ล.ต. เตือนว่าแพลตฟอร์มที่ไม่ได้รับอนุญาตมีความเสี่ยงที่จะถูกหลอก และเผยแพร่ทั้งรายชื่อศูนย์ซื้อขายที่ได้รับใบอนุญาต และรายชื่อที่ไม่ได้รับใบอนุญาต",
+   "signs_th": [
+    "ไม่มีชื่อในรายชื่อศูนย์ซื้อขายสินทรัพย์ดิจิทัลที่ได้รับใบอนุญาตจาก ก.ล.ต.",
+    "มีชื่ออยู่ในรายการ Investor Alert ของ ก.ล.ต.",
+    "ผู้ติดต่อเป็นคนกำหนดว่าต้องใช้เว็บไซต์หรือแอปไหน",
+    "ต้องจ่ายเงินเพิ่มก่อนจึงจะถอนได้"
+   ]
+  },
+  {
+   "id": "task-scam",
+   "name": "Online task and side-income scams",
+   "name_th": "หลอกให้โอนเงินเพื่อทำงาน",
+   "how": "Victims are offered pay for simple online tasks such as likes, shares or orders, receive small payouts, then are told to transfer larger sums to unlock earnings. It is the second most reported category in Thai police data, with 98,139 cases from 2022 to 2024.",
+   "signs": [
+    "Paid work for liking or sharing posts",
+    "Small early payouts followed by a request to deposit",
+    "Earnings held back until you pay more"
+   ],
+   "sources": [
+    {
+     "title": "กางสถิติหลอกลวงออนไลน์ 3 ปี 7.7 แสนคดี พี่มิจฯฉกเงินคนไทย 7 หมื่นล้าน",
+     "url": "https://www.thansettakij.com/business/economy/616695",
+     "publisher": "Thansettakij",
+     "date": "2025-01-10"
+    },
+    {
+     "title": "เตือนหลอกจ้าง \"กดไลค์ กดแชร์\" แฉมิจฉาชีพหลอกโอนเงินก่อนเชิดหาย",
+     "url": "https://www.thairath.co.th/scoop/theissue/2587660",
+     "publisher": "Thairath",
+     "date": ""
+    }
+   ],
+   "how_th": "เหยื่อได้รับข้อเสนอให้ทำงานออนไลน์ง่าย ๆ เช่น กดไลก์ กดแชร์ หรือกดสั่งซื้อ และได้เงินค่าตอบแทนเล็กน้อย จากนั้นถูกสั่งให้โอนเงินก้อนใหญ่ขึ้นเพื่อปลดล็อกรายได้ ข้อมูลตำรวจไทยระบุว่าเป็นคดีที่มีการแจ้งความมากเป็นอันดับ 2 จำนวน 98,139 คดี ระหว่างปี 2022 ถึง 2024",
+   "signs_th": [
+    "งานที่จ่ายเงินให้กดไลก์หรือแชร์โพสต์",
+    "ได้เงินเล็กน้อยในช่วงแรก แล้วถูกขอให้ฝากเงิน",
+    "รายได้ถูกกักไว้จนกว่าจะจ่ายเงินเพิ่ม"
+   ]
+  },
+  {
+   "id": "mule-account",
+   "name": "Mule accounts",
+   "name_th": "บัญชีม้า",
+   "how": "Bank or crypto accounts opened, sold, rented or lent to receive and move scam money. Under the 2023 technology crime decree, account holders face up to 3 years in prison, a fine of up to 300,000 baht, or both; people who recruit or advertise accounts face 2 to 5 years and 200,000 to 500,000 baht. Police in November 2025 found 'mule farms' paying people to open accounts by facial recognition.",
+   "signs": [
+    "An offer of cash to open an account or lend yours",
+    "A job that consists of receiving and forwarding transfers",
+    "A request for your ID card, SIM card or a face scan"
+   ],
+   "sources": [
+    {
+     "title": "เช็กด่วน! คุณอาจเสี่ยงเป็น \"บัญชีม้า\" โดยไม่รู้ตัว",
+     "url": "https://www.keptbykrungsri.com/kept-tips/financial-safety/financial-scam-mule-account",
+     "publisher": "Krungsri",
+     "date": ""
+    },
+    {
+     "title": "Police crackdown on 'mule accounts' aims to cut off 100-billion-baht scam network",
+     "url": "https://www.nationthailand.com/news/general/40058704",
+     "publisher": "The Nation",
+     "date": "2025-11-24"
+    },
+    {
+     "title": "พ.ร.ก.ปราบโกงออนไลน์มีผลบังคับแล้ว \"ซิมผี - บัญชีม้า\" จำคุก 2-5 ปี",
+     "url": "https://thaipublica.org/2023/03/electronic-crime-law-effective-now/",
+     "publisher": "ThaiPublica",
+     "date": "2023-03-17"
+    }
+   ],
+   "how_th": "บัญชีธนาคารหรือบัญชีคริปโตที่เปิด ขาย ให้เช่า หรือให้ยืม เพื่อใช้รับและโอนต่อเงินจากการหลอกลวง ตาม พ.ร.ก. อาชญากรรมทางเทคโนโลยี ปี 2023 เจ้าของบัญชีมีโทษจำคุกไม่เกิน 3 ปี ปรับไม่เกิน 300,000 บาท หรือทั้งจำทั้งปรับ ส่วนผู้ที่ชักชวนหรือโฆษณาหาบัญชีมีโทษจำคุก 2 ถึง 5 ปี และปรับ 200,000 ถึง 500,000 บาท เมื่อเดือนพฤศจิกายน 2025 ตำรวจพบ 'ฟาร์มม้า' ที่จ้างคนให้เปิดบัญชีด้วยระบบจดจำใบหน้า",
+   "signs_th": [
+    "มีคนเสนอเงินให้เปิดบัญชี หรือขอยืมบัญชีของคุณ",
+    "งานที่มีแค่รับเงินโอนแล้วโอนต่อ",
+    "ถูกขอบัตรประชาชน ซิมการ์ด หรือขอสแกนใบหน้า"
+   ]
+  },
+  {
+   "id": "p2p-scam-money",
+   "name": "P2P crypto sales paid with scam money",
+   "name_th": "ขายคริปโตแบบ P2P แล้วได้รับเงินที่มาจากการหลอกลวง",
+   "how": "A scammer tells a victim to buy crypto from a P2P seller and send the coins to the scammer's wallet, or a buyer pays the seller with money taken from a victim. When the victim reports to 1441, every account that received the money can be frozen, the seller's included. In a September 2024 case, police accepted the seller had no part, but the freeze stayed until the complaint process ran its course.",
+   "signs": [
+    "Payment from a person other than the counterparty on the platform",
+    "A buyer who says someone else told them to buy and send the coins",
+    "A buyer who wants the coins sent to a wallet they do not control"
+   ],
+   "sources": [
+    {
+     "title": "หนุ่มพันทิปซวยจัด! ซื้อขายคริปโตแบบ P2P แต่กลับโดนอายัดบัญชีทุกธนาคาร",
+     "url": "https://siamblockchain.com/2024/09/26/young-man-from-pantip-is-very-unlucky-traded-crypto-p2p-but-got-all-bank-accounts-frozen/",
+     "publisher": "Siam Blockchain",
+     "date": "2024-09-26"
+    },
+    {
+     "title": "Online scam crackdown focuses on P2P crypto channel",
+     "url": "https://www.bangkokpost.com/business/general/2774524/online-scam-crackdown-focuses-on-p2p-crypto-channel",
+     "publisher": "Bangkok Post",
+     "date": "2024-04-11"
+    }
+   ],
+   "how_th": "มิจฉาชีพสั่งให้เหยื่อซื้อคริปโตจากผู้ขายแบบ P2P แล้วส่งเหรียญไปที่กระเป๋าสินทรัพย์ดิจิทัลของมิจฉาชีพ หรือผู้ซื้อจ่ายเงินให้ผู้ขายด้วยเงินที่ได้มาจากเหยื่อ เมื่อเหยื่อแจ้งเรื่องที่ 1441 ทุกบัญชีที่รับเงินก้อนนั้นอาจถูกอายัด รวมถึงบัญชีของผู้ขายด้วย ในคดีหนึ่งเมื่อเดือนกันยายน 2024 ตำรวจยอมรับว่าผู้ขายไม่มีส่วนเกี่ยวข้อง แต่การอายัดยังคงอยู่จนกระบวนการร้องเรียนสิ้นสุด",
+   "signs_th": [
+    "เงินโอนมาจากคนอื่นที่ไม่ใช่คู่ซื้อขายบนแพลตฟอร์ม",
+    "ผู้ซื้อบอกว่ามีคนอื่นสั่งให้ซื้อและส่งเหรียญ",
+    "ผู้ซื้อให้ส่งเหรียญไปยังกระเป๋าที่ตัวเองไม่ได้ควบคุม"
+   ]
+  },
+  {
+   "id": "address-poisoning",
+   "name": "Address poisoning",
+   "name_th": "ที่อยู่กระเป๋าเลียนแบบ",
+   "how": "Scammers study a wallet's frequent counterparties, generate lookalike addresses that differ in only a few characters, and send small test transfers so the lookalike appears in the victim's history. The victim later copies the wrong address from that history. In one May 2024 case a holder sent about $68 million in WBTC to a poisoned address; most was returned.",
+   "signs": [
+    "Unexpected small transfers from unknown addresses",
+    "An address in your history that looks like a known one but differs in a few characters",
+    "Copying a destination from transaction history instead of a saved contact"
+   ],
+   "sources": [
+    {
+     "title": "Anatomy of an Address Poisoning Scam",
+     "url": "https://www.chainalysis.com/blog/address-poisoning-scam/",
+     "publisher": "Chainalysis",
+     "date": "2024-10-23"
+    }
+   ],
+   "how_th": "มิจฉาชีพดูว่ากระเป๋าหนึ่งทำรายการกับที่อยู่ใดบ่อย ๆ แล้วสร้างที่อยู่หน้าตาคล้ายกันที่ต่างกันเพียงไม่กี่ตัวอักษร จากนั้นโอนเงินจำนวนเล็กน้อยมาทดสอบ เพื่อให้ที่อยู่เลียนแบบไปปรากฏในประวัติของเหยื่อ ต่อมาเหยื่อคัดลอกที่อยู่ผิดจากประวัตินั้น ในกรณีหนึ่งเมื่อเดือนพฤษภาคม 2024 ผู้ถือเหรียญส่ง WBTC มูลค่าราว 68 ล้านดอลลาร์สหรัฐ ไปยังที่อยู่เลียนแบบ ต่อมาได้คืนเป็นส่วนใหญ่",
+   "signs_th": [
+    "มีเงินจำนวนเล็กน้อยโอนเข้ามาโดยไม่คาดคิดจากที่อยู่ที่ไม่รู้จัก",
+    "ที่อยู่ในประวัติที่ดูเหมือนที่อยู่ที่คุณรู้จัก แต่ต่างกันไม่กี่ตัวอักษร",
+    "คัดลอกที่อยู่ปลายทางจากประวัติการทำรายการ แทนที่จะใช้รายชื่อที่บันทึกไว้"
+   ]
+  },
+  {
+   "id": "wallet-malware",
+   "name": "Clipboard hijackers and wallet-stealing malware",
+   "name_th": "มัลแวร์สลับที่อยู่ในคลิปบอร์ดและมัลแวร์ขโมยกระเป๋า",
+   "how": "Malware watches the clipboard and swaps a copied wallet address for the attacker's before it is pasted. Other variants search a device for seed phrases, wallet files or authenticator backups. In a case Thailand's CCIB worked in November 2025, malware sought Google Authenticator backups and seed phrases, and attackers took over exchange accounts.",
+   "signs": [
+    "A pasted address that differs from the one you copied",
+    "Seed phrases or authenticator backups stored as files or photos",
+    "Software installed from a link in a chat or ad"
+   ],
+   "sources": [
+    {
+     "title": "In hot pursuit of 'cryware': Defending hot wallets from attacks",
+     "url": "https://www.microsoft.com/en-us/security/blog/2022/05/17/in-hot-pursuit-of-cryware-defending-hot-wallets-from-attacks/",
+     "publisher": "Microsoft Security",
+     "date": "2022-05-17"
+    },
+    {
+     "title": "Thai Authorities Partner With Private Sector To Recover $432,000 in Stolen Crypto",
+     "url": "https://www.trmlabs.com/resources/blog/thai-authorities-partner-with-private-sector-to-recover-432-000-in-stolen-crypto",
+     "publisher": "TRM Labs",
+     "date": "2025-11-20"
+    }
+   ],
+   "how_th": "มัลแวร์คอยดูคลิปบอร์ด แล้วสลับที่อยู่กระเป๋าที่ผู้ใช้คัดลอกไว้เป็นที่อยู่ของคนร้ายก่อนผู้ใช้จะวาง มัลแวร์แบบอื่นค้นหาวลีกู้คืน (seed phrase) ไฟล์กระเป๋า หรือไฟล์สำรองของแอปยืนยันตัวตนในเครื่อง ในคดีที่ บช.สอท. สืบสวนเมื่อเดือนพฤศจิกายน 2025 มัลแวร์ค้นหาไฟล์สำรองของ Google Authenticator และวลีกู้คืน แล้วคนร้ายเข้ายึดบัญชีศูนย์ซื้อขาย",
+   "signs_th": [
+    "ที่อยู่ที่วางไม่ตรงกับที่อยู่ที่คัดลอกมา",
+    "เก็บวลีกู้คืนหรือไฟล์สำรองของแอปยืนยันตัวตนไว้เป็นไฟล์หรือรูปภาพ",
+    "ติดตั้งโปรแกรมจากลิงก์ในแชตหรือโฆษณา"
+   ]
+  },
+  {
+   "id": "drainer",
+   "name": "Wallet drainers, approval phishing and fake airdrops",
+   "name_th": "เว็บดูดเงินจากกระเป๋า หลอกให้กดอนุมัติ และแอร์ดรอปปลอม",
+   "how": "Fake sites posing as NFT markets, token airdrops or project pages ask the user to connect a wallet and approve a transaction. The approval gives the operator control of tokens, which are taken at once. Links spread through hacked social media accounts, Discord channels and fake announcements.",
+   "signs": [
+    "A free airdrop or mint that needs a wallet connection",
+    "An approval or signature request you cannot read",
+    "A link posted by a project's social account or Discord, which may be hacked"
+   ],
+   "sources": [
+    {
+     "title": "Understanding Crypto Drainers",
+     "url": "https://www.chainalysis.com/blog/crypto-drainers/",
+     "publisher": "Chainalysis",
+     "date": "2024-05-16"
+    }
+   ],
+   "how_th": "เว็บไซต์ปลอมที่แอบอ้างเป็นตลาด NFT หน้าแจกโทเคน (แอร์ดรอป) หรือหน้าเว็บของโปรเจกต์ ขอให้ผู้ใช้เชื่อมต่อกระเป๋าและกดอนุมัติธุรกรรม การอนุมัตินั้นทำให้ผู้ควบคุมเว็บควบคุมโทเคนได้ และโทเคนจะถูกเอาไปทันที ลิงก์เหล่านี้แพร่ผ่านบัญชีโซเชียลมีเดียที่ถูกแฮ็ก ช่อง Discord และประกาศปลอม",
+   "signs_th": [
+    "แอร์ดรอปหรือการมินต์ฟรีที่ต้องเชื่อมต่อกระเป๋า",
+    "คำขออนุมัติหรือคำขอลายเซ็นที่คุณอ่านไม่ออกว่าคืออะไร",
+    "ลิงก์ที่โพสต์ในบัญชีโซเชียลหรือ Discord ของโปรเจกต์ ซึ่งอาจถูกแฮ็กอยู่"
+   ]
+  },
+  {
+   "id": "recovery-scam",
+   "name": "Fake recovery services and fake cyber-police sites",
+   "name_th": "บริการตามเงินคืนปลอมและเว็บตำรวจไซเบอร์ปลอม",
+   "how": "After a loss, victims are contacted by people who claim they can get the money back for a fee, or find websites posing as the cyber police. The FBI warns that anyone claiming they can recover funds may be running another scam. Thai PBS reports gangs building fake cyber-police websites.",
+   "signs": [
+    "An offer to recover lost crypto for an upfront fee",
+    "A 'police' site that is not thaipoliceonline.go.th",
+    "Contact from a recovery firm you did not approach"
+   ],
+   "sources": [
+    {
+     "title": "FBI Guidance for Cryptocurrency Scam Victims",
+     "url": "https://www.ic3.gov/PSA/2023/PSA230824",
+     "publisher": "FBI IC3",
+     "date": "2023-08-24"
+    },
+    {
+     "title": "พิษอาชญากรรมออนไลน์ปี 68 เกือบ 2 เดือนสูญ 3.4 พันล้าน",
+     "url": "https://www.thaipbs.or.th/news/content/349248",
+     "publisher": "Thai PBS",
+     "date": "2025-02-13"
+    }
+   ],
+   "how_th": "หลังเสียเงินไปแล้ว มีคนติดต่อเหยื่อมาอ้างว่าตามเงินคืนให้ได้ถ้าจ่ายค่าบริการ หรือเหยื่อไปเจอเว็บไซต์ที่แอบอ้างเป็นตำรวจไซเบอร์ FBI เตือนว่าใครก็ตามที่อ้างว่าตามเงินคืนได้ อาจกำลังหลอกซ้ำอีกรอบ Thai PBS รายงานว่ามีแก๊งสร้างเว็บไซต์ตำรวจไซเบอร์ปลอม",
+   "signs_th": [
+    "ข้อเสนอตามคริปโตที่สูญไปคืน โดยต้องจ่ายค่าธรรมเนียมก่อน",
+    "เว็บไซต์ 'ตำรวจ' ที่ไม่ใช่ thaipoliceonline.go.th",
+    "บริษัทตามเงินคืนติดต่อมาเอง ทั้งที่คุณไม่ได้ติดต่อไป"
+   ]
+  },
+  {
+   "id": "remote-access",
+   "name": "Remote-access apps that drain accounts",
+   "name_th": "แอปดูดเงิน",
+   "how": "The victim is sent a link and persuaded to install an app that gives the scammer remote control of the phone; the scammer then empties bank accounts. Thai police list it as หลอกให้ติดตั้งโปรแกรมควบคุมระบบ, with 4,786 reports from 1 Mar 2022 to 31 May 2023. The CCIB groups its warnings under หลอกติดตั้งแอป/แอปดูดเงิน.",
+   "signs": [
+    "A request to install an app from a link rather than an app store",
+    "A caller who asks you to tap a link during the call",
+    "A caller who asks for control of your screen"
+   ],
+   "sources": [
+    {
+     "title": "พิษอาชญากรรมออนไลน์ปี 68 เกือบ 2 เดือนสูญ 3.4 พันล้าน",
+     "url": "https://www.thaipbs.or.th/news/content/349248",
+     "publisher": "Thai PBS",
+     "date": "2025-02-13"
+    },
+    {
+     "title": "14 อันดับภัยออนไลน์ที่คนไทยโดนหลอกสูงสุด",
+     "url": "https://droidsans.com/top-14-cyber-online-of-thailand/",
+     "publisher": "DroidSans (Royal Thai Police figures)",
+     "date": "2023-06-20"
+    },
+    {
+     "title": "เตือนภัย (CCIB warnings: หลอกติดตั้งแอป/แอปดูดเงิน)",
+     "url": "https://www.ccib.go.th/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%A2",
+     "publisher": "Cyber Crime Investigation Bureau",
+     "date": ""
+    }
+   ],
+   "how_th": "มิจฉาชีพส่งลิงก์มาให้เหยื่อ แล้วโน้มน้าวให้ติดตั้งแอปที่ทำให้มิจฉาชีพควบคุมโทรศัพท์ได้จากระยะไกล จากนั้นมิจฉาชีพโอนเงินออกจากบัญชีธนาคารจนหมด ตำรวจไทยจัดคดีนี้ไว้ในประเภท หลอกให้ติดตั้งโปรแกรมควบคุมระบบ มีการแจ้งความ 4,786 เรื่อง ระหว่าง 1 มี.ค. 2022 ถึง 31 พ.ค. 2023 ส่วน บช.สอท. รวมคำเตือนไว้ในหมวด หลอกติดตั้งแอป/แอปดูดเงิน",
+   "signs_th": [
+    "ถูกขอให้ติดตั้งแอปจากลิงก์ ไม่ใช่จากแอปสโตร์",
+    "ผู้โทรขอให้กดลิงก์ระหว่างที่คุยสายอยู่",
+    "ผู้โทรขอควบคุมหน้าจอของคุณ"
+   ]
+  }
+ ],
+ "cases": [
+  {
+   "date": "2021-07-02",
+   "title": "Thai SEC files criminal complaint against Binance",
+   "what": "The SEC files a criminal complaint with the police Economic Crime Suppression Division against Binance for running a digital asset exchange for Thai users without a licence, under Section 26 of the 2018 Digital Asset Businesses decree. Binance had not answered an SEC warning letter sent on 5 April 2021.",
+   "sources": [
+    {
+     "title": "SEC files a criminal complaint against Binance for operating digital asset business without license",
+     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=9017",
+     "publisher": "Securities and Exchange Commission, Thailand",
+     "date": "2021-07-02"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ก.ล.ต. แจ้งความดำเนินคดีอาญากับ Binance",
+   "what_th": "สำนักงาน ก.ล.ต. แจ้งความร้องทุกข์ต่อกองบังคับการปราบปรามการกระทำความผิดเกี่ยวกับเศรษฐกิจ (บก.ปอศ.) ให้ดำเนินคดีอาญากับ Binance ฐานประกอบธุรกิจศูนย์ซื้อขายสินทรัพย์ดิจิทัลให้ผู้ใช้ในไทยโดยไม่ได้รับใบอนุญาต ตามมาตรา 26 ของ พ.ร.ก. การประกอบธุรกิจสินทรัพย์ดิจิทัล ปี 2018 Binance ไม่ได้ตอบหนังสือเตือนที่ ก.ล.ต. ส่งไปเมื่อวันที่ 5 เมษายน 2021"
+  },
+  {
+   "date": "2021-12-24",
+   "title": "SEC fines Bitkub 3.97 million baht",
+   "what": "The SEC board fines Bitkub Online 3.97 million baht for failing to deposit clients' digital assets with a qualified custodian from January to July 2021 and for seven charges tied to an insecure trading system.",
+   "sources": [
+    {
+     "title": "Digital asset firms hit with huge fines for insecure transactions, deposits",
+     "url": "https://www.nationthailand.com/in-focus/40010384",
+     "publisher": "The Nation",
+     "date": "2021-12-24"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ก.ล.ต. ปรับ Bitkub 3.97 ล้านบาท",
+   "what_th": "คณะกรรมการ ก.ล.ต. สั่งปรับ Bitkub Online เป็นเงิน 3.97 ล้านบาท กรณีไม่นำสินทรัพย์ดิจิทัลของลูกค้าไปฝากกับผู้รับฝากที่มีคุณสมบัติตามเกณฑ์ ระหว่างเดือนมกราคมถึงกรกฎาคม 2021 และอีก 7 ข้อหาที่เกี่ยวกับระบบซื้อขายที่ไม่มั่นคงปลอดภัย"
+  },
+  {
+   "date": "2022-07-20",
+   "title": "Zipmex suspends withdrawals",
+   "what": "Zipmex suspends withdrawals, citing the troubles of partners Babel Finance and Celsius, to which it has $53 million of exposure. Withdrawals in Thailand resume late the same day except from one investment product; the company says it is cooperating with the Thai SEC.",
+   "sources": [
+    {
+     "title": "Southeast Asia crypto exchange Zipmex to resume withdrawals",
+     "url": "https://www.reuters.com/technology/southeast-asian-crypto-exchange-zipmex-suspends-withdrawals-amid-crypto-turmoil-2022-07-21/",
+     "publisher": "Reuters",
+     "date": "2022-07-21"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "Zipmex ระงับการถอนเงิน",
+   "what_th": "Zipmex ระงับการถอนเงิน โดยอ้างถึงปัญหาของพันธมิตร คือ Babel Finance และ Celsius ซึ่ง Zipmex มีเงินผูกอยู่รวม 53 ล้านดอลลาร์สหรัฐ การถอนเงินในไทยกลับมาใช้ได้ช่วงดึกของวันเดียวกัน ยกเว้นผลิตภัณฑ์ลงทุน 1 รายการ บริษัทระบุว่ากำลังให้ความร่วมมือกับ ก.ล.ต."
+  },
+  {
+   "date": "2023-03-17",
+   "title": "Technology crime decree takes effect",
+   "what": "The Emergency Decree on Measures to Prevent and Suppress Technology Crimes B.E. 2566 takes effect. It lets banks suspend suspect accounts on a victim's notice and share data with telecom operators, and sets penalties for opening, renting or lending mule accounts and SIM cards.",
+   "sources": [
+    {
+     "title": "พ.ร.ก.ปราบโกงออนไลน์มีผลบังคับแล้ว \"ซิมผี - บัญชีม้า\" จำคุก 2-5 ปี",
+     "url": "https://thaipublica.org/2023/03/electronic-crime-law-effective-now/",
+     "publisher": "ThaiPublica",
+     "date": "2023-03-17"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "พ.ร.ก. อาชญากรรมทางเทคโนโลยีมีผลบังคับใช้",
+   "what_th": "พ.ร.ก. มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี พ.ศ. 2566 มีผลบังคับใช้ กฎหมายนี้ให้ธนาคารระงับบัญชีต้องสงสัยได้เมื่อผู้เสียหายแจ้ง และให้แลกเปลี่ยนข้อมูลกับผู้ให้บริการโทรคมนาคมได้ พร้อมกำหนดโทษสำหรับการเปิด ให้เช่า หรือให้ยืมบัญชีม้าและซิมการ์ด"
+  },
+  {
+   "date": "2024-10-16",
+   "title": "The iCon Group arrests",
+   "what": "Police and the DSI move against The iCon Group, a direct-sales business accused of running a pyramid scheme. On 17 October, 17 suspects, including celebrities Yuranunt Pamornmontri and Kan Kantathavorn, are remanded after the Criminal Court rejects bail; CEO Warathaphon 'Boss Paul' Waratyaworrakul appears in court on 18 October. By then more than 2,000 complainants report combined losses of 841 million baht, and AMLO has impounded about 125 million baht in assets. Not a crypto case.",
+   "sources": [
+    {
+     "title": "17 iCon fraud suspects sent to jail",
+     "url": "https://www.bangkokpost.com/thailand/general/2885478/17-icon-fraud-suspects-sent-to-jail",
+     "publisher": "Bangkok Post",
+     "date": "2024-10-17"
+    },
+    {
+     "title": "Over 2,000 The iCon Group complaints reported, damages worth B841m",
+     "url": "https://www.bangkokpost.com/thailand/general/2886142/prime-icon-fraud-suspect-boss-paul-jailed-after-court-approves-police-request",
+     "publisher": "Bangkok Post",
+     "date": "2024-10-18"
+    },
+    {
+     "title": "Assets seized as iCon probe expands",
+     "url": "https://www.bangkokpost.com/thailand/general/2884188/assets-seized-as-icon-probe-expands",
+     "publisher": "Bangkok Post",
+     "date": "2024-10-15"
+    },
+    {
+     "title": "The iCon Group case",
+     "url": "https://en.wikipedia.org/wiki/The_iCon_Group_case",
+     "publisher": "Wikipedia",
+     "date": ""
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "จับกุมผู้ต้องหาคดี The iCon Group",
+   "what_th": "ตำรวจและกรมสอบสวนคดีพิเศษ (DSI) ดำเนินการกับ The iCon Group ธุรกิจขายตรงที่ถูกกล่าวหาว่าทำแชร์ลูกโซ่ วันที่ 17 ตุลาคม ผู้ต้องหา 17 คน รวมถึงคนดังอย่างยุรนันท์ ภมรมนตรี และกันต์ กันตถาวร ถูกฝากขังหลังศาลอาญาไม่ให้ประกันตัว ส่วนซีอีโอ วรัตน์พล วรัทย์วรกุล หรือ 'บอสพอล' ปรากฏตัวที่ศาลวันที่ 18 ตุลาคม ถึงตอนนั้นมีผู้เสียหายร้องทุกข์กว่า 2,000 ราย ความเสียหายรวม 841 ล้านบาท และสำนักงานป้องกันและปราบปรามการฟอกเงิน (ปปง.) ยึดทรัพย์สินไว้ราว 125 ล้านบาท คดีนี้ไม่ใช่คดีคริปโต"
+  },
+  {
+   "date": "2025-02-05",
+   "title": "Thailand cuts power, fuel and internet to Myanmar scam towns",
+   "what": "After a National Security Council meeting, Thailand stops electricity, fuel and internet supply to Myawaddy, Payathonzu and Tachileik, border areas that host scam compounds. The Record cites over 100,000 workers in the compounds.",
+   "sources": [
+    {
+     "title": "Thailand cuts power supply to Myanmar scam hubs",
+     "url": "https://therecord.media/thailand-cuts-power-scam-compounds-myanmar",
+     "publisher": "The Record",
+     "date": "2025-02-05"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ไทยตัดไฟ น้ำมัน และอินเทอร์เน็ตไปยังเมืองแหล่งหลอกลวงในเมียนมา",
+   "what_th": "หลังการประชุมสภาความมั่นคงแห่งชาติ ไทยหยุดส่งไฟฟ้า น้ำมัน และอินเทอร์เน็ตไปยังเมียวดี พญาตองซู และท่าขี้เหล็ก ซึ่งเป็นพื้นที่ชายแดนที่มีศูนย์หลอกลวงออนไลน์ตั้งอยู่ The Record ระบุว่ามีคนทำงานในศูนย์เหล่านี้กว่า 100,000 คน"
+  },
+  {
+   "date": "2025-02-05",
+   "title": "Thai police freeze $2.5 million in USDT from alleged scam bosses",
+   "what": "Thai police working with Chinese police arrest two Chinese nationals in Bangkok and freeze about $2.5 million (about 84 million baht) in USDT. Investigators link them to trafficking near Mae Sot, product-sale fraud in Thailand and offices in Phnom Penh.",
+   "sources": [
+    {
+     "title": "Thai Police Freezes $2.5 Million in Crypto Assets from Chinese Scam Bosses",
+     "url": "https://www.khaosodenglish.com/news/2025/02/09/thai-police-freezes-2-5-million-in-crypto-assets-from-chinese-scam-bosses/",
+     "publisher": "Khaosod English",
+     "date": "2025-02-09"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ตำรวจไทยอายัด USDT มูลค่า 2.5 ล้านดอลลาร์สหรัฐ จากผู้ถูกกล่าวหาว่าเป็นหัวหน้าแก๊งหลอกลวง",
+   "what_th": "ตำรวจไทยร่วมกับตำรวจจีนจับกุมชาวจีน 2 คนในกรุงเทพฯ และอายัด USDT มูลค่าราว 2.5 ล้านดอลลาร์สหรัฐ (ราว 84 ล้านบาท) เจ้าหน้าที่สืบสวนเชื่อมโยงทั้งสองคนกับการค้ามนุษย์ใกล้แม่สอด การหลอกขายสินค้าในไทย และสำนักงานในกรุงพนมเปญ"
+  },
+  {
+   "date": "2025-02-20",
+   "title": "Scam-compound workers repatriated through Mae Sot",
+   "what": "The first 50 Chinese nationals brought out of Myawaddy scam centres fly home from Mae Sot on 20 February, with 600 due to leave on chartered flights by 22 February. By 18 March, Thai police say 5,200 people have been pulled out of Myawaddy-area compounds since February and over 3,500 sent home through Thailand, with up to 100,000 still inside.",
+   "sources": [
+    {
+     "title": "First Chinese scam-centre returnees fly home from Thailand",
+     "url": "https://www.bangkokpost.com/thailand/general/2964680/chinese-returnees-from-myanmar-scam-centres-arrive-in-thailand",
+     "publisher": "Bangkok Post",
+     "date": "2025-02-20"
+    },
+    {
+     "title": "Hundreds of Chinese airlifted home after crackdown on Myanmar scam centres",
+     "url": "https://www.aljazeera.com/news/2025/2/21/hundreds-of-chinese-airlifted-home-after-crackdown-on-myanmar-scam-centres",
+     "publisher": "Al Jazeera",
+     "date": "2025-02-21"
+    },
+    {
+     "title": "Scam hubs on Thai-Myanmar border still have up to 100,000 people, Thai police says",
+     "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2025/03/18/scam-hubs-on-thai-myanmar-border-still-have-up-to-100000-people-thai-police-says",
+     "publisher": "The Star (Reuters)",
+     "date": "2025-03-18"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ส่งตัวคนงานจากศูนย์หลอกลวงกลับประเทศผ่านแม่สอด",
+   "what_th": "ชาวจีน 50 คนแรกที่ถูกนำตัวออกจากศูนย์หลอกลวงในเมียวดี บินกลับประเทศจากแม่สอดเมื่อวันที่ 20 กุมภาพันธ์ และอีก 600 คนมีกำหนดเดินทางด้วยเที่ยวบินเช่าเหมาลำภายในวันที่ 22 กุมภาพันธ์ ถึงวันที่ 18 มีนาคม ตำรวจไทยระบุว่าตั้งแต่เดือนกุมภาพันธ์มีคนถูกนำตัวออกจากศูนย์ในพื้นที่เมียวดีแล้ว 5,200 คน ส่งกลับประเทศผ่านไทยแล้วกว่า 3,500 คน และยังอยู่ข้างในอีกมากถึง 100,000 คน"
+  },
+  {
+   "date": "2025-04-13",
+   "title": "Amended technology crime decree takes effect",
+   "what": "The Emergency Decree on technology crime (No. 2) B.E. 2568, published on 12 April, takes effect with a companion amendment to the digital asset decree. Banks, telecom operators and platforms share liability for scam losses when they fall short of regulators' standards; digital asset operators must report suspicious activity and suspend flagged accounts; foreign platforms serving people in Thailand need a Thai licence.",
+   "sources": [
+    {
+     "title": "ราชกิจจานุเบกษา ประกาศ พ.ร.ก.ป้องกันและปราบปรามอาชญากรรมออนไลน์ - พ.ร.ก.สินทรัพย์ดิจิทัลฯ มีผลบังคับใช้ 13 เม.ย.68",
+     "url": "https://www.prd.go.th/th/content/category/detail/id/39/iid/381397",
+     "publisher": "Government Public Relations Department",
+     "date": "2025-04-13"
+    },
+    {
+     "title": "พ.ร.ก.มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี (ฉบับที่ 2) พ.ศ. 2568 ได้ประกาศในราชกิจจานุเบกษาแล้ว",
+     "url": "https://www.bot.or.th/th/news-and-media/news/news-20250413.html",
+     "publisher": "Bank of Thailand",
+     "date": "2025-04-13"
+    },
+    {
+     "title": "Thailand Amends Emergency Decree on Technology Crime",
+     "url": "https://www.tilleke.com/insights/thailand-amends-emergency-decree-on-technology-crime/20/",
+     "publisher": "Tilleke & Gibbins",
+     "date": "2025-04-18"
+    },
+    {
+     "title": "Thailand Targets Foreign P2P Crypto Platforms in New Legal Overhaul",
+     "url": "https://decrypt.co/314287/thailand-targets-foreign-p2p-crypto-platforms-in-new-legal-overhaul",
+     "publisher": "Decrypt",
+     "date": "2025-04-10"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "พ.ร.ก. อาชญากรรมทางเทคโนโลยีฉบับแก้ไขมีผลบังคับใช้",
+   "what_th": "พ.ร.ก. มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี (ฉบับที่ 2) พ.ศ. 2568 ซึ่งประกาศเมื่อวันที่ 12 เมษายน มีผลบังคับใช้ พร้อมกับ พ.ร.ก. แก้ไขกฎหมายสินทรัพย์ดิจิทัลอีกฉบับ ธนาคาร ผู้ให้บริการโทรคมนาคม และแพลตฟอร์ม ต้องร่วมรับผิดชอบความเสียหายจากการหลอกลวง หากทำไม่ได้ตามมาตรฐานของหน่วยงานกำกับ ผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลต้องรายงานธุรกรรมที่น่าสงสัยและระงับบัญชีที่ถูกแจ้ง ส่วนแพลตฟอร์มต่างประเทศที่ให้บริการคนในไทยต้องมีใบอนุญาตของไทย"
+  },
+  {
+   "date": "2025-05-29",
+   "title": "SEC names five unlicensed exchanges for blocking",
+   "what": "The SEC says Bybit, 1000X, CoinEx, OKX (okx.com/th) and XT.COM serve Thai users without a licence, files complaints with the Economic Crime Suppression Division, and passes the names to the Ministry of Digital Economy and Society, which blocks access from 28 June 2025. Users are told to deal with their assets before that date.",
+   "sources": [
+    {
+     "title": "ก.ล.ต. แจ้งเตือนการปิดกั้นแพลตฟอร์ม Bybit 1000X CoinEx OKX และ XT. COM วันที่ 28 มิถุนายน 2568",
+     "url": "https://www.sec.or.th/TH/Pages/News_Detail.aspx?SECID=11796",
+     "publisher": "Securities and Exchange Commission, Thailand",
+     "date": "2025-05-29"
+    },
+    {
+     "title": "Thailand to Block Access to Five Unlicensed Crypto Platforms Following Expansion of Regulatory Scope to Foreign Operators",
+     "url": "https://silklegal.com/thailand-to-block-access-to-five-unlicensed-crypto-platforms-following-expansion-of-regulatory-scope-to-foreign-operators/",
+     "publisher": "Silk Legal",
+     "date": "2025-05-30"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ก.ล.ต. ระบุชื่อศูนย์ซื้อขายไม่มีใบอนุญาต 5 แห่งเพื่อปิดกั้น",
+   "what_th": "สำนักงาน ก.ล.ต. ระบุว่า Bybit, 1000X, CoinEx, OKX (okx.com/th) และ XT.COM ให้บริการผู้ใช้ในไทยโดยไม่มีใบอนุญาต พร้อมแจ้งความต่อกองบังคับการปราบปรามการกระทำความผิดเกี่ยวกับเศรษฐกิจ (บก.ปอศ.) และส่งรายชื่อให้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม ซึ่งปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิถุนายน 2025 ผู้ใช้ได้รับแจ้งให้จัดการสินทรัพย์ของตนก่อนวันดังกล่าว"
+  },
+  {
+   "date": "2025-10",
+   "title": "Myanmar junta raids KK Park",
+   "what": "Myanmar's military says it has raided KK Park near Myawaddy, opposite Mae Sot, finding 2,198 people and seizing 30 Starlink terminals. On 22 October people leave the Myawaddy area toward the Thai border crossing, and explosions at the compound are reported from 23 October. The figures are the junta's.",
+   "sources": [
+    {
+     "title": "Myanmar military arrests more than 2,000 people at infamous scam centre",
+     "url": "https://www.aljazeera.com/amp/news/2025/10/21/myanmar-military-arrests-more-than-2000-people-at-infamous-scam-centre",
+     "publisher": "Al Jazeera",
+     "date": "2025-10-21"
+    },
+    {
+     "title": "Myanmar junta says seized 30 Starlink receivers in scam centre raid",
+     "url": "https://www.france24.com/en/live-news/20251020-myanmar-junta-says-seized-30-starlink-receivers-in-scam-centre-raid",
+     "publisher": "France 24 (AFP)",
+     "date": "2025-10-20"
+    },
+    {
+     "title": "Reported explosions, shutdowns and the raid at KK Park",
+     "url": "https://www.info-res.org/myanmar-witness/articles/reported-explosions-shutdowns-and-the-raid-at-kk-park/",
+     "publisher": "Centre for Information Resilience (Myanmar Witness)",
+     "date": "2025-10-29"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "รัฐบาลทหารเมียนมาบุกค้น KK Park",
+   "what_th": "กองทัพเมียนมาระบุว่าได้บุกค้น KK Park ใกล้เมียวดี ตรงข้ามแม่สอด พบคน 2,198 คน และยึดอุปกรณ์ Starlink 30 เครื่อง วันที่ 22 ตุลาคม ผู้คนออกจากพื้นที่เมียวดีมุ่งหน้าไปยังจุดผ่านแดนไทย และมีรายงานการระเบิดที่ศูนย์แห่งนี้ตั้งแต่วันที่ 23 ตุลาคม ตัวเลขทั้งหมดเป็นของรัฐบาลทหารเมียนมา"
+  },
+  {
+   "date": "2025-10-14",
+   "title": "US and UK sanction Prince Group; DOJ seeks 127,271 BTC",
+   "what": "OFAC designates Cambodia's Prince Group as a transnational criminal organization and sanctions 146 targets, with the UK FCDO sanctioning Prince Holding Group, Chen Zhi and associates the same day. The DOJ indicts Chen Zhi on wire fraud and money laundering conspiracy charges and files a civil forfeiture action for about 127,271 bitcoin, about $15 billion, its largest ever. FinCEN finalizes a rule cutting Huione Group off from the US financial system.",
+   "sources": [
+    {
+     "title": "U.S. and U.K. Take Largest Action Ever Targeting Cybercriminal Networks in Southeast Asia",
+     "url": "https://home.treasury.gov/news/press-releases/sb0278",
+     "publisher": "US Department of the Treasury",
+     "date": "2025-10-14"
+    },
+    {
+     "title": "Chairman of Prince Group Indicted for Operating Cambodian Forced Labor Scam Compounds Engaged in Cryptocurrency Fraud Schemes",
+     "url": "https://www.justice.gov/opa/pr/chairman-prince-group-indicted-operating-cambodian-forced-labor-scam-compounds-engaged",
+     "publisher": "US Department of Justice",
+     "date": "2025-10-14"
+    },
+    {
+     "title": "US, UK sanction huge Southeast Asian crypto scam network",
+     "url": "https://www.aljazeera.com/news/2025/10/15/us-uk-sanction-huge-southeast-asian-crypto-scam-network",
+     "publisher": "Al Jazeera",
+     "date": "2025-10-15"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "สหรัฐฯ และอังกฤษคว่ำบาตร Prince Group กระทรวงยุติธรรมสหรัฐฯ ขอริบ 127,271 BTC",
+   "what_th": "OFAC ขึ้นบัญชี Prince Group ของกัมพูชาเป็นองค์กรอาชญากรรมข้ามชาติ และคว่ำบาตรเป้าหมาย 146 ราย ในวันเดียวกัน FCDO ของอังกฤษคว่ำบาตร Prince Holding Group, Chen Zhi และผู้ร่วมงาน กระทรวงยุติธรรมสหรัฐฯ (DOJ) ฟ้อง Chen Zhi ข้อหาสมคบกันฉ้อโกงผ่านสื่ออิเล็กทรอนิกส์และฟอกเงิน และยื่นฟ้องริบทรัพย์ทางแพ่งสำหรับบิตคอยน์ราว 127,271 เหรียญ มูลค่าราว 15 พันล้านดอลลาร์สหรัฐ ซึ่งเป็นการริบครั้งใหญ่ที่สุดของ DOJ FinCEN ออกกฎฉบับสุดท้ายที่ตัด Huione Group ออกจากระบบการเงินของสหรัฐฯ"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "Thailand hands Shwe Kokko developer She Zhijiang to China",
+   "what": "A Central Investigation Bureau unit hands She Zhijiang, developer of the Yatai New City project at Shwe Kokko, to Chinese police after the Appeal Court upholds his extradition. Thai police had arrested him in Bangkok in August 2022.",
+   "sources": [
+    {
+     "title": "CIB commando team hands over She Zhijiang to Chinese police",
+     "url": "https://www.nationthailand.com/news/asean/40058134",
+     "publisher": "The Nation",
+     "date": "2025-11-12"
+    },
+    {
+     "title": "She Zhijiang",
+     "url": "https://en.wikipedia.org/wiki/She_Zhijiang",
+     "publisher": "Wikipedia",
+     "date": ""
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ไทยส่งตัว She Zhijiang ผู้พัฒนาชเวโก๊กโก่ ให้จีน",
+   "what_th": "หน่วยงานในสังกัดกองบัญชาการตำรวจสอบสวนกลาง (บช.ก.) ส่งตัว She Zhijiang ผู้พัฒนาโครงการ Yatai New City ที่ชเวโก๊กโก่ ให้ตำรวจจีน หลังศาลอุทธรณ์พิพากษายืนให้ส่งผู้ร้ายข้ามแดน ตำรวจไทยจับกุมเขาในกรุงเทพฯ เมื่อเดือนสิงหาคม 2022"
+  },
+  {
+   "date": "2025-11-12",
+   "title": "OFAC sanctions DKBA and a Thailand-based company over Tai Chang compound",
+   "what": "OFAC sanctions the Democratic Karen Benevolent Army and its leaders over the Tai Chang scam compound near Myawaddy, along with Trans Asia International Holding Group Thailand Company Limited and its director Chamu Sawang (Yu Jianjun).",
+   "sources": [
+    {
+     "title": "Treasury Sanctions Burma Armed Group and Companies Linked to Organized Crime Targeting Americans",
+     "url": "https://home.treasury.gov/news/press-releases/sb0312",
+     "publisher": "US Department of the Treasury",
+     "date": "2025-11-12"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "OFAC คว่ำบาตร DKBA และบริษัทที่ตั้งอยู่ในไทย กรณีศูนย์ Tai Chang",
+   "what_th": "OFAC คว่ำบาตรกองกำลังกะเหรี่ยง Democratic Karen Benevolent Army (DKBA) และผู้นำ จากกรณีศูนย์หลอกลวง Tai Chang ใกล้เมียวดี พร้อมกับบริษัท Trans Asia International Holding Group Thailand Company Limited และกรรมการบริษัท Chamu Sawang (Yu Jianjun)"
+  },
+  {
+   "date": "2025-11-13",
+   "title": "Tether, Thai police and US Secret Service seize 12 million USDT",
+   "what": "Tether says it supported the Royal Thai Police and the US Secret Service in tracing and seizing about 12 million USDT (roughly 400 million baht) tied to a Southeast Asian scam network. Police arrest 73 suspects, 51 Thai and 22 foreign, and seize assets worth more than 522 million baht.",
+   "sources": [
+    {
+     "title": "Tether Supports Royal Thai Police and U.S. Secret Service in Tracing and Seizing $12 Million from Transnational Scam Network",
+     "url": "https://tether.io/news/tether-supports-royal-thai-police-and-u-s-secret-service-in-tracing-and-seizing-12-million-from-transnational-scam-network/",
+     "publisher": "Tether",
+     "date": "2025-11-13"
+    }
+   ],
+   "confidence": "reported",
+   "title_th": "Tether ตำรวจไทย และหน่วยสืบราชการลับสหรัฐฯ ยึด 12 ล้าน USDT",
+   "what_th": "Tether ระบุว่าได้ช่วยสำนักงานตำรวจแห่งชาติและหน่วยสืบราชการลับสหรัฐฯ (US Secret Service) ติดตามและยึดเงินราว 12 ล้าน USDT (ประมาณ 400 ล้านบาท) ที่เชื่อมโยงกับเครือข่ายหลอกลวงในเอเชียตะวันออกเฉียงใต้ ตำรวจจับกุมผู้ต้องหา 73 คน เป็นคนไทย 51 คน และชาวต่างชาติ 22 คน พร้อมยึดทรัพย์สินมูลค่ากว่า 522 ล้านบาท"
+  },
+  {
+   "date": "2025-11-18",
+   "title": "'Lightning Strike' operation against mule accounts",
+   "what": "The Central Investigation Bureau runs a nationwide operation against mule accounts from 18 to 26 November 2025, arresting 339 suspects, 209 of whom confess to opening mule accounts, and identifying 55 recruiting cells in 27 provinces. Police report 'mule farms', SIM-box hubs and cryptocurrency scam websites.",
+   "sources": [
+    {
+     "title": "Police crackdown on 'mule accounts' aims to cut off 100-billion-baht scam network",
+     "url": "https://www.nationthailand.com/news/general/40058704",
+     "publisher": "The Nation",
+     "date": "2025-11-24"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ปฏิบัติการ 'Lightning Strike' ปราบปรามบัญชีม้า",
+   "what_th": "กองบัญชาการตำรวจสอบสวนกลาง (บช.ก.) ทำปฏิบัติการปราบปรามบัญชีม้าทั่วประเทศระหว่างวันที่ 18 ถึง 26 พฤศจิกายน 2025 จับกุมผู้ต้องหา 339 คน ในจำนวนนี้ 209 คนรับสารภาพว่าเปิดบัญชีม้า และพบเครือข่ายหาคนเปิดบัญชี 55 กลุ่มใน 27 จังหวัด ตำรวจรายงานว่าพบ 'ฟาร์มม้า' จุดตั้งซิมบ็อกซ์ และเว็บไซต์หลอกลวงคริปโต"
+  },
+  {
+   "date": "2025-11-19",
+   "title": "Shwe Kokko seized; KK Park demolition blasts hit Thai homes",
+   "what": "Myanmar's military, Myawaddy police and the Karen Border Guard Force seize the Shwe Kokko complex and detain 346 foreign nationals, mostly Chinese. Detonations used to demolish KK Park damage at least five homes on the Thai side of the Moei River.",
+   "sources": [
+    {
+     "title": "Myanmar forces seize Shwe Kokko scam hub, detaining over 300 Chinese nationals",
+     "url": "https://www.nationthailand.com/news/asean/40058462",
+     "publisher": "The Nation",
+     "date": "2025-11-19"
+    },
+    {
+     "title": "Scam centre explosions 'all for show'",
+     "url": "https://www.bangkokpost.com/thailand/general/3146834/scam-centre-explosions-all-for-show",
+     "publisher": "Bangkok Post (The New York Times)",
+     "date": "2025-11-29"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "ยึดชเวโก๊กโก่ แรงระเบิดจากการรื้อถอน KK Park ทำบ้านฝั่งไทยเสียหาย",
+   "what_th": "กองทัพเมียนมา ตำรวจเมียวดี และกองกำลังพิทักษ์ชายแดนกะเหรี่ยง ยึดกลุ่มอาคารชเวโก๊กโก่ และควบคุมตัวชาวต่างชาติ 346 คน ส่วนใหญ่เป็นชาวจีน การระเบิดเพื่อรื้อถอน KK Park ทำให้บ้านอย่างน้อย 5 หลังฝั่งไทยของแม่น้ำเมยได้รับความเสียหาย"
+  },
+  {
+   "date": "2025-11-20",
+   "title": "CCIB recovers $432,000 in USDT from malware theft",
+   "what": "Thailand's CCIB traces funds stolen by malware-based account takeovers; Tether freezes the USDT and Bitkub's team disables auto-sweep contracts so the funds move to government custody. Binance and TRM Labs also take part. The amount is over 14 million baht.",
+   "sources": [
+    {
+     "title": "Thai Authorities Partner With Private Sector To Recover $432,000 in Stolen Crypto",
+     "url": "https://www.trmlabs.com/resources/blog/thai-authorities-partner-with-private-sector-to-recover-432-000-in-stolen-crypto",
+     "publisher": "TRM Labs",
+     "date": "2025-11-20"
+    }
+   ],
+   "confidence": "reported",
+   "title_th": "บช.สอท. กู้คืน USDT มูลค่า 432,000 ดอลลาร์สหรัฐ จากการขโมยด้วยมัลแวร์",
+   "what_th": "กองบัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี (บช.สอท.) ติดตามเงินที่ถูกขโมยด้วยมัลแวร์ที่ใช้ยึดบัญชี Tether อายัด USDT ดังกล่าว และทีมของ Bitkub ปิดสัญญาที่โอนเงินออกอัตโนมัติ (auto-sweep) เพื่อให้เงินย้ายไปอยู่ในความดูแลของรัฐ Binance และ TRM Labs ร่วมด้วย ยอดเงินรวมกว่า 14 ล้านบาท"
+  },
+  {
+   "date": "2025-12-02",
+   "title": "AMLO freezes over 10 billion baht linked to Chen Zhi and Kok An networks",
+   "what": "AMLO announces a freeze of assets exceeding 10 billion baht from networks of Prince Group chairman Chen Zhi and Cambodian senator Kok An. The same report says cooperation with the Ministry of Digital Economy and Society blocked unlicensed foreign platforms and suspended over 44,000 proxy accounts.",
+   "sources": [
+    {
+     "title": "Thailand's Cyber War: How Aggressive 2025 Crackdown Shook Grey Capital and Regional Stability",
+     "url": "https://www.nationthailand.com/blogs/the-nation-special-report/40059971",
+     "publisher": "The Nation",
+     "date": "2025-12-28"
+    }
+   ],
+   "confidence": "reported",
+   "title_th": "ปปง. อายัดทรัพย์กว่า 10 พันล้านบาท ที่เชื่อมโยงกับเครือข่าย Chen Zhi และ Kok An",
+   "what_th": "สำนักงานป้องกันและปราบปรามการฟอกเงิน (ปปง.) ประกาศอายัดทรัพย์สินมูลค่าเกิน 10 พันล้านบาท จากเครือข่ายของ Chen Zhi ประธาน Prince Group และ Kok An สมาชิกวุฒิสภากัมพูชา รายงานเดียวกันระบุว่าความร่วมมือกับกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม ทำให้ปิดกั้นแพลตฟอร์มต่างประเทศที่ไม่มีใบอนุญาต และระงับบัญชีตัวแทน (proxy account) กว่า 44,000 บัญชี"
+  },
+  {
+   "date": "2026-01-06",
+   "title": "Chen Zhi arrested in Cambodia and sent to China",
+   "what": "Cambodia's Interior Ministry says Prince Group chairman Chen Zhi was arrested on 6 January 2026 with two other Chinese nationals and sent to China; it confirms the extradition on 8 January. Cambodia revoked his citizenship by royal decree in December 2025.",
+   "sources": [
+    {
+     "title": "Prince Group Chairman Chen Zhi Arrested and Deported to China",
+     "url": "https://www.khaosodenglish.com/news/2026/01/08/prince-group-chairman-chen-zhi-arrested-and-deported-to-china/",
+     "publisher": "Khaosod English",
+     "date": "2026-01-08"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "Chen Zhi ถูกจับในกัมพูชาและส่งตัวไปจีน",
+   "what_th": "กระทรวงมหาดไทยกัมพูชาระบุว่า Chen Zhi ประธาน Prince Group ถูกจับกุมเมื่อวันที่ 6 มกราคม 2026 พร้อมชาวจีนอีก 2 คน และถูกส่งตัวไปจีน กระทรวงยืนยันการส่งผู้ร้ายข้ามแดนเมื่อวันที่ 8 มกราคม กัมพูชาเพิกถอนสัญชาติของเขาด้วยพระราชกฤษฎีกาเมื่อเดือนธันวาคม 2025"
+  },
+  {
+   "date": "2026-01-20",
+   "title": "14 Thais cross back after escaping a Bavet scam centre",
+   "what": "Thai troops detain 14 Thais (9 men, 5 women) who crossed into Aranyaprathet, Sa Kaeo, after escaping a scam centre in Bavet, Cambodia. They say they were recruited on Facebook for 25,000-baht office jobs and assaulted for missing targets.",
+   "sources": [
+    {
+     "title": "Thai forces detain 14 Thais after escape from job scam in Cambodia",
+     "url": "https://www.nationthailand.com/blogs/news/asean/40061508",
+     "publisher": "The Nation",
+     "date": "2026-01-21"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "คนไทย 14 คนหนีจากศูนย์หลอกลวงในบาเวต ข้ามแดนกลับไทย",
+   "what_th": "ทหารไทยควบคุมตัวคนไทย 14 คน (ชาย 9 คน หญิง 5 คน) ที่ข้ามแดนเข้ามาที่อำเภออรัญประเทศ จังหวัดสระแก้ว หลังหนีออกจากศูนย์หลอกลวงในบาเวต ประเทศกัมพูชา ทั้งหมดเล่าว่าถูกชักชวนผ่าน Facebook ให้ไปทำงานออฟฟิศค่าจ้าง 25,000 บาท และถูกทำร้ายเมื่อทำยอดไม่ถึงเป้า"
+  },
+  {
+   "date": "2026-04-23",
+   "title": "OFAC sanctions Cambodian senator Kok An",
+   "what": "OFAC sanctions Kok An and 28 other individuals and entities tied to scam compounds, including Crown Resorts properties in Poipet on the Thai border, Sihanoukville and Bavet.",
+   "sources": [
+    {
+     "title": "Treasury Sanctions Cambodian Senator Kok An and Scam Center Network Defrauding Americans",
+     "url": "https://home.treasury.gov/news/press-releases/sb0469",
+     "publisher": "US Department of the Treasury",
+     "date": "2026-04-23"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "OFAC คว่ำบาตร Kok An สมาชิกวุฒิสภากัมพูชา",
+   "what_th": "OFAC คว่ำบาตร Kok An และบุคคลกับนิติบุคคลอีก 28 รายที่เชื่อมโยงกับศูนย์หลอกลวง รวมถึงกิจการของ Crown Resorts ในปอยเปตซึ่งติดชายแดนไทย สีหนุวิลล์ และบาเวต"
+  },
+  {
+   "date": "2026-05-02",
+   "title": "SEC-flagged block of the Exmix platform",
+   "what": "A Thai SEC news headline tells investors to deal with their assets on the Exmix platform before it is blocked on 2 May 2026. Only the headline was seen; the release text was not loaded.",
+   "sources": [
+    {
+     "title": "ก.ล.ต. ย้ำเตือนผู้ลงทุนให้ดำเนินการทรัพย์สินของตนในแพลตฟอร์ม Exmix ก่อนการปิดกั้นในวันที่ 2 พฤษภาคม 2569 (related-news headline)",
+     "url": "https://www.sec.or.th/TH/Pages/News_Detail.aspx?SECID=11796",
+     "publisher": "Securities and Exchange Commission, Thailand",
+     "date": ""
+    }
+   ],
+   "confidence": "reported",
+   "title_th": "ก.ล.ต. แจ้งปิดกั้นแพลตฟอร์ม Exmix",
+   "what_th": "หัวข้อข่าวของสำนักงาน ก.ล.ต. แจ้งให้ผู้ลงทุนจัดการสินทรัพย์บนแพลตฟอร์ม Exmix ก่อนถูกปิดกั้นในวันที่ 2 พฤษภาคม 2026 เห็นเพียงหัวข้อข่าว ไม่ได้โหลดเนื้อหาข่าวฉบับเต็ม"
+  },
+  {
+   "date": "2026-06-23",
+   "title": "OFAC widens Prince Group sanctions to a Thailand-based firm",
+   "what": "OFAC and FinCEN designate 9 more individuals and 26 entities linked to the Prince Group, including Thailand-based White Horse Hotel Management Group Co., Ltd.",
+   "sources": [
+    {
+     "title": "Treasury Further Dismantles Overseas Scam Operations Targeting Americans",
+     "url": "https://home.treasury.gov/news/press-releases/sb0538",
+     "publisher": "US Department of the Treasury",
+     "date": "2026-06-23"
+    }
+   ],
+   "confidence": "confirmed",
+   "title_th": "OFAC ขยายการคว่ำบาตร Prince Group ไปถึงบริษัทที่ตั้งอยู่ในไทย",
+   "what_th": "OFAC และ FinCEN ขึ้นบัญชีบุคคลเพิ่มอีก 9 ราย และนิติบุคคล 26 แห่งที่เชื่อมโยงกับ Prince Group รวมถึง White Horse Hotel Management Group Co., Ltd. ซึ่งตั้งอยู่ในไทย"
+  }
+ ],
+ "channels": [
+  {
+   "name": "Thai Police Online (online police report)",
+   "name_th": "ระบบรับแจ้งความออนไลน์",
+   "how": "File a police report for online fraud and technology crime. Police name this site and hotline 1441 as the channels for online reports.",
+   "url": "https://thaipoliceonline.go.th/",
+   "how_th": "แจ้งความคดีฉ้อโกงออนไลน์และอาชญากรรมทางเทคโนโลยี ตำรวจระบุว่าเว็บไซต์นี้และสายด่วน 1441 เป็นช่องทางแจ้งความออนไลน์"
+  },
+  {
+   "name": "Hotline 1441",
+   "name_th": "สายด่วน 1441",
+   "how": "24-hour hotline for technology crime advice; the Ministry of Digital Economy and Society's AOC 1441 service coordinates freezing of scammers' bank accounts.",
+   "url": "https://www.ccib.go.th/",
+   "how_th": "สายด่วน 24 ชั่วโมง ให้คำปรึกษาเรื่องอาชญากรรมทางเทคโนโลยี ศูนย์ AOC 1441 ของกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม ประสานการอายัดบัญชีธนาคารของมิจฉาชีพ"
+  },
+  {
+   "name": "Cyber Crime Investigation Bureau (CCIB)",
+   "name_th": "กองบัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี (บช.สอท.)",
+   "how": "Police bureau for technology crime. Its site lists division phone numbers and publishes warnings by scam type, including crypto trading scams, money-draining apps and mule accounts.",
+   "url": "https://www.ccib.go.th/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%9E%E0%B8%99%E0%B8%98/%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%A2",
+   "how_th": "หน่วยงานตำรวจที่ดูแลอาชญากรรมทางเทคโนโลยี เว็บไซต์มีหมายเลขโทรศัพท์ของแต่ละกองบังคับการ และเผยแพร่คำเตือนแยกตามรูปแบบการหลอกลวง รวมถึงหลอกเทรดคริปโต แอปดูดเงิน และบัญชีม้า"
+  },
+  {
+   "name": "Your bank's hotline (account freeze)",
+   "name_th": "แจ้งอายัดบัญชี",
+   "how": "Under the 2023 technology crime decree, a victim can ask the bank to suspend the receiving account at once, without first filing a police report.",
+   "url": "https://thaipublica.org/2023/03/electronic-crime-law-effective-now/",
+   "how_th": "ตาม พ.ร.ก. อาชญากรรมทางเทคโนโลยี ปี 2023 ผู้เสียหายขอให้ธนาคารระงับบัญชีที่รับเงินได้ทันที โดยไม่ต้องแจ้งความก่อน"
+  },
+  {
+   "name": "Bank of Thailand 1213",
+   "name_th": "ธนาคารแห่งประเทศไทย โทร. 1213",
+   "how": "Central bank line for questions and complaints about financial services; complaints by email go to fcc@bot.or.th.",
+   "url": "https://www.bot.or.th/th/contact-us.html",
+   "how_th": "สายของธนาคารแห่งประเทศไทย สำหรับสอบถามและร้องเรียนเรื่องบริการทางการเงิน ร้องเรียนทางอีเมลได้ที่ fcc@bot.or.th"
+  },
+  {
+   "name": "DSI Call Center 1202",
+   "name_th": "กรมสอบสวนคดีพิเศษ",
+   "how": "Department of Special Investigation call centre for complaints and petitions about special cases, such as large fraud schemes.",
+   "url": "https://www.dsi.go.th/th",
+   "how_th": "ศูนย์รับแจ้งทางโทรศัพท์ของกรมสอบสวนคดีพิเศษ (DSI) สำหรับร้องเรียนและยื่นคำร้องเกี่ยวกับคดีพิเศษ เช่น ขบวนการฉ้อโกงขนาดใหญ่"
+  },
+  {
+   "name": "SEC licensed digital asset exchanges",
+   "name_th": "ผู้ประกอบธุรกิจที่ได้รับใบอนุญาตศูนย์ซื้อขายสินทรัพย์ดิจิทัล",
+   "how": "SEC list of licensed exchanges, brokers, dealers and custodians. The SEC also points to its SEC Check First app for licence checks.",
+   "url": "https://market.sec.or.th/LicenseCheck/views/DABusiness?exchange",
+   "how_th": "รายชื่อศูนย์ซื้อขาย นายหน้า ผู้ค้า และผู้รับฝากสินทรัพย์ดิจิทัลที่ได้รับใบอนุญาตจาก ก.ล.ต. และ ก.ล.ต. ยังแนะนำแอป SEC Check First สำหรับตรวจสอบใบอนุญาต"
+  },
+  {
+   "name": "SEC Investor Alert",
+   "name_th": "รายชื่อผู้ที่มิใช่ผู้ประกอบธุรกิจภายใต้การกำกับดูแลของ ก.ล.ต.",
+   "how": "SEC list of people and platforms that are not licensed, including unlicensed digital asset businesses, compiled from public enquiries.",
+   "url": "https://market.sec.or.th/public/idisc/th/InvestorAlert",
+   "how_th": "รายชื่อบุคคลและแพลตฟอร์มที่ไม่ได้รับใบอนุญาตจาก ก.ล.ต. รวมถึงธุรกิจสินทรัพย์ดิจิทัลที่ไม่ได้รับอนุญาต รวบรวมจากเรื่องที่ประชาชนสอบถามเข้ามา"
+  },
+  {
+   "name": "SEC complaint and tip-off centre 1207",
+   "name_th": "ศูนย์รับเรื่องร้องเรียนและแจ้งเบาะแส",
+   "how": "Report a suspected unlicensed platform or investment solicitation by phone on 1207, by email to complaint@sec.or.th, or via SEC Live Chat.",
+   "url": "https://market.sec.or.th/public/idisc/th/InvestorAlert",
+   "how_th": "แจ้งแพลตฟอร์มหรือการชักชวนลงทุนที่สงสัยว่าไม่ได้รับอนุญาต ทางโทรศัพท์ 1207 ทางอีเมล complaint@sec.or.th หรือผ่าน SEC Live Chat"
+  }
+ ]
+}

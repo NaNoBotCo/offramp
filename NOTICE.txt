@@ -1,32 +1,17 @@
-Offramp — licences, in layers
+Offrampt (offrampt.net) — what is in this repository, and under what terms.
 
-Different parts of this repository come from different places and cannot carry one
-licence between them. The layers are deliberate.
+CODE — tools/, js/, tests/, publish.sh, deploy.sh
+    SPDX-License-Identifier: MIT — see LICENSE-CODE.
 
-RECORDS, PROSE AND PAGES — everything here that is not source code
-  Creative Commons Attribution 4.0 International (CC BY 4.0)
-  SPDX-License-Identifier: CC-BY-4.0
-  https://creativecommons.org/licenses/by/4.0/
-  Attribute to: Offramp (NaN), with a link to this repository.
-  Attribution is the whole of it: name the work and link back, and the rest is
-  yours — copy it, adapt it, sell it, index it, train on it. The licence covers
-  sui generis database rights where they exist (section 4).
+TEXT, FIGURES AND DATA — the pages in docs/, the pictures in docs/img/, data/*.json, README.md
+    SPDX-License-Identifier: CC-BY-4.0 — see LICENSE. Credit line: "Nan · hongdam.net · CC BY 4.0",
+    with a link to https://offrampt.net/ .
+    Every picture was computed by tools/draw.py or tools/figures.py; none is a photograph.
 
-CODE — the source files that build and serve the above
-  MIT
-  SPDX-License-Identifier: MIT
-  Copyright (c) 2026 NaN
-  Keep the copyright line and the permission notice; everything else is open.
+DATA FROM OTHERS
+    data/raw/ holds prices and rates as published by Bitkub, Binance, the Bank of Thailand,
+    DefiLlama, mempool.space and CoinGecko, fetched through their public APIs. data/research/
+    holds facts gathered from public sources, each with its URL; the sources page lists them.
 
-ANYTHING CARRIED IN FROM SOMEWHERE ELSE keeps the licence it arrived with, named
-beside it — a sidecar .json, a source field on the record, or a line on the page.
-Nothing upstream is relicensed by this file. Where an upstream licence and the
-layers above disagree, the upstream licence governs that file.
-
-Copyright (c) 2026 NaN
-
----
-
-The verbatim text of the licence named above is in LICENSE beside this file.
-The layers on this page are the terms; LICENSE carries the wording a machine
-matches against.
+NOT ADVICE
+    Nothing in this repository is advice about money, tax or law.
