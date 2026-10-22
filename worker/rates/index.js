@@ -1,9 +1,10 @@
 // offrampt-rates — the live legs of the Offrampt rate board.
 // Cron (*/15) refreshes; GET / serves the latest JSON with CORS open.
-// Four legs: Bitkub public book (licensed Thai street), CoinGecko demo
+// Five legs: Bitkub public book (licensed Thai street), CoinGecko demo
 // (global mid), BOT reference USD/THB (official, weekdays, fetched once/day),
 // USD cash at Thai money changers (baht-rates worker over the BAHT service
-// binding; data thairate.com, CC BY 4.0).
+// binding; data thairate.com, CC BY 4.0), and mid rates for EUR GBP JPY CNY KRW
+// from the same feed.
 // Failure policy is the live_shell one: a leg that fails keeps its previous
 // value and its previous fetched_at — staleness is visible, never invented.
 
@@ -58,6 +59,19 @@ async function cashLeg(env) {
   };
 }
 
+// Mid-market baht rates for five more currencies (baht-rates over the BAHT binding; data thairate.com, CC BY 4.0).
+const FX = ["EUR", "GBP", "JPY", "CNY", "KRW"];
+
+async function fxLeg(env) {
+  const r = await env.BAHT.fetch("https://baht-rates/feed/mid.json");
+  if (!r.ok) throw new Error("baht-rates HTTP " + r.status);
+  const d = await r.json(), rates = {};
+  for (const c of FX) if (d.mid && d.mid[c] > 0) rates[c] = d.mid[c];
+  if (!Object.keys(rates).length) throw new Error("no mid rates");
+  return { thb_per_unit: rates, source_at: d.mid_at, fetched_at: new Date().toISOString(),
+    source: "Exchange rates: thairate.com (CC BY 4.0)", source_url: "https://thairate.com/" };
+}
+
 async function refresh(env) {
   const prev = (await env.RATES.get("rates", "json")) || { sources: {} };
   const sources = Object.assign({}, prev.sources);
@@ -95,6 +109,7 @@ async function refresh(env) {
   } catch (e) {}
 
   try { sources.cash = await cashLeg(env); delete sources.cash_error; } catch (e) { sources.cash_error = String(e && e.message || e); }
+  try { sources.fx = await fxLeg(env); delete sources.fx_error; } catch (e) { sources.fx_error = String(e && e.message || e); }
 
   const routes = [];
   const bot = sources.bot, cg = sources.coingecko;
@@ -189,9 +204,13 @@ async function paperTicker(env) {
     if (t) money[m] = { bid: +t.highest_bid, ask: +t.lowest_ask, last: +t.last, pct: +t.percent_change, source: "Bitkub" };
   }
   try { const c = await cashUSD(env); if (c) money.USD = c; } catch (e) {}
-  let mid = null;
-  try { const r = await env.RATES.get("rates", "json"); if (r && r.sources && r.sources.bot) mid = { usd_thb: r.sources.bot.usd_thb_mid, period: r.sources.bot.period, source: "Bank of Thailand reference rate" }; } catch (e) {}
-  return { at: new Date().toISOString(), source: "Bitkub public market API, v3 ticker", coins: coins, usdt: usdt, money: money, mid: mid };
+  let mid = null, fx = null;
+  try {
+    const r = await env.RATES.get("rates", "json");
+    if (r && r.sources && r.sources.bot) mid = { usd_thb: r.sources.bot.usd_thb_mid, period: r.sources.bot.period, source: "Bank of Thailand reference rate" };
+    if (r && r.sources && r.sources.fx) fx = r.sources.fx;
+  } catch (e) {}
+  return { at: new Date().toISOString(), source: "Bitkub public market API, v3 ticker", coins: coins, usdt: usdt, money: money, mid: mid, fx: fx };
 }
 
 async function paperHistory(sym, res, days) {
