@@ -91,3 +91,22 @@ data/research/words.json	่วยงานกำกับ และตำรว
 data/research/words.json	"en": "investment scam",	a law, a regulator's or source's words, or scam and risk as the subject; not addressed to the reader
 data/research/words.json	k transfer. Such trades carry risks such as fake payment slips, m	a law, a regulator's or source's words, or scam and risk as the subject; not addressed to the reader
 data/research/words.json	นธนาคาร การซื้อขายแบบนี้มีความเสี่ยง เช่น สลิปโอนเงินปลอม เงินจากบ	a law, a regulator's or source's words, or scam and risk as the subject; not addressed to the reader
+data/research/products.json	Identity Verification (KYC) for Foreign Nationals	a source's words: Binance TH FAQ quoted
+data/research/products.json	it showed 'No ads found' on 2026-09-23	an exchange's own screen text, quoted
+data/research/products.json	it showed 'No ads match your current filters' on 2026-09-23	an exchange's own screen text, quoted
+data/research/products.json	cashless-thailand-tourist-payment-guide	a source's URL
+data/research/products.json	No account, no KYC, no business entity, no price.	a third-party method's requirements in its needs field
+data/research/products.json	EVM chains. No account, no KYC.	a third-party method's requirements in its needs field
+data/research/products.json	Tron address (starts with T) from a wallet the owner controls. No account, no KYC.	a third-party method's requirements in its needs field
+data/research/products.json	Solana address from a wallet the owner controls. No account, no KYC.	a third-party method's requirements in its needs field
+data/research/products.json	No account with a company, no KYC, no business entity.	a third-party method's requirements in its needs field
+data/research/products.json	A payTo address; some facilitators need no account or key.	a third-party method's requirements in its needs field
+data/research/products.json	with no fees and no account required	a source's words: docs.x402.org quoted
+data/research/rules.json	TouristDigiPay sandbox for foreign tourists	a regulator's title: SEC News No. 204/2025
+data/research/rules.json	digital-assets-sandbox-in-offing-for-foreign-tourists	a source's URL
+data/research/rules.json	Bitcoin to baht: digital assets sandbox in offing for foreign tourists	a source's headline: Bangkok Post
+data/research/rules.json	how-tourist-spending-is-going-digital	a source's URL
+data/research/rules.json	How tourist spending is going digital	a source's headline: Bangkok Post
+data/research/rules.json	crypto-sandbox-targets-tourists	a source's URL
+data/research/rules.json	Crypto sandbox targets tourists	a source's headline: Bangkok Post
+tools/site.py	none of them needs the words to help with anything. A request for them is the scam.	a fact about seed phrases, not advice

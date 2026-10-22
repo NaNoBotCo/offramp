@@ -139,13 +139,13 @@
         if (xr && !xr.bad && xr.bytes.length === 25 && xr.version === 0)
           return r("go", t("XRP Ledger address (r…)", "ที่อยู่ XRP Ledger (r…)"), [t("Checksum: valid.", "Checksum: ถูกต้อง"), t("Exchange deposits on XRP need a destination tag, a number the exchange gives you. Without it the deposit lands in the exchange's shared account.", "การฝาก XRP เข้าศูนย์ซื้อขายต้องใส่ destination tag ซึ่งเป็นตัวเลขที่ศูนย์ซื้อขายให้มา ถ้าไม่ใส่ เงินจะเข้าบัญชีรวมของศูนย์ซื้อขาย")]);
       }
-      if (x && x.bad && /^[13T]/.test(s)) return r("red", t("Base58 address with a broken checksum", "ที่อยู่ Base58 ที่ checksum ไม่ถูกต้อง"), [t("It looks like a " + (s[0] === "T" ? "Tron" : "bitcoin") + " address, but the last four bytes do not match. A character is wrong.", "ดูเหมือนที่อยู่ " + (s[0] === "T" ? "Tron" : "บิตคอยน์") + " แต่สี่ไบต์สุดท้ายไม่ตรง มีตัวอักษรผิด")]);
+      if (x && x.bad && x.bytes.length === 25 && /^[13T]/.test(s)) return r("red", t("Base58 address with a broken checksum", "ที่อยู่ Base58 ที่ checksum ไม่ถูกต้อง"), [t("It looks like a " + (s[0] === "T" ? "Tron" : "bitcoin") + " address, but the last four bytes do not match. A character is wrong.", "ดูเหมือนที่อยู่ " + (s[0] === "T" ? "Tron" : "บิตคอยน์") + " แต่สี่ไบต์สุดท้ายไม่ตรง มีตัวอักษรผิด")]);
       var sol = b58(s, B58);
       if (sol && sol.length === 32) return r("amber", t("Looks like a Solana address", "ดูเหมือนที่อยู่ Solana"), [t("Base58, 32 bytes: the Solana format. Solana addresses carry no checksum, so a typo can still read as valid. Compare the start and end with the source.", "Base58 ขนาด 32 ไบต์: รูปแบบของ Solana ที่อยู่ Solana ไม่มี checksum พิมพ์ผิดก็ยังดูถูกต้อง เทียบต้นและท้ายกับต้นทาง")]);
     }
     if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(s))
       return r("amber", t("A Lightning address, or an email", "Lightning address หรืออีเมล"), [t("name@domain: a Lightning wallet looks this up over the web and fetches an invoice. It only works if the domain runs a Lightning service.", "ชื่อ@โดเมน: กระเป๋า Lightning จะค้นหาผ่านเว็บแล้วดึงใบแจ้งหนี้มา ใช้ได้เฉพาะเมื่อโดเมนนั้นให้บริการ Lightning")]);
-    return r("red", t("Not a format this checker knows", "ตัวตรวจไม่รู้จักรูปแบบนี้"), [t("Check for a missing character, a space, or a line break in the middle.", "ตรวจดูว่ามีตัวอักษรขาด ช่องว่าง หรือการขึ้นบรรทัดใหม่ตรงกลางหรือไม่")]);
+    return r("red", t("Not a format this checker knows", "ตัวตรวจไม่รู้จักรูปแบบนี้"), [t("A missing character, a space or a line break in the middle puts an address outside every known format.", "ตัวอักษรที่ขาดไป ช่องว่าง หรือการขึ้นบรรทัดใหม่ตรงกลาง ทำให้ที่อยู่ไม่ตรงกับรูปแบบใดเลย")]);
   }
 
   G.OFR = G.OFR || {};
