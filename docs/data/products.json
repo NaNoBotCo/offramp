@@ -5,9 +5,12 @@
    "id": "redotpay",
    "name": "RedotPay Card",
    "issuer": "RedotPay group. Visa. Programme is assigned by country of ordinary residence: Hong Kong Programme (Visa) issued by Red F. Technology Limited (RFTL), Hong Kong, business registration 75073741, card 'categorised as a credit card under Hong Kong laws'; Singapore Programme (Visa debit) with Redotpay Technology Pte. Ltd. (RTPL), Singapore company 202346379C, acting as programme manager under card issuance services from an unnamed BIN Sponsor, for persons 'ordinarily resident outside of Singapore'. The terms pages read do not name a bank.",
+   "issuer_th": "กลุ่ม RedotPay เครือข่าย Visa โปรแกรมบัตรกำหนดตามประเทศที่มีถิ่นที่อยู่ปกติ ได้แก่ Hong Kong Programme (Visa) ออกโดย Red F. Technology Limited (RFTL) ฮ่องกง เลขทะเบียนธุรกิจ 75073741 โดยบัตร “จัดเป็นบัตรเครดิตตามกฎหมายฮ่องกง” และ Singapore Programme (Visa เดบิต) โดย Redotpay Technology Pte. Ltd. (RTPL) บริษัทสิงคโปร์เลขที่ 202346379C ทำหน้าที่ผู้จัดการโปรแกรมบัตร ภายใต้บริการออกบัตรจาก BIN Sponsor ที่ไม่ได้ระบุชื่อ สำหรับผู้ที่ “มีถิ่นที่อยู่ปกตินอกสิงคโปร์” หน้าข้อกำหนดที่อ่านไม่ได้ระบุชื่อธนาคาร",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "available",
    "thailand_evidence": "Thailand is absent from all four RedotPay exclusion lists read on 2026-09-23: 'Unsupported Countries/Regions' (by citizenship; updated over 3 weeks before 2026-09-23), 'Card Issuance Restrictions' (by residence: 'Residents of these areas are ineligible for both virtual and physical cards'; updated over 3 weeks before 2026-09-23), 'Card Delivery Restrictions' (physical card shipping; dated July 21, 2026) and 'Location-Based Access Restrictions'. RedotPay publishes exclusion lists, not an allow-list, so this status rests on Thailand's absence from those lists.",
+   "thailand_evidence_th": "ไม่มีประเทศไทยในรายชื่อพื้นที่ที่ไม่ให้บริการทั้ง 4 รายการของ RedotPay ที่อ่านเมื่อ 2026-09-23 ได้แก่ “ประเทศ/ภูมิภาคที่ไม่รองรับ” (พิจารณาตามสัญชาติ อัปเดตเกิน 3 สัปดาห์ก่อน 2026-09-23) “ข้อจำกัดการออกบัตร” (พิจารณาตามถิ่นที่อยู่: “ผู้มีถิ่นที่อยู่ในพื้นที่เหล่านี้ไม่มีสิทธิ์รับทั้งบัตรเสมือนและบัตรพลาสติก” อัปเดตเกิน 3 สัปดาห์ก่อน 2026-09-23) “ข้อจำกัดการจัดส่งบัตร” (การจัดส่งบัตรพลาสติก ลงวันที่ 21 กรกฎาคม 2026) และ “ข้อจำกัดการเข้าถึงตามตำแหน่งที่ตั้ง” RedotPay เผยแพร่เฉพาะรายชื่อพื้นที่ที่ไม่ให้บริการ ไม่มีรายชื่อพื้นที่ที่ให้บริการ สถานะนี้จึงอิงจากการที่ไม่มีประเทศไทยอยู่ในรายชื่อเหล่านั้น",
    "nationality_note": "Two separate tests. KYC is refused to citizens of listed countries, including United States, Mainland China, Myanmar, Russia, Ukraine, Iran, North Korea, Venezuela and others (citizenship list). Card issuance is refused to residents of listed places, which add India, Indonesia, Morocco, Nepal, Singapore and Turkey. Thai nationals do not appear on either list. A foreign resident of Thailand holding a passport from a listed country (for example a US citizen) fails the citizenship test. KYC: original physical ID (search-result snippets from the help centre name passport, identity card or driver's licence, and say residence permits are generally not supported), valid at least 3 months, residential address required, age 18+.",
    "fees": {
     "issue": "Virtual card 10 USD; physical card 100 USD (help centre, July 27, 2026). Deducted from account balance.",
@@ -16,10 +19,19 @@
     "atm": "HKD card: 2%. USD card: 2% up to 10,000 USD per month, 3% above that (help centre, July 27, 2026). ATM operator fees not addressed.",
     "topup": "Crypto deposit fee not stated on pages read; minimum deposits and networks shown only in the app. Card-funding fee article could not be fetched (redirect loop)."
    },
+   "fees_th": {
+    "issue": "บัตรเสมือน 10 USD บัตรพลาสติก 100 USD (ศูนย์ช่วยเหลือ, 27 กรกฎาคม 2026) หักจากยอดเงินในบัญชี",
+    "annual": "บทความเรื่องค่าธรรมเนียมในศูนย์ช่วยเหลือที่อ่านไม่ได้ระบุไว้ ข้อกำหนดของ HK และ SG ระบุว่าอาจเรียกเก็บค่าธรรมเนียมต่ออายุบัตร “ตามที่แสดงในแอป”",
+    "fx": "1.2% สำหรับรายการในสกุลเงินอื่น และค่าธรรมเนียมแปลงคริปโต 1% (บทความเรื่อง ATM/ค่าธรรมเนียมในศูนย์ช่วยเหลือ, 27 กรกฎาคม 2026) มีค่าธรรมเนียมรายการแยกต่างหาก 1.5% (ขั้นต่ำ 0.50 USD) ที่ร้านค้าตามรายชื่อ เช่น Facebook Ads, Discord, PUBG Mobile โดยยกเว้นให้ 3 รายการแรกที่เข้าเงื่อนไขต่อบัตรต่อเดือน",
+    "atm": "บัตร HKD: 2% บัตร USD: 2% สำหรับยอดไม่เกิน 10,000 USD ต่อเดือน และ 3% สำหรับส่วนที่เกิน (ศูนย์ช่วยเหลือ, 27 กรกฎาคม 2026) ไม่ได้กล่าวถึงค่าธรรมเนียมของผู้ให้บริการตู้ ATM",
+    "topup": "หน้าที่อ่านไม่ได้ระบุค่าธรรมเนียมฝากคริปโต ยอดฝากขั้นต่ำและเครือข่ายแสดงเฉพาะในแอป ไม่สามารถดึงบทความเรื่องค่าธรรมเนียมเติมเงินเข้าบัตรได้ (หน้าเว็บเปลี่ยนเส้นทางวนซ้ำ)"
+   },
    "atm_limit": "Not readable on the provider's fee page (the table is an image). Third-party search snippets conflict: 100,000 USD per transaction and 1,000,000 USD per day (transferfees.io / cryptocardhub) versus 50,000 USD per month and 3,750 USD per day (spendnode.io). Physical card only for ATM use per the same snippets.",
    "spend_limit": "Not readable on the provider's fee page. Third-party search snippets report 100,000 USD per transaction and 1,000,000 USD per day. Terms say limits are set by RTPL/RFTL and shown in the app.",
    "assets": "USDT, USDC, BTC, ETH 'and more' (help centre, July 21, 2026); networks shown only on the in-app deposit page. RedotPay news pages state USDT on TRON and USDC/USDT withdrawals to Solana.",
+   "assets_th": "USDT, USDC, BTC, ETH “และอื่น ๆ” (ศูนย์ช่วยเหลือ, 21 กรกฎาคม 2026) เครือข่ายที่รองรับแสดงเฉพาะในหน้าฝากเงินในแอป หน้าข่าวของ RedotPay ระบุว่ารองรับ USDT บน TRON และการถอน USDC/USDT ไปยัง Solana",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Google Pay and PayPal linking supported per help centre. Apple Pay: from August 22, 2025, new Apple Pay enablement for Hong Kong 'Cards-as-a-Service' programmes was suspended; cards already added keep working (help centre, July 21, 2026). A July 22, 2026 help article describes adding a card to Apple Pay after a free card 'upgrade' but does not say which cards or regions qualify.",
    "affiliate": {
     "exists": true,
@@ -143,9 +155,12 @@
    "id": "bybit-card",
    "name": "Bybit Card (Asia Pacific)",
    "issuer": "Bybit. Asia Pacific card is a 'Visa credit card' denominated in USD (Bybit FAQ, 2026-09-03). The issuing entity is not named on any page that rendered; the Asia Pacific cardholder terms page (help centre entry updated 2026-06-10) links to a legal page that did not render without JavaScript.",
+   "issuer_th": "Bybit บัตรสำหรับเอเชียแปซิฟิกเป็น “บัตรเครดิต Visa” ในสกุล USD (คำถามที่พบบ่อยของ Bybit, 2026-09-03) ไม่มีหน้าใดที่แสดงผลได้ระบุชื่อนิติบุคคลผู้ออกบัตร หน้าข้อกำหนดผู้ถือบัตรเอเชียแปซิฟิก (รายการในศูนย์ช่วยเหลือ อัปเดต 2026-06-10) ลิงก์ไปยังหน้ากฎหมายที่ไม่แสดงผลหากไม่มี JavaScript",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "Bybit's own wiki page 'Bybit Card Countries: Availability 2026' (bybit.com, dated Aug 5, 2026, 'Last Updated: June 2026') states 'Thailand: Not currently available'. That page carries the notice 'This article was generated by AI. Please verify important information independently.' Bybit's help-centre 'Service Restricted Countries' (updated 2026-09-01) does not list Thailand among excluded jurisdictions, and the 'FAQ — Bybit Card General Inquiries (Asia Pacific)' article returns 'This article is currently not supported on this site' (fetched 2026-09-23 from a Thai IP and from a US fetcher). The card application flow says unsupported countries of residence are placed on an interest list. No human-written Bybit page naming Thailand was found. Separately, the SEC reported bybit.com to the Ministry of Digital Economy and Society, which restricts access from Thailand from 28 June 2025 (SEC News 134/2025, 29 May 2025); see the bybit entry under exchanges.",
+   "thailand_evidence_th": "หน้าวิกิของ Bybit เอง “ประเทศที่ใช้ Bybit Card ได้: ความพร้อมให้บริการ 2026” (bybit.com ลงวันที่ 5 สิงหาคม 2026 “อัปเดตล่าสุด: มิถุนายน 2026”) ระบุว่า “ประเทศไทย: ยังไม่เปิดให้บริการในขณะนี้” หน้านั้นมีข้อความแจ้งว่า “บทความนี้สร้างโดย AI โปรดตรวจสอบข้อมูลสำคัญด้วยตนเอง” หน้า “ประเทศที่จำกัดการให้บริการ” ในศูนย์ช่วยเหลือของ Bybit (อัปเดต 2026-09-01) ไม่มีประเทศไทยในรายชื่อเขตอำนาจที่ไม่ให้บริการ ส่วนบทความ “คำถามที่พบบ่อย — คำถามทั่วไปเกี่ยวกับ Bybit Card (เอเชียแปซิฟิก)” แสดงข้อความ “บทความนี้ยังไม่รองรับบนเว็บไซต์นี้ในขณะนี้” (ดึงข้อมูลเมื่อ 2026-09-23 จาก IP ในไทยและจากเครื่องมือดึงข้อมูลในสหรัฐฯ) ขั้นตอนสมัครบัตรระบุว่าผู้ที่มีถิ่นที่อยู่ในประเทศที่ไม่รองรับจะถูกบันทึกไว้ในรายชื่อผู้สนใจ ไม่พบหน้าของ Bybit ที่เขียนโดยคนและระบุชื่อประเทศไทย อีกเรื่องหนึ่งคือ ก.ล.ต. แจ้งชื่อ bybit.com ต่อกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม ซึ่งจำกัดการเข้าถึงจากประเทศไทยตั้งแต่ 28 มิถุนายน 2025 (ข่าว ก.ล.ต. ที่ 134/2025, 29 พฤษภาคม 2025) ดูรายการ bybit ในหมวดศูนย์ซื้อขาย",
    "nationality_note": "Card fiat currency follows the country of Advanced Identity Verification; Asia Pacific and Australia cards require residential address verification; physical card shipping address must be in the same country as the residential address; only Tier 2 and above can get the Asia Pacific physical card. Bybit platform excluded jurisdictions (2026-09-01): United States, Chinese Mainland, Hong Kong, Singapore, Canada, North Korea, Cuba, Iran, Uzbekistan, Russian-controlled regions of Ukraine, Sevastopol, Sudan, Syria. Thai nationals vs foreign residents of Thailand: not addressed on pages read.",
    "fees": {
     "issue": "Asia Pacific: virtual none ('until further notice'); physical 5 USDT; waived for VIPs (Fees and Limits, 2026-09-10).",
@@ -154,10 +169,19 @@
     "atm": "Asia Pacific: 2% after the first 100 USD each month; ATM operators may add their own fee.",
     "topup": "No separate card balance; card spends from the Bybit Funding Account and Flexible Easy Earn. Crypto deposit fee not stated on card pages."
    },
+   "fees_th": {
+    "issue": "เอเชียแปซิฟิก: บัตรเสมือนไม่มีค่าธรรมเนียม (“จนกว่าจะมีประกาศเปลี่ยนแปลง”) บัตรพลาสติก 5 USDT ยกเว้นสำหรับ VIP (ค่าธรรมเนียมและวงเงิน, 2026-09-10)",
+    "annual": "ไม่มี (ค่าธรรมเนียมรายปี ค่าธรรมเนียมบัญชีไม่เคลื่อนไหว และค่าธรรมเนียมยกเลิก ระบุว่า “ไม่มี” ทั้งหมด)",
+    "fx": "เอเชียแปซิฟิก: 2% บวกเพิ่มจากอัตราของ Mastercard/Visa ค่าธรรมเนียมแปลงคริปโต 0.9% บวกเพิ่มจากอัตรา Bybit One-Click Sell (แปลงขั้นต่ำ 1 USD) ส่วนเพิ่มอัตราแลกเปลี่ยน 0%",
+    "atm": "เอเชียแปซิฟิก: 2% หลังจาก 100 USD แรกของแต่ละเดือน ผู้ให้บริการตู้ ATM อาจเก็บค่าธรรมเนียมของตนเพิ่ม",
+    "topup": "ไม่มียอดเงินในบัตรแยกต่างหาก บัตรใช้เงินจาก Bybit Funding Account และ Flexible Easy Earn หน้าเกี่ยวกับบัตรไม่ได้ระบุค่าธรรมเนียมฝากคริปโต"
+   },
    "atm_limit": "Asia Pacific physical card: Tier 1 none; Tier 2: 3 withdrawals / 3,000 USD per 24 hours, 30 / 10,000 USD per month, 360 / 75,000 USD per year; Tier 3: same daily and monthly, 100,000 USD per year.",
    "spend_limit": "Asia Pacific (virtual and physical each have their own limit): Tier 1 10,000 USD per transaction and per day, 50,000 USD per month, 150,000 USD per year; Tier 2 50,000 / 150,000 / 500,000 USD daily/monthly/annual; Tier 3 100,000 / 350,000 / 900,000 USD.",
    "assets": "Fiat USD first, then crypto by user-set priority; default priority USDT > USDC > GRAM > BTC > ETH > XRP (FAQ). Deposits to Funding Account from other wallets or via Buy Crypto.",
+   "assets_th": "ใช้เงิน USD ก่อน จากนั้นใช้คริปโตตามลำดับที่ผู้ใช้ตั้งไว้ ลำดับเริ่มต้นคือ USDT > USDC > GRAM > BTC > ETH > XRP (คำถามที่พบบ่อย) ฝากเข้า Funding Account ได้จากกระเป๋าอื่นหรือผ่าน Buy Crypto",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Asia Pacific: Apple Pay no, Google Pay yes, Samsung Pay no (FAQ table, 2026-09-03).",
    "affiliate": {
     "exists": true,
@@ -233,9 +257,12 @@
    "id": "binance-card",
    "name": "Binance Card",
    "issuer": "Not verified. Binance card pages (binance.com/en/cards) render only site navigation without JavaScript; the card dashboard redirects to login; the Finance FAQ category lists a 'Binance Card' sub-heading with no readable links.",
+   "issuer_th": "ยังไม่ได้ตรวจสอบ หน้าบัตรของ Binance (binance.com/en/cards) แสดงเพียงเมนูนำทางหากไม่มี JavaScript หน้าแดชบอร์ดบัตรพาไปหน้าเข้าสู่ระบบ หมวดคำถามที่พบบ่อยด้าน Finance มีหัวข้อย่อย “Binance Card” แต่ไม่มีลิงก์ที่อ่านได้",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "unclear",
    "thailand_evidence": "No Binance page stating card eligibility by country could be read on 2026-09-23. binance.com returned HTTP 202 challenges to direct requests from Thailand and navigation-only content to the fetch tool; the help-centre search for 'binance card supported countries' returned no results. Custody entry above reflects that card spending draws on a Binance exchange account; not confirmed on a Binance page today.",
+   "thailand_evidence_th": "เมื่อ 2026-09-23 ไม่สามารถอ่านหน้าใดของ Binance ที่ระบุสิทธิ์สมัครบัตรตามประเทศได้ binance.com ตอบคำขอโดยตรงจากประเทศไทยด้วยหน้าตรวจสอบ HTTP 202 และส่งให้เครื่องมือดึงข้อมูลเพียงเมนูนำทาง การค้นหาประเทศที่รองรับ Binance Card ในศูนย์ช่วยเหลือไม่พบผลลัพธ์ ข้อมูลเรื่องการถือสินทรัพย์ข้างต้นอิงจากการที่บัตรใช้เงินจากบัญชีศูนย์ซื้อขาย Binance ยังไม่ได้ยืนยันจากหน้าของ Binance ในวันนี้",
    "nationality_note": "Not verified.",
    "fees": {
     "issue": "Not verified.",
@@ -244,10 +271,19 @@
     "atm": "Not verified.",
     "topup": "Not verified."
    },
+   "fees_th": {
+    "issue": "ยังไม่ได้ตรวจสอบ",
+    "annual": "ยังไม่ได้ตรวจสอบ",
+    "fx": "ยังไม่ได้ตรวจสอบ",
+    "atm": "ยังไม่ได้ตรวจสอบ",
+    "topup": "ยังไม่ได้ตรวจสอบ"
+   },
    "atm_limit": "Not verified.",
    "spend_limit": "Not verified.",
    "assets": "Not verified.",
+   "assets_th": "ยังไม่ได้ตรวจสอบ",
    "physical": "unclear",
+   "physical_th": "ไม่ชัดเจน",
    "apple_google_pay": "Not verified.",
    "affiliate": {
     "exists": true,
@@ -293,9 +329,12 @@
    "id": "crypto-com-visa",
    "name": "Crypto.com Visa Card (prepaid; Singapore-issued card for non-Singapore residential addresses)",
    "issuer": "Foris Asia Pte. Ltd., holder of a Major Payment Institution licence from the Monetary Authority of Singapore; the crypto.com/sg page says it 'issues e-money to non-Singapore residents'. Visa. (EEA card: Foris MT Limited, Malta, 'pursuant to its Visa Principal Member (Issuing) license'. US credit card: Comenity Capital Bank.)",
+   "issuer_th": "Foris Asia Pte. Ltd. ผู้ถือใบอนุญาต Major Payment Institution จาก Monetary Authority of Singapore หน้า crypto.com/sg ระบุว่าบริษัท “ออกเงินอิเล็กทรอนิกส์ให้ผู้ที่ไม่ได้มีถิ่นที่อยู่ในสิงคโปร์” เครือข่าย Visa (บัตรสำหรับ EEA: Foris MT Limited มอลตา “ตามใบอนุญาต Visa Principal Member (Issuing) ของบริษัท” บัตรเครดิตในสหรัฐฯ: Comenity Capital Bank)",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "unclear",
    "thailand_evidence": "No Crypto.com page read on 2026-09-23 names Thailand as eligible or ineligible for the card. Thailand is not in the card 'restricted markets' list (help centre, June 2, 2026), which covers card use at merchants. The 'How to apply' article (updated over 3 weeks before access) lists shipping regions including 'APAC' and 'Rest of the World' without a country list. Crypto.com's App Referral Programme (July 2, 2026) lists Thailand as a Tier 3 eligible country, which concerns the app, not the card.",
+   "thailand_evidence_th": "ไม่มีหน้าใดของ Crypto.com ที่อ่านเมื่อ 2026-09-23 ระบุว่าประเทศไทยมีหรือไม่มีสิทธิ์สมัครบัตร ประเทศไทยไม่อยู่ในรายชื่อ “ตลาดที่ถูกจำกัด” ของบัตร (ศูนย์ช่วยเหลือ, 2 มิถุนายน 2026) ซึ่งครอบคลุมการใช้บัตรที่ร้านค้า บทความ “วิธีสมัคร” (อัปเดตเกิน 3 สัปดาห์ก่อนวันที่เข้าถึง) ระบุภูมิภาคที่จัดส่ง เช่น “APAC” และ “ส่วนอื่นของโลก” โดยไม่มีรายชื่อประเทศ โปรแกรมแนะนำเพื่อนผ่านแอปของ Crypto.com (2 กรกฎาคม 2026) ระบุประเทศไทยเป็นประเทศที่มีสิทธิ์ระดับ Tier 3 ซึ่งเกี่ยวกับแอป ไม่ใช่บัตร",
    "nationality_note": "Application requires KYC, a Level Up plan choice (subscription or CRO lockup/staking), residential address with proof, and card name; no credit check for the prepaid card. Nationality vs residence not addressed on pages read.",
    "fees": {
     "issue": "Physical card issuance (Singapore, non-SG residential address users): Midnight S$4.99; Ruby S$39.99 for monthly Level Up Plus subscribers under 6 months, free for annual subscribers, 6+ month subscribers or active lockup/stake. Card replacement: Midnight S$45.01, other tiers S$50.",
@@ -304,10 +343,19 @@
     "atm": "2% on amounts above the monthly free ATM limit (free per month: Midnight S$200, Ruby S$400, Indigo/Jade S$800, Icy/Rose S$1,000, Obsidian S$1,000). ATM surcharges count toward the limit.",
     "topup": "Debit card 0%; credit card 1%; debit/credit via Apple Pay 2%. Crypto-to-card transfer fee not listed."
    },
+   "fees_th": {
+    "issue": "ค่าออกบัตรพลาสติก (ออกในสิงคโปร์ สำหรับผู้ใช้ที่มีที่อยู่อาศัยนอกสิงคโปร์): Midnight S$4.99 ส่วน Ruby S$39.99 สำหรับสมาชิก Level Up Plus รายเดือนที่สมัครไม่ถึง 6 เดือน ฟรีสำหรับสมาชิกรายปี สมาชิกที่สมัครตั้งแต่ 6 เดือนขึ้นไป หรือผู้ที่มีการล็อกหรือ stake อยู่ ค่าออกบัตรใหม่แทนบัตรเดิม: Midnight S$45.01 ระดับอื่น S$50",
+    "annual": "ไม่มีค่าธรรมเนียมรายปีของบัตรในรายการ แผน Level Up บน crypto.com/sg: Ruby Steel SG$5.99/เดือน หรือ SG$59.90/ปี Royal Indigo SG$39.99/เดือน หรือ SG$399.90/ปี Midnight Blue ฟรี ค่าธรรมเนียมบัญชีไม่เคลื่อนไหว S$5 ต่อเดือนหลังไม่มีความเคลื่อนไหว 12 เดือน และ S$6 ตั้งแต่ 1 กันยายน 2026 ค่าปิดบัญชี S$50",
+    "fx": "Midnight: 0.5% สำหรับการซื้อทุกรายการและการถอนที่ตู้ ATM ระดับอื่น: ไม่มีค่าธรรมเนียม",
+    "atm": "2% สำหรับยอดที่เกินวงเงินถอนฟรีที่ตู้ ATM รายเดือน (ฟรีต่อเดือน: Midnight S$200, Ruby S$400, Indigo/Jade S$800, Icy/Rose S$1,000, Obsidian S$1,000) ค่าธรรมเนียมที่ตู้ ATM เรียกเก็บเพิ่มนับรวมในวงเงินนี้",
+    "topup": "บัตรเดบิต 0% บัตรเครดิต 1% บัตรเดบิต/เครดิตผ่าน Apple Pay 2% ไม่มีรายการค่าธรรมเนียมโอนคริปโตเข้าบัตร"
+   },
    "atm_limit": "Local ATMs outside Singapore only. Midnight: S$500 daily, S$5,000 monthly, S$50,000 yearly; Ruby: S$1,000 / S$10,000 / S$75,000; Indigo/Jade, Icy/Rose, Obsidian: S$2,000 / S$10,000 / S$75,000. 3 withdrawals per day, 30 per month, 360 per year.",
    "spend_limit": "POS limit including ATM (outside Singapore): Midnight S$10,000 daily and monthly, S$50,000 yearly; Ruby S$15,000 / S$15,000 / S$150,000; higher tiers S$25,000 / S$25,000 / S$250,000. Card maximum balance S$10,000 (Midnight) to S$25,000.",
    "assets": "Top-up with crypto ('over 100 top cryptocurrencies', including BTC and ETH) or with Mastercard/Maestro/Visa/Visa Electron debit or credit cards (APAC top-up article, May 29, 2026). Card rewards paid in CRO.",
+   "assets_th": "เติมเงินด้วยคริปโต (“คริปโตชั้นนำกว่า 100 สกุล” รวมถึง BTC และ ETH) หรือด้วยบัตรเดบิตหรือบัตรเครดิต Mastercard/Maestro/Visa/Visa Electron (บทความเรื่องการเติมเงินสำหรับ APAC, 29 พฤษภาคม 2026) รางวัลจากบัตรจ่ายเป็น CRO",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay supported for Singapore-issued cards including non-Singapore residential address users (help centre, March 16, 2026). Google Pay for this card not confirmed on pages read.",
    "affiliate": {
     "exists": true,
@@ -383,9 +431,12 @@
    "id": "kast",
    "name": "KAST Card",
    "issuer": "KAST (Troia Corp). Visa (Standard: Visa Platinum; Premium and Private: Visa Infinite). Non-US cardholder agreement (effective Mar 20, 2025): 'The issuer for this card program is Third National', 'issued by the Issuer under license from Visa'. Custody partners named in platform terms (effective Jul 7, 2026): Tazapay, BitGo 'or others'.",
+   "issuer_th": "KAST (Troia Corp) เครือข่าย Visa (Standard: Visa Platinum ส่วน Premium และ Private: Visa Infinite) สัญญาผู้ถือบัตรนอกสหรัฐฯ (มีผล 20 มีนาคม 2025) ระบุว่า “ผู้ออกบัตรของโปรแกรมบัตรนี้คือ Third National” และ “ออกโดยผู้ออกบัตรภายใต้ใบอนุญาตจาก Visa” พันธมิตรด้านการเก็บรักษาสินทรัพย์ที่ระบุในข้อกำหนดแพลตฟอร์ม (มีผล 7 กรกฎาคม 2026): Tazapay, BitGo “หรือรายอื่น”",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "unclear",
    "thailand_evidence": "KAST publishes no country list; its help centre (updated 2026-08-09) says supported countries are those in the sign-up dropdown: 'If you don't see your country in the dropdown menu, we haven't launched there yet.' The in-app list was not viewed (no sign-up). The help centre supports THB payouts to Thai bank accounts (1% FX, 2 USD fixed fee, minimum 50 THB) 'from any country supported by KAST', which concerns payouts, not residency. Thailand is absent from KAST's Apple Pay availability list (2026-09-10).",
+   "thailand_evidence_th": "KAST ไม่ได้เผยแพร่รายชื่อประเทศ ศูนย์ช่วยเหลือ (อัปเดต 2026-08-09) ระบุว่าประเทศที่รองรับคือประเทศที่อยู่ในเมนูตัวเลือกตอนสมัคร: “หากไม่เห็นประเทศของคุณในเมนูตัวเลือก แปลว่าเรายังไม่ได้เปิดให้บริการที่นั่น” ยังไม่ได้ดูรายชื่อในแอป (ไม่ได้สมัคร) ศูนย์ช่วยเหลือระบุว่ารองรับการจ่ายเงินเป็นบาทเข้าบัญชีธนาคารไทย (ค่าธรรมเนียมอัตราแลกเปลี่ยน 1% ค่าธรรมเนียมคงที่ 2 USD ขั้นต่ำ 50 บาท) “จากทุกประเทศที่ KAST รองรับ” ซึ่งเกี่ยวกับการจ่ายเงินออก ไม่ใช่ถิ่นที่อยู่ ประเทศไทยไม่อยู่ในรายชื่อประเทศที่ใช้ Apple Pay กับ KAST ได้ (2026-09-10)",
    "nationality_note": "Platform terms bar anyone 'located in, or a national or resident of any Restricted Locations'; the help centre says a person living in a supported country but holding only an ID from a restricted region may fail KYC, and dual citizens may use an ID from a supported country. Residency means where you legally live and hold proof of address dated within 3 months. KYC: passport, national ID or driver's licence; live selfie; proof of address (utility bill, bank statement, government letter or lease).",
    "fees": {
     "issue": "Standard: 2 virtual cards included (a $2 issuance fee applies in some regions, including for included cards); additional virtual card $2; physical card $0 card fee + $40 delivery fee. Premium/Private cards included with membership (help centre, 2026-09-01).",
@@ -394,10 +445,19 @@
     "atm": "$3 flat + 2% of amount; non-USD also pays the FX fee.",
     "topup": "Top-up fee 0%; stablecoin deposit fee 0% excluding blockchain network fees; stablecoins credited 1:1 to USD with 0% spread."
    },
+   "fees_th": {
+    "issue": "Standard: รวมบัตรเสมือน 2 ใบ (บางภูมิภาคมีค่าออกบัตร $2 รวมถึงบัตรที่รวมมาให้) บัตรเสมือนเพิ่มเติมใบละ $2 บัตรพลาสติกค่าบัตร $0 + ค่าจัดส่ง $40 บัตร Premium/Private รวมอยู่ในสมาชิกภาพ (ศูนย์ช่วยเหลือ, 2026-09-01)",
+    "annual": "ค่าสมาชิก: Standard $0 Premium $1,000 ต่อปี Private $10,000 ต่อปี (ศูนย์ช่วยเหลือ, 2026-09-10) ข้อมูลขัดกัน: สัญญาผู้ถือบัตรนอกสหรัฐฯ (มีผล 20 มีนาคม 2025) ระบุ “ค่าธรรมเนียมรายปี: สูงสุด USD 20”",
+    "fx": "0.5%–1.75% สำหรับรายการที่ไม่ใช่ USD แตกต่างกันตามประเทศที่มีถิ่นที่อยู่ ประเทศที่ทำรายการ และโปรแกรมบัตร $0.10 สำหรับรายการที่ไม่ใช่ USD ต่ำกว่า $25 และ $0.50 เมื่อรายการถูกปฏิเสธเพราะยอดเงินไม่พอ (ศูนย์ช่วยเหลือ, 2026-09-01) ข้อมูลขัดกัน: สัญญาผู้ถือบัตร (20 มีนาคม 2025) ระบุค่าธรรมเนียมอัตราแลกเปลี่ยน “สูงสุด 2%” และค่าธรรมเนียมรายการยอดต่ำ USD 0.2",
+    "atm": "$3 คงที่ + 2% ของยอดถอน หากไม่ใช่ USD ต้องเสียค่าธรรมเนียมอัตราแลกเปลี่ยนด้วย",
+    "topup": "ค่าธรรมเนียมเติมเงิน 0% ค่าธรรมเนียมฝากสเตเบิลคอยน์ 0% ไม่รวมค่าธรรมเนียมเครือข่ายบล็อกเชน สเตเบิลคอยน์เข้าบัญชีเป็น USD ในอัตรา 1:1 ส่วนต่างราคา 0%"
+   },
    "atm_limit": "Up to $250 per withdrawal including fees; up to 3 withdrawals or $750 per rolling 24 hours.",
    "spend_limit": "No fixed card transaction, deposit or balance limit ('Unlimited'); spending capped by balance; large transactions may face compliance review; user-set limits available in app.",
    "assets": "Receive USDT on Solana, Ethereum, Tron, Polygon, BNB Smart Chain, Arbitrum, Avalanche C-Chain, TON; USDC on Solana, Ethereum, Polygon, Base, Stellar, Arbitrum, Avalanche C-Chain, Optimism, Sonic; PYUSD (Ethereum, Solana); RLUSD (Ethereum, XRPL); plus BTC, ETH, SOL, XRP, BNB and other tokens (help centre, 2026-09-10). Balance held in USD.",
+   "assets_th": "รับ USDT บน Solana, Ethereum, Tron, Polygon, BNB Smart Chain, Arbitrum, Avalanche C-Chain, TON ส่วน USDC รับบน Solana, Ethereum, Polygon, Base, Stellar, Arbitrum, Avalanche C-Chain, Optimism, Sonic รับ PYUSD (Ethereum, Solana) และ RLUSD (Ethereum, XRPL) รวมถึง BTC, ETH, SOL, XRP, BNB และโทเคนอื่น (ศูนย์ช่วยเหลือ, 2026-09-10) ยอดเงินเก็บเป็น USD",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay depends on registered country of residence; the published list (2026-09-10) includes Malaysia, Philippines, Singapore, Vietnam and others but not Thailand. Google Pay setup article exists (2026-08-09); no country list for Google Pay seen.",
    "affiliate": {
     "exists": true,
@@ -503,9 +563,12 @@
    "id": "tria",
    "name": "Tria Card",
    "issuer": "Tria (Threely Dimensions, Inc., per cashback terms) as technology provider; Visa credit card secured by crypto collateral, issued by Third National, LLC 'and one or more of their partners' (Tria terms of service) 'under license from Visa' (international card terms, last updated January 9, 2026); card terms governed by the laws of Puerto Rico.",
+   "issuer_th": "Tria (Threely Dimensions, Inc. ตามข้อกำหนดเงินคืน) เป็นผู้ให้บริการเทคโนโลยี บัตรเป็นบัตรเครดิต Visa ที่มีคริปโตเป็นหลักประกัน ออกโดย Third National, LLC “และพันธมิตรอย่างน้อยหนึ่งราย” (ข้อกำหนดการให้บริการของ Tria) “ภายใต้ใบอนุญาตจาก Visa” (ข้อกำหนดบัตรระหว่างประเทศ อัปเดตล่าสุด 9 มกราคม 2026) ข้อกำหนดบัตรอยู่ภายใต้กฎหมายของเปอร์โตริโก",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "unclear",
    "thailand_evidence": "No Tria page read on 2026-09-23 lists supported or excluded countries by name. The homepage says 'Use crypto to pay in 150+ countries'; a Tria blog post (July 22, 2026) repeats '150+ countries'. Terms of service bar persons located in, resident in or citizens of sanctioned jurisdictions or where use 'would be illegal'. Third-party reviews (not verified here) list restricted countries that do not include Thailand.",
+   "thailand_evidence_th": "ไม่มีหน้าใดของ Tria ที่อ่านเมื่อ 2026-09-23 ระบุชื่อประเทศที่รองรับหรือไม่รองรับ หน้าแรกระบุว่า “ใช้คริปโตจ่ายเงินได้ใน 150+ ประเทศ” และบล็อกของ Tria (22 กรกฎาคม 2026) ก็ระบุ “150+ ประเทศ” เช่นกัน ข้อกำหนดการให้บริการห้ามผู้ที่อยู่ ผู้มีถิ่นที่อยู่ หรือพลเมืองของเขตอำนาจที่ถูกคว่ำบาตร หรือในที่ที่การใช้งาน “จะผิดกฎหมาย” รีวิวจากบุคคลภายนอก (ยังไม่ได้ตรวจสอบในที่นี้) ระบุรายชื่อประเทศที่ถูกจำกัดโดยไม่มีประเทศไทย",
    "nationality_note": "Terms of service: user must not be 'located in, organized under the laws of, or a resident in any country or territory subject to Sanctions' or 'a citizen, resident, located in' a jurisdiction where use would be illegal; card terms require not being on OFAC lists. KYC document list not found on pages read.",
    "fees": {
     "issue": "Card terms (January 9, 2026): Virtual $25, Plastic $109, Metal $250. Conflict: homepage describes the Virtual Card as 'Virtual, free and instant'.",
@@ -514,10 +577,19 @@
     "atm": "Withdraw up to $2 + 3%; balance inquiry up to $2; decline up to $2.",
     "topup": "USDC settlement/deposit up to 1% (card terms). Platform transaction fees shown in dashboard (terms of service)."
    },
+   "fees_th": {
+    "issue": "ข้อกำหนดบัตร (9 มกราคม 2026): Virtual $25, Plastic $109, Metal $250 ข้อมูลขัดกัน: หน้าแรกระบุว่า Virtual Card เป็น “บัตรเสมือน ฟรี และได้ทันที”",
+    "annual": "ข้อกำหนดบัตร: Virtual $25, Plastic $109, Metal $250 ค่าธรรมเนียมรายเดือน 0%",
+    "fx": "ค่าธรรมเนียมอัตราแลกเปลี่ยนสูงสุด 3% รายการระหว่างประเทศสูงสุด 1%",
+    "atm": "ถอนเงิน สูงสุด $2 + 3% สอบถามยอด สูงสุด $2 รายการถูกปฏิเสธ สูงสุด $2",
+    "topup": "การชำระราคา/ฝาก USDC สูงสุด 1% (ข้อกำหนดบัตร) ค่าธรรมเนียมรายการของแพลตฟอร์มแสดงในแดชบอร์ด (ข้อกำหนดการให้บริการ)"
+   },
    "atm_limit": "Homepage: 'ATM withdrawal up to $750/day' on Signature and Premium cards; not listed for the Virtual Card.",
    "spend_limit": "Homepage: '$1,000,000 daily transaction limit' on all tiers. Card terms: limit set by Issuer and/or Tria based on collateral in the linked wallet, may change without notice.",
    "assets": "Homepage: 'Load your Tria Visa card with 1000+ assets'. Cashback paid in eligible stablecoins USDC and/or USDT (cashback terms, June 1, 2026).",
+   "assets_th": "หน้าแรก: “เติมบัตร Tria Visa ด้วยสินทรัพย์ 1000+ รายการ” เงินคืนจ่ายเป็นสเตเบิลคอยน์ที่เข้าเงื่อนไข คือ USDC และ/หรือ USDT (ข้อกำหนดเงินคืน, 1 มิถุนายน 2026)",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay & Google Pay listed for all three tiers on the homepage.",
    "affiliate": {
     "exists": true,
@@ -569,9 +641,12 @@
    "id": "etherfi-cash",
    "name": "ether.fi Cash card",
    "issuer": "Ether.Fi SEZC (user agreement counterparty; Cash cardholder agreements in 'Ltd.' and 'Inc.' international versions). Visa. 'The Ether.Fi Card is issued by Third National pursuant to a license from Visa'; the agreement also names Rain; card terms governed by the laws of Puerto Rico. Help centre describes it as a Visa Signature credit card.",
+   "issuer_th": "Ether.Fi SEZC (คู่สัญญาในข้อตกลงผู้ใช้ สัญญาผู้ถือบัตร Cash ฉบับสากลมีทั้งแบบ “Ltd.” และ “Inc.”) เครือข่าย Visa “บัตร Ether.Fi ออกโดย Third National ตามใบอนุญาตจาก Visa” สัญญายังระบุชื่อ Rain ด้วย ข้อกำหนดบัตรอยู่ภายใต้กฎหมายของเปอร์โตริโก ศูนย์ช่วยเหลือระบุว่าเป็นบัตรเครดิต Visa Signature",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "available",
    "thailand_evidence": "Help-centre article 'In which countries is the Cash card available?' (updated the week of 2026-09-23) lists Thailand under 'Countries where a physical Cash card is currently available' and states 'If your jurisdiction is not listed, you will not be able to apply for a Cash card at this time.' Thailand also appears in the list of regions where the first virtual card costs $10 (updated over a week before 2026-09-23), which adds 'This regional fee does not change whether ether.fi Cash is available in your region.'",
+   "thailand_evidence_th": "บทความในศูนย์ช่วยเหลือ “บัตร Cash ใช้ได้ในประเทศใดบ้าง” (อัปเดตในสัปดาห์ของ 2026-09-23) ระบุประเทศไทยไว้ใต้หัวข้อ “ประเทศที่มีบัตร Cash แบบพลาสติกให้บริการในขณะนี้” และระบุว่า “หากไม่มีเขตอำนาจของคุณในรายชื่อ คุณจะยังสมัครบัตร Cash ไม่ได้ในขณะนี้” ประเทศไทยยังอยู่ในรายชื่อภูมิภาคที่บัตรเสมือนใบแรกมีค่าธรรมเนียม $10 (อัปเดตเกินหนึ่งสัปดาห์ก่อน 2026-09-23) ซึ่งระบุเพิ่มว่า “ค่าธรรมเนียมตามภูมิภาคนี้ไม่ได้เปลี่ยนว่า ether.fi Cash ให้บริการในภูมิภาคของคุณหรือไม่”",
    "nationality_note": "Eligibility is by listed jurisdiction, subject to KYC; the pages do not distinguish nationality from residence beyond asking for 'Country of residence'. KYC: phone, passport / national ID / driver's licence, liveness selfie, residential address; proof of address sometimes (utility, bank or credit card statement within 3 months; mobile phone bills not accepted); card-issuer questionnaire. Card terms require not being OFAC-sanctioned. ATM withdrawals blocked in North Korea, Iran, Myanmar.",
    "fees": {
     "issue": "Virtual: Core gets 1 free virtual card except in listed regions including Thailand, where the first virtual card costs $10; additional virtual cards $10 (VIP $0). Physical: Core $50, Luxe $100, Pinnacle $100, VIP $0 after free allowance (benefits article, updated 2026-09-23). Conflict: the membership-benefits article (updated 2026-09-22) says Core physical card 'Free; shipping fee applies' and Luxe gets '2 free' virtual cards where the benefits article says 4.",
@@ -580,10 +655,19 @@
     "atm": "Core and Luxe: fee not stated ('Available'). Pinnacle and VIP: 'Free, up to 10 withdrawals per month'.",
     "topup": "Crypto deposits need no prior KYC; deposit fee not stated on pages read."
    },
+   "fees_th": {
+    "issue": "บัตรเสมือน: ระดับ Core ได้บัตรเสมือนฟรี 1 ใบ ยกเว้นในภูมิภาคตามรายชื่อ ซึ่งรวมถึงประเทศไทย ที่บัตรเสมือนใบแรกมีค่าธรรมเนียม $10 บัตรเสมือนเพิ่มเติมใบละ $10 (VIP $0) บัตรพลาสติก: Core $50, Luxe $100, Pinnacle $100, VIP $0 หลังใช้สิทธิ์ฟรีครบแล้ว (บทความสิทธิประโยชน์ อัปเดต 2026-09-23) ข้อมูลขัดกัน: บทความสิทธิประโยชน์สมาชิก (อัปเดต 2026-09-22) ระบุว่าบัตรพลาสติกของ Core “ฟรี มีค่าจัดส่ง” และ Luxe ได้บัตรเสมือน “ฟรี 2 ใบ” ขณะที่บทความสิทธิประโยชน์ระบุว่า 4 ใบ",
+    "annual": "ไม่ได้ระบุสำหรับ Core มีระดับสมาชิกแบบเสียเงิน (Luxe ปลดล็อกเมื่อมีแต้มสะสม 5K, Pinnacle ที่ 25K ส่วน VIP ต้องได้รับเชิญเท่านั้น) ยังไม่ได้บันทึกราคาซื้อ",
+    "fx": "อัตราแลกเปลี่ยนพื้นฐาน ~1% สำหรับการแปลงทุกครั้ง บวกส่วนเพิ่ม: Core 0–0.5%, Luxe 0–0.25%, Pinnacle และ VIP ไม่มี บัตรเป็นสกุล USD",
+    "atm": "Core และ Luxe: ไม่ได้ระบุค่าธรรมเนียม (“ใช้ได้”) Pinnacle และ VIP: “ฟรี สูงสุด 10 ครั้งต่อเดือน”",
+    "topup": "การฝากคริปโตไม่ต้องยืนยันตัวตน (KYC) ก่อน หน้าที่อ่านไม่ได้ระบุค่าธรรมเนียมฝาก"
+   },
    "atm_limit": "$1,000 per transaction; maximum 5 ATM withdrawals in any rolling 24 hours ($5,000 total), Core to Pinnacle.",
    "spend_limit": "No fixed number published on pages read; custom spend limits available; per-MCC limits article exists.",
    "assets": "USDT on Ethereum, OP Mainnet, Arbitrum, Base, BNB Smart Chain, Celo, Gnosis, HyperEVM, Kaia, Katana, Mantle, Plasma, Polygon, Scroll, Solana, Tempo, Tron; USDC on Ethereum, OP Mainnet, Arbitrum, Base, BNB Smart Chain, Celo, Gnosis, HyperEVM, Katana, Mantle, Polygon, Scroll, Solana, Tempo; EURC, eUSD, frxUSD; BTC (credited as liquidBTC), ETH, weETH, ETHFI and others; tokenized stocks on Ethereum.",
+   "assets_th": "USDT บน Ethereum, OP Mainnet, Arbitrum, Base, BNB Smart Chain, Celo, Gnosis, HyperEVM, Kaia, Katana, Mantle, Plasma, Polygon, Scroll, Solana, Tempo, Tron ส่วน USDC บน Ethereum, OP Mainnet, Arbitrum, Base, BNB Smart Chain, Celo, Gnosis, HyperEVM, Katana, Mantle, Polygon, Scroll, Solana, Tempo นอกจากนี้มี EURC, eUSD, frxUSD และ BTC (เข้าบัญชีเป็น liquidBTC), ETH, weETH, ETHFI และอื่น ๆ รวมถึงหุ้นในรูปโทเคนบน Ethereum",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay and Google Pay listed for all tiers; Apple Pay depends on Apple's own country coverage.",
    "affiliate": {
     "exists": true,
@@ -677,9 +761,12 @@
    "id": "gnosis-pay",
    "name": "Gnosis Pay card",
    "issuer": "Monavate Ltd (UK, FCA-authorised e-money institution, FRN 901097) for UK and other non-EEA cardholders; UAB Monavate (Lithuania, Bank of Lithuania authorisation LB002139) for EEA cardholders; 'issued by Monavate Limited pursuant to licence by VISA Europe Limited'. Gnosis Pay Co Ltd (England and Wales, 14919639) is programme manager.",
+   "issuer_th": "Monavate Ltd (สหราชอาณาจักร สถาบันเงินอิเล็กทรอนิกส์ที่ได้รับอนุญาตจาก FCA, FRN 901097) สำหรับผู้ถือบัตรในสหราชอาณาจักรและนอก EEA อื่น ๆ ส่วน UAB Monavate (ลิทัวเนีย ได้รับอนุญาตจาก Bank of Lithuania เลขที่ LB002139) สำหรับผู้ถือบัตรใน EEA “ออกโดย Monavate Limited ตามใบอนุญาตจาก VISA Europe Limited” Gnosis Pay Co Ltd (อังกฤษและเวลส์, 14919639) เป็นผู้จัดการโปรแกรมบัตร",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "not available",
    "thailand_evidence": "Help-centre 'Eligible Countries for Gnosis Pay' (updated 13 days before 2026-09-23) says the card 'is currently available to legal residents of selected countries in Europe and Latin America' and lists them; Thailand is not listed. Separately, a formal notice dated 21 September 2026 says the Gnosis Pay card and web app stop working at 23:59 UTC on 20 December 2026 and cardholders move to partner apps (Rebind for EUR; Picnic or MiniPay for USD). Thailand is not on the list of countries where card use is prohibited, so a card issued to a resident of a listed country works in Thailand until that date.",
+   "thailand_evidence_th": "หน้า “ประเทศที่มีสิทธิ์ใช้ Gnosis Pay” ในศูนย์ช่วยเหลือ (อัปเดต 13 วันก่อน 2026-09-23) ระบุว่าบัตร “ขณะนี้เปิดให้ผู้มีถิ่นที่อยู่โดยชอบด้วยกฎหมายในบางประเทศในยุโรปและละตินอเมริกา” พร้อมรายชื่อประเทศ ซึ่งไม่มีประเทศไทย อีกเรื่องหนึ่งคือ ประกาศอย่างเป็นทางการลงวันที่ 21 กันยายน 2026 ระบุว่าบัตรและเว็บแอป Gnosis Pay จะหยุดทำงานเวลา 23:59 UTC วันที่ 20 ธันวาคม 2026 และผู้ถือบัตรจะย้ายไปใช้แอปของพันธมิตร (Rebind สำหรับ EUR ส่วน Picnic หรือ MiniPay สำหรับ USD) ประเทศไทยไม่อยู่ในรายชื่อประเทศที่ห้ามใช้บัตร ดังนั้นบัตรที่ออกให้ผู้มีถิ่นที่อยู่ในประเทศตามรายชื่อจึงใช้ในไทยได้จนถึงวันดังกล่าว",
    "nationality_note": "Eligibility is by legal residence in a listed country (EEA countries, UK, Switzerland, Norway, Iceland, Liechtenstein, Argentina, Bolivia, Brazil, Colombia, Mexico); residents of French overseas territories excluded.",
    "fees": {
     "issue": "Card order free, including shipping; replacement 4.99 EURe/GBPe/USDCe (fees page, updated 12 days before access; kept 'for reference').",
@@ -688,10 +775,19 @@
     "atm": "Up to 5 free withdrawals or 200 EURe/GBPe/USDCe per month, whichever comes first; then 2% per withdrawal.",
     "topup": "No gas fees for card transactions; gas applies to on-chain transfers."
    },
+   "fees_th": {
+    "issue": "สั่งบัตรฟรี รวมค่าจัดส่ง ออกบัตรใหม่แทนบัตรเดิม 4.99 EURe/GBPe/USDCe (หน้าค่าธรรมเนียม อัปเดต 12 วันก่อนวันที่เข้าถึง เก็บไว้ “เพื่อใช้อ้างอิง”)",
+    "annual": "ไม่มีในรายการ",
+    "fx": "Gnosis Pay ไม่เก็บค่าธรรมเนียมเพิ่ม ใช้อัตราแลกเปลี่ยนของ Visa",
+    "atm": "ถอนฟรีสูงสุด 5 ครั้ง หรือ 200 EURe/GBPe/USDCe ต่อเดือน แล้วแต่อย่างใดถึงก่อน หลังจากนั้น 2% ต่อครั้ง",
+    "topup": "ไม่มีค่า gas สำหรับรายการใช้บัตร ค่า gas มีเฉพาะการโอนบนเชน"
+   },
    "atm_limit": "500 EURe/GBPe/USDCe per day; 250 per withdrawal.",
    "spend_limit": "8,000 EURe/GBPe/USDCe per rolling 24 hours; 5,000 per transaction.",
    "assets": "EURe, GBPe (Monerium e-money tokens) and USDCe held in a Safe on Gnosis Chain.",
+   "assets_th": "EURe, GBPe (โทเคนเงินอิเล็กทรอนิกส์ของ Monerium) และ USDCe เก็บไว้ใน Safe บน Gnosis Chain",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay and Google Pay transactions referenced on the fees page (not subject to the contactless limit).",
    "affiliate": {
     "exists": false,
@@ -773,9 +869,12 @@
    "id": "metamask-card",
    "name": "MetaMask Card",
    "issuer": "MetaMask (Consensys). MetaMask help centre: Baanx is the provider of the card, Monovate is the card issuer, Mastercard operates the network; card programme manager named as Crypto Life (support contact for chargebacks and closure). Monovate's jurisdiction is not stated on the pages read.",
+   "issuer_th": "MetaMask (Consensys) ศูนย์ช่วยเหลือของ MetaMask ระบุว่า Baanx เป็นผู้ให้บริการบัตร Monovate เป็นผู้ออกบัตร และ Mastercard เป็นผู้ดำเนินการเครือข่าย ผู้จัดการโปรแกรมบัตรระบุชื่อเป็น Crypto Life (ช่องทางติดต่อเรื่องการโต้แย้งรายการบัตรและการปิดบัตร) หน้าที่อ่านไม่ได้ระบุว่า Monovate อยู่ในเขตอำนาจใด",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "not available",
    "thailand_evidence": "MetaMask help centre 'What is MetaMask Card?' (undated, read 2026-09-23) gives the eligible sign-up list: Andorra, Argentina, Austria, Bahrain, Belgium, Brazil, Bulgaria, Canada, Chile, Colombia, Costa Rica, Croatia, Cyprus, Denmark, Dominican Republic, El Salvador, Finland, France, Germany, Gibraltar, Greece, Guatemala, Guernsey, Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Liechtenstein, Luxembourg, Malta, Mexico, Monaco, Netherlands, Norway, Oman, Panama, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, Uruguay. Thailand is not on it; people outside the list are pointed to a waitlist. The FAQ adds that new US and UK sign-ups are temporarily paused, and that 'Ineligible regions limit sign-ups, not spending' (an existing card works wherever Mastercard is accepted). The metamask.io/card list read the same day omits Bahrain and Oman; the two provider lists differ.",
+   "thailand_evidence_th": "หน้า “MetaMask Card คืออะไร” ในศูนย์ช่วยเหลือของ MetaMask (ไม่ระบุวันที่ อ่านเมื่อ 2026-09-23) ระบุรายชื่อประเทศที่สมัครได้ ได้แก่ อันดอร์รา อาร์เจนตินา ออสเตรีย บาห์เรน เบลเยียม บราซิล บัลแกเรีย แคนาดา ชิลี โคลอมเบีย คอสตาริกา โครเอเชีย ไซปรัส เดนมาร์ก สาธารณรัฐโดมินิกัน เอลซัลวาดอร์ ฟินแลนด์ ฝรั่งเศส เยอรมนี ยิบรอลตาร์ กรีซ กัวเตมาลา เกิร์นซีย์ ฮังการี ไอซ์แลนด์ ไอร์แลนด์ เกาะแมน อิตาลี เจอร์ซีย์ ลิกเตนสไตน์ ลักเซมเบิร์ก มอลตา เม็กซิโก โมนาโก เนเธอร์แลนด์ นอร์เวย์ โอมาน ปานามา โปแลนด์ โปรตุเกส โรมาเนีย สโลวาเกีย สโลวีเนีย สเปน สวีเดน สวิตเซอร์แลนด์ อุรุกวัย ไม่มีประเทศไทย ผู้ที่อยู่นอกรายชื่อจะถูกแนะนำให้ลงชื่อในรายชื่อรอ คำถามที่พบบ่อยระบุเพิ่มว่าการสมัครใหม่ในสหรัฐฯ และสหราชอาณาจักรระงับชั่วคราว และ “ภูมิภาคที่ไม่มีสิทธิ์จำกัดการสมัคร ไม่ได้จำกัดการใช้จ่าย” (บัตรที่มีอยู่แล้วใช้ได้ทุกที่ที่รับ Mastercard) รายชื่อบน metamask.io/card ที่อ่านในวันเดียวกันไม่มีบาห์เรนและโอมาน รายชื่อสองชุดของผู้ให้บริการจึงไม่ตรงกัน",
    "nationality_note": "Eligibility is by region of sign-up (residence); no nationality rule appears on the pages read.",
    "fees": {
     "issue": "Virtual card: no issue fee stated. Metal card orders paused as of 2 June 2026; Metal physical card replacement USD 99.",
@@ -784,10 +883,19 @@
     "atm": "Virtual: 2% (ATM access for Virtual holders in the US only; Virtual holders elsewhere cannot withdraw cash). Metal: no fee up to USD 1,200 per month, then 2%. ATM operator may add its own fee.",
     "topup": "No fee to delegate funds. Stablecoin in local currency: no fee. DeFi token or tokenized yield (e.g. aUSDC): no fee up to USD 1,200 per month, then 0.5%. Other crypto (e.g. wETH): 0.875%. Network gas: small, variable (typically USD 0.01 on Linea)."
    },
+   "fees_th": {
+    "issue": "บัตรเสมือน: ไม่ได้ระบุค่าออกบัตร การสั่งบัตร Metal ระงับตั้งแต่ 2 มิถุนายน 2026 ค่าออกบัตรพลาสติก Metal ใหม่แทนบัตรเดิม USD 99",
+    "annual": "บัตรเสมือน: USD 0 บัตร Metal: USD 199 ต่อปี",
+    "fx": "ตารางค่าธรรมเนียม: รายการข้ามประเทศ (ร้านค้าอยู่นอกประเทศของผู้ถือบัตร) 1% สำหรับบัตรเสมือน ไม่มีค่าธรรมเนียมสำหรับบัตร Metal (ภายใต้เงื่อนไขการใช้งานที่เหมาะสม) กรณีสเตเบิลคอยน์ในสกุลเงินที่ไม่ใช่ของประเทศผู้ถือบัตรหรือประเทศร้านค้า 0.5% (ไม่มีค่าธรรมเนียมในอาร์เจนตินา ซึ่งบัตรเป็นสกุล USD) ข้อมูลขัดกัน: คำถามที่พบบ่อยระบุว่าบัตรใช้อัตราแลกเปลี่ยนของ Mastercard และไม่เก็บค่าธรรมเนียมรายการต่างประเทศเพิ่ม",
+    "atm": "บัตรเสมือน: 2% (ผู้ถือบัตรเสมือนใช้ตู้ ATM ได้เฉพาะในสหรัฐฯ ผู้ถือบัตรเสมือนในที่อื่นถอนเงินสดไม่ได้) บัตร Metal: ไม่มีค่าธรรมเนียมสูงสุด USD 1,200 ต่อเดือน หลังจากนั้น 2% ผู้ให้บริการตู้ ATM อาจเก็บค่าธรรมเนียมของตนเพิ่ม",
+    "topup": "ไม่มีค่าธรรมเนียมในการมอบสิทธิ์ใช้เงิน สเตเบิลคอยน์สกุลเงินท้องถิ่น: ไม่มีค่าธรรมเนียม โทเคน DeFi หรือโทเคนผลตอบแทน (เช่น aUSDC): ไม่มีค่าธรรมเนียมสูงสุด USD 1,200 ต่อเดือน หลังจากนั้น 0.5% คริปโตอื่น (เช่น wETH): 0.875% ค่า gas ของเครือข่าย: เล็กน้อยและไม่คงที่ (ปกติ USD 0.01 บน Linea)"
+   },
    "atm_limit": "Virtual: USD 1,000 per transaction, USD 1,000 per day. Metal: USD 1,000 per transaction, USD 5,000 per day. ATM may impose its own limit.",
    "spend_limit": "Virtual: USD 10,000 per transaction, USD 15,000 per day. Metal: USD 20,000 per transaction, USD 30,000 per day. User can set a lower custom limit.",
    "assets": "Linea: mUSD, USDC, USDT, wETH, EURe, GBPe. Solana: USDC, USDT. Base: USDC, USDT. Monad: USDC. (New York and Texas: Linea and Base only.)",
+   "assets_th": "Linea: mUSD, USDC, USDT, wETH, EURe, GBPe; Solana: USDC, USDT; Base: USDC, USDT; Monad: USDC (นิวยอร์กและเท็กซัส: เฉพาะ Linea และ Base)",
    "physical": "virtual only",
+   "physical_th": "บัตรเสมือนเท่านั้น",
    "apple_google_pay": "Apple Pay and Google Pay (metamask.io/card). New sign-ups receive a Virtual card; the Metal (physical) card is paused.",
    "affiliate": {
     "exists": false,
@@ -833,9 +941,12 @@
    "id": "wirex",
    "name": "Wirex Card (Wirex app)",
    "issuer": "Wirex (programme manager and app). Singapore/APAC terms: card issued by Wirex Pte Ltd (Singapore, reg. 201731976E), usable at Visa merchants. EEA terms: card issued by Transact Payments Malta Limited, authorised by the Malta Financial Services Authority as an electronic money institution, under a Mastercard-style scheme licence. UK issuer not read.",
+   "issuer_th": "Wirex (ผู้จัดการโปรแกรมบัตรและแอป) ข้อกำหนดสำหรับสิงคโปร์/APAC: บัตรออกโดย Wirex Pte Ltd (สิงคโปร์ ทะเบียนเลขที่ 201731976E) ใช้ได้ที่ร้านค้าที่รับ Visa ข้อกำหนดสำหรับ EEA: บัตรออกโดย Transact Payments Malta Limited ซึ่งได้รับอนุญาตจาก Malta Financial Services Authority ให้เป็นสถาบันเงินอิเล็กทรอนิกส์ ภายใต้ใบอนุญาตระบบบัตรแบบ Mastercard ยังไม่ได้อ่านข้อมูลผู้ออกบัตรในสหราชอาณาจักร",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "Wirex help article 'Supported countries' (page metadata updatedAt 2024-10-29, read 2026-09-23) has columns Wirex account / Crypto account / X-Accounts / Local card top-up / Card. Thailand row: account yes, crypto account yes, X-Accounts yes, local card top-up yes, Card 'N/A'. The app is open to Thailand residents; the card is not. For comparison the same table marks Card available in Hong Kong, Taiwan, Australia and the UK, and N/A in Vietnam, Malaysia and Indonesia; Singapore is N/A on every column.",
+   "thailand_evidence_th": "บทความช่วยเหลือของ Wirex “ประเทศที่รองรับ” (ข้อมูลเมตาของหน้า updatedAt 2024-10-29 อ่านเมื่อ 2026-09-23) มีคอลัมน์ บัญชี Wirex / บัญชีคริปโต / X-Accounts / เติมเงินด้วยบัตรในประเทศ / บัตร แถวประเทศไทย: บัญชี ได้ บัญชีคริปโต ได้ X-Accounts ได้ เติมเงินด้วยบัตรในประเทศ ได้ และบัตร “N/A” แอปเปิดให้ผู้มีถิ่นที่อยู่ในไทยใช้ได้ แต่บัตรไม่เปิด เพื่อเปรียบเทียบ ตารางเดียวกันระบุว่าบัตรใช้ได้ในฮ่องกง ไต้หวัน ออสเตรเลีย และสหราชอาณาจักร และเป็น N/A ในเวียดนาม มาเลเซีย และอินโดนีเซีย ส่วนสิงคโปร์เป็น N/A ทุกคอลัมน์",
    "nationality_note": "The page says services 'may vary depending on the country you reside in' (residence-based). No nationality rule seen.",
    "fees": {
     "issue": "Card issuance free in all listed regions (UK, EEA, APAC, SG, AU, Other). Delivery fees vary by country, e.g. Hong Kong local post 39 HKD or DHL Express 238 HKD; Philippines and Taiwan 4.99 USD (local post) or 29.99 USD (DHL Express). No Thailand delivery row.",
@@ -844,10 +955,19 @@
     "atm": "UK: free up to 200 GBP monthly, 2% thereafter. EEA: 200 EUR monthly, then 2%. APAC and SG: 200 SGD monthly, then 2%. AU: 400 AUD monthly, then 2%. Other: 200 GBP monthly, then 2%.",
     "topup": "Funding with a local card: '0% or more' depending on currency and country. SEPA, Faster Payments, ACH, PIX deposits and withdrawals free. Transfers between Wirex users 0%; external crypto withdrawals carry variable network fees."
    },
+   "fees_th": {
+    "issue": "ออกบัตรฟรีในทุกภูมิภาคที่อยู่ในรายการ (UK, EEA, APAC, SG, AU, อื่น ๆ) ค่าจัดส่งแตกต่างกันตามประเทศ เช่น ฮ่องกง ไปรษณีย์ท้องถิ่น 39 HKD หรือ DHL Express 238 HKD ฟิลิปปินส์และไต้หวัน 4.99 USD (ไปรษณีย์ท้องถิ่น) หรือ 29.99 USD (DHL Express) ไม่มีแถวค่าจัดส่งสำหรับประเทศไทย",
+    "annual": "หน้าค่าธรรมเนียมของ Wirex ไม่มีรายการค่าธรรมเนียมรายปี",
+    "fx": "หน้าค่าธรรมเนียมไม่มีรายการค่าธรรมเนียมอัตราแลกเปลี่ยนของบัตร อัตราแลกเปลี่ยน “แตกต่างกันตามคู่สกุลเงิน” และค่าธรรมเนียมที่เกี่ยวข้องแสดงในแอป",
+    "atm": "UK: ฟรีสูงสุด 200 GBP ต่อเดือน หลังจากนั้น 2% EEA: 200 EUR ต่อเดือน หลังจากนั้น 2% APAC และ SG: 200 SGD ต่อเดือน หลังจากนั้น 2% AU: 400 AUD ต่อเดือน หลังจากนั้น 2% อื่น ๆ: 200 GBP ต่อเดือน หลังจากนั้น 2%",
+    "topup": "เติมเงินด้วยบัตรในประเทศ: “0% ขึ้นไป” ขึ้นอยู่กับสกุลเงินและประเทศ ฝากและถอนผ่าน SEPA, Faster Payments, ACH, PIX ฟรี โอนระหว่างผู้ใช้ Wirex 0% ถอนคริปโตออกไปภายนอกมีค่าธรรมเนียมเครือข่ายที่ไม่คงที่"
+   },
    "atm_limit": "Not stated on the pages read.",
    "spend_limit": "Not stated on the pages read.",
    "assets": "Crypto and fiat balances held in the Wirex app; the supported-asset list was not read today.",
+   "assets_th": "ยอดคริปโตและเงินตราที่เก็บในแอป Wirex วันนี้ยังไม่ได้อ่านรายชื่อสินทรัพย์ที่รองรับ",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Not verified on the pages read.",
    "affiliate": {
     "exists": true,
@@ -893,9 +1013,12 @@
    "id": "nexo-card",
    "name": "Nexo Card",
    "issuer": "Nexo; card issued by DiPocket UAB on the Mastercard network (nexo.com/crypto-card). DiPocket's jurisdiction is not stated on the page read.",
+   "issuer_th": "Nexo บัตรออกโดย DiPocket UAB บนเครือข่าย Mastercard (nexo.com/crypto-card) หน้าที่อ่านไม่ได้ระบุว่า DiPocket อยู่ในเขตอำนาจใด",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "nexo.com/crypto-card (undated, read 2026-09-23): the card is 'currently available only to citizens and residents of selected European countries, including the European Economic Area (EEA) and the United Kingdom', and verification requires 'a supported identity document issued in the EEA, the United Kingdom, or another eligible country in Europe.' Thailand and Asia are not mentioned. Nexo's own support article on card countries renders client-side and could not be read.",
+   "thailand_evidence_th": "nexo.com/crypto-card (ไม่ระบุวันที่ อ่านเมื่อ 2026-09-23): บัตร “ขณะนี้เปิดให้เฉพาะพลเมืองและผู้มีถิ่นที่อยู่ในบางประเทศในยุโรป รวมถึงเขตเศรษฐกิจยุโรป (EEA) และสหราชอาณาจักร” และการยืนยันตัวตนต้องใช้ “เอกสารแสดงตนที่รองรับซึ่งออกใน EEA สหราชอาณาจักร หรือประเทศอื่นในยุโรปที่มีสิทธิ์” ไม่มีการกล่าวถึงประเทศไทยหรือเอเชีย บทความช่วยเหลือของ Nexo เองเรื่องประเทศที่ใช้บัตรได้แสดงผลฝั่งเบราว์เซอร์และอ่านไม่ได้",
    "nationality_note": "Nexo's wording is 'citizens and residents' plus an ID document issued in the EEA, UK or another eligible European country. Whether a European passport holder living in Thailand qualifies is not stated.",
    "fees": {
     "issue": "No card fee stated for the virtual card (requires USD 50 portfolio balance). Physical card requires USD 5,000+ balance and Gold or Platinum loyalty tier; physical card ordering 'temporarily paused as of January 17, 2025' (nexo.how mirror of the Nexo help centre).",
@@ -904,10 +1027,19 @@
     "atm": "Free monthly allowance by loyalty tier: EUR 200 to EUR 2,000 (GBP 180 to GBP 1,800). Beyond that: 2%, minimum EUR 1.99 / GBP 1.99.",
     "topup": "No top-up fee stated; the card spends from the Nexo account (debit mode) or a credit line against crypto (credit mode)."
    },
+   "fees_th": {
+    "issue": "ไม่ได้ระบุค่าบัตรสำหรับบัตรเสมือน (ต้องมียอดพอร์ต USD 50) บัตรพลาสติกต้องมียอดเงิน USD 5,000+ และอยู่ในระดับสมาชิก Gold หรือ Platinum การสั่งบัตรพลาสติก “ระงับชั่วคราวตั้งแต่ 17 มกราคม 2025” (nexo.how ซึ่งเป็นสำเนาของศูนย์ช่วยเหลือ Nexo)",
+    "annual": "ไม่มีค่าธรรมเนียมบัตรรายเดือน รายปี หรือค่าธรรมเนียมบัญชีไม่เคลื่อนไหว",
+    "fx": "วันธรรมดา: 0.2% สำหรับสกุลเงิน EEA/UK/CH และ 2% สำหรับสกุลเงินอื่น วันหยุดสุดสัปดาห์: 0.7% และ 2.5%",
+    "atm": "วงเงินถอนฟรีรายเดือนตามระดับสมาชิก: EUR 200 ถึง EUR 2,000 (GBP 180 ถึง GBP 1,800) ส่วนที่เกิน: 2% ขั้นต่ำ EUR 1.99 / GBP 1.99",
+    "topup": "ไม่ได้ระบุค่าธรรมเนียมเติมเงิน บัตรใช้เงินจากบัญชี Nexo (โหมดเดบิต) หรือวงเงินสินเชื่อที่มีคริปโตเป็นหลักประกัน (โหมดเครดิต)"
+   },
    "atm_limit": "EUR 600 / GBP 540 per transaction; EUR 2,000 / GBP 1,800 per day; EUR 10,000 / GBP 9,000 per month (nexo.how mirror, dated 10 July 2025).",
    "spend_limit": "EUR 10,000 / GBP 9,000 per transaction and per day; EUR 60,000 / GBP 54,000 per month (nexo.how mirror, dated 10 July 2025).",
    "assets": "Stablecoins, crypto, and FiatX assets (EURx, USDx, GBPx) held in the Nexo account.",
+   "assets_th": "สเตเบิลคอยน์ คริปโต และสินทรัพย์ FiatX (EURx, USDx, GBPx) ที่เก็บในบัญชี Nexo",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay and Google Pay.",
    "affiliate": {
     "exists": true,
@@ -959,9 +1091,12 @@
    "id": "bitget-card",
    "name": "Bitget Card (Bitget exchange, Asia-Pacific)",
    "issuer": "Bitget; issued in collaboration with DCS (DeCard), on the Visa network (Bitget press release, Victoria, Seychelles, 2 April 2026). DCS's issuing entity and jurisdiction are not stated on the pages read.",
+   "issuer_th": "Bitget ออกร่วมกับ DCS (DeCard) บนเครือข่าย Visa (ข่าวประชาสัมพันธ์ของ Bitget, วิกตอเรีย เซเชลส์, 2 เมษายน 2026) หน้าที่อ่านไม่ได้ระบุนิติบุคคลผู้ออกบัตรและเขตอำนาจของ DCS",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "unclear",
    "thailand_evidence": "Bitget's APAC launch announcement and Academy guide (both 2 April 2026) say the card is available 'in selected countries within the Asia-Pacific region' without naming them; the applicant selects place of residence in the app to see options. The dedicated eligibility article (bitget.com/support/articles/12560603881033) renders client-side and could not be read. A search-engine summary listed Singapore, South Korea, Japan, Vietnam, Malaysia, Taiwan, Australia, Thailand and the Philippines, but that wording matches Bitget Wallet Card's physical-card list, so it is not treated as evidence for this card. A January 2024 Bitget article on an earlier Bitget Card lists 31 jurisdictions whose ID documents are refused (Thailand not among them) and excludes Singapore ID holders and Singapore proof-of-address.",
+   "thailand_evidence_th": "ประกาศเปิดตัวใน APAC และคู่มือใน Academy ของ Bitget (ทั้งคู่ลงวันที่ 2 เมษายน 2026) ระบุว่าบัตรใช้ได้ “ในบางประเทศในภูมิภาคเอเชียแปซิฟิก” โดยไม่ระบุชื่อประเทศ ผู้สมัครต้องเลือกถิ่นที่อยู่ในแอปเพื่อดูตัวเลือก บทความเรื่องสิทธิ์สมัครโดยเฉพาะ (bitget.com/support/articles/12560603881033) แสดงผลฝั่งเบราว์เซอร์และอ่านไม่ได้ สรุปจากเครื่องมือค้นหาระบุสิงคโปร์ เกาหลีใต้ ญี่ปุ่น เวียดนาม มาเลเซีย ไต้หวัน ออสเตรเลีย ไทย และฟิลิปปินส์ แต่ถ้อยคำนั้นตรงกับรายชื่อบัตรพลาสติกของ Bitget Wallet Card จึงไม่ถือเป็นหลักฐานสำหรับบัตรนี้ บทความของ Bitget เดือนมกราคม 2024 เกี่ยวกับ Bitget Card รุ่นก่อน ระบุ 31 เขตอำนาจที่ไม่รับเอกสารแสดงตน (ไม่มีประเทศไทย) และไม่รับผู้ถือบัตรประจำตัวสิงคโปร์และหลักฐานที่อยู่ในสิงคโปร์",
    "nationality_note": "Earlier (2024) Bitget Card rules were keyed to the country that issued the ID document and the proof-of-address location; the 2026 APAC rules shown on pages read are keyed to place of residence. Not resolved for Thailand.",
    "fees": {
     "issue": "No issuance fee. First Standard physical card 5 USDC; replacement 5 USDC (physical card 'coming soon' as of 2 April 2026). Chargeback investigation 35 USDC, refunded if the chargeback succeeds.",
@@ -970,10 +1105,19 @@
     "atm": "ATM withdrawals not yet available (physical card not launched). The launch release says Bitget plans fee-free ATM withdrawals of up to USD 100 per month.",
     "topup": "0.9% transaction fee; the card spends USDC from the Bitget OTC account, converted to fiat at checkout."
    },
+   "fees_th": {
+    "issue": "ไม่มีค่าออกบัตร บัตรพลาสติก Standard ใบแรก 5 USDC ออกบัตรใหม่แทนบัตรเดิม 5 USDC (บัตรพลาสติก “เร็ว ๆ นี้” ณ 2 เมษายน 2026) ค่าตรวจสอบการโต้แย้งรายการ 35 USDC คืนให้หากการโต้แย้งสำเร็จ",
+    "annual": "ไม่มีค่าธรรมเนียมรายปี ค่าธรรมเนียมบัญชีไม่เคลื่อนไหว หรือค่าธรรมเนียมยกเลิก",
+    "fx": "ค่าธรรมเนียมรายการต่างประเทศ 1% สำหรับการจ่ายที่ไม่ใช่ USD เพิ่มจากค่าธรรมเนียมรายการ 0.9%",
+    "atm": "ยังถอนเงินที่ตู้ ATM ไม่ได้ (ยังไม่เปิดตัวบัตรพลาสติก) ข่าวเปิดตัวระบุว่า Bitget มีแผนให้ถอนเงินที่ตู้ ATM โดยไม่มีค่าธรรมเนียมสูงสุด USD 100 ต่อเดือน",
+    "topup": "ค่าธรรมเนียมรายการ 0.9% บัตรใช้ USDC จากบัญชี Bitget OTC ซึ่งแปลงเป็นเงินตราตอนชำระเงิน"
+   },
    "atm_limit": "Not available yet.",
    "spend_limit": "Standard: USD 50,000 per transaction, USD 50,000 per day, USD 990,000 per year; 50 transactions per day, 1,040 per year. Premium: no per-transaction limit, USD 250,000 per day, 80 transactions per day.",
    "assets": "USDC in the Bitget OTC account.",
+   "assets_th": "USDC ในบัญชี Bitget OTC",
    "physical": "virtual only",
+   "physical_th": "บัตรเสมือนเท่านั้น",
    "apple_google_pay": "Apple Pay and Google Pay.",
    "affiliate": {
     "exists": true,
@@ -1025,9 +1169,12 @@
    "id": "okx-card",
    "name": "OKX Card",
    "issuer": "OKX. Help centre: 'an international debit card (Visa or Mastercard, depending on your region)'; the /pay page shows Visa. Issuing bank or entity not stated on the pages read.",
+   "issuer_th": "OKX ศูนย์ช่วยเหลือระบุว่าเป็น “บัตรเดบิตระหว่างประเทศ (Visa หรือ Mastercard ขึ้นอยู่กับภูมิภาคของคุณ)” หน้า /pay แสดง Visa หน้าที่อ่านไม่ได้ระบุธนาคารหรือนิติบุคคลผู้ออกบัตร",
    "custody": "unclear",
+   "custody_th": "ไม่ชัดเจน",
    "thailand": "unclear",
    "thailand_evidence": "OKX help 'What's OKX Card?' (published 24 Mar 2026, updated 11 Sep 2026): 'the OKX Card is currently available in select regions only. To check whether you're eligible, log in to the OKX app and look for the Card section.' No region list is published. OKX's Risk and Compliance Disclosure (last updated 8 July 2026) lists Restricted Locations (Afghanistan, Canada, Cuba, Hong Kong, Iran, India, Japan, Malaysia, Nepal, North Korea, Syria, occupied regions of Ukraine, parts of the US, Uzbekistan); Thailand is not on that list. Absence from the list does not show the card is offered in Thailand.",
+   "thailand_evidence_th": "หน้าช่วยเหลือของ OKX “OKX Card คืออะไร” (เผยแพร่ 24 มีนาคม 2026 อัปเดต 11 กันยายน 2026): “ขณะนี้ OKX Card ให้บริการเฉพาะบางภูมิภาค หากต้องการตรวจสอบว่ามีสิทธิ์หรือไม่ ให้เข้าสู่ระบบแอป OKX แล้วดูที่ส่วนบัตร” ไม่มีการเผยแพร่รายชื่อภูมิภาค เอกสารเปิดเผยความเสี่ยงและการปฏิบัติตามกฎเกณฑ์ของ OKX (อัปเดตล่าสุด 8 กรกฎาคม 2026) ระบุพื้นที่ที่ถูกจำกัด (อัฟกานิสถาน แคนาดา คิวบา ฮ่องกง อิหร่าน อินเดีย ญี่ปุ่น มาเลเซีย เนปาล เกาหลีเหนือ ซีเรีย พื้นที่ที่ถูกยึดครองของยูเครน บางส่วนของสหรัฐฯ อุซเบกิสถาน) ไม่มีประเทศไทยในรายชื่อนั้น การไม่อยู่ในรายชื่อไม่ได้แสดงว่าบัตรให้บริการในประเทศไทย",
    "nationality_note": "Eligibility is shown per account in the app; no nationality rule published.",
    "fees": {
     "issue": "Not stated; virtual card only.",
@@ -1036,10 +1183,19 @@
     "atm": "No physical card, so no ATM use stated.",
     "topup": "Add stablecoins (USDG, USDT, USDC) to the OKX Pay wallet; top-up fee not stated."
    },
+   "fees_th": {
+    "issue": "ไม่ได้ระบุ มีเฉพาะบัตรเสมือน",
+    "annual": "หน้า /pay: “ไม่มีค่าธรรมเนียม ไม่มีเรื่องไม่คาดคิด”",
+    "fx": "หน้า /pay: “จ่ายได้โดยไม่มีค่าธรรมเนียมรายการหรือค่าธรรมเนียมอัตราแลกเปลี่ยน” ศูนย์ช่วยเหลือ: ใช้จ่ายจากยอด USD “โดยไม่มีส่วนเพิ่มใด ๆ”",
+    "atm": "ไม่มีบัตรพลาสติก จึงไม่มีการระบุการใช้ตู้ ATM",
+    "topup": "เติมสเตเบิลคอยน์ (USDG, USDT, USDC) เข้ากระเป๋า OKX Pay ไม่ได้ระบุค่าธรรมเนียมเติมเงิน"
+   },
    "atm_limit": "Not applicable (virtual only).",
    "spend_limit": "User-set per-transaction and daily limits, off by default; maximum varies by region and is shown in the app; daily total resets 00:00 UTC.",
    "assets": "USDG, USDT, USDC in OKX Pay.",
+   "assets_th": "USDG, USDT, USDC ใน OKX Pay",
    "physical": "virtual only",
+   "physical_th": "บัตรเสมือนเท่านั้น",
    "apple_google_pay": "Apple Pay and Google Pay.",
    "affiliate": {
     "exists": true,
@@ -1091,9 +1247,12 @@
    "id": "coinbase-card",
    "name": "Coinbase Card",
    "issuer": "Coinbase; issued by Pathward, N.A., Member FDIC, under a licence from Visa U.S.A. Inc.; powered by Marqeta (United States).",
+   "issuer_th": "Coinbase ออกโดย Pathward, N.A., Member FDIC ภายใต้ใบอนุญาตจาก Visa U.S.A. Inc. ขับเคลื่อนโดย Marqeta (สหรัฐอเมริกา)",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "Coinbase card page, Wayback Machine copy dated 3 Sep 2026 (the live page returned HTTP 403 to this fetch on 2026-09-23): 'Right now, Coinbase Card is available for all Coinbase customers who live in the US (excluding Hawaii).'",
+   "thailand_evidence_th": "หน้าบัตรของ Coinbase สำเนาใน Wayback Machine ลงวันที่ 3 กันยายน 2026 (หน้าจริงตอบกลับ HTTP 403 เมื่อดึงข้อมูลวันที่ 2026-09-23): “ขณะนี้ Coinbase Card เปิดให้ลูกค้า Coinbase ทุกคนที่อาศัยอยู่ในสหรัฐฯ (ยกเว้นฮาวาย)”",
    "nationality_note": "Residence in the US (excluding Hawaii) required; US PATRIOT Act identity checks (name, address, date of birth, ID).",
    "fees": {
     "issue": "Not stated on the page read; virtual or physical card offered.",
@@ -1102,10 +1261,19 @@
     "atm": "Not stated on the page read (Cardholder Agreement not read). Crypto is converted to USD for ATM withdrawals.",
     "topup": "No fees for spending USD or crypto, including USDC; a spread applies to crypto conversion. Bank account funding and paycheck deposit stated as zero-fee."
    },
+   "fees_th": {
+    "issue": "หน้าที่อ่านไม่ได้ระบุ มีบัตรเสมือนหรือบัตรพลาสติกให้เลือก",
+    "annual": "ไม่มีค่าธรรมเนียมรายปี",
+    "fx": "หน้าที่อ่านไม่ได้ระบุ ค่าธรรมเนียมอยู่ในสัญญาผู้ถือบัตร (ยังไม่ได้อ่าน) มีส่วนต่างราคาเมื่อแปลงคริปโต",
+    "atm": "หน้าที่อ่านไม่ได้ระบุ (ยังไม่ได้อ่านสัญญาผู้ถือบัตร) คริปโตจะถูกแปลงเป็น USD เมื่อถอนเงินที่ตู้ ATM",
+    "topup": "ไม่มีค่าธรรมเนียมเมื่อใช้จ่ายด้วย USD หรือคริปโต รวมถึง USDC แต่มีส่วนต่างราคาเมื่อแปลงคริปโต การเติมเงินจากบัญชีธนาคารและการรับเงินเดือนเข้าบัญชีระบุว่าไม่มีค่าธรรมเนียม"
+   },
    "atm_limit": "Not stated on the page read.",
    "spend_limit": "'Spend limits apply. See terms.' (terms not read).",
    "assets": "USD, USDC and other crypto in the Coinbase account (auto-converted to USD at purchase).",
+   "assets_th": "USD, USDC และคริปโตอื่นในบัญชี Coinbase (แปลงเป็น USD อัตโนมัติเมื่อซื้อ)",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Not stated on the page read.",
    "affiliate": {
     "exists": true,
@@ -1139,9 +1307,12 @@
    "id": "holyheld",
    "name": "Holyheld card",
    "issuer": "Holyheld Labs AG (Switzerland; member of SRO VQF). Terms (last update 01.07.2026) define the Card as a debit card 'issued by the licensed payment-instrument issuer partnered with us'; the partner and network are not named.",
+   "issuer_th": "Holyheld Labs AG (สวิตเซอร์แลนด์ สมาชิก SRO VQF) ข้อกำหนด (อัปเดตล่าสุด 01.07.2026) นิยามบัตรว่าเป็นบัตรเดบิต “ที่ออกโดยผู้ออกเครื่องมือการชำระเงินที่ได้รับอนุญาตซึ่งเป็นพันธมิตรกับเรา” ไม่ได้ระบุชื่อพันธมิตรและเครือข่าย",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "unclear",
    "thailand_evidence": "Holyheld Terms and Conditions (last update 01.07.2026) govern 'users who are residents of, or located in the Switzerland'. The site as read on 2026-09-23 is invite-only ('Request invite') and markets accounts, IBANs and on/off-ramp; no card product page (holyheld.com/card returns 404) and no country list. No Thailand mention found.",
+   "thailand_evidence_th": "ข้อกำหนดและเงื่อนไขของ Holyheld (อัปเดตล่าสุด 01.07.2026) ใช้กับ “ผู้ใช้ที่มีถิ่นที่อยู่หรืออยู่ในสวิตเซอร์แลนด์” เว็บไซต์ที่อ่านเมื่อ 2026-09-23 ต้องได้รับคำเชิญเท่านั้น (“ขอคำเชิญ”) และโฆษณาบัญชี เลข IBAN และบริการแปลงเงินเข้าและออกจากคริปโต ไม่มีหน้าผลิตภัณฑ์บัตร (holyheld.com/card ตอบกลับ 404) และไม่มีรายชื่อประเทศ ไม่พบการกล่าวถึงประเทศไทย",
    "nationality_note": "Terms address Swiss residents or persons located in Switzerland; membership is by invitation after individual review.",
    "fees": {
     "issue": "Card fees not published on the pages read.",
@@ -1150,10 +1321,19 @@
     "atm": "Not published.",
     "topup": "Individuals: on-ramp 1%, off-ramp 1%; outgoing SEPA EUR 1; outgoing ACH USD 1; wires USD 20."
    },
+   "fees_th": {
+    "issue": "หน้าที่อ่านไม่ได้เผยแพร่ค่าธรรมเนียมบัตร",
+    "annual": "สมาชิกบุคคล CHF 0 ต่อปี ต้องได้รับคำเชิญ (บริษัท CHF 500)",
+    "fx": "ไม่ได้เผยแพร่",
+    "atm": "ไม่ได้เผยแพร่",
+    "topup": "บุคคล: แปลงเงินเข้าคริปโต 1% แปลงคริปโตออก 1% โอนออกผ่าน SEPA EUR 1 โอนออกผ่าน ACH USD 1 โอนเงินแบบ wire USD 20"
+   },
    "atm_limit": "Not published.",
    "spend_limit": "Not published.",
    "assets": "Stablecoins converted to fiat through Holyheld; the card spends the resulting fiat balance held with a partner (terms 3.5 and the Card definition).",
+   "assets_th": "สเตเบิลคอยน์ที่แปลงเป็นเงินตราผ่าน Holyheld บัตรใช้ยอดเงินตราที่ได้ ซึ่งเก็บไว้กับพันธมิตร (ข้อกำหนดข้อ 3.5 และนิยามของบัตร)",
    "physical": "unclear",
+   "physical_th": "ไม่ชัดเจน",
    "apple_google_pay": "Not stated.",
    "affiliate": {
     "exists": false,
@@ -1199,9 +1379,12 @@
    "id": "bitget-wallet-card",
    "name": "Bitget Wallet Card",
    "issuer": "Bitget Wallet. Support article: 'a crypto payment card issued by Bitget Wallet'; card page: 'Card issuing partners vary by region.' Network: Visa or Mastercard. Issuing entity for Thailand not named.",
+   "issuer_th": "Bitget Wallet บทความช่วยเหลือ: “บัตรชำระเงินด้วยคริปโตที่ออกโดย Bitget Wallet” หน้าบัตร: “พันธมิตรผู้ออกบัตรแตกต่างกันตามภูมิภาค” เครือข่าย: Visa หรือ Mastercard ไม่ได้ระบุนิติบุคคลผู้ออกบัตรสำหรับประเทศไทย",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "available",
    "thailand_evidence": "Bitget support article 'What Is the Bitget Wallet Card and How Do I Apply?' (dated 2026-07-31) lists Asia-Pacific virtual-card markets as Singapore, South Korea, Japan, Vietnam, Malaysia, Taiwan, Australia, Thailand, the Philippines, Bangladesh and Pakistan, and says physical cards are 'currently available for users in Singapore, South Korea, Japan, Vietnam, Malaysia, Taiwan, Australia, Thailand, and the Philippines'. web3.bitget.com/card (read 2026-09-23) lists Thailand under Asia-Pacific and repeats the physical-card list. Separately, the Thai SEC Investor Alert list of unlicensed digital-asset persons and websites (last updated 2026-09-22) carries an entry for the Bitget Wallet app dated 19 Aug 2025; see regulatory_context.",
+   "thailand_evidence_th": "บทความช่วยเหลือของ Bitget “Bitget Wallet Card คืออะไรและสมัครอย่างไร” (ลงวันที่ 2026-07-31) ระบุตลาดบัตรเสมือนในเอเชียแปซิฟิก ได้แก่ สิงคโปร์ เกาหลีใต้ ญี่ปุ่น เวียดนาม มาเลเซีย ไต้หวัน ออสเตรเลีย ไทย ฟิลิปปินส์ บังกลาเทศ และปากีสถาน และระบุว่าบัตรพลาสติก “ขณะนี้เปิดให้ผู้ใช้ในสิงคโปร์ เกาหลีใต้ ญี่ปุ่น เวียดนาม มาเลเซีย ไต้หวัน ออสเตรเลีย ไทย และฟิลิปปินส์” web3.bitget.com/card (อ่านเมื่อ 2026-09-23) ระบุประเทศไทยไว้ใต้เอเชียแปซิฟิก และแสดงรายชื่อบัตรพลาสติกชุดเดิมซ้ำ อีกเรื่องหนึ่งคือ รายชื่อเตือนภัยผู้ลงทุน (Investor Alert) ของ ก.ล.ต. ไทย ซึ่งรวมบุคคลและเว็บไซต์ด้านสินทรัพย์ดิจิทัลที่ไม่ได้รับอนุญาต (อัปเดตล่าสุด 2026-09-22) มีรายการของแอป Bitget Wallet ลงวันที่ 19 สิงหาคม 2025 ดู regulatory_context",
    "nationality_note": "Search-result snippet of Bitget Wallet help page 'Physical card FAQ | APAC' (web3.bitget.com/helpCenter/675; page body not readable): eligible are 'citizens or residents (have an employment pass or proof of address)' of the listed countries. This suggests foreign residents of Thailand with proof of address qualify; not confirmed on a readable page.",
    "fees": {
     "issue": "Virtual: no fee stated. Physical: 49 USD including international shipping, per search-result snippet of web3.bitget.com/helpCenter/675 only (not confirmed on a readable page).",
@@ -1210,10 +1393,19 @@
     "atm": "Not stated on the pages read.",
     "topup": "Top-up and currency-conversion fees exist ('typically' offset by up to 3% assetback once monthly spend reaches USD 200 to 400); rates not published on the pages read."
    },
+   "fees_th": {
+    "issue": "บัตรเสมือน: ไม่ได้ระบุค่าธรรมเนียม บัตรพลาสติก: 49 USD รวมค่าจัดส่งระหว่างประเทศ ข้อมูลนี้มาจากข้อความตัวอย่างในผลการค้นหาของ web3.bitget.com/helpCenter/675 เท่านั้น (ยังไม่ได้ยืนยันจากหน้าที่อ่านได้)",
+    "annual": "ค่าธรรมเนียมรายปี 0 ไม่มีค่าธรรมเนียมบัตรรายเดือน",
+    "fx": "หน้าบัตร: Bitget Wallet “ไม่ได้กำไรจากส่วนต่างอัตราแลกเปลี่ยน” และอัตราที่ใช้ชำระราคา “ใกล้เคียงกับอัตราสดของ Google” และ “มีค่าธรรมเนียมมาตรฐาน” หลังใช้สิทธิ์ assetback รายเดือนครบแล้ว หน้าที่อ่านไม่ได้เผยแพร่อัตราเป็นเปอร์เซ็นต์",
+    "atm": "หน้าที่อ่านไม่ได้ระบุ",
+    "topup": "มีค่าธรรมเนียมเติมเงินและค่าธรรมเนียมแปลงสกุลเงิน (“โดยทั่วไป” หักกลบได้ด้วย assetback สูงสุด 3% เมื่อยอดใช้จ่ายรายเดือนถึง USD 200 ถึง 400) หน้าที่อ่านไม่ได้เผยแพร่อัตรา"
+   },
    "atm_limit": "Not stated on the pages read.",
    "spend_limit": "Not stated on the pages read.",
    "assets": "USDT, USDC, ETH, SOL (card page); support article: 'USDT, USDC, or other cryptocurrencies'.",
+   "assets_th": "USDT, USDC, ETH, SOL (หน้าบัตร) บทความช่วยเหลือ: “USDT, USDC หรือคริปโตอื่น”",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay, Google Pay, WeChat Pay, Alipay.",
    "affiliate": {
     "exists": false,
@@ -1253,9 +1445,12 @@
    "id": "wirex-pay",
    "name": "Wirex Pay card (non-custodial)",
    "issuer": "Wirex Pay, a payment chain incubated by Wirex (docs say it is built on Polygon ZK technology and 'supported by Visa'). The card-issuing entity and network are not named in the docs read.",
+   "issuer_th": "Wirex Pay เชนสำหรับการชำระเงินที่ Wirex บ่มเพาะขึ้น (เอกสารระบุว่าสร้างบนเทคโนโลยี Polygon ZK และ “ได้รับการสนับสนุนจาก Visa”) เอกสารที่อ่านไม่ได้ระบุนิติบุคคลผู้ออกบัตรและเครือข่าย",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "available",
    "thailand_evidence": "Wirex Pay docs 'Wirex Pay Serviced Countries' (undated, read 2026-09-23) list Asia-Pacific: Australia, Hong Kong, Philippines, Taiwan, Thailand, Vietnam, Malaysia, Indonesia, Singapore. The partner docs 'Supported countries' page (updated 17 Feb 2026) also lists Thailand (TH). This differs from the Wirex app, whose help table marks the Wirex Card N/A for Thailand.",
+   "thailand_evidence_th": "เอกสาร Wirex Pay “ประเทศที่ Wirex Pay ให้บริการ” (ไม่ระบุวันที่ อ่านเมื่อ 2026-09-23) ระบุเอเชียแปซิฟิก ได้แก่ ออสเตรเลีย ฮ่องกง ฟิลิปปินส์ ไต้หวัน ไทย เวียดนาม มาเลเซีย อินโดนีเซีย สิงคโปร์ หน้า “ประเทศที่รองรับ” ในเอกสารสำหรับพันธมิตร (อัปเดต 17 กุมภาพันธ์ 2026) ก็ระบุประเทศไทย (TH) เช่นกัน ซึ่งต่างจากแอป Wirex ที่ตารางช่วยเหลือระบุว่า Wirex Card เป็น N/A สำหรับประเทศไทย",
    "nationality_note": "Country is selected at sign-up. KYC: proof of identity (passport, national ID or equivalent) and proof of address (bank statement, utility bill or government document from the last 3 months).",
    "fees": {
     "issue": "Card order and delivery fees are charged from the Wirex Pay main account; amounts not stated in the docs read. Plastic card ships by DHL Express with tracking.",
@@ -1264,10 +1459,19 @@
     "atm": "Not stated.",
     "topup": "On-chain transfers within the Wirex Pay network: zero fees. Funding by bridging from Ethereum to the Wirex Pay chain (Ethereum network fees apply, amount not stated)."
    },
+   "fees_th": {
+    "issue": "ค่าสั่งบัตรและค่าจัดส่งหักจากบัญชีหลักของ Wirex Pay เอกสารที่อ่านไม่ได้ระบุจำนวนเงิน บัตรพลาสติกจัดส่งทาง DHL Express พร้อมเลขติดตามพัสดุ",
+    "annual": "ไม่ได้ระบุ",
+    "fx": "ไม่ได้ระบุ",
+    "atm": "ไม่ได้ระบุ",
+    "topup": "การโอนบนเชนภายในเครือข่าย Wirex Pay: ไม่มีค่าธรรมเนียม เติมเงินโดยย้ายข้ามเชนจาก Ethereum มายังเชน Wirex Pay (มีค่าธรรมเนียมเครือข่าย Ethereum ไม่ได้ระบุจำนวน)"
+   },
    "atm_limit": "500 EUR per day, 5,000 EUR per month, 5 withdrawals per day.",
    "spend_limit": "30,000 EUR per transaction, per day and per month; 75,000 EUR per 3 months; 100,000 EUR per 6 months; 15 purchases per day. User can set a lower daily limit.",
    "assets": "USDT, USDC, DAI on the Wirex Pay chain (bridged from Ethereum); wallet connected via browser extension (e.g. MetaMask) or WalletConnect.",
+   "assets_th": "USDT, USDC, DAI บนเชน Wirex Pay (ย้ายข้ามเชนมาจาก Ethereum) เชื่อมต่อกระเป๋าผ่านส่วนขยายเบราว์เซอร์ (เช่น MetaMask) หรือ WalletConnect",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Not stated in the docs read.",
    "affiliate": {
     "exists": false,
@@ -1313,9 +1517,12 @@
    "id": "tevau",
    "name": "Tevau Pay Card",
    "issuer": "Tevau Technology Limited, Hong Kong (reg. 76280597), named 'Issuer' in the Tevau terms; Visa ('VISA-Platinum Card'). Group entities: Tevau Technology Canada Limited (FINTRAC MSB C10001508) and Tevau Technology US Limited (FinCEN MSB).",
+   "issuer_th": "Tevau Technology Limited ฮ่องกง (ทะเบียนเลขที่ 76280597) ระบุเป็น “ผู้ออกบัตร” ในข้อกำหนดของ Tevau เครือข่าย Visa (“VISA-Platinum Card”) บริษัทในกลุ่ม: Tevau Technology Canada Limited (FINTRAC MSB C10001508) และ Tevau Technology US Limited (FinCEN MSB)",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "Tevau help article 'Tevau Unsupported Countries/Regions' (shown as 'Last Update 2 months ago' on 2026-09-23) lists Thailand among 'countries/regions where VISA-Platinum Card does not support', for both the physical card and the virtual card. Cambodia, Indonesia, Myanmar, China and India are also on both lists. The article does not say whether the list applies to residence, nationality, or place of use.",
+   "thailand_evidence_th": "บทความช่วยเหลือของ Tevau “ประเทศ/ภูมิภาคที่ Tevau ไม่รองรับ” (แสดงว่า “อัปเดตล่าสุด 2 เดือนก่อน” เมื่อ 2026-09-23) ระบุประเทศไทยอยู่ใน “ประเทศ/ภูมิภาคที่ VISA-Platinum Card ไม่รองรับ” ทั้งสำหรับบัตรพลาสติกและบัตรเสมือน กัมพูชา อินโดนีเซีย เมียนมา จีน และอินเดีย ก็อยู่ในทั้งสองรายชื่อ บทความไม่ได้ระบุว่ารายชื่อนี้ใช้กับถิ่นที่อยู่ สัญชาติ หรือสถานที่ใช้บัตร",
    "nationality_note": "Not stated whether the unsupported list refers to residence or nationality. KYC requires full name, date of birth and ID card or passport; minimum age 18.",
    "fees": {
     "issue": "An application fee applies to physical and virtual cards (amounts shown in an image not read). The referral article implies Metal card application fee of 199 USD (100 + 99) and Gold card 499 USD (200 + 299).",
@@ -1324,10 +1531,19 @@
     "atm": "Not stated in text.",
     "topup": "Card top-up fee exists (referenced in the rebate rules); amount not stated in text. Transactions of 3 USD or less count as small transactions; declined transactions incur a fee."
    },
+   "fees_th": {
+    "issue": "มีค่าสมัครทั้งบัตรพลาสติกและบัตรเสมือน (จำนวนเงินแสดงในรูปภาพที่ยังไม่ได้อ่าน) บทความแนะนำเพื่อนบ่งชี้ว่าค่าสมัครบัตร Metal คือ 199 USD (100 + 99) และบัตร Gold 499 USD (200 + 299)",
+    "annual": "ไม่ได้ระบุ บัตรเสมือนที่ไม่มีรายการติดต่อกัน 4 เดือนจะถูกปิด",
+    "fx": "ไม่ได้ระบุในข้อความ อัตราแลกเปลี่ยนเมื่อถอนเงินที่ตู้ ATM “ขึ้นอยู่กับธนาคารท้องถิ่น”",
+    "atm": "ไม่ได้ระบุในข้อความ",
+    "topup": "มีค่าธรรมเนียมเติมเงินเข้าบัตร (อ้างถึงในกฎการคืนเงิน) ไม่ได้ระบุจำนวนในข้อความ รายการที่ 3 USD หรือต่ำกว่านับเป็นรายการยอดเล็ก รายการที่ถูกปฏิเสธมีค่าธรรมเนียม"
+   },
    "atm_limit": "Not stated.",
    "spend_limit": "Not stated.",
    "assets": "'Supported Tokens' deposited to the Tevau wallet, then moved to the card; list not read.",
+   "assets_th": "“โทเคนที่รองรับ” ที่ฝากเข้ากระเป๋า Tevau แล้วโอนเข้าบัตร ยังไม่ได้อ่านรายชื่อ",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay and Google Pay (card page); help FAQ confirms Google Pay.",
    "affiliate": {
     "exists": true,
@@ -1385,9 +1601,12 @@
    "id": "bleap",
    "name": "Bleap Card",
    "issuer": "Bleap SIA (Latvia, reg. 40203714425), MiCA CASP licence No. 27-55/2026/14 from Latvijas Banka (granted 25 June 2026), subsidiary of Bleap Ltd (UK). Mastercard. The card-issuing institution is not named on the pages read.",
+   "issuer_th": "Bleap SIA (ลัตเวีย ทะเบียนเลขที่ 40203714425) ได้รับใบอนุญาต MiCA CASP เลขที่ 27-55/2026/14 จาก Latvijas Banka (ออกเมื่อ 25 มิถุนายน 2026) เป็นบริษัทลูกของ Bleap Ltd (สหราชอาณาจักร) เครือข่าย Mastercard หน้าที่อ่านไม่ได้ระบุสถาบันผู้ออกบัตร",
    "custody": "self-custody",
+   "custody_th": "ถือกุญแจเอง",
    "thailand": "not available",
    "thailand_evidence": "Bleap help 'Am I eligible for Card?' (written July 3, 2026): Bleap is 'unable to issue cards to users who either: Reside outside of the EEA or Switzerland, regardless of their nationality' or hold a restricted nationality. A Thailand resident falls outside the EEA/Switzerland rule.",
+   "thailand_evidence_th": "หน้าช่วยเหลือของ Bleap “ฉันมีสิทธิ์สมัครบัตรหรือไม่” (เขียนเมื่อ 3 กรกฎาคม 2026): Bleap “ไม่สามารถออกบัตรให้ผู้ใช้ที่มีถิ่นที่อยู่นอก EEA หรือสวิตเซอร์แลนด์ ไม่ว่าจะมีสัญชาติใด” หรือผู้ที่ถือสัญชาติที่ถูกจำกัด ผู้มีถิ่นที่อยู่ในประเทศไทยอยู่นอกเงื่อนไข EEA/สวิตเซอร์แลนด์",
    "nationality_note": "Residence in the EEA or Switzerland is required regardless of nationality. Restricted nationalities (ineligible wherever resident) include Philippines, Viet Nam, Pakistan, Myanmar, United States and others; Thailand is not on the nationality list.",
    "fees": {
     "issue": "'No issuance cost.'",
@@ -1396,10 +1615,19 @@
     "atm": "ATM withdrawals worldwide 'without Bleap fees'; ATM operator fees may apply.",
     "topup": "Buy and sell processing fee 0%; blockchain network fees apply (pricing disclosure updated 12 March 2026)."
    },
+   "fees_th": {
+    "issue": "“ไม่มีค่าออกบัตร”",
+    "annual": "“ไม่มีค่าบัตรหรือค่าดูแลบัญชี... ไม่มีค่าธรรมเนียมรายเดือน”",
+    "fx": "“ส่วนเพิ่มอัตราแลกเปลี่ยน 0” ไม่ได้ระบุค่าธรรมเนียมรายการต่างประเทศ",
+    "atm": "ถอนเงินที่ตู้ ATM ทั่วโลก “โดยไม่มีค่าธรรมเนียมของ Bleap” อาจมีค่าธรรมเนียมของผู้ให้บริการตู้ ATM",
+    "topup": "ค่าธรรมเนียมดำเนินการซื้อและขาย 0% มีค่าธรรมเนียมเครือข่ายบล็อกเชน (เอกสารเปิดเผยราคา อัปเดต 12 มีนาคม 2026)"
+   },
    "atm_limit": "Not stated on the pages read.",
    "spend_limit": "Not stated on the pages read.",
    "assets": "Euro and dollar stablecoin balances in the Bleap MPC wallet; cashback paid in USDC.",
+   "assets_th": "ยอดสเตเบิลคอยน์สกุลยูโรและดอลลาร์ในกระเป๋า MPC ของ Bleap เงินคืนจ่ายเป็น USDC",
    "physical": "yes",
+   "physical_th": "มี",
    "apple_google_pay": "Apple Pay and Google Pay.",
    "affiliate": {
     "exists": false,
@@ -1439,9 +1667,12 @@
    "id": "fiat24",
    "name": "Fiat24 Mastercard Debit",
    "issuer": "Fiat24 (site footer: SR Saphirstein Ltd; Swiss, registration flow cites FINMA requirements). Mastercard Debit, issued in EUR, USD, CHF and RMB. The issuing bank is not named on the pages read.",
+   "issuer_th": "Fiat24 (ส่วนท้ายเว็บไซต์: SR Saphirstein Ltd สวิตเซอร์แลนด์ ขั้นตอนลงทะเบียนอ้างถึงข้อกำหนดของ FINMA) Mastercard Debit ออกในสกุล EUR, USD, CHF และ RMB หน้าที่อ่านไม่ได้ระบุธนาคารผู้ออกบัตร",
    "custody": "custodial",
+   "custody_th": "ผู้ให้บริการถือสินทรัพย์แทน",
    "thailand": "not available",
    "thailand_evidence": "Fiat24 user manual 'Individual Account' (read 2026-09-23): 'due to maintenance works, we are currently not accepting any new Individual Clients.' The eligible-country list it links (info.fiat24.com/overview) renders client-side and could not be read, so Thailand's status for existing or future clients is not known.",
+   "thailand_evidence_th": "คู่มือผู้ใช้ Fiat24 “บัญชีบุคคล” (อ่านเมื่อ 2026-09-23): “เนื่องจากงานปรับปรุงระบบ ขณะนี้เรายังไม่รับลูกค้าบุคคลรายใหม่” รายชื่อประเทศที่มีสิทธิ์ซึ่งลิงก์ไว้ (info.fiat24.com/overview) แสดงผลฝั่งเบราว์เซอร์และอ่านไม่ได้ จึงไม่ทราบสถานะของประเทศไทยสำหรับลูกค้าปัจจุบันหรือลูกค้าในอนาคต",
    "nationality_note": "Individuals must live in an eligible country, hold a biometric passport or ID, not hold Iranian, North Korean or Russian nationality, not be a US person, be over 18; GPS location is captured at sign-up.",
    "fees": {
     "issue": "8-digit NFT account: free. 5 or 6-digit NFT: 1 F24 mint fee. Card activation needs a minimum balance of 10 USD (rest of world).",
@@ -1450,10 +1681,19 @@
     "atm": "Virtual card only without PIN; no ATM use stated.",
     "topup": "Crypto top-up: 1% (5 to 8-digit NFT), 0.5% (4-digit), 0.25% (3-digit), 0.125% (2-digit)."
    },
+   "fees_th": {
+    "issue": "บัญชี NFT 8 หลัก: ฟรี NFT 5 หรือ 6 หลัก: ค่า mint 1 F24 การเปิดใช้บัตรต้องมียอดขั้นต่ำ 10 USD (ส่วนอื่นของโลก)",
+    "annual": "ไม่ได้ระบุ",
+    "fx": "ไม่มีการแลกเปลี่ยนเงินเมื่อจ่ายเป็น EUR, CHF, USD หรือ RMB จากยอดสกุลเดียวกัน (“Direct Pay”) ไม่ได้ระบุค่าธรรมเนียมแปลงสกุลเงินอื่น",
+    "atm": "มีเฉพาะบัตรเสมือนที่ไม่มี PIN ไม่ได้ระบุการใช้ตู้ ATM",
+    "topup": "เติมคริปโต: 1% (NFT 5 ถึง 8 หลัก), 0.5% (4 หลัก), 0.25% (3 หลัก), 0.125% (2 หลัก)"
+   },
    "atm_limit": "Not applicable (virtual card without PIN).",
    "spend_limit": "Standard card: 20,000 EUR per month, 10,000 EUR per day. Account: USD 30,000 per month for new individual clients from 5 June 2026; some 'emerging countries' 1,000 CHF per 30 days.",
    "assets": "Crypto top-up from a connected wallet converts to EUR/CHF/USD/RMB balances; token list not read.",
+   "assets_th": "การเติมคริปโตจากกระเป๋าที่เชื่อมต่อจะแปลงเป็นยอด EUR/CHF/USD/RMB ยังไม่ได้อ่านรายชื่อโทเคน",
    "physical": "virtual only",
+   "physical_th": "บัตรเสมือนเท่านั้น",
    "apple_google_pay": "Apple Pay, Google Pay, Samsung Pay.",
    "affiliate": {
     "exists": false,

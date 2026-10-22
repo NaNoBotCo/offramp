@@ -36,6 +36,19 @@
     box.querySelectorAll("input").forEach(function (el) { el.addEventListener("input", calc); });
   }
   function val(i, k) { var el = document.getElementById("f" + i + k); return el ? num(el) : 0; }
+  var bank = "all", gap = document.getElementById("cgap");
+  document.querySelectorAll("[data-bank]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll("[data-bank]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+      bank = b.dataset.bank; calc();
+    });
+  });
+  function fits(r) { return bank === "all" || (bank === "yes") === !!r.thai_bank; }
+  function cta(r) {
+    if (r.ref) return '<a class="btn sm go sponsored" href="' + esc(r.ref) + '" rel="sponsored noopener" target="_blank">' + t("Sign up", "สมัคร") + "</a>";
+    if (r.site) return '<a class="btn sm" href="' + esc(r.site) + '" rel="noopener" target="_blank">' + t("Open", "เปิด") + "</a>";
+    return "";
+  }
   function calc() {
     if (!box || !routes || !rate) return;
     var a = num(amt), res = [];
@@ -48,15 +61,20 @@
         q = g - n * (val(i, "atm_thb") + val(i, "issuer_atm_thb")) - g * val(i, "issuer_atm_pct") / 100;
       } else if (r.kind === "wire") q = (net * (1 - val(i, "trade_pct") / 100) - val(i, "wire_usd")) * rate.tt - val(i, "receive_thb");
       else if (r.kind === "p2p") q = net * rate.usdt_bid * (1 + val(i, "spread_pct") / 100);
-      res.push({ r: r, q: Math.max(0, q) });
+      res.push({ r: r, q: Math.max(0, q), ok: fits(r) });
     });
+    res.sort(function (x, y) { return (y.ok - x.ok) || (y.q - x.q); });
     var mx = Math.max.apply(null, res.map(function (x) { return x.q; }).concat([1])), ref = a * rate.mid;
-    bars.innerHTML = res.map(function (x) {
+    var on = res.filter(function (x) { return x.ok; });
+    if (gap) gap.innerHTML = on.length > 1 && on[0].q > 0 ? t("The wrong route costs ", "เลือกเส้นทางผิด เสีย ") + "<b>฿" + f(on[0].q - on[on.length - 1].q, 0) + "</b>" + t(" on this amount.", " จากจำนวนนี้") : "";
+    bars.innerHTML = res.map(function (x, k) {
       var w = (x.q / mx * 100).toFixed(1), d = ref ? (x.q / ref - 1) * 100 : 0;
       var col = x.r.kind === "p2p" ? "var(--red)" : x.r.kind === "card" ? "var(--blue)" : "var(--go)";
-      return '<div style="margin:.45rem 0"><div class="row" style="justify-content:space-between"><span>' + esc(TH && x.r.label_th ? x.r.label_th : x.r.label) + '</span><b class="num">฿' + f(x.q, 0) +
-        ' <span class="small mute">' + (d >= 0 ? "+" : "") + f(d, 2) + t('% vs mid', '% เทียบอัตรากลาง') + '</span></b></div><div style="height:.7rem;border-radius:6px;background:#121925"><div style="height:100%;width:' + w + '%;border-radius:6px;background:' + col + '"></div></div></div>';
-    }).join("") + '<p class="small mute">' + t("Rates: ", "อัตรา: ") + esc(rate.when) + t(". A route's bar is the baht in hand after the fees in its fields.", " แท่งของแต่ละเส้นทางคือเงินบาทที่ได้รับหลังหักค่าธรรมเนียมในช่องของเส้นทางนั้น") + "</p>";
+      var need = x.r.thai_bank ? '<span class="pill go">' + t("Thai bank", "บัญชีไทย") + "</span>" : '<span class="pill amber">' + t("no Thai bank", "ไม่ต้องมีบัญชีไทย") + "</span>";
+      return '<div class="rt' + (x.ok ? "" : " off") + (x.ok && k === 0 ? " best" : "") + '"><div class="rt-h"><span>' + esc(TH && x.r.label_th ? x.r.label_th : x.r.label) + '</span><b class="num">฿' + f(x.q, 0) + "</b></div>" +
+        '<div class="rt-bar"><i style="width:' + w + "%;background:" + col + '"></i></div>' +
+        '<div class="rt-f">' + need + '<span class="small mute num">' + (d >= 0 ? "+" : "") + f(d, 2) + t("% vs mid", "% เทียบอัตรากลาง") + "</span>" + cta(x.r) + "</div></div>";
+    }).join("") + '<p class="small mute">' + t("Rates: ", "อัตรา: ") + esc(rate.when) + t(". Baht in hand after the fees below.", " เงินบาทที่ได้รับหลังหักค่าธรรมเนียมด้านล่าง") + "</p>";
   }
   if (amt) amt.addEventListener("input", calc);
   document.addEventListener("ofr-rates", function (e) {

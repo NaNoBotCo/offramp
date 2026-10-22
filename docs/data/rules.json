@@ -370,7 +370,7 @@
    "what": "Brings licensed digital asset operators into the same duties as banks: share information, screen and suspend accounts or transactions linked to online crime, and refund victims through the same mechanism. A blacklist of people and wallet addresses tied to crime is kept, and operators may not transact with it. Banks, telecom operators, social media platforms and digital asset operators share liability for victims' losses when they fail their regulator's anti-fraud standards. Opening or lending a crypto account as a mule carries up to 3 years, 300,000 baht, or both. The Ministry of Digital Economy and Society (MDES) can block websites and apps of unlicensed digital asset operators.",
    "what_th": "กำหนดให้ผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ได้รับอนุญาตมีหน้าที่เช่นเดียวกับธนาคาร ได้แก่ แลกเปลี่ยนข้อมูล คัดกรองและระงับบัญชีหรือธุรกรรมที่เกี่ยวข้องกับอาชญากรรมออนไลน์ และคืนเงินให้ผู้เสียหายผ่านกลไกเดียวกัน มีการจัดทำบัญชีรายชื่อบุคคลและที่อยู่กระเป๋าที่เกี่ยวข้องกับการกระทำความผิด (blacklist) และห้ามผู้ประกอบธุรกิจทำธุรกรรมกับรายชื่อดังกล่าว ธนาคาร ผู้ให้บริการโทรคมนาคม แพลตฟอร์มโซเชียลมีเดีย และผู้ประกอบธุรกิจสินทรัพย์ดิจิทัล ต้องร่วมรับผิดชอบความเสียหายของผู้เสียหาย หากไม่ปฏิบัติตามมาตรฐานป้องกันการฉ้อโกงของหน่วยงานกำกับของตน การเปิดหรือให้ยืมบัญชีคริปโตเพื่อใช้เป็นบัญชีม้ามีโทษจำคุกไม่เกิน 3 ปี ปรับไม่เกิน 300,000 บาท หรือทั้งจำทั้งปรับ กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (ดีอี) ปิดกั้นเว็บไซต์และแอปของผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ไม่ได้รับอนุญาตได้",
    "for_foreigners": "A Thai exchange account can be frozen on a blacklist match or a police or AMLO notice, as bank accounts are. The SEC reported more than 29,000 crypto mule accounts blocked and about 186 million baht of assets frozen by 30 June 2025.",
-   "for_foreigners_th": "บัญชีศูนย์ซื้อขายในไทยอาจถูกอายัดได้เมื่อตรงกับรายชื่อใน blacklist หรือเมื่อมีหนังสือแจ้งจากตำรวจหรือ ปปง. เช่นเดียวกับบัญชีธนาคาร ก.ล.ต. รายงานว่าภายในวันที่ 30 มิถุนายน 2025 ได้ระงับบัญชีม้าคริปโตแล้วกว่า 29,000 บัญชี และอายัดทรัพย์สินราว 186 ล้านบาท",
+   "for_foreigners_th": "บัญชีศูนย์ซื้อขายในไทยอาจถูกอายัดได้เมื่อตรงกับบัญชีรายชื่อ (blacklist) หรือเมื่อมีหนังสือแจ้งจากตำรวจหรือ ปปง. เช่นเดียวกับบัญชีธนาคาร ก.ล.ต. รายงานว่าภายในวันที่ 30 มิถุนายน 2025 ได้ระงับบัญชีม้าคริปโตแล้วกว่า 29,000 บัญชี และอายัดทรัพย์สินราว 186 ล้านบาท",
    "sources": [
     {
      "title": "SEC strengthens measures to combat digital asset mule accounts, elevates blocking the misuse of foreign platforms for money laundering to reduce public harm (News No. 80/2025)",
@@ -703,7 +703,7 @@
    "body": "Kasikornbank, in a Bank of Thailand regulatory sandbox",
    "body_th": "ธนาคารกสิกรไทย ภายใต้โครงการทดสอบ (regulatory sandbox) ของธนาคารแห่งประเทศไทย",
    "what": "Bangkok Post reports that Kasikornbank's Q Wallet, a blockchain wallet tested in a BOT sandbox, let foreign visitors convert USDC into THBS, a programmable payment unit pegged to the baht, and pay by Thai QR at more than 100 participating merchants without a local bank account. The pilot was scheduled to run until 31 December 2025; an extension is not confirmed.",
-   "what_th": "Bangkok Post รายงานว่า Q Wallet ของธนาคารกสิกรไทย ซึ่งเป็นกระเป๋าบนบล็อกเชนที่ทดสอบใน sandbox ของ ธปท. ให้นักท่องเที่ยวต่างชาติแลก USDC เป็น THBS ซึ่งเป็นหน่วยชำระเงินแบบโปรแกรมได้ที่ผูกค่ากับเงินบาท และจ่ายเงินด้วย Thai QR ที่ร้านค้าที่ร่วมโครงการกว่า 100 แห่ง โดยไม่ต้องมีบัญชีธนาคารในไทย โครงการนำร่องมีกำหนดถึงวันที่ 31 ธันวาคม 2025 ยังไม่มีการยืนยันว่าขยายเวลา",
+   "what_th": "Bangkok Post รายงานว่า Q Wallet ของธนาคารกสิกรไทย ซึ่งเป็นกระเป๋าบนบล็อกเชนในโครงการทดสอบ (sandbox) ของ ธปท. ให้นักท่องเที่ยวต่างชาติแลก USDC เป็น THBS ซึ่งเป็นหน่วยชำระเงินแบบโปรแกรมได้ที่ผูกค่ากับเงินบาท และจ่ายเงินด้วย Thai QR ที่ร้านค้าที่ร่วมโครงการกว่า 100 แห่ง โดยไม่ต้องมีบัญชีธนาคารในไทย โครงการนำร่องมีกำหนดถึงวันที่ 31 ธันวาคม 2025 ยังไม่มีการยืนยันว่าขยายเวลา",
    "for_foreigners": "This was a visitor pilot with a fixed end date, not a service open to residents.",
    "for_foreigners_th": "นี่คือโครงการนำร่องสำหรับนักท่องเที่ยวที่มีวันสิ้นสุดแน่นอน ไม่ใช่บริการที่เปิดให้ผู้พำนักอาศัยในไทย",
    "sources": [
@@ -723,9 +723,11 @@
    "name": "Bitkub Online Co., Ltd.",
    "name_th": "บริษัท บิทคับ ออนไลน์ จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2019-01-04",
    "status": "licensed",
    "notes": "Exchange licences (crypto and token) dated 4 Jan 2019; broker licences (crypto and token) dated 15 May 2025, broker business from 22 Oct 2025. SEC filed a criminal complaint on 23 Jul 2026 over 2021 hack reporting; the licence stands. TouristDigiPay participation announced Aug 2025 (Bangkok Post).",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขาย (คริปโตและโทเคนดิจิทัล) ลงวันที่ 4 ม.ค. 2019 ใบอนุญาตนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 15 พ.ค. 2025 เริ่มธุรกิจนายหน้าวันที่ 22 ต.ค. 2025 ก.ล.ต. กล่าวโทษทางอาญาเมื่อวันที่ 23 ก.ค. 2026 กรณีการรายงานเหตุถูกแฮ็กในปี 2021 ใบอนุญาตยังคงอยู่ มีการประกาศเข้าร่วม TouristDigiPay เมื่อ ส.ค. 2025 (Bangkok Post)",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028750",
@@ -736,9 +738,11 @@
    "name": "Gulf Binance Co., Ltd. (Binance TH)",
    "name_th": "บริษัท กัลฟ์ ไบแนนซ์ จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2023-05-18",
    "status": "licensed",
    "notes": "Exchange and broker licences (crypto and token) dated 18 May 2023; business from 10 Nov 2023. Trades as Binance TH, separate from binance.com, which the SEC named as unlicensed on 5 Apr 2021. Accepts foreign nationals with passport, a second photo ID, and a Thai visa valid 3+ months: Non-Immigrant (all types), Smart, LTR, Privilege/Elite (PE/SE), retirement O-A/O-X; DTV does not appear in the published list. Myanmar nationals not accepted from 13 Jul 2026. THB deposits run from a Thai bank account through Thai QR or bank transfer. Many scam sites impersonate the company name on the SEC alert list.",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขายและนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 18 พ.ค. 2023 เริ่มธุรกิจวันที่ 10 พ.ย. 2023 ให้บริการในชื่อ Binance TH ซึ่งแยกจาก binance.com ที่ ก.ล.ต. ระบุชื่อว่าไม่ได้รับอนุญาตเมื่อวันที่ 5 เม.ย. 2021 รับลูกค้าชาวต่างชาติที่มีหนังสือเดินทาง บัตรประจำตัวที่มีรูปถ่ายอีก 1 ใบ และวีซ่าไทยที่มีอายุเหลือ 3 เดือนขึ้นไป ได้แก่ Non-Immigrant (ทุกประเภท), Smart, LTR, Privilege/Elite (PE/SE) และวีซ่าเกษียณ O-A/O-X ไม่มี DTV ในรายการที่เผยแพร่ ไม่รับผู้มีสัญชาติเมียนมาตั้งแต่วันที่ 13 ก.ค. 2026 การฝากเงินบาททำจากบัญชีธนาคารในไทยผ่าน Thai QR หรือการโอนผ่านธนาคาร รายชื่อ Investor Alert ของ ก.ล.ต. มีเว็บไซต์หลอกลวงจำนวนมากที่แอบอ้างชื่อบริษัทนี้",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033495",
@@ -749,9 +753,11 @@
    "name": "Upbit Exchange (Thailand) Co., Ltd.",
    "name_th": "บริษัท อัพบิต เอ็กซ์เชนจ์ (ประเทศไทย) จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2020-07-24",
    "status": "licensed",
    "notes": "Exchange and broker licences (crypto and token) dated 24 Jul 2020; business from 20 Jan 2021. Rules for foreign customers not checked.",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขายและนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 24 ก.ค. 2020 เริ่มธุรกิจวันที่ 20 ม.ค. 2021 ยังไม่ได้ตรวจสอบเกณฑ์สำหรับลูกค้าชาวต่างชาติ",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028753",
@@ -762,9 +768,11 @@
    "name": "Orbix Trade Co., Ltd.",
    "name_th": "บริษัท ออร์บิกซ์ เทรด จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2019-01-04",
    "status": "licensed",
    "notes": "Exchange licences dated 4 Jan 2019; broker licences dated 28 Oct 2025, broker business from 24 Apr 2026. Related names on the SEC list: Orbix Custodian (custodial wallet) and Orbix Invest (fund manager). Ownership not checked.",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขายลงวันที่ 4 ม.ค. 2019 ใบอนุญาตนายหน้าลงวันที่ 28 ต.ค. 2025 เริ่มธุรกิจนายหน้าวันที่ 24 เม.ย. 2026 ชื่อที่เกี่ยวข้องในรายชื่อของ ก.ล.ต. ได้แก่ Orbix Custodian (ผู้รับฝากสินทรัพย์ดิจิทัล) และ Orbix Invest (ผู้จัดการเงินทุน) ยังไม่ได้ตรวจสอบโครงสร้างผู้ถือหุ้น",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028740",
@@ -775,9 +783,11 @@
    "name": "GMO-Z.com Cryptonomics (Thailand) Co., Ltd.",
    "name_th": "บริษัท จีเอ็มโอ-แซด.คอม คริปโทนอมิคซ์ (ประเทศไทย) จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2020-07-24",
    "status": "licensed",
    "notes": "Exchange and broker licences (crypto and token) dated 24 Jul 2020; business from 20 Jan 2021.",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขายและนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 24 ก.ค. 2020 เริ่มธุรกิจวันที่ 20 ม.ค. 2021",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000031555",
@@ -788,9 +798,11 @@
    "name": "WAAN Exchange Co., Ltd.",
    "name_th": "บริษัท วาฬ เอ็กเชนจ์ จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2023-09-29",
    "status": "licensed",
    "notes": "Exchange and broker licences (crypto and token) dated 29 Sep 2023; business from 27 Mar 2024.",
+   "notes_th": "ใบอนุญาตศูนย์ซื้อขายและนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 29 ก.ย. 2023 เริ่มธุรกิจวันที่ 27 มี.ค. 2024",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033468",
@@ -801,9 +813,11 @@
    "name": "Thai Digital Assets Exchange Co., Ltd. (TDX)",
    "name_th": "บริษัท ศูนย์ซื้อขายสินทรัพย์ดิจิทัลไทย จำกัด",
    "licence": "exchange",
+   "licence_th": "ศูนย์ซื้อขาย",
    "since": "2022-03-25",
    "status": "licensed",
    "notes": "Token exchange only (no cryptocurrency licence), dated 25 Mar 2022; business from 28 Sep 2022. The SEC alert list names fake sites using its name (28 May 2026).",
+   "notes_th": "ศูนย์ซื้อขายโทเคนดิจิทัลเท่านั้น (ไม่มีใบอนุญาตคริปโตเคอร์เรนซี) ลงวันที่ 25 มี.ค. 2022 เริ่มธุรกิจวันที่ 28 ก.ย. 2022 รายชื่อ Investor Alert ของ ก.ล.ต. มีเว็บไซต์ปลอมที่ใช้ชื่อบริษัทนี้ (28 พ.ค. 2026)",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033360",
@@ -814,9 +828,11 @@
    "name": "Bitazza Co., Ltd.",
    "name_th": "บริษัท บิทาซซ่า จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2019-07-12",
    "status": "licensed",
    "notes": "Broker licences (crypto and token) dated 12 Jul 2019; business from 18 Dec 2019. SEC criminal complaint of 20 Feb 2026 alleges it jointly ran an unlicensed exchange with Bitazza International (Bitazza Global), which MDES blocked from 22 Mar 2026; the Thai company remains on the licensee list.",
+   "notes_th": "ใบอนุญาตนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 12 ก.ค. 2019 เริ่มธุรกิจวันที่ 18 ธ.ค. 2019 คำกล่าวโทษทางอาญาของ ก.ล.ต. ลงวันที่ 20 ก.พ. 2026 กล่าวหาว่าบริษัทร่วมกับ Bitazza International (Bitazza Global) ประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาต ซึ่งกระทรวงดีอีปิดกั้นตั้งแต่วันที่ 22 มี.ค. 2026 บริษัทในไทยยังอยู่ในรายชื่อผู้ได้รับอนุญาต",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000029773",
@@ -827,9 +843,11 @@
    "name": "Coins TH Co., Ltd.",
    "name_th": "บริษัท คอยส์ ทีเอช จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2019-01-04",
    "status": "licensed",
    "notes": "Crypto broker and crypto dealer licences dated 4 Jan 2019.",
+   "notes_th": "ใบอนุญาตนายหน้าและผู้ค้าคริปโตเคอร์เรนซี ลงวันที่ 4 ม.ค. 2019",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028741",
@@ -840,9 +858,11 @@
    "name": "MaxBit Digital Asset Co., Ltd.",
    "name_th": "บริษัท แมกซ์บิท ดิจิทัล แอสเซท จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2023-05-19",
    "status": "licensed",
    "notes": "Broker licences (crypto and token) dated 19 May 2023; business from 10 Nov 2023.",
+   "notes_th": "ใบอนุญาตนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 19 พ.ค. 2023 เริ่มธุรกิจวันที่ 10 พ.ย. 2023",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033391",
@@ -853,9 +873,11 @@
    "name": "Satoshi Co., Ltd.",
    "name_th": "บริษัท ซาโตชิ จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2020-05-08",
    "status": "licensed",
    "notes": "Broker licences (crypto and token) dated 8 May 2020; business from 4 Nov 2020.",
+   "notes_th": "ใบอนุญาตนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 8 พ.ค. 2020 เริ่มธุรกิจวันที่ 4 พ.ย. 2020",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000031171",
@@ -866,9 +888,11 @@
    "name": "Tokenomics Co., Ltd.",
    "name_th": "บริษัท โทเคนโนมิกส์ จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2025-07-29",
    "status": "licensed",
    "notes": "Broker licences (crypto and token) dated 29 Jul 2025; business from 9 Feb 2026.",
+   "notes_th": "ใบอนุญาตนายหน้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 29 ก.ค. 2025 เริ่มธุรกิจวันที่ 9 ก.พ. 2026",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000034935",
@@ -879,9 +903,11 @@
    "name": "XSpring Digital Co., Ltd.",
    "name_th": "บริษัท เอ็กซ์สปริง ดิจิทัล จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2021-11-22",
    "status": "licensed",
    "notes": "Broker and dealer licences (crypto and token) dated 22 Nov 2021, business from 18 Feb 2022; ICO portal approval dated 10 Apr 2019.",
+   "notes_th": "ใบอนุญาตนายหน้าและผู้ค้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 22 พ.ย. 2021 เริ่มธุรกิจวันที่ 18 ก.พ. 2022 ได้รับความเห็นชอบเป็นผู้ให้บริการระบบ ICO ลงวันที่ 10 เม.ย. 2019",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000029790",
@@ -892,9 +918,11 @@
    "name": "InnovestX Securities Co., Ltd.",
    "name_th": "บริษัท หลักทรัพย์ อินโนเวสท์ เอกซ์ จำกัด",
    "licence": "broker",
+   "licence_th": "นายหน้า",
    "since": "2021-11-22",
    "status": "licensed",
    "notes": "A securities company holding crypto and token broker licences dated 22 Nov 2021; business from 31 May 2022.",
+   "notes_th": "บริษัทหลักทรัพย์ที่มีใบอนุญาตนายหน้าคริปโตและโทเคนดิจิทัล ลงวันที่ 22 พ.ย. 2021 เริ่มธุรกิจวันที่ 31 พ.ค. 2022",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000000238",
@@ -905,9 +933,11 @@
    "name": "1109 Prosper Co., Ltd.",
    "name_th": "บริษัท 1109 พรอส์เปอร์ จำกัด",
    "licence": "dealer",
+   "licence_th": "ผู้ค้า",
    "since": "2023-05-25",
    "status": "licensed",
    "notes": "Dealer licences (crypto and token) dated 25 May 2023; business from 20 Nov 2023.",
+   "notes_th": "ใบอนุญาตผู้ค้า (คริปโตและโทเคนดิจิทัล) ลงวันที่ 25 พ.ค. 2023 เริ่มธุรกิจวันที่ 20 พ.ย. 2023",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000032807",
@@ -918,9 +948,11 @@
    "name": "Orbix Custodian Co., Ltd.",
    "name_th": "บริษัท ออร์บิกซ์ คัสโทเดียน จำกัด",
    "licence": "custodial wallet",
+   "licence_th": "ผู้รับฝากสินทรัพย์ดิจิทัล",
    "since": "2024-09-13",
    "status": "licensed",
    "notes": "Custodial wallet licence dated 13 Sep 2024; business from 4 Mar 2025.",
+   "notes_th": "ใบอนุญาตผู้รับฝากสินทรัพย์ดิจิทัล ลงวันที่ 13 ก.ย. 2024 เริ่มธุรกิจวันที่ 4 มี.ค. 2025",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033865",
@@ -931,9 +963,11 @@
    "name": "Rakkar Digital Co., Ltd.",
    "name_th": "บริษัท รักขา ดิจิทัล จำกัด",
    "licence": "custodial wallet",
+   "licence_th": "ผู้รับฝากสินทรัพย์ดิจิทัล",
    "since": "2024-12-03",
    "status": "licensed",
    "notes": "Custodial wallet licence dated 3 Dec 2024; business from 30 May 2025.",
+   "notes_th": "ใบอนุญาตผู้รับฝากสินทรัพย์ดิจิทัล ลงวันที่ 3 ธ.ค. 2024 เริ่มธุรกิจวันที่ 30 พ.ค. 2025",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000034491",
@@ -944,9 +978,11 @@
    "name": "Merkle Capital Co., Ltd.",
    "name_th": "บริษัท เมอร์เคิล แคปปิตอล จำกัด",
    "licence": "fund manager",
+   "licence_th": "ผู้จัดการเงินทุน",
    "since": "2021-12-23",
    "status": "licensed",
    "notes": "Crypto and token fund manager licences dated 23 Dec 2021.",
+   "notes_th": "ใบอนุญาตผู้จัดการเงินทุนคริปโตและโทเคนดิจิทัล ลงวันที่ 23 ธ.ค. 2021",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000032535",
@@ -957,9 +993,11 @@
    "name": "Orbix Invest Co., Ltd.",
    "name_th": "บริษัท ออร์บิกซ์ อินเวสท์ จำกัด",
    "licence": "fund manager",
+   "licence_th": "ผู้จัดการเงินทุน",
    "since": "2024-01-03",
    "status": "licensed",
    "notes": "Crypto and token fund manager licences dated 3 Jan 2024; business from 14 Jun 2024.",
+   "notes_th": "ใบอนุญาตผู้จัดการเงินทุนคริปโตและโทเคนดิจิทัล ลงวันที่ 3 ม.ค. 2024 เริ่มธุรกิจวันที่ 14 มิ.ย. 2024",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033913",
@@ -970,9 +1008,11 @@
    "name": "Cryptomind Advisory Co., Ltd.",
    "name_th": "บริษัท คริปโตมายด์ แอดไวเซอรี่ จำกัด",
    "licence": "advisor",
+   "licence_th": "ที่ปรึกษาการลงทุน",
    "since": "2021-10-04",
    "status": "licensed",
    "notes": "Crypto and token advisory licences dated 4 Oct 2021.",
+   "notes_th": "ใบอนุญาตที่ปรึกษาการลงทุนคริปโตและโทเคนดิจิทัล ลงวันที่ 4 ต.ค. 2021",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000032536",
@@ -983,9 +1023,11 @@
    "name": "Altplus Advisory Co., Ltd.",
    "name_th": "บริษัท อัลท์พลัส แอดไวเซอรี จำกัด",
    "licence": "advisor",
+   "licence_th": "ที่ปรึกษาการลงทุน",
    "since": "2025-12-04",
    "status": "licensed",
    "notes": "Crypto and token advisory licences dated 4 Dec 2025; business from 2 Jun 2026.",
+   "notes_th": "ใบอนุญาตที่ปรึกษาการลงทุนคริปโตและโทเคนดิจิทัล ลงวันที่ 4 ธ.ค. 2025 เริ่มธุรกิจวันที่ 2 มิ.ย. 2026",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000035008",
@@ -996,9 +1038,11 @@
    "name": "Kubix Digital Asset Co., Ltd.",
    "name_th": "บริษัท คิวบิกซ์ ดิจิทัล แอสเสท จำกัด",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "2022-01-13",
    "status": "licensed",
    "notes": "ICO portal approval dated 13 Jan 2022.",
+   "notes_th": "ได้รับความเห็นชอบเป็นผู้ให้บริการระบบ ICO ลงวันที่ 13 ม.ค. 2022",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000032769",
@@ -1009,9 +1053,11 @@
    "name": "Token X Co., Ltd.",
    "name_th": "บริษัท โทเคน เอกซ์ จำกัด",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "2021-11-09",
    "status": "licensed",
    "notes": "ICO portal approval dated 9 Nov 2021; business from 18 Mar 2022.",
+   "notes_th": "ได้รับความเห็นชอบเป็นผู้ให้บริการระบบ ICO ลงวันที่ 9 พ.ย. 2021 เริ่มธุรกิจวันที่ 18 มี.ค. 2022",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033223",
@@ -1022,9 +1068,11 @@
    "name": "Bitkub Portal Co., Ltd.",
    "name_th": "บริษัท บิทคับ พอร์ทอล จำกัด",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "2024-09-10",
    "status": "licensed",
    "notes": "ICO portal approval dated 10 Sep 2024; business from 11 Mar 2025.",
+   "notes_th": "ได้รับความเห็นชอบเป็นผู้ให้บริการระบบ ICO ลงวันที่ 10 ก.ย. 2024 เริ่มธุรกิจวันที่ 11 มี.ค. 2025",
    "source": {
     "title": "SEC company licence record",
     "url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033512",
@@ -1035,9 +1083,11 @@
    "name": "Finansia Portal Co., Ltd.",
    "name_th": "",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "",
    "status": "licensed",
    "notes": "On the SEC ICO portal list on the day accessed; approval date not checked.",
+   "notes_th": "อยู่ในรายชื่อผู้ให้บริการระบบ ICO ของ ก.ล.ต. ในวันที่เข้าตรวจสอบ ยังไม่ได้ตรวจสอบวันที่ได้รับความเห็นชอบ",
    "source": {
     "title": "List of Licensee and company licence records (SEC LicenseCheck)",
     "url": "https://market.sec.or.th/public/orap/COMPANYPROFILE03.aspx?lang=en",
@@ -1048,9 +1098,11 @@
    "name": "Fraction (Thailand) Co., Ltd.",
    "name_th": "",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "",
    "status": "licensed",
    "notes": "On the SEC ICO portal list on the day accessed; approval date not checked.",
+   "notes_th": "อยู่ในรายชื่อผู้ให้บริการระบบ ICO ของ ก.ล.ต. ในวันที่เข้าตรวจสอบ ยังไม่ได้ตรวจสอบวันที่ได้รับความเห็นชอบ",
    "source": {
     "title": "List of Licensee and company licence records (SEC LicenseCheck)",
     "url": "https://market.sec.or.th/public/orap/COMPANYPROFILE03.aspx?lang=en",
@@ -1061,9 +1113,11 @@
    "name": "Int X Co., Ltd.",
    "name_th": "",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "",
    "status": "licensed",
    "notes": "On the SEC ICO portal list on the day accessed; approval date not checked.",
+   "notes_th": "อยู่ในรายชื่อผู้ให้บริการระบบ ICO ของ ก.ล.ต. ในวันที่เข้าตรวจสอบ ยังไม่ได้ตรวจสอบวันที่ได้รับความเห็นชอบ",
    "source": {
     "title": "List of Licensee and company licence records (SEC LicenseCheck)",
     "url": "https://market.sec.or.th/public/orap/COMPANYPROFILE03.aspx?lang=en",
@@ -1074,9 +1128,11 @@
    "name": "T-Box (Thailand) Co., Ltd.",
    "name_th": "",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "",
    "status": "licensed",
    "notes": "On the SEC ICO portal list on the day accessed; approval date not checked.",
+   "notes_th": "อยู่ในรายชื่อผู้ให้บริการระบบ ICO ของ ก.ล.ต. ในวันที่เข้าตรวจสอบ ยังไม่ได้ตรวจสอบวันที่ได้รับความเห็นชอบ",
    "source": {
     "title": "List of Licensee and company licence records (SEC LicenseCheck)",
     "url": "https://market.sec.or.th/public/orap/COMPANYPROFILE03.aspx?lang=en",
@@ -1087,9 +1143,11 @@
    "name": "Coindee Co., Ltd.",
    "name_th": "",
    "licence": "advisor",
+   "licence_th": "ที่ปรึกษาการลงทุน",
    "since": "",
    "status": "revoked",
    "notes": "Crypto and token advisory licence revoked by the Minister of Finance on the SEC Board's recommendation, effective 27 Oct 2025, after the company ceased operating.",
+   "notes_th": "รัฐมนตรีว่าการกระทรวงการคลังเพิกถอนใบอนุญาตที่ปรึกษาการลงทุนคริปโตและโทเคนดิจิทัล ตามข้อเสนอของคณะกรรมการ ก.ล.ต. มีผลตั้งแต่วันที่ 27 ต.ค. 2025 หลังจากบริษัทหยุดประกอบธุรกิจ",
    "source": {
     "title": "Coindee's digital asset advisory license revoked (News No. 295/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=295&NewsYear=2025&Lang=EN",
@@ -1100,9 +1158,11 @@
    "name": "BiTherb Co., Ltd.",
    "name_th": "",
    "licence": "ICO portal",
+   "licence_th": "ผู้ให้บริการระบบ ICO",
    "since": "",
    "status": "revoked",
    "notes": "ICO portal approval revoked by the SEC Board effective 21 Oct 2025 for failing to keep required qualifications; the SEC said it had no clients or open transactions.",
+   "notes_th": "คณะกรรมการ ก.ล.ต. เพิกถอนความเห็นชอบการเป็นผู้ให้บริการระบบ ICO มีผลตั้งแต่วันที่ 21 ต.ค. 2025 เนื่องจากไม่คงคุณสมบัติตามที่กำหนด ก.ล.ต. ระบุว่าบริษัทไม่มีลูกค้าหรือธุรกรรมค้างอยู่",
    "source": {
     "title": "BiTherb was revoked of its approval as an ICO portal (News No. 268/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=268&NewsYear=2025&Lang=EN",
@@ -1115,6 +1175,7 @@
    "name": "Bybit (bybit.com)",
    "date": "2025-06-28",
    "action": "Access blocked by MDES from 28 Jun 2025 on SEC referral of 29 May 2025; SEC criminal complaint filed 22 Dec 2023.",
+   "action_th": "กระทรวงดีอีปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิ.ย. 2025 ตามที่ ก.ล.ต. ส่งเรื่องเมื่อวันที่ 29 พ.ค. 2025 ก.ล.ต. กล่าวโทษทางอาญาเมื่อวันที่ 22 ธ.ค. 2023",
    "source": {
     "title": "SEC urges investors to secure their assets before access restrictions of Bybit, 1000X, CoinEx, OKX and XT.COM platforms take effect on 28 June 2025 (News No. 160/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=12048&NewsNo=160&NewsYear=2025&Lang=EN",
@@ -1125,6 +1186,7 @@
    "name": "OKX (okx.com)",
    "date": "2025-06-28",
    "action": "Access blocked from 28 Jun 2025; named on the SEC alert list 17 Oct 2019; criminal complaint against the operator (Aux Cayes FinTech) and nine promoters 21 Mar 2025.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิ.ย. 2025 อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ตั้งแต่วันที่ 17 ต.ค. 2019 มีการกล่าวโทษทางอาญาผู้ให้บริการ (Aux Cayes FinTech) และผู้โปรโมต 9 รายเมื่อวันที่ 21 มี.ค. 2025",
    "source": {
     "title": "SEC urges investors to secure their assets before access restrictions of Bybit, 1000X, CoinEx, OKX and XT.COM platforms take effect on 28 June 2025 (News No. 160/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=12048&NewsNo=160&NewsYear=2025&Lang=EN",
@@ -1135,6 +1197,7 @@
    "name": "CoinEx",
    "date": "2025-06-28",
    "action": "Access blocked from 28 Jun 2025; named on the SEC alert list 17 May 2022.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิ.ย. 2025 อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ตั้งแต่วันที่ 17 พ.ค. 2022",
    "source": {
     "title": "SEC urges investors to secure their assets before access restrictions of Bybit, 1000X, CoinEx, OKX and XT.COM platforms take effect on 28 June 2025 (News No. 160/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=12048&NewsNo=160&NewsYear=2025&Lang=EN",
@@ -1145,6 +1208,7 @@
    "name": "XT.COM",
    "date": "2025-06-28",
    "action": "Access blocked from 28 Jun 2025; named on the SEC alert list 17 May 2022; criminal complaint 21 Mar 2025.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิ.ย. 2025 อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ตั้งแต่วันที่ 17 พ.ค. 2022 มีการกล่าวโทษทางอาญาเมื่อวันที่ 21 มี.ค. 2025",
    "source": {
     "title": "SEC urges investors to secure their assets before access restrictions of Bybit, 1000X, CoinEx, OKX and XT.COM platforms take effect on 28 June 2025 (News No. 160/2025)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=12048&NewsNo=160&NewsYear=2025&Lang=EN",
@@ -1155,6 +1219,7 @@
    "name": "1000X (1000x.live)",
    "date": "2025-06-28",
    "action": "Access blocked from 28 Jun 2025; criminal complaint March 2023 against 1000X Limited and Worawat Narknawdee, with the public prosecutor as of 12 Mar 2026.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 28 มิ.ย. 2025 มีการกล่าวโทษทางอาญาเมื่อเดือนมีนาคม 2023 ต่อ 1000X Limited และ Worawat Narknawdee ณ วันที่ 12 มี.ค. 2026 คดีอยู่ที่พนักงานอัยการ",
    "source": {
     "title": "SEC provides information on actions taken against unlicensed digital asset businesses",
     "url": "https://www.sec.or.th/EN/Documents/SEC-12-03-2026-2.pdf",
@@ -1165,6 +1230,7 @@
    "name": "Bitazza Global (bitazza.com)",
    "date": "2026-03-22",
    "action": "Access blocked from 22 Mar 2026; criminal complaint 20 Feb 2026 against Bitazza International, Bitazza Co., Ltd. and two executives for a jointly run unlicensed exchange.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 22 มี.ค. 2026 มีการกล่าวโทษทางอาญาเมื่อวันที่ 20 ก.พ. 2026 ต่อ Bitazza International, บริษัท บิทาซซ่า จำกัด และผู้บริหาร 2 ราย กรณีร่วมกันประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาต",
    "source": {
     "title": "SEC files criminal complaints against Bitazza Global, Bitazza, and their executives for operating an unlicensed digital asset exchange, and issues an investor alert on blocking access to the Bitazza Global platform, effective 22 March 2026 (News No. 46/2026)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=46&NewsYear=2026&Lang=EN",
@@ -1175,6 +1241,7 @@
    "name": "Exmix (exmix.co, wallet.exmix.io)",
    "date": "2026-05-02",
    "action": "Access blocked from 2 May 2026; criminal complaint 2 Apr 2026 for an unlicensed dealer business.",
+   "action_th": "ปิดกั้นการเข้าถึงตั้งแต่วันที่ 2 พ.ค. 2026 มีการกล่าวโทษทางอาญาเมื่อวันที่ 2 เม.ย. 2026 กรณีประกอบธุรกิจผู้ค้าสินทรัพย์ดิจิทัลโดยไม่ได้รับอนุญาต",
    "source": {
     "title": "SEC files criminal complaint against Exmix together with the executive for operating digital asset dealer business without a license, and issues an investor alert on platform blocking effective 2 May 2026 (News No. 70/2026)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=70&NewsYear=2026&Lang=EN",
@@ -1185,6 +1252,7 @@
    "name": "Holdstation app",
    "date": "2026-10-01",
    "action": "Access block scheduled from 1 Oct 2026; criminal complaint 1 Sep 2026 against its developers for an unlicensed brokerage with Thai-language service.",
+   "action_th": "กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 1 ต.ค. 2026 มีการกล่าวโทษทางอาญาเมื่อวันที่ 1 ก.ย. 2026 ต่อผู้พัฒนาแอป กรณีประกอบธุรกิจนายหน้าโดยไม่ได้รับอนุญาตและให้บริการเป็นภาษาไทย",
    "source": {
     "title": "SEC files criminal complaint against Holdstation and UNO application service providers and an alleged supporter for operating an unlicensed digital asset brokerage business, and notifies access blocking effective 1 October 2026 (News No. 178/2026)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13284",
@@ -1195,6 +1263,7 @@
    "name": "UNO app",
    "date": "2026-10-01",
    "action": "Access block scheduled from 1 Oct 2026; complaint 1 Sep 2026 against its developer and against Tools for Humanity Corporation and its CEO as supporters.",
+   "action_th": "กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 1 ต.ค. 2026 มีการกล่าวโทษเมื่อวันที่ 1 ก.ย. 2026 ต่อผู้พัฒนาแอป และต่อ Tools for Humanity Corporation กับประธานเจ้าหน้าที่บริหารในฐานะผู้สนับสนุน",
    "source": {
     "title": "SEC files criminal complaint against Holdstation and UNO application service providers and an alleged supporter for operating an unlicensed digital asset brokerage business, and notifies access blocking effective 1 October 2026 (News No. 178/2026)",
     "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13284",
@@ -1205,6 +1274,7 @@
    "name": "Binance (binance.com)",
    "date": "2021-04-05",
    "action": "Named on the SEC Investor Alert list as not licensed. Its Thai licensed affiliate trades as Binance TH (Gulf Binance).",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต บริษัทในเครือที่ได้รับอนุญาตในไทยให้บริการในชื่อ Binance TH (Gulf Binance)",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1215,6 +1285,7 @@
    "name": "Pionex",
    "date": "2022-05-17",
    "action": "Named on the SEC Investor Alert list as not licensed.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1225,6 +1296,7 @@
    "name": "Bitget",
    "date": "2023-05-08",
    "action": "Named on the SEC Investor Alert list as not licensed; the Bitget Wallet app added 19 Aug 2025.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต แอป Bitget Wallet ถูกเพิ่มเข้ารายชื่อเมื่อวันที่ 19 ส.ค. 2025",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1235,6 +1307,7 @@
    "name": "B2BinPAY (crypto payment gateway)",
    "date": "2024-09-18",
    "action": "Named on the SEC Investor Alert list as not licensed.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1245,6 +1318,7 @@
    "name": "MEXC",
    "date": "2026-04-29",
    "action": "Named on the SEC Investor Alert list as unlicensed for securities/derivatives and for digital asset business.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาตทั้งด้านหลักทรัพย์/สัญญาซื้อขายล่วงหน้าและด้านธุรกิจสินทรัพย์ดิจิทัล",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1255,6 +1329,7 @@
    "name": "Axi (AxiTrader)",
    "date": "2026-06-08",
    "action": "Named on the SEC Investor Alert list as unlicensed for securities/derivatives and for digital asset business.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาตทั้งด้านหลักทรัพย์/สัญญาซื้อขายล่วงหน้าและด้านธุรกิจสินทรัพย์ดิจิทัล",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1265,6 +1340,7 @@
    "name": "touristdigipay.net (site using the TouristDigiPay name)",
    "date": "2026-07-30",
    "action": "Named on the SEC Investor Alert list as not licensed.",
+   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -1276,10 +1352,13 @@
   {
    "id": "crypto-income-revenue-code-2018",
    "title": "Crypto gains as assessable income, 15% withholding",
+   "title_th": "กำไรจากคริปโตเป็นเงินได้พึงประเมิน หักภาษี ณ ที่จ่าย 15%",
    "date": "2018-05-14",
    "status": "in force",
    "what": "The Emergency Decree amending the Revenue Code (No. 19) B.E. 2561 adds two income types to Section 40(4): shares of profit or similar benefits from holding digital tokens (40(4)(g)), and gains from transferring cryptocurrency or digital tokens above cost (40(4)(h)). Both carry 15% withholding under Section 50(2)(f) for resident and non-resident individuals, creditable against the annual tax. Gains go into the annual personal income tax return at the progressive rates.",
+   "what_th": "พระราชกำหนดแก้ไขเพิ่มเติมประมวลรัษฎากร (ฉบับที่ 19) พ.ศ. 2561 เพิ่มเงินได้ 2 ประเภทในมาตรา 40(4) ได้แก่ ส่วนแบ่งกำไรหรือผลประโยชน์อื่นในลักษณะเดียวกันจากการถือโทเคนดิจิทัล (มาตรา 40(4)(ช)) และผลประโยชน์จากการโอนคริปโตเคอร์เรนซีหรือโทเคนดิจิทัลส่วนที่เกินกว่าต้นทุน (มาตรา 40(4)(ซ)) เงินได้ทั้งสองประเภทต้องหักภาษี ณ ที่จ่าย 15% ตามมาตรา 50(2)(ฉ) ทั้งบุคคลธรรมดาที่มีถิ่นที่อยู่และไม่มีถิ่นที่อยู่ในไทย และนำไปเครดิตกับภาษีประจำปีได้ กำไรต้องนำไปรวมในแบบแสดงรายการภาษีเงินได้บุคคลธรรมดาประจำปีตามอัตราก้าวหน้า",
    "example": "Revenue Department rate table applied to 400,000 baht of net taxable income: 0% on the first 150,000; 5% on 150,001-300,000 (7,500 baht); 10% on 300,001-400,000 (10,000 baht); total 17,500 baht. Brackets run from exempt up to 150,000 baht to 35% above 4,000,000 baht. (Arithmetic applied to the RD table; the RD page gives no crypto example.)",
+   "example_th": "ใช้ตารางอัตราภาษีของกรมสรรพากรกับเงินได้สุทธิ 400,000 บาท: 0% สำหรับ 150,000 บาทแรก 5% สำหรับช่วง 150,001-300,000 บาท (7,500 บาท) 10% สำหรับช่วง 300,001-400,000 บาท (10,000 บาท) รวม 17,500 บาท ขั้นเงินได้เริ่มจากยกเว้นภาษีสำหรับเงินได้ไม่เกิน 150,000 บาท ไปจนถึง 35% สำหรับส่วนที่เกิน 4,000,000 บาท (คำนวณตามตารางของกรมสรรพากร หน้าเว็บของกรมสรรพากรไม่มีตัวอย่างเรื่องคริปโต)",
    "sources": [
     {
      "title": "New Tax Law on Cryptocurrency and Digital Tokens",
@@ -1301,10 +1380,13 @@
   {
    "id": "mr-399-capital-gains-exemption",
    "title": "Five-year exemption for crypto gains on licensed Thai platforms",
+   "title_th": "ยกเว้นภาษี 5 ปีสำหรับกำไรคริปโตบนแพลตฟอร์มที่ได้รับอนุญาตในไทย",
    "date": "2025-09-05",
    "status": "in force",
    "what": "Ministerial Regulation No. 399 (B.E. 2568), published in the Government Gazette on 5 September 2025, exempts individuals from personal income tax on gains from transferring cryptocurrency or digital tokens through an SEC-licensed digital asset exchange, broker or dealer, for transfers from 1 January 2025 to 31 December 2029. Companies are excluded. The exemption turns on the sale going through a licensed Thai operator, so offshore, peer-to-peer and private sales outside licensed operators are not covered.",
+   "what_th": "กฎกระทรวง ฉบับที่ 399 (พ.ศ. 2568) ซึ่งประกาศในราชกิจจานุเบกษาเมื่อวันที่ 5 กันยายน 2025 ยกเว้นภาษีเงินได้บุคคลธรรมดาสำหรับกำไรจากการโอนคริปโตเคอร์เรนซีหรือโทเคนดิจิทัลผ่านศูนย์ซื้อขาย นายหน้า หรือผู้ค้าสินทรัพย์ดิจิทัลที่ได้รับอนุญาตจาก ก.ล.ต. สำหรับการโอนตั้งแต่วันที่ 1 มกราคม 2025 ถึง 31 ธันวาคม 2029 ไม่รวมนิติบุคคล การยกเว้นขึ้นอยู่กับว่าการขายทำผ่านผู้ประกอบธุรกิจที่ได้รับอนุญาตในไทย ดังนั้นการขายบนแพลตฟอร์มต่างประเทศ การขายแบบบุคคลต่อบุคคล และการขายส่วนตัวนอกผู้ประกอบธุรกิจที่ได้รับอนุญาต จึงไม่ได้รับการยกเว้น",
    "example": "Illustration, not from the sources: buy 1 BTC on a licensed Thai exchange for 2,000,000 baht and sell it there in 2026 for 2,600,000 baht; the 600,000 baht gain is exempt. The same sale on an offshore exchange gets no exemption under this regulation. After 31 December 2029 the exemption ends unless extended.",
+   "example_th": "ตัวอย่างสมมติ ไม่ได้มาจากแหล่งข้อมูล: ซื้อ 1 BTC บนศูนย์ซื้อขายที่ได้รับอนุญาตในไทยในราคา 2,000,000 บาท และขายบนศูนย์ซื้อขายเดียวกันในปี 2026 ในราคา 2,600,000 บาท กำไร 600,000 บาทได้รับยกเว้นภาษี การขายแบบเดียวกันบนศูนย์ซื้อขายต่างประเทศไม่ได้รับยกเว้นตามกฎกระทรวงนี้ หลังวันที่ 31 ธันวาคม 2029 การยกเว้นจะสิ้นสุดลง เว้นแต่มีการขยายเวลา",
    "sources": [
     {
      "title": "Thailand Offers Income Tax Exemption on Cryptocurrency Capital Gains",
@@ -1326,10 +1408,13 @@
   {
    "id": "por-161-2566",
    "title": "Foreign income taxed when brought in, in any year",
+   "title_th": "เงินได้จากต่างประเทศเสียภาษีเมื่อนำเข้า ไม่ว่าในปีใด",
    "date": "2024-01-01",
    "status": "in force",
    "what": "Revenue Department Order Por. 161/2566, signed 15 September 2023, reads Section 41 paragraph 2 of the Revenue Code so that a Thai tax resident who earns income from work, business or property abroad must add it to taxable income in the year it is brought into Thailand, whatever year it was earned. It applies to income brought in from 1 January 2024. Before this, income brought in after the year it was earned escaped Thai tax. Partial remittances are taxed pro rata.",
+   "what_th": "คำสั่งกรมสรรพากรที่ ป.161/2566 ลงนามเมื่อวันที่ 15 กันยายน 2023 ตีความมาตรา 41 วรรคสอง แห่งประมวลรัษฎากร ว่าผู้มีถิ่นที่อยู่ทางภาษีของไทยที่มีเงินได้จากงาน กิจการ หรือทรัพย์สินในต่างประเทศ ต้องนำเงินได้นั้นมารวมคำนวณภาษีในปีที่นำเข้ามาในประเทศไทย ไม่ว่าจะได้รับในปีใด ใช้กับเงินได้ที่นำเข้ามาตั้งแต่วันที่ 1 มกราคม 2024 ก่อนหน้านี้ เงินได้ที่นำเข้ามาหลังปีที่ได้รับไม่ต้องเสียภาษีในไทย การนำเงินเข้ามาเพียงบางส่วนเสียภาษีตามสัดส่วน",
    "example": "From the RD guide: income earned from 1 January 2024 by a foreigner who stayed 180 days or more in Thailand in the year of earning is taxed when brought in, even in a later year; income earned in a year of fewer than 180 days is not. A resident who earned 1,000,000 baht abroad in 2025 and transfers 400,000 baht of it to Thailand in 2026 reports the 400,000 baht for 2026 (arithmetic on the RD rule).",
+   "example_th": "จากคู่มือของกรมสรรพากร: เงินได้ที่ได้รับตั้งแต่วันที่ 1 มกราคม 2024 ของชาวต่างชาติที่อยู่ในประเทศไทย 180 วันขึ้นไปในปีที่ได้รับเงินได้ ต้องเสียภาษีเมื่อนำเข้ามา แม้จะนำเข้าในปีต่อมา ส่วนเงินได้ที่ได้รับในปีที่อยู่ในไทยน้อยกว่า 180 วันไม่ต้องเสียภาษี ผู้มีถิ่นที่อยู่ทางภาษีที่มีเงินได้ในต่างประเทศ 1,000,000 บาทในปี 2025 และโอนเข้าไทย 400,000 บาทในปี 2026 ต้องรายงานเงินได้ 400,000 บาทสำหรับปี 2026 (คำนวณตามหลักเกณฑ์ของกรมสรรพากร)",
    "sources": [
     {
      "title": "คำสั่งกรมสรรพากร ที่ ป.161/2566 (Revenue Department Order Por. 161/2566, text as amended by Por. 162/2566)",
@@ -1358,10 +1443,13 @@
   {
    "id": "por-162-2566",
    "title": "Income earned before 2024 stays outside the new rule",
+   "title_th": "เงินได้ที่ได้รับก่อนปี 2024 ไม่อยู่ในหลักเกณฑ์ใหม่",
    "date": "2023-11-20",
    "status": "in force",
    "what": "Order Por. 162/2566, dated 20 November 2023, amends Por. 161/2566 so it does not apply to assessable income that arose before 1 January 2024. Such income can be brought into Thailand in a later year without Thai tax under the old reading.",
+   "what_th": "คำสั่งกรมสรรพากรที่ ป.162/2566 ลงวันที่ 20 พฤศจิกายน 2023 แก้ไขคำสั่งที่ ป.161/2566 ไม่ให้ใช้กับเงินได้พึงประเมินที่เกิดขึ้นก่อนวันที่ 1 มกราคม 2024 เงินได้ดังกล่าวนำเข้ามาในประเทศไทยในปีต่อมาได้โดยไม่ต้องเสียภาษีในไทย ตามการตีความแบบเดิม",
    "example": "Savings earned abroad in 2022 and moved to Thailand in 2026 are not taxed on arrival (RD guide, case 1). Proof of when the money was earned may be requested.",
+   "example_th": "เงินออมที่ได้รับในต่างประเทศในปี 2022 และโอนเข้าไทยในปี 2026 ไม่ต้องเสียภาษีเมื่อนำเข้า (คู่มือกรมสรรพากร กรณีที่ 1) อาจถูกขอหลักฐานว่าได้รับเงินนั้นเมื่อใด",
    "sources": [
     {
      "title": "คำสั่งกรมสรรพากร ที่ ป.161/2566 (Revenue Department Order Por. 161/2566, text as amended by Por. 162/2566)",
@@ -1390,10 +1478,13 @@
   {
    "id": "tax-residence-180-days",
    "title": "Tax residence: 180 days in a calendar year",
+   "title_th": "ผู้มีถิ่นที่อยู่ทางภาษี: 180 วันในหนึ่งปีปฏิทิน",
    "date": "2024-09-24",
    "status": "in force",
    "what": "An individual present in Thailand for 180 days or more in a calendar year, counted in total, is a Thai tax resident for that year and taxable on Thai-source income plus foreign income brought in. Non-residents pay tax only on Thai-source income. The RD's 2024 guide for foreigners says 180 days or more; the RD English personal income tax page says more than 180 days.",
+   "what_th": "บุคคลที่อยู่ในประเทศไทยรวมกัน 180 วันขึ้นไปในหนึ่งปีปฏิทิน เป็นผู้มีถิ่นที่อยู่ทางภาษีของไทยสำหรับปีนั้น และต้องเสียภาษีจากเงินได้ที่มีแหล่งในไทย รวมถึงเงินได้จากต่างประเทศที่นำเข้ามา ผู้ไม่มีถิ่นที่อยู่ทางภาษีเสียภาษีเฉพาะเงินได้ที่มีแหล่งในไทย คู่มือสำหรับชาวต่างชาติของกรมสรรพากรปี 2024 ระบุว่า 180 วันขึ้นไป ส่วนหน้าเว็บภาษีเงินได้บุคคลธรรมดาภาษาอังกฤษของกรมสรรพากรระบุว่าเกิน 180 วัน",
    "example": "RD guide, case 2: foreign income of a foreigner who was not a Thai tax resident when it was earned is not taxed when later brought into Thailand.",
+   "example_th": "คู่มือกรมสรรพากร กรณีที่ 2: เงินได้จากต่างประเทศของชาวต่างชาติที่ไม่ได้เป็นผู้มีถิ่นที่อยู่ทางภาษีของไทยในขณะที่ได้รับเงินได้นั้น ไม่ต้องเสียภาษีเมื่อนำเข้ามาในไทยภายหลัง",
    "sources": [
     {
      "title": "How do foreigners living in Thailand pay tax?",
@@ -1422,10 +1513,13 @@
   {
    "id": "remittance-exemption-proposal",
    "title": "Proposed exemption for foreign income brought in within two years",
+   "title_th": "ข้อเสนอยกเว้นภาษีเงินได้จากต่างประเทศที่นำเข้าภายใน 2 ปี",
    "date": "2025-06-04",
    "status": "proposed",
    "what": "The Revenue Department's director-general, Pinsai Suraswadi, said in June 2025 the department was drafting a ministerial regulation to exempt foreign-sourced income brought into Thailand in the year it is earned or the following year; income brought in from the third year would be taxed normally, and the change would not be retroactive. The stated aim was repatriation of an estimated 2 trillion baht held abroad. As of July 2026 the measure had not been published in the Royal Gazette, according to Thai law firms; one attributes the stall to the dissolution of Parliament before the 8 February 2026 election.",
+   "what_th": "นายปิ่นสาย สุรัสวดี อธิบดีกรมสรรพากร กล่าวเมื่อเดือนมิถุนายน 2025 ว่ากรมกำลังยกร่างกฎกระทรวงเพื่อยกเว้นภาษีเงินได้จากต่างประเทศที่นำเข้ามาในประเทศไทยในปีที่ได้รับหรือปีถัดไป เงินได้ที่นำเข้าตั้งแต่ปีที่ 3 จะเสียภาษีตามปกติ และจะไม่มีผลย้อนหลัง เป้าหมายที่ระบุคือดึงเงินที่คาดว่าอยู่ในต่างประเทศราว 2 ล้านล้านบาทกลับประเทศ ณ เดือนกรกฎาคม 2026 มาตรการนี้ยังไม่ได้ประกาศในราชกิจจานุเบกษา ตามข้อมูลของสำนักงานกฎหมายในไทย โดยสำนักงานหนึ่งระบุว่าเรื่องค้างอยู่เพราะมีการยุบสภาก่อนการเลือกตั้งวันที่ 8 กุมภาพันธ์ 2026",
    "example": "As described by Bangkok Post (not law): income earned abroad in 2025 and brought in during 2025 or 2026 would be exempt; brought in during 2027, taxed. Under the rule in force today, the 2025 income is taxed in whichever year it arrives.",
+   "example_th": "ตามที่ Bangkok Post รายงาน (ยังไม่ใช่กฎหมาย): เงินได้ที่ได้รับในต่างประเทศในปี 2025 และนำเข้าในปี 2025 หรือ 2026 จะได้รับยกเว้น หากนำเข้าในปี 2027 จะต้องเสียภาษี ตามหลักเกณฑ์ที่ใช้อยู่ในปัจจุบัน เงินได้ปี 2025 ต้องเสียภาษีในปีที่นำเข้า ไม่ว่าจะเป็นปีใด",
    "sources": [
     {
      "title": "New approach to overseas income aims to spur inflows",
@@ -1461,10 +1555,13 @@
   {
    "id": "crypto-sold-abroad",
    "title": "Crypto sold abroad and the proceeds brought in",
+   "title_th": "คริปโตที่ขายในต่างประเทศแล้วนำเงินเข้าไทย",
    "date": "2024-01-01",
    "status": "in force",
    "what": "No Revenue Department guidance specific to crypto sold on foreign platforms turned up in this research. Under the general rules, a gain above cost on crypto is assessable income (Section 40(4)(h)); for a Thai tax resident, gains treated as foreign-sourced become taxable when brought into Thailand under Por. 161/2566, unless earned before 1 January 2024 (Por. 162/2566). The MR 399 exemption covers only transfers through SEC-licensed Thai operators. Whether a gain on an offshore exchange is foreign-sourced, and how the gain portion of a partial transfer is measured, is not settled in the sources read.",
+   "what_th": "การค้นคว้านี้ไม่พบแนวทางของกรมสรรพากรที่ว่าด้วยคริปโตที่ขายบนแพลตฟอร์มต่างประเทศโดยเฉพาะ ตามหลักทั่วไป กำไรจากคริปโตส่วนที่เกินต้นทุนเป็นเงินได้พึงประเมิน (มาตรา 40(4)(ซ)) สำหรับผู้มีถิ่นที่อยู่ทางภาษีของไทย กำไรที่ถือเป็นเงินได้จากแหล่งต่างประเทศต้องเสียภาษีเมื่อนำเข้ามาในไทยตามคำสั่งกรมสรรพากรที่ ป.161/2566 เว้นแต่ได้รับก่อนวันที่ 1 มกราคม 2024 (คำสั่งกรมสรรพากรที่ ป.162/2566) การยกเว้นตามกฎกระทรวง ฉบับที่ 399 ครอบคลุมเฉพาะการโอนผ่านผู้ประกอบธุรกิจในไทยที่ได้รับอนุญาตจาก ก.ล.ต. แหล่งข้อมูลที่อ่านยังไม่ได้ข้อยุติว่ากำไรบนศูนย์ซื้อขายต่างประเทศถือเป็นเงินได้จากแหล่งต่างประเทศหรือไม่ และส่วนที่เป็นกำไรในการโอนเงินเข้ามาบางส่วนวัดอย่างไร",
    "example": "No worked example in the sources. The RD guide says a partial remittance is taxed pro rata and that tax paid abroad can be credited under a double tax agreement, capped at the Thai tax on that income.",
+   "example_th": "แหล่งข้อมูลไม่มีตัวอย่างการคำนวณ คู่มือกรมสรรพากรระบุว่าการนำเงินเข้ามาบางส่วนเสียภาษีตามสัดส่วน และภาษีที่เสียในต่างประเทศนำมาเครดิตได้ตามอนุสัญญาภาษีซ้อน โดยไม่เกินภาษีไทยที่คำนวณจากเงินได้นั้น",
    "sources": [
     {
      "title": "New Tax Law on Cryptocurrency and Digital Tokens",
@@ -1500,10 +1597,13 @@
   {
    "id": "dta-foreign-tax-credit",
    "title": "Credit for foreign tax under double tax agreements",
+   "title_th": "เครดิตภาษีต่างประเทศตามอนุสัญญาภาษีซ้อน",
    "date": "2024-09-24",
    "status": "in force",
    "what": "A Thai tax resident who paid tax abroad on income later brought into Thailand can credit that tax against Thai tax where a double tax agreement allows it. The credit cannot exceed the Thai tax on that income. Supporting documents must be in English or Thai; the RD recommends a tax payment certificate from the foreign tax authority.",
+   "what_th": "ผู้มีถิ่นที่อยู่ทางภาษีของไทยที่เสียภาษีในต่างประเทศสำหรับเงินได้ที่นำเข้ามาในไทยภายหลัง นำภาษีนั้นมาเครดิตกับภาษีไทยได้หากอนุสัญญาภาษีซ้อนเปิดให้ทำได้ เครดิตต้องไม่เกินภาษีไทยที่คำนวณจากเงินได้นั้น เอกสารประกอบต้องเป็นภาษาอังกฤษหรือภาษาไทย กรมสรรพากรแนะนำให้ใช้หนังสือรับรองการเสียภาษีจากหน่วยงานภาษีของต่างประเทศ",
    "example": "No numbers in the source.",
+   "example_th": "แหล่งข้อมูลไม่มีตัวเลข",
    "sources": [
     {
      "title": "How do foreigners living in Thailand pay tax?",
@@ -1518,10 +1618,13 @@
   {
    "id": "carf-2028",
    "title": "OECD crypto reporting (CARF): first exchanges by 2028",
+   "title_th": "การรายงานคริปโตตามกรอบของ OECD (CARF): แลกเปลี่ยนข้อมูลครั้งแรกภายในปี 2028",
    "date": "2026-09-14",
    "status": "announced",
    "what": "Thailand is on the OECD list of jurisdictions committed to the Crypto-Asset Reporting Framework, in the group undertaking first exchanges by 2028 (27 jurisdictions, including Singapore, Malaysia, Hong Kong and the UAE). Under CARF, crypto service providers report customers' transactions to their tax authority, which exchanges them with the customer's country of residence. The Thai domestic law and the first reporting year were not found in this research.",
+   "what_th": "ประเทศไทยอยู่ในรายชื่อของ OECD ในกลุ่มประเทศและเขตอำนาจที่ให้คำมั่นว่าจะใช้ Crypto-Asset Reporting Framework (CARF) โดยอยู่ในกลุ่มที่จะเริ่มแลกเปลี่ยนข้อมูลครั้งแรกภายในปี 2028 (27 ประเทศและเขตอำนาจ รวมถึงสิงคโปร์ มาเลเซีย ฮ่องกง และสหรัฐอาหรับเอมิเรตส์) ภายใต้ CARF ผู้ให้บริการคริปโตรายงานธุรกรรมของลูกค้าต่อหน่วยงานภาษีของตน ซึ่งจะแลกเปลี่ยนข้อมูลกับประเทศที่ลูกค้ามีถิ่นที่อยู่ การค้นคว้านี้ไม่พบกฎหมายภายในของไทยและปีแรกที่ต้องรายงาน",
    "example": "No numbers in the source. Under the framework, once exchanges start, a CARF-reporting platform abroad reports a Thai tax resident's crypto transactions to its own tax authority, which passes them to the Revenue Department; Thai platforms report non-residents' data the other way.",
+   "example_th": "แหล่งข้อมูลไม่มีตัวเลข ตามกรอบนี้ เมื่อเริ่มแลกเปลี่ยนข้อมูลแล้ว แพลตฟอร์มในต่างประเทศที่รายงานตาม CARF จะรายงานธุรกรรมคริปโตของผู้มีถิ่นที่อยู่ทางภาษีของไทยต่อหน่วยงานภาษีของประเทศนั้น ซึ่งจะส่งต่อให้กรมสรรพากร ส่วนแพลตฟอร์มในไทยจะรายงานข้อมูลของผู้ไม่มีถิ่นที่อยู่ในไทยไปในทางกลับกัน",
    "sources": [
     {
      "title": "Jurisdictions committed to implement the Crypto-Asset Reporting Framework (last update 14 September 2026)",
@@ -1538,9 +1641,12 @@
   {
    "id": "kbank-foreigner-accounts",
    "title": "Kasikornbank: visas accepted for a savings account",
+   "title_th": "ธนาคารกสิกรไทย: วีซ่าที่รับสำหรับบัญชีออมทรัพย์",
    "date": "2026-09-23",
    "what": "Kasikornbank's savings account page lists, for foreigners: passport; a Non-Immigrant visa (all types); and documents matching the purpose of stay, such as a work permit or a school or university certificate. It states that accounts are not opened for holders of a TR visa or other visas meant for travel, naming Visa on Arrival, visa exemption and the Destination Thailand Visa (DTV).",
+   "what_th": "หน้าบัญชีออมทรัพย์ของธนาคารกสิกรไทยระบุเอกสารสำหรับชาวต่างชาติ ได้แก่ หนังสือเดินทาง วีซ่า Non-Immigrant (ทุกประเภท) และเอกสารที่สอดคล้องกับวัตถุประสงค์การพำนัก เช่น ใบอนุญาตทำงาน หรือหนังสือรับรองจากโรงเรียนหรือมหาวิทยาลัย และระบุว่าไม่เปิดบัญชีให้ผู้ถือวีซ่า TR หรือวีซ่าอื่นที่ใช้เพื่อการท่องเที่ยว โดยระบุชื่อ Visa on Arrival การยกเว้นการตรวจลงตรา และ Destination Thailand Visa (DTV)",
    "for_foreigners": "At Kasikornbank a DTV, a visa exemption stamp or a visa on arrival does not qualify; a Non-Immigrant visa plus purpose documents does. The page does not list the LTR visa or Thailand Privilege separately; it links a separate 'Long Term Resident Solution' page.",
+   "for_foreigners_th": "ที่ธนาคารกสิกรไทย DTV ตราประทับยกเว้นการตรวจลงตรา หรือ Visa on Arrival ใช้เปิดบัญชีไม่ได้ ส่วนวีซ่า Non-Immigrant พร้อมเอกสารแสดงวัตถุประสงค์ใช้ได้ หน้านี้ไม่ได้ระบุวีซ่า LTR หรือ Thailand Privilege แยกไว้ แต่มีลิงก์ไปยังหน้า 'Long Term Resident Solution' ต่างหาก",
    "sources": [
     {
      "title": "Savings Account (For foreigner or resident in Thailand)",
@@ -1555,9 +1661,12 @@
   {
    "id": "scb-foreigner-accounts",
    "title": "Siam Commercial Bank: passport and work permit",
+   "title_th": "ธนาคารไทยพาณิชย์: หนังสือเดินทางและใบอนุญาตทำงาน",
    "date": "2026-09-23",
    "what": "SCB's deposit FAQ lists the documents for a savings account as an ID card, with foreigners using a passport and work permit, or a government or state-enterprise employee card.",
+   "what_th": "คำถามที่พบบ่อยเรื่องเงินฝากของธนาคารไทยพาณิชย์ (SCB) ระบุเอกสารเปิดบัญชีออมทรัพย์ว่าใช้บัตรประจำตัวประชาชน โดยชาวต่างชาติใช้หนังสือเดินทางและใบอนุญาตทำงาน หรือใช้บัตรประจำตัวข้าราชการหรือพนักงานรัฐวิสาหกิจ",
    "for_foreigners": "SCB's published rule names a work permit; the FAQ does not describe alternatives for retirees or other visa holders.",
+   "for_foreigners_th": "เกณฑ์ที่ SCB เผยแพร่ระบุใบอนุญาตทำงาน คำถามที่พบบ่อยนี้ไม่ได้อธิบายทางเลือกอื่นสำหรับผู้เกษียณหรือผู้ถือวีซ่าประเภทอื่น",
    "sources": [
     {
      "title": "Deposit FAQs",
@@ -1572,9 +1681,12 @@
   {
    "id": "bangkok-bank-foreigner-accounts",
    "title": "Bangkok Bank: in person, documents set by the branch",
+   "title_th": "ธนาคารกรุงเทพ: เปิดบัญชีด้วยตนเอง เอกสารแล้วแต่สาขากำหนด",
    "date": "2026-09-23",
    "what": "Bangkok Bank's foreign customer FAQ says an account must be opened in person at a branch in Thailand and cannot be opened from abroad; Non-Resident Baht Accounts are opened at the head office, 333 Silom Road. Its savings account page gives no document list for foreigners and refers them to a branch.",
+   "what_th": "คำถามที่พบบ่อยสำหรับลูกค้าชาวต่างชาติของธนาคารกรุงเทพระบุว่าต้องเปิดบัญชีด้วยตนเองที่สาขาในประเทศไทย เปิดจากต่างประเทศไม่ได้ ส่วนบัญชีเงินบาทของผู้มีถิ่นที่อยู่นอกประเทศ (Non-Resident Baht Account) เปิดที่สำนักงานใหญ่ เลขที่ 333 ถนนสีลม หน้าบัญชีออมทรัพย์ไม่มีรายการเอกสารสำหรับชาวต่างชาติ และให้ติดต่อสาขา",
    "for_foreigners": "Requirements vary by branch at Bangkok Bank; the bank publishes none for foreigners.",
+   "for_foreigners_th": "ที่ธนาคารกรุงเทพ เกณฑ์แตกต่างกันไปตามสาขา ธนาคารไม่ได้เผยแพร่เกณฑ์สำหรับชาวต่างชาติ",
    "sources": [
     {
      "title": "Foreign Customers: FAQs",
@@ -1596,9 +1708,12 @@
   {
    "id": "bank-practice-reported",
    "title": "Bank practice for foreigners varies by bank and branch",
+   "title_th": "แนวปฏิบัติต่อชาวต่างชาติแตกต่างกันไปตามธนาคารและสาขา",
    "date": "2026-09-23",
    "what": "No Bank of Thailand rule lists which visas a bank must accept; each bank sets requirements under its own anti-money-laundering and know-your-customer policy. Published policies differ: Kasikornbank accepts any Non-Immigrant visa with purpose documents and excludes short-stay visas and the DTV; SCB names a work permit; Bangkok Bank leaves it to the branch. The BOT's September 2026 framework commits banks to stronger KYC, CDD and enhanced due diligence for high-risk customers.",
+   "what_th": "ไม่มีหลักเกณฑ์ของ ธปท. ที่ระบุว่าธนาคารต้องรับวีซ่าประเภทใด แต่ละธนาคารกำหนดเกณฑ์เองตามนโยบายป้องกันการฟอกเงินและการรู้จักลูกค้า (KYC) ของตน นโยบายที่เผยแพร่แตกต่างกัน ธนาคารกสิกรไทยรับวีซ่า Non-Immigrant ทุกประเภทพร้อมเอกสารแสดงวัตถุประสงค์ และไม่รับวีซ่าระยะสั้นและ DTV ธนาคารไทยพาณิชย์ระบุใบอนุญาตทำงาน ส่วนธนาคารกรุงเทพให้สาขาเป็นผู้พิจารณา กรอบการทำงานของ ธปท. เดือนกันยายน 2026 ให้ธนาคารยกระดับ KYC, CDD และการตรวจสอบอย่างเข้มข้น (EDD) สำหรับลูกค้าที่มีความเสี่ยงสูง",
    "for_foreigners": "Practice on the ground at branches, including for retirement, LTR and Privilege visa holders, is not published by most banks and was not verified here.",
+   "for_foreigners_th": "ธนาคารส่วนใหญ่ไม่ได้เผยแพร่แนวปฏิบัติจริงที่สาขา รวมถึงสำหรับผู้ถือวีซ่าเกษียณ LTR และ Privilege และการค้นคว้านี้ไม่ได้ตรวจสอบ",
    "sources": [
     {
      "title": "Savings Account (For foreigner or resident in Thailand)",
@@ -1634,9 +1749,12 @@
   {
    "id": "bot-mule-accounts-individual-level-2024",
    "title": "Mule accounts handled at the person level, cross-bank",
+   "title_th": "จัดการบัญชีม้าในระดับบุคคล ข้ามทุกธนาคาร",
    "date": "2024-08-01",
    "what": "The BOT raised mule-account management from the account to the individual: from 1 August 2024 all commercial banks share suspect data through the Central Fraud Registry (CFR). When a person is flagged, banks suspend electronic channels on all that person's accounts until verification and can refuse new accounts. Where a bank sees suspicious behaviour without a complaint, it suspends electronic transactions at minimum. Holders of accounts named in police reports or by AMLO must contact the Anti-Online Scam Operation Center on 1441.",
+   "what_th": "ธปท. ยกระดับการจัดการบัญชีม้าจากระดับบัญชีเป็นระดับบุคคล ตั้งแต่วันที่ 1 สิงหาคม 2024 ธนาคารพาณิชย์ทุกแห่งแลกเปลี่ยนข้อมูลผู้ต้องสงสัยผ่านระบบ Central Fraud Registry (CFR) เมื่อบุคคลใดถูกระบุชื่อ ธนาคารจะระงับช่องทางอิเล็กทรอนิกส์ของทุกบัญชีของบุคคลนั้นจนกว่าจะตรวจสอบยืนยัน และปฏิเสธการเปิดบัญชีใหม่ได้ หากธนาคารพบพฤติกรรมน่าสงสัยโดยไม่มีการร้องเรียน อย่างน้อยต้องระงับธุรกรรมทางอิเล็กทรอนิกส์ ผู้ถือบัญชีที่ถูกระบุในรายงานของตำรวจหรือของ ปปง. ต้องติดต่อศูนย์ปฏิบัติการต่อต้านอาชญากรรมออนไลน์ โทร 1441",
    "for_foreigners": "One flagged account can freeze app and online access at every Thai bank the person uses, and block opening a new one.",
+   "for_foreigners_th": "บัญชีเดียวที่ถูกระบุชื่ออาจทำให้แอปและช่องทางออนไลน์ของทุกธนาคารในไทยที่บุคคลนั้นใช้ถูกระงับ และทำให้เปิดบัญชีใหม่ไม่ได้",
    "sources": [
     {
      "title": "Banking Sectors Collaborates to Exchange Information Across Institutions and Implement Stringent Measures to Effectively Manage Mule Accounts (Joint Press Release)",
@@ -1651,9 +1769,12 @@
   {
    "id": "bot-mule-measures-2025",
    "title": "Wider mule-account screening from January 2025",
+   "title_th": "ขยายการคัดกรองบัญชีม้าตั้งแต่มกราคม 2025",
    "date": "2025-01-30",
    "what": "Banks must suspend outgoing transfers and refuse new accounts for people whose accounts carry a high risk of mule use even before any victim reports a loss; block money coming into clearly identified mule accounts; and warn senders who may be paying a mule account. Detection criteria now include transfer patterns and amounts, and banks share lists of people showing suspicious behaviour, not only those in AMLO or fraud reports.",
+   "what_th": "ธนาคารต้องระงับการโอนออกและปฏิเสธการเปิดบัญชีใหม่ของบุคคลที่บัญชีมีความเสี่ยงสูงว่าเป็นบัญชีม้า แม้ยังไม่มีผู้เสียหายแจ้งความ ต้องสกัดเงินที่โอนเข้าบัญชีที่ระบุได้ชัดว่าเป็นบัญชีม้า และต้องแจ้งเตือนผู้โอนที่อาจกำลังโอนเงินเข้าบัญชีม้า เกณฑ์การตรวจจับขยายให้รวมรูปแบบและจำนวนเงินที่โอน และธนาคารแลกเปลี่ยนรายชื่อบุคคลที่มีพฤติกรรมน่าสงสัย ไม่เฉพาะผู้ที่อยู่ในรายงานของ ปปง. หรือรายงานการฉ้อโกง",
    "for_foreigners": "Frequent incoming transfers from unrelated people, as in peer-to-peer crypto selling, fit the transfer patterns banks screen for, and an account can be restricted without a police complaint.",
+   "for_foreigners_th": "การรับโอนบ่อยครั้งจากบุคคลที่ไม่เกี่ยวข้องกัน เช่น ในการขายคริปโตแบบบุคคลต่อบุคคล ตรงกับรูปแบบการโอนที่ธนาคารใช้คัดกรอง และบัญชีอาจถูกจำกัดการใช้งานได้แม้ไม่มีการแจ้งความ",
    "sources": [
     {
      "title": "Bank of Thailand Enhances Measures to Manage Mule Accounts and Promotes a Shared Responsibility Framework (Press Release 2/2025)",
@@ -1668,9 +1789,12 @@
   {
    "id": "bot-app-and-biometric-rules-2023",
    "title": "Mobile banking limits and face scans",
+   "title_th": "ข้อจำกัดของโมบายแบงกิ้งและการสแกนใบหน้า",
    "date": "2023-03-09",
    "what": "BOT minimum standards: banks may not send links by SMS or email; one mobile banking user per app and one device; notification of every transaction; a facial biometric check for opening an account through an app, for transfers above 50,000 baht per transaction, and for raising the daily transfer limit above 50,000 baht. Banks must detect and temporarily hold suspicious transactions in near real time and run a 24-hour fraud hotline.",
+   "what_th": "มาตรฐานขั้นต่ำของ ธปท. กำหนดว่า ธนาคารห้ามส่งลิงก์ทาง SMS หรืออีเมล ผู้ใช้โมบายแบงกิ้ง 1 รายต่อ 1 แอปและ 1 อุปกรณ์ ต้องแจ้งเตือนทุกธุรกรรม และต้องยืนยันตัวตนด้วยใบหน้าเมื่อเปิดบัญชีผ่านแอป เมื่อโอนเงินเกิน 50,000 บาทต่อรายการ และเมื่อปรับวงเงินโอนต่อวันเกิน 50,000 บาท ธนาคารต้องตรวจจับและระงับธุรกรรมน่าสงสัยชั่วคราวได้แบบเกือบทันที และต้องมีสายด่วนรับแจ้งการฉ้อโกงตลอด 24 ชั่วโมง",
    "for_foreigners": "Large app transfers and limit changes need a face scan matched to the ID on file, typically the passport for foreigners.",
+   "for_foreigners_th": "การโอนเงินจำนวนมากผ่านแอปและการปรับวงเงินต้องสแกนใบหน้าให้ตรงกับบัตรที่ใช้เปิดบัญชี ซึ่งสำหรับชาวต่างชาติมักเป็นหนังสือเดินทาง",
    "sources": [
     {
      "title": "The Bank of Thailand issues additional measures to combat financial fraudulent activities",
@@ -1685,9 +1809,12 @@
   {
    "id": "mule-account-penalties",
    "title": "Penalties for lending, renting or selling an account",
+   "title_th": "โทษของการให้ยืม ให้เช่า หรือขายบัญชี",
    "date": "2023-03-17",
    "what": "Opening or letting someone use a bank, e-money or crypto account for crime: up to 3 years, up to 300,000 baht, or both. Arranging or advertising the purchase, sale, rent or loan of accounts: 2 to 5 years, 200,000 to 500,000 baht, or both. Crypto accounts were added by the April 2025 amendment.",
+   "what_th": "การเปิดบัญชีหรือยอมให้ผู้อื่นใช้บัญชีธนาคาร บัญชีเงินอิเล็กทรอนิกส์ หรือบัญชีคริปโตเพื่อกระทำความผิด มีโทษจำคุกไม่เกิน 3 ปี ปรับไม่เกิน 300,000 บาท หรือทั้งจำทั้งปรับ การจัดหาหรือโฆษณาเพื่อให้มีการซื้อ ขาย ให้เช่า หรือให้ยืมบัญชี มีโทษจำคุก 2 ถึง 5 ปี ปรับ 200,000 ถึง 500,000 บาท หรือทั้งจำทั้งปรับ บัญชีคริปโตถูกเพิ่มเข้ามาโดยการแก้ไขกฎหมายเมื่อเดือนเมษายน 2025",
    "for_foreigners": "The offences apply to anyone in Thailand, foreign nationals included.",
+   "for_foreigners_th": "ความผิดเหล่านี้ใช้กับทุกคนในประเทศไทย รวมถึงชาวต่างชาติ",
    "sources": [
     {
      "title": "พระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี พ.ศ. 2566 (Royal Gazette vol. 140, part 18 A, p. 1)",
@@ -1716,9 +1843,12 @@
   {
    "id": "bot-illicit-activity-framework-2026",
    "title": "Financial-sector framework against illicit activity",
+   "title_th": "กรอบการทำงานของภาคการเงินเพื่อต่อต้านธุรกรรมผิดกฎหมาย",
    "date": "2026-09-10",
    "what": "The BOT and 11 industry bodies, including the Thai Bankers' Association, foreign bank and e-payment associations and non-bank lenders, adopted a framework to tighten KYC, CDD and enhanced due diligence, scrutinise high-risk cash transactions, build a database of high-risk individuals linked to the Central Fraud Registry, and issue industry anti-money-laundering guidelines.",
+   "what_th": "ธปท. และองค์กรในภาคการเงิน 11 แห่ง รวมถึงสมาคมธนาคารไทย สมาคมธนาคารต่างประเทศ สมาคมผู้ให้บริการชำระเงินทางอิเล็กทรอนิกส์ และผู้ให้สินเชื่อที่ไม่ใช่ธนาคาร ร่วมกันใช้กรอบการทำงานเพื่อยกระดับ KYC, CDD และการตรวจสอบอย่างเข้มข้น ตรวจสอบธุรกรรมเงินสดที่มีความเสี่ยงสูงอย่างใกล้ชิด จัดทำฐานข้อมูลบุคคลที่มีความเสี่ยงสูงซึ่งเชื่อมกับระบบ Central Fraud Registry และออกแนวปฏิบัติด้านการป้องกันการฟอกเงินของอุตสาหกรรม",
    "for_foreigners": "Account opening and reviews for customers treated as higher risk are set to get stricter across banks and e-money providers.",
+   "for_foreigners_th": "การเปิดบัญชีและการทบทวนข้อมูลของลูกค้าที่ถูกจัดว่ามีความเสี่ยงสูงกว่า มีแนวโน้มจะเข้มงวดขึ้นทั้งในธนาคารและผู้ให้บริการเงินอิเล็กทรอนิกส์",
    "sources": [
     {
      "title": "Bank of Thailand and Thai Financial Sector Join Forces to Escalate Proactive Measures Against Illicit Financial Activities (Press Release No. 35/2026)",
@@ -1733,9 +1863,12 @@
   {
    "id": "exchange-deposits-own-account",
    "title": "Thai exchanges: baht in and out through the customer's own Thai bank account",
+   "title_th": "ศูนย์ซื้อขายในไทย: เงินบาทเข้าและออกผ่านบัญชีธนาคารในไทยของลูกค้าเอง",
    "date": "2025-12-18",
    "what": "Binance TH's FAQ describes baht deposits by Thai QR code or bank transfer from a registered Thai bank account, with a bank-book copy and ID required for large transfers. SEC measures announced in April 2026 require name matching on deposits and withdrawals at securities companies, and the September 2026 stablecoin proposal limits crypto transfers to the customer's own verified wallets.",
+   "what_th": "คำถามที่พบบ่อยของ Binance TH อธิบายการฝากเงินบาทด้วย Thai QR หรือการโอนจากบัญชีธนาคารในไทยที่ลงทะเบียนไว้ โดยการโอนจำนวนมากต้องใช้สำเนาหน้าสมุดบัญชีและบัตรประจำตัว มาตรการของ ก.ล.ต. ที่ประกาศเมื่อเดือนเมษายน 2026 กำหนดให้การฝากและถอนเงินที่บริษัทหลักทรัพย์ต้องใช้ชื่อบัญชีที่ตรงกัน และข้อเสนอเกณฑ์สเตเบิลคอยน์เดือนกันยายน 2026 จำกัดการโอนคริปโตไว้เฉพาะกระเป๋าของลูกค้าเองที่ยืนยันแล้ว",
    "for_foreigners": "The Binance TH FAQ describes no baht route other than a Thai bank account; other exchanges were not checked. The TouristDigiPay e-wallet, where offered, is limited to short-stay visitors.",
+   "for_foreigners_th": "คำถามที่พบบ่อยของ Binance TH ไม่ได้อธิบายช่องทางเงินบาทอื่นนอกจากบัญชีธนาคารในไทย ยังไม่ได้ตรวจสอบศูนย์ซื้อขายอื่น วอลเล็ต TouristDigiPay หากมีให้บริการ จำกัดเฉพาะนักท่องเที่ยวระยะสั้น",
    "sources": [
     {
      "title": "How to Deposit THB via Bank Transfer on Binance TH",
@@ -1771,9 +1904,12 @@
   {
    "id": "exchange-kyc-foreigners-binance-th",
    "title": "Exchange KYC for foreigners: Binance TH's visa list",
+   "title_th": "KYC ของศูนย์ซื้อขายสำหรับชาวต่างชาติ: รายการวีซ่าของ Binance TH",
    "date": "2024-07-30",
    "what": "Binance TH asks foreign applicants for a passport, a second photo ID (Thai or home-country ID card or driving licence) and a Thai visa, each valid for at least 3 more months, plus documents for the declared purpose: work permit or employer letter; company papers; school letter; medical certificate; property documents; Thai securities statement; residence proof for retirement (O-A, O-X or retirement stamp); Thailand Elite/Privilege card; Thai spouse or child documents; or an LTR visa with an embassy certificate and residence proof. Review takes 3 to 5 days.",
+   "what_th": "Binance TH ขอเอกสารจากผู้สมัครชาวต่างชาติ ได้แก่ หนังสือเดินทาง บัตรประจำตัวที่มีรูปถ่ายอีก 1 ใบ (บัตรประจำตัวของไทยหรือของประเทศตน หรือใบขับขี่) และวีซ่าไทย ซึ่งแต่ละรายการต้องมีอายุเหลืออย่างน้อย 3 เดือน พร้อมเอกสารตามวัตถุประสงค์ที่แจ้ง ได้แก่ ใบอนุญาตทำงานหรือหนังสือรับรองจากนายจ้าง เอกสารบริษัท หนังสือจากสถานศึกษา ใบรับรองแพทย์ เอกสารอสังหาริมทรัพย์ ใบแจ้งยอดบัญชีหลักทรัพย์ในไทย หลักฐานที่อยู่อาศัยสำหรับผู้เกษียณ (O-A, O-X หรือตราประทับอยู่ต่อเพื่อเกษียณ) บัตร Thailand Elite/Privilege เอกสารคู่สมรสหรือบุตรที่เป็นคนไทย หรือวีซ่า LTR พร้อมหนังสือรับรองจากสถานทูตและหลักฐานที่อยู่อาศัย การพิจารณาใช้เวลา 3 ถึง 5 วัน",
    "for_foreigners": "The DTV and visa exemption stamps do not appear in the accepted list. Myanmar nationals cannot complete KYC from 13 July 2026.",
+   "for_foreigners_th": "DTV และตราประทับยกเว้นการตรวจลงตราไม่อยู่ในรายการที่รับ ผู้มีสัญชาติเมียนมาทำ KYC ไม่ได้ตั้งแต่วันที่ 13 กรกฎาคม 2026",
    "sources": [
     {
      "title": "Visa Types Accepted (Foreign Nationals)",
@@ -1795,9 +1931,12 @@
   {
    "id": "visitor-e-wallet",
    "title": "Visitor e-wallets without a bank account",
+   "title_th": "วอลเล็ตสำหรับนักท่องเที่ยวโดยไม่ต้องมีบัญชีธนาคาร",
    "date": "2026-09-23",
    "what": "Kasikornbank's TAGTHAi Easy Pay is an e-wallet for foreign visitors opened with a passport at a KBank exchange booth and topped up only by exchanging foreign currency there. It pays Thai QR merchants up to the wallet balance, caps personal QR payments at 1,700 baht per transaction and 50,000 baht a month, and allows ATM withdrawals of up to 10,000 baht per transaction and per month as partial refunds.",
+   "what_th": "TAGTHAi Easy Pay ของธนาคารกสิกรไทยเป็นวอลเล็ตสำหรับนักท่องเที่ยวต่างชาติ เปิดด้วยหนังสือเดินทางที่บูธแลกเงินของธนาคารกสิกรไทย และเติมเงินได้เฉพาะโดยการแลกเงินตราต่างประเทศที่บูธเท่านั้น ใช้จ่ายกับร้านค้าที่รับ Thai QR ได้ตามยอดเงินในวอลเล็ต จำกัดการจ่ายผ่าน QR ส่วนบุคคลไว้ที่ 1,700 บาทต่อรายการและ 50,000 บาทต่อเดือน และถอนเงินที่ตู้ ATM ได้ไม่เกิน 10,000 บาทต่อรายการและต่อเดือน ในลักษณะคืนเงินบางส่วน",
    "for_foreigners": "A fiat-only option for short stays; it takes no crypto and no baht top-ups from a Thai account.",
+   "for_foreigners_th": "เป็นทางเลือกที่ใช้เงินตราทั่วไปเท่านั้นสำหรับการพำนักระยะสั้น ไม่รับคริปโต และไม่รับการเติมเงินบาทจากบัญชีในไทย",
    "sources": [
     {
      "title": "TAGTHAi Easy Pay",
@@ -1812,9 +1951,12 @@
   {
    "id": "non-resident-baht-accounts",
    "title": "Non-resident baht accounts",
+   "title_th": "บัญชีเงินบาทของผู้มีถิ่นที่อยู่นอกประเทศ",
    "date": "2023-09-26",
    "what": "Non-residents hold baht in Non-Resident Baht Accounts under BOT foreign exchange rules. In September 2023 the BOT eased supporting-document requirements for non-residents with trade and investment in Thailand and let qualified non-resident companies manage baht liquidity without the end-of-day balance limit.",
+   "what_th": "ผู้มีถิ่นที่อยู่นอกประเทศถือเงินบาทในบัญชีเงินบาทของผู้มีถิ่นที่อยู่นอกประเทศ (Non-Resident Baht Account) ตามเกณฑ์การแลกเปลี่ยนเงินของ ธปท. ในเดือนกันยายน 2023 ธปท. ผ่อนคลายเกณฑ์เอกสารประกอบสำหรับผู้มีถิ่นที่อยู่นอกประเทศที่มีการค้าและการลงทุนในไทย และให้นิติบุคคลที่มีถิ่นที่อยู่นอกประเทศที่มีคุณสมบัติตามเกณฑ์บริหารสภาพคล่องเงินบาทได้โดยไม่ติดเพดานยอดคงค้างสิ้นวัน",
    "for_foreigners": "Bangkok Bank opens Non-Resident Baht Accounts only at its Silom head office.",
+   "for_foreigners_th": "ธนาคารกรุงเทพเปิดบัญชี Non-Resident Baht Account ที่สำนักงานใหญ่สีลมเท่านั้น",
    "sources": [
     {
      "title": "Relaxation of Regulations on Non-residents' Thai Baht Related Transactions (Press Release No. 42/2023)",
@@ -1836,9 +1978,12 @@
   {
    "id": "deposit-protection",
    "title": "Deposit protection: 1 million baht per bank",
+   "title_th": "การคุ้มครองเงินฝาก: 1 ล้านบาทต่อธนาคาร",
    "date": "2021-08-11",
    "what": "Baht deposits are protected by the Deposit Protection Agency up to 1 million baht per depositor per financial institution from 11 August 2021.",
+   "what_th": "เงินฝากเงินบาทได้รับความคุ้มครองจากสถาบันคุ้มครองเงินฝากไม่เกิน 1 ล้านบาทต่อผู้ฝากหนึ่งรายต่อสถาบันการเงินหนึ่งแห่ง ตั้งแต่วันที่ 11 สิงหาคม 2021",
    "for_foreigners": "Baht in a Thai bank account is covered up to the limit; crypto held on an exchange is not a bank deposit.",
+   "for_foreigners_th": "เงินบาทในบัญชีธนาคารในไทยได้รับความคุ้มครองไม่เกินวงเงินนี้ ส่วนคริปโตที่เก็บไว้ในศูนย์ซื้อขายไม่ใช่เงินฝากธนาคาร",
    "sources": [
     {
      "title": "Savings Account",
@@ -1855,270 +2000,315 @@
   {
    "date": "2013-07",
    "event": "Bitcoin Co. Ltd, a Thai bitcoin exchange, suspended trading after Bank of Thailand officials said bitcoin trading lacked a legal basis.",
+   "event_th": "Bitcoin Co. Ltd ศูนย์ซื้อขายบิตคอยน์ในไทย ระงับการซื้อขาย หลังเจ้าหน้าที่ธนาคารแห่งประเทศไทยระบุว่าการซื้อขายบิตคอยน์ไม่มีกฎหมายรองรับ",
    "source_url": "",
    "confidence": "unconfirmed"
   },
   {
    "date": "2018-05",
    "event": "The Emergency Decree on Digital Asset Businesses and the Revenue Code amendment (No. 19) take effect, licensing crypto businesses and taxing crypto gains with 15% withholding.",
+   "event_th": "พระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล พ.ศ. 2561 และพระราชกำหนดแก้ไขเพิ่มเติมประมวลรัษฎากร (ฉบับที่ 19) มีผลใช้บังคับ กำหนดให้ธุรกิจคริปโตต้องมีใบอนุญาต และเก็บภาษีกำไรจากคริปโตโดยหักภาษี ณ ที่จ่าย 15%",
    "source_url": "https://www.forvismazars.com/th/en/insights/doing-business-in-thailand/tax/new-tax-law-on-cryptocurrency-and-digital-tokens",
    "confidence": "reported"
   },
   {
    "date": "2019-01-04",
    "event": "Bitkub Online and Orbix Trade (exchanges) and Coins TH (broker and dealer) receive licences dated 4 January 2019, the earliest dates on the current SEC licensee records.",
+   "event_th": "Bitkub Online และ Orbix Trade (ศูนย์ซื้อขาย) และ Coins TH (นายหน้าและผู้ค้า) ได้รับใบอนุญาตลงวันที่ 4 มกราคม 2019 ซึ่งเป็นวันที่เก่าที่สุดในทะเบียนผู้ได้รับอนุญาตปัจจุบันของ ก.ล.ต.",
    "source_url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028750",
    "confidence": "confirmed"
   },
   {
    "date": "2019-10-17",
    "event": "The SEC puts OKEx/OKX on its Investor Alert list of unlicensed operators.",
+   "event_th": "ก.ล.ต. ขึ้นชื่อ OKEx/OKX ในรายชื่อ Investor Alert ของผู้ให้บริการที่ไม่ได้รับอนุญาต",
    "source_url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
    "confidence": "confirmed"
   },
   {
    "date": "2020-07-24",
    "event": "Upbit Exchange (Thailand) and GMO-Z.com Cryptonomics receive exchange and broker licences, starting business on 20 January 2021.",
+   "event_th": "Upbit Exchange (Thailand) และ GMO-Z.com Cryptonomics ได้รับใบอนุญาตศูนย์ซื้อขายและนายหน้า และเริ่มธุรกิจวันที่ 20 มกราคม 2021",
    "source_url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000028753",
    "confidence": "confirmed"
   },
   {
    "date": "2021-03-19",
    "event": "The Bank of Thailand says baht-pegged payment stablecoins may be e-money and require prior consultation.",
+   "event_th": "ธนาคารแห่งประเทศไทยระบุว่าสเตเบิลคอยน์ที่ผูกค่ากับเงินบาทเพื่อใช้ชำระเงินอาจเป็นเงินอิเล็กทรอนิกส์ และต้องหารือกับ ธปท. ก่อน",
    "source_url": "https://www.bot.or.th/en/news-and-media/news/news-20210319-2.html",
    "confidence": "confirmed"
   },
   {
    "date": "2021-04-05",
    "event": "The SEC names Binance (binance.com) on its Investor Alert list.",
+   "event_th": "ก.ล.ต. ขึ้นชื่อ Binance (binance.com) ในรายชื่อ Investor Alert",
    "source_url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
    "confidence": "confirmed"
   },
   {
    "date": "2021-05",
    "event": "A cyberattack takes client assets in 16 cryptocurrencies, worth about 1.7 billion baht, from Bitkub; the SEC later finds it was not reflected in reports to the regulator.",
+   "event_th": "การโจมตีทางไซเบอร์ทำให้ทรัพย์สินของลูกค้า Bitkub ในคริปโต 16 สกุล มูลค่าราว 1.7 พันล้านบาท ถูกนำออกไป ต่อมา ก.ล.ต. พบว่าเหตุนี้ไม่ได้ปรากฏในรายงานที่ส่งต่อหน่วยงานกำกับ",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=158&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2021-07-08",
    "event": "The BOT states crypto is not legal tender and does not support its use for payments.",
+   "event_th": "ธปท. ระบุว่าคริปโตไม่ใช่เงินตราที่ชำระหนี้ได้ตามกฎหมาย และไม่สนับสนุนการใช้คริปโตชำระเงิน",
    "source_url": "https://www.bot.or.th/en/news-and-media/news/news-20210708-1.html",
    "confidence": "confirmed"
   },
   {
    "date": "2022-01-25",
    "event": "The BOT, SEC and Ministry of Finance announce they will restrict crypto as a means of payment.",
+   "event_th": "ธปท. ก.ล.ต. และกระทรวงการคลัง ประกาศว่าจะจำกัดการใช้คริปโตเป็นสื่อกลางการชำระเงิน",
    "source_url": "https://www.bot.or.th/en/news-and-media/news/news-20220125.html",
    "confidence": "confirmed"
   },
   {
    "date": "2022-04-01",
    "event": "The SEC ban on licensed operators facilitating crypto payments takes effect.",
+   "event_th": "ข้อห้ามของ ก.ล.ต. ที่ไม่ให้ผู้ประกอบธุรกิจที่ได้รับอนุญาตสนับสนุนการชำระเงินด้วยคริปโตมีผลบังคับใช้",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=9366",
    "confidence": "confirmed"
   },
   {
    "date": "2022-05-17",
    "event": "CoinEx, Pionex and XT.com are added to the SEC Investor Alert list.",
+   "event_th": "CoinEx, Pionex และ XT.com ถูกเพิ่มเข้าในรายชื่อ Investor Alert ของ ก.ล.ต.",
    "source_url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
    "confidence": "confirmed"
   },
   {
    "date": "2023-03-17",
    "event": "The Technology Crime Emergency Decree takes effect, criminalising mule accounts (up to 3 years or 300,000 baht).",
+   "event_th": "พระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี พ.ศ. 2566 มีผลใช้บังคับ กำหนดให้บัญชีม้าเป็นความผิดทางอาญา (จำคุกไม่เกิน 3 ปี หรือปรับไม่เกิน 300,000 บาท)",
    "source_url": "https://ratchakitcha.soc.go.th/documents/140A018N0000000000100.pdf",
    "confidence": "confirmed"
   },
   {
    "date": "2023-05-18",
    "event": "Gulf Binance is licensed as an exchange and broker; Binance TH starts business on 10 November 2023.",
+   "event_th": "Gulf Binance ได้รับใบอนุญาตศูนย์ซื้อขายและนายหน้า Binance TH เริ่มธุรกิจวันที่ 10 พฤศจิกายน 2023",
    "source_url": "https://market.sec.or.th/LicenseCheck/CompanyDetail/0000033495",
    "confidence": "confirmed"
   },
   {
    "date": "2023-09-15",
    "event": "The Revenue Department signs Order Por. 161/2566, taxing residents' foreign income in the year it is brought in, from 1 January 2024.",
+   "event_th": "กรมสรรพากรลงนามคำสั่งกรมสรรพากรที่ ป.161/2566 ให้เก็บภาษีเงินได้จากต่างประเทศของผู้มีถิ่นที่อยู่ทางภาษีในปีที่นำเข้ามา ตั้งแต่วันที่ 1 มกราคม 2024",
    "source_url": "https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dn161A.pdf",
    "confidence": "confirmed"
   },
   {
    "date": "2023-11-20",
    "event": "Order Por. 162/2566 exempts income earned before 1 January 2024 from the new remittance rule.",
+   "event_th": "คำสั่งกรมสรรพากรที่ ป.162/2566 ยกเว้นเงินได้ที่ได้รับก่อนวันที่ 1 มกราคม 2024 จากหลักเกณฑ์ใหม่เรื่องการนำเงินได้เข้าประเทศ",
    "source_url": "https://www.rd.go.th/fileadmin/user_upload/kormor/newlaw/dn161A.pdf",
    "confidence": "confirmed"
   },
   {
    "date": "2023-12-22",
    "event": "The SEC files a criminal complaint against Bybit Fintech for running an unlicensed exchange.",
+   "event_th": "ก.ล.ต. กล่าวโทษทางอาญา Bybit Fintech กรณีประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาต",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=37&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2024-01-01",
    "event": "The foreign-income remittance rule takes effect for money brought into Thailand.",
+   "event_th": "หลักเกณฑ์ภาษีเงินได้จากต่างประเทศที่นำเข้ามามีผลกับเงินที่นำเข้าประเทศไทย",
    "source_url": "https://www.rd.go.th/fileadmin/user_upload/lorkhor/newspr/2024/FOREIGNERS_PAY_TAX2024.pdf",
    "confidence": "confirmed"
   },
   {
    "date": "2024-08-01",
    "event": "All Thai banks start sharing suspect-account data through the Central Fraud Registry, freezing flagged people across banks.",
+   "event_th": "ธนาคารทุกแห่งในไทยเริ่มแลกเปลี่ยนข้อมูลบัญชีต้องสงสัยผ่านระบบ Central Fraud Registry ทำให้บุคคลที่ถูกระบุชื่อถูกระงับในทุกธนาคาร",
    "source_url": "https://www.bot.or.th/en/news-and-media/news/news-20240902.html",
    "confidence": "confirmed"
   },
   {
    "date": "2025-01-30",
    "event": "The BOT extends mule-account measures to high-risk accounts before any victim complaint.",
+   "event_th": "ธปท. ขยายมาตรการบัญชีม้าไปยังบัญชีที่มีความเสี่ยงสูง ก่อนที่จะมีผู้เสียหายร้องเรียน",
    "source_url": "https://www.bot.or.th/en/news-and-media/news/news-20250130.html",
    "confidence": "confirmed"
   },
   {
    "date": "2025-03-16",
    "event": "USDT and USDC become approved base-pair cryptocurrencies on Thai exchanges.",
+   "event_th": "USDT และ USDC ได้รับอนุญาตให้เป็นคริปโตเคอร์เรนซีที่ใช้เป็นคู่ซื้อขายหลักบนศูนย์ซื้อขายในไทย",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=11613",
    "confidence": "confirmed"
   },
   {
    "date": "2025-03-21",
    "event": "The SEC files complaints against OKX's operator and nine promoters, and against XT.COM's operator.",
+   "event_th": "ก.ล.ต. กล่าวโทษผู้ให้บริการ OKX และผู้โปรโมต 9 ราย รวมถึงผู้ให้บริการ XT.COM",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=65&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-04-13",
    "event": "Amendments to the Digital Asset Decree and the Technology Crime Decree take effect, covering foreign platforms that serve Thai users and crypto mule accounts.",
+   "event_th": "พระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัลและพระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยีฉบับแก้ไขมีผลใช้บังคับ ครอบคลุมแพลตฟอร์มต่างประเทศที่ให้บริการผู้ใช้ในไทยและบัญชีม้าคริปโต",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=89&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-04-16",
    "event": "Revised SEC advertising rules for licensed crypto operators take effect.",
+   "event_th": "เกณฑ์การโฆษณาฉบับปรับปรุงของ ก.ล.ต. สำหรับผู้ประกอบธุรกิจคริปโตที่ได้รับอนุญาตมีผลบังคับใช้",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=90&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-06-28",
    "event": "MDES blocks access to Bybit, 1000X, CoinEx, OKX and XT.COM from Thailand.",
+   "event_th": "กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (ดีอี) ปิดกั้นการเข้าถึง Bybit, 1000X, CoinEx, OKX และ XT.COM จากประเทศไทย",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=12048&NewsNo=160&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-07-21",
    "event": "SEC rules for Government Tokens (G-Tokens) take effect.",
+   "event_th": "หลักเกณฑ์ของ ก.ล.ต. เรื่องโทเคนดิจิทัลของรัฐบาล (G-Token) มีผลบังคับใช้",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13209",
    "confidence": "confirmed"
   },
   {
    "date": "2025-08-13",
    "event": "SEC anti-fraud standards make crypto operators share liability for client losses when they fail them.",
+   "event_th": "มาตรฐานป้องกันการฉ้อโกงของ ก.ล.ต. กำหนดให้ผู้ประกอบธุรกิจคริปโตที่ไม่ปฏิบัติตามต้องร่วมรับผิดชอบความเสียหายของลูกค้า",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=202&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-08-18",
    "event": "The SEC and three partners announce the 18-month TouristDigiPay sandbox for visitors to spend crypto as baht.",
+   "event_th": "ก.ล.ต. และหน่วยงานพันธมิตร 3 แห่งประกาศโครงการทดสอบ TouristDigiPay ระยะ 18 เดือน ให้นักท่องเที่ยวใช้จ่ายคริปโตในรูปเงินบาท",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=204&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-09-05",
    "event": "Ministerial Regulation No. 399 is published, exempting individuals' crypto gains on licensed Thai platforms for 2025-2029.",
+   "event_th": "กฎกระทรวง ฉบับที่ 399 ประกาศในราชกิจจานุเบกษา ยกเว้นภาษีกำไรจากคริปโตของบุคคลธรรมดาบนแพลตฟอร์มที่ได้รับอนุญาตในไทย สำหรับปี 2025-2029",
    "source_url": "https://www.hlbthai.com/5-year-personal-income-tax-exemption-for-digital-asset-sales/",
    "confidence": "reported"
   },
   {
    "date": "2025-09-11",
    "event": "The SEC reports that Bitkub clients' assets were intact as of 8 September 2025 after online reports of a cyberattack.",
+   "event_th": "ก.ล.ต. รายงานว่าทรัพย์สินของลูกค้า Bitkub ยังครบถ้วน ณ วันที่ 8 กันยายน 2025 หลังมีรายงานทางออนไลน์ว่าถูกโจมตีทางไซเบอร์",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=233&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-09-25",
    "event": "TouristDigiPay opens to operator applications until 26 December 2025, under rules effective 24 September.",
+   "event_th": "TouristDigiPay เปิดรับคำขอจากผู้ประกอบธุรกิจถึงวันที่ 26 ธันวาคม 2025 ภายใต้หลักเกณฑ์ที่มีผลตั้งแต่วันที่ 24 กันยายน",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=244&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-10-24",
    "event": "The SEC and the Cyber Crime Investigation Bureau raid a Worldcoin exchange service and arrest suspects.",
+   "event_th": "ก.ล.ต. และกองบัญชาการตำรวจสืบสวนสอบสวนอาชญากรรมทางเทคโนโลยี (สอท.) ตรวจค้นจุดให้บริการแลกเปลี่ยน Worldcoin และจับกุมผู้ต้องหา",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=270&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2025-11-24",
    "event": "The Personal Data Protection Committee orders iris scanning for Worldcoin suspended; licensed exchanges keep trading WLD with alerts.",
+   "event_th": "คณะกรรมการคุ้มครองข้อมูลส่วนบุคคลสั่งระงับการสแกนม่านตาของ Worldcoin ศูนย์ซื้อขายที่ได้รับอนุญาตยังคงซื้อขาย WLD พร้อมคำเตือน",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=294&NewsYear=2025&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2026-02-20",
    "event": "The SEC files complaints against Bitazza Global and Bitazza for a jointly run unlicensed exchange; Bitazza Global is blocked from 22 March.",
+   "event_th": "ก.ล.ต. กล่าวโทษ Bitazza Global และ Bitazza กรณีร่วมกันประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาต Bitazza Global ถูกปิดกั้นตั้งแต่วันที่ 22 มีนาคม",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=46&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2026-03-05",
    "event": "The SEC designates crypto and digital tokens as underlying assets under the Derivatives Act.",
+   "event_th": "ก.ล.ต. กำหนดให้คริปโตและโทเคนดิจิทัลเป็นสินค้าอ้างอิงตามพระราชบัญญัติสัญญาซื้อขายล่วงหน้า",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13264",
    "confidence": "confirmed"
   },
   {
    "date": "2026-04-29",
    "event": "MEXC is added to the SEC Investor Alert list.",
+   "event_th": "MEXC ถูกเพิ่มเข้าในรายชื่อ Investor Alert ของ ก.ล.ต.",
    "source_url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
    "confidence": "confirmed"
   },
   {
    "date": "2026-05-02",
    "event": "MDES blocks the Exmix platform.",
+   "event_th": "กระทรวงดีอีปิดกั้นแพลตฟอร์ม Exmix",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=70&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2026-07-23",
    "event": "The SEC files a criminal complaint against Bitkub Online and two former directors over false 2021 capital reports.",
+   "event_th": "ก.ล.ต. กล่าวโทษทางอาญา Bitkub Online และอดีตกรรมการ 2 ราย กรณีรายงานเงินกองทุนอันเป็นเท็จในปี 2021",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=158&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2026-08-24",
    "event": "The SEC opens comment on draft rules for Bitcoin and Ethereum ETFs listed on the Stock Exchange of Thailand.",
+   "event_th": "ก.ล.ต. เปิดรับฟังความเห็นต่อร่างหลักเกณฑ์กองทุน ETF Bitcoin และ Ethereum ที่จดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทย",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13237",
    "confidence": "confirmed"
   },
   {
    "date": "2026-08-25",
    "event": "The Cabinet approves a draft Act amending the Digital Asset Decree, sending it to Parliament.",
+   "event_th": "คณะรัฐมนตรีอนุมัติร่างพระราชบัญญัติแก้ไขเพิ่มเติมพระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล และส่งต่อให้รัฐสภา",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13240",
    "confidence": "confirmed"
   },
   {
    "date": "2026-09-01",
    "event": "The SEC names Tools for Humanity and its CEO as supporters of the unlicensed UNO app; Holdstation and UNO are to be blocked from 1 October.",
+   "event_th": "ก.ล.ต. ระบุว่า Tools for Humanity และประธานเจ้าหน้าที่บริหารเป็นผู้สนับสนุนแอป UNO ที่ไม่ได้รับอนุญาต Holdstation และ UNO จะถูกปิดกั้นตั้งแต่วันที่ 1 ตุลาคม",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13284",
    "confidence": "confirmed"
   },
   {
    "date": "2026-09-02",
    "event": "The SEC issues the crypto Travel Rule, effective 27 February 2027.",
+   "event_th": "ก.ล.ต. ออกหลักเกณฑ์ Travel Rule สำหรับคริปโต มีผลตั้งแต่วันที่ 27 กุมภาพันธ์ 2027",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13277",
    "confidence": "confirmed"
   },
   {
    "date": "2026-09-07",
    "event": "The SEC imposes civil sanctions on four people for manipulating trading volume of the SIX Network token.",
+   "event_th": "ก.ล.ต. ใช้มาตรการลงโทษทางแพ่งกับบุคคล 4 ราย กรณีบิดเบือนปริมาณการซื้อขายโทเคน SIX Network",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=187&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   },
   {
    "date": "2026-09-11",
    "event": "The SEC proposes a 5 million baht daily cap per operator and an own-wallet rule for stablecoin transfers; comment closes 25 September.",
+   "event_th": "ก.ล.ต. เสนอเพดานการโอนสเตเบิลคอยน์ 5 ล้านบาทต่อวันต่อผู้ประกอบธุรกิจ และเกณฑ์ให้โอนเฉพาะกระเป๋าของตนเอง รับฟังความเห็นถึงวันที่ 25 กันยายน",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13335",
    "confidence": "confirmed"
   },
   {
    "date": "2026-09-14",
    "event": "The OECD lists Thailand among jurisdictions starting crypto tax data exchanges (CARF) by 2028.",
+   "event_th": "OECD ระบุให้ไทยอยู่ในกลุ่มประเทศและเขตอำนาจที่จะเริ่มแลกเปลี่ยนข้อมูลภาษีคริปโต (CARF) ภายในปี 2028",
    "source_url": "https://www.oecd.org/content/dam/oecd/en/networks/global-forum-tax-transparency/commitments-carf.pdf",
    "confidence": "confirmed"
   }
@@ -2145,5 +2335,28 @@
   "The investor-alert date for Bybit could not be found; Bybit does not appear on the SEC digital-asset alert list viewed on 23 September 2026 even though it is blocked and under criminal complaint.",
   "The 2013 Bitcoin Co. Ltd episode is from memory of press coverage and was not re-verified.",
   "Ownership of licensed operators (for example, which banks or groups own Orbix, InnovestX or Gulf Binance) was not verified from registry or filing sources."
+ ],
+ "open_questions_th": [
+  "สถานะการเปิดให้บริการของ TouristDigiPay: ข่าวภาษาอังกฤษของ ก.ล.ต. ตั้งแต่เดือนกันยายน 2025 ถึงวันที่ 23 กันยายน 2026 ไม่ได้ระบุชื่อผู้ประกอบธุรกิจที่ได้รับอนุมัติ ผู้ให้บริการเงินอิเล็กทรอนิกส์ที่ร่วมโครงการ หรือวันเปิดให้บริการ Bitkub และ Binance TH ประกาศความสนใจในปี 2025 ยังไม่มีการยืนยันว่ามีบริการใดเปิดใช้งานในเดือนกันยายน 2026",
+  "ยังไม่ได้อ่านกฎกระทรวง ฉบับที่ 399 จากราชกิจจานุเบกษา วันที่ (5 กันยายน 2025) ระยะเวลา และเงื่อนไข มาจาก Tilleke & Gibbins และ HLB Thailand",
+  "ยังไม่ได้อ่านพระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล พ.ศ. 2561 และพระราชกำหนดแก้ไขเพิ่มเติมประมวลรัษฎากร (ฉบับที่ 19) จากราชกิจจานุเบกษา วันประกาศ 13 พฤษภาคม 2018 และวันเริ่มมีผล 14 พฤษภาคม 2018 มาจาก Forvis Mazars (สำหรับพระราชกำหนดด้านภาษี) และข้อความ 'วันถัดจากวันประกาศ' ในคำแปลของ ก.ล.ต.",
+  "ไม่พบเอกสารของกรมสรรพากรที่ระบุว่ากรมถือว่ากำไรจากคริปโตที่ขายบนศูนย์ซื้อขายต่างประเทศเป็นเงินได้จากแหล่งต่างประเทศตามมาตรา 41 หรือไม่ และส่วนที่เป็นกำไรในการโอนเงินเข้ามาบางส่วนวัดอย่างไร",
+  "ยังไม่ได้ตรวจสอบว่าการหักภาษี ณ ที่จ่าย 15% จากกำไรคริปโตใช้กับการซื้อขายบนศูนย์ซื้อขายที่ได้รับอนุญาตในไทยหรือไม่ และการยกเว้นภาษีมูลค่าเพิ่มสำหรับการโอนคริปโตผ่านศูนย์ซื้อขายที่ได้รับอนุญาตมีผลใช้บังคับอยู่หรือไม่",
+  "ยังไม่ได้ตรวจสอบการนำผลขาดทุนจากคริปโตมาหักกลบ (ซึ่งมีรายงานในปี 2022 สำหรับการซื้อขายบนศูนย์ซื้อขายที่ได้รับอนุญาต)",
+  "การยกเว้นภาษีเงินได้จากต่างประเทศที่นำเข้าภายในปีที่ได้รับหรือปีถัดไป: สถานะล่าสุดที่ยืนยันได้คือ 'ยังไม่ประกาศในราชกิจจานุเบกษา ณ เดือนกรกฎาคม 2026' จากสำนักงานกฎหมาย ไม่พบข้อความจากกรมสรรพากรหรือราชกิจจานุเบกษา ไฟล์คำสั่งกรมสรรพากรที่ ป.161/2566 ที่กรมสรรพากรอัปโหลดใหม่ในเดือนมิถุนายน 2026 ไม่มีการเปลี่ยนแปลง",
+  "ไม่พบกฎหมายภายในของไทยสำหรับ CARF และปีแรกที่แพลตฟอร์มในไทยต้องเก็บข้อมูล รายชื่อของ OECD ระบุเพียง 'แลกเปลี่ยนข้อมูลครั้งแรกภายในปี 2028'",
+  "G-Token: หลักเกณฑ์ของ ก.ล.ต. มีผลเมื่อวันที่ 21 กรกฎาคม 2025 แต่ยังไม่ได้ยืนยันว่ากระทรวงการคลังออก G-Token แล้วหรือไม่ ขนาดการออกเท่าใด และชาวต่างชาติซื้อได้หรือไม่",
+  "IPO ของ Bitkub: การค้นคว้านี้ไม่ได้อ่านเอกสารที่ยื่นต่อ ก.ล.ต. หรือตลาดหลักทรัพย์แห่งประเทศไทย หรือรายงานของสื่อหลัก ไม่ทราบสถานะ",
+  "ยังไม่ได้ตรวจสอบเกณฑ์สำหรับลูกค้าชาวต่างชาติของ Upbit Thailand, Bitkub, Orbix, WAAN และศูนย์ซื้อขายที่ได้รับอนุญาตอื่น ได้อ่านเฉพาะเกณฑ์ KYC ที่ Binance TH เผยแพร่ เว็บไซต์ช่วยเหลือของ Bitkub ดูเหมือนจะมีคู่มือ KYC สำหรับชาวต่างชาติ แต่ยังไม่ได้อ่าน",
+  "ไม่พบว่ามีศูนย์ซื้อขายในไทยรายใดจ่ายเงินบาทเข้าบัญชีธนาคารต่างประเทศ (ที่ไม่ใช่ธนาคารไทย)",
+  "ยังไม่ได้ตรวจสอบแนวปฏิบัติของแต่ละธนาคารและสาขาสำหรับผู้ถือวีซ่าเกษียณ LTR, Thailand Privilege และ DTV นอกเหนือจากหน้าที่ธนาคารกสิกรไทย ธนาคารไทยพาณิชย์ และธนาคารกรุงเทพเผยแพร่ ไม่ได้ใช้ข้อมูลจากเว็บบอร์ดหรือตัวแทน",
+  "รายงานว่าธนาคารไทยอายัดบัญชีที่รับเงินจากการขายคริปโตแบบบุคคลต่อบุคคล ยังสืบย้อนไปไม่ถึงแหล่งข้อมูลปฐมภูมิหรือสื่อหลัก ส่วนหลักเกณฑ์ของ ธปท. ที่เปิดทางให้อายัดได้มีแหล่งอ้างอิง",
+  "ยังไม่ได้ตรวจสอบเกณฑ์การลงทะเบียนพร้อมเพย์สำหรับชาวต่างชาติ (เช่น การผูกกับหมายเลขโทรศัพท์มือถือไทย)",
+  "ไม่พบข้อจำกัดเรื่องจำนวนบัญชีธนาคารที่บุคคลหนึ่งเปิดได้ในข่าวของ ธปท. ที่อ่าน",
+  "โครงการนำร่อง Q Wallet ของธนาคารกสิกรไทยสำหรับแลก USDC เป็น THBS มีกำหนดสิ้นสุดวันที่ 31 ธันวาคม 2025 ไม่ทราบว่ามีการขยายเวลาหรือไม่",
+  "วันเริ่มมีผลของมาตรา 26/1 แตกต่างกันตามแหล่งข้อมูล ก.ล.ต. ระบุวันที่ 13 เมษายน 2025 DFDL ระบุว่าพระราชกำหนดมีผลในวันประกาศ (12 เมษายน 2025) ส่วนคำแปลของ ก.ล.ต. ระบุว่ามีผลในวันถัดจากวันประกาศ",
+  "ไม่พบวันที่ Bybit ถูกขึ้นรายชื่อ Investor Alert และไม่พบ Bybit ในรายชื่อ Investor Alert ด้านสินทรัพย์ดิจิทัลของ ก.ล.ต. ที่เปิดดูเมื่อวันที่ 23 กันยายน 2026 แม้จะถูกปิดกั้นและถูกกล่าวโทษทางอาญาแล้ว",
+  "เหตุการณ์ของ Bitcoin Co. Ltd ในปี 2013 มาจากความจำเกี่ยวกับข่าวในสื่อ และยังไม่ได้ตรวจสอบซ้ำ",
+  "ยังไม่ได้ตรวจสอบโครงสร้างผู้ถือหุ้นของผู้ประกอบธุรกิจที่ได้รับอนุญาต (เช่น ธนาคารหรือกลุ่มใดเป็นเจ้าของ Orbix, InnovestX หรือ Gulf Binance) จากทะเบียนหรือเอกสารที่ยื่นต่อหน่วยงาน"
  ]
 }

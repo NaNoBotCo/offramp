@@ -3,6 +3,9 @@
  "routes": [
   {
    "kind": "exchange",
+   "pid": "bitkub",
+   "site": "https://www.bitkub.com/",
+   "thai_bank": true,
    "label": "Bitkub, to your own Thai account",
    "label_th": "Bitkub เข้าบัญชีไทยของคุณ",
    "needs": "Thai bank account in your name",
@@ -10,13 +13,28 @@
    "note": "Bitkub fee page: 0.25% maker and taker; baht withdrawal 20 THB to Kasikornbank.",
    "note_th": "หน้าค่าธรรมเนียม Bitkub: 0.25% ทั้ง maker และ taker ถอนเงินบาทเข้ากสิกรไทย 20 บาท",
    "fees": {
-    "network_usdt": {"v": 1, "label": "Network fee to send (USDT)", "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"},
-    "trade_pct": {"v": 0.25, "label": "Trading fee %", "label_th": "ค่าซื้อขาย %"},
-    "withdraw_thb": {"v": 20, "label": "Baht withdrawal fee (฿)", "label_th": "ค่าถอนเงินบาท (฿)"}
+    "network_usdt": {
+     "v": 1,
+     "label": "Network fee to send (USDT)",
+     "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"
+    },
+    "trade_pct": {
+     "v": 0.25,
+     "label": "Trading fee %",
+     "label_th": "ค่าซื้อขาย %"
+    },
+    "withdraw_thb": {
+     "v": 20,
+     "label": "Baht withdrawal fee (฿)",
+     "label_th": "ค่าถอนเงินบาท (฿)"
+    }
    }
   },
   {
    "kind": "exchange",
+   "pid": "upbit-th",
+   "site": "https://th.upbit.com/",
+   "thai_bank": true,
    "label": "Upbit Thailand, to your own Thai account",
    "label_th": "Upbit Thailand เข้าบัญชีไทยของคุณ",
    "needs": "Thai bank account in your name",
@@ -24,13 +42,28 @@
    "note": "Upbit TH trade guide: THB market 0.15% maker and taker; baht withdrawal 15 THB. The calculator uses Bitkub's live bid for the price.",
    "note_th": "คู่มือ Upbit TH: ตลาด THB 0.15% ทั้ง maker และ taker ถอนเงินบาท 15 บาท เครื่องคำนวณใช้ราคารับซื้อสดของ Bitkub เป็นราคาอ้างอิง",
    "fees": {
-    "network_usdt": {"v": 1, "label": "Network fee to send (USDT)", "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"},
-    "trade_pct": {"v": 0.15, "label": "Trading fee %", "label_th": "ค่าซื้อขาย %"},
-    "withdraw_thb": {"v": 15, "label": "Baht withdrawal fee (฿)", "label_th": "ค่าถอนเงินบาท (฿)"}
+    "network_usdt": {
+     "v": 1,
+     "label": "Network fee to send (USDT)",
+     "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"
+    },
+    "trade_pct": {
+     "v": 0.15,
+     "label": "Trading fee %",
+     "label_th": "ค่าซื้อขาย %"
+    },
+    "withdraw_thb": {
+     "v": 15,
+     "label": "Baht withdrawal fee (฿)",
+     "label_th": "ค่าถอนเงินบาท (฿)"
+    }
    }
   },
   {
    "kind": "exchange",
+   "pid": "innovestx",
+   "site": "https://www.innovestx.co.th/",
+   "thai_bank": true,
    "label": "InnovestX, to your own Thai account",
    "label_th": "InnovestX เข้าบัญชีไทยของคุณ",
    "needs": "Thai bank account in your name",
@@ -38,13 +71,28 @@
    "note": "InnovestX fee sheet, 22 Sep 2026: 0.10% on USDT; withdrawal to the linked account free. The calculator uses Bitkub's live bid for the price.",
    "note_th": "ตารางค่าธรรมเนียม InnovestX 22 ก.ย. 2026: USDT 0.10% ถอนเข้าบัญชีที่ผูกไว้ฟรี เครื่องคำนวณใช้ราคารับซื้อสดของ Bitkub เป็นราคาอ้างอิง",
    "fees": {
-    "network_usdt": {"v": 1, "label": "Network fee to send (USDT)", "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"},
-    "trade_pct": {"v": 0.10, "label": "Trading fee %", "label_th": "ค่าซื้อขาย %"},
-    "withdraw_thb": {"v": 0, "label": "Baht withdrawal fee (฿)", "label_th": "ค่าถอนเงินบาท (฿)"}
+    "network_usdt": {
+     "v": 1,
+     "label": "Network fee to send (USDT)",
+     "label_th": "ค่าเครือข่ายตอนส่ง (USDT)"
+    },
+    "trade_pct": {
+     "v": 0.1,
+     "label": "Trading fee %",
+     "label_th": "ค่าซื้อขาย %"
+    },
+    "withdraw_thb": {
+     "v": 0,
+     "label": "Baht withdrawal fee (฿)",
+     "label_th": "ค่าถอนเงินบาท (฿)"
+    }
    }
   },
   {
    "kind": "card",
+   "pid": "redotpay",
+   "site": "https://www.redotpay.com/",
+   "thai_bank": false,
    "label": "RedotPay card, cash at a Thai ATM",
    "label_th": "บัตร RedotPay กดเงินสดที่ตู้ ATM ไทย",
    "needs": "no Thai bank",
@@ -52,16 +100,43 @@
    "note": "RedotPay help centre, 27 Jul 2026: 1% crypto conversion, 1.2% FX, 2% ATM fee. Thai banks charge 250 THB per withdrawal on a foreign Visa card (Krungsri, SCB, Kasikorn, TTB schedules). The ATM size is the amount per withdrawal.",
    "note_th": "ศูนย์ช่วยเหลือ RedotPay 27 ก.ค. 2026: ค่าแปลงคริปโต 1% ค่า FX 1.2% ค่ากดเงิน 2% ธนาคารไทยเก็บ 250 บาทต่อครั้งสำหรับบัตร Visa ต่างประเทศ (ตารางของกรุงศรี SCB กสิกรไทย ทีทีบี) ขนาดการกดคือจำนวนเงินต่อครั้ง",
    "fees": {
-    "network_usdt": {"v": 1, "label": "Network fee to top up (USDT)", "label_th": "ค่าเครือข่ายตอนเติม (USDT)"},
-    "topup_pct": {"v": 1.0, "label": "Crypto conversion %", "label_th": "ค่าแปลงคริปโต %"},
-    "fx_pct": {"v": 1.2, "label": "FX fee %", "label_th": "ค่า FX %"},
-    "issuer_atm_pct": {"v": 2.0, "label": "Card's ATM fee %", "label_th": "ค่ากดเงินของบัตร %"},
-    "atm_thb": {"v": 250, "label": "Thai ATM fee per withdrawal (฿)", "label_th": "ค่าตู้ ATM ไทยต่อครั้ง (฿)"},
-    "atm_max_thb": {"v": 20000, "label": "Baht per withdrawal", "label_th": "บาทต่อการกดหนึ่งครั้ง"}
+    "network_usdt": {
+     "v": 1,
+     "label": "Network fee to top up (USDT)",
+     "label_th": "ค่าเครือข่ายตอนเติม (USDT)"
+    },
+    "topup_pct": {
+     "v": 1.0,
+     "label": "Crypto conversion %",
+     "label_th": "ค่าแปลงคริปโต %"
+    },
+    "fx_pct": {
+     "v": 1.2,
+     "label": "FX fee %",
+     "label_th": "ค่า FX %"
+    },
+    "issuer_atm_pct": {
+     "v": 2.0,
+     "label": "Card's ATM fee %",
+     "label_th": "ค่ากดเงินของบัตร %"
+    },
+    "atm_thb": {
+     "v": 250,
+     "label": "Thai ATM fee per withdrawal (฿)",
+     "label_th": "ค่าตู้ ATM ไทยต่อครั้ง (฿)"
+    },
+    "atm_max_thb": {
+     "v": 20000,
+     "label": "Baht per withdrawal",
+     "label_th": "บาทต่อการกดหนึ่งครั้ง"
+    }
    }
   },
   {
    "kind": "card",
+   "pid": "etherfi-cash",
+   "site": "https://www.ether.fi/",
+   "thai_bank": false,
    "label": "ether.fi Cash card, cash at a Thai ATM",
    "label_th": "บัตร ether.fi Cash กดเงินสดที่ตู้ ATM ไทย",
    "needs": "no Thai bank",
@@ -69,16 +144,41 @@
    "note": "ether.fi benefits article, 23 Sep 2026: about 1% FX plus up to 0.5% margin on the Core tier; the card's own ATM fee is not stated. Thai banks charge 250 THB (Visa) or 350 THB (Mastercard) per withdrawal.",
    "note_th": "บทความสิทธิประโยชน์ ether.fi 23 ก.ย. 2026: ค่า FX ราว 1% บวกส่วนเพิ่มสูงสุด 0.5% ในระดับ Core ไม่ได้ระบุค่ากดเงินของบัตรเอง ธนาคารไทยเก็บ 250 บาท (Visa) หรือ 350 บาท (Mastercard) ต่อครั้ง",
    "fees": {
-    "network_usdt": {"v": 1, "label": "Network fee to top up (USDT)", "label_th": "ค่าเครือข่ายตอนเติม (USDT)"},
-    "topup_pct": {"v": 0, "label": "Top-up fee %", "label_th": "ค่าเติมเงิน %"},
-    "fx_pct": {"v": 1.5, "label": "FX fee %", "label_th": "ค่า FX %"},
-    "issuer_atm_pct": {"v": 0, "label": "Card's ATM fee %", "label_th": "ค่ากดเงินของบัตร %"},
-    "atm_thb": {"v": 250, "label": "Thai ATM fee per withdrawal (฿)", "label_th": "ค่าตู้ ATM ไทยต่อครั้ง (฿)"},
-    "atm_max_thb": {"v": 20000, "label": "Baht per withdrawal", "label_th": "บาทต่อการกดหนึ่งครั้ง"}
+    "network_usdt": {
+     "v": 1,
+     "label": "Network fee to top up (USDT)",
+     "label_th": "ค่าเครือข่ายตอนเติม (USDT)"
+    },
+    "topup_pct": {
+     "v": 0,
+     "label": "Top-up fee %",
+     "label_th": "ค่าเติมเงิน %"
+    },
+    "fx_pct": {
+     "v": 1.5,
+     "label": "FX fee %",
+     "label_th": "ค่า FX %"
+    },
+    "issuer_atm_pct": {
+     "v": 0,
+     "label": "Card's ATM fee %",
+     "label_th": "ค่ากดเงินของบัตร %"
+    },
+    "atm_thb": {
+     "v": 250,
+     "label": "Thai ATM fee per withdrawal (฿)",
+     "label_th": "ค่าตู้ ATM ไทยต่อครั้ง (฿)"
+    },
+    "atm_max_thb": {
+     "v": 20000,
+     "label": "Baht per withdrawal",
+     "label_th": "บาทต่อการกดหนึ่งครั้ง"
+    }
    }
   },
   {
    "kind": "wire",
+   "thai_bank": true,
    "label": "Sell abroad, wire dollars to a Thai bank",
    "label_th": "ขายในต่างประเทศ โอนดอลลาร์เข้าธนาคารไทย",
    "needs": "accounts abroad and in Thailand",
@@ -86,9 +186,21 @@
    "note": "The dollars convert at the Thai banks' average buying rate for transfers (Bank of Thailand). The exchange and both banks' fees vary; fill in yours.",
    "note_th": "ดอลลาร์แปลงที่อัตรารับซื้อเงินโอนเฉลี่ยของธนาคารไทย (ธนาคารแห่งประเทศไทย) ค่าธรรมเนียมของศูนย์ซื้อขายและธนาคารทั้งสองฝั่งแตกต่างกัน ใส่ตัวเลขของคุณ",
    "fees": {
-    "trade_pct": {"v": 0, "label": "Exchange fee to sell %", "label_th": "ค่าขายของศูนย์ซื้อขาย %"},
-    "wire_usd": {"v": 0, "label": "Sending fee (USD)", "label_th": "ค่าส่ง (USD)"},
-    "receive_thb": {"v": 0, "label": "Receiving fee (฿)", "label_th": "ค่ารับเงินโอน (฿)"}
+    "trade_pct": {
+     "v": 0,
+     "label": "Exchange fee to sell %",
+     "label_th": "ค่าขายของศูนย์ซื้อขาย %"
+    },
+    "wire_usd": {
+     "v": 0,
+     "label": "Sending fee (USD)",
+     "label_th": "ค่าส่ง (USD)"
+    },
+    "receive_thb": {
+     "v": 0,
+     "label": "Receiving fee (฿)",
+     "label_th": "ค่ารับเงินโอน (฿)"
+    }
    }
   }
  ]

@@ -7,6 +7,7 @@ data/research/*.json, data/ramp.json, data/routes.json and data/money.json.
 """
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -18,6 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fleet                                   # noqa: E402
+import paper                                   # noqa: E402
 from css import CSS                            # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -79,21 +81,25 @@ def two(o, k):
 TAG_EN = "Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed."  # stylecheck: allow — topic noun in the tagline, not a warning
 TAG_TH = "คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล"
 
-# href, English, Thai, English sub, Thai sub, picture
+# href, English, Thai, English sub, Thai sub, picture. The first HUMAN are the menu; the rest are
+# reference pages, linked from the footer's small print.
 EXITS = [
+    ("tools/", "Tools", "เครื่องมือ", "Calculator, checker", "คำนวณ ตรวจที่อยู่", "band-tools.jpg"),
     ("ramp/", "Ramp", "แลกบาท", "Crypto to baht", "จากคริปโตเป็นเงินบาท", "band-ramp.jpg"),
-    ("rules/", "Rules", "กฎ", "Thai law, tax, banks", "กฎหมาย ภาษี ธนาคาร", "band-rules.jpg"),
-    ("cards/", "Cards", "บัตร", "Cards, exchanges, rails", "บัตร ศูนย์ซื้อขาย ช่องทางโอน", "band-cards.jpg"),
+    ("cards/", "Cards", "บัตร", "Spend crypto as baht", "ใช้คริปโตจ่ายเป็นเงินบาท", "band-cards.jpg"),
+    ("scams/", "Scams", "กลโกง", "Frauds, freezes, signs", "การหลอกลวง การอายัด สัญญาณเตือน", "band-scams.jpg"),  # stylecheck: allow — nav label naming the Scams page
     ("networks/", "Networks", "เครือข่าย", "Chains and addresses", "เชนและที่อยู่กระเป๋า", "band-networks.jpg"),
     ("markets/", "Markets", "ตลาด", "The market in baht", "ตลาดในสกุลบาท", "band-markets.jpg"),
-    ("scams/", "Scams", "กลโกง", "Frauds, freezes, signs", "การหลอกลวง การอายัด สัญญาณเตือน", "band-scams.jpg"),  # stylecheck: allow — nav label naming the Scams page
+    ("rules/", "Rules", "กฎ", "Thai law, tax, banks", "กฎหมาย ภาษี ธนาคาร", "band-rules.jpg"),
     ("how/", "How", "กลไก", "How crypto works", "คริปโตทำงานอย่างไร", "band-how.jpg"),
     ("history/", "History", "ประวัติ", "1976 to now", "ตั้งแต่ 1976 ถึงวันนี้", "band-history.jpg"),
     ("words/", "Words", "ศัพท์", "English and Thai", "อังกฤษและไทย", "band-words.jpg"),
-    ("tools/", "Tools", "เครื่องมือ", "Checker, calculator", "ตรวจที่อยู่ คำนวณ", "band-tools.jpg"),
 ]
+HUMAN = 4
 EXIT_NO = {e[0]: i + 1 for i, e in enumerate(EXITS)}
 EX = {e[0]: e for e in EXITS}
+MENU = EXITS[:HUMAN]
+SUPPORT = {s["id"]: s["url"] for s in FLEET["sites"] if s.get("lane") == "support"}
 
 ARROW = ('<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L18 6" stroke="currentColor" '
          'stroke-width="3.2" stroke-linecap="round"/><path d="M9 5 H19 V15" fill="none" stroke="currentColor" '
@@ -243,7 +249,13 @@ def figure(key, caption):
 
 def table(head, rows, attrs=""):
     th_ = "".join(f'<th{" class=r" if h.endswith(" ›") else ""}>{E(h.rstrip(" ›"))}</th>' for h in head)
-    return f'<div class="tw"><table{attrs}><thead><tr>{th_}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+    labels = [E(h.rstrip(" ›")) for h in head]
+
+    def label(tr):
+        k = iter(range(len(labels)))
+        return re.sub(r"<td(?=[\s>])", lambda m: f'<td data-l="{labels[next(k, len(labels) - 1)]}"', tr.group(0))
+    body = re.sub(r"<tr\b.*?</tr>", label, "".join(rows), flags=re.S)
+    return f'<div class="tw"><table{attrs}><thead><tr>{th_}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
 def aff(pid, text=None):
@@ -288,10 +300,24 @@ def write(p: Path, text: str):
     p.write_text(text, encoding="utf-8")
 
 
+def invite(path):
+    """reference pages open with a way back to the human pages"""
+    if path in ("", "support/", "404/") or path in {e[0] for e in MENU}:
+        return ""
+    q, lab, href = {
+        "networks/": (T("Sending crypto?", "กำลังจะส่งคริปโต?"), T("Check the address", "ตรวจที่อยู่"), U("") + "#check"),  # stylecheck: allow — link label to the address checker
+        "rules/": (T("Turning crypto into baht?", "จะแลกคริปโตเป็นเงินบาท?"), T("Find your route", "หาเส้นทางของคุณ"), U("ramp/")),
+    }.get(path, (T("How many baht for your crypto?", "คริปโตของคุณแลกได้กี่บาท?"), T("Calculator", "เครื่องคำนวณ"), U("") + "#calc"))
+    return f'<a class="invite" href="{href}"><span>{q}</span><b>{lab}{ARROW}</b></a>'
+
+
+JSV = {f.name: hashlib.sha1(f.read_bytes()).hexdigest()[:8] for f in (ROOT / "js").glob("*.js")}
+
+
 def page(title, body, path, desc="", scripts=(), jsonld=None):
     nav = "".join(f'<a href="{U(h)}"{" aria-current=page" if path == h else ""}><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>'
-                  for h, en, th, *_r in EXITS)
-    js = "".join(f'<script src="{BASE}js/{s}" defer></script>' for s in scripts)
+                  for h, en, th, *_r in MENU)
+    js = "".join(f'<script src="{BASE}js/{s}?v={JSV[s]}" defer></script>' for s in scripts)
     url_en, url_th = SITE_URL + "/" + path, SITE_URL + "/th/" + path
     canon = url_th if LANG == "th" else url_en
     lds = [{"@context": "https://schema.org", "@type": "WebPage", "name": title, "url": canon, "inLanguage": LANG,
@@ -303,7 +329,8 @@ def page(title, body, path, desc="", scripts=(), jsonld=None):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     tag = T(TAG_EN, TAG_TH)
     head_title = f"{title} — {NAME}" if path else T(f"{NAME} — crypto in Thailand, and the ways out to baht", f"{NAME} — คริปโตในไทย และทางออกสู่เงินบาท")
-    exits = "".join(f'<a href="{U(h)}"><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>' for h, en, th, *_r in EXITS)
+    exits = "".join(f'<a href="{U(h)}"><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>' for h, en, th, *_r in MENU)
+    refs = " · ".join(f'<a href="{U(h)}">{E(T(en, th))}</a>' for h, en, th, *_r in EXITS[HUMAN:])
     opath = "" if path == "404/" else path
     other = (BASE + opath) if LANG == "th" else (BASE + "th/" + opath)
     toggle = f'<a class="lang" href="{other}" hreflang="{T("th", "en")}" lang="{T("th", "en")}">{T("ไทย", "EN")}</a>'
@@ -313,7 +340,8 @@ Nothing here is advice about money, tax or law.""",
              f"""ข้อความ ภาพ และข้อมูล {E(CREDIT)} โค้ด MIT สร้างเมื่อ {TODAY} ราคาจาก Bitkub, Binance, CoinGecko และธนาคารแห่งประเทศไทย
 ดึงตอนสร้างหน้าและดึงสดจาก<a href="{RATES}">บริการอัตรา</a> ตัวเลขแต่ละตัวระบุแหล่งที่มาไว้ใน<a href="{U('sources/')}">หน้าแหล่งที่มา</a>
 เนื้อหาในเว็บนี้ไม่ใช่คำแนะนำด้านการเงิน ภาษี หรือกฎหมาย""")
-    out = f"""<!doctype html><html lang="{LANG}"><head><meta charset="utf-8">
+    out = f"""<!doctype html><html lang="{LANG}" translate="no" class="notranslate"><head><meta charset="utf-8">
+<meta name="google" content="notranslate"><meta name="robots" content="notranslate"><script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(head_title)}</title>
 <meta name="description" content="{E(desc or tag)}">
@@ -334,12 +362,11 @@ Nothing here is advice about money, tax or law.""",
 <header class="top"><div class="in">
 <a class="brand" href="{U()}" aria-label="{NAME}"><span class="plate">{PLATE}</span><b>OFFRAMPT</b></a>
 <nav aria-label="{T('Exits', 'ทางออก')}">{nav}</nav>{toggle}</div></header>
-<main id="main" class="wide">{body}</main>
+<main id="main" class="wide">{invite(path)}{body}</main>
 <footer class="bot"><div class="in">
-<div class="exits">{exits}<a href="{U('support/')}"><i>฿</i>{T("Support", "สนับสนุน")}</a></div>
-<p><b>{NAME}</b> — {E(tag)}</p>
-<p>{foot}
-<a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a> · <a href="{U('support/')}">{T("Support", "สนับสนุน")}</a> · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · {toggle}</p>
+<div class="exits">{exits}<a href="{U('paper/')}"><i>▲</i>{T("Paper Baht", "บาทกระดาษ")}</a><a href="{U('support/')}"><i>฿</i>{T("Support", "สนับสนุน")}</a></div>
+<p class="fine">{refs} · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · <a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a></p>
+<p class="fine"><b>{NAME}</b> — {E(tag)} {foot} · {toggle}</p>
 {fleet.row_html(SELF, label=T("Also ours", "เว็บอื่นของเรา"), roster=FLEET)}
 {fleet.support_html(roster=FLEET, contact=False, self_id=SELF)}
 {fleet.maker_html(roster=FLEET, lang=LANG)}
@@ -382,59 +409,77 @@ def live_board():
 
 
 # ------------------------------------------------------------------ home
+REFS_ON = any((MONEY.get("referral") or {}).values())
+
+
+def tip():
+    ko, pat = SUPPORT.get("ko-fi"), SUPPORT.get("patreon")
+    if not (ko or pat):
+        return ""
+    b = ((f'<a class="btn go" href="{E(ko)}" rel="noopener" target="_blank">{T("Tip on Ko-fi", "ให้ทิปผ่าน Ko-fi")}</a>' if ko else "")
+         + (f'<a class="btn" href="{E(pat)}" rel="noopener" target="_blank">{T("Join on Patreon", "เป็นสมาชิก Patreon")}</a>' if pat else ""))
+    return f'<div class="tip"><p>{T("Did this save you baht?", "เครื่องมือนี้ช่วยให้คุณได้เงินบาทมากขึ้นไหม")}</p><div class="row">{b}</div></div>'
+
+
+def first_clause(t):
+    return re.split(r";| เสียหาย", t or "")[0].strip()
+
+
+QTH = '<span class="nw">คริปโตของคุณ</span> <span class="nw">แลกได้กี่บาท</span>'
+
+
 def home():
-    Uu, P, S, K = F["usdt"], F["premium"], F["stable"], F["bitkub"]
-    doors = "".join(door(h) for h, *_r in EXITS)
-    intro = band("hero.jpg", sign(None, "Offrampt", "Offrampt", "Crypto in Thailand · the ways out to baht", "คริปโตในไทย · ทางออกสู่เงินบาท", tab=T("EXITS 1–10", "ทางออก 1–10"),
-                                  alt_en="Crypto in Thailand · the ways out to baht", alt_th="คริปโตในไทย · ทางออกสู่เงินบาท")
-                 + '<p class="lede" style="margin-top:1.8rem">' + T(
-                     "Holding crypto in Thailand is easy. Turning it into baht you can spend, without a Thai bank account, is the hard part. "
-                     "Ten exits: the routes, the rules, the cards, the networks, the market in baht, the scams, how it works, where it came from, the words, and the tools.",
-                     "ถือคริปโตในไทยนั้นง่าย ส่วนที่ยากคือการแลกเป็นเงินบาทที่ใช้จ่ายได้ โดยไม่มีบัญชีธนาคารไทย "
-                     "สิบทางออก: เส้นทางแลกเงิน กฎ บัตร เครือข่าย ตลาดในสกุลบาท กลโกง กลไก ความเป็นมา คำศัพท์ และเครื่องมือ") + "</p>", "hero")
-    finds = "".join([
-        tile(T("USDT vs a wired dollar", "USDT เทียบเงินโอนดอลลาร์"), pct(Uu["vs_tt_median"]),
-             T(f'median baht from one USDT sold on Bitkub, against the Thai banks\' buying rate for a dollar transfer, {n(Uu["days"])} days since {Uu["from"][:4]}',
-               f'ค่ามัธยฐานของเงินบาทที่ได้จากการขาย 1 USDT บน Bitkub เทียบอัตรารับซื้อเงินโอนดอลลาร์ของธนาคารไทย {n(Uu["days"])} วัน ตั้งแต่ปี {Uu["from"][:4]}')
-             + cite("bitkub", "bot"), "go"),
-        tile(T("Days within 1% of world", "วันที่ห่างราคาโลกไม่เกิน 1%"), f'{P["within_1pct"]:.0f}%',
-             T(f"Bitkub's bitcoin close against Binance × the BOT rate, {n(P['days'])} days", f"ราคาปิดบิตคอยน์บน Bitkub เทียบ Binance × อัตรา ธปท. {n(P['days'])} วัน") + cite("binance")),
-        tile(T("USDT share of Bitkub", "สัดส่วน USDT บน Bitkub"), f'{K["usdt_share"]:.0f}%',
-             T("of all baht volume on Bitkub's own book, last 24 hours", "ของมูลค่าซื้อขายเป็นเงินบาททั้งหมดในสมุดคำสั่งของ Bitkub เอง 24 ชั่วโมงล่าสุด"), "blue"),
-        tile(T("Stablecoins", "สเตเบิลคอยน์"), f'${S["total_usd"] / 1e9:.0f}B',
-             T(f'in circulation; USDT is {S["top"][0]["share"]:.0f}% of them', f'หมุนเวียนอยู่ในตลาด USDT คิดเป็น {S["top"][0]["share"]:.0f}%') + cite("llama")),
-        tile(T("USDT on Tron", "USDT บน Tron"), f'{S["usdt_tron_share"]:.0f}%', T("of all USDT sits on the Tron network", "ของ USDT ทั้งหมดอยู่บนเครือข่าย Tron"), "red"),
-        tile(T("Bitcoin in baht", "บิตคอยน์เป็นบาท"), f'{F["btc"]["multiple_since_first"]}×',
-             T(f'since May 2018 on Bitkub; {pct(F["btc"]["from_ath_pct"], 1)} from the {F["btc"]["ath_date"][:7]} high',
-               f'ตั้งแต่ พ.ค. 2018 บน Bitkub; {pct(F["btc"]["from_ath_pct"], 1)} จากจุดสูงสุด {F["btc"]["ath_date"][:7]}')),
-        tile(T("Bank margin", "ส่วนต่างของธนาคาร"), pct(Uu["bank_margin_median"], sign=False),
-             T("median gap between the interbank mid and what Thai banks pay for a dollar transfer", "ค่ามัธยฐานของส่วนต่างระหว่างอัตรากลางกับอัตราที่ธนาคารไทยรับซื้อเงินโอนดอลลาร์"), "blue"),
-        tile(T("Hottest year", "ปีที่ร้อนแรงที่สุด"), str(P["hot_year"]["year"]),
-             T(f'bitcoin on Bitkub ran a median {pct(P["hot_year"]["median"])} over the world price', f'บิตคอยน์บน Bitkub สูงกว่าราคาโลก ค่ามัธยฐาน {pct(P["hot_year"]["median"])}'), "go"),
-    ])
+    Uu, K, X, B, S = F["usdt"], F["bitkub"], F["fx"], F["btc"], F["stable"]
+    tick = (f'<p class="tick"><span class="live stale" id="livestate">{T("baked", "ค่าตอนสร้าง")}</span>'
+            f'<span>1 USDT = ฿<b data-live="usdt_bid">{Uu["last"]["bitkub"]:.2f}</b></span>'
+            f'<span>$1 = ฿<b data-live="bot_mid">{X["mid"]:.2f}</b></span>'
+            f'<span>1 BTC = <b data-live="btc_bid">{thb(B["thb"])}</b></span></p>')
+    top = band("hero.jpg", sign(None, "Offrampt", "Offrampt", "Crypto in Thailand · the ways out to baht", "คริปโตในไทย · ทางออกสู่เงินบาท",
+                                cls="sm", tab="", alt_en="", alt_th="")
+               + f'<h1 class="q">{T("How many baht for your crypto?", QTH)}</h1>' + tick, "top")
     who = "".join(
-        f'<a class="cardx" href="{U("ramp/")}#{sid}" style="text-decoration:none;color:inherit"><span class="pill {pc}">{E(T(pe, pt))}</span>'
-        f'<h3>{E(T(te, tt))}</h3><p class="small">{E(T(de, dt_))}</p></a>'
+        f'<a class="whorow" href="{U("ramp/")}#{sid}"><span class="pill {pc}">{E(T(pe, pt))}</span>'
+        f'<b>{E(T(te, tt))}</b><span class="small mute">{E(T(de, dt_))}</span></a>'
         for sid, pc, pe, pt, te, tt, de, dt_ in [
             ("visiting", "amber", "no Thai bank", "ไม่มีบัญชีธนาคารไทย", "Visiting", "มาเยือน",
-             "A short stay. Cards, cash, and the TouristDigiPay sandbox the SEC has set up.", "พักระยะสั้น บัตร เงินสด และแซนด์บ็อกซ์ TouristDigiPay ที่ ก.ล.ต. ตั้งไว้"),
+             "A crypto card, cash at any Thai ATM.", "บัตรคริปโต กดเงินสดที่ตู้ ATM ไทยได้ทุกตู้"),
             ("living", "blue", "long stay", "พำนักระยะยาว", "Living here, unbanked", "อยู่ที่นี่ ยังไม่มีบัญชีธนาคาร",
-             "DTV, remote work, between visas. The routes that work before a bank says yes.", "DTV ทำงานทางไกล ระหว่างรอวีซ่า เส้นทางที่ใช้ได้ก่อนธนาคารอนุมัติ"),
+             "DTV, remote work, between visas.", "DTV ทำงานทางไกล ระหว่างรอวีซ่า"),
             ("banked", "go", "Thai bank", "มีบัญชีธนาคารไทย", "Banked here", "มีบัญชีธนาคารที่นี่",
-             "Work permit, retirement, family. A licensed Thai exchange to your own account.", "ใบอนุญาตทำงาน วีซ่าเกษียณ ครอบครัว ศูนย์ซื้อขายไทยที่ได้รับอนุญาต สู่บัญชีของคุณเอง")])
-    body = intro + section(f"""
-{live_board()}
-<h2>{T("Findings", "สิ่งที่พบ")} <small>{T(f"computed from {n(P['days'])} days of prices", f"คำนวณจากราคา {n(P['days'])} วัน")}</small></h2>
-<div class="tiles">{finds}</div>
-<h2>{T("Where you stand", "คุณอยู่ตรงไหน")}</h2><div class="grid3">{who}</div>
-<h2>{T("The exits", "ทางออก")}</h2>
-<div class="doors">{doors}</div>
-{recent_block()}
-{subscribe()}
+             "A licensed Thai exchange, straight to your account.", "ศูนย์ซื้อขายไทยที่ได้รับอนุญาต เข้าบัญชีของคุณโดยตรง")])
+    sc = max((s for s in (R["scams"].get("stats") or []) if str(s.get("year")) == TODAY[:4] and "losses" in (s.get("metric") or "")  # stylecheck: allow — code
+              and isinstance(s.get("value"), (int, float))), key=lambda s: s["value"], default=None)
+    nums = "".join([
+        tile(T("USDT vs a bank wire", "USDT เทียบเงินโอนธนาคาร"), "+" + thb(Uu["year_thb_per_10k"]),
+             T(f'more per $10,000 than a bank wire, last year, before fees · median {pct(Uu["vs_tt_median"])} since {Uu["from"][:4]}',
+               f'ต่อ 10,000 ดอลลาร์ มากกว่าโอนผ่านธนาคาร ในหนึ่งปีที่ผ่านมา ก่อนหักค่าธรรมเนียม · ค่ามัธยฐาน {pct(Uu["vs_tt_median"])} ตั้งแต่ {Uu["from"][:4]}')
+             + cite("bitkub", "bot"), "go"),
+        tile(T("Bitkub, 24 hours", "Bitkub 24 ชั่วโมง"), T(f'฿{K["vol_total"] / 1e9:.1f}B', f'฿{K["vol_total"] / 1e6:,.0f} ล้าน'),
+             T(f'traded against baht; USDT is {K["usdt_share"]:.0f}% of it', f'มูลค่าซื้อขายเป็นเงินบาท USDT คิดเป็น {K["usdt_share"]:.0f}%') + cite("bitkub"), "blue"),
+        tile(T("Stablecoins", "สเตเบิลคอยน์"), f'${S["total_usd"] / 1e9:.0f}B',
+             T(f'in circulation worldwide; USDT is {S["top"][0]["share"]:.0f}%', f'หมุนเวียนทั่วโลก USDT คิดเป็น {S["top"][0]["share"]:.0f}%') + cite("llama")),
+    ])
+    if sc:
+        near, cl = "nearly" in sc.get("unit", ""), first_clause(fld(sc, "scope"))
+        note = E(T(f'{sc.get("metric", "")} · {cl[:1].lower() + cl[1:]}', f'{fld(sc, "metric")} · {cl}'))
+        nums += tile(T("Scams", "กลโกง"), ("~" if near else "") + T(f'฿{sc["value"]:g}B', f'฿{sc["value"]:g} พันล้าน'), note + cite(src_of(sc)), "red")  # stylecheck: allow — tile label: scam losses figure
+    doors = "".join(door(h) for h, *_r in MENU)
+    body = top + section(f"""
+<div id="calc">{calc_block(fees_open=False)}</div>
+{tip()}
+<a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
+<h2 id="check">{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
+{checker(tries=True)}
+<h2>{T("Where you stand", "คุณอยู่ตรงไหน")}</h2>
+<div class="who">{who}</div>
+<h2>{T("Numbers", "ตัวเลข")}</h2>
+<div class="tiles two">{nums}</div>
+<div class="doors four">{doors}</div>
+{disclose() if REFS_ON else ""}
 """)
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "description": T(TAG_EN, TAG_TH),
           "inLanguage": ["en", "th"], "license": "https://creativecommons.org/licenses/by/4.0/"}
-    page(NAME, body, "", scripts=("i18n.js", "live.js"), jsonld=ld)
+    page(NAME, body, "", scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
 
 
 def recent_block():
@@ -482,6 +527,7 @@ def ramp():
 <h2 id="calc">{T("The calculator", "เครื่องคำนวณ")}</h2>
 <p>{T("One amount, each route's costs. Where a provider publishes a fee, its field starts there; a field at zero is one for you to fill. Every field can be changed.", "จำนวนเงินเดียวกัน คิดค่าใช้จ่ายของแต่ละเส้นทาง ช่องที่ผู้ให้บริการเผยแพร่ค่าธรรมเนียมจะตั้งต้นจากค่านั้น ช่องที่เป็นศูนย์คือช่องให้คุณกรอกเอง แก้ไขได้ทุกช่อง")}</p>
 {calc_block()}
+{tip()}
 <h2>{T("The spread", "ส่วนต่าง")}</h2>
 <p>{T(f"Selling USDT on Bitkub has fetched a median {pct(Uu['vs_tt_median'])} more baht than a dollar wired into a Thai bank at the banks' buying rate, over {n(Uu['days'])} days.",
       f"การขาย USDT บน Bitkub ได้เงินบาทมากกว่าเงินดอลลาร์ที่โอนเข้าธนาคารไทยตามอัตรารับซื้อของธนาคาร ค่ามัธยฐาน {pct(Uu['vs_tt_median'])} ตลอด {n(Uu['days'])} วัน")}{cite("bitkub", "bot")}</p>
@@ -495,13 +541,20 @@ def ramp():
          scripts=("i18n.js", "live.js", "calc.js"))
 
 
-def calc_block():
+def calc_block(fees_open=True):
     Uu, X, B = F["usdt"], F["fx"], F["btc"]
     base = {"usdt_bid": Uu["last"]["bitkub"], "mid": X["mid"], "tt": X["tt"], "btc_bid": B["thb"], "date": Uu["last"]["date"]}
+    refs = MONEY.get("referral") or {}
+    routes = [dict(r, ref=refs.get(r.get("pid") or "") or None) for r in ROUTES]
+    seg = "".join(f'<button type="button" aria-pressed="{"true" if k == "all" else "false"}" data-bank="{k}">{E(v)}</button>' for k, v in
+                  (("all", T("Everyone", "ทุกคน")), ("yes", T("Thai bank", "มีบัญชีไทย")), ("no", T("No Thai bank", "ไม่มีบัญชีไทย"))))
     return (f'<script type="application/json" id="ratebase">{json.dumps(base)}</script>'
-            f'<script type="application/json" id="routes">{json.dumps(ROUTES, ensure_ascii=False)}</script>'
-            f'<div class="panel" id="calcbox"><div class="row"><div class="field" style="flex:1 1 10rem;margin:0"><input id="camt" inputmode="decimal" placeholder=" " value="1000">'
-            f'<label for="camt">{T("USDT to turn into baht", "จำนวน USDT ที่จะแลกเป็นบาท")}</label></div></div><div id="croutes"></div><div id="cbars" style="margin-top:1rem"></div></div>')
+            f'<script type="application/json" id="routes">{json.dumps(routes, ensure_ascii=False)}</script>'
+            f'<div class="panel calc" id="calcbox"><div class="field amt"><input id="camt" inputmode="decimal" placeholder=" " value="1000">'
+            f'<label for="camt">{T("USDT to turn into baht", "จำนวน USDT ที่จะแลกเป็นบาท")}</label></div>'
+            f'<div class="seg" role="group" aria-label="{T("Your bank", "บัญชีธนาคารของคุณ")}">{seg}</div>'
+            f'<p class="gap" id="cgap" aria-live="polite"></p><div id="cbars"></div>'
+            f'<details class="fees"{" open" if fees_open else ""}><summary>{T("Fees, route by route", "ค่าธรรมเนียม แยกตามเส้นทาง")}</summary><div id="croutes"></div></details></div>')
 
 
 # ------------------------------------------------------------------ markets
@@ -599,10 +652,21 @@ NETS = [
 ]
 
 
-def checker():
-    return (f'<div class="panel"><div class="field"><textarea id="addr" placeholder=" " spellcheck="false" autocomplete="off"></textarea>'
+TRY = (("Bitcoin", "Bitcoin", "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"),
+       ("USDT on Tron", "USDT บน Tron", "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"),
+       ("One typo", "พิมพ์ผิดหนึ่งตัว", "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNb"))
+
+
+def checker(tries=False):
+    tr = ""
+    if tries:
+        tr = ('<div class="row tries"><span class="small mute">' + T("Try:", "ลอง:") + "</span>"
+              + "".join(f'<button type="button" data-try="{E(a)}">{E(T(en, th))}</button>' for en, th, a in TRY)
+              + "</div><script>document.querySelectorAll('[data-try]').forEach(function(b){b.addEventListener('click',function(){"
+              "var x=document.getElementById('addr');x.value=b.dataset.try;x.dispatchEvent(new Event('input'))})})</script>")
+    return (f'<div class="panel" id="addrbox"><div class="field"><textarea id="addr" placeholder=" " spellcheck="false" autocomplete="off"></textarea>'
             f'<label for="addr">{T("Address, invoice or payment name", "ที่อยู่ ใบแจ้งหนี้ หรือชื่อรับเงิน")}</label></div>'
-            f'<div class="out" id="addrout" aria-live="polite">{T("Waiting for an address.", "รอที่อยู่")}</div></div>')
+            f'<div class="out" id="addrout" aria-live="polite">{T("Waiting for an address.", "รอที่อยู่")}</div>{tr}</div>')
 
 
 def networks():
@@ -694,8 +758,8 @@ def tools():
                                  "เครื่องมือสามอย่างสำหรับช่วงก่อนกดส่ง: ตัวตรวจที่อยู่ เครื่องคำนวณการแลก และตัวแปลงเป็นบาทด้วยราคาสด"))
     body += section(f"""
 {live_board()}
-<h2>{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
-{checker()}
+<h2 id="check">{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
+{checker(tries=True)}
 <p class="small mute">{T("Formats and checksums: bitcoin base58 and bech32/bech32m; EVM mixed-case checksums; Tron, XRP and TON checks.", "รูปแบบและ checksum: บิตคอยน์ base58 และ bech32/bech32m, EVM แบบตัวพิมพ์ผสม, Tron, XRP และ TON")}{cite("bip173", "bip350", "eip55")}</p>
 <h2>{T("Baht converter", "แปลงเป็นบาท")}</h2>
 <div class="panel"><div class="row">
@@ -706,6 +770,7 @@ def tools():
 <p>{T("Each route turns the same amount into baht with its own costs. Where a provider publishes a fee, its field starts there; a field at zero is one for you to fill.",
       "แต่ละเส้นทางแลกจำนวนเงินเดียวกันเป็นบาทโดยมีค่าใช้จ่ายของตัวเอง ช่องที่ผู้ให้บริการเผยแพร่ค่าธรรมเนียมจะตั้งต้นจากค่านั้น ช่องที่เป็นศูนย์คือช่องให้คุณกรอกเอง")}</p>
 {calc_block()}
+{tip()}
 {disclose()}
 """)
     page(T("Tools", "เครื่องมือ"), body, "tools/", T("Crypto-to-baht tools: an address checker for BTC, EVM, Tron, Solana, XRP and TON; an off-ramp calculator; a live baht converter.",
@@ -974,7 +1039,7 @@ def not_found():
 
 
 def machine_files():
-    pages = [""] + [h for h, *_r in EXITS] + ["support/", "sources/", "data/", "for-agents/"]
+    pages = [""] + [h for h, *_r in EXITS] + ["paper/", "support/", "sources/", "data/", "for-agents/"]
     urls = "".join(f'<url><loc>{SITE_URL}/{p}{h}</loc><lastmod>{TODAY}</lastmod>'
                    f'<xhtml:link rel="alternate" hreflang="en" href="{SITE_URL}/{h}"/><xhtml:link rel="alternate" hreflang="th" href="{SITE_URL}/th/{h}"/></url>'
                    for h in pages for p in ("", "th/"))
@@ -996,7 +1061,7 @@ def machine_files():
 - Bitcoin in baht: {thb(F['btc']['thb'])} on {F['btc']['date']}; high {thb(F['btc']['ath_thb'])} on {F['btc']['ath_date']}
 
 ## Pages
-""" + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""
+""" + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""- {SITE_URL}/paper/ · {SITE_URL}/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live Bitkub prices; built by Hongdam Studio, https://hongdam.net/
 ## Data
 - {SITE_URL}/data/facts.json
 - {SITE_URL}/data/series.json
@@ -1008,7 +1073,7 @@ Nothing here is advice about money, tax or law.
 """ + fleet.llms_section(SELF, roster=FLEET))
     write(SITE / "icon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="1" y="4" width="30" height="24" rx="5" fill="#0b6b43" stroke="#e8f2eb" stroke-width="2"/>'
           '<path d="M9 22 L21 10" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round"/><path d="M13 9 H22 V18" fill="none" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
-    write(SITE / "_headers", "/img/*\n  Cache-Control: public, max-age=604800\n/data/*\n  Access-Control-Allow-Origin: *\n")
+    write(SITE / "_headers", "/*\n  X-Robots-Tag: notranslate\n/img/*\n  Cache-Control: public, max-age=604800\n/data/*\n  Access-Control-Allow-Origin: *\n")
     d = SITE / "data"
     d.mkdir(exist_ok=True)
     shutil.copy(BUILD / "facts.json", d / "facts.json")
@@ -1034,6 +1099,7 @@ def main():
     for LANG in ("en", "th"):
         sources_page()
     LANG = "en"
+    paper.build(SITE)
     machine_files()
     fleet.decorate(SITE, SELF, roster=FLEET)
     (SITE / ".basepath").write_text(BASE, encoding="utf-8")

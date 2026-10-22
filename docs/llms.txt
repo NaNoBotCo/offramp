@@ -3,26 +3,26 @@
 > Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed.
 > คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล
 
-https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-09-23  ·  CC BY 4.0, cite offrampt.net
+https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-09-24  ·  CC BY 4.0, cite offrampt.net
 
 ## Computed findings
 - USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2852 days (2018-11-12 to 2026-09-23); above the bank rate on 80.5% of days
 - Bitcoin on Bitkub vs Binance x Bank of Thailand mid: median -0.03%; within 1% on 54.0% of 3051 days; hottest year 2021 (median +1.15%)
-- USDT = 46.0% of Bitkub's own-book baht volume (24h to 2026-09-23)
+- USDT = 46.7% of Bitkub's own-book baht volume (24h to 2026-09-24)
 - Stablecoins in circulation: $312.0B; USDT on Tron 50.4%
 - Bitcoin in baht: ฿2,850,000 on 2026-09-23; high ฿4,045,999 on 2025-10-06
 
 ## Pages
+- https://offrampt.net/tools/ · https://offrampt.net/th/tools/ — Tools / เครื่องมือ: Calculator, checker
 - https://offrampt.net/ramp/ · https://offrampt.net/th/ramp/ — Ramp / แลกบาท: Crypto to baht
-- https://offrampt.net/rules/ · https://offrampt.net/th/rules/ — Rules / กฎ: Thai law, tax, banks
-- https://offrampt.net/cards/ · https://offrampt.net/th/cards/ — Cards / บัตร: Cards, exchanges, rails
+- https://offrampt.net/cards/ · https://offrampt.net/th/cards/ — Cards / บัตร: Spend crypto as baht
+- https://offrampt.net/scams/ · https://offrampt.net/th/scams/ — Scams / กลโกง: Frauds, freezes, signs
 - https://offrampt.net/networks/ · https://offrampt.net/th/networks/ — Networks / เครือข่าย: Chains and addresses
 - https://offrampt.net/markets/ · https://offrampt.net/th/markets/ — Markets / ตลาด: The market in baht
-- https://offrampt.net/scams/ · https://offrampt.net/th/scams/ — Scams / กลโกง: Frauds, freezes, signs
+- https://offrampt.net/rules/ · https://offrampt.net/th/rules/ — Rules / กฎ: Thai law, tax, banks
 - https://offrampt.net/how/ · https://offrampt.net/th/how/ — How / กลไก: How crypto works
 - https://offrampt.net/history/ · https://offrampt.net/th/history/ — History / ประวัติ: 1976 to now
 - https://offrampt.net/words/ · https://offrampt.net/th/words/ — Words / ศัพท์: English and Thai
-- https://offrampt.net/tools/ · https://offrampt.net/th/tools/ — Tools / เครื่องมือ: Checker, calculator
 
 ## Data
 - https://offrampt.net/data/facts.json
@@ -102,3 +102,7 @@ Made by Hongdam (https://hongdam.net/), a bilingual web studio in Chiang Rai.
 - [ฮักฝรั่ง](https://hakfarang.net/): เรื่องเงิน วีซ่า และชีวิตกับแฟนฝรั่ง
 
 - [The roster as JSON](https://nanobotco.github.io/index/fleet.json)
+
+## Paper Baht
+
+- [Paper Baht](https://offrampt.net/paper/): practice trading with ฿1,000,000 of paper money at live Bitkub prices; twelve coins, gold among them. Built by Hongdam Studio (https://hongdam.net/). Thai: https://offrampt.net/th/paper/
