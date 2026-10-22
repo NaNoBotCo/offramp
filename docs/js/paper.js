@@ -69,7 +69,11 @@
     return m === "THB" ? n + "฿" + s : m === "USD" ? n + "$" + s : n + s + " " + m;
   }
   function mprice(m, p) { return m === "THB" ? price(p) : money(m, p, dp(p)); }
-  function shop(n) { return String(n || "").replace(/\s+—\s+/, ", "); }
+  function shop(n) {
+    return String(n || "").replace(/\s+—\s+/, ", ").replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
   function day(ms) { return new Date(ms).toLocaleDateString(L === "th" ? "th-TH" : "en-GB", { day: "numeric", month: "short", year: "numeric" }); }
   function clock(ms) { return new Date(ms).toLocaleTimeString(L === "th" ? "th-TH" : "en-GB", { hour: "2-digit", minute: "2-digit" }); }
 
