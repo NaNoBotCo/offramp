@@ -12,6 +12,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from og_alts import ALTS  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SITE_URL = "https://offrampt.net"
 RATES = "https://offrampt-rates.nanobotco.workers.dev/"
@@ -150,7 +153,7 @@ PLATE = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L17 7" stro
          'stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
 
-def build(site: Path, og_en: str = "/img/og/en-tools.jpg", og_th: str = "/img/og/th-tools.jpg"):
+def build(site: Path, og_en: str = "/img/og/en-paper.jpg", og_th: str = "/img/og/th-paper.jpg"):
     tpl = (ROOT / "app" / "paper.html").read_text(encoding="utf-8")
     jsv = hashlib.sha1((ROOT / "js" / "paper.js").read_bytes()).hexdigest()[:8]
     out = []
@@ -171,7 +174,7 @@ def build(site: Path, og_en: str = "/img/og/en-tools.jpg", og_th: str = "/img/og
             "url_en": en_url, "url_th": th_url, "home": "/" if lang == "en" else "/th/",
             "other": "/th/paper/" if lang == "en" else "/paper/", "other_lang": "th" if lang == "en" else "en",
             "other_label": "ไทย" if lang == "en" else "EN", "og": SITE_URL + (og_en if lang == "en" else og_th),
-            "og_locale": "en_US" if lang == "en" else "th_TH", "plate": PLATE, "rates": RATES, "hongdam": HONGDAM,
+            "og_locale": "en_US" if lang == "en" else "th_TH", "og_alt": html.escape(ALTS[lang + "-paper"]), "plate": PLATE, "rates": RATES, "hongdam": HONGDAM,
             "jsv": jsv, "ld": json.dumps(ld, ensure_ascii=False),
             "tjson": json.dumps(words, ensure_ascii=False).replace("</", "<\\/"),
         }

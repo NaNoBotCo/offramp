@@ -28,6 +28,8 @@ ALTS = {
     "th-support": "การ์ด: สนับสนุน, ทางแสงไปยังป้าย EXIT บนถนนตอนกลางคืน",
     "th-tools": "การ์ด: เครื่องมือ, แถวที่อยู่กระเป๋าหลายสี",
     "th-words": "การ์ด: ศัพท์, ศัพท์คริปโตไทยและอังกฤษเรืองแสง",
+    "en-paper": "Card: Paper Baht, over a green gold price line from the app",
+    "th-paper": "การ์ด: บาทกระดาษ, เส้นราคาทองคำสีเขียวจากแอป",
     "en-tools": "Card: Tools, over rows of coloured wallet addresses",
     "en-words": "Card: Words, over glowing Thai and English crypto words",
 }
