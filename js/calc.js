@@ -82,6 +82,7 @@
     if (s.bitkub_usdt) rate.usdt_bid = s.bitkub_usdt.bid;
     if (s.bitkub_btc) rate.btc_bid = s.bitkub_btc.bid;
     if (s.bot) rate.mid = s.bot.usd_thb_mid;
+    if (s.bot && s.bot.usd_thb_transfer) rate.tt = s.bot.usd_thb_transfer;
     rate.when = t("live, ", "สด ") + new Date(s.bitkub_usdt ? s.bitkub_usdt.fetched_at : Date.now()).toLocaleString();
     conv(); calc();
   });

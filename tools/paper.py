@@ -21,8 +21,8 @@ W = {
     "name": ("Paper Baht", "บาทกระดาษ"),
     "by": ("Built by Hongdam Studio", "สร้างโดย หงส์ดำ สตูดิโอ"),
     "head": ("Paper Baht — practice trading at live Bitkub prices — Offrampt", "บาทกระดาษ — ฝึกเทรดด้วยราคาสดจาก Bitkub — Offrampt"),
-    "desc": ("Trade ฿1,000,000 of paper money at live Bitkub prices: twelve coins and gold, charts, orders at your price, a monkey to race, and yesterday on rewind.",
-             "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub: สิบสองเหรียญรวมทองคำ กราฟ คำสั่งที่ราคาของคุณ แข่งกับลิง และย้อนเล่นเมื่อวาน"),
+    "desc": ("Trade ฿1,000,000 of paper money at live prices: eleven coins with gold among them, baht, US dollars, USDT and USDC, charts, orders at your price, a monkey to race, and yesterday on rewind.",
+             "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสด: สิบเอ็ดเหรียญรวมทองคำ เงินบาท ดอลลาร์สหรัฐ USDT และ USDC กราฟ คำสั่งที่ราคาของคุณ แข่งกับลิง และย้อนเล่นเมื่อวาน"),
     "account": ("Your paper account", "บัญชีกระดาษของคุณ"),
     "total": ("Total", "รวม"),
     "sincestart": ("Since start", "ตั้งแต่เริ่ม"),
@@ -93,7 +93,7 @@ W = {
     "filled": ("Filled. ", "สำเร็จ "),
     "cancelled": ("Order cancelled.", "ยกเลิกคำสั่งแล้ว"),
     "e_cash": ("Not enough cash.", "เงินสดไม่พอ"),
-    "e_min": ("The smallest order is ฿10.", "คำสั่งขั้นต่ำ ฿10"),
+    "e_min": ("The smallest amount is {min}.", "จำนวนขั้นต่ำ {min}"),
     "e_none": ("You hold no {coin}.", "คุณไม่มี {coin}"),
     "e_price": ("Set your price first.", "ตั้งราคาก่อน"),
     "e_noprice": ("Waiting for prices.", "กำลังรอราคา"),
@@ -109,7 +109,40 @@ W = {
     "fine": ("Nothing here is advice about money, tax or law.", "เนื้อหาในเว็บนี้ไม่ใช่คำแนะนำด้านการเงิน ภาษี หรือกฎหมาย"),
     "c_BTC": ("Bitcoin", "บิตคอยน์"), "c_ETH": ("Ether", "อีเธอร์"), "c_XAUT": ("Gold", "ทองคำ"), "c_USDT": ("Tether dollar", "ดอลลาร์เทเธอร์"),
     "c_SOL": ("Solana", "โซลานา"), "c_XRP": ("XRP", "XRP"), "c_DOGE": ("Dogecoin", "โดชคอยน์"), "c_BNB": ("BNB", "BNB"),
+    "money": ("Money", "เงิน"),
+    "pay_in": ("Pay in", "จ่ายเป็น"), "get_in": ("Get", "รับเป็น"),
+    "amount_in": ("Amount in {m}", "จำนวน ({m})"),
+    "no_usdt": ("{coin} has no USDT market on Bitkub.", "{coin} ไม่มีตลาด USDT บน Bitkub"),
+    "m_THB": ("Baht", "บาท"), "m_USD": ("US dollars, cash", "ดอลลาร์สหรัฐ เงินสด"), "m_USDT": ("Tether (USDT)", "เทเธอร์ (USDT)"), "m_USDC": ("USD Coin (USDC)", "ยูเอสดีคอยน์ (USDC)"),
+    "ms_THB": ("Baht", "บาท"), "ms_USD": ("Dollars", "ดอลลาร์"), "ms_USDT": ("USDT", "USDT"), "ms_USDC": ("USDC", "USDC"),
+    "wallet": ("Your money", "เงินของคุณ"),
+    "swap": ("Swap", "แลก"), "from": ("From", "จาก"), "to": ("To", "เป็น"), "flip": ("Swap the two", "สลับ"),
+    "swap_go": ("Swap {a} for {m}", "แลก {a} เป็น{m}"),
+    "swapped": ("Swapped {a} for {b}", "แลก {a} ได้ {b}"),
+    "leg_sell_cash": ("Sell {x} to {shop} at {r}: {y}", "ขาย {x} ให้ {shop} อัตรา {r}: {y}"),
+    "leg_buy_cash": ("Buy {y} from {shop} at {r}", "ซื้อ {y} จาก {shop} อัตรา {r}"),
+    "leg_sell_coin": ("Sell {x} on Bitkub at {r}: {y}, fee {f}", "ขาย {x} บน Bitkub อัตรา {r}: {y} ค่าธรรมเนียม {f}"),
+    "leg_buy_coin": ("Buy {y} on Bitkub at {r}, fee {f}", "ซื้อ {y} บน Bitkub อัตรา {r} ค่าธรรมเนียม {f}"),
+    "change": ("{c} change back in baht", "เงินทอน {c}"),
+    "same": ("Pick two different kinds of money.", "เลือกเงินสองแบบที่ต่างกัน"),
+    "e_bal": ("Not enough {m}.", "{m} ไม่พอ"),
+    "rt_h": ("Out and back", "แลกไปแล้วแลกกลับ"),
+    "rt_p": ("฿10,000 swapped to each, then straight back to baht. The gap is the spread and the fees.", "แลก ฿10,000 ไปแต่ละแบบแล้วแลกกลับเป็นบาททันที ส่วนที่หายไปคือส่วนต่างราคาและค่าธรรมเนียม"),
+    "rates_src": ("Dollar notes: the best Chiang Mai money changer, rates from thairate.com (CC BY 4.0), refreshed every fifteen minutes. USDT and USDC: Bitkub, live. Dollar notes come in whole dollars; change comes back in baht.",
+                  "ธนบัตรดอลลาร์: ร้านแลกเงินที่ให้ราคาดีที่สุดในเชียงใหม่ อัตราจาก thairate.com (CC BY 4.0) อัปเดตทุกสิบห้านาที USDT และ USDC: ราคาสดจาก Bitkub ธนบัตรดอลลาร์แลกเป็นจำนวนเต็ม เงินทอนคืนเป็นบาท"),
+    "show_usd": ("Tap to show in dollars", "แตะเพื่อแสดงเป็นดอลลาร์"), "show_thb": ("Tap to show in baht", "แตะเพื่อแสดงเป็นบาท"),
+    "about_p4": ("The account holds baht, US dollar notes, USDT and USDC. Swaps between them go through baht, the way they do in Thailand: dollar notes at a money changer, USDT and USDC on Bitkub. Coins can be paid for in baht, or in USDT where Bitkub has a USDT market. Totals in dollars use the Bank of Thailand reference rate.",
+                 "บัญชีถือเงินบาท ธนบัตรดอลลาร์สหรัฐ USDT และ USDC การแลกระหว่างกันผ่านเงินบาทเหมือนที่ทำในไทย: ธนบัตรดอลลาร์ที่ร้านแลกเงิน USDT และ USDC บน Bitkub ซื้อเหรียญได้ด้วยบาท หรือด้วย USDT ถ้า Bitkub มีตลาด USDT ยอดรวมเป็นดอลลาร์ใช้อัตราอ้างอิงของธนาคารแห่งประเทศไทย"),
+    "m_swap": ("First swap", "แลกครั้งแรก"), "m_four": ("Four kinds of money", "เงินครบสี่แบบ"),
+    "c_USDC": ("USD Coin", "ยูเอสดีคอยน์"),
     "c_ADA": ("Cardano", "คาร์ดาโน"), "c_KUB": ("Bitkub Coin", "บิทคับคอยน์"), "c_LINK": ("Chainlink", "เชนลิงก์"), "c_SUI": ("Sui", "ซุย"),
+}
+
+PICS = {
+    "THB": '<svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#2fa66a"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">฿</text></svg>',
+    "USD": '<svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#7fa56b"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">$</text></svg>',
+    "USDT": '<svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#26a17b"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">₮</text></svg>',
+    "USDC": '<svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#2775ca"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">$</text></svg>',
 }
 
 PLATE = ('<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L17 7" stroke="#f3faf5" stroke-width="3.4" '
@@ -143,6 +176,8 @@ def build(site: Path, og_en: str = "/img/og/en-tools.jpg", og_th: str = "/img/og
             "tjson": json.dumps(words, ensure_ascii=False).replace("</", "<\\/"),
         }
         page = tpl
+        for m, svg in PICS.items():
+            page = page.replace("{{pic:" + m + "}}", svg)
         for k, v in words.items():
             page = page.replace("{{t:" + k + "}}", html.escape(v))
         for k, v in rep.items():

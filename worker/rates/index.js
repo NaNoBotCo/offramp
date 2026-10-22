@@ -64,7 +64,7 @@ async function refresh(env) {
   const today = bangkokDate();
 
   // BOT reference — one fetch per Bangkok day is plenty for a daily series.
-  if (!sources.bot || sources.bot.checked_on !== today) {
+  if (!sources.bot || sources.bot.checked_on !== today || sources.bot.usd_thb_transfer == null) {
     try {
       const since = bangkokDate(new Date(Date.now() - 7 * 864e5));
       const url = BOT_FX + "?start_period=" + since + "&end_period=" + today + "&currency=USD";
@@ -72,6 +72,7 @@ async function refresh(env) {
       const row = d.result.data.data_detail[0];
       sources.bot = {
         usd_thb_mid: parseFloat(row.mid_rate),
+        usd_thb_transfer: parseFloat(row.buying_transfer) || null,  // banks' average buying rate for a transfer
         period: row.period,
         checked_on: today,
         fetched_at: new Date().toISOString(),

@@ -10,23 +10,40 @@
   }
   function $(id) { return document.getElementById(id); }
   var API = (document.body.dataset.rates || "").replace(/\/$/, "") + "/paper/";
-  var START = 1e6, KEY = "paperbaht.v1", MIN = 10;
+  var START = 1e6, KEY = "paperbaht.v1";
   var COINS = {
-    BTC: "#f7931a", ETH: "#8c8cff", XAUT: "#e8c15a", USDT: "#26a17b", SOL: "#9945ff", XRP: "#c8d0d8",
+    BTC: "#f7931a", ETH: "#8c8cff", XAUT: "#e8c15a", SOL: "#9945ff", XRP: "#c8d0d8",
     DOGE: "#c2a633", BNB: "#f3ba2f", ADA: "#3c7cff", KUB: "#2fd27f", LINK: "#2a5ada", SUI: "#4da2ff"
   };
   var ORDER = Object.keys(COINS);
+  // money the account holds: baht, US dollar notes (Chiang Mai money changer), USDT and USDC (Bitkub)
+  var MORDER = ["THB", "USD", "USDT", "USDC"];
+  var MINS = { THB: 10, USDT: 1 };
   var RANGES = { "1D": { res: "15", days: 1 }, "1W": { res: "60", days: 7 }, "1M": { res: "240", days: 30 }, "1Y": { res: "1D", days: 365 } };
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var DPR = Math.min(window.devicePixelRatio || 1, 2);
 
   // ---------------------------------------------------------------- the account
   function fresh() {
-    return { v: 1, start: Date.now(), cash: START, pos: {}, orders: [], hist: [], monkey: null, medals: {}, fee: 0.25,
-      sound: false, sel: "BTC", range: "1D", snaps: [], best: 0, seq: 1 };
+    return { v: 2, start: Date.now(), bal: { THB: START, USD: 0, USDT: 0, USDC: 0 }, pos: {}, orders: [], hist: [], monkey: null, medals: {}, fee: 0.25,
+      sound: false, sel: "BTC", range: "1D", snaps: [], best: 0, seq: 1, pay: "THB", show: "THB" };
+  }
+  function migrate(s) {
+    if (s.v === 1) {
+      s.bal = { THB: s.cash || 0, USD: 0, USDT: 0, USDC: 0 };
+      if (s.pos.USDT) { s.bal.USDT += s.pos.USDT.q; delete s.pos.USDT; }
+      s.orders = s.orders.filter(function (o) {
+        o.pay = "THB"; if (o.side === "buy") o.spend = o.thb;
+        if (o.sym !== "USDT") return true;
+        if (o.side === "buy") s.bal.THB += o.thb; else s.bal.USDT += o.q;
+        return false;
+      });
+      delete s.cash; s.pay = "THB"; s.show = "THB"; s.v = 2;
+    }
+    return s;
   }
   function load() {
-    try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return s; } catch (e) {}
+    try { var s = JSON.parse(localStorage.getItem(KEY)); if (s && (s.v === 1 || s.v === 2)) return migrate(s); } catch (e) {}
     return null;
   }
   var S = load() || fresh();
@@ -47,6 +64,12 @@
   function cls(x) { return x > 0.004 ? "up" : x < -0.004 ? "dn" : ""; }
   function parse(s) { var x = parseFloat(String(s).replace(/[^\d.]/g, "")); return isFinite(x) ? x : 0; }
   function name(sym) { return T["c_" + sym] || sym; }
+  function money(m, x, d) {
+    var a = Math.abs(x), s = fmt(a, d != null ? d : (m === "THB" && a >= 100 ? 0 : 2)), n = x < 0 ? "−" : "";
+    return m === "THB" ? n + "฿" + s : m === "USD" ? n + "$" + s : n + s + " " + m;
+  }
+  function mprice(m, p) { return m === "THB" ? price(p) : money(m, p, dp(p)); }
+  function shop(n) { return String(n || "").replace(/\s+—\s+/, ", "); }
   function day(ms) { return new Date(ms).toLocaleDateString(L === "th" ? "th-TH" : "en-GB", { day: "numeric", month: "short", year: "numeric" }); }
   function clock(ms) { return new Date(ms).toLocaleTimeString(L === "th" ? "th-TH" : "en-GB", { hour: "2-digit", minute: "2-digit" }); }
 
@@ -59,8 +82,18 @@
     return '<svg class="disc" viewBox="0 0 28 28" width="' + s + '" height="' + s + '" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="' + c + '"/><circle cx="14" cy="14" r="10" fill="none" stroke="rgba(255,255,255,.35)"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#0b0f15" font-family="system-ui">' + g + "</text></svg>";
   }
 
+  function mpic(m, size) {
+    var s = size || 28, o = '<svg class="disc" viewBox="0 0 28 28" width="' + s + '" height="' + s + '" aria-hidden="true">';
+    if (m === "THB" || m === "USD") {
+      var f = m === "THB" ? "#2fa66a" : "#7fa56b", g = m === "THB" ? "฿" : "$";
+      return o + '<rect x="2" y="7" width="24" height="14" rx="2.5" fill="' + f + '" stroke="#e8f2eb" stroke-opacity=".6"/><circle cx="14" cy="14" r="4.6" fill="none" stroke="rgba(255,255,255,.55)"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">' + g + "</text></svg>";
+    }
+    var c = m === "USDT" ? "#26a17b" : "#2775ca", t2 = m === "USDT" ? "₮" : "$";
+    return o + '<circle cx="14" cy="14" r="12.5" fill="' + c + '"/><circle cx="14" cy="14" r="9.5" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.4"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">' + t2 + "</text></svg>";
+  }
+
   // ---------------------------------------------------------------- live prices
-  var Q = {}, qAt = 0, polling = false;
+  var Q = {}, QU = {}, MQ = {}, MID = null, qAt = 0, polling = false;
   function getJ(url, ms) {
     var ctl = window.AbortController ? new AbortController() : null;
     var to = setTimeout(function () { if (ctl) ctl.abort(); }, ms || 9000);
@@ -74,6 +107,9 @@
     getJ(API + "ticker").then(function (d) {
       if (!d || !d.coins) return;
       d.coins.forEach(function (c) { var o = Q[c.sym]; c.prev = o ? o.last : null; Q[c.sym] = c; });
+      (d.usdt || []).forEach(function (c) { QU[c.sym] = c; });
+      for (var m in (d.money || {})) MQ[m] = d.money[m];
+      if (d.mid && d.mid.usd_thb) MID = d.mid.usd_thb;
       qAt = Date.parse(d.at) || Date.now();
       onTick();
     }).catch(function (e) { if (window.console) console.error(e); }).then(function () { polling = false; poll.t = setTimeout(poll, 10000); });
@@ -91,50 +127,64 @@
   // ---------------------------------------------------------------- money moves
   function feeOf(x) { return x * (S.fee || 0) / 100; }
   function held(sym) { var p = S.pos[sym]; return p ? p.q : 0; }
+  // baht for one unit of money m, at the price it sells for now
+  function rate(m) { if (m === "THB") return 1; var q = MQ[m]; return q ? q.bid : 0; }
+  function usdtLast() { return MQ.USDT ? MQ.USDT.last : 33.6; }
+  function effPay(sym) { return S.pay === "USDT" && QU[sym || S.sel] ? "USDT" : "THB"; }
+  function quote(sym, pay) { return pay === "USDT" ? QU[sym] : Q[sym]; }
+  function toChart(p, pay) { return pay === "USDT" ? p * usdtLast() : p; }
+  function moneyTotal() { var v = 0; MORDER.forEach(function (m) { v += (S.bal[m] || 0) * rate(m); }); return v; }
   function total() {
-    var v = S.cash;
+    var v = moneyTotal();
     for (var s in S.pos) if (Q[s]) v += S.pos[s].q * Q[s].bid; else v += S.pos[s].cost;
-    S.orders.forEach(function (o) { v += o.side === "buy" ? o.thb : (Q[o.sym] ? o.q * Q[o.sym].bid : o.cost); });
+    S.orders.forEach(function (o) { v += o.side === "buy" ? o.spend * rate(o.pay || "THB") : (Q[o.sym] ? o.q * Q[o.sym].bid : o.cost); });
     return v;
+  }
+  function usdMid() { return MID || (MQ.USD && MQ.USD.mid) || usdtLast(); }
+  function disp(v) { if (S.show === "USD") { var d = v / usdMid(); return "$" + fmt(d, Math.abs(d) >= 100 ? 0 : 2); } return baht(v); }
+  function dispSigned(v) {
+    if (S.show !== "USD") return signed(v);
+    var d = v / usdMid(), a = Math.abs(d);
+    return (d > 0.004 ? "+" : d < -0.004 ? "−" : "") + "$" + fmt(a, a >= 100 ? 0 : 2);
   }
   function record(h) { h.id = S.seq++; h.at = Date.now(); S.hist.unshift(h); if (S.hist.length > 300) S.hist.length = 300; }
 
-  function doBuy(sym, thb, px, reserved, via) {
-    if (!reserved) S.cash -= thb;
-    var fee = feeOf(thb), q = (thb - fee) / px, p = S.pos[sym] || (S.pos[sym] = { q: 0, cost: 0 });
-    p.q += q; p.cost += thb;
-    record({ sym: sym, side: "buy", q: q, px: px, thb: thb, fee: fee, kind: via ? via.kind : "now" });
-    toast((via ? t("filled") : "") + t("bought", { q: qty(q), coin: sym, px: price(px) }), "");
-    chime(660, 880); pop(sym, px, "buy");
+  function doBuy(sym, spend, px, pay, reserved, via) {
+    if (!reserved) S.bal[pay] -= spend;
+    var fee = feeOf(spend), q = (spend - fee) / px, p = S.pos[sym] || (S.pos[sym] = { q: 0, cost: 0 }), r = rate(pay) || usdtLast();
+    p.q += q; p.cost += spend * r;
+    record({ sym: sym, side: "buy", q: q, px: px, pay: pay, pxThb: px * r, spend: spend, fee: fee, kind: via ? via.kind : "now" });
+    toast((via ? t("filled") : "") + t("bought", { q: qty(q), coin: sym, px: mprice(pay, px) }), "");
+    chime(660, 880); pop(sym, px * r, "buy");
     if (via) medal("patient");
   }
-  function doSell(sym, q, px, reserved, via) {
-    var p = S.pos[sym], cost;
+  function doSell(sym, q, px, pay, reserved, via) {
+    var p = S.pos[sym], cost, r = rate(pay) || usdtLast();
     if (reserved) cost = via.cost;
     else { cost = p.cost * (q / p.q); p.q -= q; p.cost -= cost; }
     if (p && p.q < 1e-12) delete S.pos[sym];
-    var gross = q * px, fee = feeOf(gross), net = gross - fee, pnl = net - cost;
-    S.cash += net;
-    record({ sym: sym, side: "sell", q: q, px: px, thb: net, fee: fee, pnl: pnl, kind: via ? via.kind : "now" });
-    toast((via ? t("filled") : "") + t("sold", { q: qty(q), coin: sym, px: price(px), pnl: signed(pnl) }), pnl >= 0 ? "gold" : "");
-    chime(880, 660); pop(sym, px, "sell");
+    var gross = q * px, fee = feeOf(gross), net = gross - fee, pnl = net * r - cost;
+    S.bal[pay] += net;
+    record({ sym: sym, side: "sell", q: q, px: px, pay: pay, pxThb: px * r, net: net, fee: fee, pnl: pnl, kind: via ? via.kind : "now" });
+    toast((via ? t("filled") : "") + t("sold", { q: qty(q), coin: sym, px: mprice(pay, px), pnl: signed(pnl) }), pnl >= 0 ? "gold" : "");
+    chime(880, 660); pop(sym, px * r, "sell");
     if (pnl > 0) rain(Math.min(70, 14 + Math.round(Math.log10(1 + pnl) * 10)));
     if (via) medal("patient");
   }
   function fillOrders() {
     var keep = [], hit = false;
     S.orders.forEach(function (o) {
-      var q = Q[o.sym], px = null;
+      var q = quote(o.sym, o.pay || "THB"), px = null;
       if (q) {
         if (o.side === "buy") { if ((o.kind === "limit" && q.ask <= o.px) || (o.kind === "stop" && q.ask >= o.px)) px = q.ask; }
         else if ((o.kind === "limit" && q.bid >= o.px) || (o.kind === "stop" && q.bid <= o.px)) px = q.bid;
       }
       if (px == null) { keep.push(o); return; }
       hit = true;
-      if (o.side === "buy") doBuy(o.sym, o.thb, px, true, o);
+      if (o.side === "buy") doBuy(o.sym, o.spend, px, o.pay || "THB", true, o);
       else {
         S.pos[o.sym] = S.pos[o.sym] || { q: 0, cost: 0 };
-        doSell(o.sym, o.q, px, true, o);
+        doSell(o.sym, o.q, px, o.pay || "THB", true, o);
       }
     });
     S.orders = keep;
@@ -143,7 +193,7 @@
   function cancel(id) {
     S.orders = S.orders.filter(function (o) {
       if (o.id !== id) return true;
-      if (o.side === "buy") S.cash += o.thb;
+      if (o.side === "buy") S.bal[o.pay || "THB"] += o.spend;
       else { var p = S.pos[o.sym] || (S.pos[o.sym] = { q: 0, cost: 0 }); p.q += o.q; p.cost += o.cost; }
       return false;
     });
@@ -161,14 +211,18 @@
   function monkeyValue() {
     if (!S.monkey) return null;
     var v = 0;
-    for (var s in S.monkey.pos) { if (!Q[s]) return null; v += S.monkey.pos[s] * Q[s].bid; }
+    for (var s in S.monkey.pos) {
+      var b = Q[s] ? Q[s].bid : rate(s);
+      if (!b) return null; v += S.monkey.pos[s] * b;
+    }
     return v;
   }
 
   // ---------------------------------------------------------------- medals
   var MEDALS = [
     ["first", "#2fd27f", "1"], ["ten", "#5aa9ff", "10"], ["gold", "#e8c15a", "Au"], ["five", "#b69cff", "5"],
-    ["green", "#2fd27f", "฿"], ["monkey", "#ffb13b", "🐒"], ["rewind", "#ffb13b", "⏪"], ["patient", "#26a17b", "◎"]
+    ["green", "#2fd27f", "฿"], ["monkey", "#ffb13b", "🐒"], ["rewind", "#ffb13b", "⏪"], ["patient", "#26a17b", "◎"],
+    ["swap", "#2775ca", "⇄"], ["four", "#85bb65", "$฿"]
   ];
   function medal(k) {
     if (S.medals[k]) return;
@@ -177,7 +231,8 @@
     paintMedals();
   }
   function checkMedals() {
-    var n = S.hist.length;
+    var n = S.hist.filter(function (x) { return x.side !== "swap"; }).length;
+    if (MORDER.every(function (m) { return S.bal[m] > 1e-6; })) medal("four");
     if (n >= 1) medal("first");
     if (n >= 10) medal("ten");
     if (held("XAUT") > 0) medal("gold");
@@ -207,7 +262,7 @@
     save();
     liveAge();
     var el = $("live"); el.classList.add("tick"); setTimeout(function () { el.classList.remove("tick"); }, 700);
-    paintStrip(true); paint(); if (!R) draw();
+    paintStrip(true); paintPay(); paint(); if (!R) draw();
     if (filled) paintTrade();
   }
 
@@ -224,13 +279,16 @@
   }
   function paint() {
     var v = total(), ch = v - START;
-    tween($("total"), shownTotal, v, baht); shownTotal = v;
-    var c = $("chg"); c.textContent = signed(ch) + " " + pct(ch / START * 100); c.className = "num " + cls(ch);
-    $("cash").textContent = baht(S.cash);
+    tween($("total"), shownTotal, v, disp); shownTotal = v;
+    var c = $("chg"); c.textContent = dispSigned(ch) + " " + pct(ch / START * 100); c.className = "num " + cls(ch);
+    $("cash").textContent = disp(moneyTotal());
+    $("totCur").textContent = S.show === "USD" ? "$ ⇄ ฿" : "฿ ⇄ $";
+    $("tot").setAttribute("aria-label", t("total") + " " + disp(v) + ". " + t(S.show === "USD" ? "show_thb" : "show_usd"));
     var lvl = Math.max(0.06, Math.min(0.98, 0.5 + (v / START - 1) * 2.5));
     $("jarLvl").style.transform = "translateY(" + (46 - lvl * 36).toFixed(1) + "px)";
-    $("jar").setAttribute("aria-label", t("total") + " " + baht(v));
+    $("jar").setAttribute("aria-label", t("total") + " " + disp(v));
     paintQuote();
+    if (tab === "money") paintMoney();
     if (tab === "mine") paintMine();
     if (tab === "toys") paintToys();
     paintSum();
@@ -257,14 +315,14 @@
     });
   }
   function paintQuote() {
-    var q = Q[S.sel];
+    var pay = effPay(), q = quote(S.sel, pay);
     $("qname").innerHTML = disc(S.sel, 18) + " " + name(S.sel) + " · " + S.sel;
     if (!q) return;
-    $("qpx").textContent = price(R ? R.c[R.i] : q.last);
+    $("qpx").textContent = R ? price(R.c[R.i]) : mprice(pay, q.last);
     var c = $("qchg");
     if (R) { var rc = (R.c[R.i] / R.c[0] - 1) * 100; c.textContent = pct(rc); c.className = "qchg num " + cls(rc); }
     else { c.textContent = pct(q.pct) + " · 24h"; c.className = "qchg num " + cls(q.pct); }
-    $("qba").textContent = t("bidask", { a: price(q.ask), b: price(q.bid) });
+    $("qba").textContent = t("bidask", { a: mprice(pay, q.ask), b: mprice(pay, q.bid) });
   }
   function select(sym) {
     if (R || !COINS[sym]) return;
@@ -279,7 +337,24 @@
   var side = "buy", kind = "now", limitPx = null;
   function amt() { return parse($("amt").value); }
   function setAmt(x) { $("amt").value = fmt(Math.floor(x * 100) / 100, x >= 100 ? 0 : 2); paintSum(); }
+  var CHIPS = { THB: [1000, 10000, 100000], USDT: [10, 100, 1000] }, lastPay = null;
+  function paintPay() {
+    var pay = effPay(), ok = !!QU[S.sel];
+    document.querySelectorAll(".pay button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.pay === pay);
+      if (b.dataset.pay === "USDT") { b.disabled = !ok; b.title = ok ? "" : t("no_usdt", { coin: S.sel }); }
+    });
+    $("payL").textContent = t(side === "buy" ? "pay_in" : "get_in");
+    $("amtCur").textContent = pay === "THB" ? "฿" : "₮";
+    $("amt").setAttribute("aria-label", t("amount_in", { m: pay === "THB" ? t("m_THB") : "USDT" }));
+    if ($("chips").dataset.pay !== pay || !$("chips").children.length) $("chips").innerHTML = CHIPS[pay].map(function (v) { return '<button data-a="' + v + '">' + money(pay, v, 0) + "</button>"; }).join("") +
+      '<button data-a="half">' + t("half") + '</button><button data-a="all">' + t("all") + "</button>";
+    $("chips").dataset.pay = pay;
+    if (lastPay && lastPay !== pay) { limitPx = null; setAmt(pay === "THB" ? 10000 : 300); }
+    lastPay = pay;
+  }
   function paintTrade() {
+    paintPay();
     document.querySelectorAll(".side button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.side === side); });
     document.querySelectorAll(".kind button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.k === kind); });
     $("def").textContent = t("def_" + kind + "_" + side);
@@ -287,8 +362,9 @@
     var g = $("go");
     g.className = "go" + (side === "sell" ? " sell" : "");
     g.textContent = kind === "now" ? t(side) + " " + S.sel : t("place");
-    if (kind !== "now" && limitPx == null && Q[S.sel]) {
-      var p = side === "buy" ? Q[S.sel].ask : Q[S.sel].bid, up = (kind === "limit") === (side === "sell");
+    var qq = quote(S.sel, effPay());
+    if (kind !== "now" && limitPx == null && qq) {
+      var p = side === "buy" ? qq.ask : qq.bid, up = (kind === "limit") === (side === "sell");
       limitPx = +(p * (up ? 1.02 : 0.98)).toFixed(dp(p));
       $("px").value = fmt(limitPx, dp(limitPx));
     }
@@ -298,47 +374,49 @@
     paintSum(); draw();
   }
   function orderRow(o) {
-    return '<li>' + disc(o.sym, 22) + '<span class="grow">' + t(o.side) + " " + o.sym + " · " + t(o.kind) + '<br><span class="mute num">' + price(o.px) + " · " + (o.side === "buy" ? baht(o.thb) : qty(o.q) + " " + o.sym) + '</span></span><button class="x" data-cancel="' + o.id + '">' + t("cancel") + "</button></li>";
+    var m = o.pay || "THB";
+    return '<li>' + disc(o.sym, 22) + '<span class="grow">' + t(o.side) + " " + o.sym + " · " + t(o.kind) + '<br><span class="mute num">' + mprice(m, o.px) + " · " + (o.side === "buy" ? money(m, o.spend) : qty(o.q) + " " + o.sym) + '</span></span><button class="x" data-cancel="' + o.id + '">' + t("cancel") + "</button></li>";
   }
   function paintSum() {
-    var q = Q[S.sel], a = amt(), el = $("sum");
+    var pay = effPay(), q = quote(S.sel, pay), a = amt(), el = $("sum");
     if (!q) { el.textContent = t("e_noprice"); return; }
     var px = kind === "now" ? (side === "buy" ? q.ask : q.bid) : (limitPx || q.last);
     if (side === "buy") {
       var fee = feeOf(a);
-      el.innerHTML = t("youget") + " <b>" + qty(Math.max(0, a - fee) / px) + " " + S.sel + "</b> · " + t("fee") + " " + baht(fee);
+      el.innerHTML = t("youget") + " <b>" + qty(Math.max(0, a - fee) / px) + " " + S.sel + "</b> · " + t("fee") + " " + money(pay, fee) +
+        "<br>" + t("youhave") + " " + money(pay, S.bal[pay] || 0);
     } else {
       var h = held(S.sel), sq = Math.min(h, a / px), gross = sq * px;
-      el.innerHTML = t("youget") + " <b>" + baht(gross - feeOf(gross)) + "</b> · " + t("fee") + " " + baht(feeOf(gross)) + "<br>" + t("youhave") + " " + qty(h) + " " + S.sel + " (" + baht(h * q.bid) + ")";
+      el.innerHTML = t("youget") + " <b>" + money(pay, gross - feeOf(gross)) + "</b> · " + t("fee") + " " + money(pay, feeOf(gross)) + "<br>" + t("youhave") + " " + qty(h) + " " + S.sel + " (" + money(pay, h * q.bid) + ")";
     }
   }
   function go() {
-    var q = Q[S.sel], a = amt();
+    var pay = effPay(), q = quote(S.sel, pay), a = amt();
     if (!q) return toast(t("e_noprice"), "no");
-    if (a < MIN) return toast(t("e_min"), "no");
+    if (a < MINS[pay]) return toast(t("e_min", { min: money(pay, MINS[pay], 0) }), "no");
     if (kind !== "now" && !(limitPx > 0)) return toast(t("e_price"), "no");
     if (side === "buy") {
-      if (a > S.cash + 0.005) return toast(t("e_cash"), "no");
-      a = Math.min(a, S.cash);
-      if (kind === "now") doBuy(S.sel, a, q.ask);
-      else { S.cash -= a; S.orders.push({ id: S.seq++, sym: S.sel, side: "buy", kind: kind, px: limitPx, thb: a, at: Date.now() }); placed(); }
+      if (a > (S.bal[pay] || 0) + 0.005) return toast(t("e_bal", { m: pay === "THB" ? t("m_THB") : pay }), "no");
+      a = Math.min(a, S.bal[pay]);
+      if (kind === "now") doBuy(S.sel, a, q.ask, pay);
+      else { S.bal[pay] -= a; S.orders.push({ id: S.seq++, sym: S.sel, side: "buy", kind: kind, pay: pay, px: limitPx, spend: a, at: Date.now() }); placed(); }
     } else {
       var h = held(S.sel);
       if (!(h > 0)) return toast(t("e_none", { coin: S.sel }), "no");
       var px = kind === "now" ? q.bid : limitPx, sq = Math.min(h, a / px);
       if (h - sq < h * 1e-6) sq = h;
-      if (kind === "now") doSell(S.sel, sq, q.bid);
+      if (kind === "now") doSell(S.sel, sq, q.bid, pay);
       else {
         var p = S.pos[S.sel], cost = p.cost * (sq / p.q);
         p.q -= sq; p.cost -= cost; if (p.q < 1e-12) delete S.pos[S.sel];
-        S.orders.push({ id: S.seq++, sym: S.sel, side: "sell", kind: kind, px: limitPx, q: sq, cost: cost, at: Date.now() }); placed();
+        S.orders.push({ id: S.seq++, sym: S.sel, side: "sell", kind: kind, pay: pay, px: limitPx, q: sq, cost: cost, at: Date.now() }); placed();
       }
     }
     fillOrders(); checkMedals(); save(); paint(); paintTrade();
   }
   function placed() {
     var o = S.orders[S.orders.length - 1];
-    toast(t("placed", { side: t(o.side), coin: o.sym, px: price(o.px) }), "");
+    toast(t("placed", { side: t(o.side), coin: o.sym, px: mprice(o.pay, o.px) }), "");
     chime(520, 620);
   }
   $("go").addEventListener("click", go);
@@ -349,15 +427,18 @@
   document.querySelector(".side").addEventListener("click", function (e) {
     var b = e.target.closest("button"); if (!b) return; side = b.dataset.side; limitPx = null; paintTrade();
   });
+  document.querySelector(".pay").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b || b.disabled) return; S.pay = b.dataset.pay; save(); paintTrade(); paintQuote();
+  });
   document.querySelector(".kind").addEventListener("click", function (e) {
     var b = e.target.closest("button"); if (!b) return; kind = b.dataset.k; limitPx = null; paintTrade();
   });
   $("chips").addEventListener("click", function (e) {
     var b = e.target.closest("button"); if (!b) return;
-    var a = b.dataset.a, q = Q[S.sel];
+    var a = b.dataset.a, pay = effPay(), q = quote(S.sel, pay);
     if (a === "half" || a === "all") {
       var f = a === "half" ? 0.5 : 1;
-      if (side === "buy") setAmt(S.cash * f);
+      if (side === "buy") setAmt((S.bal[pay] || 0) * f);
       else if (q) setAmt(held(S.sel) * (kind === "now" ? q.bid : (limitPx || q.bid)) * f);
     } else setAmt(+a);
   });
@@ -414,11 +495,12 @@
     var ts = sr.t, cs = sr.c, n = sr.full;
     var lo = Math.min.apply(null, cs), hi = Math.max.apply(null, cs);
     if (R) { lo = Math.min(lo, Math.min.apply(null, R.c)); hi = Math.max(hi, Math.max.apply(null, R.c)); }
-    var line = (!R && tab === "trade" && kind !== "now" && limitPx > 0) ? limitPx : null;
+    var pay = effPay(), line = (!R && tab === "trade" && kind !== "now" && limitPx > 0) ? toChart(limitPx, pay) : null;
     if (line && line > lo * 0.6 && line < hi * 1.4) { lo = Math.min(lo, line); hi = Math.max(hi, line); }
     var pad = (hi - lo) * 0.12 || hi * 0.01; lo -= pad; hi += pad;
     cx.font = "11px " + getComputedStyle(document.body).fontFamily;
-    var R0 = 12 + Math.max(cx.measureText(price(hi)).width, cx.measureText(price(lo)).width, line ? cx.measureText(price(line)).width + 4 : 0);
+    var lineTxt = line ? mprice(pay, limitPx) : "";
+    var R0 = 12 + Math.max(cx.measureText(price(hi)).width, cx.measureText(price(lo)).width, line ? cx.measureText(lineTxt).width + 6 : 0);
     var T0 = HH < 160 ? 12 : 30, B0 = HH < 160 ? 8 : 18, L0 = 6, w = W - L0 - R0, h = HH - T0 - B0;
     var t0 = ts[0], t1 = R ? R.t[R.t.length - 1] : ts[ts.length - 1];
     function X(x) { return L0 + (t1 > t0 ? (x - t0) / (t1 - t0) : 0) * w; }
@@ -450,7 +532,7 @@
     // trades on this coin
     var trades = R ? R.trades : S.hist.filter(function (x) { return x.sym === S.sel && x.at >= t0; });
     trades.forEach(function (x) {
-      var mx = X(Math.min(x.at, t1)), my = Y(x.px), b = x.side === "buy";
+      var mx = X(Math.min(x.at, t1)), my = Y(x.pxThb || x.px), b = x.side === "buy";
       cx.beginPath(); cx.arc(mx, my, 7, 0, 7); cx.fillStyle = b ? "#2fd27f" : "#ffb13b"; cx.fill();
       cx.lineWidth = 2; cx.strokeStyle = "#05070c"; cx.stroke();
       cx.fillStyle = "#05070c"; cx.textAlign = "center"; cx.font = "bold 9px system-ui";
@@ -458,7 +540,7 @@
     });
     // waiting orders
     if (!R) S.orders.filter(function (o) { return o.sym === S.sel; }).forEach(function (o) {
-      var oy = Y(o.px); if (oy < T0 || oy > T0 + h) return;
+      var oy = Y(toChart(o.px, o.pay)); if (oy < T0 || oy > T0 + h) return;
       cx.strokeStyle = o.side === "buy" ? "rgba(47,210,127,.6)" : "rgba(255,177,59,.6)"; cx.setLineDash([2, 4]);
       cx.beginPath(); cx.moveTo(L0, oy); cx.lineTo(L0 + w, oy); cx.stroke(); cx.setLineDash([]);
     });
@@ -468,7 +550,7 @@
       cx.strokeStyle = "#ffb13b"; cx.lineWidth = 1.5; cx.setLineDash([6, 4]);
       cx.beginPath(); cx.moveTo(L0, ly); cx.lineTo(L0 + w, ly); cx.stroke(); cx.setLineDash([]);
       cx.fillStyle = "#ffb13b"; roundRect(L0 + w + 1, ly - 10, R0 - 3, 20, 6); cx.fill();
-      cx.fillStyle = "#05070c"; cx.font = "bold 11px system-ui"; cx.fillText(price(line), L0 + w + 3, ly);
+      cx.fillStyle = "#05070c"; cx.font = "bold 11px system-ui"; cx.fillText(lineTxt, L0 + w + 3, ly);
       cx.beginPath(); for (var k = -1; k <= 1; k++) { cx.moveTo(L0 + w / 2 - 10, ly + k * 3 - 12); cx.lineTo(L0 + w / 2 + 10, ly + k * 3 - 12); }
       cx.strokeStyle = "rgba(255,177,59,.7)"; cx.lineWidth = 1; cx.stroke();
     }
@@ -516,6 +598,7 @@
   cv.addEventListener("pointerleave", function () { hover = null; draw(); });
   function setLimit(p) {
     if (!(p > 0)) return;
+    if (effPay() === "USDT") p = p / usdtLast();
     limitPx = +p.toFixed(dp(p)); $("px").value = fmt(limitPx, dp(limitPx)); paintSum(); draw();
   }
 
@@ -529,7 +612,9 @@
     $("hold").innerHTML = rows.join("") || '<li class="empty">' + t("nothing") + "</li>";
     $("ords").innerHTML = S.orders.map(orderRow).join("") || '<li class="empty">' + t("nothing") + "</li>";
     $("hist").innerHTML = S.hist.slice(0, 30).map(function (x) {
-      return "<li>" + disc(x.sym, 22) + '<span class="grow">' + t(x.side) + " " + qty(x.q) + " " + x.sym + '<br><span class="mute">' + day(x.at) + " " + clock(x.at) + '</span></span><span class="r">' + price(x.px) + (x.pnl != null ? '<br><span class="' + cls(x.pnl) + '">' + signed(x.pnl) + "</span>" : "") + "</span></li>";
+      var when = '<br><span class="mute">' + day(x.at) + " " + clock(x.at) + "</span>";
+      if (x.side === "swap") return "<li>" + mpic(x.from, 22) + '<span class="grow">' + t("swap") + " " + money(x.from, x.x) + when + '</span><span class="r">' + money(x.to, x.y) + "</span></li>";
+      return "<li>" + disc(x.sym, 22) + '<span class="grow">' + t(x.side) + " " + qty(x.q) + " " + x.sym + when + '</span><span class="r">' + mprice(x.pay || "THB", x.px) + (x.pnl != null ? '<br><span class="' + cls(x.pnl) + '">' + signed(x.pnl) + "</span>" : "") + "</span></li>";
     }).join("") || '<li class="empty">' + t("nothing") + "</li>";
     // equity line
     var r = eq.getBoundingClientRect(), w = r.width, h = r.height;
@@ -545,8 +630,86 @@
     ex.strokeStyle = "rgba(255,255,255,.18)"; ex.setLineDash([3, 3]); ex.beginPath(); ex.moveTo(0, Y(START)); ex.lineTo(w, Y(START)); ex.stroke(); ex.setLineDash([]);
     ex.beginPath(); pts.forEach(function (p, i) { if (i) ex.lineTo(X(p[0]), Y(p[1])); else ex.moveTo(X(p[0]), Y(p[1])); });
     ex.strokeStyle = total() >= START ? "#2fd27f" : "#ff6b6f"; ex.lineWidth = 2; ex.stroke();
-    eq.setAttribute("aria-label", t("equity") + ": " + baht(pts[0][1]) + " → " + baht(total()));
+    eq.setAttribute("aria-label", t("equity") + ": " + disp(pts[0][1]) + " → " + disp(total()));
   }
+
+  // ---------------------------------------------------------------- money: the wallet and swaps, every swap through baht
+  var swF = "THB", swT = "USDT";
+  function swapQuote(f, to, x) {
+    var legs = [], thb = x, y, change = 0;
+    if (!(x > 0)) return null;
+    if (f !== "THB") {
+      var q = MQ[f]; if (!q) return null;
+      if (f === "USD") { thb = x * q.bid; legs.push(t("leg_sell_cash", { x: money(f, x), shop: shop(q.bid_shop), r: price(q.bid), y: baht(thb) })); }
+      else { var g = x * q.bid, fe = feeOf(g); thb = g - fe; legs.push(t("leg_sell_coin", { x: money(f, x), r: price(q.bid), y: baht(thb), f: baht(fe) })); }
+    }
+    y = thb;
+    if (to !== "THB") {
+      var q2 = MQ[to]; if (!q2) return null;
+      if (to === "USD") {
+        y = Math.floor(thb / q2.ask + 1e-9); change = thb - y * q2.ask;
+        legs.push(t("leg_buy_cash", { y: money(to, y, 0), shop: shop(q2.ask_shop), r: price(q2.ask) }) + (change > 0.005 ? " · " + t("change", { c: baht(change) }) : ""));
+      } else { var fe2 = feeOf(thb); y = (thb - fe2) / q2.ask; legs.push(t("leg_buy_coin", { y: money(to, y), r: price(q2.ask), f: baht(fe2) })); }
+    }
+    return { y: y, legs: legs, change: change };
+  }
+  function paintMoney() {
+    $("wallet").innerHTML = MORDER.map(function (m) {
+      var b = S.bal[m] || 0, q = MQ[m], line = "";
+      if (m !== "THB") line = q ? t("bidask", { a: price(q.ask), b: price(q.bid) }) + " · " + (m === "USD" ? shop(q.bid_shop) : "Bitkub") : t("e_noprice");
+      return "<li>" + mpic(m, 26) + '<span class="grow">' + t("m_" + m) + (line ? '<br><span class="mute small num">' + line + "</span>" : "") +
+        '</span><span class="r">' + money(m, b) + (m !== "THB" && q ? '<br><span class="mute">' + baht(b * rate(m)) + "</span>" : "") + "</span></li>";
+    }).join("");
+    [["swF", swF], ["swT", swT]].forEach(function (g) {
+      $(g[0]).querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.m === g[1]); b.disabled = b.dataset.m !== "THB" && !MQ[b.dataset.m]; });
+    });
+    $("swCur").textContent = { THB: "฿", USD: "$", USDT: "₮", USDC: "$" }[swF];
+    $("swAmt").setAttribute("aria-label", t("amount_in", { m: t("ms_" + swF) }));
+    paintSwapSum(); paintRound();
+  }
+  function paintSwapSum() {
+    var x = parse($("swAmt").value), el = $("swSum"), g = $("swGo");
+    if (swF === swT) { el.textContent = t("same"); g.disabled = true; g.textContent = t("swap"); return; }
+    var q = swapQuote(swF, swT, x);
+    g.disabled = !q;
+    g.textContent = t("swap_go", { a: money(swF, x || 0), m: t("ms_" + swT) });
+    el.innerHTML = q ? q.legs.map(function (l) { return "<span>" + l + "</span>"; }).join("") + "<b>" + t("youget") + " " + money(swT, q.y, swT === "USD" ? 0 : null) + "</b>" : t("e_noprice");
+  }
+  function doSwap() {
+    var x = parse($("swAmt").value);
+    if (swF === swT) return toast(t("same"), "no");
+    if (!(x > 0)) return toast(t("e_min", { min: money(swF, 1, 0) }), "no");
+    if (x > (S.bal[swF] || 0) + 1e-6) return toast(t("e_bal", { m: t("ms_" + swF) }), "no");
+    var q = swapQuote(swF, swT, Math.min(x, S.bal[swF]));
+    if (!q) return toast(t("e_noprice"), "no");
+    if (swT === "USD" && q.y < 1) return toast(t("e_min", { min: money("USD", 1, 0) }), "no");
+    x = Math.min(x, S.bal[swF]);
+    S.bal[swF] -= x; S.bal[swT] = (S.bal[swT] || 0) + q.y; S.bal.THB += q.change;
+    record({ sym: "SWAP", side: "swap", from: swF, to: swT, x: x, y: q.y });
+    toast(t("swapped", { a: money(swF, x), b: money(swT, q.y) }), "gold");
+    chime(700, 940); medal("swap"); checkMedals(); save(); paint(); paintMoney();
+  }
+  function paintRound() {
+    $("round").innerHTML = ["USD", "USDT", "USDC"].map(function (m) {
+      var a = swapQuote("THB", m, 10000); if (!a) return "";
+      var b = swapQuote(m, "THB", a.y); if (!b) return "";
+      var back = b.y + a.change, loss = back - 10000;
+      return "<li>" + mpic(m, 22) + '<span class="grow">฿10,000 → ' + money(m, a.y, m === "USD" ? 0 : null) + ' → ฿</span><span class="r">' + baht(back) + '<br><span class="' + cls(loss) + '">' + signed(loss) + "</span></span></li>";
+    }).join("");
+  }
+  $("swF").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b || b.disabled) return; swF = b.dataset.m; if (swF === swT) swT = swF === "THB" ? "USDT" : "THB"; $("swAmt").value = fmt(Math.floor((S.bal[swF] || 0) * 0.1 * 100) / 100, 2); paintMoney(); });
+  $("swT").addEventListener("click", function (e) { var b = e.target.closest("button"); if (!b || b.disabled) return; swT = b.dataset.m; if (swF === swT) swF = swT === "THB" ? "USDT" : "THB"; paintMoney(); });
+  $("swFlip").addEventListener("click", function () { var a = swF; swF = swT; swT = a; paintMoney(); });
+  $("swAmt").addEventListener("input", paintSwapSum);
+  $("swAmt").addEventListener("keydown", function (e) { if (e.key === "Enter") doSwap(); });
+  $("swChips").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    var f = b.dataset.f === "all" ? 1 : b.dataset.f === "half" ? 0.5 : 0.1;
+    $("swAmt").value = fmt(Math.floor((S.bal[swF] || 0) * f * 100) / 100, 2); paintSwapSum();
+  });
+  $("swGo").addEventListener("click", doSwap);
+  $("tot").addEventListener("click", function () { S.show = S.show === "USD" ? "THB" : "USD"; save(); shownTotal = null; paint(); if (tab === "mine") paintMine(); });
+  $("cashBtn").addEventListener("click", function () { showTab("money"); });
 
   // ---------------------------------------------------------------- toys
   var tmAmt = 10000;
@@ -587,7 +750,7 @@
   });
   $("reset").addEventListener("click", function () {
     if (!confirm(t("reset_q"))) return;
-    var keep = { fee: S.fee, sound: S.sound, sel: S.sel, range: S.range, best: S.best };
+    var keep = { fee: S.fee, sound: S.sound, sel: S.sel, range: S.range, best: S.best, pay: S.pay, show: S.show };
     S = fresh(); for (var k in keep) S[k] = keep[k];
     monkeyInit(); save(); shownTotal = null; paint(); paintMedals(); paintTrade();
   });
@@ -651,6 +814,7 @@
       $("p-" + b.dataset.tab).hidden = !on;
     });
     if (k !== "toys" && tm != null && !R) { tm = null; draw(); }
+    if (k === "money") paintMoney();
     if (k === "mine") paintMine();
     if (k === "toys") paintToys();
     draw();
@@ -730,7 +894,10 @@
   // ---------------------------------------------------------------- start
   if (!COINS[S.sel]) S.sel = "BTC";
   if (!RANGES[S.range]) S.range = "1D";
-  setAmt(10000);
+  if (!S.bal) S = fresh();
+  if (S.pay !== "USDT") S.pay = "THB";
+  setAmt(S.pay === "USDT" ? 300 : 10000);
+  $("swAmt").value = "10,000";
   paintStrip(false); paintMedals(); paintTrade(); paint(); size(); loadHist(); poll(); liveAge();
   var f = document.fonts && document.fonts.ready; if (f) f.then(draw);
 })();

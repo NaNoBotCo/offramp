@@ -14,7 +14,11 @@ if [ -f "$STYLE" ]; then
   python3 "$STYLE" tools js data/research data/routes.json data/ramp.json README.md NOTICE.txt || { echo "REFUSED: style. See ~/.claude/STYLE.md"; exit 4; }
 fi
 
-if [ "${1:-}" = "--pages" ] && [ -f build/facts.json ] && [ -f build/figs.json ] && [ -f build/img/hero.jpg ]; then
+pages_ok() {  # every input site.py reads from build/
+  for f in build/facts.json build/figs.json build/img/hero.jpg build/img/card.jpg build/img/card-th.jpg; do [ -f "$f" ] || return 1; done
+  for b in $(grep -o '"band-[a-z-]*\.jpg"' tools/site.py | tr -d '"' | sort -u); do [ -f "build/img/$b" ] || return 1; done
+}
+if [ "${1:-}" = "--pages" ] && pages_ok; then
   echo "pages only, from build/ data of $(date -r build/facts.json +%F)"
 else
 python3 tools/fetch.py

@@ -1076,7 +1076,7 @@ def machine_files():
 - Bitcoin in baht: {thb(F['btc']['thb'])} on {F['btc']['date']}; high {thb(F['btc']['ath_thb'])} on {F['btc']['ath_date']}
 
 ## Pages
-""" + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""- {SITE_URL}/paper/ · {SITE_URL}/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live Bitkub prices; built by Hongdam Studio, https://hongdam.net/
+""" + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""- {SITE_URL}/paper/ · {SITE_URL}/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
 ## Data
 - {SITE_URL}/data/facts.json
 - {SITE_URL}/data/series.json

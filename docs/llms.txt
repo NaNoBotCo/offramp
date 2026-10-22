@@ -23,7 +23,7 @@ https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 20
 - https://offrampt.net/how/ · https://offrampt.net/th/how/ — How / กลไก: How crypto works
 - https://offrampt.net/history/ · https://offrampt.net/th/history/ — History / ประวัติ: 1976 to now
 - https://offrampt.net/words/ · https://offrampt.net/th/words/ — Words / ศัพท์: English and Thai
-- https://offrampt.net/paper/ · https://offrampt.net/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live Bitkub prices; built by Hongdam Studio, https://hongdam.net/
+- https://offrampt.net/paper/ · https://offrampt.net/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
 ## Data
 - https://offrampt.net/data/facts.json
 - https://offrampt.net/data/series.json
