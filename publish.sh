@@ -3,6 +3,7 @@
 #
 #   ./publish.sh            # fetch what is stale, compute, chart, pages, into docs/
 #   ./publish.sh --draw     # also redraw the pictures (build/img/*.jpg)
+#   ./publish.sh --pages    # pages only, from the data and pictures already in build/
 set -euo pipefail
 cd "$(dirname "$0")"
 export PYTHONUTF8=1
@@ -13,10 +14,18 @@ if [ -f "$STYLE" ]; then
   python3 "$STYLE" tools js data/research data/routes.json data/ramp.json README.md NOTICE.txt || { echo "REFUSED: style. See ~/.claude/STYLE.md"; exit 4; }
 fi
 
+pages_ok() {  # every input site.py reads from build/
+  for f in build/facts.json build/figs.json build/img/hero.jpg build/img/card.jpg build/img/card-th.jpg; do [ -f "$f" ] || return 1; done
+  for b in $(grep -o '"band-[a-z-]*\.jpg"' tools/site.py | tr -d '"' | sort -u); do [ -f "build/img/$b" ] || return 1; done
+}
+if [ "${1:-}" = "--pages" ] && pages_ok; then
+  echo "pages only, from build/ data of $(date -r build/facts.json +%F)"
+else
 python3 tools/fetch.py
 python3 tools/compute.py || { echo "REFUSED: a computed check failed"; exit 5; }
 if [ "${1:-}" = "--draw" ] || [ ! -f build/img/hero.jpg ]; then python3 tools/draw.py; else python3 tools/draw.py markets networks card card_th; fi
 python3 tools/figures.py
+fi
 SITE_URL="$SITE_URL" python3 tools/site.py
 python3 tools/links.py --quiet || { echo "REFUSED: broken internal links"; exit 3; }
 python3 tests/test_site.py || { echo "REFUSED: tests"; exit 6; }

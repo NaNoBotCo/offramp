@@ -2,18 +2,21 @@
 
 Crypto in Thailand, and the ways out to baht. Ten exits, each a small site of its own:
 
+The home page is the calculator and the address checker. The menu carries four exits; the other six are
+reference pages, linked from the footer.
+
 | Exit | Page | What |
 |---|---|---|
-| 1 | Ramp | crypto to baht, by situation: visiting, living here without a Thai bank, banked here |
-| 2 | Rules | the SEC decree, licensed operators, blocked platforms, tax, bank accounts and freezes |
+| 1 | Tools | off-ramp calculator, address checker, baht converter |
+| 2 | Ramp | crypto to baht, by situation: visiting, living here without a Thai bank, banked here |
 | 3 | Cards | crypto cards, Thai and foreign exchanges, other rails, wallets |
-| 4 | Networks | which network, an address checker, stablecoins by chain, fees in baht |
-| 5 | Markets | bitcoin and USDT in baht since 2018, the Thai premium, the USDT-to-baht spread |
-| 6 | Scams | the numbers, how they work, where to report, cases |
-| 7 | How | hashing, keys, blocks, mining, stablecoins, the 21 million, with working models |
-| 8 | History | 1976 to now, Thai events marked |
-| 9 | Words | English and Thai |
-| 10 | Tools | address checker, off-ramp calculator, baht converter |
+| 4 | Scams | the numbers, how they work, where to report, cases |
+| 5 | Networks | which network, an address checker, stablecoins by chain, fees in baht |
+| 6 | Markets | bitcoin and USDT in baht since 2018, the Thai premium, the USDT-to-baht spread |
+| 7 | Rules | the SEC decree, licensed operators, blocked platforms, tax, bank accounts and freezes |
+| 8 | How | hashing, keys, blocks, mining, stablecoins, the 21 million, with working models |
+| 9 | History | 1976 to now, Thai events marked |
+| 10 | Words | English and Thai |
 
 **Live:** https://offrampt.net/
 
@@ -35,7 +38,8 @@ Thailand, every fifteen minutes); the baked figures stand when it cannot be reac
 ## Money
 
 `data/money.json` holds receiving addresses and referral links. A null slot renders nothing; a
-filled one appears at the next build, with the disclosure beside it.
+filled one appears at the next build, with the disclosure beside it. A referral keyed by a route's
+`pid` in `data/routes.json` turns that calculator row's Open button into a Sign up link.
 
 ## Licence
 

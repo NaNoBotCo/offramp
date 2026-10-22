@@ -1,0 +1,368 @@
+<!doctype html><html lang="en" translate="no" class="notranslate"><head><meta charset="utf-8">
+<meta name="google" content="notranslate"><meta name="robots" content="notranslate">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Paper Baht — practice trading at live Bitkub prices — Offrampt</title>
+<meta name="description" content="Trade ฿1,000,000 of paper money at live prices: eleven coins with gold among them, baht, US dollars, USDT and USDC, charts, orders at your price, a monkey to race, and yesterday on rewind.">
+<link rel="canonical" href="https://offrampt.net/paper/">
+<link rel="alternate" hreflang="en" href="https://offrampt.net/paper/"><link rel="alternate" hreflang="th" href="https://offrampt.net/th/paper/"><link rel="alternate" hreflang="x-default" href="https://offrampt.net/paper/">
+<meta property="og:title" content="Paper Baht — practice trading at live Bitkub prices — Offrampt">
+<meta property="og:description" content="Trade ฿1,000,000 of paper money at live prices: eleven coins with gold among them, baht, US dollars, USDT and USDC, charts, orders at your price, a monkey to race, and yesterday on rewind.">
+<meta property="og:url" content="https://offrampt.net/paper/">
+<meta property="og:image" content="https://offrampt.net/img/og/en-tools.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Card: Offrampt, light trails to an EXIT sign on a night road">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Offrampt"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://offrampt.net/img/og/en-tools.jpg">
+<meta name="twitter:image:alt" content="Card: Offrampt, light trails to an EXIT sign on a night road">
+<meta name="theme-color" content="#05070c">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="author" href="https://hongdam.net/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Paper Baht", "url": "https://offrampt.net/paper/", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "inLanguage": "en", "description": "Trade ฿1,000,000 of paper money at live prices: eleven coins with gold among them, baht, US dollars, USDT and USDC, charts, orders at your price, a monkey to race, and yesterday on rewind.", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "THB"}, "isPartOf": {"@type": "WebSite", "name": "Offrampt", "url": "https://offrampt.net/"}, "creator": {"@type": "Organization", "name": "Hongdam Studio", "alternateName": "หงส์ดำ", "url": "https://hongdam.net/"}, "license": "https://opensource.org/licenses/MIT"}</script>
+<style>
+:root{
+ --bg:#05070c;--bg2:#0a0e16;--panel:#0d121b;--ink:#eef2ef;--mute:#98a3a9;--line:#1c2531;--chip:#121925;
+ --go:#2fd27f;--sign:#0b6b43;--sign2:#0e7d4e;--amber:#ffb13b;--red:#ff6b6f;--gold:#e8c15a;--focus:#ffb13b;
+ --display:"DIN Condensed","DIN Alternate","Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;
+ --din:"DIN Alternate","DIN Condensed","Avenir Next",system-ui,sans-serif;
+ --body:"Avenir Next",Avenir,"Segoe UI",system-ui,-apple-system,"Sukhumvit Set","Thonburi","Noto Sans Thai","Leelawadee UI",Helvetica,Arial,sans-serif;
+ color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;overscroll-behavior:none}
+html{font-size:16px;background:var(--bg)}
+body{color:var(--ink);font-family:var(--body);line-height:1.4;-webkit-text-size-adjust:100%;
+ background:radial-gradient(900px 500px at 10% -10%,rgba(255,177,59,.08),transparent 60%),radial-gradient(800px 600px at 100% 40%,rgba(47,210,127,.06),transparent 60%),var(--bg)}
+a{color:var(--amber);text-underline-offset:.18em}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:8px}
+[hidden]{display:none!important}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.mute{color:var(--mute)}.small{font-size:.82rem}
+.up{color:var(--go)}.dn{color:var(--red)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.app{height:100vh;height:100svh;display:flex;flex-direction:column}
+@supports (height:100dvh){.app{height:100dvh}}
+
+/* the bar */
+.bar{flex:none;display:flex;align-items:center;gap:.55rem;padding:.35rem .75rem;padding-top:max(.35rem,env(safe-area-inset-top));
+ padding-left:max(.75rem,env(safe-area-inset-left));padding-right:max(.75rem,env(safe-area-inset-right));border-bottom:1px solid var(--line);
+ background:color-mix(in srgb,var(--bg) 85%,transparent)}
+.brand{flex:none;display:grid;place-items:center;width:2rem;height:1.6rem;border-radius:5px;background:linear-gradient(180deg,var(--sign2),var(--sign));box-shadow:0 0 0 2px #e8f2eb inset}
+.brand svg{width:1.1rem;height:1.1rem}
+.ttl{flex:1;min-width:0;display:flex;align-items:baseline;gap:.2rem .6rem;flex-wrap:wrap}
+.ttl h1{margin:0;font-family:var(--display);font-size:1.4rem;letter-spacing:.04em;line-height:1;text-transform:uppercase;padding-top:.15rem;white-space:nowrap}
+html[lang=th] .ttl h1{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:1.2rem}
+.ttl .by{font-size:.72rem;color:var(--mute);text-decoration:none;white-space:nowrap}
+.ttl .by:hover,.ttl .by:focus-visible{color:var(--amber);text-decoration:underline}
+.live{flex:none;display:flex;align-items:center;gap:.35rem;font-size:.75rem;color:var(--mute);white-space:nowrap}
+.live i{width:.55rem;height:.55rem;border-radius:50%;background:var(--mute)}
+.live.on i{background:var(--go);box-shadow:0 0 0 0 rgba(47,210,127,.6);animation:beat 2.4s infinite}
+.live.tick i{animation:none;box-shadow:0 0 0 .45rem rgba(47,210,127,0);transition:box-shadow .7s}
+@keyframes beat{0%{box-shadow:0 0 0 0 rgba(47,210,127,.55)}70%{box-shadow:0 0 0 .5rem rgba(47,210,127,0)}100%{box-shadow:0 0 0 0 rgba(47,210,127,0)}}
+.lang{flex:none;font-family:var(--display);font-size:.95rem;letter-spacing:.06em;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:.25rem .5rem;min-height:2rem;display:grid;place-items:center}
+
+/* the account */
+.acct{flex:none;display:flex;align-items:center;gap:.9rem;padding:.35rem .75rem;border-bottom:1px solid var(--line);overflow:hidden}
+.jar{flex:none;width:2.3rem;height:2.75rem;cursor:pointer}
+.jar .lvl{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.jar .wave{animation:wave 3s ease-in-out infinite alternate}
+@keyframes wave{to{transform:translateX(-6px)}}
+.acct .k{display:flex;flex-direction:column;min-width:0}
+.acct .lbl{font-size:.68rem;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+html[lang=th] .acct .lbl{text-transform:none;letter-spacing:0;font-size:.74rem}
+.acct b{font-family:var(--din);font-size:1.05rem;font-weight:600;white-space:nowrap}
+.acct .tot b{font-size:1.45rem;line-height:1.05}
+.acct .cash{margin-left:auto;text-align:right}
+
+/* stage and panel */
+.main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,45fr) minmax(0,55fr)}
+@media (orientation:landscape) and (min-width:560px){.main{grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr) minmax(17rem,34%)}}
+@media (min-width:1100px){.main{grid-template-columns:minmax(0,1fr) 26rem}}
+.stage{min-height:0;display:flex;flex-direction:column;padding:.4rem .75rem .3rem;gap:.3rem}
+.strip{flex:none;display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding:.1rem 0 .15rem;scroll-snap-type:x proximity}
+.strip::-webkit-scrollbar{display:none}
+.coin{flex:none;scroll-snap-align:start;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:.4rem;align-items:center;
+ min-width:7.4rem;padding:.3rem .55rem .3rem .4rem;border-radius:12px;border:1px solid var(--line);background:var(--chip);text-align:left}
+.coin[aria-pressed=true]{border-color:var(--amber);background:#1a1f26;box-shadow:0 0 0 1px var(--amber) inset}
+.coin .disc{grid-row:1/3;width:1.7rem;height:1.7rem}
+.coin .s{font-family:var(--din);font-weight:700;font-size:.8rem;letter-spacing:.03em}
+.coin .p{font-family:var(--din);font-size:.78rem;color:var(--mute);white-space:nowrap}
+.coin .p .c{margin-left:.3rem}
+.coin.flash-up{animation:fu .9s}.coin.flash-dn{animation:fd .9s}
+@keyframes fu{0%{background:rgba(47,210,127,.35)}100%{background:var(--chip)}}
+@keyframes fd{0%{background:rgba(255,107,111,.32)}100%{background:var(--chip)}}
+.quote{flex:none;display:flex;align-items:flex-end;gap:.2rem .7rem;flex-wrap:wrap}
+.qname{font-size:.85rem;color:var(--mute);width:100%;display:flex;gap:.5rem;align-items:center}
+.qpx{font-family:var(--din);font-size:1.75rem;font-weight:700;line-height:1}
+.qchg{font-family:var(--din);font-size:1rem}
+.ranges{display:flex;gap:.15rem;margin-left:auto;flex:none}
+.ranges button{border:1px solid var(--line);background:transparent;border-radius:8px;padding:.2rem .42rem;font-size:.78rem;min-height:2rem;color:var(--mute)}
+.ranges button[aria-pressed=true]{color:var(--ink);border-color:var(--amber)}
+.chartbox{flex:1;min-height:5rem;position:relative;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,.015),transparent);border:1px solid var(--line);overflow:hidden}
+#chart{position:absolute;inset:0;width:100%;height:100%;touch-action:none;display:block}
+.tip{position:absolute;top:.4rem;left:.5rem;pointer-events:none;font-family:var(--din);font-size:.78rem;background:rgba(5,7,12,.85);border:1px solid var(--line);border-radius:8px;padding:.2rem .45rem}
+.cmsg{position:absolute;inset:0;display:grid;place-items:center;color:var(--mute);font-size:.85rem;padding:1rem;text-align:center}
+.rwbadge{position:absolute;top:.4rem;right:.5rem;font-family:var(--display);letter-spacing:.1em;font-size:.95rem;color:#05070c;background:var(--amber);border-radius:6px;padding:.1rem .45rem;text-transform:uppercase}
+.rwbar{position:absolute;left:0;bottom:0;height:3px;background:var(--amber);width:0;transition:width .3s linear}
+
+.panel{min-height:0;display:flex;flex-direction:column;border-top:1px solid var(--line);background:var(--panel)}
+@media (orientation:landscape) and (min-width:560px){.panel{border-top:0;border-left:1px solid var(--line)}}
+.tabs{flex:none;display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:.55rem .2rem .45rem;font-family:var(--display);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);min-height:2.75rem;display:flex;align-items:center;justify-content:center;gap:.35rem}
+html[lang=th] .tabs button{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:.92rem}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--amber)}
+.tabs svg{width:1.05rem;height:1.05rem;flex:none}
+.pane{position:relative;flex:1;min-height:0;overflow-y:auto;padding:.7rem .75rem calc(1rem + env(safe-area-inset-bottom));overscroll-behavior:contain}
+.pane[hidden]{display:none}
+
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:.35rem}
+.seg button{border:1px solid var(--line);background:var(--chip);border-radius:12px;padding:.45rem .3rem;min-height:2.75rem;font-weight:600}
+.side button{font-family:var(--display);font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase}
+html[lang=th] .side button{font-family:var(--body);font-size:1.05rem;letter-spacing:0}
+.side button[data-side=buy][aria-pressed=true]{background:var(--sign);border-color:var(--go);color:#fff}
+.side button[data-side=sell][aria-pressed=true]{background:#5a3b05;border-color:var(--amber);color:#fff}
+.kind button{font-size:.85rem}
+.kind button[aria-pressed=true]{border-color:var(--amber);color:var(--ink);background:#1a1f26}
+.kind button[aria-pressed=false]{color:var(--mute)}
+.field{display:flex;align-items:center;gap:.4rem;margin:.35rem 0 .35rem;border:1px solid var(--line);border-radius:12px;background:var(--bg2);padding:0 .7rem}
+.field span{font-family:var(--din);font-size:1.3rem;color:var(--mute)}
+.field input{flex:1;min-width:0;background:none;border:0;color:var(--ink);font-family:var(--din);font-size:1.45rem;padding:.4rem 0;outline:none}
+.field:focus-within{border-color:var(--amber)}
+.chips{display:flex;gap:.3rem;flex-wrap:wrap}
+.chips button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:.25rem .65rem;min-height:2.2rem;font-size:.82rem;font-family:var(--din)}
+.chips button[aria-pressed=true]{border-color:var(--amber);background:#1a1f26}
+.sum{font-size:.85rem;color:var(--mute);margin:.5rem 0;min-height:2.3em}
+.sum b{color:var(--ink);font-family:var(--din)}
+.go{width:100%;border:0;border-radius:14px;min-height:3.3rem;font-family:var(--display);font-size:1.35rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;
+ background:linear-gradient(180deg,#14a35f,var(--sign));box-shadow:0 6px 18px rgba(47,210,127,.18);transition:transform .08s}
+html[lang=th] .go{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:1.15rem;font-weight:700}
+.go.sell{background:linear-gradient(180deg,#c47d10,#7a4d06);box-shadow:0 6px 18px rgba(255,177,59,.16)}
+.go:active{transform:scale(.98)}
+.go[disabled]{opacity:.5;cursor:default}
+.def{font-size:.8rem;color:var(--mute);margin:.4rem 0 0}
+.when{margin-top:.9rem}
+.h{font-family:var(--display);font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin:1rem 0 .35rem}
+html[lang=th] .h{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:.9rem}
+.h:first-child{margin-top:0}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:flex;align-items:center;gap:.55rem;padding:.45rem 0;border-bottom:1px solid var(--line);font-size:.85rem}
+.rows li .disc{width:1.5rem;height:1.5rem;flex:none}
+.rows li .grow{flex:1;min-width:0}
+.rows li .r{text-align:right;font-family:var(--din);white-space:nowrap}
+.rows li button.x{border:1px solid var(--line);background:none;border-radius:8px;min-height:2.2rem;padding:0 .55rem;font-size:.8rem}
+.rows li.sel{cursor:pointer}
+.empty{color:var(--mute);font-size:.85rem}
+.card{border:1px solid var(--line);border-radius:14px;padding:.7rem .75rem;margin-bottom:.7rem;background:var(--bg2)}
+.card h2{margin:0 0 .3rem;font-family:var(--display);font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:.45rem}
+html[lang=th] .card h2{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:1rem}
+.card h2 svg{width:1.4rem;height:1.4rem;flex:none}
+.card p{margin:.25rem 0;font-size:.86rem}
+input[type=range]{width:100%;accent-color:var(--amber);min-height:2.2rem}
+.big{font-family:var(--din);font-size:1.25rem}
+.race{position:relative;margin:.5rem 0 .3rem}
+.lane{position:relative;height:2.4rem;border-bottom:1px dashed var(--line)}
+.lane .who{position:absolute;left:0;top:.6rem;font-size:.75rem;color:var(--mute)}
+.lane .runner{position:absolute;top:.15rem;font-size:1.6rem;line-height:1;transition:left 1.2s cubic-bezier(.2,.8,.2,1);transform:translateX(-50%)}
+.lane .runner small{position:absolute;left:100%;top:.35rem;margin-left:.25rem;font-size:.75rem;font-family:var(--din);white-space:nowrap}
+.race .zero{position:absolute;top:0;bottom:0;width:0;border-left:1px solid var(--mute);opacity:.5}
+.medals{display:grid;grid-template-columns:repeat(4,1fr);gap:.45rem}
+.medal{display:flex;flex-direction:column;align-items:center;gap:.2rem;text-align:center;font-size:.7rem;color:var(--mute)}
+.medal svg{width:2.4rem;height:2.4rem;filter:grayscale(1) brightness(.55)}
+.medal.got{color:var(--ink)}.medal.got svg{filter:none}
+.rwctl{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin:.5rem 0}
+.rwctl .go{min-height:3rem;font-size:1.15rem}
+.plain{border:1px solid var(--line);background:none;border-radius:12px;min-height:2.75rem;padding:0 .9rem;width:100%;font-size:.9rem;color:var(--mute)}
+.set{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.4rem 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.set input[type=number]{width:5.5rem;background:var(--bg2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.35rem .5rem;font-family:var(--din);font-size:1rem}
+.set input[type=checkbox]{width:1.4rem;height:1.4rem;accent-color:var(--go)}
+.links a{display:block;padding:.45rem 0;font-size:.9rem}
+.fine{font-size:.74rem;color:var(--mute)}
+#eq{width:100%;height:4.5rem;display:block}
+
+.payrow{display:flex;align-items:center;gap:.55rem;margin:.45rem 0 0}.payrow .seg{flex:1}
+.pay button{min-height:2.3rem;font-size:.85rem;font-family:var(--din)}
+.pay button[aria-pressed=true],.mchips button[aria-pressed=true]{border-color:var(--amber);background:#1a1f26;color:var(--ink)}
+.seg button[disabled],.chips button[disabled]{opacity:.35;cursor:default}
+button.k{background:none;border:0;padding:0;color:inherit;text-align:left;font:inherit;cursor:pointer}
+button.k.cash{text-align:right}
+.acct .lbl i{font-style:normal;color:var(--amber);margin-left:.2rem}
+.mchips{gap:.35rem}.mchips button{display:inline-flex;align-items:center;gap:.3rem;padding:.2rem .6rem .2rem .3rem;font-family:var(--body)}
+.mchips .disc{width:1.3rem;height:1.3rem}
+.chips .flip{margin-left:auto;font-size:1.05rem;min-width:2.6rem}
+.legs{font-size:.84rem;color:var(--mute);margin:.6rem 0;display:flex;flex-direction:column;gap:.2rem;min-height:3em}
+.legs b{color:var(--ink);font-family:var(--din);font-size:1.05rem}
+@media (max-width:420px){.tabs svg{display:none}.tabs button{font-size:.88rem;letter-spacing:.03em}html[lang=th] .tabs button{font-size:.78rem}}
+
+/* short screens: everything a step smaller so the chart keeps its room */
+@media (max-height:700px){
+ .bar{padding-top:max(.2rem,env(safe-area-inset-top));padding-bottom:.2rem}
+ .ttl h1{font-size:1.15rem}html[lang=th] .ttl h1{font-size:1.02rem}.ttl .by{font-size:.66rem}
+ .acct{padding:.2rem .75rem;gap:.6rem}.jar{width:1.8rem;height:2.15rem}.acct .tot b{font-size:1.2rem}.acct b{font-size:.92rem}
+ .stage{padding-top:.25rem;gap:.2rem}.coin{min-width:6.6rem;padding:.2rem .45rem .2rem .3rem}.coin .disc{width:1.35rem;height:1.35rem}
+ .qname{display:none}.qpx{font-size:1.35rem}.qchg{font-size:.85rem}.ranges button{min-height:1.8rem;padding:.1rem .38rem;font-size:.74rem}
+ .main{grid-template-rows:minmax(0,52fr) minmax(0,48fr)}
+ .tabs button{min-height:2.4rem;padding:.3rem .2rem;font-size:.9rem}html[lang=th] .tabs button{font-size:.82rem}
+ .pane{padding-top:.5rem}.seg button{min-height:2.4rem}.go{min-height:2.9rem}
+ #chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}#chips button{flex:none}.sum{margin:.35rem 0;min-height:0}
+}
+@media (max-width:360px){
+ .acct{gap:.45rem}.acct .tot b{font-size:1.12rem}.acct b{font-size:.84rem}.acct .lbl{font-size:.62rem}
+ .tabs svg{display:none}
+}
+
+.toasts{position:fixed;left:50%;top:calc(3.4rem + env(safe-area-inset-top));transform:translateX(-50%);display:flex;flex-direction:column;gap:.4rem;align-items:center;z-index:50;pointer-events:none;width:min(26rem,calc(100% - 2rem))}
+.toast{background:#141b26;border:1px solid var(--line);border-left:4px solid var(--go);border-radius:12px;padding:.55rem .8rem;font-size:.88rem;box-shadow:0 10px 30px rgba(0,0,0,.6);animation:tin .3s ease-out;width:100%}
+.toast.no{border-left-color:var(--red)}.toast.gold{border-left-color:var(--gold)}
+@keyframes tin{from{transform:translateY(-12px);opacity:0}}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60}
+noscript p{position:fixed;inset:auto 1rem 1rem;background:#141b26;padding:1rem;border-radius:12px}
+</style>
+</head>
+<body data-rates="https://offrampt-rates.nanobotco.workers.dev/">
+<div class="app" id="app">
+<header class="bar">
+ <a class="brand" href="/" aria-label="Offrampt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L17 7" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round"/><path d="M9 6 H18 V15" fill="none" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+ <div class="ttl"><h1 class="sign">Paper Baht</h1><a class="by" href="https://hongdam.net/" rel="author">Built by Hongdam Studio</a></div>
+ <span class="live" id="live"><i aria-hidden="true"></i><span id="liveTxt">…</span></span>
+ <a class="lang" href="/th/paper/" hreflang="th" lang="th">ไทย</a>
+</header>
+<section class="acct" aria-label="Your paper account">
+ <svg class="jar" id="jar" viewBox="0 0 40 48" role="img" aria-label="">
+  <defs><clipPath id="jc"><path d="M9 11h22v3c4 2 5 6 5 9v16c0 4-3 7-7 7H11c-4 0-7-3-7-7V23c0-3 1-7 5-9z"/></clipPath>
+  <linearGradient id="jg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd76a"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
+  <g clip-path="url(#jc)"><g class="lvl" id="jarLvl" style="transform:translateY(24px)">
+   <path class="wave" d="M-6 4q5-3 10 0t10 0t10 0t10 0t10 0v50h-50z" fill="url(#jg)"/>
+   <g fill="#fff3c2" opacity=".55"><circle cx="12" cy="10" r="2.2"/><circle cx="25" cy="14" r="2.2"/><circle cx="18" cy="20" r="2.2"/><circle cx="29" cy="7" r="2"/><circle cx="9" cy="18" r="2"/></g>
+  </g></g>
+  <path d="M9 11h22v3c4 2 5 6 5 9v16c0 4-3 7-7 7H11c-4 0-7-3-7-7V23c0-3 1-7 5-9z" fill="none" stroke="#cfe3d6" stroke-opacity=".7" stroke-width="1.6"/>
+  <rect x="8" y="5" width="24" height="6" rx="2" fill="#0e7d4e" stroke="#cfe3d6" stroke-opacity=".7" stroke-width="1.2"/>
+ </svg>
+ <button class="k tot" id="tot" type="button"><span class="lbl">Total <i id="totCur">฿ ⇄ $</i></span><b id="total" class="num">฿1,000,000</b></button>
+ <div class="k chg"><span class="lbl">Since start</span><b id="chg" class="num">฿0</b></div>
+ <button class="k cash" id="cashBtn" type="button"><span class="lbl">Money</span><b id="cash" class="num">฿1,000,000</b></button>
+</section>
+<main class="main">
+ <section class="stage" aria-label="Market">
+  <div class="strip" id="strip" role="group" aria-label="Coins"></div>
+  <div class="quote">
+   <div class="qname" id="qname"></div>
+   <div class="qpx num" id="qpx">—</div><div class="qchg num" id="qchg"></div>
+   <div class="ranges" role="group" aria-label="Range">
+    <button data-r="1D" aria-pressed="true">Day</button><button data-r="1W" aria-pressed="false">Week</button><button data-r="1M" aria-pressed="false">Month</button><button data-r="1Y" aria-pressed="false">Year</button>
+   </div>
+  </div>
+  <div class="chartbox" id="chartbox">
+   <canvas id="chart" role="img" aria-label="Loading"></canvas>
+   <div class="tip num" id="tip" hidden></div>
+   <div class="cmsg" id="cmsg">Loading</div>
+   <div class="rwbadge" id="rwbadge" hidden>Rewind</div>
+   <div class="rwbar" id="rwbar" hidden></div>
+  </div>
+ </section>
+ <section class="panel" aria-label="Trade, holdings, toys">
+  <div class="tabs" role="tablist">
+   <button role="tab" id="t-trade" aria-controls="p-trade" aria-selected="true" data-tab="trade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l5-5 4 4 7-8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Trade</button>
+   <button role="tab" id="t-money" aria-controls="p-money" aria-selected="false" data-tab="money" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Money</button>
+   <button role="tab" id="t-mine" aria-controls="p-mine" aria-selected="false" data-tab="mine" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="7" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 7v5c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Mine</button>
+   <button role="tab" id="t-toys" aria-controls="p-toys" aria-selected="false" data-tab="toys" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.3" fill="currentColor"/><circle cx="15" cy="10" r="1.3" fill="currentColor"/><path d="M8.5 14.5c1.8 2 5.2 2 7 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Toys</button>
+   <button role="tab" id="t-about" aria-controls="p-about" aria-selected="false" data-tab="about" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="8" r="1.4" fill="currentColor"/></svg>About</button>
+  </div>
+
+  <div class="pane" id="p-trade" role="tabpanel" aria-labelledby="t-trade">
+   <div class="seg side" role="group" aria-label="Buy / Sell"><button data-side="buy" aria-pressed="true">Buy</button><button data-side="sell" aria-pressed="false">Sell</button></div>
+   <div class="payrow"><span class="small mute" id="payL">Pay in</span><div class="seg pay" role="group" aria-labelledby="payL"><button data-pay="THB" aria-pressed="true">฿ Baht</button><button data-pay="USDT" aria-pressed="false">₮ USDT</button></div></div>
+   <p class="def num" id="qba"></p>
+   <label class="field"><span aria-hidden="true" id="amtCur">฿</span><input id="amt" inputmode="decimal" autocomplete="off" aria-label="Amount in baht" value="10,000"></label>
+   <div class="chips" id="chips"></div>
+   <p class="sum" id="sum" aria-live="polite"></p>
+   <button class="go" id="go">Buy</button>
+   <div class="when">
+    <div class="seg kind" role="group" aria-label="When"><button data-k="now" aria-pressed="true">Now</button><button data-k="limit" aria-pressed="false">At my price</button><button data-k="stop" aria-pressed="false">Stop</button></div>
+    <p class="def" id="def"></p>
+    <div id="pxrow" hidden><label class="field"><span aria-hidden="true">฿</span><input id="px" inputmode="decimal" autocomplete="off" aria-label="Your price"></label><p class="def">Or drag the line on the chart.</p></div>
+   </div>
+   <div class="h" id="ordH" hidden>Waiting orders</div><ul class="rows" id="ordHere"></ul>
+  </div>
+
+  <div class="pane" id="p-money" role="tabpanel" aria-labelledby="t-money" hidden>
+   <div class="h">Your money</div><ul class="rows" id="wallet"></ul>
+   <div class="card swap">
+    <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Swap</h2>
+    <p class="small mute">From</p><div class="chips mchips" id="swF" role="group"><button data-m="THB" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#2fa66a"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">฿</text></svg>Baht</button><button data-m="USD" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#7fa56b"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">$</text></svg>Dollars</button><button data-m="USDT" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#26a17b"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">₮</text></svg>USDT</button><button data-m="USDC" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#2775ca"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">$</text></svg>USDC</button></div>
+    <label class="field"><span aria-hidden="true" id="swCur">฿</span><input id="swAmt" inputmode="decimal" autocomplete="off" aria-label="Amount in baht"></label>
+    <div class="chips" id="swChips"><button data-f="tenth">10%</button><button data-f="half">Half</button><button data-f="all">All</button><button id="swFlip" class="flip" type="button" aria-label="Swap the two">⇄</button></div>
+    <p class="small mute" style="margin-top:.6rem">To</p><div class="chips mchips" id="swT" role="group"><button data-m="THB" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#2fa66a"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">฿</text></svg>Baht</button><button data-m="USD" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="7" width="24" height="14" rx="2.5" fill="#7fa56b"/><text x="14" y="17.4" text-anchor="middle" font-size="9" font-weight="800" fill="#0b0f15" font-family="system-ui">$</text></svg>Dollars</button><button data-m="USDT" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#26a17b"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">₮</text></svg>USDT</button><button data-m="USDC" aria-pressed="false"><svg class="disc" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="#2775ca"/><text x="14" y="18.6" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" font-family="system-ui">$</text></svg>USDC</button></div>
+    <p class="legs" id="swSum" aria-live="polite"></p>
+    <button class="go" id="swGo">Swap</button>
+   </div>
+   <div class="card">
+    <h2>Out and back</h2>
+    <p class="small">฿10,000 swapped to each, then straight back to baht. The gap is the spread and the fees.</p>
+    <ul class="rows" id="round"></ul>
+   </div>
+   <p class="fine">Dollar notes: the best Chiang Mai money changer, rates from thairate.com (CC BY 4.0), refreshed every fifteen minutes. USDT and USDC: Bitkub, live. Dollar notes come in whole dollars; change comes back in baht.</p>
+  </div>
+
+  <div class="pane" id="p-mine" role="tabpanel" aria-labelledby="t-mine" hidden>
+   <div class="h">Your total over time</div><canvas id="eq" role="img" aria-label="Your total over time"></canvas>
+   <div class="h">Holdings</div><ul class="rows" id="hold"></ul>
+   <div class="h">Waiting orders</div><ul class="rows" id="ords"></ul>
+   <div class="h">Trades</div><ul class="rows" id="hist"></ul>
+  </div>
+
+  <div class="pane" id="p-toys" role="tabpanel" aria-labelledby="t-toys" hidden>
+   <div class="card" id="rwCard">
+    <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 6L4 12l7 6zM20 6l-7 6 7 6z" fill="var(--amber)"/></svg>Rewind</h2>
+    <p id="rwP"></p>
+    <div id="rwIdle"><button class="go" id="rwGo">Start</button><p class="small mute" id="rwBest"></p></div>
+    <div id="rwPlay" hidden>
+     <p class="big num" id="rwScore"></p>
+     <div class="rwctl"><button class="go" id="rwBuy">Buy all</button><button class="go sell" id="rwSell">Sell all</button></div>
+     <button class="plain" id="rwStop">End</button>
+    </div>
+    <p id="rwEnd" class="big" hidden></p>
+   </div>
+   <div class="card">
+    <h2><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="var(--amber)" stroke-width="2"/><path d="M12 9v4l3 2M9 2h6" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round"/></svg>Time machine</h2>
+    <div class="chips" id="tmAmt"><button data-a="1000" aria-pressed="false">฿1,000</button><button data-a="10000" aria-pressed="true">฿10,000</button><button data-a="100000" aria-pressed="false">฿100,000</button></div>
+    <input type="range" id="tm" min="0" max="364" value="0" aria-label="Slide to pick a day.">
+    <p class="big" id="tmOut" aria-live="polite"></p>
+    <p class="small mute">Slide to pick a day.</p>
+   </div>
+   <div class="card">
+    <h2><span aria-hidden="true">🐒</span>You and the monkey</h2>
+    <p class="small">On your first day a monkey threw darts at the coin list and bought what it hit with ฿1,000,000.</p>
+    <div class="race" id="race" role="img" aria-label="">
+     <div class="zero" id="raceZero"></div>
+     <div class="lane"><span class="who">You</span><span class="runner" id="runYou" aria-hidden="true">🧑<small id="runYouV"></small></span></div>
+     <div class="lane"><span class="who">Monkey</span><span class="runner" id="runMon" aria-hidden="true">🐒<small id="runMonV"></small></span></div>
+    </div>
+    <p class="small mute" id="monHas"></p>
+   </div>
+   <div class="card"><h2>Medals</h2><div class="medals" id="medals"></div></div>
+   <button class="plain" id="reset">Start over with ฿1,000,000</button>
+  </div>
+
+  <div class="pane" id="p-about" role="tabpanel" aria-labelledby="t-about" hidden>
+   <div class="card">
+    <p>Paper Baht is practice trading. The money is paper. The prices are Bitkub&#x27;s, live, refreshed every ten seconds through the Offrampt rates service.</p><p>Buying pays the asking price; selling gets the bid. The gap between them is the spread. Each trade pays the fee below.</p><p>The account holds baht, US dollar notes, USDT and USDC. Swaps between them go through baht, the way they do in Thailand: dollar notes at a money changer, USDT and USDC on Bitkub. Coins can be paid for in baht, or in USDT where Bitkub has a USDT market. Totals in dollars use the Bank of Thailand reference rate.</p><p class="mute">The account is saved in this browser.</p>
+    <label class="set"><span>Fee per trade, %</span><input type="number" id="fee" min="0" max="2" step="0.05"></label>
+    <label class="set"><span>Sounds</span><input type="checkbox" id="sound"></label>
+   </div>
+   <div class="card links">
+    <a href="https://hongdam.net/" rel="author">Built by Hongdam Studio, Chiang Rai.</a>
+    <a href="/">Offrampt: crypto in Thailand, and the ways out to baht</a>
+    <a href="/#calc">How many baht for your crypto?</a>
+   </div>
+   <p class="fine">Nothing here is advice about money, tax or law. Code MIT.</p>
+  </div>
+ </section>
+</main>
+</div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<noscript><p>Paper Baht needs JavaScript.</p></noscript>
+<script>window.PB_T={"name": "Paper Baht", "by": "Built by Hongdam Studio", "head": "Paper Baht — practice trading at live Bitkub prices — Offrampt", "desc": "Trade ฿1,000,000 of paper money at live prices: eleven coins with gold among them, baht, US dollars, USDT and USDC, charts, orders at your price, a monkey to race, and yesterday on rewind.", "account": "Your paper account", "total": "Total", "sincestart": "Since start", "cash": "Cash", "market": "Market", "coins": "Coins", "range": "Range", "r1D": "Day", "r1W": "Week", "r1M": "Month", "r1Y": "Year", "controls": "Trade, holdings, toys", "trade": "Trade", "mine": "Mine", "toys": "Toys", "about": "About", "buy": "Buy", "sell": "Sell", "amount": "Amount in baht", "half": "Half", "all": "All", "when": "When", "now": "Now", "limit": "At my price", "stop": "Stop", "def_now_buy": "Buys now, at the asking price.", "def_limit_buy": "Waits, and buys when the price falls to yours.", "def_stop_buy": "Waits, and buys if the price rises to yours.", "def_now_sell": "Sells now, at the bid price.", "def_limit_sell": "Waits, and sells when the price rises to yours.", "def_stop_sell": "Waits, and sells if the price falls to yours.", "price": "Your price", "drag": "Or drag the line on the chart.", "youget": "You get", "fee": "fee", "youhave": "You have", "place": "Place order", "orders": "Waiting orders", "cancel": "Cancel", "holdings": "Holdings", "history": "Trades", "nothing": "Nothing yet.", "value": "Value", "gain": "Gain", "bidask": "Buying costs {a} · Selling gets {b}", "live": "live", "stale": "waiting", "sec": "s", "min": " min", "tm_h": "Time machine", "tm_p": "{amt} of {coin} on {date} is {now} today.", "tm_drag": "Slide to pick a day.", "monkey_h": "You and the monkey", "monkey_p": "On your first day a monkey threw darts at the coin list and bought what it hit with ฿1,000,000.", "monkey_has": "The monkey holds", "you": "You", "monkey": "Monkey", "rw_h": "Rewind", "rw_p": "Play the last 24 hours of {coin} in about a minute, with ฿100,000. Buy and sell as it moves.", "rw_go": "Start", "rw_buy": "Buy all", "rw_sell": "Sell all", "rw_stop": "End", "rw_end": "You ended with {you}. Holding from the start: {hold}.", "rw_best": "Best", "rw_on": "Rewind", "medals": "Medals", "reset": "Start over with ฿1,000,000", "reset_q": "Clear this paper account and start over?", "about_p1": "Paper Baht is practice trading. The money is paper. The prices are Bitkub's, live, refreshed every ten seconds through the Offrampt rates service.", "about_p2": "Buying pays the asking price; selling gets the bid. The gap between them is the spread. Each trade pays the fee below.", "about_p3": "The account is saved in this browser.", "fee_l": "Fee per trade, %", "sound_l": "Sounds", "credit": "Built by Hongdam Studio, Chiang Rai.", "back": "Offrampt: crypto in Thailand, and the ways out to baht", "calc": "How many baht for your crypto?", "bought": "Bought {q} {coin} at {px}", "sold": "Sold {q} {coin} at {px}: {pnl}", "placed": "Waiting: {side} {coin} at {px}", "filled": "Filled. ", "cancelled": "Order cancelled.", "e_cash": "Not enough cash.", "e_min": "The smallest amount is {min}.", "e_none": "You hold no {coin}.", "e_price": "Set your price first.", "e_noprice": "Waiting for prices.", "e_chart": "The chart is not loading. Prices and trades still work.", "m_first": "First trade", "m_ten": "Ten trades", "m_gold": "Gold in the jar", "m_five": "Five coins at once", "m_green": "Above ฿1,000,000", "m_monkey": "Ahead of the monkey", "m_rewind": "Rewound a day", "m_patient": "Filled at my price", "medal_new": "Medal: {m}", "equity": "Your total over time", "chart_aria": "{coin}, {range}: from {a} to {b}, high {h}, low {l}.", "loading": "Loading", "noscript": "Paper Baht needs JavaScript.", "fine": "Nothing here is advice about money, tax or law.", "c_BTC": "Bitcoin", "c_ETH": "Ether", "c_XAUT": "Gold", "c_USDT": "Tether dollar", "c_SOL": "Solana", "c_XRP": "XRP", "c_DOGE": "Dogecoin", "c_BNB": "BNB", "money": "Money", "pay_in": "Pay in", "get_in": "Get", "amount_in": "Amount in {m}", "no_usdt": "{coin} has no USDT market on Bitkub.", "m_THB": "Baht", "m_USD": "US dollars, cash", "m_USDT": "Tether (USDT)", "m_USDC": "USD Coin (USDC)", "ms_THB": "Baht", "ms_USD": "Dollars", "ms_USDT": "USDT", "ms_USDC": "USDC", "wallet": "Your money", "swap": "Swap", "from": "From", "to": "To", "flip": "Swap the two", "swap_go": "Swap {a} for {m}", "swapped": "Swapped {a} for {b}", "leg_sell_cash": "Sell {x} to {shop} at {r}: {y}", "leg_buy_cash": "Buy {y} from {shop} at {r}", "leg_sell_coin": "Sell {x} on Bitkub at {r}: {y}, fee {f}", "leg_buy_coin": "Buy {y} on Bitkub at {r}, fee {f}", "change": "{c} change back in baht", "same": "Pick two different kinds of money.", "e_bal": "Not enough {m}.", "rt_h": "Out and back", "rt_p": "฿10,000 swapped to each, then straight back to baht. The gap is the spread and the fees.", "rates_src": "Dollar notes: the best Chiang Mai money changer, rates from thairate.com (CC BY 4.0), refreshed every fifteen minutes. USDT and USDC: Bitkub, live. Dollar notes come in whole dollars; change comes back in baht.", "show_usd": "Tap to show in dollars", "show_thb": "Tap to show in baht", "about_p4": "The account holds baht, US dollar notes, USDT and USDC. Swaps between them go through baht, the way they do in Thailand: dollar notes at a money changer, USDT and USDC on Bitkub. Coins can be paid for in baht, or in USDT where Bitkub has a USDT market. Totals in dollars use the Bank of Thailand reference rate.", "m_swap": "First swap", "m_four": "Four kinds of money", "c_USDC": "USD Coin", "c_ADA": "Cardano", "c_KUB": "Bitkub Coin", "c_LINK": "Chainlink", "c_SUI": "Sui"};</script>
+<script src="/js/paper.js?v=62e34558" defer></script>
+</body></html>

@@ -17,6 +17,20 @@
       usdt_bid: function (x) { return f(x, 2); }, bot_mid: function (x) { return f(x, 2); },
       usdt_prem: function (x) { return (x >= 0 ? "+" : "") + f(x, 2) + "%"; }, btc_bid: function (x) { return "฿" + f(x, 0); }
     };
+    // USD cash at a money changer (sources.cash from baht-rates; data thairate.com, CC BY 4.0).
+    var c = s.cash && s.cash.best, tick = document.querySelector(".tick");
+    if (c) v.cash_usd = c.rate;
+    fmt.cash_usd = function (x) { return f(x, 2); };
+    if (c && tick && !tick.querySelector('[data-live="cash_usd"]')) {
+      var sp2 = document.createElement("span"), b = document.createElement("b"), sm = document.createElement("small"), a = document.createElement("a");
+      sp2.className = "cash";
+      sp2.appendChild(document.createTextNode(t("USD cash at a money changer ฿", "เงินสด USD ที่ร้านแลกเงิน ฿")));
+      b.setAttribute("data-live", "cash_usd"); sp2.appendChild(b);
+      a.href = s.cash.source_url || "https://thairate.com/"; a.textContent = "thairate.com"; a.rel = "noopener";
+      sm.appendChild(document.createTextNode(" " + c.shop + " · "));
+      sm.appendChild(a); sm.appendChild(document.createTextNode(" (CC BY 4.0)"));
+      sp2.appendChild(sm); tick.appendChild(sp2);
+    }
     document.querySelectorAll("[data-live]").forEach(function (el) {
       var k = el.getAttribute("data-live");
       if (v[k] != null && fmt[k]) el.textContent = fmt[k](v[k]);
