@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build"
 SITE = BUILD / "site"
 IMG = BUILD / "img"
+OG = ROOT / "og"  # one 1200x630 link card per page: <lang>-<page>.jpg, alt text in tools/og_alts.py
 DATA = ROOT / "data"
 SITE_URL = os.environ.get("SITE_URL", "https://offrampt.net").rstrip("/")
 tail = SITE_URL.split("//", 1)[-1]
@@ -314,6 +315,20 @@ def invite(path):
 JSV = {f.name: hashlib.sha1(f.read_bytes()).hexdigest()[:8] for f in (ROOT / "js").glob("*.js")}
 
 
+def og_tags(path):
+    """the page's own card when og/ has one, else the site card"""
+    key = ("th-" if LANG == "th" else "en-") + (path.strip("/") or "home")
+    from og_alts import ALTS as alts
+    if (OG / f"{key}.jpg").exists() and key in alts:
+        img, alt = f"{SITE_URL}/img/og/{key}.jpg", alts[key]
+    else:
+        img, alt = f"{SITE_URL}/img/{T('card.jpg', 'card-th.jpg')}", T("Card: Offrampt, light trails to an EXIT sign on a night road", "การ์ด: Offrampt, ทางแสงไปยังป้าย EXIT บนถนนตอนกลางคืน")
+    a = E(alt, quote=True)
+    return (f'<meta property="og:image" content="{img}"><meta property="og:image:width" content="1200">'
+            f'<meta property="og:image:height" content="630"><meta property="og:image:alt" content="{a}">'
+            f'<meta name="twitter:image" content="{img}"><meta name="twitter:image:alt" content="{a}">')
+
+
 def page(title, body, path, desc="", scripts=(), jsonld=None):
     nav = "".join(f'<a href="{U(h)}"{" aria-current=page" if path == h else ""}><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>'
                   for h, en, th, *_r in MENU)
@@ -349,7 +364,7 @@ Nothing here is advice about money, tax or law.""",
 <link rel="alternate" hreflang="en" href="{E(url_en)}"><link rel="alternate" hreflang="th" href="{E(url_th)}"><link rel="alternate" hreflang="x-default" href="{E(url_en)}">
 <meta property="og:title" content="{E(head_title)}">
 <meta property="og:description" content="{E(desc or tag)}">
-<meta property="og:image" content="{SITE_URL}/img/{T('card.jpg', 'card-th.jpg')}">
+{og_tags(path)}
 <meta property="og:type" content="website"><meta property="og:site_name" content="{NAME}">
 <meta property="og:locale" content="{T('en_US', 'th_TH')}">
 <meta name="twitter:card" content="summary_large_image">
@@ -1092,6 +1107,8 @@ def main():
         shutil.rmtree(SITE)
     SITE.mkdir(parents=True)
     shutil.copytree(IMG, SITE / "img", ignore=shutil.ignore_patterns("_*"))
+    if OG.exists():
+        shutil.copytree(OG, SITE / "img" / "og", ignore=shutil.ignore_patterns("*.json"))
     shutil.copytree(ROOT / "js", SITE / "js")
     for LANG in ("en", "th"):
         for fn in PAGES:

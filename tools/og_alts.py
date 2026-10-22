@@ -1,0 +1,33 @@
+# Alt text of each page's link card in og/. Key: <lang>-<page>.
+ALTS = {
+    "en-cards": "Card: Cards, over four holographic debit cards",
+    "en-data": "Card: Data, over a gold price line on dark blue",
+    "en-for-agents": "Card: For agents, over rows of coloured wallet addresses",
+    "en-history": "Card: History, over rows of coloured hash blocks",
+    "en-how": "Card: How, over a grid of orange and green bit squares",
+    "en-home": "Card: Offrampt, light trails to an EXIT sign on a night road",
+    "en-markets": "Card: Markets, over a gold price line on dark blue",
+    "en-networks": "Card: Networks, over flow lines from USDT and USDC into Ethereum, Tron and Solana",
+    "en-ramp": "Card: Ramp, over crossing lines of light",
+    "en-rules": "Card: Rules, over light trails over lines of wallet addresses",
+    "en-scams": "Card: Scams, over a glowing spider web tunnel",  # stylecheck: allow — page name
+    "en-sources": "Card: Sources, over rows of coloured hash blocks",
+    "en-support": "Card: Support, over light trails to an EXIT sign on a night road",
+    "th-cards": "การ์ด: บัตร, บัตรเดบิตสีรุ้งสี่ใบ",
+    "th-data": "การ์ด: ข้อมูล, เส้นราคาสีทองบนพื้นน้ำเงินเข้ม",
+    "th-for-agents": "การ์ด: สำหรับเอเจนต์, แถวที่อยู่กระเป๋าหลายสี",
+    "th-history": "การ์ด: ประวัติ, แถวบล็อกแฮชหลายสี",
+    "th-how": "การ์ด: กลไก, ตารางบิตสีส้มและเขียว",
+    "th-home": "การ์ด: Offrampt, ทางแสงไปยังป้าย EXIT บนถนนตอนกลางคืน",
+    "th-markets": "การ์ด: ตลาด, เส้นราคาสีทองบนพื้นน้ำเงินเข้ม",
+    "th-networks": "การ์ด: เครือข่าย, เส้นไหลจาก USDT และ USDC เข้า Ethereum, Tron และ Solana",
+    "th-ramp": "การ์ด: แลกบาท, เส้นแสงตัดกัน",
+    "th-rules": "การ์ด: กฎ, ทางแสงเหนือแถวที่อยู่กระเป๋า",
+    "th-scams": "การ์ด: กลโกง, อุโมงค์ใยแมงมุมเรืองแสง",  # stylecheck: allow — page name
+    "th-sources": "การ์ด: แหล่งที่มา, แถวบล็อกแฮชหลายสี",
+    "th-support": "การ์ด: สนับสนุน, ทางแสงไปยังป้าย EXIT บนถนนตอนกลางคืน",
+    "th-tools": "การ์ด: เครื่องมือ, แถวที่อยู่กระเป๋าหลายสี",
+    "th-words": "การ์ด: ศัพท์, ศัพท์คริปโตไทยและอังกฤษเรืองแสง",
+    "en-tools": "Card: Tools, over rows of coloured wallet addresses",
+    "en-words": "Card: Words, over glowing Thai and English crypto words",
+}

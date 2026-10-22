@@ -2,3 +2,8 @@ build/
 data/raw/
 __pycache__/
 .DS_Store
+.wrangler/
+.env
+secrets.json
+affiliate_ids.local.*
+*.secret
