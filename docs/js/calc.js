@@ -15,10 +15,19 @@
     var a = num(ca), k = cs.value, out;
     if (k === "usdt") out = "฿" + f(a * rate.usdt_bid, 2) + t(" at the Bitkub bid (", " ที่ราคารับซื้อ Bitkub (") + f(rate.usdt_bid, 2) + ")\n฿" + f(a * rate.mid, 2) + t(" at the Bank of Thailand mid (", " ที่อัตรากลาง ธปท. (") + f(rate.mid, 2) + ")";
     else if (k === "btc") out = "฿" + f(a * rate.btc_bid, 0) + t(" at the Bitkub bid (฿", " ที่ราคารับซื้อ Bitkub (฿") + f(rate.btc_bid, 0) + t(" per BTC)", " ต่อ BTC)") + "\n" + f(a * 1e8, 0) + " sats";
+    else if (k !== "usd") {
+      var x = rate.fx && rate.fx[k.toUpperCase()];
+      out = x ? "฿" + f(a * x, 2) + t(" at the mid-market rate (฿", " ที่อัตรากลางตลาด (฿") + f(x, x < 1 ? 4 : 2) + t(" each), thairate.com (CC BY 4.0)", " ต่อหน่วย) thairate.com (CC BY 4.0)")
+        : t("The live rate has not loaded yet.", "อัตราสดยังโหลดไม่เสร็จ");
+    }
     else out = "฿" + f(a * rate.mid, 2) + t(" at the Bank of Thailand mid", " ที่อัตรากลาง ธปท.") + "\n฿" + f(a * rate.tt, 2) + t(" at the banks' average buying rate for a transfer", " ที่อัตรารับซื้อเงินโอนเฉลี่ยของธนาคาร");
     co.textContent = out + t("\nRates: ", "\nอัตรา: ") + rate.when;
   }
-  if (ca) { ca.addEventListener("input", conv); cs.addEventListener("change", conv); }
+  if (ca) {
+    var pre = (location.search.match(/[?&]cv=([a-z]{3,4})/) || [])[1];  // ?cv=eur opens the converter on that currency
+    if (pre && cs.querySelector('option[value="' + pre + '"]')) cs.value = pre;
+    ca.addEventListener("input", conv); cs.addEventListener("change", conv);
+  }
 
   // calculator
   var box = document.getElementById("croutes"), bars = document.getElementById("cbars"), amt = document.getElementById("camt");
@@ -83,6 +92,7 @@
     if (s.bitkub_btc) rate.btc_bid = s.bitkub_btc.bid;
     if (s.bot) rate.mid = s.bot.usd_thb_mid;
     if (s.bot && s.bot.usd_thb_transfer) rate.tt = s.bot.usd_thb_transfer;
+    if (s.fx && s.fx.thb_per_unit) rate.fx = s.fx.thb_per_unit;
     rate.when = t("live, ", "สด ") + new Date(s.bitkub_usdt ? s.bitkub_usdt.fetched_at : Date.now()).toLocaleString();
     conv(); calc();
   });

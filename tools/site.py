@@ -776,10 +776,10 @@ def tools():
 <h2 id="check">{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
 {checker(tries=True)}
 <p class="small mute">{T("Formats and checksums: bitcoin base58 and bech32/bech32m; EVM mixed-case checksums; Tron, XRP and TON checks.", "รูปแบบและ checksum: บิตคอยน์ base58 และ bech32/bech32m, EVM แบบตัวพิมพ์ผสม, Tron, XRP และ TON")}{cite("bip173", "bip350", "eip55")}</p>
-<h2>{T("Baht converter", "แปลงเป็นบาท")}</h2>
+<h2 id="convert">{T("Baht converter", "แปลงเป็นบาท")}</h2>
 <div class="panel"><div class="row">
 <div class="field" style="flex:1 1 10rem;margin:0"><input id="cvamt" inputmode="decimal" placeholder=" " value="100"><label for="cvamt">{T("Amount", "จำนวน")}</label></div>
-<div class="field" style="flex:0 1 9rem;margin:0"><select id="cvasset"><option value="usdt">USDT</option><option value="btc">BTC</option><option value="usd">{T("US dollar", "ดอลลาร์สหรัฐ")}</option></select><label for="cvasset">{T("Of", "สกุล")}</label></div>
+<div class="field" style="flex:0 1 9rem;margin:0"><select id="cvasset"><option value="usdt">USDT</option><option value="btc">BTC</option><option value="usd">{T("US dollar", "ดอลลาร์สหรัฐ")}</option><option value="eur">{T("Euro", "ยูโร")}</option><option value="gbp">{T("Pound sterling", "ปอนด์สเตอร์ลิง")}</option><option value="jpy">{T("Japanese yen", "เยนญี่ปุ่น")}</option><option value="cny">{T("Chinese yuan", "หยวนจีน")}</option><option value="krw">{T("Korean won", "วอนเกาหลี")}</option></select><label for="cvasset">{T("Of", "สกุล")}</label></div>
 </div><div class="out" id="cvout" style="margin-top:.7rem"></div></div>
 <h2 id="calc">{T("Off-ramp calculator", "เครื่องคำนวณการแลก")}</h2>
 <p>{T("Each route turns the same amount into baht with its own costs. Where a provider publishes a fee, its field starts there; a field at zero is one for you to fill.",
