@@ -1,0 +1,188 @@
+# -*- coding: utf-8 -*-
+"""frozen.py — the words and sources of offrampt.net/frozen/ and /th/frozen/ (site.py frozen() renders them).
+
+Written 2026-10-30, the day after Binance lost about US$6.3 billion and paused withdrawals. The board is dated;
+change CHECKED and BOARD when a row changes. Each pair is (English, Thai).
+"""
+
+CHECKED = ("30 October 2026, 16:00 Bangkok time", "30 ตุลาคม 2569 เวลา 16:00 น.")
+HONGDAM_EN = "https://hongdam.net/studio/crypto-safety/"
+HONGDAM_TH = "https://hongdam.net/th/studio/crypto-safety/"
+
+S = {
+    "tc": {"title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto", "publisher": "TechCrunch", "date": "2026-10-29",
+           "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"},
+    "rte": {"title": "Hackers steal $6.3bn from cryptocurrency platform Binance", "publisher": "RTÉ, citing Reuters", "date": "2026-10-30",
+            "url": "https://www.rte.ie/news/business/2026/1030/1597305-binance-bitcoin-world/"},
+    "std": {"title": "Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์", "publisher": "THE STANDARD", "date": "2026-10-30",
+            "url": "https://thestandard.co/binance-hacked-billions-crypto-theft/"},
+    "ths": {"title": "ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต", "publisher": "Thansettakij", "date": "2026-10-30",  # stylecheck: allow — a source's headline
+            "url": "https://www.thansettakij.com/finance/wealth-tech/672587"},
+    "bi": {"title": "Binance โดนแฮ็กกว่า 2.12 แสนล้านบาท ด้าน Binance TH ยังปลอดภัย", "publisher": "Brand Inside", "date": "2026-10-30",
+           "url": "https://brandinside.asia/binance-hit-by-212bn-cyber-breach-thai-user-funds-safe/"},
+    "gox1": {"title": "Mt Gox starts making repayments in bitcoin and bitcoin cash: trustee", "publisher": "The Block", "date": "2024-07-05",
+             "url": "https://www.theblock.co/post/303614/mt-gox-starts-making-repayment-in-bitcoin-and-bitcoin-cash-trustee"},
+    "gox2": {"title": "Mt. Gox Pushes Back Bitcoin Repayments to October 2026", "publisher": "Decrypt", "date": "2025-10-27",
+             "url": "https://decrypt.co/346053"},
+}
+
+TITLE = ("Frozen", "ถอนไม่ได้")
+SUB = ("When an exchange stops withdrawals", "เมื่อศูนย์ซื้อขายหยุดให้ถอน")
+TAB = ("NOTICE", "ประกาศ")
+DESC = ("Binance lost about $6.3 billion on 29 October 2026 and stopped withdrawals; Binance TH stopped crypto withdrawals. Each exchange's state, eight worse cases with what helps on each, and a counter of how many months you could live if your exchange froze.",
+        "Binance ถูกขโมยราว 6.3 พันล้านดอลลาร์เมื่อ 29 ตุลาคม 2569 และหยุดให้ถอน Binance TH หยุดให้ถอนคริปโต สถานะของแต่ละศูนย์ซื้อขาย แปดกรณีที่แย่กว่าพร้อมสิ่งที่ช่วยได้ในแต่ละขั้น และเครื่องนับว่าคุณอยู่ได้กี่เดือนถ้าศูนย์ซื้อขายของคุณถอนไม่ได้")
+LEDE = ("On 29 October 2026 thieves took about $6.3 billion from Binance, the largest crypto theft on record. Binance stopped withdrawals. Binance TH, its Thai partner, stopped crypto withdrawals. Many people in Thailand live from crypto. This page plans for worse than today.",
+        "วันที่ 29 ตุลาคม 2569 มีคนขโมยเงินราว 6.3 พันล้านดอลลาร์จาก Binance เป็นการขโมยคริปโตครั้งใหญ่ที่สุดเท่าที่มีบันทึก Binance หยุดให้ถอน Binance TH ซึ่งเป็นพันธมิตรในไทย หยุดให้ถอนคริปโต คนไทยจำนวนมากใช้ชีวิตด้วยคริปโต หน้านี้วางแผนสำหรับกรณีที่แย่กว่าวันนี้")
+
+W = {
+    "board_h": ("The board", "กระดานสถานะ"),
+    "checked": ("Checked {t}. Each exchange posts its own state in its app.", "ตรวจเมื่อ {t} ศูนย์ซื้อขายแต่ละแห่งแจ้งสถานะของตัวเองในแอป"),
+    "not_listed": ("A place with no report today is not on the board.", "ที่ที่วันนี้ไม่มีรายงาน ไม่อยู่บนกระดาน"),
+    "col_place": ("Place", "ที่"), "col_out": ("Taking coins out", "ถอนเหรียญออก"), "col_in": ("Putting in, trading", "ฝาก ซื้อขาย"),
+    "col_say": ("What they say", "เขาว่าอย่างไร"),
+    "facts_h": ("Today", "วันนี้"),
+    "ladder_h": ("Worse than today", "แย่กว่าวันนี้"),
+    "ladder_p": ("Eight steps, each worse than the one before. Each has happened somewhere before. Nobody knows which step this one stops at.",
+                 "แปดขั้น แต่ละขั้นแย่กว่าขั้นก่อน ทุกขั้นเคยเกิดขึ้นมาแล้วที่ใดที่หนึ่ง ไม่มีใครรู้ว่าครั้งนี้จะหยุดที่ขั้นไหน"),
+    "happens": ("What happens", "เกิดอะไรขึ้น"), "before": ("Before", "เคยเกิด"), "do": ("What helps", "สิ่งที่ช่วยได้"),
+    "all_h": ("All at once", "ทั้งหมดพร้อมกัน"),
+    "all_p": ("Frozen for months. A part of the money comes back, late. Prices fall by half. USDT sells under a dollar. Your bank account is frozen when you sell. Fraud calls every day. The last line of the counter below is this case.",
+              "ถอนไม่ได้เป็นเดือน ได้เงินคืนบางส่วนและช้า ราคาลดลงครึ่งหนึ่ง USDT ขายได้ต่ำกว่าหนึ่งดอลลาร์ บัญชีธนาคารถูกอายัดตอนขาย มีสายมิจฉาชีพโทรมาทุกวัน บรรทัดสุดท้ายของเครื่องนับด้านล่างคือกรณีนี้"),
+    "toy_h": ("How many months could you live?", "คุณอยู่ได้กี่เดือน"),
+    "toy_p": ("Write where your money is, in baht, and what you spend in a month. Tick each place that has stopped withdrawals. This page adds the numbers in your browser.",
+              "ใส่ว่าเงินของคุณอยู่ที่ไหน เป็นบาท และเดือนหนึ่งคุณใช้เท่าไร ติ๊กที่ที่หยุดให้ถอน หน้านี้คำนวณตัวเลขในเบราว์เซอร์ของคุณ"),
+    "toy_place": ("Place", "ที่"), "toy_kind": ("Kind", "ประเภท"), "toy_amt": ("Baht", "บาท"), "toy_frozen": ("Frozen", "ถอนไม่ได้"),
+    "k_ex": ("Exchange", "ศูนย์ซื้อขาย"), "k_own": ("Your own wallet", "กระเป๋าของคุณเอง"), "k_bank": ("Baht in a bank", "เงินบาทในธนาคาร"),
+    "toy_month": ("You spend in a month (baht)", "ค่าใช้จ่ายต่อเดือน (บาท)"),
+    "toy_add": ("Add a place", "เพิ่มที่"), "toy_del": ("Remove", "ลบ"),
+    "o1": ("If the ticked places stay frozen", "ถ้าที่ที่ติ๊กไว้ยังถอนไม่ได้"),
+    "o2": ("…and coins fall to half price", "…และราคาเหรียญเหลือครึ่ง"),
+    "o3": ("Worst: every exchange frozen, coins at half price", "แย่สุด: ถอนไม่ได้ทุกศูนย์ซื้อขาย และราคาเหรียญเหลือครึ่ง"),
+    "months": ("months", "เดือน"), "month1": ("month", "เดือน"),
+    "toy_need": ("Write what you spend in a month.", "ใส่ค่าใช้จ่ายต่อเดือน"),
+    "toy_note": ("Half price counts exchanges and your own wallet at half; baht in a bank stays whole. One square is one month.",
+                 "ราคาครึ่งหนึ่งคิดเงินในศูนย์ซื้อขายและกระเป๋าของคุณเองที่ครึ่งหนึ่ง เงินบาทในธนาคารคิดเต็ม หนึ่งช่องคือหนึ่งเดือน"),
+    "report_h": ("Money gone?", "เงินหายแล้ว?"),
+    "report_p": ("Hotline 1441 answers 24 hours a day. Police reports go in at thaipoliceonline.go.th. Under the 2023 technology crime decree, a bank can freeze the account the money went to as soon as the victim asks, before a police report.",
+                 "สายด่วน 1441 รับเรื่อง 24 ชั่วโมง แจ้งความออนไลน์ได้ที่ thaipoliceonline.go.th ตาม พ.ร.ก. อาชญากรรมทางเทคโนโลยี ปี 2566 ธนาคารระงับบัญชีที่รับเงินได้ทันทีเมื่อผู้เสียหายแจ้ง ก่อนแจ้งความ"),
+    "help_h": ("Help, for a fee", "ให้ช่วย มีค่าบริการ"),
+    "help_p": ("Hongdam (หงส์ดำ), a Chiang Rai company that does security and tech work, does these with you on a call: a safety check of where your coins are and of your phone and computer; your own wallet, set up with you; a family plan, so the people you trust can reach your coins if you cannot; the paperwork after a loss, for the police, the SEC, the exchange and tax; checks of a business's staff laptops and phones. Stolen coins rarely come back. Prices are on Hongdam's page.",
+               "หงส์ดำ บริษัทในเชียงรายที่ทำงานด้านความปลอดภัยและเทคโนโลยี ทำสิ่งเหล่านี้กับคุณผ่านการโทร: ตรวจความปลอดภัยว่าเหรียญของคุณอยู่ที่ไหน และตรวจโทรศัพท์กับคอมพิวเตอร์ของคุณ ตั้งกระเป๋าของคุณเองไปพร้อมกับคุณ แผนครอบครัว ให้คนที่คุณไว้ใจเข้าถึงเหรียญได้ถ้าคุณทำเองไม่ได้ เอกสารหลังสูญเงิน สำหรับตำรวจ ก.ล.ต. ศูนย์ซื้อขาย และภาษี ตรวจแล็ปท็อปและโทรศัพท์ของพนักงานในธุรกิจ เหรียญที่ถูกขโมยไม่ค่อยได้คืน ราคาอยู่ในหน้าของหงส์ดำ"),
+    "help_go": ("Hongdam: crypto safety", "หงส์ดำ: ความปลอดภัยคริปโต"),
+    "strip": ("Binance stopped withdrawals on 29 October. If your exchange froze, how many months could you live?",
+              "Binance หยุดให้ถอนเมื่อ 29 ตุลาคม ถ้าศูนย์ซื้อขายของคุณถอนไม่ได้ คุณอยู่ได้กี่เดือน"),
+    "scams_line": ("Binance stopped withdrawals on 29 October 2026. Eight worse cases, step by step, with what helps on each:",
+                   "Binance หยุดให้ถอนเมื่อ 29 ตุลาคม 2569 แปดกรณีที่แย่กว่า ทีละขั้น พร้อมสิ่งที่ช่วยได้ในแต่ละขั้น:"),
+    "scams_help": ("Paid help to set this up:", "ให้ช่วยวางระบบ มีค่าบริการ:"),
+}
+
+# Board rows: place, what it is, out, in, what they say; each with its sources (keys of S)
+BOARD = [
+    {"place": ("Binance", "Binance"),
+     "what": ("binance.com, run from outside Thailand", "binance.com ดำเนินการจากนอกประเทศไทย"),
+     "out": ("Paused since 29 October. Binance expects to restart within 48 hours (30 October).", "หยุดตั้งแต่ 29 ตุลาคม Binance คาดว่าจะเปิดอีกครั้งภายใน 48 ชั่วโมง (30 ตุลาคม)"),
+     "out_src": ["tc", "rte"],
+     "in": ("Sources differ: RTÉ reports deposits running; THE STANDARD reports deposits paused too.", "แหล่งข่าวไม่ตรงกัน: RTÉ รายงานว่าฝากได้ THE STANDARD รายงานว่าหยุดรับฝากด้วย"),
+     "in_src": ["rte", "std"],
+     "say": ("“Rest assured that user funds are completely safe.” Co-founder Yi He says Binance will cover all hacking losses.", "“Rest assured that user funds are completely safe.” (มั่นใจได้ว่าเงินของผู้ใช้ปลอดภัยทั้งหมด) Yi He ผู้ร่วมก่อตั้ง บอกว่า Binance จะชดใช้ความเสียหายจากการแฮ็กทั้งหมด"),
+     "say_src": ["tc", "rte"], "state": "red"},
+    {"place": ("Binance TH", "Binance TH"),
+     "what": ("Gulf Binance Co., Ltd., licensed by the Thai SEC", "บริษัท กัลฟ์ ไบแนนซ์ จำกัด ได้รับใบอนุญาตจาก ก.ล.ต."),
+     "out": ("Crypto withdrawals paused for a security check. No end date given.", "หยุดให้ถอนคริปโตเพื่อตรวจระบบความปลอดภัย ยังไม่บอกวันเปิด"),
+     "out_src": ["ths"],
+     "in": ("Trading, crypto deposits, and baht in and out running (Thansettakij, 07:11). An earlier statement paused crypto deposits too.", "ซื้อขาย ฝากคริปโต และฝากถอนเงินบาท ใช้ได้ (ฐานเศรษฐกิจ 07:11 น.) ประกาศก่อนหน้านั้นหยุดรับฝากคริปโตด้วย"),
+     "in_src": ["ths", "bi"],
+     "say": ("Its cold wallets (coins kept offline) are separate from Binance's.", "Cold Wallet (กระเป๋าที่เก็บเหรียญแบบออฟไลน์) ของบริษัทแยกจากของ Binance"),
+     "say_src": ["bi"], "state": "amber"},
+    {"place": ("Thai SEC", "ก.ล.ต."),
+     "what": ("The regulator; Binance's own site is outside its watch", "หน่วยงานกำกับดูแล เว็บของ Binance เองไม่อยู่ในการกำกับ"),
+     "out": ("—", "—"), "out_src": [], "in": ("—", "—"), "in_src": [],
+     "say": ("No significant impact on customers' assets in Thailand found so far. Licensed exchanges told to check customers' assets and report at once.", "เบื้องต้นยังไม่พบผลกระทบที่มีนัยสำคัญต่อทรัพย์สินของลูกค้าในไทย สั่งให้ผู้ประกอบการที่ได้รับอนุญาตตรวจทรัพย์สินลูกค้าและรายงานทันที"),
+     "say_src": ["ths"], "state": "blue"},
+]
+
+# Today, in tiles: big figure, its line, sources, colour
+FACTS = [
+    (("$6.3B", "6.3 พันล้านดอลลาร์"), ("taken from Binance, by Binance's own count; about ฿210 billion", "ถูกขโมยจาก Binance ตามตัวเลขของ Binance เอง ราว 2.1 แสนล้านบาท"), ["rte", "std"], "red"),
+    (("$3B", "3 พันล้านดอลลาร์"), ("frozen on the blockchains so far, Binance says", "อายัดไว้บนบล็อกเชนแล้ว ตามที่ Binance บอก"), ["std"], "blue"),
+    (("$1.57B + $800M", "1.57 พันล้าน + 800 ล้านดอลลาร์"), ("frozen by Tether and Circle, the companies behind USDT and USDC", "อายัดโดย Tether และ Circle บริษัทที่ออก USDT และ USDC"), ["rte"], "blue"),
+    (("1 laptop", "แล็ปท็อป 1 เครื่อง"), ("Binance's first look: the theft may have started on one engineer's hacked laptop", "ผลตรวจเบื้องต้นของ Binance: การขโมยอาจเริ่มจากแล็ปท็อปของวิศวกรคนหนึ่งที่ถูกแฮ็ก"), ["rte"], "amber"),
+    (("North Korea", "เกาหลีเหนือ"), ("TRM Labs and Chainalysis, two blockchain tracing firms, name North Korean hackers", "TRM Labs และ Chainalysis บริษัทติดตามธุรกรรมบนบล็อกเชน ระบุว่าเป็นแฮ็กเกอร์เกาหลีเหนือ"), ["rte"], ""),
+]
+
+# The ladder. src: keys of S, "hist:<event title>", "rule:<id>", "fraud:<type id>" (scams.json)
+RUNGS = [
+    {"n": 0, "t": ("Paused", "หยุดถอน"),
+     "what": ("Today. Binance and Binance TH stop crypto withdrawals. You see your coins in the app. You cannot move them.",
+              "วันนี้ Binance และ Binance TH หยุดให้ถอนคริปโต คุณเห็นเหรียญในแอป แต่ย้ายออกไม่ได้"),
+     "before": ("Zipmex, an exchange with a large Thai business, stopped withdrawals on 20 July 2022. Thai withdrawals came back late the same day, except from one savings product.",
+                "Zipmex ศูนย์ซื้อขายที่มีธุรกิจใหญ่ในไทย หยุดให้ถอนเมื่อ 20 กรกฎาคม 2565 การถอนในไทยกลับมาตอนดึกวันเดียวกัน ยกเว้นผลิตภัณฑ์ฝากเงินหนึ่งตัว"),
+     "src": ["hist:Zipmex freezes withdrawals"],
+     "do": [("An exchange posts its own state in its app and on its website.", "ศูนย์ซื้อขายแจ้งสถานะของตัวเองในแอปและบนเว็บไซต์"),
+            ("A screenshot with the date showing is proof of a balance on that day.", "ภาพหน้าจอที่เห็นวันที่ คือหลักฐานยอดเงินของวันนั้น"),
+            ("The counter below adds up every place your money is.", "เครื่องนับด้านล่างรวมทุกที่ที่เงินของคุณอยู่")]},
+    {"n": 1, "t": ("Weeks, not days", "เป็นสัปดาห์ ไม่ใช่วัน"),
+     "what": ("The pause goes on. Prices move while your coins cannot. If you sell a little each month to pay rent, the rent comes before the exchange opens.",
+              "การหยุดถอนลากยาว ราคาขยับแต่เหรียญของคุณขยับไม่ได้ ถ้าคุณขายทีละนิดทุกเดือนเพื่อจ่ายค่าเช่า ค่าเช่าจะมาถึงก่อนศูนย์ซื้อขายเปิด"),
+     "before": ("Celsius, a crypto lender, stopped withdrawals on 12 June 2022 and filed for bankruptcy on 13 July 2022.",
+                "Celsius ผู้ให้กู้คริปโต หยุดให้ถอนเมื่อ 12 มิถุนายน 2565 และยื่นล้มละลายเมื่อ 13 กรกฎาคม 2565"),
+     "src": ["hist:Celsius freezes withdrawals"],
+     "do": [("The counter below shows how many months the money outside a frozen place pays for.", "เครื่องนับด้านล่างบอกว่าเงินที่อยู่นอกที่ที่ถอนไม่ได้ จ่ายได้กี่เดือน"),
+            ("Two ways to baht through two different companies: one can freeze while the other runs.", "สองทางสู่เงินบาทผ่านสองบริษัท: ทางหนึ่งถอนไม่ได้ อีกทางยังใช้ได้")]},
+    {"n": 2, "t": ("The promise falls short", "คำสัญญาไม่ครบ"),
+     "what": ("Binance says it will cover every loss. About $6.3 billion is gone, about $3 billion is frozen, and its user fund (SAFU) held about $1 billion when last reported, in 2024. If the money falls short, customers get back a part, late, or a token that stands for the rest.",
+              "Binance บอกว่าจะชดใช้ทุกความเสียหาย เงินหายไปราว 6.3 พันล้านดอลลาร์ อายัดไว้ได้ราว 3 พันล้าน และกองทุนคุ้มครองผู้ใช้ (SAFU) มีราว 1 พันล้านดอลลาร์ตามรายงานครั้งล่าสุดในปี 2567 ถ้าเงินไม่พอ ลูกค้าจะได้คืนบางส่วน ได้ช้า หรือได้โทเคนแทนส่วนที่เหลือ"),
+     "before": ("Mt. Gox, once the largest bitcoin exchange, failed in February 2014. Repayments began on 5 July 2024, ten years later. The deadline has since moved to 31 October 2026, with many customers still waiting.",
+                "Mt. Gox ศูนย์ซื้อขายบิตคอยน์ที่เคยใหญ่ที่สุด ล้มในเดือนกุมภาพันธ์ 2557 เริ่มคืนเงินเมื่อ 5 กรกฎาคม 2567 สิบปีต่อมา จากนั้นเลื่อนกำหนดไปเป็น 31 ตุลาคม 2569 และลูกค้าจำนวนมากยังรออยู่"),
+     "src": ["hist:Mt. Gox collapse", "gox1", "gox2", "std"],
+     "do": [("A claim runs on proof: statements, screenshots, deposit receipts, transaction IDs (TxID: the receipt number of a crypto transfer), and the exchange's emails.", "การขอเงินคืนใช้หลักฐาน: รายการบัญชี ภาพหน้าจอ สลิปฝาก หมายเลขธุรกรรม (TxID: เลขใบเสร็จของการโอนคริปโต) และอีเมลจากศูนย์ซื้อขาย"),
+            ("Notices and payouts go to the email and phone number on the account.", "ประกาศและเงินคืนส่งไปที่อีเมลและเบอร์โทรที่ผูกกับบัญชี")]},
+    {"n": 3, "t": ("The run spreads", "คนแห่ถอนทุกที่"),
+     "what": ("Fear moves to other exchanges. Many people withdraw at once; some exchanges slow or stop withdrawals, Thai ones too. Prices fall. A loan backed by crypto is sold off when the price falls.",
+              "ความกลัวลามไปศูนย์ซื้อขายอื่น คนถอนพร้อมกันจำนวนมาก บางแห่งถอนช้าลงหรือหยุดให้ถอน รวมถึงในไทย ราคาลดลง เงินกู้ที่ค้ำด้วยคริปโตถูกขายทิ้งเมื่อราคาลง"),
+     "before": ("FTX: about $6 billion was withdrawn in 72 hours, and it filed for bankruptcy on 11 November 2022.",
+                "FTX: เงินราว 6 พันล้านดอลลาร์ถูกถอนออกใน 72 ชั่วโมง และยื่นล้มละลายเมื่อ 11 พฤศจิกายน 2565"),
+     "src": ["hist:FTX bankruptcy"],
+     "do": [("Each exchange sets a daily withdrawal limit, shown in its app.", "ศูนย์ซื้อขายแต่ละแห่งมีวงเงินถอนต่อวัน แสดงในแอป"),
+            ("A loan backed by crypto has a liquidation price: the price at which the lender sells the coins to pay itself back.", "เงินกู้ที่ค้ำด้วยคริปโตมีราคาบังคับขาย (liquidation price): ราคาที่ผู้ให้กู้ขายเหรียญเพื่อเอาเงินคืน")]},
+    {"n": 4, "t": ("USDT breaks", "USDT หลุด"),
+     "what": ("USDT is a coin meant to stay at one US dollar; it is {usdt}% of Bitkub's own baht trading. Today Tether froze about $1.57 billion of it: one company can stop any USDT address. If people stop believing a dollar stands behind each coin, USDT sells for less than a dollar.",
+              "USDT คือเหรียญที่ตั้งใจให้มีค่าหนึ่งดอลลาร์สหรัฐ คิดเป็น {usdt}% ของการซื้อขายเป็นเงินบาทบน Bitkub วันนี้ Tether อายัด USDT ไปราว 1.57 พันล้านดอลลาร์: บริษัทเดียวหยุดที่อยู่ USDT ใดก็ได้ ถ้าคนเลิกเชื่อว่ามีหนึ่งดอลลาร์รองรับทุกเหรียญ USDT จะขายได้ต่ำกว่าหนึ่งดอลลาร์"),
+     "before": ("TerraUSD, another dollar coin, lost its dollar value in May 2022; about $45 billion of market value went in a week.",
+                "TerraUSD เหรียญดอลลาร์อีกตัว หลุดมูลค่าหนึ่งดอลลาร์ในเดือนพฤษภาคม 2565 มูลค่าตลาดราว 45 พันล้านดอลลาร์หายไปในหนึ่งสัปดาห์"),
+     "src": ["hist:Terra and LUNA collapse", "rte"],
+     "do": [("The part of savings held in one coin is the part one company can stop.", "เงินออมส่วนที่อยู่ในเหรียญเดียว คือส่วนที่บริษัทเดียวหยุดได้"),
+            ("The Offrampt home page shows the USDT-to-baht price, live.", "หน้าแรกของ Offrampt แสดงราคา USDT เป็นบาทแบบสด")]},
+    {"n": 5, "t": ("The bank door shuts", "ประตูธนาคารปิด"),
+     "what": ("Selling to a stranger (P2P, person to person) can bring you baht from someone else's loss. The bank freezes your account. Since July 2026 the Bank of Thailand screens large USDT trades.",
+              "การขายให้คนแปลกหน้า (P2P คนต่อคน) อาจทำให้คุณได้เงินบาทที่มาจากความเสียหายของคนอื่น ธนาคารจะอายัดบัญชีของคุณ ตั้งแต่กรกฎาคม 2569 ธนาคารแห่งประเทศไทยคัดกรองการซื้อขาย USDT ก้อนใหญ่"),
+     "before": ("By 30 June 2025 the SEC had blocked more than 29,000 crypto mule accounts (accounts used to move money taken by fraud) and frozen about ฿186 million.",
+                "ภายใน 30 มิถุนายน 2568 ก.ล.ต. ระงับบัญชีม้าคริปโต (บัญชีที่ใช้ส่งต่อเงินจากการฉ้อโกง) แล้วกว่า 29,000 บัญชี และอายัดทรัพย์สินราว 186 ล้านบาท"),
+     "src": ["rule:tech-crime-decree-no2-2025", "hist:Bank of Thailand screens USDT trades"],
+     "do": [("A sale on an exchange licensed by the Thai SEC pays into a bank account in the seller's own name.", "การขายบนศูนย์ซื้อขายที่ได้รับใบอนุญาตจาก ก.ล.ต. จ่ายเงินเข้าบัญชีธนาคารชื่อของผู้ขายเอง"),
+            ("Sale records show where the baht came from.", "หลักฐานการขายแสดงว่าเงินบาทมาจากไหน")]},
+    {"n": 6, "t": ("The fraud wave", "คลื่นมิจฉาชีพ"),
+     "what": ("Fake Binance support on LINE, Facebook and the phone. “Compensation” forms that ask for your login. “Recovery” services that want a fee first.",
+              "แอดมิน Binance ปลอมบน LINE, Facebook และโทรศัพท์ แบบฟอร์ม “ขอเงินชดเชย” ที่ขอรหัสเข้าบัญชี บริการ “ตามเงินคืน” ที่ขอค่าธรรมเนียมก่อน"),
+     "before": ("On 29 October Binance told users not to trust “unofficial links, messages, or requests for account information”. The FBI says a person who offers to get lost crypto back may be running a second fraud.",
+                "วันที่ 29 ตุลาคม Binance บอกผู้ใช้ไม่ให้เชื่อ “unofficial links, messages, or requests for account information” (ลิงก์ ข้อความ หรือการขอข้อมูลบัญชีที่ไม่เป็นทางการ) FBI ระบุว่าคนที่เสนอตามเงินคริปโตคืนให้ อาจกำลังหลอกเป็นรอบที่สอง"),
+     "src": ["tc", "fraud:recovery-scam"],  # stylecheck: allow — code: a research id
+     "do": [("Recovery words are the 12 or 24 words that open a wallet. Whoever has them can empty it.", "คำกู้คืนคือ 12 หรือ 24 คำที่ใช้เปิดกระเป๋า ใครได้ไปก็ถอนเงินออกหมดได้"),
+            ("An address typed by hand reaches the exchange; a link in a message can reach a copy of it.", "ที่อยู่เว็บที่พิมพ์เองพาไปถึงศูนย์ซื้อขาย ลิงก์ในข้อความอาจพาไปหน้าปลอม"),
+            ("Hotline 1441 answers 24 hours a day; police reports go in at thaipoliceonline.go.th.", "สายด่วน 1441 รับเรื่อง 24 ชั่วโมง แจ้งความออนไลน์ได้ที่ thaipoliceonline.go.th")]},
+    {"n": 7, "t": ("Your own phone", "โทรศัพท์ของคุณเอง"),
+     "what": ("Binance's theft may have started on one laptop. Your phone and computer can open the same way: a stolen login, recovery words in a photo on iCloud or Google Photos, one password on two sites. Nobody can pause your own wallet.",
+              "การขโมยที่ Binance อาจเริ่มจากแล็ปท็อปเครื่องเดียว โทรศัพท์และคอมพิวเตอร์ของคุณก็ถูกเปิดได้แบบเดียวกัน: การล็อกอินที่ถูกขโมย คำกู้คืนในรูปบน iCloud หรือ Google Photos รหัสผ่านเดียวใช้สองเว็บ และไม่มีใครหยุดการถอนจากกระเป๋าของคุณเองได้"),
+     "before": ("In November 2025 Thailand's cyber police (CCIB) worked a case where malware searched phones for Google Authenticator backups and recovery words, and attackers took over exchange accounts.",
+                "เดือนพฤศจิกายน 2568 ตำรวจไซเบอร์ (บช.สอท.) ทำคดีที่มัลแวร์ค้นหาข้อมูลสำรองของ Google Authenticator และคำกู้คืนในเครื่อง แล้วคนร้ายยึดบัญชีศูนย์ซื้อขายไป"),
+     "src": ["fraud:wallet-malware", "rte"],
+     "do": [("Recovery words on paper or metal stay off the internet. A photo of them goes up to iCloud or Google Photos.", "คำกู้คืนบนกระดาษหรือแผ่นโลหะอยู่นอกอินเทอร์เน็ต รูปถ่ายของคำกู้คืนถูกส่งขึ้น iCloud หรือ Google Photos"),
+            ("SMS codes follow the phone number, and a SIM swap (moving a number to another SIM) hands them to someone else. An authenticator app stays on the phone.", "รหัส SMS ตามเบอร์โทรไป การสลับซิม (ย้ายเบอร์ไปซิมอื่น) ทำให้คนอื่นได้รหัส แอปยืนยันตัวตนอยู่ในเครื่อง"),
+            ("Wallet-stealing apps arrive through links in chats and ads; a wallet maker's own page links its own app.", "แอปขโมยกระเป๋ามาทางลิงก์ในแชตและโฆษณา หน้าเว็บของผู้ผลิตกระเป๋าลิงก์ไปยังแอปของตัวเอง")]},
+    {"n": 8, "t": ("The family", "ครอบครัว"),
+     "what": ("You go into hospital, or you die. Your family has no list, no keys and no idea who to call, and fraudsters find them first.",
+              "คุณเข้าโรงพยาบาล หรือเสียชีวิต ครอบครัวไม่มีรายการ ไม่มีกุญแจ ไม่รู้จะโทรหาใคร และมิจฉาชีพเจอพวกเขาก่อน"),
+     "before": None, "src": [],
+     "do": [("A written list of where the coins are, and whom to call, lets a family act without the recovery words.", "รายการที่เขียนไว้ว่าเหรียญอยู่ที่ไหน และโทรหาใคร ทำให้ครอบครัวลงมือได้โดยไม่ต้องมีคำกู้คืน"),
+            ("Hongdam's family plan does this with you, without your recovery words in plain sight.", "แผนครอบครัวของหงส์ดำทำเรื่องนี้กับคุณ โดยไม่เปิดเผยคำกู้คืน")]},
+]
