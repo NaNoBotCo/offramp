@@ -381,8 +381,9 @@ def lead_strip(S):
             lk = next((lk for lk in n.get("links", []) if lk.get("lead") and _exists(S, _link_href(S, lk))), None)
             href = _href(S, _link_href(S, lk)) if lk else S.U("intel/" + slug(n) + "/")
             label = S.T(lk["en"], lk["th"]) if lk else S.T("Read", "อ่าน")
+            words = _f(S, n, "strip") or _f(S, n, "title")
             return (f'<a class="leadstrip" href="{href}"><span class="live">{S.E(S.T("now", "ตอนนี้"))}</span>'
-                    f'<span>{S.E(_f(S, n, "title"))}</span><b>{S.E(label)}{S.ARROW}</b></a>')
+                    f'<span>{S.E(words)}</span><b>{S.E(label)}{S.ARROW}</b></a>')
     return ""
 
 
