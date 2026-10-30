@@ -13,6 +13,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05070c">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/atom+xml" title="ข่าวกรอง Offrampt" href="/th/intel/feed.xml">
 <style>
 :root{
  --bg:#05070c;--bg2:#0a0e16;--panel:#0f141e;--glass:rgba(16,22,33,.66);--ink:#eef2ef;--mute:#98a3a9;
@@ -318,6 +319,112 @@ html[lang=th] a.whorow b{font-family:var(--thaid);text-transform:none;letter-spa
 .doors.four a.shot .tx b{font-size:1.7rem}
 footer.bot p.fine{font-size:.74rem;line-height:1.7}
 
+/* ---------------------------------------------------------------- reading size: small print no smaller than ~14.5px */
+.small{font-size:.86rem}.tiny{font-size:.78rem}
+.tile .k{font-size:.76rem}.tile .n{font-size:.84rem}
+.pill{font-size:.74rem;padding:.2rem .55rem .14rem}
+.board .stamp,.stamp{font-size:.8rem;color:var(--mute)}
+header.top nav a i{color:#8b979e}
+footer.bot p.fine{font-size:.82rem}
+.disclose{font-size:.8rem}
+.btn,button{min-height:2.6rem}
+.btn.sm,.tries button,.seg button{min-height:2.3rem}
+
+/* ---------------------------------------------------------------- home: the top */
+.lede.hl{font-size:1.12rem;margin:.2rem 0 .6rem;max-width:40rem;color:#e3e9e6}
+.band.top::before{background:linear-gradient(180deg,rgba(5,7,12,.5) 0%,rgba(5,7,12,.72) 45%,rgba(5,7,12,.94) 100%)}
+.band.top .lede,.band.top .tick,.band.top h1{text-shadow:0 1px 2px rgba(0,0,0,.9),0 0 18px rgba(0,0,0,.7)}
+.jumps{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 0}
+a.jump{display:inline-flex;align-items:center;min-height:2.6rem;padding:.4rem .85rem .34rem;border-radius:99px;text-decoration:none;color:var(--ink);
+ background:rgba(15,20,30,.72);border:1px solid #2c3a4a;font-family:var(--din);font-size:.92rem;letter-spacing:.02em}
+a.jump:hover{border-color:var(--go);color:#fff}
+html[lang=th] a.jump{font-family:var(--thai);letter-spacing:0}
+a.leadstrip{display:flex;flex-wrap:wrap;gap:.3rem .8rem;align-items:center;margin:1rem 0 0;padding:.7rem .95rem;border-radius:14px;text-decoration:none;color:var(--ink);
+ background:linear-gradient(90deg,rgba(255,90,95,.18),rgba(255,90,95,.05));border:1px solid rgba(255,90,95,.55);max-width:52rem}
+a.leadstrip .live{color:var(--red)}a.leadstrip .live::before{background:var(--red);box-shadow:0 0 10px var(--red)}
+a.leadstrip>span:nth-child(2){flex:1 1 16rem;font-size:1rem;line-height:1.35}
+a.leadstrip b{font-family:var(--display);font-size:1.15rem;text-transform:uppercase;letter-spacing:.04em;color:#ffb3b5;display:inline-flex;align-items:center;gap:.3rem;white-space:nowrap}
+html[lang=th] a.leadstrip b{font-family:var(--thaid);text-transform:none;letter-spacing:0;font-size:1.05rem}
+a.leadstrip .arrow{width:.8em;height:.8em}
+@media (max-width:420px){header.top nav{gap:.1rem .5rem}html[lang=th] header.top nav{font-size:.8rem}}
+@media (max-width:360px){header.top nav a i:not(.dot){display:none}header.top nav{font-size:.8rem}}
+h1.q{text-wrap:balance}
+header.top nav a i.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--go);box-shadow:0 0 8px var(--go);align-self:center;display:inline-block}
+
+/* ---------------------------------------------------------------- intel: computed trends */
+.sigs{display:grid;gap:.5rem;margin:1rem 0 .4rem}
+a.sig{display:grid;grid-template-columns:minmax(0,1.3fr) auto 140px minmax(0,1.2fr);grid-template-areas:"k v g s" "k v g n";gap:.05rem 1rem;align-items:center;
+ padding:.7rem 1rem;border-radius:14px;background:var(--glass);border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+a.sig:hover{border-color:var(--amber)}
+.sig .sk{grid-area:k;font-family:var(--din);font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);line-height:1.3}
+html[lang=th] .sig .sk{font-family:var(--thai);text-transform:none;letter-spacing:0;font-size:.95rem}
+.sig .sv{grid-area:v;font-family:var(--din);font-size:1.45rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sig svg.spark{grid-area:g;color:var(--amber);width:132px;height:34px}
+.sig .ss{grid-area:s;font-size:.92rem}
+.sig .ss b{color:var(--go);font-weight:600}
+.sig .sn{grid-area:n;font-size:.82rem;color:var(--mute);line-height:1.35}
+@media (max-width:760px){a.sig{grid-template-columns:1fr auto;grid-template-areas:"k k" "v g" "s s";gap:.1rem .6rem;padding:.55rem .8rem}.sig svg.spark{justify-self:end;width:112px;height:30px}
+ .sig .sn{display:none}.sigs.full .sig .sn{display:block}.sigs.full a.sig{grid-template-areas:"k k" "v g" "s s" "n n"}.sig .sv{font-size:1.3rem}}
+@media (max-width:640px){.ncards{gap:.6rem}a.ncard{padding:.8rem .9rem;gap:.25rem}.ndek{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+ .ours{gap:.5rem}a.our{padding:.7rem .85rem;gap:.15rem}.oline{font-size:.86rem}a.lv{padding:.7rem .85rem}a.lv b{font-size:1.35rem}
+ blockquote.lq p{font-size:1.12rem}.lvs{gap:.5rem}}
+
+/* ---------------------------------------------------------------- intel: notes */
+.ncards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(17rem,100%),1fr));gap:.8rem;margin:1.2rem 0 .6rem}
+a.ncard{display:flex;flex-direction:column;gap:.35rem;padding:1rem 1.05rem;border-radius:16px;background:var(--glass);border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+a.ncard:hover{border-color:var(--amber)}
+a.ncard.lead{border-color:rgba(255,177,59,.6);background:linear-gradient(160deg,rgba(255,177,59,.12),var(--glass) 60%)}
+.nmeta{display:flex;flex-wrap:wrap;gap:.2rem .6rem;align-items:center;font-family:var(--din);font-size:.84rem;color:var(--mute);margin:0}
+.nmeta .pill{margin:0}
+a.ncard b{font-size:1.12rem;line-height:1.3;font-weight:650}
+.ndek{font-size:.92rem;color:#cfd7d4;line-height:1.45}
+.shp{display:inline-flex;gap:.55rem;align-items:center;margin-top:auto;padding-top:.3rem;font-size:.86rem;color:var(--mute);line-height:1.3}
+.shp svg{color:var(--amber);flex:none}
+.shp b{color:var(--ink);font-weight:600}
+.shp.big{font-size:1rem}
+.pill.violet{color:#120a24;background:var(--violet);border-color:var(--violet)}
+h1.nh{font-family:var(--body);text-transform:none;font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.12;letter-spacing:0;font-weight:700;margin:1rem 0 .4rem;max-width:48rem}
+article.nbody p{font-size:1.06rem;max-width:42rem}
+blockquote.nq,blockquote.lq{margin:1.4rem 0;padding:.6rem 0 .6rem 1.2rem;border-left:4px solid var(--violet);max-width:44rem}
+blockquote.nq p,blockquote.lq p{font-size:1.3rem;line-height:1.45;margin:0 0 .4rem;color:#f1f4f2}
+blockquote cite{font-style:normal;font-size:.9rem;color:var(--mute)}
+.nread{max-width:44rem}
+.nread p{margin:.6rem 0 0}
+.nlinks{display:flex;flex-wrap:wrap;gap:.5rem}
+a.nl{display:inline-flex;align-items:center;gap:.35rem;min-height:2.6rem;padding:.45rem .9rem;border-radius:12px;border:1px solid var(--line);background:var(--panel);text-decoration:none;color:var(--ink)}
+a.nl .arrow{width:.75em;height:.75em;color:var(--amber)}
+a.nl.ext{border-color:#2f4a3c}
+a.nl:hover{border-color:var(--amber)}
+ol.srcs{font-size:.88rem;color:var(--mute);padding-left:1.3rem}
+ol.srcs li{margin:.25rem 0;overflow-wrap:anywhere}
+
+/* ---------------------------------------------------------------- follow */
+.follow{max-width:52rem;border-color:rgba(47,210,127,.45)}
+.follow h3{margin-top:0}
+.fbtns{margin-top:.7rem}
+
+/* ---------------------------------------------------------------- the long view */
+.lvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(15rem,100%),1fr));gap:.7rem;margin:1rem 0}
+a.lv{display:flex;flex-direction:column;gap:.2rem;padding:.9rem 1rem;border-radius:14px;background:var(--glass);border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+a.lv:hover{border-color:var(--violet)}
+a.lv .k{font-family:var(--din);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--violet)}
+a.lv b{font-family:var(--din);font-size:1.6rem;line-height:1.1}
+a.lv .n{font-size:.88rem;color:#cfd7d4;line-height:1.4}
+
+/* ---------------------------------------------------------------- banking help: our other sites */
+.ours{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(16rem,100%),1fr));gap:.7rem;margin:1rem 0 1.4rem}
+a.our{display:flex;flex-direction:column;gap:.3rem;padding:.95rem 1rem;border-radius:16px;background:var(--glass);border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+a.our:hover{border-color:var(--go)}
+.osite{font-family:var(--din);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--go)}
+a.our b{font-size:1.08rem;line-height:1.3;font-weight:650}
+.oline{font-size:.9rem;color:#cfd7d4;line-height:1.45}
+.otop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.1rem .6rem}
+.oprice{font-family:var(--din);font-size:1.1rem;color:var(--amber);display:inline-flex;align-items:center;gap:.3rem;white-space:nowrap}
+.oprice .arrow{width:.75em;height:.75em}
+details.fold>summary{cursor:pointer;font-family:var(--display);font-size:1.3rem;text-transform:uppercase;letter-spacing:.03em;min-height:2.4rem;display:flex;align-items:center}
+html[lang=th] details.fold>summary{font-family:var(--thaid);text-transform:none;letter-spacing:0;font-size:1.15rem}
+html[lang=th] .osite,html[lang=th] a.lv .k{letter-spacing:.04em}
+
 /* ---------------------------------------------------------------- tables fold into cards on phones */
 @media (max-width:640px){
  .tw{overflow:visible;border:0;background:none}
@@ -373,13 +480,13 @@ footer.bot p.fine{font-size:.74rem;line-height:1.7}
  .rungs .rn{font-size:2rem}
 }
 @media print{header.top,footer.bot,.band{display:none}body{background:#fff;color:#000}}
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "สนับสนุน", "url": "https://offrampt.net/th/support/", "inLanguage": "th", "isPartOf": {"@type": "WebSite", "name": "Offrampt", "url": "https://offrampt.net/"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": "2026-10-30", "publisher": {"@type": "Organization", "name": "NaNoBotCo", "url": "https://nanobotco.github.io/index/", "email": "nan@motdang.net", "sameAs": ["https://motdang.net/", "https://nanobotco.github.io/mae-hong-son-loop/", "https://motdang.net/muay-thai/", "https://motdang.net/roads/", "https://wichaa.net/", "https://nanobotco.github.io/hand-poke/", "https://nanobotco.github.io/black-holes/", "https://nanobotco.github.io/quantum-computing/", "https://nanobotco.github.io/goin-fast/", "https://nanobotco.github.io/three-body/", "https://nanobotco.github.io/exceptional-magic/", "https://nanobotco.github.io/factoring/", "https://nanobotco.github.io/amulet-atlas/", "https://nanobotco.github.io/carolina-barbecue/", "https://nanobotco.github.io/buffalo-wings/", "https://nanobotco.github.io/pink-box/", "https://nanobotco.github.io/basque-tables/", "https://nanobotco.github.io/pinot-noir/", "https://nanobotco.github.io/care-abroad/", "https://nanobotco.github.io/thairoots/", "https://nanobotco.github.io/index/", "https://nanobotco.github.io/uptake/", "https://nanobotco.github.io/", "https://ask.motdang.net/", "https://ai.motdang.net/", "https://defiant.to/", "https://hongdam.net/", "https://hakfarang.net/", "https://offrampt.net/"]}}</script>
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "สนับสนุน", "url": "https://offrampt.net/th/support/", "inLanguage": "th", "isPartOf": {"@type": "WebSite", "name": "Offrampt", "url": "https://offrampt.net/"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": "2026-10-30", "publisher": {"@type": "Organization", "name": "NaNoBotCo", "url": "https://nanobotco.github.io/index/", "email": "nan@motdang.net", "sameAs": ["https://motdang.net/", "https://motdang.net/the-plan/", "https://motdang.net/chiang-rai/", "https://nanobotco.github.io/mae-hong-son-loop/", "https://motdang.net/muay-thai/", "https://motdang.net/roads/", "https://motdang.net/field/", "https://nanobotco.github.io/golden-triangle/", "https://nanobotco.github.io/prostar-magic/", "https://wichaa.net/", "https://nanobotco.github.io/hand-poke/", "https://nanobotco.github.io/black-holes/", "https://nanobotco.github.io/quantum-computing/", "https://nanobotco.github.io/goin-fast/", "https://nanobotco.github.io/three-body/", "https://nanobotco.github.io/chaos/", "https://nanobotco.github.io/indras-net/", "https://nanobotco.github.io/split-screen/", "https://nanobotco.github.io/talking-board/", "https://nanobotco.github.io/exceptional-magic/", "https://nanobotco.github.io/factoring/", "https://nanobotco.github.io/amulet-atlas/", "https://nanobotco.github.io/carolina-barbecue/", "https://nanobotco.github.io/buffalo-wings/", "https://nanobotco.github.io/pink-box/", "https://nanobotco.github.io/basque-tables/", "https://nanobotco.github.io/pinot-noir/", "https://nanobotco.github.io/care-abroad/", "https://nanobotco.github.io/thairoots/", "https://nanobotco.github.io/index/", "https://nanobotco.github.io/uptake/", "https://nanobotco.github.io/", "https://ask.motdang.net/", "https://ai.motdang.net/", "https://hunpayont.net/", "https://nanobotco.github.io/onemansideshow/", "https://defiant.to/", "https://hongdam.net/", "https://chiangmaivisadesk.com/", "https://hakfarang.net/", "https://offrampt.net/", "https://poplucky.net/", "https://nanobotco.github.io/bots-crave/", "https://nanobotco.github.io/pct/", "https://nanobotco.github.io/rain-chiang-mai/", "https://nanobotco.github.io/chemtrails/", "https://nanobotco.github.io/rhine/", "https://nanobotco.github.io/nitpick/", "https://nanobotco.github.io/all-factored/", "https://nanobotco.github.io/golden-gate/", "https://nanobotco.github.io/chains-drawn/", "https://nanobotco.github.io/hired-burglars/", "https://nanobotco.github.io/expedite/", "https://nanobotco.github.io/phnom-penh/", "https://nanobotco.github.io/moving-day/", "https://nanobotco.github.io/warp-and-weft/", "https://nanobotco.github.io/birds-chiang-mai/", "https://nanobotco.github.io/lersi/", "https://nanobotco.github.io/tham-luang/", "https://nanobotco.github.io/gc-ms/", "https://motdang.net/sites/kranok/", "https://nanobotco.github.io/fractals/", "https://nanobotco.github.io/thai-time/", "https://nanobotco.github.io/bayeux-tapestry/", "https://motdang.net/sites/khom-loi/", "https://motdang.net/sites/krathong/", "https://motdang.net/sites/kin-jay/", "https://nanobotco.github.io/voynich/", "https://nanobotco.github.io/cosmic-weaponry/", "https://nanobotco.github.io/ghosts-drawn/", "https://nanobotco.github.io/bridge-vial/", "https://nanobotco.github.io/cursitor/", "https://nanobotco.github.io/bag-knots/", "https://nanobotco.github.io/suan-kham/", "https://nanobotco.github.io/gargoyles/", "https://nanobotco.github.io/newlife-stock/", "https://nanobotco.github.io/100-days/"]}}</script>
 </head>
 <body data-base="/" data-rates="https://offrampt-rates.nanobotco.workers.dev/" data-lang="th">
 <a class="sr" href="#main">ข้ามไปที่เนื้อหา</a>
 <header class="top"><div class="in">
 <a class="brand" href="/th/" aria-label="Offrampt"><span class="plate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L17 7" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round"/><path d="M9 6 H18 V15" fill="none" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>OFFRAMPT</b></a>
-<nav aria-label="ทางออก"><a href="/th/tools/"><i>1</i>เครื่องมือ</a><a href="/th/ramp/"><i>2</i>แลกบาท</a><a href="/th/cards/"><i>3</i>บัตร</a><a href="/th/scams/"><i>4</i>กลโกง</a></nav><a class="lang" href="/support/" hreflang="en" lang="en">EN</a></div></header>
+<nav aria-label="ทางออก"><a href="/th/intel/"><i class="dot" aria-hidden="true"></i>ข่าวกรอง</a><a href="/th/tools/"><i>1</i>เครื่องมือ</a><a href="/th/ramp/"><i>2</i>แลกบาท</a><a href="/th/cards/"><i>3</i>บัตร</a><a href="/th/scams/"><i>4</i>กลโกง</a></nav><a class="lang" href="/support/" hreflang="en" lang="en">EN</a></div></header>
 <main id="main" class="wide"><section class="band " style="background-image:url(/img/hero.jpg)"><div class="in"><div class="sign "><span class="big">สนับสนุน<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L18 6" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M9 5 H19 V15" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="alt" lang="en">Support</span><span class="sub">สิ่งที่ทำให้ไฟยังติดอยู่</span></div><p class="lede" style="margin-top:1.6rem">อ่านฟรีและคัดลอกได้ภายใต้ CC BY 4.0 ค่าใช้จ่ายของเว็บมาจากสามทาง: ลิงก์แนะนำ ผู้สนับสนุน และทิป</p></div></section><div class="in">
 
 <h2>ผู้สนับสนุน</h2>
@@ -389,12 +496,12 @@ footer.bot p.fine{font-size:.74rem;line-height:1.7}
 <p class="disclose">ลิงก์ที่มีเครื่องหมาย ↗ เป็นลิงก์แนะนำ: บัญชีที่เปิดผ่านลิงก์นั้นทำให้เว็บนี้ได้ค่าคอมมิชชันจากผู้ให้บริการ โดยผู้อ่านไม่เสียค่าใช้จ่ายเพิ่ม เนื้อหาในเว็บนี้ไม่ใช่คำแนะนำทางการเงิน</p>
 </div></main>
 <footer class="bot"><div class="in">
-<div class="exits"><a href="/th/tools/"><i>1</i>เครื่องมือ</a><a href="/th/ramp/"><i>2</i>แลกบาท</a><a href="/th/cards/"><i>3</i>บัตร</a><a href="/th/scams/"><i>4</i>กลโกง</a><a href="/th/paper/"><i>▲</i>บาทกระดาษ</a><a href="/th/support/"><i>฿</i>สนับสนุน</a></div>
-<p class="fine"><a href="/th/networks/">เครือข่าย</a> · <a href="/th/markets/">ตลาด</a> · <a href="/th/rules/">กฎ</a> · <a href="/th/how/">กลไก</a> · <a href="/th/history/">ประวัติ</a> · <a href="/th/words/">ศัพท์</a> · <a href="/th/sources/">แหล่งที่มา</a> · <a href="/th/data/">ข้อมูล</a> · <a href="/th/for-agents/">สำหรับเอเจนต์</a></p>
+<div class="exits"><a href="/th/intel/"><i>●</i>ข่าวกรอง</a><a href="/th/tools/"><i>1</i>เครื่องมือ</a><a href="/th/ramp/"><i>2</i>แลกบาท</a><a href="/th/cards/"><i>3</i>บัตร</a><a href="/th/scams/"><i>4</i>กลโกง</a><a href="/th/paper/"><i>▲</i>บาทกระดาษ</a><a href="/th/support/"><i>฿</i>สนับสนุน</a></div>
+<p class="fine"><a href="/th/intel/feed.xml">ฟีดข่าวกรอง (RSS)</a> · <a href="/th/networks/">เครือข่าย</a> · <a href="/th/markets/">ตลาด</a> · <a href="/th/rules/">กฎ</a> · <a href="/th/how/">กลไก</a> · <a href="/th/history/">ประวัติ</a> · <a href="/th/words/">ศัพท์</a> · <a href="/th/sources/">แหล่งที่มา</a> · <a href="/th/data/">ข้อมูล</a> · <a href="/th/for-agents/">สำหรับเอเจนต์</a></p>
 <p class="fine"><b>Offrampt</b> — คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล ข้อความ ภาพ และข้อมูล Nan · hongdam.net · CC BY 4.0 โค้ด MIT สร้างเมื่อ 2026-10-30 ราคาจาก Bitkub, Binance, CoinGecko และธนาคารแห่งประเทศไทย
 ดึงตอนสร้างหน้าและดึงสดจาก<a href="https://offrampt-rates.nanobotco.workers.dev/">บริการอัตรา</a> ตัวเลขแต่ละตัวระบุแหล่งที่มาไว้ใน<a href="/th/sources/">หน้าแหล่งที่มา</a>
 เนื้อหาในเว็บนี้ไม่ใช่คำแนะนำด้านการเงิน ภาษี หรือกฎหมาย · <a class="lang" href="/support/" hreflang="en" lang="en">EN</a></p>
-<div class="fleet">เว็บอื่นของเรา: <a href="https://motdang.net/" title="city directory for Chiang Mai and Chiang Rai">Mot Dang</a> · <a href="https://nanobotco.github.io/mae-hong-son-loop/" title="motorcycling the 600 km loop out of Chiang Mai — curves counted, air measured">The Mae Hong Son Loop</a> · <a href="https://motdang.net/muay-thai/" title="the eight limbs, the thirty named techniques, the ceremony, and every gym on the map">Muay Thai</a> · <a href="https://motdang.net/roads/" title="the square of 1296, four rings, and what each one did to the city — counted from the map">Roads of Chiang Mai</a> · <a href="https://wichaa.net/" title="Lanna manuscripts, the amulet market, and the traditions around them">wichaa</a> · <a href="https://nanobotco.github.io/hand-poke/" title="28 traditions of marking skin by hand — the leg-tattoo zone of Burma, the Shan States and Lanna, counted">Hand Poke</a> · <a href="https://nanobotco.github.io/black-holes/" title="black holes modelled and drawn from the equations — generators, the past, present and future, the legends">Black Holes, Drawn</a> · <a href="https://nanobotco.github.io/quantum-computing/" title="the history and theory of quantum computing in plain words, with demos; refreshed weekly">Quantum Computing, plainly</a> · <a href="https://nanobotco.github.io/goin-fast/" title="a dirt-simple explainer about speed — twenty measured speeds from the ground under the house to light, and what each one costs">Goin&#x27; Fast</a> · <a href="https://nanobotco.github.io/three-body/" title="the mathematics of the three-body problem in plain words, with the orbits found rather than copied">The Three-Body Problem</a> · <a href="https://nanobotco.github.io/exceptional-magic/" title="the octonions, triality, the magic square and E8, computed and drawn — a plain-spoken reading of one paper">Exceptional Magic</a> · <a href="https://nanobotco.github.io/factoring/" title="factoring from Eratosthenes to Shor — the records, the Riemann Hypothesis, and what it means for a bitcoin wallet; a hundred zeta zeros computed, every claim beside what it did">Big Numbers, Split</a> · <a href="https://nanobotco.github.io/amulet-atlas/" title="amulets, charms and talismans worldwide">Amulet Atlas</a> · <a href="https://nanobotco.github.io/carolina-barbecue/" title="barbecue in North and South Carolina">Carolina Barbecue</a> · <a href="https://nanobotco.github.io/buffalo-wings/" title="the American chicken wing">Wing Country</a> · <a href="https://nanobotco.github.io/pink-box/" title="the American mom-and-pop donut shop">Pink Box</a> · <a href="https://nanobotco.github.io/basque-tables/" title="Basque dining rooms of California, Nevada and Idaho">Basque Tables</a> · <a href="https://nanobotco.github.io/pinot-noir/" title="pinot noir: the vine, the regions, the cellars">Pinot Country</a> · <a href="https://nanobotco.github.io/care-abroad/" title="treatment across borders, with published prices and their dates">Care Abroad</a> · <a href="https://nanobotco.github.io/thairoots/" title="a root dictionary of Thai, with a word decomposer">Thai Roots</a> · <a href="https://nanobotco.github.io/index/" title="every corpus, site and repository, counted">The index</a> · <a href="https://nanobotco.github.io/uptake/" title="a field manual on publishing for machines that copy">Uptake</a> · <a href="https://nanobotco.github.io/" title="the portal">NaNoBotCo</a> · <a href="https://hakfarang.net/" title="เรื่องเงิน วีซ่า และชีวิตกับแฟนฝรั่ง">ฮักฝรั่ง</a></div>
+<div class="fleet">เว็บอื่นของเรา: <a href="https://hongdam.net/" title="bilingual web development, Chiang Rai">Hongdam</a> · <a href="https://chiangmaivisadesk.com/" title="work permits, Thai company registration, retirement extensions, 90-day reports and border runs from Chiang Mai">Chiang Mai Visa Desk</a> · <a href="https://motdang.net/" title="city directory for Chiang Mai and Chiang Rai">Mot Dang</a> · <a href="https://hakfarang.net/" title="เรื่องเงิน วีซ่า และชีวิตกับแฟนฝรั่ง">ฮักฝรั่ง</a> · <a href="https://nanobotco.github.io/care-abroad/" title="treatment across borders, with published prices and their dates">Care Abroad</a> · <a href="https://nanobotco.github.io/hired-burglars/" title="Pen tests, red teams, security licences, white-label resellers, awards and startup equity, as toys in English and Thai">Hired Burglars</a> · <a href="https://nanobotco.github.io/quantum-computing/" title="the history and theory of quantum computing in plain words, with demos; refreshed weekly">Quantum Computing, plainly</a> · <a href="https://nanobotco.github.io/factoring/" title="factoring from Eratosthenes to Shor — the records, the Riemann Hypothesis, and what it means for a bitcoin wallet; a hundred zeta zeros computed, every claim beside what it did">Big Numbers, Split</a> · <a href="https://nanobotco.github.io/all-factored/" title="Post-quantum, drawn with math in English and Thai: factoring, Shor&#x27;s rhythm trick, curves, lattice locks, and which of our sites are already switched">All Factored</a> · <a href="https://nanobotco.github.io/chains-drawn/" title="ChainsAtlas and the other ways blockchains talk, as toys: a stove in every town, recipe cards with fingerprints, levers, judges, a mule pen and a key rack">Chains, Drawn</a> · <a href="https://motdang.net/chiang-rai/" title="the Golden Triangle, three temples, lantern night, and the slow boat to Laos">Chiang Rai, Slowly</a> · <a href="https://nanobotco.github.io/golden-triangle/" title="where the Ruak meets the Mekong — Sop Ruak, Chiang Saen, the hills and the river">Golden Triangle</a> · <a href="https://nanobotco.github.io/thairoots/" title="a root dictionary of Thai, with a word decomposer">Thai Roots</a> · <a href="https://wichaa.net/" title="Lanna manuscripts, the amulet market, and the traditions around them">wichaa</a> · <a href="https://nanobotco.github.io/index/" title="every corpus, site and repository, counted">The index</a></div>
 <div class="support">Sponsor: <a href="https://www.patreon.com/nanobotco" rel="noopener" target="_blank">Patreon</a> · <a href="https://ko-fi.com/defiantchiangmai" rel="noopener" target="_blank">Ko-fi</a> · Source: <a href="https://github.com/NaNoBotCo/offramp" rel="noopener">GitHub</a></div>
 <div class="support maker">จัดทำโดย <a href="https://hongdam.net/" rel="noopener">หงส์ดำ</a> เชียงราย</div>
 </div></footer><script>(function(){var y=scrollY,b=document.body;addEventListener('scroll',function(){var n=scrollY;

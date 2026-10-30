@@ -1,0 +1,79 @@
+{
+ "id": "2026-10-30-thai-rules-pace",
+ "date": "2026-10-30",
+ "order": 2,
+ "kind": "rule",
+ "signal": "rules",
+ "title_en": "Thai crypto rules: a new step about every four weeks",
+ "title_th": "กฎคริปโตของไทย: ขั้นใหม่ราวทุกสี่สัปดาห์",
+ "dek_en": "13 changes in twelve months. Each narrows the road between a wallet and a Thai bank account to licensed firms and the customer's own verified wallets.",
+ "dek_th": "เปลี่ยน 13 ครั้งในสิบสองเดือน แต่ละครั้งทำให้ถนนระหว่างกระเป๋าคริปโตกับบัญชีธนาคารไทยแคบลง เหลือแค่ผู้ประกอบธุรกิจที่ได้รับอนุญาตและกระเป๋าที่ยืนยันตัวตนของลูกค้าเอง",
+ "body_en": [
+  "Offrampt's rules timeline holds 13 Thai changes from 31 October 2025 to 30 October 2026. The latest six: 2026-09-14: The OECD lists Thailand among jurisdictions starting crypto tax data exchanges (CARF) by 2028; 2026-09-11: The SEC proposes a 5 million baht daily cap per operator and an own-wallet rule for stablecoin transfers; comment closes 25 September; 2026-09-07: The SEC imposes civil sanctions on four people for manipulating trading volume of the SIX Network token; 2026-09-02: The SEC issues the crypto Travel Rule, effective 27 February 2027; 2026-09-01: The SEC names Tools for Humanity and its CEO as supporters of the unlicensed UNO app; Holdstation and UNO are to be blocked from 1 October; 2026-08-25: The Cabinet approves a draft Act amending the Digital Asset Decree, sending it to Parliament.",
+  "Two dates sit ahead: the Travel Rule takes effect on 27 February 2027, and Thailand starts sharing crypto tax data with other countries under the OECD's CARF by 2028."
+ ],
+ "body_th": [
+  "ไทม์ไลน์กฎของ Offrampt มีการเปลี่ยนแปลงของไทย 13 ครั้ง ตั้งแต่ 31 ตุลาคม 2025 ถึง 30 ตุลาคม 2026 หกครั้งล่าสุด: 2026-09-14: OECD ระบุให้ไทยอยู่ในกลุ่มประเทศและเขตอำนาจที่จะเริ่มแลกเปลี่ยนข้อมูลภาษีคริปโต (CARF) ภายในปี 2028; 2026-09-11: ก.ล.ต. เสนอเพดานการโอนสเตเบิลคอยน์ 5 ล้านบาทต่อวันต่อผู้ประกอบธุรกิจ และเกณฑ์ให้โอนเฉพาะกระเป๋าของตนเอง รับฟังความเห็นถึงวันที่ 25 กันยายน; 2026-09-07: ก.ล.ต. ใช้มาตรการลงโทษทางแพ่งกับบุคคล 4 ราย กรณีบิดเบือนปริมาณการซื้อขายโทเคน SIX Network; 2026-09-02: ก.ล.ต. ออกหลักเกณฑ์ Travel Rule สำหรับคริปโต มีผลตั้งแต่วันที่ 27 กุมภาพันธ์ 2027; 2026-09-01: ก.ล.ต. ระบุว่า Tools for Humanity และประธานเจ้าหน้าที่บริหารเป็นผู้สนับสนุนแอป UNO ที่ไม่ได้รับอนุญาต Holdstation และ UNO จะถูกปิดกั้นตั้งแต่วันที่ 1 ตุลาคม; 2026-08-25: คณะรัฐมนตรีอนุมัติร่างพระราชบัญญัติแก้ไขเพิ่มเติมพระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล และส่งต่อให้รัฐสภา",
+  "มีสองวันที่รออยู่ข้างหน้า: Travel Rule มีผลวันที่ 27 กุมภาพันธ์ 2027 และไทยจะเริ่มแลกเปลี่ยนข้อมูลภาษีคริปโตกับต่างประเทศตาม CARF ของ OECD ภายในปี 2028"
+ ],
+ "shape": "steps",
+ "speed": "weeks",
+ "read_en": "Step by step, about one a month, all pointing one way: named accounts at both ends, a daily cap, tax data shared abroad. Sales to strangers person to person sit outside these steps; the banks' mule-account rules reach them from the other side.",
+ "read_th": "ทีละขั้น ราวเดือนละครั้ง และทุกขั้นชี้ไปทางเดียวกัน: บัญชีที่มีชื่อทั้งสองฝั่ง เพดานต่อวัน และข้อมูลภาษีที่ส่งให้ต่างประเทศ การขายให้คนแปลกหน้าแบบตัวต่อตัวอยู่นอกขั้นเหล่านี้ แต่กฎบัญชีม้าของธนาคารเข้าถึงจากอีกฝั่ง",
+ "sources": [
+  {
+   "title": "The OECD lists Thailand among jurisdictions starting crypto tax data exchanges (CARF) by 2028.",
+   "url": "https://www.oecd.org/content/dam/oecd/en/networks/global-forum-tax-transparency/commitments-carf.pdf",
+   "publisher": "OECD",
+   "date": "2026-09-14"
+  },
+  {
+   "title": "The SEC proposes a 5 million baht daily cap per operator and an own-wallet rule for stablecoin transfers; comment closes 25 September.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13335",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-11"
+  },
+  {
+   "title": "The SEC imposes civil sanctions on four people for manipulating trading volume of the SIX Network token.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=187&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-07"
+  },
+  {
+   "title": "The SEC issues the crypto Travel Rule, effective 27 February 2027.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13277",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-02"
+  },
+  {
+   "title": "The SEC names Tools for Humanity and its CEO as supporters of the unlicensed UNO app; Holdstation and UNO are to be blocked from 1 October.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13284",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-01"
+  },
+  {
+   "title": "The Cabinet approves a draft Act amending the Digital Asset Decree, sending it to Parliament.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13240",
+   "publisher": "SEC Thailand",
+   "date": "2026-08-25"
+  }
+ ],
+ "links": [
+  {
+   "href": "rules/",
+   "en": "The rules, in full",
+   "th": "กฎทั้งหมด"
+  },
+  {
+   "href": "ramp/",
+   "en": "Routes to baht",
+   "th": "เส้นทางสู่เงินบาท"
+  },
+  {
+   "href_en": "https://chiangmaivisadesk.com/",
+   "href_th": "https://chiangmaivisadesk.com/th/",
+   "en": "Bank letters and visas, Chiang Mai Visa Desk",
+   "th": "หนังสือธนาคารและวีซ่า, Chiang Mai Visa Desk"
+  }
+ ]
+}

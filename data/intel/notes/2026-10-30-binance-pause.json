@@ -1,0 +1,93 @@
+{
+ "id": "2026-10-30-binance-pause",
+ "date": "2026-10-30",
+ "order": 7,
+ "kind": "hack",
+ "lead_until": "2026-11-20",
+ "title_en": "Binance paused withdrawals after a $6.3 billion theft",
+ "title_th": "Binance ระงับการถอน หลังถูกขโมยไป 6.3 พันล้านดอลลาร์",
+ "dek_en": "The largest crypto theft on record began, Binance says, with one engineer's laptop. Binance TH paused crypto withdrawals; baht kept moving.",
+ "dek_th": "การขโมยคริปโตครั้งใหญ่ที่สุดเท่าที่มีบันทึก Binance บอกว่าเริ่มจากแล็ปท็อปของวิศวกรคนเดียว Binance TH ระงับการถอนคริปโต ส่วนเงินบาทยังเข้าออกได้",
+ "body_en": [
+  "Binance says it lost about US$6.3 billion on 29 and 30 October 2026, and paused deposits and withdrawals. Its first check points to one DevOps engineer's laptop as the way in. TRM Labs names North Korea's TraderTraitor group, the group the FBI named for Bybit's $1.5 billion loss in February 2025.",
+  "About $3 billion of the stolen coins were frozen on-chain: Tether froze over $1.5 billion of USDT, and Circle $800 million of USDC. Binance says it will cover all losses. Its SAFU reserve fund held about $1 billion at its 2024 disclosure.",
+  "In Thailand, Binance TH (Gulf Binance, licensed by the SEC) paused crypto withdrawals, while baht deposits, baht withdrawals and trading kept running, Thansettakij reported. The Thai SEC said it had found no significant impact on Thai customers' assets so far, and told licensed firms to check and report. Bitcoin traded under $77,000."
+ ],
+ "body_th": [
+  "Binance บอกว่าสูญเงินราว 6.3 พันล้านดอลลาร์สหรัฐเมื่อวันที่ 29 และ 30 ตุลาคม 2026 และระงับการฝากและถอน การตรวจสอบเบื้องต้นชี้ว่าทางเข้าคือแล็ปท็อปของวิศวกร DevOps คนหนึ่ง TRM Labs ระบุว่าเป็นกลุ่ม TraderTraitor ของเกาหลีเหนือ กลุ่มเดียวกับที่ FBI ระบุในเหตุ Bybit สูญเงิน 1.5 พันล้านดอลลาร์เมื่อกุมภาพันธ์ 2025",
+  "เหรียญที่ถูกขโมยราว 3 พันล้านดอลลาร์ถูกอายัดบนเชน: Tether อายัด USDT มากกว่า 1.5 พันล้านดอลลาร์ และ Circle อายัด USDC 800 ล้านดอลลาร์ Binance บอกว่าจะชดใช้ความเสียหายทั้งหมด กองทุนสำรอง SAFU มีราว 1 พันล้านดอลลาร์ตามที่เปิดเผยเมื่อปี 2024",
+  "ในไทย Binance TH (Gulf Binance ได้รับอนุญาตจาก ก.ล.ต.) ระงับการถอนคริปโต ส่วนการฝากและถอนเงินบาทและการซื้อขายยังทำได้ตามปกติ ฐานเศรษฐกิจรายงาน ก.ล.ต. ไทยแจ้งว่ายังไม่พบผลกระทบมีนัยสำคัญต่อทรัพย์สินของลูกค้าไทย และสั่งให้ผู้ประกอบธุรกิจที่ได้รับอนุญาตตรวจสอบและรายงาน บิตคอยน์ซื้อขายต่ำกว่า 77,000 ดอลลาร์"
+ ],
+ "shape": "step-down",
+ "speed": "hours",
+ "read_en": "A theft like this is a step, not a slope: trust falls in hours and comes back over weeks or years. Mt. Gox repayments began in 2024, ten years after its 2014 collapse; FTX began repaying customers in 2025, over two years after its 2022 bankruptcy. The freezes show the other side of stablecoins: one company can stop any USDT address.",
+ "read_th": "การขโมยแบบนี้เป็นขั้นบันได ไม่ใช่ทางลาด ความเชื่อมั่นหายไปในไม่กี่ชั่วโมงและกลับมาในหลายสัปดาห์หรือหลายปี Mt. Gox เริ่มจ่ายคืนในปี 2024 สิบปีหลังล้มในปี 2014 FTX เริ่มจ่ายคืนลูกค้าในปี 2025 กว่าสองปีหลังล้มละลายในปี 2022 การอายัดครั้งนี้ยังแสดงอีกด้านของสเตเบิลคอยน์: บริษัทเดียวหยุดที่อยู่ USDT ใดก็ได้",
+ "sources": [
+  {
+   "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
+   "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
+   "publisher": "TechCrunch",
+   "date": "2026-10-29"
+  },
+  {
+   "title": "Billions of dollars stolen in largest cryptocurrency hack in history",
+   "url": "https://www.abc.net.au/news/2026-10-30/largest-cryptocurrency-hack-billions-stolen-binance/107327732",
+   "publisher": "ABC News",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์ TRM Labs ชี้กลุ่มแฮ็กเกอร์เกาหลีเหนืออยู่เบื้องหลัง ด้าน Binance TH ยันส่วนของไทยปลอดภัย แต่ขอระงับฝากถอนชั่วคราว",
+   "url": "https://thestandard.co/binance-hacked-billions-crypto-theft/",
+   "publisher": "THE STANDARD",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต",
+   "url": "https://www.thansettakij.com/finance/wealth-tech/672587",
+   "publisher": "Thansettakij",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "North Korea Responsible for $1.5 Billion Bybit Hack",
+   "url": "https://www.ic3.gov/PSA/2025/PSA250226",
+   "publisher": "FBI / IC3",
+   "date": "2025-02-26"
+  },
+  {
+   "title": "Mt. Gox Files for Bankruptcy",
+   "url": "https://dealbook.nytimes.com/2014/02/28/mt-gox-files-for-bankruptcy/",
+   "publisher": "The New York Times",
+   "date": "2014-02-28"
+  },
+  {
+   "title": "Divisions in Sam Bankman-Fried's Crypto Empire Blur on His Trading Titan Alameda's Balance Sheet",
+   "url": "https://www.coindesk.com/business/2022/11/02/divisions-in-sam-bankman-frieds-crypto-empire-blur-on-his-trading-titan-alamedas-balance-sheet/",
+   "publisher": "CoinDesk",
+   "date": "2022-11-02"
+  }
+ ],
+ "links": [
+  {
+   "href": "frozen/",
+   "en": "The freeze board",
+   "th": "กระดานการอายัด",
+   "lead": true
+  },
+  {
+   "href": "ramp/",
+   "en": "Other routes to baht",
+   "th": "เส้นทางอื่นสู่เงินบาท"
+  },
+  {
+   "href": "scams/",
+   "en": "Scams",
+   "th": "กลโกง"
+  },
+  {
+   "href_en": "https://hongdam.net/fix/",
+   "href_th": "https://hongdam.net/th/fix/",
+   "en": "Security and tech fixes, Hongdam",
+   "th": "แก้ปัญหาความปลอดภัยและเทคนิค, Hongdam"
+  }
+ ]
+}

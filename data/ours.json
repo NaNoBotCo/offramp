@@ -1,0 +1,72 @@
+{
+  "_what": "Services from Hongdam, Chiang Mai Visa Desk and Mot Dang, on the home page under Banking help. hongdam_id reads today's price from https://hongdam.net/api/services at build; price is the fallback. check: true shows the card only once its page answers 200.",
+  "items": [
+    {
+      "site": "Hongdam",
+      "hongdam_id": "bank-account",
+      "en": "Thai bank account opened, with you",
+      "th": "เปิดบัญชีธนาคารไทย ไปด้วยกัน",
+      "line_en": "The bank that suits your visa, the papers ready, and a Thai speaker beside you at the counter.",
+      "line_th": "เลือกธนาคารที่เหมาะกับวีซ่าของคุณ เตรียมเอกสารให้ครบ และมีคนพูดไทยไปยืนข้างคุณที่เคาน์เตอร์",
+      "price": 4000,
+      "href_en": "https://hongdam.net/buy/?c=bank-account",
+      "href_th": "https://hongdam.net/th/buy/?c=bank-account"
+    },
+    {
+      "site": "Chiang Mai Visa Desk",
+      "en": "Visas, work permits, retirement",
+      "th": "วีซ่า ใบอนุญาตทำงาน การเกษียณ",
+      "line_en": "DTV, retirement and work-permit files, the bank letters Immigration asks for, and 90-day reports.",
+      "line_th": "เอกสาร DTV เกษียณ และใบอนุญาตทำงาน หนังสือรับรองจากธนาคารที่ ตม. ขอ และรายงานตัว 90 วัน",
+      "price_en": "Price in writing",
+      "price_th": "แจ้งราคาเป็นหนังสือ",
+      "href_en": "https://chiangmaivisadesk.com/",
+      "href_th": "https://chiangmaivisadesk.com/th/"
+    },
+    {
+      "site": "Hongdam",
+      "hongdam_id": "thai-plan",
+      "en": "A written plan for a hard Thai question",
+      "th": "แผนเป็นลายลักษณ์อักษรสำหรับเรื่องยาก",
+      "line_en": "A bank, a visa, property: the steps, the offices, the papers and the costs, written down.",
+      "line_th": "ธนาคาร วีซ่า ที่ดิน: ขั้นตอน หน่วยงาน เอกสาร และค่าใช้จ่าย เขียนไว้ให้ครบ",
+      "price": 2000,
+      "href_en": "https://hongdam.net/buy/?c=thai-plan",
+      "href_th": "https://hongdam.net/th/buy/?c=thai-plan"
+    },
+    {
+      "site": "Hongdam Studio",
+      "hongdam_id": "crypto-safety",
+      "check": true,
+      "en": "Crypto safety check",
+      "th": "ตรวจความปลอดภัยคริปโต",
+      "line_en": "An hour on a call and a written plan: where your coins sit, and who can reach them.",
+      "line_th": "คุยทางโทรศัพท์หนึ่งชั่วโมงพร้อมแผนเป็นลายลักษณ์อักษร: เหรียญของคุณอยู่ที่ไหน และใครเข้าถึงได้บ้าง",
+      "price": 3000,
+      "href_en": "https://hongdam.net/studio/crypto-safety/",
+      "href_th": "https://hongdam.net/th/studio/crypto-safety/"
+    },
+    {
+      "site": "Mot Dang",
+      "en": "Expat Survival Toolkit",
+      "th": "ชุดเอาตัวรอดสำหรับชาวต่างชาติ",
+      "line_en": "Visas, papers, homes, roads, health and your own business in northern Thailand, on one LINE.",
+      "line_th": "วีซ่า เอกสาร บ้าน ถนน สุขภาพ และธุรกิจของคุณเองในภาคเหนือ ผ่าน LINE เดียว",
+      "price_en": "Free",
+      "price_th": "ฟรี",
+      "href_en": "https://motdang.net/sites/expat-toolkit/",
+      "href_th": "https://motdang.net/sites/expat-toolkit/"
+    },
+    {
+      "site": "Hongdam",
+      "hongdam_id": "sec-hacked",
+      "en": "Hacked site cleanup",
+      "th": "กู้เว็บที่ถูกแฮก",
+      "line_en": "Malware removed, the weakness the attacker used fixed, and a written report.",
+      "line_th": "ลบมัลแวร์ ปิดช่องโหว่ที่ผู้โจมตีใช้ และเขียนรายงานให้",
+      "price": 5000,
+      "href_en": "https://hongdam.net/buy/?c=sec-hacked",
+      "href_th": "https://hongdam.net/th/buy/?c=sec-hacked"
+    }
+  ]
+}

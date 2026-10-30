@@ -1,0 +1,138 @@
+{
+ "id": "2026-10-30-crypto-is-not-crypto",
+ "date": "2026-10-30",
+ "order": 6,
+ "kind": "long",
+ "title_en": "The long view: crypto is not actually crypto",
+ "title_th": "มองยาว: คริปโตไม่ได้ลับจริงอย่างชื่อ",
+ "dek_en": "Keys leak through laptops and flawed code, and on paper the machine that breaks bitcoin's math keeps getting smaller.",
+ "dek_th": "กุญแจรั่วผ่านแล็ปท็อปและโค้ดที่มีช่องโหว่ และบนกระดาษ เครื่องที่ถอดคณิตศาสตร์ของบิตคอยน์ได้ก็เล็กลงเรื่อยๆ",
+ "quote_en": "Crypto is not actually crypto. Why? Because everything leaks and computers are solving hard math problems faster than people realize.",
+ "quote_th": "คริปโตไม่ได้ลับจริงอย่างชื่อ ทำไม? เพราะทุกอย่างรั่วได้ และคอมพิวเตอร์แก้โจทย์คณิตศาสตร์ยากๆ ได้เร็วกว่าที่คนคิด",
+ "quote_by_en": "Nan, who writes Offrampt",
+ "quote_by_th": "Nan ผู้เขียน Offrampt",
+ "body_en": [
+  "Everything leaks. Chainalysis counted $3.7 billion stolen from crypto businesses in 2022, $1.7 billion in 2023, $2.2 billion in 2024 and over $3.4 billion in 2025. CertiK counts $2.68 billion from January to September 2026, before Binance's $6.3 billion in October. In August 2026, attackers drained over $130 million from Coldcard hardware wallets, offline ones among them, through a 2021 flaw that made seed phrases predictable.",
+  "On paper, the math gets cheaper to break. For RSA-2048, a common lock on the web, estimates of the quantum computer needed fell from 20 million noisy qubits (2019) to under 1 million (Google, May 2025) to under 100,000 (an Iceberg Quantum preprint, February 2026). For the 256-bit elliptic curve under bitcoin's keys, Google estimated in March 2026 under half a million physical qubits running for minutes, about a 20-fold cut from earlier estimates. Google's Willow chip, shown in December 2024, has 105 qubits.",
+  "Google's paper counts about 6.9 million BTC in addresses whose public keys are already exposed or reused. NIST's final guidance of 27 October 2026 deprecates RSA, ECDSA and EdDSA after 2030 and disallows them after 2035. Bitcoin's BIP-360, a draft that hides keys from long-exposure attacks, entered the proposals list in February 2026 and is not active.",
+  "Used as a tool, crypto moves value where a Thai bank account is out of reach, and the move takes minutes. Held for decades, it rests on locks with a date on them."
+ ],
+ "body_th": [
+  "ทุกอย่างรั่วได้ Chainalysis นับเงินที่ถูกขโมยจากธุรกิจคริปโตได้ 3.7 พันล้านดอลลาร์ในปี 2022, 1.7 พันล้านในปี 2023, 2.2 พันล้านในปี 2024 และกว่า 3.4 พันล้านในปี 2025 CertiK นับได้ 2.68 พันล้านดอลลาร์ตั้งแต่มกราคมถึงกันยายน 2026 ก่อนเหตุ Binance 6.3 พันล้านในเดือนตุลาคม เดือนสิงหาคม 2026 ผู้โจมตีดูดเงินกว่า 130 ล้านดอลลาร์จากกระเป๋าฮาร์ดแวร์ Coldcard รวมทั้งเครื่องที่ออฟไลน์ ผ่านช่องโหว่ปี 2021 ที่ทำให้เดา seed phrase ได้",
+  "บนกระดาษ คณิตศาสตร์ถอดได้ถูกลงเรื่อยๆ สำหรับ RSA-2048 กุญแจที่ใช้กันทั่วไปบนเว็บ ประมาณการขนาดควอนตัมคอมพิวเตอร์ที่ต้องใช้ลดจาก 20 ล้านคิวบิต (2019) เหลือไม่ถึง 1 ล้าน (Google พฤษภาคม 2025) และไม่ถึง 100,000 (งานวิจัยฉบับร่างของ Iceberg Quantum กุมภาพันธ์ 2026) สำหรับเส้นโค้งวงรี 256 บิตที่อยู่ใต้กุญแจของบิตคอยน์ Google ประมาณการเมื่อมีนาคม 2026 ว่าใช้คิวบิตจริงไม่ถึงครึ่งล้าน ทำงานเพียงไม่กี่นาที ลดลงราว 20 เท่าจากประมาณการก่อนหน้า ชิป Willow ของ Google ที่เปิดตัวธันวาคม 2024 มี 105 คิวบิต",
+  "งานของ Google นับบิตคอยน์ได้ราว 6.9 ล้าน BTC ในที่อยู่ที่ public key เปิดเผยแล้วหรือถูกใช้ซ้ำ แนวทางฉบับสมบูรณ์ของ NIST วันที่ 27 ตุลาคม 2026 ให้เลิกใช้ RSA, ECDSA และ EdDSA หลังปี 2030 และห้ามใช้หลังปี 2035 ส่วน BIP-360 ของบิตคอยน์ ร่างที่ซ่อนกุญแจจากการโจมตีระยะยาว เข้าสู่รายการข้อเสนอเมื่อกุมภาพันธ์ 2026 และยังไม่ได้เปิดใช้",
+  "ถ้าใช้เป็นเครื่องมือ คริปโตย้ายมูลค่าไปถึงที่ที่บัญชีธนาคารไทยเข้าไม่ถึง และใช้เวลาไม่กี่นาที ถ้าถือไว้หลายสิบปี ก็คือการฝากไว้กับกุญแจที่มีวันหมดอายุเขียนไว้"
+ ],
+ "shape": "s-curve",
+ "speed": "years",
+ "read_en": "Slow, then sudden. A math lock does not wear out; it holds until a machine opens it, and then every lock of that kind is open at once. The estimates fall every year and the hardware grows more slowly. Nobody can date the first broken bitcoin key; the people who write the standards have dated the end of these locks: 2035.",
+ "read_th": "ช้า แล้วจู่ๆ ก็เร็ว กุญแจคณิตศาสตร์ไม่ได้ค่อยๆ สึก มันแข็งแรงจนกว่าจะมีเครื่องเปิดได้ แล้วกุญแจแบบเดียวกันทุกดอกก็เปิดพร้อมกัน ประมาณการลดลงทุกปี ส่วนฮาร์ดแวร์โตช้ากว่า ไม่มีใครบอกได้ว่ากุญแจบิตคอยน์ดอกแรกจะถูกถอดเมื่อไร แต่คนเขียนมาตรฐานกำหนดวันสิ้นสุดของกุญแจเหล่านี้ไว้แล้ว: ปี 2035",
+ "sources": [
+  {
+   "title": "Crypto hacking: stolen funds",
+   "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2024/",
+   "publisher": "Chainalysis",
+   "date": "2024-01-24"
+  },
+  {
+   "title": "Crypto hacking: stolen funds, 2024",
+   "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2025/",
+   "publisher": "Chainalysis",
+   "date": "2024-12-19"
+  },
+  {
+   "title": "Crypto hacking: stolen funds, 2025",
+   "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/",
+   "publisher": "Chainalysis",
+   "date": "2025-12-18"
+  },
+  {
+   "title": "Crypto hacks total $766M in September (PeckShield; CertiK year to date)",
+   "url": "https://cointelegraph.com/news/crypto-hacks-total-766m-in-september-peckshield",
+   "publisher": "Cointelegraph",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Hackers steal over $130M by exploiting bug in offline hardware wallets",
+   "url": "https://techcrunch.com/2026/08/04/hackers-steal-over-130-million-by-exploiting-bug-in-offline-hardware-wallets/",
+   "publisher": "TechCrunch",
+   "date": "2026-08-04"
+  },
+  {
+   "title": "How to factor 2048 bit RSA integers in 8 hours using 20 million noisy qubits",
+   "url": "https://arxiv.org/abs/1905.09749",
+   "publisher": "arXiv (Gidney, Ekerå)",
+   "date": "2019-05-23"
+  },
+  {
+   "title": "How to factor 2048 bit RSA integers with less than a million noisy qubits",
+   "url": "https://arxiv.org/abs/2505.15917",
+   "publisher": "arXiv (Gidney)",
+   "date": "2025-05-21"
+  },
+  {
+   "title": "Pinnacle: RSA-2048 with fewer than 100,000 physical qubits",
+   "url": "https://arxiv.org/abs/2602.11457",
+   "publisher": "arXiv (Iceberg Quantum)",
+   "date": "2026-02-12"
+  },
+  {
+   "title": "Breaking 256-bit elliptic-curve keys on secp256k1: resource estimates",
+   "url": "https://arxiv.org/abs/2603.28846",
+   "publisher": "arXiv (Google Quantum AI)",
+   "date": "2026-03-30"
+  },
+  {
+   "title": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
+   "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+   "publisher": "Google Research",
+   "date": "2026-03-31"
+  },
+  {
+   "title": "Cryptocurrency whitepaper (exposed BTC)",
+   "url": "https://quantumai.google/static/site-assets/downloads/cryptocurrency-whitepaper.pdf",
+   "publisher": "Google Quantum AI",
+   "date": "2026-03-30"
+  },
+  {
+   "title": "Meet Willow, our state-of-the-art quantum chip",
+   "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
+   "publisher": "Google",
+   "date": "2024-12-09"
+  },
+  {
+   "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards (final)",
+   "url": "https://csrc.nist.gov/pubs/ir/8547/final",
+   "publisher": "NIST",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "BIP-360: Pay to Merkle Root",
+   "url": "https://github.com/bitcoin/bips/blob/master/bip-0360.mediawiki",
+   "publisher": "bitcoin/bips",
+   "date": "2026-07-24"
+  }
+ ],
+ "links": [
+  {
+   "href": "how/",
+   "en": "How keys and hashes work",
+   "th": "กุญแจและแฮชทำงานอย่างไร"
+  },
+  {
+   "href": "https://nanobotco.github.io/quantum-computing/",
+   "en": "Quantum Computing, plainly",
+   "th": "Quantum Computing, plainly"
+  },
+  {
+   "href": "https://nanobotco.github.io/factoring/",
+   "en": "Big Numbers, Split",
+   "th": "Big Numbers, Split"
+  },
+  {
+   "href": "history/",
+   "en": "History, 1976 to now",
+   "th": "ประวัติ ตั้งแต่ 1976 ถึงวันนี้"
+  }
+ ]
+}
