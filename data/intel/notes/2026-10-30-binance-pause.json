@@ -69,8 +69,8 @@
  "links": [
   {
    "href": "frozen/",
-   "en": "The freeze board",
-   "th": "กระดานการอายัด",
+   "en": "Frozen",
+   "th": "ถอนไม่ได้",
    "lead": true
   },
   {
@@ -89,5 +89,7 @@
    "en": "Security and tech fixes, Hongdam",
    "th": "แก้ปัญหาความปลอดภัยและเทคนิค, Hongdam"
   }
- ]
+ ],
+ "strip_en": "Binance stopped withdrawals on 29 October. If your exchange froze, how many months could you live?",
+ "strip_th": "Binance หยุดให้ถอนเมื่อ 29 ตุลาคม ถ้าศูนย์ซื้อขายของคุณถอนไม่ได้ คุณอยู่ได้กี่เดือน"
 }

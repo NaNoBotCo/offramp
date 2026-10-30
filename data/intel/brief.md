@@ -49,6 +49,7 @@ Each note links where a reader goes next: an Offrampt page (ramp/, rules/, cards
 | read_en, read_th | the read of the shape and speed, and the guess with what it rests on |
 | signal | optional: btc, usdt, stable, hash or rules, to draw the computed trend's own line |
 | lead_until | optional YYYY-MM-DD: the home page's top strip shows this note until then |
+| strip_en, strip_th | optional: the top strip's words, when the title alone does not say what the linked page offers |
 | sources | list of {title, url, publisher, date}, two or more |
 | links | list of {href, en, th} for an Offrampt path, or {href_en, href_th, en, th} for another site; "lead": true on the link the top strip opens |
 
