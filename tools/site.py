@@ -481,7 +481,6 @@ def home():
         nums += tile(T("Scams", "กลโกง"), ("~" if near else "") + T(f'฿{sc["value"]:g}B', f'฿{sc["value"]:g} พันล้าน'), note + cite(src_of(sc)), "red")  # stylecheck: allow — tile label: scam losses figure
     doors = "".join(door(h) for h, *_r in MENU)
     body = top + section(f"""
-{frozen_strip()}
 <div id="calc">{calc_block(fees_open=False)}</div>
 {tip()}
 <a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
@@ -987,11 +986,6 @@ def fz_cite(keys):
         else:
             out.append(k)
     return cite(out) if out else ""
-
-
-def frozen_strip():
-    return (f'<a class="paperlink fzlink" href="{U("frozen/")}"><span>{E(T(*FZ.W["strip"]))}</span>'
-            f'<b>{E(T(*FZ.TITLE))}{ARROW}</b></a>')
 
 
 FZ_HUES = ["#8fd3ff", "#9cc8ff", "#b4b8ff", "#c9a6f2", "#e19ad6", "#f08fb6", "#fb7f93", "#ff6a74", "#ff5a5f"]

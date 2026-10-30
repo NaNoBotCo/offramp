@@ -357,8 +357,6 @@ footer.bot p.fine{font-size:.74rem;line-height:1.7}
 .fzo.o2 .fzsq i{background:var(--amber)}.fzo.o3 .fzsq i{background:var(--red)}
 .fzsq i.part{opacity:.45}
 .fzsq b{font-family:var(--din);font-size:.8rem;color:var(--mute);margin-left:.3rem}
-a.fzlink{border-color:#8fd3ff;background:linear-gradient(90deg,rgba(143,211,255,.12),rgba(255,90,95,.07))}
-a.fzlink b{color:#8fd3ff}
 .fzhelp{border-color:var(--go)}
 @media (max-width:640px){
  .fzrow{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:.6rem;border:1px solid var(--line);border-radius:12px}
