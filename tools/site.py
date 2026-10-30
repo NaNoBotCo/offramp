@@ -19,6 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fleet                                   # noqa: E402
+import frozen as FZ                            # noqa: E402
 import paper                                   # noqa: E402
 from css import CSS                            # noqa: E402
 
@@ -303,7 +304,7 @@ def write(p: Path, text: str):
 
 def invite(path):
     """reference pages open with a way back to the human pages"""
-    if path in ("", "support/", "404/") or path in {e[0] for e in MENU}:
+    if path in ("", "support/", "404/", "frozen/") or path in {e[0] for e in MENU}:
         return ""
     q, lab, href = {
         "networks/": (T("Sending crypto?", "กำลังจะส่งคริปโต?"), T("Check the address", "ตรวจที่อยู่"), U("") + "#check"),  # stylecheck: allow — link label to the address checker
@@ -480,6 +481,7 @@ def home():
         nums += tile(T("Scams", "กลโกง"), ("~" if near else "") + T(f'฿{sc["value"]:g}B', f'฿{sc["value"]:g} พันล้าน'), note + cite(src_of(sc)), "red")  # stylecheck: allow — tile label: scam losses figure
     doors = "".join(door(h) for h, *_r in MENU)
     body = top + section(f"""
+{frozen_strip()}
 <div id="calc">{calc_block(fees_open=False)}</div>
 {tip()}
 <a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
@@ -957,7 +959,10 @@ def scams():
                       + f'<p class="small">{E(fld(c, "how"))}</p>' + (f'<p class="small"><a href="{E(c["url"])}" rel="noopener" style="word-break:break-all">{E(c["url"])}</a></p>' if c.get("url") else "") + "</div>")
     body = exit_head("scams/", T("Most crypto losses in Thailand are not hacks. They are a person persuaded to send, and a bank account frozen because baht arrived from someone else's loss.",  # stylecheck: allow — facts about losses
                                  "ความเสียหายจากคริปโตในไทยส่วนใหญ่ไม่ได้มาจากการแฮ็ก แต่มาจากคนที่ถูกโน้มน้าวให้โอน และบัญชีธนาคารที่ถูกอายัดเพราะเงินบาทที่เข้ามาเป็นเงินจากความเสียหายของคนอื่น"), "red")
+    fw = {k: T(*v) for k, v in FZ.W.items()}
     body += section(f"""
+<div class="note blue" style="margin-top:1.6rem"><p style="margin:0">{E(fw["scams_line"])} <a href="{U('frozen/')}">{E(T(*FZ.TITLE))}</a></p>
+<p style="margin:.4rem 0 0">{E(fw["scams_help"])} <a href="{T(FZ.HONGDAM_EN, FZ.HONGDAM_TH)}">{E(fw["help_go"])}</a></p></div>
 <h2>{T("Numbers", "ตัวเลข")}</h2>{table([T("Year", "ปี"), T("Measure", "ตัวชี้วัด"), T("Value ›", "ค่า ›"), T("Unit", "หน่วย"), T("Scope", "ขอบเขต")], [srows])}
 <h2>{T("How they work", "กลโกงทำงานอย่างไร")}</h2><div class="grid2">{"".join(tcards)}</div>
 <h2>{T("Where to report", "แจ้งที่ไหน")}</h2><div class="grid3">{"".join(chrows)}</div>
@@ -966,6 +971,103 @@ def scams():
     page(T("Scams", "กลโกง"), body, "scams/", T("Crypto scams in Thailand: call-centre gangs, fake investment, pig butchering, mule accounts and P2P freezes, address poisoning; the numbers and where to report.",  # stylecheck: allow — topic nouns in the page description
                                                  "กลโกงคริปโตในไทย: แก๊งคอลเซ็นเตอร์ หลอกลงทุน หมูตู้ บัญชีม้า การอายัดจาก P2P การวางยาที่อยู่ ตัวเลข และช่องทางแจ้งความ"),
          scripts=("i18n.js",))
+
+
+# ------------------------------------------------------------------ frozen: an exchange stops withdrawals (2026-10-30)
+def fz_cite(keys):
+    """frozen.py source keys → cite(): S keys, hist:<event title>, fraud:<scams type id>, rule:<id>"""
+    out = []
+    for k in keys:
+        if k in FZ.S:
+            out.append(FZ.S[k])
+        elif k.startswith("hist:"):
+            out += src_of(next(e for e in R["history"]["events"] if e.get("title") == k[5:]))
+        elif k.startswith("fraud:"):
+            out += src_of(next(t for t in R["scams"]["types"] if t.get("id") == k[6:]))  # stylecheck: allow — code: a data key
+        else:
+            out.append(k)
+    return cite(out) if out else ""
+
+
+def frozen_strip():
+    return (f'<a class="paperlink fzlink" href="{U("frozen/")}"><span>{E(T(*FZ.W["strip"]))}</span>'
+            f'<b>{E(T(*FZ.TITLE))}{ARROW}</b></a>')
+
+
+FZ_HUES = ["#8fd3ff", "#9cc8ff", "#b4b8ff", "#c9a6f2", "#e19ad6", "#f08fb6", "#fb7f93", "#ff6a74", "#ff5a5f"]
+FZ_PILL = {"red": ("Withdrawals paused", "หยุดถอน"), "amber": ("Crypto withdrawals paused", "หยุดถอนคริปโต"), "blue": ("Regulator", "ผู้กำกับดูแล")}
+
+
+def fz_row(name="", kind="ex", frozen=False, w=None):
+    kinds = "".join(f'<option value="{k}"{" selected" if k == kind else ""}>{E(w["k_" + k])}</option>' for k in ("ex", "own", "bank"))
+    return (f'<div class="fzrow"><input class="fzn" type="text" value="{E(name)}" aria-label="{E(w["toy_place"])}" placeholder="{E(w["toy_place"])}">'
+            f'<select class="fzk" aria-label="{E(w["toy_kind"])}">{kinds}</select>'
+            f'<input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="{E(w["toy_amt"])}" placeholder="฿0">'
+            f'<label class="fzf"><input type="checkbox"{" checked" if frozen else ""}><span>{E(w["toy_frozen"])}</span></label>'
+            f'<button type="button" class="fzx" aria-label="{E(w["toy_del"])}">×</button></div>')
+
+
+def frozen():
+    w = {k: T(*v) for k, v in FZ.W.items()}
+    usdt = f'{F["bitkub"]["usdt_share"]:.0f}'
+    lede = E(T(*FZ.LEDE))
+    top = band("band-frozen.jpg", sign(None, FZ.TITLE[0], FZ.TITLE[1], FZ.SUB[0], FZ.SUB[1], cls="blue", tab=T(*FZ.TAB))
+               + f'<p class="lede" style="margin-top:1.6rem">{lede}</p>')
+    rows = []
+    for b in FZ.BOARD:
+        pl = FZ_PILL[b["state"]]
+        rows.append(f'<tr><td><b>{E(T(*b["place"]))}</b><br><span class="pill {b["state"]}">{E(T(*pl))}</span><br><span class="small mute">{E(T(*b["what"]))}</span></td>'
+                    f'<td>{E(T(*b["out"]))}{fz_cite(b["out_src"])}</td><td>{E(T(*b["in"]))}{fz_cite(b["in_src"])}</td>'
+                    f'<td>{E(T(*b["say"]))}{fz_cite(b["say_src"])}</td></tr>')
+    board = (f'<div class="board" id="fzboard"><h3 style="margin:0 0 .6rem">{E(w["board_h"])}</h3>'
+             + table([w["col_place"], w["col_out"], w["col_in"], w["col_say"]], rows)
+             + f'<p class="stamp">{E(w["checked"].replace("{t}", T(*FZ.CHECKED)))} {E(w["not_listed"])}</p></div>')
+    facts = "".join(tile("", E(T(*big)), E(T(*line)) + fz_cite(src), cls) for big, line, src, cls in FZ.FACTS)
+    rungs = ""
+    for r in FZ.RUNGS:
+        what = T(*r["what"]).replace("{usdt}", usdt)
+        bf = (f'<p class="bf"><b>{E(w["before"])}</b> {E(T(*r["before"]))}{fz_cite(r["src"])}</p>' if r.get("before") else "")
+        dos = "".join(f"<li>{E(T(*d))}</li>" for d in r["do"])
+        if r["n"] == 8:
+            dos = dos.replace(E(T(*r["do"][-1])), f'<a href="{T(FZ.HONGDAM_EN, FZ.HONGDAM_TH)}">{E(T(*r["do"][-1]))}</a>')
+        if r["n"] == 4:
+            dos = dos.replace(E(T(*r["do"][-1])), f'<a href="{U("")}">{E(T(*r["do"][-1]))}</a>')
+        rungs += (f'<li style="--c:{FZ_HUES[r["n"]]}"><span class="rn">{r["n"]}</span><div><h3>{E(T(*r["t"]))}</h3>'
+                  f'<p><b>{E(w["happens"])}</b> {E(what)}{fz_cite(r["src"]) if not r.get("before") else ""}</p>{bf}'
+                  f'<p class="dh"><b>{E(w["do"])}</b></p><ul>{dos}</ul></div></li>')
+    defaults = [("Binance", "ex", True), ("Binance TH", "ex", True), ("Bitkub", "ex", False),
+                (T("Your own wallet", "กระเป๋าของคุณเอง"), "own", False), (T("Bank", "ธนาคาร"), "bank", False)]
+    outs = "".join(f'<div class="fzo {k}"><span class="k">{E(w[k])}</span><output class="v" aria-live="polite">—</output><div class="fzsq" aria-hidden="true"></div></div>'
+                   for k in ("o1", "o2", "o3"))
+    toy = (f'<section class="panel fz" id="fz" data-months="{E(w["months"])}" data-month1="{E(w["month1"])}" data-need="{E(w["toy_need"])}">'
+           f'<h2 style="margin-top:.2rem">{E(w["toy_h"])}</h2><p class="small mute">{E(w["toy_p"])}</p>'
+           f'<div class="fzrows">{"".join(fz_row(n_, k, f, w) for n_, k, f in defaults)}</div>'
+           f'<template id="fzrow">{fz_row("", "ex", False, w)}</template>'
+           f'<div class="row" style="margin:.6rem 0 1rem"><button type="button" class="fzadd">+ {E(w["toy_add"])}</button></div>'
+           f'<div class="field"><input id="fzm" type="text" inputmode="numeric" autocomplete="off" placeholder=" "><label for="fzm">{E(w["toy_month"])}</label></div>'
+           f'<div class="fzout">{outs}</div><p class="small mute" style="margin-bottom:0">{E(w["toy_note"])}</p>'
+           f'<noscript><p class="small">JavaScript.</p></noscript></section>')
+    chans = [c for c in R["scams"].get("channels") or [] if any(x in (c.get("url") or "") + c.get("name", "") for x in ("thaipoliceonline", "1441", "account freeze", "1207"))]  # stylecheck: allow — code: a data key
+    rep_src = fz_cite(["rule:tech-crime-decree-2023"])
+    rep = "".join(f'<div class="cardx"><h3>{E(fld(c, "name"))}</h3><p class="small">{E(fld(c, "how"))}</p>'
+                  + (f'<p class="small"><a href="{E(c["url"])}" rel="noopener" style="word-break:break-all">{E(c["url"])}</a></p>' if c.get("url") else "") + "</div>" for c in chans)
+    hd = T(FZ.HONGDAM_EN, FZ.HONGDAM_TH)
+    body = top + section(f"""
+{board}
+<h2>{E(w["facts_h"])}</h2><div class="tiles">{facts}</div>
+<h2>{E(w["ladder_h"])}</h2><p>{E(w["ladder_p"])}</p>
+<ol class="rungs">{rungs}</ol>
+<div class="note red"><h3 style="margin-top:0">{E(w["all_h"])}</h3><p style="margin:0">{E(w["all_p"])}</p></div>
+{toy}
+<h2>{E(w["report_h"])}</h2><p>{E(w["report_p"])}{rep_src}</p><div class="grid2">{rep}</div>
+<section class="panel fzhelp"><h2 style="margin-top:.2rem">{E(w["help_h"])}</h2><p>{E(w["help_p"])}</p>
+<p style="margin-bottom:0"><a class="btn go" href="{hd}">{E(w["help_go"])}{ARROW}</a></p></section>
+""")
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": T(*FZ.TITLE) + ": " + T(*FZ.SUB), "datePublished": "2026-10-30",
+          "dateModified": TODAY, "inLanguage": LANG, "description": T(*FZ.DESC), "about": "Binance hack, 29 October 2026",
+          "isPartOf": {"@type": "WebSite", "name": NAME, "url": SITE_URL + "/"}, "license": "https://creativecommons.org/licenses/by/4.0/"}
+    page(T("Frozen: Binance and the worse cases", "ถอนไม่ได้: Binance และกรณีที่แย่กว่า"), body, "frozen/", T(*FZ.DESC),
+         scripts=("i18n.js", "frozen.js"), jsonld=ld)
 
 
 ERAS = {"prehistory": ("Before bitcoin", "ก่อนบิตคอยน์"), "genesis": ("Genesis", "จุดกำเนิด"), "altcoins": ("Altcoins", "เหรียญทางเลือก"),
@@ -1054,7 +1156,7 @@ def not_found():
 
 
 def machine_files():
-    pages = [""] + [h for h, *_r in EXITS] + ["paper/", "support/", "sources/", "data/", "for-agents/"]
+    pages = [""] + [h for h, *_r in EXITS] + ["frozen/", "paper/", "support/", "sources/", "data/", "for-agents/"]
     urls = "".join(f'<url><loc>{SITE_URL}/{p}{h}</loc><lastmod>{TODAY}</lastmod>'
                    f'<xhtml:link rel="alternate" hreflang="en" href="{SITE_URL}/{h}"/><xhtml:link rel="alternate" hreflang="th" href="{SITE_URL}/th/{h}"/></url>'
                    for h in pages for p in ("", "th/"))
@@ -1077,6 +1179,7 @@ def machine_files():
 
 ## Pages
 """ + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""- {SITE_URL}/paper/ · {SITE_URL}/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
+- {SITE_URL}/frozen/ · {SITE_URL}/th/frozen/ — Frozen / ถอนไม่ได้: Binance's $6.3 billion loss of 29 October 2026 and its paused withdrawals, each exchange's state with sources, eight worse cases with precedents, a counter of months covered if an exchange freezes; paid help from Hongdam, {FZ.HONGDAM_EN}
 ## Data
 - {SITE_URL}/data/facts.json
 - {SITE_URL}/data/series.json
@@ -1098,7 +1201,7 @@ Nothing here is advice about money, tax or law.
             shutil.copy(DATA / "research" / f"{k}.json", d / f"{k}.json")
 
 
-PAGES = (home, ramp, rules, cards_page, networks, markets, scams, how, history, words_page, tools, support, data_page, agents_page, not_found)
+PAGES = (home, ramp, rules, cards_page, networks, markets, scams, frozen, how, history, words_page, tools, support, data_page, agents_page, not_found)
 
 
 def main():

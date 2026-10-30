@@ -3,7 +3,7 @@
 > Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed.
 > คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล
 
-https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-10-22  ·  CC BY 4.0, cite offrampt.net
+https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-10-30  ·  CC BY 4.0, cite offrampt.net
 
 ## Computed findings
 - USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2852 days (2018-11-12 to 2026-09-23); above the bank rate on 80.5% of days
@@ -24,6 +24,7 @@ https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 20
 - https://offrampt.net/history/ · https://offrampt.net/th/history/ — History / ประวัติ: 1976 to now
 - https://offrampt.net/words/ · https://offrampt.net/th/words/ — Words / ศัพท์: English and Thai
 - https://offrampt.net/paper/ · https://offrampt.net/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
+- https://offrampt.net/frozen/ · https://offrampt.net/th/frozen/ — Frozen / ถอนไม่ได้: Binance's $6.3 billion loss of 29 October 2026 and its paused withdrawals, each exchange's state with sources, eight worse cases with precedents, a counter of months covered if an exchange freezes; paid help from Hongdam, https://hongdam.net/studio/crypto-safety/
 ## Data
 - https://offrampt.net/data/facts.json
 - https://offrampt.net/data/series.json

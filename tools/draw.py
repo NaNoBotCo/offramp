@@ -418,6 +418,53 @@ def web(name="band-scams.jpg", W=2000, H=750):  # stylecheck: allow — code: im
 GENESIS = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
 
 
+# ------------------------------------------------------------------ frost over the exit: an exchange that stops withdrawals
+def dendrite(L, depth=3):
+    """one arm of a six-fold ice crystal: segments (x0, y0, x1, y1) from the centre along +x"""
+    segs = [(0.0, 0.0, L, 0.0)]
+    if depth == 0:
+        return segs
+    for k in range(1, 6):
+        at = L * k / 6
+        bl = L * .42 * (1 - k / 7)
+        for s in (1, -1):
+            a = s * math.pi / 3
+            c, d = math.cos(a), math.sin(a)
+            for x0, y0, x1, y1 in dendrite(bl, depth - 1):
+                segs.append((at + x0 * c - y0 * d, x0 * d + y0 * c, at + x1 * c - y1 * d, x1 * d + y1 * c))
+    return segs
+
+
+def frost(name="band-frozen.jpg", W=2000, H=750):
+    film = Film(W, H)
+    ICE = (0.55, 0.82, 1.0)
+    # the exit lane, faint, running under the ice
+    t = np.linspace(0, 1, 60000)
+    film.splat(W * (.05 + .9 * t), H * (.82 - .34 * t ** 1.6), AMBER, .05)
+    film.splat(W * (.05 + .9 * t), H * (.86 - .34 * t ** 1.6), TAIL, .04)
+    PX, PY, PW = [], [], []
+    for _ in range(17):
+        cx, cy = RNG.uniform(.3, 1.05) ** .7 * W, RNG.uniform(-.1, 1.1) * H
+        L = RNG.uniform(30, 190) * (1.6 if cx > W * .55 else 1)
+        rot = RNG.uniform(0, math.pi / 3)
+        seg = np.array(dendrite(L, 2 if L < 90 else 3))
+        n = np.maximum(8, (np.hypot(seg[:, 2] - seg[:, 0], seg[:, 3] - seg[:, 1]) * 3).astype(int))
+        u = np.concatenate([np.linspace(0, 1, k) for k in n])
+        s = np.repeat(np.arange(len(seg)), n)
+        xs = seg[s, 0] + (seg[s, 2] - seg[s, 0]) * u
+        ys = seg[s, 1] + (seg[s, 3] - seg[s, 1]) * u
+        wt = .09 * (60 / L) ** .5
+        for i in range(6):
+            a = rot + i * math.pi / 3
+            c, d = math.cos(a), math.sin(a)
+            PX.append(cx + xs * c - ys * d); PY.append(cy + xs * d + ys * c); PW.append(np.full(len(xs), wt))
+        film.glow(cx, cy, 3, (0.8, 0.92, 1.0), .5)
+    film.splat(np.concatenate(PX), np.concatenate(PY), ICE, np.concatenate(PW))
+    img = film.image(exposure=1.0, bloom=((3, .5), (14, .3), (50, .08)),
+                     bg=np.array((0.003, 0.007, 0.016)) * np.ones((H, W, 3)))
+    img.save(os.path.join(OUT, name), quality=84, optimize=True, progressive=True)
+
+
 def chain(name="band-history.jpg", W=2000, H=750):
     img = Image.new("RGB", (W, H), (6, 8, 14))
     d = ImageDraw.Draw(img)
@@ -559,7 +606,7 @@ def card_th():
 
 
 JOBS = {"hero": hero, "ramp": cloverleaf, "markets": ridge, "networks": fibres, "rules": tollgate, "cards": holo,
-        "scams": web, "history": chain, "how": avalanche, "words": signs, "tools": glyphs, "card": card, "card_th": card_th}  # stylecheck: allow — code: page keys
+        "scams": web, "history": chain, "how": avalanche, "words": signs, "tools": glyphs, "frozen": frost, "card": card, "card_th": card_th}  # stylecheck: allow — code: page keys
 
 if __name__ == "__main__":
     want = sys.argv[1:] or list(JOBS)
