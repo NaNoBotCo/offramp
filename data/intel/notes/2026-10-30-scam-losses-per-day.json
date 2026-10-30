@@ -25,17 +25,20 @@
   {
    "title": "เปิดสถิติ 5 อันดับคดีออนไลน์ ที่คนไทยถูกหลอกมากสุด ปี 68",
    "url": "https://www.thaipbs.or.th/verify/article/content/976",
-   "date": "2025-04-01"
+   "date": "2025-04-01",
+   "publisher": "Thai PBS"
   },
   {
    "title": "Call-scam losses halved to B50m a day, digital minister says",
    "url": "https://www.bangkokpost.com/thailand/general/2972641/call-scam-losses-halved-to-b50m-a-day-digital-minister-says",
-   "date": "2025-03-04"
+   "date": "2025-03-04",
+   "publisher": "Bangkok Post"
   },
   {
    "title": "Online scam losses in Thailand approach USD272 million over six months",
    "url": "https://asianews.network/online-scam-losses-in-thailand-approach-usd272-million-over-six-months/",
-   "date": "2026-08-10"
+   "date": "2026-08-10",
+   "publisher": "Asia News Network"
   }
  ],
  "links": [

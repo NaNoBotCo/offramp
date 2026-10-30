@@ -2,8 +2,18 @@
 
 Crypto in Thailand, and the ways out to baht. Ten exits, each a small site of its own:
 
-The home page is the calculator and the address checker. The menu carries four exits; the other six are
-reference pages, linked from the footer.
+The home page leads with the intel (dated notes and trends computed at each build), the calculator,
+banking help from Hongdam, Chiang Mai Visa Desk and Mot Dang, and the long view. The menu carries Intel and
+four exits; the other six are reference pages, linked from the footer.
+
+## Intel
+
+Notes live in `data/intel/notes/`, one JSON file each, English and Thai; the format and the rules for the words
+are in `data/intel/brief.md`. `python3 tools/intel_check.py --all` checks them. `tools/intel_publish.sh <note>`
+checks one, builds with every gate, deploys and commits. Pages: `/intel/`, `/intel/<slug>/`, feeds at
+`/intel/feed.xml` and `/th/intel/feed.xml`, all notes at `/intel/notes.json`. A build reads the live
+notes.json back, so a note already published stays when a checkout without it builds. Services on the home
+page come from `data/ours.json`; Hongdam's prices are read from https://hongdam.net/api/services at build.
 
 | Exit | Page | What |
 |---|---|---|
