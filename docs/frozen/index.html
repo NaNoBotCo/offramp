@@ -1,0 +1,405 @@
+<!doctype html><html lang="en" translate="no" class="notranslate"><head><meta charset="utf-8">
+<meta name="google" content="notranslate"><meta name="robots" content="notranslate"><script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frozen: Binance and the worse cases — Offrampt</title>
+<meta name="description" content="Binance lost about $6.3 billion on 29 October 2026 and stopped withdrawals; Binance TH stopped crypto withdrawals. Each exchange&#x27;s state, eight worse cases with what helps on each, and a counter of how many months you could live if your exchange froze.">
+<link rel="canonical" href="https://offrampt.net/frozen/">
+<link rel="alternate" hreflang="en" href="https://offrampt.net/frozen/"><link rel="alternate" hreflang="th" href="https://offrampt.net/th/frozen/"><link rel="alternate" hreflang="x-default" href="https://offrampt.net/frozen/">
+<meta property="og:title" content="Frozen: Binance and the worse cases — Offrampt">
+<meta property="og:description" content="Binance lost about $6.3 billion on 29 October 2026 and stopped withdrawals; Binance TH stopped crypto withdrawals. Each exchange&#x27;s state, eight worse cases with what helps on each, and a counter of how many months you could live if your exchange froze.">
+<meta property="og:image" content="https://offrampt.net/img/og/en-frozen.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Card: Frozen, over ice crystals growing across an exit lane at night"><meta name="twitter:image" content="https://offrampt.net/img/og/en-frozen.jpg"><meta name="twitter:image:alt" content="Card: Frozen, over ice crystals growing across an exit lane at night">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Offrampt">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05070c">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<style>
+:root{
+ --bg:#05070c;--bg2:#0a0e16;--panel:#0f141e;--glass:rgba(16,22,33,.66);--ink:#eef2ef;--mute:#98a3a9;
+ --line:#1c2531;--chip:#121925;--go:#2fd27f;--sign:#0b6b43;--sign2:#0e7d4e;--amber:#ffb13b;--red:#ff5a5f;
+ --blue:#5aa9ff;--violet:#b69cff;--focus:#ffb13b;
+ --display:"DIN Condensed","DIN Alternate","Avenir Next Condensed","Arial Narrow",system-ui,sans-serif;
+ --din:"DIN Alternate","DIN Condensed","Avenir Next",system-ui,sans-serif;
+ --body:"Avenir Next",Avenir,"Segoe UI",system-ui,-apple-system,"Sukhumvit Set","Thonburi","Noto Sans Thai","Leelawadee UI",Helvetica,Arial,sans-serif;
+ --thai:"Sukhumvit Set","Thonburi","Noto Sans Thai","Leelawadee UI",system-ui,sans-serif;
+ --thaid:"Sukhumvit Set","Thonburi","Noto Sans Thai Looped","Noto Sans Thai","Leelawadee UI",system-ui,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+ color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{font-size:19px;scroll-behavior:smooth;background:var(--bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;color:var(--ink);font-family:var(--body);line-height:1.62;-webkit-text-size-adjust:100%;
+ background:radial-gradient(1200px 600px at 12% -10%,rgba(255,177,59,.07),transparent 60%),
+ radial-gradient(900px 700px at 100% 30%,rgba(47,210,127,.05),transparent 60%),var(--bg);background-attachment:fixed}
+a{color:var(--amber);text-decoration-thickness:.08em;text-underline-offset:.18em}
+a:hover{color:#ffd08a}
+a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{
+ outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+img,canvas,svg{max-width:100%}img{height:auto}
+.sr{position:absolute;left:-999px;top:0;background:var(--amber);color:#000;padding:.4rem .8rem;z-index:99}
+.sr:focus{left:.5rem;top:.5rem}
+.th{font-family:var(--thai)}
+.mute{color:var(--mute)}.small{font-size:.82rem}.tiny{font-size:.7rem}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------------------------------------------------------------- the bar */
+header.top{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);
+ background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);transition:transform .25s}
+body.nav-away header.top{transform:translateY(-100%)}
+header.top .in{max-width:76rem;margin:0 auto;padding:.45rem 1rem;display:flex;gap:.4rem 1.1rem;align-items:center;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--ink);white-space:nowrap}
+.brand .plate{display:inline-grid;place-items:center;width:1.9rem;height:1.5rem;border-radius:5px;background:linear-gradient(180deg,var(--sign2),var(--sign));
+ box-shadow:inset 0 0 0 2px #e9f3ec,0 0 18px rgba(47,210,127,.25)}
+.brand .plate svg{width:1rem;height:1rem}
+.brand b{font-family:var(--display);font-size:1.45rem;letter-spacing:.04em;font-weight:700;line-height:1;padding-top:.2rem}
+header.top nav{display:flex;gap:.1rem .75rem;flex-wrap:wrap;font-family:var(--display);font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+header.top nav a{text-decoration:none;color:var(--mute);padding:.2rem 0 .05rem;display:inline-flex;gap:.3rem;align-items:baseline}
+header.top nav a i{font-style:normal;font-size:.62rem;color:#5d6a72;font-family:var(--din)}
+header.top nav a:hover,header.top nav a[aria-current]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--go)}
+main{max-width:76rem;margin:0 auto;padding:1rem 1rem 5rem}
+main.wide{max-width:none;padding:0 0 2.5rem}
+main.wide>.in{max-width:76rem;margin:0 auto;padding:0 1rem}
+
+/* ---------------------------------------------------------------- type */
+h1{font-family:var(--display);font-size:clamp(2.6rem,8vw,5.6rem);line-height:.9;margin:.2rem 0 .5rem;font-weight:700;letter-spacing:.01em;text-transform:uppercase}
+h1 .kind{display:block;font-family:var(--din);font-size:clamp(.62rem,1.5vw,.74rem);color:var(--amber);letter-spacing:.3em;margin-bottom:.6rem}
+h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.5rem);margin:3rem 0 .6rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+h2 small{font-family:var(--body);font-size:.45em;color:var(--mute);text-transform:none;letter-spacing:0;font-weight:400;margin-left:.5rem}
+h3{font-family:var(--display);font-size:1.45rem;margin:1.8rem 0 .3rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+p,li{max-width:44rem}
+.lede{font-size:1.18rem;color:#d8dfdc;max-width:42rem}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+code,kbd{font-family:var(--mono);font-size:.86em;background:var(--chip);padding:.08em .35em;border-radius:5px;border:1px solid var(--line)}
+blockquote{margin:1rem 0;padding:.3rem 0 .3rem 1rem;border-left:3px solid var(--amber);color:#d8dfdc}
+
+/* ---------------------------------------------------------------- the exit sign */
+.sign{--g1:var(--sign2);--g2:var(--sign);position:relative;display:inline-block;color:#f3faf5;text-decoration:none;
+ background:linear-gradient(180deg,var(--g1),var(--g2));border-radius:14px;padding:.9rem 1.3rem .7rem;
+ box-shadow:inset 0 0 0 3px #e8f2eb,inset 0 0 0 6px var(--g2),0 18px 50px rgba(0,0,0,.55),0 0 60px rgba(47,210,127,.12)}
+.sign .tab{position:absolute;right:1.1rem;top:-1.45rem;background:linear-gradient(180deg,var(--g1),var(--g2));border-radius:8px 8px 0 0;
+ padding:.25rem .7rem .15rem;font-family:var(--din);font-size:.72rem;letter-spacing:.14em;box-shadow:inset 0 0 0 3px #e8f2eb;border-bottom:0}
+.sign .big{display:block;font-family:var(--display);font-size:clamp(2.2rem,6vw,4.4rem);line-height:.92;text-transform:uppercase;letter-spacing:.02em}
+.sign .sub{display:block;font-family:var(--din);font-size:.86rem;letter-spacing:.06em;opacity:.92;margin-top:.35rem}
+.sign .arrow{display:inline-block;width:.8em;height:.8em;vertical-align:-.02em;margin-left:.2em}
+.sign.amber{--g1:#ffc24f;--g2:#e89a12;color:#141005;box-shadow:inset 0 0 0 3px #1a1406,inset 0 0 0 6px #e89a12,0 18px 50px rgba(0,0,0,.55)}
+.sign.amber .tab{box-shadow:inset 0 0 0 3px #1a1406}
+.sign.blue{--g1:#1b5fb8;--g2:#124a93}
+.sign.red{--g1:#c3252c;--g2:#9c1b21}
+
+/* ---------------------------------------------------------------- bands: her formula, at full width */
+.band{position:relative;background-size:cover;background-position:center;background-attachment:fixed;min-height:62vh;display:flex;align-items:flex-end;isolation:isolate}
+.band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,7,12,.15) 0%,rgba(5,7,12,.25) 45%,rgba(5,7,12,.92) 100%)}
+.band .in{max-width:76rem;width:100%;margin:0 auto;padding:6rem 1rem 2.4rem}
+.band.hero{min-height:88vh}
+.band.hero .in{padding-top:9rem}
+.band.short{min-height:44vh}
+@media (hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.band{background-attachment:scroll}body{background-attachment:scroll}}
+
+/* ---------------------------------------------------------------- doors: background, scrim, spacer, text */
+.doors{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(19rem,100%),1fr));gap:1rem;margin:1.2rem 0}
+a.shot{position:relative;display:block;overflow:hidden;border-radius:18px;text-decoration:none;color:var(--ink);isolation:isolate;
+ border:1px solid var(--line);box-shadow:0 10px 40px rgba(0,0,0,.45)}
+a.shot .bg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed;z-index:-3;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+a.shot .scrim{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(5,7,12,0) 20%,rgba(5,7,12,.55) 55%,rgba(5,7,12,.96) 100%)}
+a.shot .sp{display:block;padding-top:68%}
+a.shot .tx{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.1rem 1.05rem;display:block}
+a.shot .tx em{display:inline-block;font-style:normal;font-family:var(--din);font-size:.66rem;letter-spacing:.16em;color:#f3faf5;
+ background:linear-gradient(180deg,var(--sign2),var(--sign));padding:.2rem .5rem .12rem;border-radius:5px;box-shadow:inset 0 0 0 2px #e8f2eb;margin-bottom:.45rem}
+a.shot .tx b{display:block;font-family:var(--display);font-size:2rem;line-height:.95;text-transform:uppercase;letter-spacing:.02em}
+a.shot .tx span{display:block;color:#c7d0cd;font-size:.86rem;margin-top:.3rem;line-height:1.45}
+a.shot:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+@media (hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){a.shot .bg{background-attachment:scroll}}
+@media (prefers-reduced-motion:no-preference){
+ a.shot:hover .bg{transform:scale(1.06)}
+ a.shot::after{content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(47,210,127,0);transition:box-shadow .3s}
+ a.shot:hover::after{box-shadow:inset 0 0 0 2px rgba(47,210,127,.6),0 0 40px rgba(47,210,127,.25)}
+}
+
+/* ---------------------------------------------------------------- tiles and boards */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(13.5rem,1fr));gap:.8rem;margin:1.2rem 0}
+.tile{background:var(--glass);border:1px solid var(--line);border-radius:16px;padding:.95rem 1.05rem;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);position:relative}
+.tile .v{display:block;font-family:var(--din);font-size:clamp(1.7rem,3.6vw,2.3rem);line-height:1.05;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tile .v small{font-size:.5em;color:var(--mute);margin-left:.2rem}
+.tile .k{display:block;font-family:var(--din);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.35rem}
+.tile .n{display:block;font-size:.76rem;color:var(--mute);margin-top:.35rem;line-height:1.4}
+.tile.go .k{color:var(--go)}.tile.red .k{color:var(--red)}.tile.blue .k{color:var(--blue)}
+.board{position:relative;border-radius:20px;padding:1.2rem 1.2rem 1rem;margin:1.4rem 0;background:linear-gradient(var(--panel),var(--panel)) padding-box,
+ conic-gradient(from var(--a,0deg),rgba(47,210,127,.7),rgba(255,177,59,.7),rgba(90,169,255,.6),rgba(47,210,127,.7)) border-box;border:2px solid transparent}
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@media (prefers-reduced-motion:no-preference){.board{animation:spin 14s linear infinite}@keyframes spin{to{--a:360deg}}}
+.board h3{margin-top:.2rem}
+.board .stamp{font-size:.72rem;color:var(--mute)}
+.skel{display:inline-block;min-width:5ch;border-radius:6px;color:transparent!important;background:linear-gradient(90deg,#141b27 0%,#1f2937 40%,#141b27 80%);background-size:300% 100%}
+@media (prefers-reduced-motion:no-preference){.skel{animation:shimmer 1.4s ease-in-out infinite}@keyframes shimmer{from{background-position:100% 0}to{background-position:0 0}}}
+
+/* ---------------------------------------------------------------- panels, notes */
+.panel{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.2rem;margin:1.2rem 0;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.note{border-left:4px solid var(--amber);background:rgba(255,177,59,.06);padding:.7rem 1rem;border-radius:0 12px 12px 0;margin:1rem 0}
+.note.red{border-color:var(--red);background:rgba(255,90,95,.07)}
+.note.go{border-color:var(--go);background:rgba(47,210,127,.06)}
+.note.blue{border-color:var(--blue);background:rgba(90,169,255,.06)}
+.note b:first-child{font-family:var(--din);letter-spacing:.06em}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr));gap:1rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.cardx{background:var(--glass);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;position:relative;overflow:hidden}
+.cardx h3{margin-top:0}
+.cardx::before{content:"";position:absolute;inset:-40% -20% auto auto;width:60%;height:120%;background:radial-gradient(closest-side,rgba(47,210,127,.10),transparent);pointer-events:none}
+.pill{display:inline-block;font-family:var(--din);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:.16rem .5rem .1rem;border-radius:99px;border:1px solid var(--line);color:var(--mute);margin:0 .25rem .25rem 0;white-space:nowrap}
+.pill.go{color:#07140d;background:var(--go);border-color:var(--go)}
+.pill.red{color:#1a0506;background:var(--red);border-color:var(--red)}
+.pill.amber{color:#1a1206;background:var(--amber);border-color:var(--amber)}
+.pill.blue{color:#06101c;background:var(--blue);border-color:var(--blue)}
+.cite{font-size:.68em;vertical-align:super;text-decoration:none;margin-left:.1em;color:var(--mute)}
+.cite:hover{color:var(--amber)}
+
+/* ---------------------------------------------------------------- tables */
+.tw{overflow-x:auto;margin:1rem 0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:.84rem}
+th,td{padding:.55rem .7rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-family:var(--din);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);position:sticky;top:0;background:var(--panel);font-weight:400}
+tbody tr:hover{background:rgba(255,255,255,.025)}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+td .pill{margin:0}
+
+/* ---------------------------------------------------------------- figures */
+figure.fig{margin:1.4rem 0;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1rem 1rem .7rem}
+figure.fig .sv{overflow-x:auto;-webkit-overflow-scrolling:touch}
+figure.fig svg{display:block;width:100%;height:auto}
+@media (max-width:760px){figure.fig svg{min-width:720px}figure.fig{padding:.7rem .5rem .6rem}}
+figure.fig figcaption{font-size:.78rem;color:var(--mute);margin-top:.5rem;max-width:none}
+figure.fig figcaption b{color:var(--ink);font-weight:600}
+
+/* ---------------------------------------------------------------- controls */
+button,.btn{font:inherit;font-family:var(--din);letter-spacing:.06em;font-size:.86rem;border-radius:12px;border:1px solid var(--line);
+ background:var(--chip);color:var(--ink);padding:.55rem .95rem .45rem;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.go,button.go{background:linear-gradient(180deg,var(--sign2),var(--sign));border-color:#e8f2eb;color:#f3faf5;box-shadow:inset 0 0 0 1px #0b6b43}
+@media (prefers-reduced-motion:no-preference){
+ button,.btn{transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .2s}
+ button:hover,.btn:hover{transform:translateY(-1px) scale(1.04);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+ button:active,.btn:active{transform:scale(.97)}
+}
+button[aria-pressed=true]{background:var(--amber);color:#150e02;border-color:var(--amber)}
+.field{position:relative;margin:.9rem 0}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg2);border:1px solid #2a3544;border-radius:12px;padding:1.25rem .9rem .5rem}
+.field textarea{font-family:var(--mono);font-size:.9rem;min-height:5.5rem}
+.field label{position:absolute;left:.9rem;top:.95rem;color:var(--mute);pointer-events:none;transition:all .15s;font-size:1rem}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label,.field select+label{top:.3rem;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.out{font-family:var(--mono);font-size:.86rem;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:.8rem;min-height:3rem}
+
+/* ---------------------------------------------------------------- timeline */
+.tl{list-style:none;padding:0;margin:1.2rem 0;position:relative}
+.tl::before{content:"";position:absolute;left:6.4rem;top:0;bottom:0;width:2px;background:linear-gradient(var(--go),var(--amber),var(--red))}
+.tl li{display:grid;grid-template-columns:5.8rem 1fr;gap:1.4rem;padding:.55rem 0;max-width:none;position:relative}
+.tl li::before{content:"";position:absolute;left:6.15rem;top:1rem;width:.6rem;height:.6rem;border-radius:50%;background:var(--bg);border:2px solid var(--amber)}
+.tl li.th::before{border-color:var(--go);background:var(--go)}
+.tl time{font-family:var(--din);color:var(--amber);font-size:.9rem;text-align:right;padding-top:.15rem}
+.tl b{font-family:var(--display);font-size:1.2rem;text-transform:uppercase;letter-spacing:.02em;display:block;line-height:1.1}
+.tl p{margin:.15rem 0 0;font-size:.9rem;color:#cfd7d4}
+.era{font-family:var(--display);font-size:1.6rem;text-transform:uppercase;color:var(--go);margin:2rem 0 .2rem 7.3rem}
+@media (max-width:640px){.tl::before{left:.35rem}.tl li{grid-template-columns:1fr;gap:.1rem;padding-left:1.4rem}.tl li::before{left:.1rem}.tl time{text-align:left}.era{margin-left:1.4rem}}
+
+/* ---------------------------------------------------------------- words */
+dl.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(18rem,100%),1fr));gap:.8rem}
+dl.words>div{background:var(--glass);border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem}
+dl.words dt{font-family:var(--display);font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+dl.words dt .th{display:block;font-size:1.05rem;text-transform:none;color:var(--go);letter-spacing:0;margin-top:.2rem}
+dl.words dt .ro{font-family:var(--body);font-size:.72rem;color:var(--mute);text-transform:none;letter-spacing:0}
+dl.words dd{margin:.35rem 0 0;font-size:.86rem;color:#cfd7d4}
+
+/* ---------------------------------------------------------------- footer */
+footer.bot{border-top:1px solid var(--line);margin-top:3rem;background:linear-gradient(180deg,var(--bg2),#04060a)}
+footer.bot .in{max-width:76rem;margin:0 auto;padding:1.6rem 1rem 3rem;font-size:.8rem;color:var(--mute)}
+footer.bot a{color:var(--mute)}footer.bot a:hover{color:var(--ink)}
+footer.bot p{max-width:none;margin:.45rem 0}
+.fleet{line-height:1.9}.fleet a{margin-right:.55rem;white-space:nowrap}
+.support a{margin-right:.5rem}
+.exits{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0 1rem}
+.exits a{font-family:var(--display);font-size:1rem;text-transform:uppercase;text-decoration:none;color:#f3faf5;background:linear-gradient(180deg,var(--sign2),var(--sign));
+ padding:.35rem .6rem .2rem;border-radius:7px;box-shadow:inset 0 0 0 2px #e8f2eb}
+.exits a i{font-style:normal;font-family:var(--din);font-size:.62rem;opacity:.8;margin-right:.35rem}
+.disclose{font-size:.74rem;color:var(--mute);border-top:1px dashed var(--line);padding-top:.6rem;margin-top:1rem}
+.sponsored::after{content:" ↗";color:var(--mute)}
+
+/* ---------------------------------------------------------------- two languages */
+header.top .lang{margin-left:auto;font-family:var(--thai);font-size:.9rem;font-weight:600;text-decoration:none;color:var(--ink);
+ border:1px solid #2a3544;border-radius:9px;padding:.15rem .6rem;white-space:nowrap}
+header.top .lang:hover{border-color:var(--go);color:var(--go)}
+.sign .alt{display:block;font-family:var(--thaid);font-weight:600;font-size:clamp(1rem,2.4vw,1.35rem);line-height:1.3;margin-top:.25rem;opacity:.95}
+.sign .alt:lang(en){font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:clamp(1rem,2.4vw,1.4rem)}
+dl.words dt .th2{display:block;font-size:1.05rem;text-transform:none;color:var(--go);letter-spacing:0;margin-top:.2rem;font-family:var(--thaid)}
+html[lang=th] body{line-height:1.85}
+html[lang=th] h1,html[lang=th] h2,html[lang=th] h3,html[lang=th] .sign .big,html[lang=th] a.shot .tx b,html[lang=th] .tl b,html[lang=th] .era,
+html[lang=th] dl.words dt,html[lang=th] header.top nav,html[lang=th] .exits a,html[lang=th] .tile .k,html[lang=th] th,html[lang=th] .pill,html[lang=th] button,html[lang=th] a.shot .tx em,html[lang=th] .sign .tab{
+ font-family:var(--thaid);text-transform:none;letter-spacing:0}
+html[lang=th] h2{font-weight:700;line-height:1.3}html[lang=th] h3{font-weight:700;line-height:1.35}
+html[lang=th] .sign .big{font-weight:700;line-height:1.2;font-size:clamp(2rem,5.4vw,3.8rem)}
+html[lang=th] .sign .big[lang=en]{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:.92;font-size:clamp(2.2rem,6vw,4.4rem)}
+html[lang=th] a.shot .tx b{font-weight:700;font-size:1.7rem;line-height:1.2}
+html[lang=th] .tl b{font-weight:700;line-height:1.35}
+html[lang=th] header.top nav{font-weight:600;font-size:.9rem}
+html[lang=th] .tile .k{font-weight:600;font-size:.72rem}
+html[lang=th] .lede{line-height:1.8}
+
+/* ---------------------------------------------------------------- live dots */
+.live{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--din);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--go)}
+.live::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--go);box-shadow:0 0 10px var(--go)}
+@media (prefers-reduced-motion:no-preference){.live::before{animation:pulse 2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}}
+.stale{color:var(--amber)}.stale::before{background:var(--amber);box-shadow:0 0 10px var(--amber)}
+
+@media (max-width:760px){header.top .lang{order:2}header.top nav{order:3}
+ header.top nav{flex-wrap:nowrap;width:100%;justify-content:space-between}header.top nav a{white-space:nowrap}}
+@media (max-width:640px){html{font-size:18px}.band{min-height:52vh}.band.hero{min-height:80vh}.sign{padding:.8rem 1rem .6rem}.sign .tab{right:.8rem}
+ header.top nav{font-size:.86rem}}
+/* ---------------------------------------------------------------- the way back, on reference pages */
+a.invite{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:center;justify-content:center;padding:.6rem 1rem;text-decoration:none;
+ background:linear-gradient(180deg,var(--sign2),var(--sign));color:#f3faf5;box-shadow:inset 0 -2px 0 #e8f2eb33;font-size:.92rem}
+a.invite b{font-family:var(--display);font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;display:inline-flex;align-items:center;gap:.3rem}
+a.invite .arrow{width:.8em;height:.8em}
+a.invite:hover{color:#fff;filter:brightness(1.12)}
+html[lang=th] a.invite b{font-family:var(--thaid);text-transform:none;letter-spacing:0;font-size:1.1rem}
+a.paperlink{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:center;justify-content:space-between;margin:1.4rem 0;padding:.8rem 1rem;border-radius:16px;text-decoration:none;
+ color:var(--ink);border:1px solid var(--amber);background:linear-gradient(90deg,rgba(255,177,59,.13),rgba(47,210,127,.08));font-size:.95rem}
+a.paperlink b{font-family:var(--display);font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;color:var(--amber);display:inline-flex;align-items:center;gap:.3rem}
+a.paperlink .arrow{width:.8em;height:.8em}
+a.paperlink:hover{color:var(--ink);filter:brightness(1.12)}
+html[lang=th] a.paperlink b{font-family:var(--thaid);text-transform:none;letter-spacing:0;font-size:1.1rem}
+
+/* ---------------------------------------------------------------- home */
+.band.top{min-height:0}
+.band.top .in{padding:2.2rem 1rem 1.4rem}
+.sign.sm{padding:.6rem 1rem .5rem;border-radius:12px}
+.sign.sm .big{font-size:clamp(1.9rem,5vw,3rem)}
+.sign.sm .sub{font-size:.76rem}
+h1.q{font-size:clamp(2.2rem,7vw,4.4rem);margin:1.1rem 0 .5rem;max-width:18ch}
+html[lang=th] h1.q{font-family:var(--thaid);text-transform:none;line-height:1.25;font-size:clamp(2rem,6vw,3.6rem)}
+.nw{white-space:nowrap}
+.tick{display:flex;flex-wrap:wrap;gap:.2rem 1rem;align-items:center;font-family:var(--din);font-size:.9rem;color:#d8dfdc;margin:.4rem 0 0;max-width:none}
+.tick b{color:var(--ink);font-variant-numeric:tabular-nums}
+.calc{margin-top:1rem}
+#calc,.tip,#addrbox,.who{max-width:52rem}
+.calc .amt{margin:0 0 .7rem}
+.calc .amt input{font-family:var(--din);font-size:1.6rem;padding:1.5rem .9rem .4rem}
+.seg{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 .5rem}
+.seg button{flex:1 1 auto;padding:.5rem .6rem .4rem;font-size:.8rem}
+.gap{margin:.5rem 0 .2rem;font-size:1.02rem;min-height:1.6em}
+.gap b{color:var(--amber);font-family:var(--din);font-size:1.2em}
+.rt{padding:.55rem 0;border-bottom:1px solid var(--line)}
+.rt-h{display:flex;justify-content:space-between;gap:.8rem;align-items:baseline;line-height:1.3}
+.rt-h b{font-family:var(--din);font-size:1.25rem;white-space:nowrap}
+.rt-bar{height:.55rem;border-radius:6px;background:#121925;margin:.3rem 0}
+.rt-bar i{display:block;height:100%;border-radius:6px}
+.rt-f{display:flex;flex-wrap:wrap;gap:.4rem .6rem;align-items:center}
+.rt-f .pill{margin:0}
+.rt-f .btn{margin-left:auto}
+.rt.best .rt-h b{color:var(--go)}
+.rt.best{box-shadow:inset 3px 0 0 var(--go);padding-left:.6rem;margin-left:-.6rem}
+.rt.off{opacity:.38}
+.btn.sm{font-size:.76rem;padding:.35rem .75rem .28rem;border-radius:9px}
+details.fees{margin-top:.8rem}
+details.fees>summary{cursor:pointer;color:var(--mute);font-size:.86rem}
+.tip{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;margin:1rem 0;padding:.8rem 1.1rem;border-radius:16px;
+ border:1px dashed #2a3544;background:rgba(255,177,59,.05)}
+.tip p{margin:0;font-size:.95rem}
+.tries{margin-top:.6rem;gap:.4rem}
+.tries button{font-size:.76rem;padding:.35rem .7rem .28rem}
+.who{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.6rem}
+a.whorow{display:grid;grid-template-columns:1fr auto;grid-template-areas:"t p" "d d";gap:.1rem .6rem;align-items:center;padding:.6rem .9rem;
+ border:1px solid var(--line);border-radius:14px;background:var(--glass);text-decoration:none;color:var(--ink)}
+a.whorow b{grid-area:t;font-family:var(--display);font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+a.whorow .pill{grid-area:p;margin:0}
+a.whorow .small{grid-area:d}
+a.whorow:hover{border-color:var(--go)}
+html[lang=th] a.whorow b{font-family:var(--thaid);text-transform:none;letter-spacing:0;font-size:1.2rem}
+.tiles.two{grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.doors.four{grid-template-columns:repeat(4,1fr);margin-top:2.4rem}
+.doors.four a.shot .sp{padding-top:112%}
+.doors.four a.shot .tx b{font-size:1.7rem}
+footer.bot p.fine{font-size:.74rem;line-height:1.7}
+
+/* ---------------------------------------------------------------- tables fold into cards on phones */
+@media (max-width:640px){
+ .tw{overflow:visible;border:0;background:none}
+ .tw table,.tw tbody,.tw tr,.tw td{display:block;width:auto}
+ .tw thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ .tw tr{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:.5rem .8rem;margin:0 0 .6rem}
+ .tw td{border:0;padding:.18rem 0;text-align:left!important;overflow-wrap:anywhere}
+ .tw .pill{white-space:normal}
+ .tw td[data-l]:not([data-l=""])::before{content:attr(data-l);display:block;font-family:var(--din);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+ .tw td:empty{display:none}
+ .tiles.two{grid-template-columns:1fr 1fr;gap:.6rem}
+ .tiles.two .tile{padding:.75rem .8rem}
+ .tiles.two .tile .v{font-size:1.5rem}
+ .tiles.two .tile .n{font-size:.7rem}
+ .doors.four{grid-template-columns:1fr 1fr;gap:.6rem}
+ .doors.four a.shot .tx{padding:.7rem .75rem .75rem}
+ .doors.four a.shot .tx b{font-size:1.45rem}
+ .doors.four a.shot .tx span{font-size:.74rem}
+}
+/* ---------------------------------------------------------------- frozen: an exchange stops withdrawals */
+.rungs{list-style:none;padding:0;margin:1.2rem 0}
+.rungs>li{display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;padding:1.1rem 0;border-top:1px solid var(--line)}
+.rungs .rn{font-family:var(--din);font-size:2.6rem;line-height:1;color:var(--c);text-shadow:0 0 18px color-mix(in srgb,var(--c) 45%,transparent)}
+.rungs h3{margin:.1rem 0 .4rem;color:var(--c)}
+.rungs p{margin:.35rem 0}
+.rungs .bf{color:#c3ccd0;font-size:.9rem}
+.rungs .dh{margin:.6rem 0 .1rem;font-size:.9rem}
+.rungs ul{margin:.1rem 0 0;padding-left:1.15rem}
+.rungs li li{margin:.2rem 0}
+.fzrow{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1.2fr) minmax(0,1fr) auto auto;gap:.5rem;align-items:center;margin:.45rem 0}
+.fz input[type=text],.fz select{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg2);border:1px solid #2a3544;border-radius:10px;padding:.55rem .6rem;width:100%;min-width:0}
+.fz .fza{font-variant-numeric:tabular-nums;text-align:right}
+.fz .field input{padding:1.25rem .9rem .5rem}
+.fzf{display:inline-flex;gap:.35rem;align-items:center;font-size:.85rem;color:var(--ink);white-space:nowrap}
+.fzf input{width:1.15rem;height:1.15rem;accent-color:#8fd3ff}
+.fzx{padding:.35rem .7rem;font-size:1.1rem;line-height:1}
+.fzout{display:grid;gap:.7rem;margin-top:1rem}
+.fzo{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:.75rem 1rem}
+.fzo .k{display:block;font-size:.85rem;color:#c3ccd0}
+.fzo .v{display:block;font-family:var(--din);font-size:2.1rem;line-height:1.1;font-variant-numeric:tabular-nums;color:var(--go)}
+.fzo.o2 .v{color:var(--amber)}.fzo.o3 .v{color:var(--red)}.fzo.o3{border-color:var(--red)}
+.fzsq{display:flex;flex-wrap:wrap;gap:3px;margin-top:.45rem;align-items:center}
+.fzsq i{width:11px;height:11px;border-radius:2px;background:var(--go)}
+.fzo.o2 .fzsq i{background:var(--amber)}.fzo.o3 .fzsq i{background:var(--red)}
+.fzsq i.part{opacity:.45}
+.fzsq b{font-family:var(--din);font-size:.8rem;color:var(--mute);margin-left:.3rem}
+.fzhelp{border-color:var(--go)}
+@media (max-width:640px){
+ .fzrow{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:.6rem;border:1px solid var(--line);border-radius:12px}
+ .fzrow .fzn{grid-column:1/-1}
+ .fzrow .fzx{justify-self:end}
+ .rungs>li{grid-template-columns:2.4rem 1fr;gap:.6rem}
+ .rungs .rn{font-size:2rem}
+}
+@media print{header.top,footer.bot,.band{display:none}body{background:#fff;color:#000}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Frozen: Binance and the worse cases", "url": "https://offrampt.net/frozen/", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "name": "Offrampt", "url": "https://offrampt.net/"}, "license": "https://creativecommons.org/licenses/by/4.0/", "dateModified": "2026-10-30", "publisher": {"@type": "Organization", "name": "NaNoBotCo", "url": "https://nanobotco.github.io/index/", "email": "nan@motdang.net", "sameAs": ["https://motdang.net/", "https://nanobotco.github.io/mae-hong-son-loop/", "https://motdang.net/muay-thai/", "https://motdang.net/roads/", "https://wichaa.net/", "https://nanobotco.github.io/hand-poke/", "https://nanobotco.github.io/black-holes/", "https://nanobotco.github.io/quantum-computing/", "https://nanobotco.github.io/goin-fast/", "https://nanobotco.github.io/three-body/", "https://nanobotco.github.io/exceptional-magic/", "https://nanobotco.github.io/factoring/", "https://nanobotco.github.io/amulet-atlas/", "https://nanobotco.github.io/carolina-barbecue/", "https://nanobotco.github.io/buffalo-wings/", "https://nanobotco.github.io/pink-box/", "https://nanobotco.github.io/basque-tables/", "https://nanobotco.github.io/pinot-noir/", "https://nanobotco.github.io/care-abroad/", "https://nanobotco.github.io/thairoots/", "https://nanobotco.github.io/index/", "https://nanobotco.github.io/uptake/", "https://nanobotco.github.io/", "https://ask.motdang.net/", "https://ai.motdang.net/", "https://defiant.to/", "https://hongdam.net/", "https://hakfarang.net/", "https://offrampt.net/"]}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Frozen: When an exchange stops withdrawals", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "inLanguage": "en", "description": "Binance lost about $6.3 billion on 29 October 2026 and stopped withdrawals; Binance TH stopped crypto withdrawals. Each exchange's state, eight worse cases with what helps on each, and a counter of how many months you could live if your exchange froze.", "about": "Binance hack, 29 October 2026", "isPartOf": {"@type": "WebSite", "name": "Offrampt", "url": "https://offrampt.net/"}, "license": "https://creativecommons.org/licenses/by/4.0/"}</script>
+</head>
+<body data-base="/" data-rates="https://offrampt-rates.nanobotco.workers.dev/" data-lang="en">
+<a class="sr" href="#main">Skip to the page</a>
+<header class="top"><div class="in">
+<a class="brand" href="/" aria-label="Offrampt"><span class="plate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L17 7" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round"/><path d="M9 6 H18 V15" fill="none" stroke="#f3faf5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>OFFRAMPT</b></a>
+<nav aria-label="Exits"><a href="/tools/"><i>1</i>Tools</a><a href="/ramp/"><i>2</i>Ramp</a><a href="/cards/"><i>3</i>Cards</a><a href="/scams/"><i>4</i>Scams</a></nav><a class="lang" href="/th/frozen/" hreflang="th" lang="th">ไทย</a></div></header>
+<main id="main" class="wide"><section class="band " style="background-image:url(/img/band-frozen.jpg)"><div class="in"><div class="sign blue"><span class="tab">NOTICE</span><span class="big" lang="en">Frozen<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L18 6" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M9 5 H19 V15" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="alt" lang="th">ถอนไม่ได้</span><span class="sub">When an exchange stops withdrawals</span></div><p class="lede" style="margin-top:1.6rem">On 29 October 2026 thieves took about $6.3 billion from Binance, the largest crypto theft on record. Binance stopped withdrawals. Binance TH, its Thai partner, stopped crypto withdrawals. Many people in Thailand live from crypto. This page plans for worse than today.</p></div></section><div class="in">
+<div class="board" id="fzboard"><h3 style="margin:0 0 .6rem">The board</h3><div class="tw"><table><thead><tr><th>Place</th><th>Taking coins out</th><th>Putting in, trading</th><th>What they say</th></tr></thead><tbody><tr><td data-l="Place"><b>Binance</b><br><span class="pill red">Withdrawals paused</span><br><span class="small mute">binance.com, run from outside Thailand</span></td><td data-l="Taking coins out">Paused since 29 October. Binance expects to restart within 48 hours (30 October).<a class="cite" href="/sources/#s486" title="Binance pauses withdrawals as hackers suspected of stealing billions in crypto">[486]</a><a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></td><td data-l="Putting in, trading">Sources differ: RTÉ reports deposits running; THE STANDARD reports deposits paused too.<a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a><a class="cite" href="/sources/#s488" title="Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์">[488]</a></td><td data-l="What they say">“Rest assured that user funds are completely safe.” Co-founder Yi He says Binance will cover all hacking losses.<a class="cite" href="/sources/#s486" title="Binance pauses withdrawals as hackers suspected of stealing billions in crypto">[486]</a><a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></td></tr><tr><td data-l="Place"><b>Binance TH</b><br><span class="pill amber">Crypto withdrawals paused</span><br><span class="small mute">Gulf Binance Co., Ltd., licensed by the Thai SEC</span></td><td data-l="Taking coins out">Crypto withdrawals paused for a security check. No end date given.<a class="cite" href="/sources/#s489" title="ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต">[489]</a></td><td data-l="Putting in, trading">Trading, crypto deposits, and baht in and out running (Thansettakij, 07:11). An earlier statement paused crypto deposits too.<a class="cite" href="/sources/#s489" title="ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต">[489]</a><a class="cite" href="/sources/#s490" title="Binance โดนแฮ็กกว่า 2.12 แสนล้านบาท ด้าน Binance TH ยังปลอดภัย">[490]</a></td><td data-l="What they say">Its cold wallets (coins kept offline) are separate from Binance&#x27;s.<a class="cite" href="/sources/#s490" title="Binance โดนแฮ็กกว่า 2.12 แสนล้านบาท ด้าน Binance TH ยังปลอดภัย">[490]</a></td></tr><tr><td data-l="Place"><b>Thai SEC</b><br><span class="pill blue">Regulator</span><br><span class="small mute">The regulator; Binance&#x27;s own site is outside its watch</span></td><td data-l="Taking coins out">—</td><td data-l="Putting in, trading">—</td><td data-l="What they say">No significant impact on customers&#x27; assets in Thailand found so far. Licensed exchanges told to check customers&#x27; assets and report at once.<a class="cite" href="/sources/#s489" title="ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต">[489]</a></td></tr></tbody></table></div><p class="stamp">Checked 30 October 2026, 16:00 Bangkok time. Each exchange posts its own state in its app. A place with no report today is not on the board.</p></div>
+<h2>Today</h2><div class="tiles"><div class="tile red"><span class="k"></span><span class="v">$6.3B</span><span class="n">taken from Binance, by Binance&#x27;s own count; about ฿210 billion<a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a><a class="cite" href="/sources/#s488" title="Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์">[488]</a></span></div><div class="tile blue"><span class="k"></span><span class="v">$3B</span><span class="n">frozen on the blockchains so far, Binance says<a class="cite" href="/sources/#s488" title="Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์">[488]</a></span></div><div class="tile blue"><span class="k"></span><span class="v">$1.57B + $800M</span><span class="n">frozen by Tether and Circle, the companies behind USDT and USDC<a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></span></div><div class="tile amber"><span class="k"></span><span class="v">1 laptop</span><span class="n">Binance&#x27;s first look: the theft may have started on one engineer&#x27;s hacked laptop<a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></span></div><div class="tile "><span class="k"></span><span class="v">North Korea</span><span class="n">TRM Labs and Chainalysis, two blockchain tracing firms, name North Korean hackers<a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></span></div></div>
+<h2>Worse than today</h2><p>Eight steps, each worse than the one before. Each has happened somewhere before. Nobody knows which step this one stops at.</p>
+<ol class="rungs"><li style="--c:#8fd3ff"><span class="rn">0</span><div><h3>Paused</h3><p><b>What happens</b> Today. Binance and Binance TH stop crypto withdrawals. You see your coins in the app. You cannot move them.</p><p class="bf"><b>Before</b> Zipmex, an exchange with a large Thai business, stopped withdrawals on 20 July 2022. Thai withdrawals came back late the same day, except from one savings product.<a class="cite" href="/sources/#s483" title="Southeast Asian crypto exchange Zipmex suspends withdrawals amid crypto turmoil">[483]</a></p><p class="dh"><b>What helps</b></p><ul><li>An exchange posts its own state in its app and on its website.</li><li>A screenshot with the date showing is proof of a balance on that day.</li><li>The counter below adds up every place your money is.</li></ul></div></li><li style="--c:#9cc8ff"><span class="rn">1</span><div><h3>Weeks, not days</h3><p><b>What happens</b> The pause goes on. Prices move while your coins cannot. If you sell a little each month to pay rent, the rent comes before the exchange opens.</p><p class="bf"><b>Before</b> Celsius, a crypto lender, stopped withdrawals on 12 June 2022 and filed for bankruptcy on 13 July 2022.<a class="cite" href="/sources/#s491" title="Crypto firm Celsius pauses all transfers, withdrawals as markets tumble">[491]</a><a class="cite" href="/sources/#s492" title="Crypto Crash Drags Lender Celsius Network Into Bankruptcy">[492]</a></p><p class="dh"><b>What helps</b></p><ul><li>The counter below shows how many months the money outside a frozen place pays for.</li><li>Two ways to baht through two different companies: one can freeze while the other runs.</li></ul></div></li><li style="--c:#b4b8ff"><span class="rn">2</span><div><h3>The promise falls short</h3><p><b>What happens</b> Binance says it will cover every loss. About $6.3 billion is gone, about $3 billion is frozen, and its user fund (SAFU) held about $1 billion when last reported, in 2024. If the money falls short, customers get back a part, late, or a token that stands for the rest.</p><p class="bf"><b>Before</b> Mt. Gox, once the largest bitcoin exchange, failed in February 2014. Repayments began on 5 July 2024, ten years later. The deadline has since moved to 31 October 2026, with many customers still waiting.<a class="cite" href="/sources/#s493" title="Mt. Gox Files for Bankruptcy">[493]</a><a class="cite" href="/sources/#s494" title="Announcement regarding the balance of Bitcoin held by the company">[494]</a><a class="cite" href="/sources/#s495" title="Mt. Gox">[495]</a><a class="cite" href="/sources/#s496" title="Mt Gox starts making repayments in bitcoin and bitcoin cash: trustee">[496]</a><a class="cite" href="/sources/#s497" title="Mt. Gox Pushes Back Bitcoin Repayments to October 2026">[497]</a><a class="cite" href="/sources/#s488" title="Binance เผยถูกแฮ็กราว 6.3 พันล้านดอลลาร์">[488]</a></p><p class="dh"><b>What helps</b></p><ul><li>A claim runs on proof: statements, screenshots, deposit receipts, transaction IDs (TxID: the receipt number of a crypto transfer), and the exchange&#x27;s emails.</li><li>Notices and payouts go to the email and phone number on the account.</li></ul></div></li><li style="--c:#c9a6f2"><span class="rn">3</span><div><h3>The run spreads</h3><p><b>What happens</b> Fear moves to other exchanges. Many people withdraw at once; some exchanges slow or stop withdrawals, Thai ones too. Prices fall. A loan backed by crypto is sold off when the price falls.</p><p class="bf"><b>Before</b> FTX: about $6 billion was withdrawn in 72 hours, and it filed for bankruptcy on 11 November 2022.<a class="cite" href="/sources/#s498" title="Divisions in Sam Bankman-Fried&#x27;s Crypto Empire Blur on His Trading Titan Alameda&#x27;s Balance Sheet">[498]</a><a class="cite" href="/sources/#s499" title="Crypto exchange FTX saw $6 bln in withdrawals in 72 hours">[499]</a><a class="cite" href="/sources/#s500" title="Bankruptcy of FTX">[500]</a></p><p class="dh"><b>What helps</b></p><ul><li>Each exchange sets a daily withdrawal limit, shown in its app.</li><li>A loan backed by crypto has a liquidation price: the price at which the lender sells the coins to pay itself back.</li></ul></div></li><li style="--c:#e19ad6"><span class="rn">4</span><div><h3>USDT breaks</h3><p><b>What happens</b> USDT is a coin meant to stay at one US dollar; it is 47% of Bitkub&#x27;s own baht trading. Today Tether froze about $1.57 billion of it: one company can stop any USDT address. If people stop believing a dollar stands behind each coin, USDT sells for less than a dollar.</p><p class="bf"><b>Before</b> TerraUSD, another dollar coin, lost its dollar value in May 2022; about $45 billion of market value went in a week.<a class="cite" href="/sources/#s501" title="Terra $45 Billion Face Plant Creates Crowd of Crypto Losers">[501]</a><a class="cite" href="/sources/#s502" title="Terra (blockchain)">[502]</a><a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></p><p class="dh"><b>What helps</b></p><ul><li>The part of savings held in one coin is the part one company can stop.</li><li><a href="/">The Offrampt home page shows the USDT-to-baht price, live.</a></li></ul></div></li><li style="--c:#f08fb6"><span class="rn">5</span><div><h3>The bank door shuts</h3><p><b>What happens</b> Selling to a stranger (P2P, person to person) can bring you baht from someone else&#x27;s loss. The bank freezes your account. Since July 2026 the Bank of Thailand screens large USDT trades.</p><p class="bf"><b>Before</b> By 30 June 2025 the SEC had blocked more than 29,000 crypto mule accounts (accounts used to move money taken by fraud) and frozen about ฿186 million.<a class="cite" href="/sources/#s503" title="Bank of Thailand Flags Abnormal Stablecoin Trades in &#x27;Grey Economy&#x27; Crackdown">[503]</a><a class="cite" href="/sources/#s77" title="SEC strengthens measures to combat digital asset mule accounts, elevates blocking the misuse of foreign platforms for money laundering to reduce public harm (News No. 80/2025)">[77]</a><a class="cite" href="/sources/#s81" title="SEC is ready to elevate restrictions on illegal digital asset platforms after the new laws take effect today (News No. 89/2025)">[81]</a><a class="cite" href="/sources/#s82" title="SEC issues shared responsibility standards for digital asset business operators and continues collaboration with relevant agencies to combat mule digital asset accounts (News No. 202/2025)">[82]</a><a class="cite" href="/sources/#s105" title="Thailand Amends Emergency Decree on Technology Crime">[105]</a></p><p class="dh"><b>What helps</b></p><ul><li>A sale on an exchange licensed by the Thai SEC pays into a bank account in the seller&#x27;s own name.</li><li>Sale records show where the baht came from.</li></ul></div></li><li style="--c:#fb7f93"><span class="rn">6</span><div><h3>The fraud wave</h3><p><b>What happens</b> Fake Binance support on LINE, Facebook and the phone. “Compensation” forms that ask for your login. “Recovery” services that want a fee first.</p><p class="bf"><b>Before</b> On 29 October Binance told users not to trust “unofficial links, messages, or requests for account information”. The FBI says a person who offers to get lost crypto back may be running a second fraud.<a class="cite" href="/sources/#s486" title="Binance pauses withdrawals as hackers suspected of stealing billions in crypto">[486]</a><a class="cite" href="/sources/#s442" title="FBI Guidance for Cryptocurrency Scam Victims">[442]</a><a class="cite" href="/sources/#s429" title="พิษอาชญากรรมออนไลน์ปี 68 เกือบ 2 เดือนสูญ 3.4 พันล้าน">[429]</a></p><p class="dh"><b>What helps</b></p><ul><li>Recovery words are the 12 or 24 words that open a wallet. Whoever has them can empty it.</li><li>An address typed by hand reaches the exchange; a link in a message can reach a copy of it.</li><li>Hotline 1441 answers 24 hours a day; police reports go in at thaipoliceonline.go.th.</li></ul></div></li><li style="--c:#ff6a74"><span class="rn">7</span><div><h3>Your own phone</h3><p><b>What happens</b> Binance&#x27;s theft may have started on one laptop. Your phone and computer can open the same way: a stolen login, recovery words in a photo on iCloud or Google Photos, one password on two sites. Nobody can pause your own wallet.</p><p class="bf"><b>Before</b> In November 2025 Thailand&#x27;s cyber police (CCIB) worked a case where malware searched phones for Google Authenticator backups and recovery words, and attackers took over exchange accounts.<a class="cite" href="/sources/#s450" title="In hot pursuit of &#x27;cryware&#x27;: Defending hot wallets from attacks">[450]</a><a class="cite" href="/sources/#s451" title="Thai Authorities Partner With Private Sector To Recover $432,000 in Stolen Crypto">[451]</a><a class="cite" href="/sources/#s487" title="Hackers steal $6.3bn from cryptocurrency platform Binance">[487]</a></p><p class="dh"><b>What helps</b></p><ul><li>Recovery words on paper or metal stay off the internet. A photo of them goes up to iCloud or Google Photos.</li><li>SMS codes follow the phone number, and a SIM swap (moving a number to another SIM) hands them to someone else. An authenticator app stays on the phone.</li><li>Wallet-stealing apps arrive through links in chats and ads; a wallet maker&#x27;s own page links its own app.</li></ul></div></li><li style="--c:#ff5a5f"><span class="rn">8</span><div><h3>The family</h3><p><b>What happens</b> You go into hospital, or you die. Your family has no list, no keys and no idea who to call, and fraudsters find them first.</p><p class="dh"><b>What helps</b></p><ul><li>A written list of where the coins are, and whom to call, lets a family act without the recovery words.</li><li><a href="https://hongdam.net/studio/crypto-safety/">Hongdam&#x27;s family plan does this with you, without your recovery words in plain sight.</a></li></ul></div></li></ol>
+<div class="note red"><h3 style="margin-top:0">All at once</h3><p style="margin:0">Frozen for months. A part of the money comes back, late. Prices fall by half. USDT sells under a dollar. Your bank account is frozen when you sell. Fraud calls every day. The last line of the counter below is this case.</p></div>
+<section class="panel fz" id="fz" data-months="months" data-month1="month" data-need="Write what you spend in a month."><h2 style="margin-top:.2rem">How many months could you live?</h2><p class="small mute">Write where your money is, in baht, and what you spend in a month. Tick each place that has stopped withdrawals. This page adds the numbers in your browser.</p><div class="fzrows"><div class="fzrow"><input class="fzn" type="text" value="Binance" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex" selected>Exchange</option><option value="own">Your own wallet</option><option value="bank">Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox" checked><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div><div class="fzrow"><input class="fzn" type="text" value="Binance TH" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex" selected>Exchange</option><option value="own">Your own wallet</option><option value="bank">Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox" checked><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div><div class="fzrow"><input class="fzn" type="text" value="Bitkub" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex" selected>Exchange</option><option value="own">Your own wallet</option><option value="bank">Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox"><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div><div class="fzrow"><input class="fzn" type="text" value="Your own wallet" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex">Exchange</option><option value="own" selected>Your own wallet</option><option value="bank">Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox"><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div><div class="fzrow"><input class="fzn" type="text" value="Bank" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex">Exchange</option><option value="own">Your own wallet</option><option value="bank" selected>Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox"><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div></div><template id="fzrow"><div class="fzrow"><input class="fzn" type="text" value="" aria-label="Place" placeholder="Place"><select class="fzk" aria-label="Kind"><option value="ex" selected>Exchange</option><option value="own">Your own wallet</option><option value="bank">Baht in a bank</option></select><input class="fza" type="text" inputmode="numeric" autocomplete="off" aria-label="Baht" placeholder="฿0"><label class="fzf"><input type="checkbox"><span>Frozen</span></label><button type="button" class="fzx" aria-label="Remove">×</button></div></template><div class="row" style="margin:.6rem 0 1rem"><button type="button" class="fzadd">+ Add a place</button></div><div class="field"><input id="fzm" type="text" inputmode="numeric" autocomplete="off" placeholder=" "><label for="fzm">You spend in a month (baht)</label></div><div class="fzout"><div class="fzo o1"><span class="k">If the ticked places stay frozen</span><output class="v" aria-live="polite">—</output><div class="fzsq" aria-hidden="true"></div></div><div class="fzo o2"><span class="k">…and coins fall to half price</span><output class="v" aria-live="polite">—</output><div class="fzsq" aria-hidden="true"></div></div><div class="fzo o3"><span class="k">Worst: every exchange frozen, coins at half price</span><output class="v" aria-live="polite">—</output><div class="fzsq" aria-hidden="true"></div></div></div><p class="small mute" style="margin-bottom:0">Half price counts exchanges and your own wallet at half; baht in a bank stays whole. One square is one month.</p><noscript><p class="small">JavaScript.</p></noscript></section>
+<h2>Money gone?</h2><p>Hotline 1441 answers 24 hours a day. Police reports go in at thaipoliceonline.go.th. Under the 2023 technology crime decree, a bank can freeze the account the money went to as soon as the victim asks, before a police report.<a class="cite" href="/sources/#s80" title="พระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี พ.ศ. 2566 (Royal Gazette vol. 140, part 18 A, p. 1)">[80]</a></p><div class="grid2"><div class="cardx"><h3>Thai Police Online (online police report)</h3><p class="small">File a police report for online fraud and technology crime. Police name this site and hotline 1441 as the channels for online reports.</p><p class="small"><a href="https://thaipoliceonline.go.th/" rel="noopener" style="word-break:break-all">https://thaipoliceonline.go.th/</a></p></div><div class="cardx"><h3>Hotline 1441</h3><p class="small">24-hour hotline for technology crime advice; the Ministry of Digital Economy and Society&#x27;s AOC 1441 service coordinates freezing of scammers&#x27; bank accounts.</p><p class="small"><a href="https://www.ccib.go.th/" rel="noopener" style="word-break:break-all">https://www.ccib.go.th/</a></p></div><div class="cardx"><h3>Your bank&#x27;s hotline (account freeze)</h3><p class="small">Under the 2023 technology crime decree, a victim can ask the bank to suspend the receiving account at once, without first filing a police report.</p><p class="small"><a href="https://thaipublica.org/2023/03/electronic-crime-law-effective-now/" rel="noopener" style="word-break:break-all">https://thaipublica.org/2023/03/electronic-crime-law-effective-now/</a></p></div><div class="cardx"><h3>SEC complaint and tip-off centre 1207</h3><p class="small">Report a suspected unlicensed platform or investment solicitation by phone on 1207, by email to complaint@sec.or.th, or via SEC Live Chat.</p><p class="small"><a href="https://market.sec.or.th/public/idisc/th/InvestorAlert" rel="noopener" style="word-break:break-all">https://market.sec.or.th/public/idisc/th/InvestorAlert</a></p></div></div>
+<section class="panel fzhelp"><h2 style="margin-top:.2rem">Help, for a fee</h2><p>Hongdam (หงส์ดำ), a Chiang Rai company that does security and tech work, does these with you on a call: a safety check of where your coins are and of your phone and computer; your own wallet, set up with you; a family plan, so the people you trust can reach your coins if you cannot; the paperwork after a loss, for the police, the SEC and the exchange. Stolen coins rarely come back. Prices are on Hongdam&#x27;s page.</p>
+<p style="margin-bottom:0"><a class="btn go" href="https://hongdam.net/studio/crypto-safety/">Hongdam: crypto safety<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L18 6" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="M9 5 H19 V15" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p></section>
+</div></main>
+<footer class="bot"><div class="in">
+<div class="exits"><a href="/tools/"><i>1</i>Tools</a><a href="/ramp/"><i>2</i>Ramp</a><a href="/cards/"><i>3</i>Cards</a><a href="/scams/"><i>4</i>Scams</a><a href="/paper/"><i>▲</i>Paper Baht</a><a href="/support/"><i>฿</i>Support</a></div>
+<p class="fine"><a href="/networks/">Networks</a> · <a href="/markets/">Markets</a> · <a href="/rules/">Rules</a> · <a href="/how/">How</a> · <a href="/history/">History</a> · <a href="/words/">Words</a> · <a href="/sources/">Sources</a> · <a href="/data/">Data</a> · <a href="/for-agents/">For agents</a></p>
+<p class="fine"><b>Offrampt</b> — Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed. Text, figures and data Nan · hongdam.net · CC BY 4.0. Code MIT. Built 2026-10-30. Prices from Bitkub, Binance, CoinGecko and the Bank of Thailand,
+fetched at build and live from <a href="https://offrampt-rates.nanobotco.workers.dev/">the rates service</a>; each figure names its source on <a href="/sources/">the sources page</a>.
+Nothing here is advice about money, tax or law. · <a class="lang" href="/th/frozen/" hreflang="th" lang="th">ไทย</a></p>
+<div class="fleet">Also ours: <a href="https://motdang.net/" title="city directory for Chiang Mai and Chiang Rai">Mot Dang</a> · <a href="https://nanobotco.github.io/mae-hong-son-loop/" title="motorcycling the 600 km loop out of Chiang Mai — curves counted, air measured">The Mae Hong Son Loop</a> · <a href="https://motdang.net/muay-thai/" title="the eight limbs, the thirty named techniques, the ceremony, and every gym on the map">Muay Thai</a> · <a href="https://motdang.net/roads/" title="the square of 1296, four rings, and what each one did to the city — counted from the map">Roads of Chiang Mai</a> · <a href="https://wichaa.net/" title="Lanna manuscripts, the amulet market, and the traditions around them">wichaa</a> · <a href="https://nanobotco.github.io/hand-poke/" title="28 traditions of marking skin by hand — the leg-tattoo zone of Burma, the Shan States and Lanna, counted">Hand Poke</a> · <a href="https://nanobotco.github.io/black-holes/" title="black holes modelled and drawn from the equations — generators, the past, present and future, the legends">Black Holes, Drawn</a> · <a href="https://nanobotco.github.io/quantum-computing/" title="the history and theory of quantum computing in plain words, with demos; refreshed weekly">Quantum Computing, plainly</a> · <a href="https://nanobotco.github.io/goin-fast/" title="a dirt-simple explainer about speed — twenty measured speeds from the ground under the house to light, and what each one costs">Goin&#x27; Fast</a> · <a href="https://nanobotco.github.io/three-body/" title="the mathematics of the three-body problem in plain words, with the orbits found rather than copied">The Three-Body Problem</a> · <a href="https://nanobotco.github.io/exceptional-magic/" title="the octonions, triality, the magic square and E8, computed and drawn — a plain-spoken reading of one paper">Exceptional Magic</a> · <a href="https://nanobotco.github.io/factoring/" title="factoring from Eratosthenes to Shor — the records, the Riemann Hypothesis, and what it means for a bitcoin wallet; a hundred zeta zeros computed, every claim beside what it did">Big Numbers, Split</a> · <a href="https://nanobotco.github.io/amulet-atlas/" title="amulets, charms and talismans worldwide">Amulet Atlas</a> · <a href="https://nanobotco.github.io/carolina-barbecue/" title="barbecue in North and South Carolina">Carolina Barbecue</a> · <a href="https://nanobotco.github.io/buffalo-wings/" title="the American chicken wing">Wing Country</a> · <a href="https://nanobotco.github.io/pink-box/" title="the American mom-and-pop donut shop">Pink Box</a> · <a href="https://nanobotco.github.io/basque-tables/" title="Basque dining rooms of California, Nevada and Idaho">Basque Tables</a> · <a href="https://nanobotco.github.io/pinot-noir/" title="pinot noir: the vine, the regions, the cellars">Pinot Country</a> · <a href="https://nanobotco.github.io/care-abroad/" title="treatment across borders, with published prices and their dates">Care Abroad</a> · <a href="https://nanobotco.github.io/thairoots/" title="a root dictionary of Thai, with a word decomposer">Thai Roots</a> · <a href="https://nanobotco.github.io/index/" title="every corpus, site and repository, counted">The index</a> · <a href="https://nanobotco.github.io/uptake/" title="a field manual on publishing for machines that copy">Uptake</a> · <a href="https://nanobotco.github.io/" title="the portal">NaNoBotCo</a> · <a href="https://hakfarang.net/" title="เรื่องเงิน วีซ่า และชีวิตกับแฟนฝรั่ง">ฮักฝรั่ง</a></div>
+<div class="support">Sponsor: <a href="https://www.patreon.com/nanobotco" rel="noopener" target="_blank">Patreon</a> · <a href="https://ko-fi.com/defiantchiangmai" rel="noopener" target="_blank">Ko-fi</a> · Source: <a href="https://github.com/NaNoBotCo/offramp" rel="noopener">GitHub</a></div>
+<div class="support maker">Made by <a href="https://hongdam.net/" rel="noopener">Hongdam</a>, Chiang Rai.</div>
+</div></footer><script src="/js/i18n.js?v=10dde9fc" defer></script><script src="/js/frozen.js?v=e301d7f8" defer></script><script>(function(){var y=scrollY,b=document.body;addEventListener('scroll',function(){var n=scrollY;
+b.classList.toggle('nav-away',n>y&&n>240);y=n},{passive:true})})();</script>
+</body></html>
