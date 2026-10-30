@@ -1,0 +1,80 @@
+{
+ "id": "2026-10-30-stablecoins-stopped-growing",
+ "date": "2026-10-30",
+ "order": 3,
+ "kind": "market",
+ "signal": "stable",
+ "title_en": "Dollar stablecoins stopped growing this year",
+ "title_th": "สเตเบิลคอยน์ดอลลาร์หยุดโตในปีนี้",
+ "dek_en": "$304.7 billion a year ago, a $315.5 billion peak in May, $299.6 billion now. Thailand is narrowing the doors for USDT at the same time.",
+ "dek_th": "304.7 พันล้านดอลลาร์เมื่อปีก่อน สูงสุด 315.5 พันล้านในเดือนพฤษภาคม และ 299.6 พันล้านในวันนี้ ขณะเดียวกันไทยก็ทำให้ทางเข้าออกของ USDT แคบลง",
+ "body_en": [
+  "On DefiLlama's count, dollar stablecoins in circulation stood at $304.7 billion on 30 October 2025, peaked at $315.5 billion on 17 May 2026, and stand at $299.6 billion on 30 October 2026. In July, Forbes reported the fall after the May peak as the first in four years. June 2026 still set a volume record of $1.79 trillion.",
+  "USDT is 37% of the baht trading on Bitkub's own order book on 30 October; on other days of the past month it has been near half.",
+  "In Thailand the Bank of Thailand has screened abnormally large USDT trades since July 2026. In September the SEC proposed a 5 million baht daily cap per operator and an own-wallet rule for stablecoin transfers. On 30 October Tether froze over $1.5 billion of USDT taken from Binance."
+ ],
+ "body_th": [
+  "ตามการนับของ DefiLlama สเตเบิลคอยน์ดอลลาร์ที่หมุนเวียนอยู่ที่ 304.7 พันล้านดอลลาร์เมื่อ 30 ตุลาคม 2025 ขึ้นสูงสุด 315.5 พันล้านเมื่อ 17 พฤษภาคม 2026 และอยู่ที่ 299.6 พันล้านเมื่อ 30 ตุลาคม 2026 เดือนกรกฎาคม Forbes รายงานว่าการลดลงหลังจุดสูงสุดเดือนพฤษภาคมเป็นครั้งแรกในรอบสี่ปี ทั้งที่เดือนมิถุนายน 2026 ปริมาณการโอนยังทำสถิติสูงสุด 1.79 ล้านล้านดอลลาร์",
+  "USDT คิดเป็น 37% ของการซื้อขายเงินบาทในสมุดคำสั่งของ Bitkub เองเมื่อวันที่ 30 ตุลาคม วันอื่นในเดือนที่ผ่านมาอยู่ใกล้ครึ่งหนึ่ง",
+  "ในไทย ธนาคารแห่งประเทศไทยคัดกรองการซื้อขาย USDT ที่ใหญ่ผิดปกติตั้งแต่กรกฎาคม 2026 เดือนกันยายน ก.ล.ต. เสนอเพดาน 5 ล้านบาทต่อวันต่อผู้ประกอบธุรกิจ และเกณฑ์ให้โอนสเตเบิลคอยน์เฉพาะกระเป๋าของตนเอง วันที่ 30 ตุลาคม Tether อายัด USDT ที่ถูกขโมยจาก Binance มากกว่า 1.5 พันล้านดอลลาร์"
+ ],
+ "shape": "flat",
+ "speed": "months",
+ "read_en": "Flat for a year after four years of growth, with one bump to a May peak. A slow drift reads as money leaving on-chain dollars at the edges; a run would show as a step. The freezes cut both ways: they stopped part of the Binance theft, and they show one issuer can stop any address.",
+ "read_th": "ทรงตัวมาหนึ่งปีหลังจากโตต่อเนื่องสี่ปี มีจุดสูงสุดครั้งเดียวในเดือนพฤษภาคม การเคลื่อนช้าๆ แบบนี้คือเงินที่ค่อยๆ ออกจากดอลลาร์บนเชน ถ้าเป็นการแห่ถอนจะเห็นเป็นขั้นบันได การอายัดมีสองด้าน: หยุดเงินที่ถูกขโมยจาก Binance ได้บางส่วน และแสดงว่าผู้ออกเหรียญรายเดียวหยุดที่อยู่ใดก็ได้",
+ "sources": [
+  {
+   "title": "The Stablecoin Market Shrank For The First Time In Four Years. Watch The Volumes Instead.",
+   "url": "https://www.forbes.com/sites/digital-assets/2026/07/27/the-stablecoin-market-shrank-for-the-first-time-in-four-years-watch-the-volumes-instead/",
+   "publisher": "Forbes",
+   "date": "2026-07-27"
+  },
+  {
+   "title": "Stablecoins circulating (peggedUSD)",
+   "url": "https://defillama.com/stablecoins",
+   "publisher": "DefiLlama",
+   "date": "2026-09-23"
+  },
+  {
+   "title": "Bank of Thailand Flags Abnormal Stablecoin Trades in 'Grey Economy' Crackdown",
+   "url": "https://decrypt.co/373380/bank-of-thailand-flags-abnormal-stablecoin-trades-in-grey-economy-crackdown",
+   "publisher": "Decrypt",
+   "date": "2026-07-13"
+  },
+  {
+   "title": "The SEC proposes a 5 million baht daily cap per operator and an own-wallet rule for stablecoin transfers; comment closes 25 September.",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13335",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-11"
+  },
+  {
+   "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
+   "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
+   "publisher": "TechCrunch",
+   "date": "2026-10-29"
+  },
+  {
+   "title": "Bitkub public API: v3 market ticker",
+   "url": "https://api.bitkub.com/",
+   "publisher": "Bitkub Online",
+   "date": "2026-10-30"
+  }
+ ],
+ "links": [
+  {
+   "href": "networks/",
+   "en": "Stablecoins by chain",
+   "th": "สเตเบิลคอยน์แยกตามเชน"
+  },
+  {
+   "href": "markets/",
+   "en": "The market in baht",
+   "th": "ตลาดในสกุลบาท"
+  },
+  {
+   "href": "rules/",
+   "en": "Thai rules",
+   "th": "กฎของไทย"
+  }
+ ]
+}

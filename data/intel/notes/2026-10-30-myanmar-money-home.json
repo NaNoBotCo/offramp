@@ -1,0 +1,81 @@
+{
+ "id": "2026-10-30-myanmar-money-home",
+ "date": "2026-10-30",
+ "order": 0,
+ "kind": "bank",
+ "title_en": "Money home to Myanmar: 93% of senders use informal channels",
+ "title_th": "ส่งเงินกลับเมียนมา: 93% ของผู้ส่งใช้ช่องทางนอกระบบ",
+ "dek_en": "Hundi costs about 2.5%, banks about 10%, and the kyat has lost about 80% against the dollar since 2021.",
+ "dek_th": "ฮุนดีคิดราว 2.5% ธนาคารราว 10% และเงินจ๊าดอ่อนค่าลงราว 80% เทียบดอลลาร์ตั้งแต่ปี 2021",
+ "body_en": [
+  "About 1.75 million Myanmar citizens worked in Thailand officially in October 2023 (AMRO). A study by the Institute for Strategic Policy, reported by Thai PBS World in September 2026, says 93% of Myanmar remitters in Thailand used informal channels (IOM's 2024 survey), 60% used hundi agents, and about 68% of Myanmar's informal remittances come from Thailand. Hundi costs about 2.5%, against about 10% at banks in the past. The kyat has lost about 80% against the dollar since 2021.",
+  "Myanmar's Labour Ministry ordered overseas workers in 2023 to send 25% of earnings home through approved banks at a fixed rate; one worker reported 2,940 kyat per dollar against a market rate of 3,500 (Radio Free Asia). In May 2024 the Central Bank of Myanmar warned against unregulated digital currencies and acted against hundi transfers made with USDT (Tilleke & Gibbins).",
+  "In Thailand, USDT trades on licensed exchanges from 16 March 2025, and the SEC's September 2026 proposal would limit stablecoin transfers to the customer's own verified wallets."
+ ],
+ "body_th": [
+  "แรงงานสัญชาติเมียนมาทำงานในไทยอย่างถูกกฎหมายราว 1.75 ล้านคนในเดือนตุลาคม 2023 (AMRO) งานศึกษาของสถาบันนโยบายยุทธศาสตร์ที่ Thai PBS World รายงานเมื่อกันยายน 2026 ระบุว่า 93% ของคนเมียนมาในไทยที่ส่งเงินกลับบ้านใช้ช่องทางนอกระบบ (ผลสำรวจ IOM ปี 2024) 60% ใช้ตัวแทนฮุนดี และราว 68% ของเงินส่งกลับนอกระบบของเมียนมามาจากไทย ฮุนดีคิดราว 2.5% เทียบกับราว 10% ที่ธนาคารในอดีต เงินจ๊าดอ่อนค่าลงราว 80% เทียบดอลลาร์ตั้งแต่ปี 2021",
+  "ปี 2023 กระทรวงแรงงานเมียนมาสั่งให้แรงงานในต่างประเทศส่งรายได้ 25% กลับบ้านผ่านธนาคารที่ได้รับอนุญาตในอัตราคงที่ แรงงานคนหนึ่งได้ 2,940 จ๊าดต่อดอลลาร์ ขณะที่อัตราตลาดอยู่ที่ 3,500 (Radio Free Asia) เดือนพฤษภาคม 2024 ธนาคารกลางเมียนมาเตือนเรื่องสกุลเงินดิจิทัลที่ไม่มีการกำกับ และดำเนินการกับการโอนแบบฮุนดีที่ใช้ USDT (Tilleke & Gibbins)",
+  "ในไทย USDT ซื้อขายบนศูนย์ซื้อขายที่ได้รับอนุญาตตั้งแต่ 16 มีนาคม 2025 และข้อเสนอของ ก.ล.ต. เดือนกันยายน 2026 จะจำกัดการโอนสเตเบิลคอยน์ให้เฉพาะกระเป๋าที่ยืนยันแล้วว่าเป็นของลูกค้าเอง"
+ ],
+ "shape": "falling",
+ "speed": "years",
+ "read_en": "Where banks cost four times what a hundi agent does and a home currency keeps falling, money moves through people. USDT is one more rail on the same route; both governments are narrowing it from their side.",
+ "read_th": "เมื่อธนาคารแพงกว่าตัวแทนฮุนดีสี่เท่า และเงินสกุลบ้านเกิดอ่อนค่าลงเรื่อยๆ เงินก็เดินทางผ่านคน USDT เป็นอีกรางหนึ่งบนเส้นทางเดิม และรัฐบาลทั้งสองฝั่งกำลังทำให้รางนี้แคบลง",
+ "sources": [
+  {
+   "title": "Remittances in Myanmar: recent developments and outlook",
+   "url": "https://amro-asia.org/wp-content/uploads/2024/07/AMRO-Analytical-Note_Remittances-in-Myanmar-Recent-Developments-and-Outlook.pdf",
+   "publisher": "AMRO",
+   "date": "2024-07-23"
+  },
+  {
+   "title": "Myanmar remittances from Thailand (Institute for Strategic Policy study)",
+   "url": "https://www.thaipbsworld.com/economy/558486",
+   "publisher": "Thai PBS World",
+   "date": "2026-09-24"
+  },
+  {
+   "title": "Myanmar orders overseas workers to send 25% of earnings home",
+   "url": "https://www.rfa.org/english/news/myanmar/worker-remittances-09132023092811.html",
+   "publisher": "Radio Free Asia",
+   "date": "2023-09-13"
+  },
+  {
+   "title": "Myanmar's central bank issues further warning against crypto trading",
+   "url": "https://www.tilleke.com/insights/myanmars-central-bank-issues-further-warning-against-crypto-trading/",
+   "publisher": "Tilleke & Gibbins",
+   "date": "2024-06-03"
+  },
+  {
+   "title": "Thailand approves USDT, USDC for trading",
+   "url": "https://decrypt.co/309347/thailand-approves-usdt-usdc-for-trading",
+   "publisher": "Decrypt",
+   "date": "2025-03-10"
+  },
+  {
+   "title": "Thailand's stablecoin proposal would block transfers to other people's wallets",
+   "url": "https://cryptoslate.com/thailands-stablecoin-proposal-would-block-transfers-to-other-peoples-wallets/",
+   "publisher": "CryptoSlate",
+   "date": "2026-09-12"
+  }
+ ],
+ "links": [
+  {
+   "href_en": "https://chiangmaivisadesk.com/migrant-workers/",
+   "href_th": "https://chiangmaivisadesk.com/th/migrant-workers/",
+   "en": "Migrant worker visas and permits, Chiang Mai Visa Desk",
+   "th": "วีซ่าและใบอนุญาตแรงงานข้ามชาติ, Chiang Mai Visa Desk"
+  },
+  {
+   "href_en": "https://hongdam.net/translate/",
+   "href_th": "https://hongdam.net/th/translate/",
+   "en": "Thai, English and Burmese translation, Hongdam",
+   "th": "แปลไทย อังกฤษ พม่า, Hongdam"
+  },
+  {
+   "href": "networks/",
+   "en": "Which network for USDT",
+   "th": "USDT ใช้เครือข่ายไหน"
+  }
+ ]
+}

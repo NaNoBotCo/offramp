@@ -11,7 +11,7 @@ SITE_URL="${SITE_URL:-https://offrampt.net}"
 
 STYLE="$HOME/.claude/bin/stylecheck.py"
 if [ -f "$STYLE" ]; then
-  python3 "$STYLE" tools js data/research data/routes.json data/ramp.json README.md NOTICE.txt || { echo "REFUSED: style. See ~/.claude/STYLE.md"; exit 4; }
+  python3 "$STYLE" tools js data/research data/intel data/ours.json data/routes.json data/ramp.json README.md NOTICE.txt || { echo "REFUSED: style. See ~/.claude/STYLE.md"; exit 4; }
 fi
 
 pages_ok() {  # every input site.py reads from build/
