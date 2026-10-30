@@ -1,0 +1,104 @@
+{
+ "id": "2026-10-30-bank-account-visa",
+ "date": "2026-10-30",
+ "order": 4,
+ "kind": "bank",
+ "title_en": "A Thai bank account depends on your visa, and one flag stops them all",
+ "title_th": "บัญชีธนาคารไทยขึ้นกับวีซ่าของคุณ และการถูกแจ้งเตือนครั้งเดียวหยุดทุกบัญชี",
+ "dek_en": "Kasikornbank's published list leaves out the DTV and short-stay visas. Since 2024, a fraud flag on a person stops every account that person holds.",
+ "dek_th": "รายการที่กสิกรไทยเผยแพร่ไม่รวม DTV และวีซ่าระยะสั้น ตั้งแต่ปี 2024 เมื่อบุคคลถูกแจ้งเตือนเรื่องฉ้อโกง ทุกบัญชีของคนนั้นจะถูกระงับ",
+ "body_en": [
+  "No Bank of Thailand rule lists which visas a bank must accept; each bank sets its own. Kasikornbank opens savings accounts for any Non-Immigrant visa with documents for the purpose of stay, and not for the TR visa, short-stay visas or the DTV. SCB lists a passport and a work permit. Bangkok Bank opens accounts in person at a branch in Thailand, not from abroad. Since January 2025, Bangkok Bank has stopped opening accounts for short-stay visitors and counts DTV holders among them, The Phuket Express and The Thaiger reported in May 2025.",
+  "Since 1 August 2024, Thai banks share suspect data through the Central Fraud Registry: when a person is flagged, electronic channels stop on all of that person's accounts until verification. Since January 2025, banks can suspend outgoing transfers before any victim reports a loss. In September 2026, the Bank of Thailand and 11 industry bodies adopted a framework to tighten customer checks again.",
+  "Without a Thai account, crypto still reaches baht: on Offrampt's calculator on 30 October, the two crypto-card routes draw cash at a Thai ATM for 3% to 6% less than the mid-market rate."
+ ],
+ "body_th": [
+  "ไม่มีกฎของธนาคารแห่งประเทศไทยที่กำหนดว่าธนาคารต้องรับวีซ่าประเภทใด แต่ละธนาคารกำหนดเอง กสิกรไทยเปิดบัญชีออมทรัพย์ให้ผู้ถือวีซ่า Non-Immigrant ทุกประเภทที่มีเอกสารตามวัตถุประสงค์การพำนัก และไม่เปิดให้ผู้ถือวีซ่า TR วีซ่าระยะสั้น หรือ DTV ไทยพาณิชย์ระบุหนังสือเดินทางและใบอนุญาตทำงาน ธนาคารกรุงเทพเปิดบัญชีที่สาขาในไทยด้วยตัวเองเท่านั้น เปิดจากต่างประเทศไม่ได้ ตั้งแต่มกราคม 2025 ธนาคารกรุงเทพหยุดเปิดบัญชีให้นักท่องเที่ยว และนับผู้ถือ DTV เป็นนักท่องเที่ยว The Phuket Express และ The Thaiger รายงานเมื่อพฤษภาคม 2025",
+  "ตั้งแต่ 1 สิงหาคม 2024 ธนาคารไทยแบ่งปันข้อมูลผู้ต้องสงสัยผ่านระบบ Central Fraud Registry เมื่อบุคคลถูกแจ้งเตือน ช่องทางอิเล็กทรอนิกส์ของทุกบัญชีของคนนั้นจะหยุดจนกว่าจะยืนยันตัวตน ตั้งแต่มกราคม 2025 ธนาคารระงับการโอนออกได้ก่อนที่จะมีผู้เสียหายแจ้งความ เดือนกันยายน 2026 ธนาคารแห่งประเทศไทยและองค์กรในอุตสาหกรรม 11 แห่งใช้กรอบการทำงานที่เข้มงวดการตรวจสอบลูกค้าขึ้นอีก",
+  "ไม่มีบัญชีไทย คริปโตก็ยังกลายเป็นเงินบาทได้: ในเครื่องคำนวณของ Offrampt วันที่ 30 ตุลาคม เส้นทางบัตรคริปโตสองเส้นทางกดเงินสดที่ตู้ ATM ไทยได้น้อยกว่าอัตรากลาง 3% ถึง 6%"
+ ],
+ "shape": "steps",
+ "speed": "years",
+ "read_en": "Flat for years, with steps toward stricter checks. The steps point toward named accounts and fewer ways in for foreigners, which keeps crypto cards and licensed exchanges in use for the people left outside.",
+ "read_th": "ทรงตัวมาหลายปี แต่มีขั้นที่เข้มงวดขึ้นเป็นระยะ ทุกขั้นชี้ไปที่บัญชีที่มีชื่อชัดเจนและทางเข้าที่น้อยลงสำหรับชาวต่างชาติ ทำให้บัตรคริปโตและศูนย์ซื้อขายที่ได้รับอนุญาตยังถูกใช้โดยคนที่อยู่ข้างนอก",
+ "sources": [
+  {
+   "title": "Savings Account (For foreigner or resident in Thailand)",
+   "url": "https://www.kasikornbank.com/en/personal/account/pages/savings.aspx",
+   "publisher": "Kasikornbank",
+   "date": "2026-09-23",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Deposit FAQs",
+   "url": "https://www.scb.co.th/en/personal-banking/faq/deposit-faq.html",
+   "publisher": "Siam Commercial Bank",
+   "date": "2026-09-23",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Foreign Customers: FAQs",
+   "url": "https://www.bangkokbank.com/en/Personal/Other-Services/Foreign-Customers/Faqs",
+   "publisher": "Bangkok Bank",
+   "date": "2026-09-23",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Banking Sectors Collaborates to Exchange Information Across Institutions and Implement Stringent Measures to Effectively Manage Mule Accounts (Joint Press Release)",
+   "url": "https://www.bot.or.th/en/news-and-media/news/news-20240902.html",
+   "publisher": "Bank of Thailand",
+   "date": "2024-09-02",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Bank of Thailand Enhances Measures to Manage Mule Accounts and Promotes a Shared Responsibility Framework (Press Release 2/2025)",
+   "url": "https://www.bot.or.th/en/news-and-media/news/news-20250130.html",
+   "publisher": "Bank of Thailand",
+   "date": "2025-01-30",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Bank of Thailand and Thai Financial Sector Join Forces to Escalate Proactive Measures Against Illicit Financial Activities (Press Release No. 35/2026)",
+   "url": "https://www.bot.or.th/en/news-and-media/news/news-20260910.html",
+   "publisher": "Bank of Thailand",
+   "date": "2026-09-10",
+   "accessed": "2026-09-23"
+  },
+  {
+   "title": "Bangkok Bank appears to tighten account policies for some foreign nationals",
+   "url": "https://thephuketexpress.com/2025/05/29/bangkok-bank-appears-to-tighten-account-policies-for-some-foreign-nationals-amid-financial-fraud-concerns/",
+   "publisher": "The Phuket Express",
+   "date": "2025-05-29"
+  },
+  {
+   "title": "Baht off: Bangkok Bank shuts the door on tourist accounts",
+   "url": "https://thethaiger.com/news/bangkok/baht-off-bangkok-bank-shuts-the-door-on-tourist-accounts",
+   "publisher": "The Thaiger",
+   "date": "2025-05-29"
+  }
+ ],
+ "links": [
+  {
+   "href": "ramp/",
+   "en": "Routes without a Thai bank",
+   "th": "เส้นทางสำหรับคนไม่มีบัญชีไทย"
+  },
+  {
+   "href": "cards/",
+   "en": "Crypto cards",
+   "th": "บัตรคริปโต"
+  },
+  {
+   "href_en": "https://hongdam.net/buy/?c=bank-account",
+   "href_th": "https://hongdam.net/th/buy/?c=bank-account",
+   "en": "Bank account opened with you, Hongdam",
+   "th": "เปิดบัญชีธนาคารไปด้วยกัน, Hongdam"
+  },
+  {
+   "href_en": "https://chiangmaivisadesk.com/",
+   "href_th": "https://chiangmaivisadesk.com/th/",
+   "en": "Visas and bank letters, Chiang Mai Visa Desk",
+   "th": "วีซ่าและหนังสือธนาคาร, Chiang Mai Visa Desk"
+  }
+ ]
+}

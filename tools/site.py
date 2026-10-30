@@ -20,6 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fleet                                   # noqa: E402
 import paper                                   # noqa: E402
+import intel                                   # noqa: E402
 from css import CSS                            # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -101,6 +102,9 @@ EXIT_NO = {e[0]: i + 1 for i, e in enumerate(EXITS)}
 EX = {e[0]: e for e in EXITS}
 MENU = EXITS[:HUMAN]
 SUPPORT = {s["id"]: s["url"] for s in FLEET["sites"] if s.get("lane") == "support"}
+# the footer's sibling row, matched to who reads this site: money, living in Thailand, security, the math under crypto
+ALSO = ("hongdam", "chiangmaivisadesk", "motdang", "hakfarang", "care-abroad", "hired-burglars", "quantum-computing", "factoring",
+        "all-factored", "chains-drawn", "chiang-rai", "golden-triangle", "thairoots", "wichaa", "index")
 
 ARROW = ('<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 L18 6" stroke="currentColor" '
          'stroke-width="3.2" stroke-linecap="round"/><path d="M9 5 H19 V15" fill="none" stroke="currentColor" '
@@ -277,23 +281,26 @@ JS_NAV = """<script>(function(){var y=scrollY,b=document.body;addEventListener('
 b.classList.toggle('nav-away',n>y&&n>240);y=n},{passive:true})})();</script>"""
 
 
-def subscribe():
-    h, p, lab, bt = (T("Rule changes, by email", "แจ้งเมื่อกฎเปลี่ยน ทางอีเมล"),
-                     T("Thai limits, fees and paperwork move. The list carries notices when a rule on these pages changes.",
-                       "วงเงิน ค่าธรรมเนียม และเอกสารของไทยเปลี่ยนได้ รายชื่อนี้ใช้แจ้งเมื่อกฎในหน้าเหล่านี้เปลี่ยน"),
-                     T("Email address", "อีเมล"), T("Send", "ส่ง"))
+def subscribe_form(source="offrampt", fid="subx"):
+    lab, bt = T("Email address", "อีเมล"), T("Send", "ส่ง")
     ok, bad, inc = T("On the list.", "ลงชื่อแล้ว"), T("That did not go through. Try again in a moment.", "ส่งไม่สำเร็จ ลองอีกครั้งในอีกสักครู่"), T("That address looks incomplete.", "อีเมลดูไม่ครบ")
-    return f"""<section class="panel" id="subx"><h3 style="margin-top:0">{h}</h3><p class="small mute">{p}</p>
-<form class="row" novalidate><label class="hp" aria-hidden="true" style="position:absolute;left:-9999px">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-<div class="field" style="flex:1 1 16rem;margin:0"><input type="email" name="email" id="subem" placeholder=" " autocomplete="email" required><label for="subem">{lab}</label></div>
-<button class="go" type="submit">{bt}</button></form><p class="said small" hidden></p></section>
-<script>(function(){{var r=document.getElementById('subx');if(!r)return;var f=r.querySelector('form'),s=r.querySelector('.said'),t0=Date.now();
+    return f"""<div class="subf" id="{fid}"><form class="row" novalidate><label class="hp" aria-hidden="true" style="position:absolute;left:-9999px">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+<div class="field" style="flex:1 1 14rem;margin:0"><input type="email" name="email" id="{fid}em" placeholder=" " autocomplete="email" required><label for="{fid}em">{lab}</label></div>
+<button class="go" type="submit">{bt}</button></form><p class="said small" role="status" hidden></p></div>
+<script>(function(){{var r=document.getElementById('{fid}');if(!r)return;var f=r.querySelector('form'),s=r.querySelector('.said'),t0=Date.now();
 f.addEventListener('submit',function(e){{e.preventDefault();var em=f.email.value.trim();
 if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(em)){{s.hidden=false;s.textContent='{inc}';return}}
 var b=f.querySelector('button');b.disabled=true;fetch('{LIST}',{{method:'POST',headers:{{'Content-Type':'application/json'}},
-body:JSON.stringify({{email:em,website:f.website.value,t0:t0,source:'offrampt',lang:'{LANG}'}})}})
+body:JSON.stringify({{email:em,website:f.website.value,t0:t0,source:'{source}',lang:'{LANG}'}})}})
 .then(function(x){{return x.json()}}).then(function(d){{b.disabled=false;s.hidden=false;s.textContent=d&&d.ok?'{ok}':'{bad}';if(d&&d.ok)f.reset()}})
 .catch(function(){{b.disabled=false;s.hidden=false;s.textContent='{bad}'}})}})}})();</script>"""
+
+
+def subscribe():
+    h, p = (T("Rule changes, by email", "แจ้งเมื่อกฎเปลี่ยน ทางอีเมล"),
+            T("Thai limits, fees and paperwork move. The list carries notices when a rule on these pages changes.",
+              "วงเงิน ค่าธรรมเนียม และเอกสารของไทยเปลี่ยนได้ รายชื่อนี้ใช้แจ้งเมื่อกฎในหน้าเหล่านี้เปลี่ยน"))
+    return f"""<section class="panel"><h3 style="margin-top:0">{h}</h3><p class="small mute">{p}</p>{subscribe_form()}</section>"""
 
 
 def write(p: Path, text: str):
@@ -303,7 +310,7 @@ def write(p: Path, text: str):
 
 def invite(path):
     """reference pages open with a way back to the human pages"""
-    if path in ("", "support/", "404/") or path in {e[0] for e in MENU}:
+    if path in ("", "support/", "404/") or path in {e[0] for e in MENU} or path.startswith("intel/"):
         return ""
     q, lab, href = {
         "networks/": (T("Sending crypto?", "กำลังจะส่งคริปโต?"), T("Check the address", "ตรวจที่อยู่"), U("") + "#check"),  # stylecheck: allow — link label to the address checker
@@ -330,8 +337,9 @@ def og_tags(path):
 
 
 def page(title, body, path, desc="", scripts=(), jsonld=None):
-    nav = "".join(f'<a href="{U(h)}"{" aria-current=page" if path == h else ""}><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>'
-                  for h, en, th, *_r in MENU)
+    nav = (f'<a href="{U("intel/")}"{" aria-current=page" if path.startswith("intel/") else ""}><i class="dot" aria-hidden="true"></i>{T("Intel", "ข่าวกรอง")}</a>'
+           + "".join(f'<a href="{U(h)}"{" aria-current=page" if path == h else ""}><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>'
+                     for h, en, th, *_r in MENU))
     js = "".join(f'<script src="{BASE}js/{s}?v={JSV[s]}" defer></script>' for s in scripts)
     url_en, url_th = SITE_URL + "/" + path, SITE_URL + "/th/" + path
     canon = url_th if LANG == "th" else url_en
@@ -370,6 +378,7 @@ Nothing here is advice about money, tax or law.""",
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#05070c">
 <link rel="icon" href="{BASE}icon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/atom+xml" title="{T('Offrampt intel', 'ข่าวกรอง Offrampt')}" href="{U('intel/feed.xml')}">
 <style>{CSS}</style>{ld}
 </head>
 <body data-base="{BASE}" data-rates="{RATES}" data-lang="{LANG}">
@@ -379,10 +388,10 @@ Nothing here is advice about money, tax or law.""",
 <nav aria-label="{T('Exits', 'ทางออก')}">{nav}</nav>{toggle}</div></header>
 <main id="main" class="wide">{invite(path)}{body}</main>
 <footer class="bot"><div class="in">
-<div class="exits">{exits}<a href="{U('paper/')}"><i>▲</i>{T("Paper Baht", "บาทกระดาษ")}</a><a href="{U('support/')}"><i>฿</i>{T("Support", "สนับสนุน")}</a></div>
-<p class="fine">{refs} · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · <a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a></p>
+<div class="exits"><a href="{U('intel/')}"><i>●</i>{T("Intel", "ข่าวกรอง")}</a>{exits}<a href="{U('paper/')}"><i>▲</i>{T("Paper Baht", "บาทกระดาษ")}</a><a href="{U('support/')}"><i>฿</i>{T("Support", "สนับสนุน")}</a></div>
+<p class="fine"><a href="{U('intel/feed.xml')}">{T("Intel feed (RSS)", "ฟีดข่าวกรอง (RSS)")}</a> · {refs} · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · <a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a></p>
 <p class="fine"><b>{NAME}</b> — {E(tag)} {foot} · {toggle}</p>
-{fleet.row_html(SELF, label=T("Also ours", "เว็บอื่นของเรา"), roster=FLEET)}
+{fleet.row_html(SELF, label=T("Also ours", "เว็บอื่นของเรา"), roster=FLEET, ids=ALSO)}
 {fleet.support_html(roster=FLEET, contact=False, self_id=SELF)}
 {fleet.maker_html(roster=FLEET, lang=LANG)}
 </div></footer>{js}{JS_NAV}
@@ -441,60 +450,71 @@ def first_clause(t):
 
 
 QTH = '<span class="nw">คริปโตของคุณ</span> <span class="nw">แลกได้กี่บาท</span>'
+H1TH = '<span class="nw">คริปโตในไทย</span> <span class="nw">แบบมองยาว</span>'
+
+
+LONG_QUOTE = ("Crypto is not actually crypto. Why? Because everything leaks and computers are solving hard math problems faster than people realize.",
+              "คริปโตไม่ได้ลับจริงอย่างชื่อ ทำไม? เพราะทุกอย่างรั่วได้ และคอมพิวเตอร์แก้โจทย์คณิตศาสตร์ยากๆ ได้เร็วกว่าที่คนคิด")
+
+
+def long_view():
+    ev = [
+        (T("Oct 2026", "ต.ค. 2026"), T("$6.3 billion", "6.3 พันล้านดอลลาร์"),
+         T("taken from Binance; its first check points to one engineer's laptop", "ถูกขโมยจาก Binance การตรวจสอบเบื้องต้นชี้ไปที่แล็ปท็อปของวิศวกรคนเดียว"), "intel/binance-pause/"),
+        (T("Aug 2026", "ส.ค. 2026"), T("$130 million+", "130 ล้านดอลลาร์ขึ้นไป"),
+         T("drained from Coldcard hardware wallets, offline ones among them: a 2021 flaw made seed phrases predictable", "ถูกดูดจากกระเป๋าฮาร์ดแวร์ Coldcard รวมทั้งเครื่องที่ออฟไลน์ ช่องโหว่ปี 2021 ทำให้เดา seed phrase ได้"), "history/"),
+    ]
+    ev.append((T("2019 → 2026", "2019 → 2026"), T("20M → 100k", "20 ล้าน → 1 แสน"),
+               T("qubits estimated to break RSA-2048; for bitcoin's curve, Google said under 500,000 in March 2026",
+                 "จำนวนคิวบิตที่ประมาณว่าใช้ถอด RSA-2048 ส่วนเส้นโค้งของบิตคอยน์ Google ประมาณว่าไม่ถึง 500,000 เมื่อมีนาคม 2026"), "intel/crypto-is-not-crypto/"))
+    tiles = "".join(f'<a class="lv" href="{U(h)}"><span class="k">{E(k)}</span><b>{E(v)}</b><span class="n">{E(t)}</span></a>' for k, v, t, h in ev)
+    more = next((n for n in intel.STATE["notes"] if n.get("kind") == "long"), None)
+    lk = (f'<a href="{U("intel/" + intel.slug(more) + "/")}">{E(T(more["title_en"], more["title_th"]))}</a> · ' if more else "")
+    return (f'<h2 id="long">{T("The long view", "มองยาว")}</h2>'
+            f'<blockquote class="lq"><p>{E(T(*LONG_QUOTE))}</p><cite>{T("Nan, who writes Offrampt", "Nan ผู้เขียน Offrampt")}</cite></blockquote>'
+            f'<div class="lvs">{tiles}</div>'
+            f'<p class="small">{lk}<a href="https://nanobotco.github.io/quantum-computing/">{T("Quantum Computing, plainly", "Quantum Computing, plainly")}</a> · '
+            f'<a href="https://nanobotco.github.io/factoring/">{T("Big Numbers, Split", "Big Numbers, Split")}</a> · <a href="{U("how/")}">{T("How crypto works", "คริปโตทำงานอย่างไร")}</a></p>')
 
 
 def home():
-    Uu, K, X, B, S = F["usdt"], F["bitkub"], F["fx"], F["btc"], F["stable"]
+    Uu, X, B = F["usdt"], F["fx"], F["btc"]
     tick = (f'<p class="tick"><span class="live stale" id="livestate">{T("baked", "ค่าตอนสร้าง")}</span>'
             f'<span>1 USDT = ฿<b data-live="usdt_bid">{Uu["last"]["bitkub"]:.2f}</b></span>'
             f'<span>$1 = ฿<b data-live="bot_mid">{X["mid"]:.2f}</b></span>'
             f'<span>1 BTC = <b data-live="btc_bid">{thb(B["thb"])}</b></span></p>')
+    jumps = "".join(f'<a class="jump" href="{h}">{E(t)}</a>' for h, t in (
+        ("#calc", T("Baht for my crypto", "คริปโตของฉันได้กี่บาท")), ("#intel", T("Intel", "ข่าวกรอง")),
+        ("#help", T("Banking help", "ช่วยเรื่องธนาคาร")), (U("how/"), T("How it works", "ทำงานอย่างไร"))))
     top = band("hero.jpg", sign(None, "Offrampt", "Offrampt", "Crypto in Thailand · the ways out to baht", "คริปโตในไทย · ทางออกสู่เงินบาท",
                                 cls="sm", tab="", alt_en="", alt_th="")
-               + f'<h1 class="q">{T("How many baht for your crypto?", QTH)}</h1>' + tick, "top")
-    who = "".join(
-        f'<a class="whorow" href="{U("ramp/")}#{sid}"><span class="pill {pc}">{E(T(pe, pt))}</span>'
-        f'<b>{E(T(te, tt))}</b><span class="small mute">{E(T(de, dt_))}</span></a>'
-        for sid, pc, pe, pt, te, tt, de, dt_ in [
-            ("visiting", "amber", "no Thai bank", "ไม่มีบัญชีธนาคารไทย", "Visiting", "มาเยือน",
-             "A crypto card, cash at any Thai ATM.", "บัตรคริปโต กดเงินสดที่ตู้ ATM ไทยได้ทุกตู้"),
-            ("living", "blue", "long stay", "พำนักระยะยาว", "Living here, unbanked", "อยู่ที่นี่ ยังไม่มีบัญชีธนาคาร",
-             "DTV, remote work, between visas.", "DTV ทำงานทางไกล ระหว่างรอวีซ่า"),
-            ("banked", "go", "Thai bank", "มีบัญชีธนาคารไทย", "Banked here", "มีบัญชีธนาคารที่นี่",
-             "A licensed Thai exchange, straight to your account.", "ศูนย์ซื้อขายไทยที่ได้รับอนุญาต เข้าบัญชีของคุณโดยตรง")])
-    sc = max((s for s in (R["scams"].get("stats") or []) if str(s.get("year")) == TODAY[:4] and "losses" in (s.get("metric") or "")  # stylecheck: allow — code
-              and isinstance(s.get("value"), (int, float))), key=lambda s: s["value"], default=None)
-    nums = "".join([
-        tile(T("USDT vs a bank wire", "USDT เทียบเงินโอนธนาคาร"), "+" + thb(Uu["year_thb_per_10k"]),
-             T(f'more per $10,000 than a bank wire, last year, before fees · median {pct(Uu["vs_tt_median"])} since {Uu["from"][:4]}',
-               f'ต่อ 10,000 ดอลลาร์ มากกว่าโอนผ่านธนาคาร ในหนึ่งปีที่ผ่านมา ก่อนหักค่าธรรมเนียม · ค่ามัธยฐาน {pct(Uu["vs_tt_median"])} ตั้งแต่ {Uu["from"][:4]}')
-             + cite("bitkub", "bot"), "go"),
-        tile(T("Bitkub, 24 hours", "Bitkub 24 ชั่วโมง"), T(f'฿{K["vol_total"] / 1e9:.1f}B', f'฿{K["vol_total"] / 1e6:,.0f} ล้าน'),
-             T(f'traded against baht; USDT is {K["usdt_share"]:.0f}% of it', f'มูลค่าซื้อขายเป็นเงินบาท USDT คิดเป็น {K["usdt_share"]:.0f}%') + cite("bitkub"), "blue"),
-        tile(T("Stablecoins", "สเตเบิลคอยน์"), f'${S["total_usd"] / 1e9:.0f}B',
-             T(f'in circulation worldwide; USDT is {S["top"][0]["share"]:.0f}%', f'หมุนเวียนทั่วโลก USDT คิดเป็น {S["top"][0]["share"]:.0f}%') + cite("llama")),
-    ])
-    if sc:
-        near, cl = "nearly" in sc.get("unit", ""), first_clause(fld(sc, "scope"))
-        note = E(T(f'{sc.get("metric", "")} · {cl[:1].lower() + cl[1:]}', f'{fld(sc, "metric")} · {cl}'))
-        nums += tile(T("Scams", "กลโกง"), ("~" if near else "") + T(f'฿{sc["value"]:g}B', f'฿{sc["value"]:g} พันล้าน'), note + cite(src_of(sc)), "red")  # stylecheck: allow — tile label: scam losses figure
+               + f'<h1 class="q">{T("Crypto in Thailand, for the long haul", H1TH)}</h1>'
+               + f'<p class="lede hl">{T("Banking here is hard for many people. Crypto is one tool for it: live prices, the routes to baht, and what is moving.", "การเปิดบัญชีและโอนเงินในไทยไม่ง่ายสำหรับหลายคน คริปโตเป็นเครื่องมือหนึ่ง: ราคาสด เส้นทางแลกเป็นบาท และสิ่งที่กำลังเปลี่ยน")}</p>'
+               + tick + intel.lead_strip(sys.modules[__name__]) + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
+    S = sys.modules[__name__]
+    newest = intel.STATE["notes"][0]["date"] if intel.STATE["notes"] else TODAY
     doors = "".join(door(h) for h, *_r in MENU)
     body = top + section(f"""
-<div id="calc">{calc_block(fees_open=False)}</div>
+<h2 id="intel">{T("Intel", "ข่าวกรอง")} <small>{T("updated", "อัปเดต")} {newest}</small></h2>
+{intel.signals_block(S)}
+<div class="ncards">{intel.latest(S, 3)}</div>
+<p><a href="{U('intel/')}">{T("All intel", "ข่าวกรองทั้งหมด")}{ARROW}</a></p>
+{intel.follow(S)}
+<h2 id="calc">{T("How many baht for your crypto?", QTH)}</h2>
+{calc_block(fees_open=False)}
 {tip()}
 <a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
-<h2 id="check">{T("Address checker", "ตัวตรวจที่อยู่")}</h2>
-{checker(tries=True)}
-<h2>{T("Where you stand", "คุณอยู่ตรงไหน")}</h2>
-<div class="who">{who}</div>
-<h2>{T("Numbers", "ตัวเลข")}</h2>
-<div class="tiles two">{nums}</div>
+<h2 id="help">{T("Banking help", "ช่วยเรื่องธนาคาร")} <small>{T("Hongdam, Chiang Mai Visa Desk, Mot Dang", "Hongdam, Chiang Mai Visa Desk, Mot Dang")}</small></h2>
+<div class="ours">{intel.ours_cards(S)}</div>
+{long_view()}
+<details class="panel fold" id="check"><summary>{T("Address checker", "ตัวตรวจที่อยู่")}</summary>
+{checker(tries=True)}</details>
 <div class="doors four">{doors}</div>
 {disclose() if REFS_ON else ""}
 """)
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "description": T(TAG_EN, TAG_TH),
           "inLanguage": ["en", "th"], "license": "https://creativecommons.org/licenses/by/4.0/"}
-    page(NAME, body, "", scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
+    page(NAME, body + intel.SHARE_JS, "", scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
 
 
 def recent_block():
@@ -1054,7 +1074,7 @@ def not_found():
 
 
 def machine_files():
-    pages = [""] + [h for h, *_r in EXITS] + ["paper/", "support/", "sources/", "data/", "for-agents/"]
+    pages = [""] + [h for h, *_r in EXITS] + ["paper/", "support/", "sources/", "data/", "for-agents/"] + intel.paths()
     urls = "".join(f'<url><loc>{SITE_URL}/{p}{h}</loc><lastmod>{TODAY}</lastmod>'
                    f'<xhtml:link rel="alternate" hreflang="en" href="{SITE_URL}/{h}"/><xhtml:link rel="alternate" hreflang="th" href="{SITE_URL}/th/{h}"/></url>'
                    for h in pages for p in ("", "th/"))
@@ -1077,6 +1097,7 @@ def machine_files():
 
 ## Pages
 """ + "".join(f"- {SITE_URL}/{h} · {SITE_URL}/th/{h} — {en} / {th}: {se}\n" for h, en, th, se, st_, _i in EXITS) + f"""- {SITE_URL}/paper/ · {SITE_URL}/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
+""" + intel.llms_lines(SITE_URL) + f"""
 ## Data
 - {SITE_URL}/data/facts.json
 - {SITE_URL}/data/series.json
@@ -1098,7 +1119,7 @@ Nothing here is advice about money, tax or law.
             shutil.copy(DATA / "research" / f"{k}.json", d / f"{k}.json")
 
 
-PAGES = (home, ramp, rules, cards_page, networks, markets, scams, how, history, words_page, tools, support, data_page, agents_page, not_found)
+PAGES = (ramp, rules, cards_page, networks, markets, scams, how, history, words_page, tools, support, data_page, agents_page, not_found)
 
 
 def main():
@@ -1110,9 +1131,13 @@ def main():
     if OG.exists():
         shutil.copytree(OG, SITE / "img" / "og", ignore=shutil.ignore_patterns("*.json"))
     shutil.copytree(ROOT / "js", SITE / "js")
+    intel.prepare(sys.modules[__name__])
     for LANG in ("en", "th"):
         for fn in PAGES:
             fn()
+    for LANG in ("en", "th"):
+        intel.build(sys.modules[__name__])
+        home()
     for LANG in ("en", "th"):
         sources_page()
     LANG = "en"

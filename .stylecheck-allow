@@ -110,3 +110,5 @@ data/research/rules.json	How tourist spending is going digital	a source's headli
 data/research/rules.json	crypto-sandbox-targets-tourists	a source's URL
 data/research/rules.json	Crypto sandbox targets tourists	a source's headline: Bangkok Post
 tools/site.py	none of them needs the words to help with anything. A request for them is the scam.	a fact about seed phrases, not advice
+data/intel/notes/2026-10-30-bank-account-visa.json	Bangkok Bank shuts the door on tourist accounts	a news outlet's headline, quoted as the source title
+data/intel/notes/2026-10-30-bank-account-visa.json	https://thethaiger.com/news/bangkok/baht-off-bangkok-bank-shuts-the-door-on-tourist-accounts	a source URL

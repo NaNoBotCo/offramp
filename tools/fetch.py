@@ -148,8 +148,10 @@ def mempool():
 
 
 def hashrate():
-    if fresh("mempool_hashrate.json"): return
-    save("mempool_hashrate.json", get("https://mempool.space/api/v1/mining/hashrate/1m"), "mempool.space /api/v1/mining/hashrate/1m")
+    if not fresh("mempool_hashrate.json"):
+        save("mempool_hashrate.json", get("https://mempool.space/api/v1/mining/hashrate/1m"), "mempool.space /api/v1/mining/hashrate/1m")
+    if not fresh("mempool_hashrate_3y.json", hours=72):  # the intel page's doubling time
+        save("mempool_hashrate_3y.json", get("https://mempool.space/api/v1/mining/hashrate/3y"), "mempool.space /api/v1/mining/hashrate/3y")
 
 
 def coingecko():
