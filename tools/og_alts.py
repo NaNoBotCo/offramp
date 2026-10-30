@@ -32,4 +32,6 @@ ALTS = {
     "th-paper": "การ์ด: บาทกระดาษ, เส้นราคาทองคำสีเขียวจากแอป",
     "en-tools": "Card: Tools, over rows of coloured wallet addresses",
     "en-words": "Card: Words, over glowing Thai and English crypto words",
+    "en-frozen": "Card: Frozen, over ice crystals growing across an exit lane at night",
+    "th-frozen": "การ์ด: ถอนไม่ได้, ผลึกน้ำแข็งงอกคลุมช่องทางออกตอนกลางคืน",
 }
