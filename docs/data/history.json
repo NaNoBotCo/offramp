@@ -2042,6 +2042,30 @@
    "confidence": "confirmed"
   },
   {
+   "date": "2026-10-29",
+   "era": "now",
+   "title": "Binance loses $6.3 billion",
+   "title_th": "Binance สูญ 6.3 พันล้านดอลลาร์",
+   "what": "Thieves take about $6.3 billion from Binance's hot wallets on 29 and 30 October, the largest crypto theft on record; the FBI names North Korea's TraderTraitor unit. Binance covers about 95% from its own funds and reopens withdrawals on 1 November. About $3 billion of USDT and USDC is frozen.",
+   "what_th": "คนร้ายขโมยเงินราว 6.3 พันล้านดอลลาร์จาก hot wallet ของ Binance เมื่อ 29 และ 30 ตุลาคม เป็นการขโมยคริปโตครั้งใหญ่ที่สุดเท่าที่มีบันทึก FBI ระบุว่าเป็นหน่วย TraderTraitor ของเกาหลีเหนือ Binance ใช้เงินของบริษัทชดเชยราว 95% และเปิดให้ถอนอีกครั้งวันที่ 1 พฤศจิกายน USDT และ USDC ราว 3 พันล้านดอลลาร์ถูกอายัด",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
+     "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+     "publisher": "CNBC",
+     "date": "2026-10-31"
+    },
+    {
+     "title": "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack",
+     "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+     "publisher": "CoinDesk",
+     "date": "2026-11-01"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
    "date": "2026-09-22",
    "era": "now",
    "title": "Where prices stand",
