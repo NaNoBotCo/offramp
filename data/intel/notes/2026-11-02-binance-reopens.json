@@ -1,0 +1,91 @@
+{
+ "id": "2026-11-02-binance-reopens",
+ "date": "2026-11-02",
+ "order": 1,
+ "kind": "hack",
+ "lead_until": "2026-11-16",
+ "title_en": "Binance reopened withdrawals three days after the $6.3 billion theft",
+ "title_th": "Binance เปิดให้ถอนอีกครั้ง สามวันหลังถูกขโมย 6.3 พันล้านดอลลาร์",
+ "dek_en": "Binance says it has replaced about 95% of the stolen coins with its own money. Mt. Gox took ten years to start paying back; FTX took over two.",
+ "dek_th": "Binance บอกว่าใช้เงินของบริษัทเองชดเชยเหรียญที่ถูกขโมยไปแล้วราว 95% ขณะที่ Mt. Gox ใช้เวลาสิบปีกว่าจะเริ่มจ่ายคืน และ FTX ใช้เวลากว่าสองปี",
+ "body_en": [
+  "Binance lost about US$6.3 billion from its hot wallets (wallets kept online so withdrawals can go out fast) on 29 and 30 October 2026. On 31 October it said it had covered up to 90% of the stolen assets; on 1 November, about 95%. The money came from its SAFU reserve fund, part of its futures insurance fund and its company treasury. Co-CEO Yi He said Binance would use half of the $1 billion SAFU fund and fill it back up.",
+  "Withdrawals reopened on Sunday 1 November, bitcoin first, at about 13:00 Thai time. The first phase covers 15 coins, among them BTC, ETH, USDT, USDC and XRP. The last 5% is coins outside the top ten, which Binance says are harder to buy in size. Since the reopening, users have taken out about $3.6 billion, Siam Blockchain reported, citing Cointelegraph. Binance's 2025 annual report gives $162.8 billion in customer assets.",
+  "About $3 billion of the stolen coins stay frozen, mostly USDT and USDC; bitcoin and ether cannot be frozen this way. On 31 October the FBI named North Korea's TraderTraitor unit and said the thieves had turned the coins into ether. Co-CEO Richard Teng called it a complex attack, with hacked laptops and malware built to erase its traces.",
+  "Binance TH is a separate company, Gulf Binance, licensed by the Thai SEC. It paused crypto withdrawals on 30 October while baht kept moving. The reports read for this note, up to 2 November, cover Binance.com's reopening and give no date for Binance TH."
+ ],
+ "body_th": [
+  "Binance สูญเงินราว 6.3 พันล้านดอลลาร์สหรัฐจาก hot wallet (กระเป๋าที่ต่ออินเทอร์เน็ตไว้ตลอดเพื่อให้ถอนได้เร็ว) เมื่อวันที่ 29 และ 30 ตุลาคม 2026 วันที่ 31 ตุลาคม บริษัทบอกว่าชดเชยได้แล้วถึง 90% และวันที่ 1 พฤศจิกายนเพิ่มเป็นราว 95% เงินมาจากกองทุนสำรอง SAFU ส่วนหนึ่งของกองทุนประกันฟิวเจอร์ส และเงินของบริษัท Yi He ซีอีโอร่วม บอกว่าจะใช้ครึ่งหนึ่งของกองทุน SAFU ที่มี 1 พันล้านดอลลาร์ แล้วเติมกลับให้เต็ม",
+  "การถอนเปิดอีกครั้งวันอาทิตย์ที่ 1 พฤศจิกายน เริ่มจากบิตคอยน์ ราวบ่ายโมงตามเวลาไทย รอบแรกมี 15 เหรียญ เช่น BTC, ETH, USDT, USDC และ XRP ส่วน 5% ที่เหลือเป็นเหรียญนอกสิบอันดับแรก ซึ่ง Binance บอกว่าซื้อจำนวนมากได้ยากกว่า หลังเปิดถอน ผู้ใช้ถอนออกไปแล้วราว 3.6 พันล้านดอลลาร์ ตามที่ Siam Blockchain รายงานโดยอ้าง Cointelegraph รายงานประจำปี 2025 ของ Binance ระบุว่ามีสินทรัพย์ของลูกค้า 162.8 พันล้านดอลลาร์",
+  "เหรียญที่ถูกขโมยราว 3 พันล้านดอลลาร์ยังถูกอายัดอยู่ ส่วนใหญ่เป็น USDT และ USDC ส่วนบิตคอยน์และอีเธอร์อายัดแบบนี้ไม่ได้ วันที่ 31 ตุลาคม FBI ระบุว่าเป็นหน่วย TraderTraitor ของเกาหลีเหนือ และบอกว่าคนร้ายแปลงเหรียญเป็นอีเธอร์แล้ว Richard Teng ซีอีโอร่วม เรียกว่าเป็นการโจมตีที่ซับซ้อน ใช้แล็ปท็อปที่ถูกแฮ็กและมัลแวร์ที่ทำมาเพื่อลบร่องรอย",
+  "Binance TH เป็นอีกบริษัทหนึ่ง คือ Gulf Binance ซึ่งได้รับอนุญาตจาก ก.ล.ต. ไทย ระงับการถอนคริปโตตั้งแต่ 30 ตุลาคม ขณะที่เงินบาทยังเข้าออกได้ รายงานที่อ่านสำหรับบันทึกนี้ถึงวันที่ 2 พฤศจิกายน พูดถึงการเปิดถอนของ Binance.com และยังไม่มีวันเปิดของ Binance TH"
+ ],
+ "shape": "trough",
+ "speed": "days",
+ "read_en": "The drop came in hours and the climb back is taking days, not the years of Mt. Gox (2014, repayments from 2024) or FTX (2022, repayments from 2025). The difference is the balance sheet: those firms had no money left, and Binance's $6.3 billion hole is about 4% of the $162.8 billion it holds for customers. Outflows of $3.6 billion so far are about 2% of that. The guess: withdrawals settle within weeks unless Binance's promised proof-of-reserves report shows a gap. The way in was laptops and people, not the math under bitcoin; the keys sat on machines someone used every day.",
+ "read_th": "ร่วงลงในไม่กี่ชั่วโมง และกำลังกลับขึ้นในไม่กี่วัน ไม่ใช่หลายปีอย่าง Mt. Gox (ล้มปี 2014 เริ่มจ่ายคืนปี 2024) หรือ FTX (ล้มปี 2022 เริ่มจ่ายคืนปี 2025) ต่างกันที่เงินในมือ บริษัทเหล่านั้นไม่เหลือเงิน ส่วนรูของ Binance ขนาด 6.3 พันล้านดอลลาร์ คิดเป็นราว 4% ของ 162.8 พันล้านที่ถือไว้ให้ลูกค้า เงินที่ถอนออกไปแล้ว 3.6 พันล้านคิดเป็นราว 2% คาดได้ว่าการถอนจะกลับเป็นปกติภายในไม่กี่สัปดาห์ เว้นแต่รายงานพิสูจน์ทุนสำรอง (proof of reserves) ที่ Binance บอกว่าจะเปิดเผย จะพบว่าเงินขาด ทางเข้าคือแล็ปท็อปและคน ไม่ใช่คณิตศาสตร์ของบิตคอยน์ กุญแจอยู่บนเครื่องที่มีคนใช้ทุกวัน",
+ "strip_en": "Binance reopened withdrawals on 1 November and says 95% is covered. Binance TH has no date yet.",
+ "strip_th": "Binance เปิดถอนอีกครั้ง 1 พฤศจิกายน บอกว่าชดเชยแล้ว 95% ส่วน Binance TH ยังไม่มีวันเปิด",
+ "sources": [
+  {
+   "title": "Binance resumes withdrawals following $6.3 billion hack, says 90% of stolen user assets are covered",
+   "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+   "publisher": "CNBC",
+   "date": "2026-10-31"
+  },
+  {
+   "title": "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack",
+   "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+   "publisher": "CoinDesk",
+   "date": "2026-11-01"
+  },
+  {
+   "title": "Binance คืนชีพ! เปิดถอนคริปโตเฟสแรก หลังควักเงินชดเชยเหรียญ 95% FBI ฟันธงฝีมือแฮ็กเกอร์โสมแดง",
+   "url": "https://mgronline.com/around/detail/9690000104869",
+   "publisher": "MGR Online",
+   "date": "2026-11-01"
+  },
+  {
+   "title": "Binance เปิดถอนคริปโตอีกครั้งหลังถูกแฮก เงินไหลออก $3.6 พันล้าน",
+   "url": "https://siamblockchain.com/2026/11/02/binance-reopens-withdrawals-3-6b-outflow-thorchain-fbi/",
+   "publisher": "Siam Blockchain",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Binance เปิดระบบถอนบิตคอยน์แล้ว หลังชดเชยสินทรัพย์ถูกแฮ็กได้กว่า 95%",
+   "url": "https://www.bangkokbiznews.com/world/economics/1258792",
+   "publisher": "กรุงเทพธุรกิจ",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "ก.ล.ต. เกาะติด Binance สั่งคุมเสี่ยง–Binance TH พักถอนคริปโต",
+   "url": "https://www.thansettakij.com/finance/wealth-tech/672587",
+   "publisher": "Thansettakij",
+   "date": "2026-10-30"
+  }
+ ],
+ "links": [
+  {
+   "href": "frozen/",
+   "en": "Frozen",
+   "th": "ถอนไม่ได้",
+   "lead": true
+  },
+  {
+   "href": "ramp/",
+   "en": "Other routes to baht",
+   "th": "เส้นทางอื่นสู่เงินบาท"
+  },
+  {
+   "href": "history/",
+   "en": "History",
+   "th": "ประวัติ"
+  },
+  {
+   "href_en": "https://hongdam.net/fix/",
+   "href_th": "https://hongdam.net/th/fix/",
+   "en": "Security and tech fixes, Hongdam",
+   "th": "แก้ปัญหาความปลอดภัยและเทคนิค, Hongdam"
+  }
+ ]
+}
