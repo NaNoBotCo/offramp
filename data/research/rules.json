@@ -1271,6 +1271,28 @@
    }
   },
   {
+   "name": "Vcex.io (vcex.io, VCEX app)",
+   "date": "2026-11-07",
+   "action": "Access block scheduled from 7 Nov 2026; criminal complaint 7 Oct 2026 against As Sure Technology Co., Ltd. and four people for an unlicensed exchange run from 24 Dec 2021 to 2 Sep 2022.",
+   "action_th": "กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 7 พ.ย. 2026 มีการกล่าวโทษทางอาญาเมื่อวันที่ 7 ต.ค. 2026 ต่อบริษัท As Sure Technology และบุคคลอีก 4 ราย กรณีประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาตระหว่างวันที่ 24 ธ.ค. 2021 ถึง 2 ก.ย. 2022",
+   "source": {
+    "title": "SEC files criminal complaint against As Sure Technology Co., Ltd., its directors and related persons for operating an unlicensed digital asset exchange business, and notifies access blocking effective 7 November 2026 (News No. 215/2026)",
+    "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13408&NewsNo=215&NewsYear=2026&Lang=EN",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "name": "Bitget (bitget.com)",
+   "date": "2026-12-05",
+   "action": "Access block scheduled from 5 Dec 2026; criminal complaint 5 Nov 2026 against BG Limited and one alleged supporter for an unlicensed exchange with Thai-language service, 2022 to 2025. Named on the SEC alert list 8 May 2023; the Bitget Wallet app added 19 Aug 2025.",
+   "action_th": "กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 5 ธ.ค. 2026 มีการกล่าวโทษทางอาญาเมื่อวันที่ 5 พ.ย. 2026 ต่อ BG Limited และผู้สนับสนุน 1 ราย กรณีประกอบธุรกิจศูนย์ซื้อขายโดยไม่ได้รับอนุญาตและให้บริการเป็นภาษาไทยช่วงปี 2022 ถึง 2025 อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ตั้งแต่วันที่ 8 พ.ค. 2023 และแอป Bitget Wallet ถูกเพิ่มเมื่อวันที่ 19 ส.ค. 2025",
+   "source": {
+    "title": "SEC files criminal complaint against BG Limited and one alleged supporter for operating an unlicensed digital asset exchange business, and notifies access blocking effective 5 December 2026 (News No. 241/2026)",
+    "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=241&NewsYear=2026&Lang=EN",
+    "date": "2026-11-05"
+   }
+  },
+  {
    "name": "Binance (binance.com)",
    "date": "2021-04-05",
    "action": "Named on the SEC Investor Alert list as not licensed. Its Thai licensed affiliate trades as Binance TH (Gulf Binance).",
@@ -1286,17 +1308,6 @@
    "date": "2022-05-17",
    "action": "Named on the SEC Investor Alert list as not licensed.",
    "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต",
-   "source": {
-    "title": "SEC Investor Alert list (digital assets)",
-    "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
-    "date": "2026-09-23"
-   }
-  },
-  {
-   "name": "Bitget",
-   "date": "2023-05-08",
-   "action": "Named on the SEC Investor Alert list as not licensed; the Bitget Wallet app added 19 Aug 2025.",
-   "action_th": "อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. ว่าไม่ได้รับอนุญาต แอป Bitget Wallet ถูกเพิ่มเข้ารายชื่อเมื่อวันที่ 19 ส.ค. 2025",
    "source": {
     "title": "SEC Investor Alert list (digital assets)",
     "url": "https://market.sec.or.th/public/idisc/th/Viewmore/invalert-head?LicenseType=03&PublicFlag=Y",
@@ -2310,6 +2321,20 @@
    "event": "The OECD lists Thailand among jurisdictions starting crypto tax data exchanges (CARF) by 2028.",
    "event_th": "OECD ระบุให้ไทยอยู่ในกลุ่มประเทศและเขตอำนาจที่จะเริ่มแลกเปลี่ยนข้อมูลภาษีคริปโต (CARF) ภายในปี 2028",
    "source_url": "https://www.oecd.org/content/dam/oecd/en/networks/global-forum-tax-transparency/commitments-carf.pdf",
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-10-07",
+   "event": "The SEC files a criminal complaint against As Sure Technology and four people over the unlicensed Vcex.io exchange; access is to be blocked from 7 November.",
+   "event_th": "ก.ล.ต. กล่าวโทษ As Sure Technology และบุคคลอีก 4 ราย กรณีศูนย์ซื้อขาย Vcex.io ที่ไม่ได้รับอนุญาต กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 7 พฤศจิกายน",
+   "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13408&NewsNo=215&NewsYear=2026&Lang=EN",
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-05",
+   "event": "The SEC files a criminal complaint against BG Limited, operator of Bitget, and one alleged supporter; access is to be blocked from 5 December.",
+   "event_th": "ก.ล.ต. กล่าวโทษ BG Limited ผู้ให้บริการ Bitget และผู้สนับสนุน 1 ราย กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 5 ธันวาคม",
+   "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=241&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
   }
  ],
