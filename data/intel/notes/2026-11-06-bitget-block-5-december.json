@@ -1,0 +1,116 @@
+{
+ "id": "2026-11-06-bitget-block-5-december",
+ "date": "2026-11-06",
+ "order": 1,
+ "kind": "rule",
+ "title_en": "The SEC filed a criminal complaint against Bitget; Thailand blocks it from 5 December",
+ "title_th": "ก.ล.ต. กล่าวโทษ Bitget ไทยปิดกั้นการเข้าถึงตั้งแต่ 5 ธันวาคม",
+ "dek_en": "Sixteen days earlier Bitget said it would buy a licensed Thai exchange; that deal needs the SEC's approval. Block dates set by the SEC: one in 2025, five in 2026, the last three inside ten weeks.",
+ "dek_th": "สิบหกวันก่อนหน้านั้น Bitget ประกาศแผนซื้อศูนย์ซื้อขายไทยที่มีใบอนุญาต ซึ่งต้องได้รับความเห็นชอบจาก ก.ล.ต. วันปิดกั้นที่ ก.ล.ต. กำหนด: ปี 2025 หนึ่งครั้ง ปี 2026 ห้าครั้ง สามครั้งหลังอยู่ภายในสิบสัปดาห์",
+ "body_en": [
+  "On 5 November 2026 the Thai Securities and Exchange Commission (SEC) filed a criminal complaint with the Economic Crime Suppression Division against BG Limited, the company behind bitget.com, for running a digital asset exchange without a Thai licence. The same day it sent Bitget's website, its other domains and its app to the Ministry of Digital Economy and Society, to block access from Thailand from 5 December. The SEC's notice asks Bitget users to act on the assets they have on the platform before that date. A complaint opens a police inquiry; a prosecutor and then a court decide the case.",
+  "The SEC says that from 2022 to 2025 Bitget ran a trading system and charged fees, with a Thai-language website showing values in baht, and promoted itself in Thai through accounts named \"Bitget Thailand\" on X, \"BGB Thai Holder\" on Telegram and \"bitgetthailand\" on TikTok. The complaint also names one person as a supporter, for promoting Bitget on a Facebook page and a YouTube channel; Cointelegraph reports the SEC named the same person in March 2025 over promoting OKX. Bitget has been on the SEC's Investor Alert list of unlicensed operators since 8 May 2023. Bitget had not answered Cointelegraph's request for comment on 5 November.",
+  "Sixteen days before the complaint, on 20 October, Bitget announced a plan to buy GMO-Z.com Cryptonomics (Thailand), a Bangkok exchange and broker licensed since July 2020. The buyer is BTGT Management (Thailand) Ltd., set up on 22 September 2026 with share capital of 2 million baht, according to the seller, Japan's GMO Internet. GMO's filing gave 31 October as the expected date of transfer and says BTGT's major shareholders will follow the Thai SEC's rule on approving major shareholders. Bitget's release says it brings its platform to Thai users only after the deal closes and the change of control is approved. The exchange lost 87.6 million baht in 2025 on sales of 11.0 million. On 24 September, the day GMO's board approved the sale, thieves took about $388 million from Bitget's hot and warm wallets (the wallets an exchange pays daily withdrawals from) without needing its private keys, Unchained reports; withdrawals reopened in phases from 28 September.",
+  "Bitget is the sixth block date on Offrampt's list since the law changed. The Royal Decree on technology crime (No. 2), in force since 13 April 2025, lets the ministry block unlicensed digital asset trading platforms; the SEC sends it the names. The dates: 28 June 2025 for Bybit, OKX, CoinEx, XT.COM and 1000X; 22 March 2026 for Bitazza Global; 2 May for Exmix; 1 October for the Holdstation and UNO apps; 7 November for Vcex.io, whose owner As Sure Technology and four people the SEC filed against on 7 October; and 5 December for Bitget. Each block date sits 30 or 31 days after the SEC's complaint or referral. Binance.com, Pionex and MEXC are on the Investor Alert list without a block date; in its 30 October statement on the Binance theft the SEC called binance.com the overseas Binance platform, not under its supervision."
+ ],
+ "body_th": [
+  "วันที่ 5 พฤศจิกายน 2026 สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.) กล่าวโทษ BG Limited บริษัทเจ้าของ bitget.com ต่อกองบังคับการปราบปรามการกระทำความผิดเกี่ยวกับอาชญากรรมทางเศรษฐกิจ (บก.ปอศ.) ฐานประกอบธุรกิจศูนย์ซื้อขายสินทรัพย์ดิจิทัลโดยไม่ได้รับอนุญาตในไทย วันเดียวกัน ก.ล.ต. ส่งรายชื่อเว็บไซต์ โดเมนอื่น และแอปของ Bitget ให้กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม (ดีอี) เพื่อปิดกั้นการเข้าถึงจากประเทศไทยตั้งแต่วันที่ 5 ธันวาคม ประกาศของ ก.ล.ต. ขอให้ผู้ใช้ Bitget จัดการทรัพย์สินที่อยู่บนแพลตฟอร์มก่อนวันนั้น การกล่าวโทษเป็นจุดเริ่มของการสอบสวนโดยตำรวจ จากนั้นพนักงานอัยการและศาลเป็นผู้ตัดสินคดี",
+  "ก.ล.ต. ระบุว่าช่วงปี 2022 ถึง 2025 Bitget ให้บริการระบบซื้อขายและเก็บค่าธรรมเนียม มีเว็บไซต์ภาษาไทยที่แสดงมูลค่าเป็นเงินบาท และโฆษณาเป็นภาษาไทยผ่านบัญชีชื่อ “Bitget Thailand” บน X “BGB Thai Holder” บน Telegram และ “bitgetthailand” บน TikTok ก.ล.ต. ยังกล่าวโทษบุคคลหนึ่งรายในฐานะผู้สนับสนุน จากการโปรโมต Bitget ผ่านเพจ Facebook และช่อง YouTube Cointelegraph รายงานว่า ก.ล.ต. เคยกล่าวโทษบุคคลเดียวกันเมื่อเดือนมีนาคม 2025 กรณีโปรโมต OKX ส่วน Bitget อยู่ในรายชื่อ Investor Alert ของ ก.ล.ต. (รายชื่อผู้ที่ไม่ได้รับอนุญาต) ตั้งแต่ 8 พฤษภาคม 2023 และจนถึงวันที่ 5 พฤศจิกายน Bitget ยังไม่ตอบคำขอความเห็นของ Cointelegraph",
+  "สิบหกวันก่อนการกล่าวโทษ คือวันที่ 20 ตุลาคม Bitget ประกาศแผนซื้อ GMO-Z.com Cryptonomics (Thailand) ศูนย์ซื้อขายและนายหน้าในกรุงเทพฯ ที่ได้ใบอนุญาตตั้งแต่กรกฎาคม 2020 ผู้ซื้อคือ BTGT Management (Thailand) Ltd. ซึ่งตั้งขึ้นเมื่อ 22 กันยายน 2026 ด้วยทุนจดทะเบียน 2 ล้านบาท ตามเอกสารของผู้ขาย คือ GMO Internet จากญี่ปุ่น เอกสารของ GMO ให้วันโอนหุ้นที่คาดไว้คือ 31 ตุลาคม และบอกว่าผู้ถือหุ้นรายใหญ่ของ BTGT จะปฏิบัติตามเกณฑ์ของ ก.ล.ต. เรื่องการให้ความเห็นชอบผู้ถือหุ้นรายใหญ่ ข่าวของ Bitget บอกว่าจะนำแพลตฟอร์มมาให้ผู้ใช้ไทยหลังดีลเสร็จและการเปลี่ยนอำนาจควบคุมได้รับอนุมัติแล้วเท่านั้น ศูนย์ซื้อขายแห่งนี้ขาดทุน 87.6 ล้านบาทในปี 2025 จากยอดขาย 11.0 ล้านบาท ส่วนวันที่ 24 กันยายน ซึ่งเป็นวันที่คณะกรรมการ GMO อนุมัติการขาย Unchained รายงานว่าคนร้ายเอาเงินราว 388 ล้านดอลลาร์ออกจาก hot wallet และ warm wallet ของ Bitget (กระเป๋าที่ศูนย์ซื้อขายใช้จ่ายเงินถอนประจำวัน) โดยไม่ต้องใช้กุญแจส่วนตัว และ Bitget ทยอยเปิดให้ถอนตั้งแต่ 28 กันยายน",
+  "Bitget เป็นวันปิดกั้นครั้งที่หกในรายการของ Offrampt นับจากกฎหมายเปลี่ยน พระราชกำหนดมาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี (ฉบับที่ 2) ซึ่งมีผลตั้งแต่ 13 เมษายน 2025 ให้อำนาจกระทรวงดีอีปิดกั้นแพลตฟอร์มซื้อขายสินทรัพย์ดิจิทัลที่ไม่ได้รับอนุญาต โดย ก.ล.ต. เป็นผู้ส่งรายชื่อ วันปิดกั้นมีดังนี้ 28 มิถุนายน 2025 Bybit, OKX, CoinEx, XT.COM และ 1000X วันที่ 22 มีนาคม 2026 Bitazza Global วันที่ 2 พฤษภาคม Exmix วันที่ 1 ตุลาคม แอป Holdstation และ UNO วันที่ 7 พฤศจิกายน Vcex.io ซึ่ง ก.ล.ต. กล่าวโทษบริษัทเจ้าของ As Sure Technology และบุคคลอีกสี่รายเมื่อ 7 ตุลาคม และวันที่ 5 ธันวาคม Bitget วันปิดกั้นทุกครั้งมาหลังการกล่าวโทษหรือการส่งเรื่องของ ก.ล.ต. 30 หรือ 31 วัน ส่วน Binance.com, Pionex และ MEXC อยู่ในรายชื่อ Investor Alert โดยยังไม่มีวันปิดกั้น ในแถลงเรื่องการขโมยที่ Binance เมื่อ 30 ตุลาคม ก.ล.ต. เรียก binance.com ว่าแพลตฟอร์ม Binance ในต่างประเทศ ซึ่งไม่อยู่ใต้การกำกับของ ก.ล.ต."
+ ],
+ "shape": "steps",
+ "speed": "weeks",
+ "read_en": "Step by step, in weeks, and the steps are closer together: one block date in 2025 (28 June, five platforms), five in 2026, and the last three sit 37 and 28 days apart. Each runs on the same clock: a complaint, then 30 or 31 days to the block. The complaints cite the same things each time, a Thai-language site, prices in baht, Thai promoters; the guess is that the next names come from the Investor Alert list, where MEXC (listed 29 April 2026) and Pionex (17 May 2022) sit without a block date. Binance.com is on that list too, with Binance TH as its licensed door. Bitget's purchase of GMO-Z.com Cryptonomics is the same kind of door, and its approval rests with the regulator that filed the complaint, so the guess is months, not weeks. Both foreign platforms lost money to thieves in the last two months, Bitget about $388 million on 24 September and Binance $6.3 billion on 29 October. The blocks push holders in Thailand toward the licensed exchanges: fewer places, more coins in each.",
+ "read_th": "ทีละขั้น ในหน่วยสัปดาห์ และขั้นถี่ขึ้น ปี 2025 มีวันปิดกั้นหนึ่งครั้ง (28 มิถุนายน ห้าแพลตฟอร์ม) ปี 2026 มีห้าครั้ง และสามครั้งหลังห่างกัน 37 และ 28 วัน ทุกครั้งเดินตามนาฬิกาเดียวกัน คือกล่าวโทษ แล้วอีก 30 หรือ 31 วันจึงปิดกั้น ข้อกล่าวโทษอ้างสิ่งเดิมทุกครั้ง เว็บไซต์ภาษาไทย ราคาเป็นบาท และผู้โปรโมตคนไทย จึงคาดว่าชื่อต่อไปจะมาจากรายชื่อ Investor Alert ซึ่ง MEXC (ขึ้นรายชื่อ 29 เมษายน 2026) และ Pionex (17 พฤษภาคม 2022) อยู่โดยยังไม่มีวันปิดกั้น Binance.com ก็อยู่ในรายชื่อนั้น โดยมี Binance TH เป็นประตูที่มีใบอนุญาต การซื้อ GMO-Z.com Cryptonomics ของ Bitget เป็นประตูแบบเดียวกัน และการอนุมัติอยู่ในมือหน่วยงานเดียวกับที่กล่าวโทษ จึงคาดว่าใช้เวลาเป็นเดือน ไม่ใช่สัปดาห์ แพลตฟอร์มต่างประเทศทั้งสองแห่งถูกขโมยในสองเดือนที่ผ่านมา Bitget ราว 388 ล้านดอลลาร์เมื่อ 24 กันยายน และ Binance 6.3 พันล้านดอลลาร์เมื่อ 29 ตุลาคม การปิดกั้นดันผู้ถือเหรียญในไทยไปยังศูนย์ซื้อขายที่มีใบอนุญาต ซึ่งมีจำนวนน้อยกว่า และแต่ละแห่งมีเหรียญอยู่มากขึ้น",
+ "signal": "rules",
+ "lead_until": "2026-11-27",
+ "strip_en": "Thailand blocks Bitget from 5 December. The licensed exchanges and the blocked list are on the rules page.",
+ "strip_th": "ไทยปิดกั้น Bitget ตั้งแต่ 5 ธันวาคม รายชื่อศูนย์ซื้อขายที่มีใบอนุญาตและแพลตฟอร์มที่ถูกปิดกั้นอยู่ในหน้ากฎ",
+ "sources": [
+  {
+   "title": "SEC files criminal complaint against BG Limited and one alleged supporter for operating an unlicensed digital asset exchange business, and notifies access blocking effective 5 December 2026",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=241&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "SEC reminds investors to take action regarding their assets on the VCEX platform before access blocking on 7 November 2026",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=243&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "SEC files criminal complaint against As Sure Technology Co., Ltd., its directors and related persons for operating an unlicensed digital asset exchange business, and notifies access blocking effective 7 November 2026",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13408&NewsNo=215&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-10-07"
+  },
+  {
+   "title": "SEC monitors cybersecurity incident involving overseas Binance platform and instructs digital asset business operators to closely monitor and manage risks",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=233&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Bitget Acquires Licensed Exchange To Expand into Thailand",
+   "url": "https://www.bitget.com/blog/articles/bitget-thailand-crypto-exchange-acquisition",
+   "publisher": "Bitget",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "(Update on Disclosed Matter) Notice Concerning Transfer of Shares in a Consolidated Subsidiary (Digital Asset Business in Thailand)",
+   "url": "https://internet.gmo/en/ir/pdf/irlibrary/gmointernet_e_disclose_20260924.pdf",
+   "publisher": "GMO Internet",
+   "date": "2026-09-24"
+  },
+  {
+   "title": "Thailand to block Bitget in December over unlicensed crypto trading",
+   "url": "https://cointelegraph.com/news/thailand-block-bitget-december-unlicensed-crypto-trading",
+   "publisher": "Cointelegraph",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "ก.ล.ต. กล่าวโทษ Bitget ฐานเทรดไร้ใบอนุญาต จ่อปิดกั้น 5 ธ.ค.",
+   "url": "https://www.thansettakij.com/finance/stockmarket/673058",
+   "publisher": "Thansettakij",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Bitget Reveals It Is Behind the Buyer of GMO Internet's Licensed Thai Crypto Exchange",
+   "url": "https://unchainedcrypto.com/bitget-reveals-it-is-behind-the-buyer-of-gmo-internets-licensed-thai-crypto-exchange/",
+   "publisher": "Unchained",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "Bitget Reopens Bitcoin Withdrawals, Starting Phased Restart After $388 Million Hack",
+   "url": "https://unchainedcrypto.com/bitget-reopens-bitcoin-withdrawals-starting-phased-restart-after-388-million-hack/",
+   "publisher": "Unchained",
+   "date": "2026-09-28"
+  }
+ ],
+ "links": [
+  {
+   "href": "rules/",
+   "en": "Licensed exchanges and blocked platforms",
+   "th": "ศูนย์ซื้อขายที่มีใบอนุญาตและแพลตฟอร์มที่ถูกปิดกั้น",
+   "lead": true
+  },
+  {
+   "href": "ramp/",
+   "en": "Routes to baht",
+   "th": "เส้นทางสู่เงินบาท"
+  },
+  {
+   "href": "frozen/",
+   "en": "Frozen",
+   "th": "ถอนไม่ได้"
+  },
+  {
+   "href_en": "https://hongdam.net/buy/?c=bank-account",
+   "href_th": "https://hongdam.net/th/buy/?c=bank-account",
+   "en": "Bank account opened with you, Hongdam",
+   "th": "เปิดบัญชีธนาคารไปด้วยกัน, Hongdam"
+  }
+ ]
+}
