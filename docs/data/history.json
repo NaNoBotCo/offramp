@@ -2094,6 +2094,30 @@
     }
    ],
    "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-07",
+   "era": "now",
+   "title": "Stablecoin supply's steepest week of 2026",
+   "title_th": "สัปดาห์ที่ปริมาณสเตเบิลคอยน์ลดแรงที่สุดของปี 2026",
+   "what": "Dollar stablecoins in circulation fall on each of the ten days from 29 October, the day of the Binance theft, from $301.6 billion on 28 October to $293.2 billion on 7 November (DefiLlama), the lowest since September 2025; the seven days to 4 November lose $5.8 billion, the steepest week of 2026. USDT and USDC stay at about one dollar.",
+   "what_th": "สเตเบิลคอยน์ดอลลาร์ที่หมุนเวียนลดลงทุกวันตลอดสิบวันนับจาก 29 ตุลาคม วันที่ Binance ถูกขโมย จาก 301.6 พันล้านดอลลาร์เมื่อ 28 ตุลาคม เป็น 293.2 พันล้านดอลลาร์เมื่อ 7 พฤศจิกายน (DefiLlama) ต่ำสุดนับจากกันยายน 2025 ช่วงเจ็ดวันถึง 4 พฤศจิกายนหายไป 5.8 พันล้านดอลลาร์ เป็นสัปดาห์ที่ลดแรงที่สุดของปี 2026 USDT และ USDC ยังอยู่ที่ราวหนึ่งดอลลาร์",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Stablecoins: total circulating, all chains (stablecoincharts/all)",
+     "url": "https://stablecoins.llama.fi/stablecoincharts/all",
+     "publisher": "DefiLlama",
+     "date": "2026-11-09"
+    },
+    {
+     "title": "Stablecoin supply posts 2026's steepest weekly decline",
+     "url": "https://www.gncrypto.news/news/stablecoin-supply-2026-steepest-weekly-decline/",
+     "publisher": "GN Crypto",
+     "date": "2026-11-08"
+    }
+   ],
+   "confidence": "confirmed"
   }
  ],
  "prices": [
