@@ -1,0 +1,127 @@
+{
+ "id": "2026-11-09-stablecoins-steepest-week",
+ "date": "2026-11-09",
+ "order": 1,
+ "kind": "market",
+ "title_en": "Dollar stablecoins fell $8.4 billion in eleven days, the steepest week of 2026",
+ "title_th": "สเตเบิลคอยน์ดอลลาร์หายไป 8.4 พันล้านดอลลาร์ในสิบเอ็ดวัน สัปดาห์ที่ลดแรงที่สุดของปี 2026",
+ "dek_en": "Ten straight days down from 29 October, the day of the Binance theft, to the lowest total since September 2025. Tether froze over $1.5 billion of the stolen USDT; the Bank of Thailand counts USDT flows in hundreds of billions of baht.",
+ "dek_th": "ลดลงสิบวันติดต่อกันนับจาก 29 ตุลาคม วันที่ Binance ถูกขโมย จนต่ำสุดนับจากกันยายน 2025 Tether อายัด USDT ที่ถูกขโมยไปกว่า 1.5 พันล้านดอลลาร์ ส่วนในไทย แบงก์ชาตินับยอด USDT ที่ไหลผ่านเป็นหลักแสนล้านบาท",
+ "body_en": [
+  "On DefiLlama's count, dollar stablecoins in circulation stood at $301.6 billion on 28 October 2026 and $293.2 billion on 7 November, down $8.4 billion in eleven days, falling on every one of the ten days from 29 October, the day thieves took $6.3 billion from Binance. 8 November added $0.07 billion back. The seven days to 4 November lost $5.8 billion, the steepest week of 2026 on DefiLlama's chart; the week Terra's UST collapsed in May 2022 lost $27.4 billion. The total is the lowest since 26 September 2025. The peak was $315.5 billion on 17 May; a year ago, on 8 November 2025, the figure was $302.5 billion. On 30 October Offrampt read the same series as flat for a year. It is not flat now.",
+  "USDT, the largest, went from $184.3 billion on 9 October to $179.6 billion on 2 November and $176.8 billion on 9 November, on DefiLlama's figures; USDC from $73.3 billion to $71.9 billion and $70.6 billion. Both still trade at about one dollar, USDT at $0.9989 and USDC at $0.9998 on 9 November. Tether's attestation for the third quarter, prepared by the accounting firm BDO and published on 30 October, gave $184 billion of USDT issued on 30 September, $191.5 billion of reserve assets, and a buffer of $7.95 billion above what it owes holders; its net operating profit for the quarter was $1.5 billion. A theft on its own does not shrink the supply: it shrinks when a holder hands coins back to the issuer for dollars and the issuer destroys them. GN Crypto reports that neither Tether nor Circle, which issues USDC, has linked the fall to the Binance theft.",
+  "On 2 November Tether said it had frozen more than $1.5 billion of USDT within 30 minutes of the Binance attack, which the FBI attributes to North Korea. By 31 October, Tether says, it had frozen about 1.6 billion USDT across more than 3,590 wallets for the US Department of Justice, Secret Service and FBI, and over its history more than 7 billion USDT on addresses on the open market, of which about 1.2 billion has gone back to its owners or to law enforcement through reissue. Frozen USDT stays on the chain and cannot move; it is still counted in the supply until Tether destroys and reissues it.",
+  "In Thailand USDT is the coin the central bank is counting. On 28 January 2026 Governor Vitai Ratanakorn said USDT was 52% of crypto trading volume in Thailand and about 40% of the people trading it on Thai exchanges were foreigners, and asked the SEC for the trading data. On 2 October he put abnormal conversion through foreign exchange and stablecoins such as USDT at several hundred billion baht over the previous four to five months, with cases of money withdrawn to buy USDT and sent abroad under other people's names. On Bitkub's own order book USDT was 50.7% of baht trading on 6 November. The SEC's September proposal, a 5 million baht daily cap per operator and transfers only to a customer's own verified wallet, is on the rules page. The Bank of Thailand plans rules for a baht stablecoin in March 2027; the hearing on its principles runs to 17 November. In the plan, a foreigner holds the coin only in a verified Thai wallet, and an issuer must be able to freeze or destroy coins used illegally."
+ ],
+ "body_th": [
+  "ตามตัวเลขของ DefiLlama สเตเบิลคอยน์ดอลลาร์ที่หมุนเวียนอยู่มีมูลค่า 301.6 พันล้านดอลลาร์เมื่อ 28 ตุลาคม 2026 และ 293.2 พันล้านดอลลาร์เมื่อ 7 พฤศจิกายน ลดลง 8.4 พันล้านดอลลาร์ในสิบเอ็ดวัน โดยลดลงทุกวันตลอดสิบวันนับจาก 29 ตุลาคม ซึ่งเป็นวันที่คนร้ายเอาเงิน 6.3 พันล้านดอลลาร์ออกจาก Binance วันที่ 8 พฤศจิกายนเพิ่มกลับมา 0.07 พันล้านดอลลาร์ ช่วงเจ็ดวันถึง 4 พฤศจิกายนหายไป 5.8 พันล้านดอลลาร์ เป็นสัปดาห์ที่ลดแรงที่สุดของปี 2026 บนกราฟของ DefiLlama ส่วนสัปดาห์ที่ UST ของ Terra ล่มเมื่อพฤษภาคม 2022 หายไป 27.4 พันล้านดอลลาร์ ยอดรวมตอนนี้ต่ำสุดนับจาก 26 กันยายน 2025 จุดสูงสุดคือ 315.5 พันล้านดอลลาร์เมื่อ 17 พฤษภาคม และเมื่อหนึ่งปีก่อน วันที่ 8 พฤศจิกายน 2025 ตัวเลขอยู่ที่ 302.5 พันล้านดอลลาร์ เมื่อ 30 ตุลาคม Offrampt อ่านชุดข้อมูลเดียวกันนี้ว่าทรงตัวมาหนึ่งปี ตอนนี้ไม่ทรงตัวแล้ว",
+  "USDT ซึ่งใหญ่ที่สุด ลดจาก 184.3 พันล้านดอลลาร์เมื่อ 9 ตุลาคม เป็น 179.6 พันล้านดอลลาร์เมื่อ 2 พฤศจิกายน และ 176.8 พันล้านดอลลาร์เมื่อ 9 พฤศจิกายน ตามตัวเลขของ DefiLlama ส่วน USDC ลดจาก 73.3 พันล้านดอลลาร์ เป็น 71.9 และ 70.6 พันล้านดอลลาร์ ทั้งสองเหรียญยังซื้อขายที่ราวหนึ่งดอลลาร์ USDT ที่ 0.9989 ดอลลาร์ และ USDC ที่ 0.9998 ดอลลาร์เมื่อ 9 พฤศจิกายน รายงานรับรองยอดสำรองไตรมาสสามของ Tether จัดทำโดยบริษัทบัญชี BDO เผยแพร่เมื่อ 30 ตุลาคม ระบุว่ามี USDT ออกใช้ 184 พันล้านดอลลาร์ ณ 30 กันยายน มีสินทรัพย์สำรอง 191.5 พันล้านดอลลาร์ และมีส่วนเกินกว่าที่ติดค้างผู้ถือ 7.95 พันล้านดอลลาร์ กำไรจากการดำเนินงานสุทธิของไตรมาสอยู่ที่ 1.5 พันล้านดอลลาร์ การถูกขโมยอย่างเดียวไม่ทำให้ปริมาณเหรียญลด ปริมาณจะลดเมื่อผู้ถือเอาเหรียญไปคืนผู้ออกเพื่อแลกดอลลาร์ แล้วผู้ออกทำลายเหรียญนั้น GN Crypto รายงานว่าทั้ง Tether และ Circle ผู้ออก USDC ยังไม่ได้โยงการลดลงนี้กับการขโมยที่ Binance",
+  "วันที่ 2 พฤศจิกายน Tether แถลงว่าได้อายัด USDT กว่า 1.5 พันล้านดอลลาร์ภายใน 30 นาทีหลังการโจมตี Binance ซึ่ง FBI ระบุว่าเป็นฝีมือเกาหลีเหนือ Tether บอกว่า ณ 31 ตุลาคม ได้อายัด USDT ราว 1.6 พันล้านเหรียญในกระเป๋ากว่า 3,590 ใบให้กระทรวงยุติธรรม หน่วย Secret Service และ FBI ของสหรัฐฯ และตลอดที่ผ่านมาได้อายัด USDT กว่า 7 พันล้านเหรียญในที่อยู่บนตลาดเปิด ในจำนวนนี้ราว 1.2 พันล้านเหรียญกลับคืนสู่เจ้าของหรือหน่วยงานบังคับใช้กฎหมายผ่านการออกเหรียญใหม่ USDT ที่ถูกอายัดยังอยู่บนเชนแต่เคลื่อนย้ายไม่ได้ และยังนับรวมในปริมาณเหรียญจนกว่า Tether จะทำลายและออกใหม่",
+  "ในไทย USDT คือเหรียญที่แบงก์ชาติกำลังนับ วันที่ 28 มกราคม 2026 ผู้ว่าการ วิทัย รัตนากร บอกว่า USDT คิดเป็น 52% ของปริมาณซื้อขายคริปโตในไทย และราว 40% ของคนที่ซื้อขาย USDT บนศูนย์ซื้อขายไทยเป็นชาวต่างชาติ และได้ขอข้อมูลการซื้อขายจาก ก.ล.ต. วันที่ 2 ตุลาคม เขาประเมินการแปลงเงินที่ผิดปกติผ่านการแลกเปลี่ยนเงินตราต่างประเทศและสเตเบิลคอยน์อย่าง USDT ไว้ที่หลายแสนล้านบาทในช่วงสี่ถึงห้าเดือนก่อนหน้า โดยพบกรณีถอนเงินไปซื้อ USDT แล้วส่งออกนอกประเทศในชื่อคนอื่น บนกระดานของ Bitkub เอง USDT คิดเป็น 50.7% ของการซื้อขายด้วยเงินบาทเมื่อ 6 พฤศจิกายน ข้อเสนอของ ก.ล.ต. เมื่อกันยายน คือเพดานวันละ 5 ล้านบาทต่อผู้ประกอบการ และโอนได้เฉพาะไปยังกระเป๋าที่ยืนยันแล้วของลูกค้าเอง อยู่ในหน้ากฎ ส่วนธนาคารแห่งประเทศไทยวางแผนออกเกณฑ์สเตเบิลคอยน์บาทในเดือนมีนาคม 2027 การรับฟังความเห็นต่อหลักการเปิดถึง 17 พฤศจิกายน ตามแผนนี้ ชาวต่างชาติถือเหรียญได้เฉพาะในกระเป๋าไทยที่ยืนยันตัวตนแล้ว และผู้ออกเหรียญต้องสามารถอายัดหรือทำลายเหรียญที่ถูกใช้ผิดกฎหมายได้"
+ ],
+ "quote_en": "We have always said that USD₮ is the worst possible choice for criminals, and the Binance' hack response shows why.",
+ "quote_th": "เราพูดมาตลอดว่า USD₮ เป็นตัวเลือกที่แย่ที่สุดสำหรับอาชญากร และการรับมือกับการแฮ็ก Binance ครั้งนี้แสดงให้เห็นว่าทำไม",
+ "quote_by_en": "Paolo Ardoino, CEO of Tether, 2 November 2026",
+ "quote_by_th": "Paolo Ardoino ซีอีโอของ Tether, 2 พฤศจิกายน 2026",
+ "shape": "falling",
+ "speed": "weeks",
+ "read_en": "Falling, in weeks: about $0.8 billion a day for ten days, after a year in which the series moved less than that in most weeks. At that pace the total passes the September 2025 low of $280.1 billion in about two weeks; the guess is that it does not, and that the fall slows into a long drift instead. The guess rests on the last comparable event: after FTX failed in November 2022 the supply went from $145.8 billion to a low of $122.6 billion nine months later, a 16% fall spread over months, and took until March 2024 to regain the November 2022 level. A run would look different, a price under $0.99 and a week of $2 billion days; on 9 November both coins sit at about a dollar and Tether's buffer is $7.95 billion. For a holder in Thailand the number that moves first is not the world total but the door: the share of baht trading that is USDT, about half on Bitkub, and the rules the SEC and the Bank of Thailand write for it, five of them due between now and March 2027.",
+ "read_th": "ขาลง ในหน่วยสัปดาห์ ราววันละ 0.8 พันล้านดอลลาร์ต่อเนื่องสิบวัน หลังจากหนึ่งปีที่ตัวเลขขยับน้อยกว่านี้ในแทบทุกสัปดาห์ ถ้าเป็นแบบนี้ต่อไป ยอดรวมจะต่ำกว่าจุดต่ำสุดเมื่อกันยายน 2025 ที่ 280.1 พันล้านดอลลาร์ในราวสองสัปดาห์ แต่เราคาดว่าจะไม่ถึง และการลดลงจะช้าลงกลายเป็นการไหลออกช้าๆ ที่กินเวลานานแทน การคาดนี้อิงเหตุการณ์ที่เทียบกันได้ครั้งล่าสุด คือหลัง FTX ล้มเมื่อพฤศจิกายน 2022 ปริมาณเหรียญลดจาก 145.8 พันล้านดอลลาร์ลงไปต่ำสุดที่ 122.6 พันล้านดอลลาร์ในอีกเก้าเดือนต่อมา ลดลง 16% กระจายไปหลายเดือน และกว่าจะกลับมาเท่าระดับพฤศจิกายน 2022 ก็ถึงมีนาคม 2024 ถ้าเป็นการแห่ถอนจะเห็นต่างจากนี้ คือราคาต่ำกว่า 0.99 ดอลลาร์ และลดวันละ 2 พันล้านดอลลาร์ติดกันทั้งสัปดาห์ แต่เมื่อ 9 พฤศจิกายน ทั้งสองเหรียญยังอยู่ที่ราวหนึ่งดอลลาร์ และส่วนเกินสำรองของ Tether อยู่ที่ 7.95 พันล้านดอลลาร์ สำหรับคนถือเหรียญในไทย ตัวเลขที่ขยับก่อนไม่ใช่ยอดรวมทั้งโลก แต่เป็นประตู คือสัดส่วนของ USDT ในการซื้อขายด้วยเงินบาท ซึ่งราวครึ่งหนึ่งบน Bitkub และกฎที่ ก.ล.ต. กับแบงก์ชาติกำลังเขียนขึ้นมากำกับ ซึ่งมีถึงห้าฉบับที่จะออกระหว่างตอนนี้ถึงมีนาคม 2027",
+ "signal": "stable",
+ "sources": [
+  {
+   "title": "Stablecoins: total circulating, all chains (stablecoincharts/all)",
+   "url": "https://stablecoins.llama.fi/stablecoincharts/all",
+   "publisher": "DefiLlama",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Stablecoins: circulating by asset (stablecoins?includePrices=true)",
+   "url": "https://stablecoins.llama.fi/stablecoins?includePrices=true",
+   "publisher": "DefiLlama",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Stablecoins",
+   "url": "https://defillama.com/stablecoins",
+   "publisher": "DefiLlama",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Tether Freezes Over $1.5 Billion From Binance Hack, Keeping Funds Out of North Korea's Reach",
+   "url": "https://tether.io/news/tether-freezes-over-1-5-billion-from-binance-hack-keeping-funds-out-of-north-koreas-reach/",
+   "publisher": "Tether",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Tether Generates $1.5 Billion in Q3 Net Operating Profit as Reserve Buffer Doubles to Almost $8 Billion",
+   "url": "https://tether.io/news/tether-generates-1-5-billion-in-q3-net-operating-profit-as-reserve-buffer-doubles-to-almost-8-billion/",
+   "publisher": "Tether",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Stablecoin supply posts 2026's steepest weekly decline",
+   "url": "https://www.gncrypto.news/news/stablecoin-supply-2026-steepest-weekly-decline/",
+   "publisher": "GN Crypto",
+   "date": "2026-11-08"
+  },
+  {
+   "title": "แบงก์ชาติเผยได้ข้อมูล USDT จาก ก.ล.ต. แล้ว เร่งวิเคราะห์-เชื่อมโยงข้อมูล หลังพบธุรกรรมต้องสงสัย เอี่ยวเงินเทา",
+   "url": "https://thestandard.co/bot-usdt-grey-money-probe/",
+   "publisher": "The Standard",
+   "date": "2026-01-30"
+  },
+  {
+   "title": "ธปท.ปิดทาง “เงินเทา” คุมเข้มบัญชีม้า–USDT ถอนเงินสดก้อนใหญ่ลดฮวบ 50% จ่อห้าม Payment รับชำระเว็บพนัน",
+   "url": "https://mgronline.com/stockmarket/detail/9690000096055",
+   "publisher": "MGR Online",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "Bank of Thailand sets baht stablecoin rules for 2027, pauses money changer licences",
+   "url": "https://thethaiger.com/news/business/bank-of-thailand-sets-baht-stablecoin-rules-for-2027-pauses-money-changer-licences",
+   "publisher": "The Thaiger",
+   "date": "2026-11-08"
+  },
+  {
+   "title": "SEC seeks public comments on proposed rules for stablecoin transfers via digital asset business operators",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13335",
+   "publisher": "SEC Thailand",
+   "date": "2026-09-11"
+  },
+  {
+   "title": "Bitkub market data (USDT_THB, 1D)",
+   "url": "https://api.bitkub.com/",
+   "publisher": "Bitkub Online",
+   "date": "2026-11-06"
+  }
+ ],
+ "links": [
+  {
+   "href": "networks/",
+   "en": "Stablecoins by chain",
+   "th": "สเตเบิลคอยน์แยกตามเชน"
+  },
+  {
+   "href": "frozen/",
+   "en": "Frozen",
+   "th": "ถอนไม่ได้"
+  },
+  {
+   "href": "markets/",
+   "en": "The market in baht",
+   "th": "ตลาดในสกุลบาท"
+  },
+  {
+   "href": "rules/",
+   "en": "Thai rules",
+   "th": "กฎของไทย"
+  },
+  {
+   "href_en": "https://hongdam.net/buy/?c=bank-account",
+   "href_th": "https://hongdam.net/th/buy/?c=bank-account",
+   "en": "Bank account opened with you, Hongdam",
+   "th": "เปิดบัญชีธนาคารไปด้วยกัน, Hongdam"
+  }
+ ]
+}
