@@ -1,0 +1,119 @@
+{
+ "id": "2026-11-13-bitcoin-key-20000-qubits",
+ "date": "2026-11-13",
+ "order": 1,
+ "kind": "long",
+ "title_en": "On paper, a bitcoin key now takes 20,000 to 30,000 qubits, not 500,000; IBM's best chip has 120",
+ "title_th": "บนกระดาษ กุญแจบิตคอยน์ตอนนี้ใช้คิวบิต 20,000 ถึง 30,000 ตัว ไม่ใช่ 500,000 ส่วนชิปที่ดีที่สุดของ IBM มี 120",
+ "dek_en": "Google said under 500,000 in March. IonQ's blueprint in September gives 19,397 trapped-ion qubits and 26 days a try; Alice & Bob's in October at most 30,000 cat qubits and about an hour. The Bank of Thailand is taking stock of its locks.",
+ "dek_th": "Google บอกเมื่อมีนาคมว่าไม่ถึง 500,000 พิมพ์เขียวของ IonQ เดือนกันยายนให้ตัวเลข 19,397 คิวบิตแบบไอออนกักขัง ใช้เวลา 26 วันต่อครั้ง ส่วนของ Alice & Bob เดือนตุลาคมใช้แคทคิวบิตไม่เกิน 30,000 ตัว ราวหนึ่งชั่วโมง ด้านแบงก์ชาติกำลังสำรวจกุญแจของตัวเอง",
+ "body_en": [
+  "The quantum computer that works out a bitcoin private key from its public key keeps shrinking on paper. Google Quantum AI said on 31 March 2026 that the job takes fewer than 1,200 to 1,450 logical qubits, or fewer than 500,000 physical superconducting qubits running for a few minutes, about 20 times fewer than earlier estimates. A logical qubit is one error-free unit of the calculation; a physical qubit is one piece of hardware, and it takes many of them, checking one another, to make one logical qubit. On 8 September IonQ published a blueprint for a trapped-ion machine: 1,457 logical qubits on 19,397 physical qubits, 39 million Toffoli gates, 25.7 days per attempt, a size IonQ places on its own roadmap around 2028. On 28 October Alice & Bob posted a compilation for cat qubits, a superconducting design that suppresses one of the two kinds of qubit error: RSA-2048, the lock on much of the web, in about 23,000 cat qubits and 3.14 days, and a secp256k1 key, bitcoin's curve, in at most about 30,000 cat qubits and about an hour, assuming a phase-flip error rate of 5 in 10,000 and no bit-flips at all. A paper by Luo and colleagues, posted in July and revised in September, cut the logical count itself to 835, from 1,098 and 1,175 in the two best earlier designs.",
+  "The three physical counts are three different machines, so 500,000, 19,397 and 30,000 are not one series. No built machine is near any of them in error-corrected qubits. IBM's Nighthawk, named on 5 November as its most powerful processor, has 120 qubits; Google's Willow has 105. IBM says it has run experiments with up to 70 logical qubits and 438 hard operations, against a US Department of Energy target of 100 logical qubits running 100,000 hard operations by late 2028, a gap of about 230 times. On 19 October Quantinuum reported a logical fidelity of 99.9995% on its Helios machine, five errors per million operations, ten times better than its September record, with each step up in code distance cutting the remaining errors by a factor of 12, at up to 37 physical qubits per logical qubit; it dates Apollo, its fault-tolerant machine, to 2029. IonQ says a fault-tolerant 10,000-qubit system is due in 2027.",
+  "On timing, a June 2026 paper by Gershteyn and Alber, Quantum Horizon, ran a Monte Carlo forecast over hardware scaling, falling resource estimates and expert surveys and got a two-peaked spread: about a one-in-six chance of a key-breaking machine by 2035, about 30% by 2040, about 60% by 2050. It counts about 6 million BTC in quantum-exposed addresses, of which about 2.3 million no migration can protect; Google's whitepaper counted about 6.9 million exposed. NIST's final transition report of 27 October 2026 deprecates ECDSA, EdDSA and RSA after 2030 and disallows them after 2035.",
+  "In Thailand the same locks sit under PromptPay, mobile banking and the exchanges. The Bank of Thailand's page on emerging payment technologies says it is taking an inventory of its own cryptography, planning swaps to NIST's post-quantum standards FIPS 203, 204 and 205 through one central layer so an algorithm changes once, and ran a Quantum Board Awareness Seminar for bank boards on 18 March 2026; its migration report is marked \"soon\". A coin on Bitkub or Binance TH sits under the exchange's keys; a coin in a wallet of one's own sits under the key of its address, and bitcoin shows that key on the chain once the address has spent, or from the start for a Taproot address."
+ ],
+ "body_th": [
+  "ควอนตัมคอมพิวเตอร์ที่คำนวณกุญแจส่วนตัวของบิตคอยน์จากกุญแจสาธารณะ เล็กลงเรื่อยๆ บนกระดาษ Google Quantum AI บอกเมื่อ 31 มีนาคม 2026 ว่างานนี้ใช้คิวบิตเชิงตรรกะ (logical qubit) ไม่ถึง 1,200 ถึง 1,450 ตัว หรือคิวบิตเชิงกายภาพ (physical qubit) แบบตัวนำยิ่งยวดไม่ถึง 500,000 ตัว ทำงานไม่กี่นาที น้อยกว่าประมาณการก่อนหน้าราว 20 เท่า คิวบิตเชิงตรรกะคือหน่วยคำนวณหนึ่งหน่วยที่ไม่มีข้อผิดพลาด ส่วนคิวบิตเชิงกายภาพคือชิ้นส่วนฮาร์ดแวร์หนึ่งชิ้น ต้องใช้หลายชิ้นคอยตรวจสอบกันเองจึงได้คิวบิตเชิงตรรกะหนึ่งตัว วันที่ 8 กันยายน IonQ เผยแพร่พิมพ์เขียวของเครื่องแบบไอออนกักขัง (trapped ion): คิวบิตเชิงตรรกะ 1,457 ตัวบนคิวบิตเชิงกายภาพ 19,397 ตัว เกต Toffoli 39 ล้านเกต ใช้เวลา 25.7 วันต่อการลองหนึ่งครั้ง ขนาดที่ IonQ วางไว้ในแผนของตัวเองราวปี 2028 วันที่ 28 ตุลาคม Alice & Bob เผยแพร่การคอมไพล์สำหรับแคทคิวบิต (cat qubit) ซึ่งเป็นแบบตัวนำยิ่งยวดที่กดข้อผิดพลาดของคิวบิตไว้ได้หนึ่งในสองชนิด: RSA-2048 กุญแจที่ล็อกเว็บส่วนใหญ่ ใช้แคทคิวบิตราว 23,000 ตัวกับเวลา 3.14 วัน และกุญแจ secp256k1 ซึ่งเป็นเส้นโค้งของบิตคอยน์ ใช้แคทคิวบิตไม่เกินราว 30,000 ตัวกับเวลาราวหนึ่งชั่วโมง บนสมมติฐานว่าอัตราข้อผิดพลาดแบบ phase-flip อยู่ที่ 5 ใน 10,000 และไม่มี bit-flip เลย ส่วนงานของ Luo และคณะ ที่เผยแพร่เดือนกรกฎาคมและแก้ไขเดือนกันยายน ลดจำนวนคิวบิตเชิงตรรกะเองลงเหลือ 835 จาก 1,098 และ 1,175 ในสองแบบที่ดีที่สุดก่อนหน้า",
+  "ตัวเลขคิวบิตเชิงกายภาพทั้งสามเป็นเครื่องคนละแบบ ดังนั้น 500,000, 19,397 และ 30,000 ไม่ใช่ชุดข้อมูลเดียวกัน ส่วนเครื่องที่สร้างแล้วยังไม่มีเครื่องไหนเข้าใกล้ตัวเลขเหล่านั้นเมื่อนับคิวบิตที่แก้ข้อผิดพลาดได้ Nighthawk ของ IBM ที่ประกาศเมื่อ 5 พฤศจิกายนว่าเป็นหน่วยประมวลผลที่ทรงพลังที่สุดของบริษัท มี 120 คิวบิต ส่วน Willow ของ Google มี 105 IBM บอกว่าได้ทดลองกับคิวบิตเชิงตรรกะสูงสุด 70 ตัวและการดำเนินการยาก (hard operation) 438 ครั้ง เทียบกับเป้าของกระทรวงพลังงานสหรัฐที่คิวบิตเชิงตรรกะ 100 ตัวทำงาน 100,000 ครั้งภายในปลายปี 2028 ห่างกันราว 230 เท่า วันที่ 19 ตุลาคม Quantinuum รายงานความแม่นยำเชิงตรรกะ 99.9995% บนเครื่อง Helios คือผิดพลาดห้าครั้งในล้านการดำเนินการ ดีกว่าสถิติของตัวเองเมื่อเดือนกันยายนสิบเท่า และทุกขั้นที่เพิ่มระยะโค้ด (code distance) ลดข้อผิดพลาดที่เหลือลง 12 เท่า โดยใช้คิวบิตเชิงกายภาพไม่เกิน 37 ตัวต่อคิวบิตเชิงตรรกะหนึ่งตัว บริษัทกำหนดปี 2029 ให้ Apollo เครื่องที่ทนต่อความผิดพลาด (fault-tolerant) ของตน ส่วน IonQ บอกว่าระบบทนต่อความผิดพลาดขนาด 10,000 คิวบิตจะมาในปี 2027",
+  "เรื่องเวลา งานวิจัยเดือนมิถุนายน 2026 ของ Gershteyn และ Alber ชื่อ Quantum Horizon ใช้การจำลองแบบ Monte Carlo กับการขยายฮาร์ดแวร์ ประมาณการทรัพยากรที่ลดลง และการสำรวจผู้เชี่ยวชาญ ได้ผลเป็นการกระจายสองยอด: โอกาสราวหนึ่งในหกที่จะมีเครื่องถอดกุญแจได้ภายในปี 2035 ราว 30% ภายในปี 2040 และราว 60% ภายในปี 2050 งานนี้นับบิตคอยน์ราว 6 ล้าน BTC ในที่อยู่ที่เสี่ยงต่อควอนตัม ในจำนวนนี้ราว 2.3 ล้านไม่มีการย้ายระบบใดปกป้องได้ ส่วนรายงานของ Google นับได้ราว 6.9 ล้านที่เปิดเผย รายงานฉบับสมบูรณ์ของ NIST วันที่ 27 ตุลาคม 2026 ให้เลิกใช้ ECDSA, EdDSA และ RSA หลังปี 2030 และห้ามใช้หลังปี 2035",
+  "ในไทย กุญแจแบบเดียวกันอยู่ใต้พร้อมเพย์ โมบายแบงก์กิ้ง และศูนย์ซื้อขายคริปโต หน้าเว็บของธนาคารแห่งประเทศไทยว่าด้วยเทคโนโลยีการชำระเงินใหม่ บอกว่ากำลังสำรวจระบบเข้ารหัสของตัวเอง วางแผนเปลี่ยนไปใช้มาตรฐานหลังควอนตัมของ NIST คือ FIPS 203, 204 และ 205 ผ่านชั้นกลางชั้นเดียวเพื่อให้เปลี่ยนอัลกอริทึมครั้งเดียวจบ และจัดสัมมนา Quantum Board Awareness ให้คณะกรรมการธนาคารเมื่อ 18 มีนาคม 2026 ส่วนรายงานการย้ายระบบระบุว่า \"เร็วๆ นี้\" เหรียญที่อยู่บน Bitkub หรือ Binance TH อยู่ใต้กุญแจของศูนย์ซื้อขาย ส่วนเหรียญในกระเป๋าของตัวเองอยู่ใต้กุญแจของที่อยู่นั้น และบิตคอยน์แสดงกุญแจนั้นบนเชนทันทีที่ที่อยู่นั้นจ่ายออกไป หรือตั้งแต่แรกสำหรับที่อยู่แบบ Taproot"
+ ],
+ "quote_en": "We've crossed the threshold necessary for exponential improvements in accuracy.",
+ "quote_th": "เราข้ามเส้นที่จำเป็นสำหรับการพัฒนาความแม่นยำแบบทวีคูณมาแล้ว",
+ "quote_by_en": "Rajeeb Hazra, CEO of Quantinuum, 19 October 2026",
+ "quote_by_th": "Rajeeb Hazra ซีอีโอของ Quantinuum, 19 ตุลาคม 2026",
+ "shape": "falling",
+ "speed": "months",
+ "read_en": "Falling, in months: four estimates in eight months, each lower than the last, the paper count from 500,000 physical qubits in March to about 20,000 in September and 30,000 in October, while the chips Google and IBM call their best have 105 and 120 qubits. The guess: the paper number has a floor near 10,000, because the logical count now sits at 835 to 1,457 and a logical qubit costs 10 to 37 physical ones in the best results so far, so the next moves are in hardware, and they carry dates: IonQ's 10,000-qubit machine in 2027, the Department of Energy's 100 logical qubits in late 2028, Quantinuum's Apollo in 2029. The guess rests on those three dated promises and on Quantum Horizon's one-in-six by 2035; a promise slipping a year moves the whole spread by about a year. The nearest date for a holder in Thailand is not a machine's but a standard's: NIST's 2030, after which the locks under ECDSA are deprecated, and the Bank of Thailand's migration report, due \"soon\".",
+ "read_th": "ขาลง ในหลักเดือน: ประมาณการสี่ชิ้นในแปดเดือน แต่ละชิ้นต่ำกว่าชิ้นก่อน ตัวเลขบนกระดาษลดจากคิวบิตเชิงกายภาพ 500,000 ตัวในเดือนมีนาคม เหลือราว 20,000 ในเดือนกันยายนและ 30,000 ในเดือนตุลาคม ขณะที่ชิปที่ Google และ IBM เรียกว่าดีที่สุดของตนมี 105 และ 120 คิวบิต การคาดเดา: ตัวเลขบนกระดาษมีพื้นอยู่ใกล้ 10,000 เพราะจำนวนคิวบิตเชิงตรรกะตอนนี้อยู่ที่ 835 ถึง 1,457 และคิวบิตเชิงตรรกะหนึ่งตัวใช้คิวบิตเชิงกายภาพ 10 ถึง 37 ตัวในผลลัพธ์ที่ดีที่สุดจนถึงวันนี้ ดังนั้นก้าวต่อไปอยู่ที่ฮาร์ดแวร์ และแต่ละก้าวมีวันที่กำกับ: เครื่อง 10,000 คิวบิตของ IonQ ปี 2027 คิวบิตเชิงตรรกะ 100 ตัวของกระทรวงพลังงานสหรัฐปลายปี 2028 และ Apollo ของ Quantinuum ปี 2029 การคาดเดานี้วางอยู่บนคำสัญญาที่มีวันที่สามข้อนั้น กับโอกาสหนึ่งในหกภายในปี 2035 ของ Quantum Horizon คำสัญญาที่เลื่อนไปหนึ่งปีจะเลื่อนการกระจายทั้งหมดไปราวหนึ่งปี วันที่ใกล้ที่สุดสำหรับคนถือเหรียญในไทยไม่ใช่วันของเครื่อง แต่เป็นวันของมาตรฐาน: ปี 2030 ของ NIST ที่กุญแจใต้ ECDSA จะถูกเลิกใช้หลังจากนั้น และรายงานการย้ายระบบของแบงก์ชาติที่บอกว่า \"เร็วๆ นี้\"",
+ "sources": [
+  {
+   "title": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
+   "url": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/",
+   "publisher": "Google Research",
+   "date": "2026-03-31"
+  },
+  {
+   "title": "Quantum Algorithm for Elliptic Curve Discrete Logarithms with Space-Efficient Point Addition",
+   "url": "https://arxiv.org/abs/2607.13816",
+   "publisher": "arXiv (Luo, Yang, Luo, Wang, Su, Sun, Li, Li)",
+   "date": "2026-09-05"
+  },
+  {
+   "title": "IonQ Publishes World's First Fully Compiled, End-to-End Blueprint for Breaking 256-Bit Elliptic-Curve Signatures",
+   "url": "https://ionq.com/news/ionq-publishes-worlds-first-fully-compiled-end-to-end-blueprint-for-breaking-256-bit-elliptic-curve-signatures",
+   "publisher": "IonQ",
+   "date": "2026-09-08"
+  },
+  {
+   "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days (Paper 2026/2665)",
+   "url": "https://eprint.iacr.org/2026/2665",
+   "publisher": "IACR Cryptology ePrint Archive (Pappalardo et al., Alice & Bob)",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Alice & Bob Demonstrates End-to-End Shor's Algorithm Compilation Requiring ~23,000 Cat Qubits to Break RSA-2048",
+   "url": "https://quantumcomputingreport.com/?p=48287",
+   "publisher": "Quantum Computing Report",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Quantinuum Breaks Error-Correction World Record by 10x, Validating its Leading Path to Fault-Tolerant Quantum Computing by 2029",
+   "url": "https://www.quantinuum.com/press-releases/quantinuum-breaks-error-correction-world-record-by-10x-validating-its-leading-path-to-fault-tolerant-quantum-computing-by-2029",
+   "publisher": "Quantinuum",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "Oak Ridge National Laboratory, IBM, and AMD Launch New Co-Design Platform for Quantum Error Correction",
+   "url": "https://www.prnewswire.com/news-releases/oak-ridge-national-laboratory-ibm-and-amd-launch-new-co-design-platform-for-quantum-error-correction-302929982.html",
+   "publisher": "IBM, via PR Newswire",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Quantum Horizon: An evaluation of quantum computing as a threat to Bitcoin and Ethereum",
+   "url": "https://arxiv.org/abs/2606.14484",
+   "publisher": "arXiv (Gershteyn, Alber)",
+   "date": "2026-06-12"
+  },
+  {
+   "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards (final)",
+   "url": "https://csrc.nist.gov/pubs/ir/8547/final",
+   "publisher": "NIST",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Emerging Payment Technologies (post-quantum cryptography readiness)",
+   "url": "https://www.bot.or.th/en/financial-innovation/digital-finance/central-bank-digital-currency-tokenization-emerging-payment-technologies/emerging-payment-technologies.html",
+   "publisher": "Bank of Thailand",
+   "date": "2026-03-18"
+  }
+ ],
+ "links": [
+  {
+   "href": "how/",
+   "en": "How keys and hashes work",
+   "th": "กุญแจและแฮชทำงานอย่างไร"
+  },
+  {
+   "href": "https://nanobotco.github.io/quantum-computing/",
+   "en": "Quantum Computing, plainly",
+   "th": "Quantum Computing, plainly"
+  },
+  {
+   "href": "https://nanobotco.github.io/factoring/",
+   "en": "Big Numbers, Split",
+   "th": "Big Numbers, Split"
+  },
+  {
+   "href": "intel/",
+   "en": "The long view, 30 October",
+   "th": "มองยาว 30 ตุลาคม"
+  },
+  {
+   "href": "history/",
+   "en": "History, 1976 to now",
+   "th": "ประวัติ ตั้งแต่ 1976 ถึงวันนี้"
+  }
+ ]
+}
