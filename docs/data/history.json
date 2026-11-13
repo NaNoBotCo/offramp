@@ -2118,6 +2118,48 @@
     }
    ],
    "confidence": "confirmed"
+  },
+  {
+   "date": "2026-09-08",
+   "era": "now",
+   "title": "IonQ: a bitcoin key on 19,397 trapped-ion qubits, on paper",
+   "title_th": "IonQ: กุญแจบิตคอยน์บนคิวบิตไอออนกักขัง 19,397 ตัว บนกระดาษ",
+   "what": "IonQ publishes a compiled blueprint for breaking a 256-bit elliptic-curve (secp256k1) key on a trapped-ion machine: 1,457 logical qubits on 19,397 physical qubits, 39 million Toffoli gates, 25.7 days per attempt, a size it places on its roadmap around 2028.",
+   "what_th": "IonQ เผยแพร่พิมพ์เขียวที่คอมไพล์แล้วสำหรับถอดกุญแจเส้นโค้งวงรี 256 บิต (secp256k1) บนเครื่องแบบไอออนกักขัง: คิวบิตเชิงตรรกะ 1,457 ตัวบนคิวบิตเชิงกายภาพ 19,397 ตัว เกต Toffoli 39 ล้านเกต ใช้เวลา 25.7 วันต่อการลองหนึ่งครั้ง ขนาดที่บริษัทวางไว้ในแผนราวปี 2028",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "IonQ Publishes World's First Fully Compiled, End-to-End Blueprint for Breaking 256-Bit Elliptic-Curve Signatures",
+     "url": "https://ionq.com/news/ionq-publishes-worlds-first-fully-compiled-end-to-end-blueprint-for-breaking-256-bit-elliptic-curve-signatures",
+     "publisher": "IonQ",
+     "date": "2026-09-08"
+    }
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-10-28",
+   "era": "now",
+   "title": "Alice & Bob: a bitcoin key in about an hour on at most 30,000 cat qubits, on paper",
+   "title_th": "Alice & Bob: กุญแจบิตคอยน์ในราวหนึ่งชั่วโมงบนแคทคิวบิตไม่เกิน 30,000 ตัว บนกระดาษ",
+   "what": "Alice & Bob researchers post a full compilation of Shor's algorithm for cat qubits: RSA-2048 in about 23,000 cat qubits and 3.14 days, and a secp256k1 key in at most about 30,000 cat qubits and about an hour, assuming a phase-flip error rate of 5 in 10,000 and no bit-flips.",
+   "what_th": "นักวิจัยของ Alice & Bob เผยแพร่การคอมไพล์อัลกอริทึมของ Shor ฉบับเต็มสำหรับแคทคิวบิต: RSA-2048 ใช้แคทคิวบิตราว 23,000 ตัวกับเวลา 3.14 วัน และกุญแจ secp256k1 ใช้แคทคิวบิตไม่เกินราว 30,000 ตัวกับเวลาราวหนึ่งชั่วโมง บนสมมติฐานว่าอัตราข้อผิดพลาดแบบ phase-flip อยู่ที่ 5 ใน 10,000 และไม่มี bit-flip",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days (Paper 2026/2665)",
+     "url": "https://eprint.iacr.org/2026/2665",
+     "publisher": "IACR Cryptology ePrint Archive (Pappalardo et al., Alice & Bob)",
+     "date": "2026-10-28"
+    },
+    {
+     "title": "Alice & Bob Demonstrates End-to-End Shor's Algorithm Compilation Requiring ~23,000 Cat Qubits to Break RSA-2048",
+     "url": "https://quantumcomputingreport.com/?p=48287",
+     "publisher": "Quantum Computing Report",
+     "date": "2026-10-30"
+    }
+   ],
+   "confidence": "confirmed"
   }
  ],
  "prices": [
