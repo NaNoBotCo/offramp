@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-18-sec-stablecoin-draft-5-million-baht",
+ "date": "2026-11-18",
+ "order": 1,
+ "kind": "rule",
+ "title_en": "Thai SEC stablecoin draft: 5 million baht a day in, 5 million out, own-wallet only, to 26 November",
+ "title_th": "ร่างสเตเบิลคอยน์ ก.ล.ต. ไทย: ฝาก 5 ล้านบาท/วัน ถอน 5 ล้านบาท/วัน เฉพาะกระเป๋าของตนเอง ปิดรับความเห็น 26 พฤศจิกายน",
+ "dek_en": "The 12 November draft puts numbers on the September principles: 5 million baht a day in, 5 million out, own-wallet only, mule-account screening. The Bank of Thailand's paper on baht-stablecoins closed its comments 17 November.",
+ "dek_th": "ร่างฉบับ 12 พฤศจิกายนใส่ตัวเลขให้หลักการเดือนกันยายน เพดานฝาก 5 ล้านบาท/วัน ถอน 5 ล้านบาท/วัน เฉพาะกระเป๋าของตนเอง และคัดกรองบัญชีม้า ด้านเอกสารรับฟังความเห็นของธนาคารแห่งประเทศไทยเรื่องสเตเบิลคอยน์สกุลบาทปิดรับความเห็นเมื่อ 17 พฤศจิกายน",
+ "body_en": [
+  "On 12 November 2026 the Thai Securities and Exchange Commission (SEC) opened public consultation on the draft notification on stablecoin transactions through licensed digital asset operators. The two numbers at its heart: a cap of 5 million baht (about $148,000 at mid-November rates) on stablecoin deposits into a customer's account per day, per operator; and a separate cap of 5 million baht on withdrawals per day, per operator. Deposits must come from a wallet verified as the customer's own and withdrawals must go to one; transfers from, or to, another person's wallet are prohibited. Both wallets have to sit under the Travel Rule, screened against mule accounts (บัญชีม้า) and wallets on watchlists, with blockchain-tracing tools used to check links to risky addresses. The value a customer moves each day has to be consistent with the customer's source of income and financial position. Off-platform trades through brokers and dealers face a minimum of 3 million baht per transaction.",
+  "The arc, now in the draft. On 3 September 2026 the SEC's board approved consultation principles on stablecoin oversight. On 11 September the office opened a first public hearing, closing 25 September. The 12 November draft is the second round, with specific text, and the office says it incorporates the observations and suggestions received in September. The 26 November comment close falls on day 76 of a track that began in early September. A separate SEC Travel Rule for digital asset operators, issued 2 September 2026, takes effect 27 February 2027.",
+  "The Bank of Thailand (BOT) opened its own track on 19 October 2026 with a consultation paper on licensing baht-pegged stablecoin issuers and wallet providers, under the Payment Systems Act B.E. 2560 (2017). Comments closed 17 November. The BOT paper caps the number of issuer licences, lets the central bank select applicants and send them to the Ministry of Finance, and requires 100% of reserves in bank deposits spread across several banks; issuers may offer no interest, returns or ownership-based incentives to coin holders. Wallet providers face no licence cap but must plan to work with at least one licensed issuer, segregate customer stablecoins, and transfer only to KYC-verified wallets, with none reaching unregulated foreign digital asset venues.",
+  "The caps sit above an ordinary holder's daily flow and below the volumes the state cites in its scam figures. 5 million baht in, 5 out, 10 million round-trip per customer per licensed operator per day, is well above a salaried customer; a chain moving stolen funds through several wallets at one venue runs higher. The own-wallet rule covers the two patterns the SEC names first in its reasoning: a deposit arriving from someone else's wallet, and a withdrawal going to one. Together with the Bitget block (5 December) and the Vcex block (7 November), the licensed-venue door narrows. If a final notification lands near the 26 November close, its 60-day clock points to late January 2027 for effect; the guess is that USDT and USDC flows through peer-to-peer channels and foreign venues continue at the pace set across 2026, as they did when the Bank of Thailand opened data screening of USDT trades in July 2026, with the volume one customer can push through a licensed Thai exchange in a day written in, for a draft, as 5 million baht each way."
+ ],
+ "body_th": [
+  "วันที่ 12 พฤศจิกายน 2026 สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.) เปิดรับฟังความเห็นต่อร่างประกาศเกี่ยวกับการกำกับดูแลการทำธุรกรรมสเตเบิลคอยน์ผ่านผู้ประกอบธุรกิจสินทรัพย์ดิจิทัล ตัวเลขหลักสองตัวคือ เพดานการโอนสเตเบิลคอยน์เข้าบัญชีลูกค้าไม่เกิน 5 ล้านบาทต่อวัน ต่อคน ต่อผู้ประกอบธุรกิจแต่ละราย (ราว 148,000 ดอลลาร์ ณ กลางเดือนพฤศจิกายน) และเพดานการโอนออกอีก 5 ล้านบาทต่อวัน แยกกัน บัญชีหรือกระเป๋าต้นทางที่โอนเข้าและปลายทางที่รับโอนออกต้องเป็นของลูกค้าที่ยืนยันตัวตนแล้ว ห้ามโอนเข้าจากบัญชีผู้อื่นหรือออกไปยังบัญชีผู้อื่น ทั้งสองฝั่งต้องปฏิบัติตามหลักเกณฑ์ Travel Rule มีการคัดกรองบัญชีม้าและกระเป๋าที่อยู่ในบัญชีเฝ้าระวัง พร้อมเครื่องมือติดตามการเคลื่อนย้ายสินทรัพย์ มูลค่าที่ลูกค้าโอนในแต่ละวันต้องสอดคล้องกับที่มารายได้และฐานะการเงินของลูกค้า ธุรกรรมนอกแพลตฟอร์มผ่านนายหน้าและผู้ค้ามีมูลค่าขั้นต่ำ 3 ล้านบาทต่อรายการ",
+  "เส้นทางที่ผ่านมา เมื่อวันที่ 3 กันยายน 2026 บอร์ด ก.ล.ต. เห็นชอบหลักการกำกับดูแลธุรกรรมสเตเบิลคอยน์ วันที่ 11 กันยายน ก.ล.ต. เปิดรับฟังความเห็นรอบแรกถึง 25 กันยายน ร่างฉบับ 12 พฤศจิกายนเป็นรอบที่สองซึ่งมีข้อความและตัวเลขเฉพาะ โดย ก.ล.ต. ระบุว่านำข้อสังเกตและข้อเสนอแนะที่ได้รับในเดือนกันยายนมาประกอบการพิจารณายกร่าง วันปิดรับความเห็น 26 พฤศจิกายนคือวันที่ 76 ของเส้นทางซึ่งเริ่มต้นช่วงต้นเดือนกันยายน ส่วนหลักเกณฑ์ Travel Rule สำหรับผู้ประกอบธุรกิจสินทรัพย์ดิจิทัลที่ ก.ล.ต. ออกเมื่อ 2 กันยายน 2026 มีผลบังคับใช้ตั้งแต่ 27 กุมภาพันธ์ 2027",
+  "ธนาคารแห่งประเทศไทย (ธปท.) เปิดเส้นทางคู่ขนานเมื่อ 19 ตุลาคม 2026 ด้วยเอกสารรับฟังความเห็นต่อกรอบการออกใบอนุญาตผู้ออกและผู้ให้บริการกระเป๋าสเตเบิลคอยน์สกุลบาท ภายใต้พระราชบัญญัติระบบการชำระเงิน พ.ศ. 2560 ปิดรับความเห็นเมื่อ 17 พฤศจิกายน เอกสารของ ธปท. จำกัดจำนวนใบอนุญาตผู้ออก ให้ ธปท. คัดเลือกผู้ยื่นและเสนอชื่อต่อกระทรวงการคลัง กำหนดให้ผู้ออกเก็บเงินสำรอง 100% ในเงินฝากของธนาคารหลายแห่ง และห้ามให้ดอกเบี้ย ผลตอบแทน หรือสิ่งจูงใจจากการถือสเตเบิลคอยน์แก่ผู้ถือเหรียญ ส่วนผู้ให้บริการกระเป๋าไม่จำกัดจำนวนใบอนุญาต แต่ต้องวางแผนทำงานกับผู้ออกที่มีใบอนุญาตอย่างน้อยหนึ่งราย เก็บสเตเบิลคอยน์ของลูกค้าแยกบัญชี และโอนไปยังเฉพาะกระเป๋าที่ยืนยันตัวตนแล้ว โดยไม่ไปถึงศูนย์ซื้อขายสินทรัพย์ดิจิทัลต่างประเทศที่ไม่อยู่ภายใต้การกำกับดูแล",
+  "เพดาน 5 ล้านบาทต่อวันในทิศทางเดียว หรือ 10 ล้านบาททั้งไป-กลับต่อลูกค้าหนึ่งรายต่อผู้ประกอบธุรกิจที่มีใบอนุญาตหนึ่งรายต่อวัน อยู่สูงกว่าการโอนของผู้ถือเหรียญทั่วไป แต่ต่ำกว่าปริมาณที่รัฐอ้างในตัวเลขความเสียหายจากการหลอกลวง ส่วนกฎกระเป๋าของตนเองครอบคลุมสองรูปแบบที่ ก.ล.ต. ระบุเป็นเหตุผลข้อแรก คือการฝากที่มาจากกระเป๋าของคนอื่น และการถอนที่ออกไปยังกระเป๋าของคนอื่น เมื่อรวมกับการปิดกั้น Bitget (5 ธันวาคม) และ Vcex (7 พฤศจิกายน) ประตูของศูนย์ซื้อขายที่มีใบอนุญาตจึงแคบลง หากประกาศฉบับจริงออกใกล้วันปิดรับความเห็น 26 พฤศจิกายน นาฬิกา 60 วันจะชี้ไปที่ปลายเดือนมกราคม 2027 เป็นวันบังคับใช้ การคาดการณ์คือ USDT และ USDC ที่ไหลผ่านช่องทาง P2P และศูนย์ซื้อขายต่างประเทศจะยังไหลในอัตราเดิมของปี 2026 เช่นเดียวกับที่ ธปท. เริ่มใช้ Data Analytics คัดกรองการเทรด USDT ที่ผิดปกติในเดือนกรกฎาคม 2026 แต่ปริมาณที่ลูกค้าหนึ่งรายส่งผ่านศูนย์ซื้อขายไทยที่มีใบอนุญาตในหนึ่งวันตอนนี้ถูกเขียนไว้ในร่างว่า 5 ล้านบาทขาเข้าและ 5 ล้านบาทขาออก"
+ ],
+ "shape": "steps",
+ "speed": "months",
+ "read_en": "Step by step, in months: principles in September, a draft with numbers in November, a 60-day clock to effect once a final notification lands. The shape has run through the year. The target the SEC names first is money laundering and workarounds on cross-border transfer rules; the draft moves on both through the 5 million baht daily caps and the own-wallet rule. The cap is high enough that an ordinary holder in Thailand does not meet it; the own-wallet rule is the one every holder meets, every deposit and every withdrawal through a licensed venue. The parallel BOT track on baht-pegged stablecoins frames the other side: a baht stablecoin, if it is issued, will come from a licensed issuer under a number cap, with its reserves in Thai bank deposits, and no yield for holders. The guess: a first Thai-baht stablecoin from a bank or non-bank consortium around mid-2027; foreign stablecoins (USDT, USDC) continue to flow through peer-to-peer channels and foreign venues at the pace set across 2026, with the licensed-venue door narrower on volume and tighter on wallet ownership.",
+ "read_th": "ทีละขั้น ในหน่วยเดือน หลักการเดือนกันยายน ร่างที่มีตัวเลขเดือนพฤศจิกายน และนาฬิกา 60 วันสู่วันบังคับใช้เมื่อประกาศฉบับจริงออกมา รูปทรงนี้คงเส้นคงวาตลอดปี เป้าหมายแรกที่ ก.ล.ต. ระบุคือการฟอกเงินและการหลีกเลี่ยงกฎเกณฑ์การโอนเงินระหว่างประเทศ โดยร่างฉบับนี้เดินสองทางคือเพดาน 5 ล้านบาทต่อวันและกฎกระเป๋าของตนเอง เพดานสูงพอที่ผู้ถือเหรียญทั่วไปในไทยไม่สะดุด ส่วนกฎกระเป๋าของตนเองคือเส้นที่ผู้ถือเหรียญทุกคนเผชิญทุกครั้งที่ฝากหรือถอนผ่านศูนย์ซื้อขายที่มีใบอนุญาต เส้นทางคู่ขนานของ ธปท. เรื่องสเตเบิลคอยน์สกุลบาทจัดกรอบอีกฝั่ง: สเตเบิลคอยน์บาท หากมีผู้ออก จะมาจากผู้ออกที่มีใบอนุญาตภายใต้โควตาจำนวน เก็บเงินสำรองไว้ในเงินฝากของธนาคารไทย และไม่มีผลตอบแทนแก่ผู้ถือ การคาดการณ์คือสเตเบิลคอยน์บาทรายแรกจากธนาคารหรือกลุ่มที่ไม่ใช่ธนาคารจะเกิดราวกลางปี 2027 ส่วน USDT และ USDC จะยังคงไหลผ่านช่องทาง P2P และศูนย์ซื้อขายต่างประเทศในอัตราของปี 2026 โดยประตูของศูนย์ซื้อขายที่มีใบอนุญาตแคบลงในด้านปริมาณ และเข้มขึ้นในด้านการเป็นเจ้าของกระเป๋า",
+ "signal": "rules",
+ "lead_until": "2026-11-26",
+ "strip_en": "The SEC's stablecoin draft: 5 million baht in a day, 5 million out, own wallet only, comment closes 26 November.",
+ "strip_th": "ร่างสเตเบิลคอยน์ของ ก.ล.ต.: ฝาก 5 ล้านบาท/วัน ถอน 5 ล้านบาท/วัน เฉพาะกระเป๋าของตนเอง ปิดรับความเห็น 26 พฤศจิกายน",
+ "sources": [
+  {
+   "title": "SEC Thailand opens consultation on draft notification for stablecoin transactions through digital asset business operators and enhancing SEC supervision",
+   "url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=253&NewsYear=2026&Lang=EN",
+   "publisher": "SEC Thailand",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "ก.ล.ต. เปิดเฮียริ่งคุม Stablecoin จ่อจำกัดโอนเข้า–ออก 5 ล้านต่อวัน สกัดฟอกเงิน",
+   "url": "https://www.kaohoon.com/news/local/880316",
+   "publisher": "Kaohoon",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "Thailand seeks $148,000 daily cap on certain stablecoin transfers to curb money laundering",
+   "url": "https://www.theblock.co/post/439676/thailand-seeks-daily-stablecoin-cap",
+   "publisher": "The Block",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Thailand proposes tighter stablecoin rules on crypto exchanges, bars transfers to third-party wallets",
+   "url": "https://cointelegraph.com/news/thailand-tighter-stablecoin-rules-crypto-exchange",
+   "publisher": "Cointelegraph",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "Thailand's stablecoin proposal would block transfers to other people's wallets",
+   "url": "https://cryptoslate.com/thailands-stablecoin-proposal-would-block-transfers-to-other-peoples-wallets/",
+   "publisher": "CryptoSlate",
+   "date": "2026-09-12"
+  },
+  {
+   "title": "Bank of Thailand proposes licensing framework for THB stablecoins",
+   "url": "https://www.tilleke.com/insights/bank-of-thailands-cash-gold-and-digital-asset-controls-combating-the-grey-economy/",
+   "publisher": "Tilleke & Gibbins",
+   "date": "2026-10-19"
+  }
+ ],
+ "links": [
+  {
+   "href": "rules/",
+   "en": "Thai crypto rules and licensed exchanges",
+   "th": "กฎคริปโทของไทยและศูนย์ซื้อขายที่มีใบอนุญาต",
+   "lead": true
+  },
+  {
+   "href": "ramp/",
+   "en": "Routes to baht",
+   "th": "เส้นทางสู่เงินบาท"
+  },
+  {
+   "href": "scams/",
+   "en": "Scam losses in Thailand",
+   "th": "ความเสียหายจากการหลอกลวงในไทย"
+  },
+  {
+   "href_en": "https://hongdam.net/buy/?c=bank-account",
+   "href_th": "https://hongdam.net/th/buy/?c=bank-account",
+   "en": "Bank account opened with you, Hongdam",
+   "th": "เปิดบัญชีธนาคารไปด้วยกัน, Hongdam"
+  }
+ ]
+}
