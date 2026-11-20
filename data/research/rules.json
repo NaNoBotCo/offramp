@@ -2336,6 +2336,27 @@
    "event_th": "ก.ล.ต. กล่าวโทษ BG Limited ผู้ให้บริการ Bitget และผู้สนับสนุน 1 ราย กำหนดปิดกั้นการเข้าถึงตั้งแต่วันที่ 5 ธันวาคม",
    "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=241&NewsYear=2026&Lang=EN",
    "confidence": "confirmed"
+  },
+  {
+   "date": "2026-10-19",
+   "event": "The Bank of Thailand publishes a consultation paper on licensing baht-pegged stablecoin issuers and wallet providers under the Payment Systems Act B.E. 2560 (2017); issuers face a cap on licence numbers and 100% reserves in bank deposits spread across several banks; comments closed 17 November.",
+   "event_th": "ธนาคารแห่งประเทศไทยเผยแพร่เอกสารรับฟังความเห็นเรื่องการออกใบอนุญาตผู้ออกและผู้ให้บริการกระเป๋าสเตเบิลคอยน์สกุลบาท ภายใต้พระราชบัญญัติระบบการชำระเงิน พ.ศ. 2560 จำกัดจำนวนใบอนุญาตผู้ออก ต้องกันเงินสำรอง 100% ในเงินฝากของธนาคารหลายแห่ง ปิดรับความเห็นเมื่อ 17 พฤศจิกายน",
+   "source_url": "https://www.tilleke.com/insights/bank-of-thailands-cash-gold-and-digital-asset-controls-combating-the-grey-economy/",
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-12",
+   "event": "The SEC opens public consultation on the draft notification regulating stablecoin transactions through digital asset operators: 5 million baht daily caps on deposits and on withdrawals per customer per operator, own-wallet rule, Travel Rule compliance, market-maker disclosure, and mule-account screening; comment closes 26 November.",
+   "event_th": "ก.ล.ต. เปิดรับฟังความเห็นต่อร่างประกาศกำกับดูแลการทำธุรกรรมสเตเบิลคอยน์ผ่านผู้ประกอบธุรกิจสินทรัพย์ดิจิทัล: เพดาน 5 ล้านบาทต่อวันทั้งการฝากและการถอน ต่อลูกค้าหนึ่งรายต่อผู้ประกอบธุรกิจหนึ่งราย เกณฑ์ให้โอนเฉพาะกระเป๋าของตนเอง ปฏิบัติตาม Travel Rule เปิดเผยผู้ดูแลสภาพคล่อง และคัดกรองบัญชีม้า ปิดรับความเห็น 26 พฤศจิกายน",
+   "source_url": "https://www.sec.or.th/EN/Pages/News_Detail.aspx?NewsNo=253&NewsYear=2026&Lang=EN",
+   "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-18",
+   "event": "A parliamentary subcommittee on money-laundering enforcement accepts a petition on the 2021 Bitkub theft and sets an urgent session for 26 November, inviting the SEC, the Bank of Thailand, police units, the DSI, the Anti-Money Laundering Office and the exchange.",
+   "event_th": "คณะอนุกรรมาธิการศึกษาแนวทางการบังคับใช้กฎหมายฟอกเงินรับหนังสือร้องเรียนเรื่องเหตุโจรกรรม Bitkub ปี 2021 และบรรจุเป็นวาระเร่งด่วนวันที่ 26 พฤศจิกายน โดยเชิญ ก.ล.ต. ธนาคารแห่งประเทศไทย หน่วยงานตำรวจ DSI สำนักงาน ปปง. และบริษัทมาชี้แจง",
+   "source_url": "https://mgronline.com/politics/detail/9690000110244",
+   "confidence": "confirmed"
   }
  ],
  "open_questions": [
