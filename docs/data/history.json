@@ -2160,6 +2160,30 @@
     }
    ],
    "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-21",
+   "era": "now",
+   "title": "Bitcoin at half its record in baht",
+   "title_th": "บิตคอยน์เหลือครึ่งหนึ่งของสถิติในรูปเงินบาท",
+   "what": "Bitcoin falls to $55,130 on Binance on 21 November, after its first fall under $60,000 since early July on 20 November; on Bitkub it trades as low as 1,900,000 baht and closes at 2,015,000 baht on 24 November, 50.2% below its record of 4,045,999 baht on 6 October 2025. US spot bitcoin funds see $4.71 billion of outflows in November, the largest month on record.",
+   "what_th": "บิตคอยน์ลงไปที่ 55,130 ดอลลาร์บน Binance เมื่อ 21 พฤศจิกายน หลังหลุด 60,000 ดอลลาร์ครั้งแรกนับจากต้นเดือนกรกฎาคมเมื่อ 20 พฤศจิกายน บน Bitkub ราคาลงไปต่ำสุด 1,900,000 บาท และปิดที่ 2,015,000 บาทเมื่อ 24 พฤศจิกายน ต่ำกว่าสถิติ 4,045,999 บาทเมื่อ 6 ตุลาคม 2025 อยู่ 50.2% กองทุนบิตคอยน์ spot ในสหรัฐฯ มีเงินไหลออก 4.71 พันล้านดอลลาร์ในเดือนพฤศจิกายน มากที่สุดในหนึ่งเดือนเท่าที่มีบันทึก",
+   "thailand": true,
+   "sources": [
+    {
+     "title": "Bitcoin falls below $60,000 as rally on Jensen Huang's Nvidia return fades",
+     "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades",
+     "publisher": "CoinDesk",
+     "date": "2026-11-24"
+    },
+    {
+     "title": "Bitcoin Price Crashes to $59,000 as Market Selloff Deepens",
+     "url": "https://bitcoinmagazine.com/markets/bitcoin-price-crashes-below-60000",
+     "publisher": "Bitcoin Magazine",
+     "date": "2026-11-20"
+    }
+   ],
+   "confidence": "confirmed"
   }
  ],
  "prices": [
