@@ -3,14 +3,14 @@
 > Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed.
 > คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล
 
-https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-11-23  ·  CC BY 4.0, cite offrampt.net
+https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-11-25  ·  CC BY 4.0, cite offrampt.net
 
 ## Computed findings
-- USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2913 days (2018-11-12 to 2026-11-23); above the bank rate on 80.8% of days
-- Bitcoin on Bitkub vs Binance x Bank of Thailand mid: median -0.03%; within 1% on 54.6% of 3112 days; hottest year 2021 (median +1.15%)
-- USDT = 50.5% of Bitkub's own-book baht volume (24h to 2026-11-23)
-- Stablecoins in circulation: $284.5B; USDT on Tron 52.4%
-- Bitcoin in baht: ฿2,089,809 on 2026-11-23; high ฿4,045,999 on 2025-10-06
+- USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2915 days (2018-11-12 to 2026-11-25); above the bank rate on 80.8% of days
+- Bitcoin on Bitkub vs Binance x Bank of Thailand mid: median -0.03%; within 1% on 54.6% of 3114 days; hottest year 2021 (median +1.15%)
+- USDT = 54.8% of Bitkub's own-book baht volume (24h to 2026-11-25)
+- Stablecoins in circulation: $284.2B; USDT on Tron 52.5%
+- Bitcoin in baht: ฿2,025,262 on 2026-11-25; high ฿4,045,999 on 2025-10-06
 
 ## Pages
 - https://offrampt.net/tools/ · https://offrampt.net/th/tools/ — Tools / เครื่องมือ: Calculator, checker
@@ -26,6 +26,7 @@ https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 20
 - https://offrampt.net/paper/ · https://offrampt.net/th/paper/ — Paper Baht / บาทกระดาษ: practice trading with ฿1,000,000 of paper money at live prices; eleven coins with gold among them, baht, US dollar notes, USDT and USDC; built by Hongdam Studio, https://hongdam.net/
 - https://offrampt.net/frozen/ · https://offrampt.net/th/frozen/ — Frozen / ถอนไม่ได้: Binance's $6.3 billion loss of 29 October 2026 and its paused withdrawals, each exchange's state with sources, eight worse cases with precedents, a counter of months covered if an exchange freezes; paid help from Hongdam, https://hongdam.net/studio/crypto-safety/
 - https://offrampt.net/intel/ · https://offrampt.net/th/intel/ — Intel / ข่าวกรอง: dated notes and computed trends; Atom feeds https://offrampt.net/intel/feed.xml and https://offrampt.net/th/intel/feed.xml; all notes as JSON https://offrampt.net/intel/notes.json
+  - 2026-11-25 https://offrampt.net/intel/bitcoin-half-its-record-in-baht/ — Bitcoin on Bitkub: 2.72 million baht on 28 October, 2.02 million on 24 November, half its record
   - 2026-11-23 https://offrampt.net/intel/ci-centres-15000-in-26-days/ — Myanmar's CI centres: 15,000 applications in 26 days, against a plan of 4,000 to 5,000 a day
   - 2026-11-20 https://offrampt.net/intel/bitkub-2021-hack-parliament-26-november/ — Bitkub's 1.7 billion baht hack of 2021 goes to a parliamentary panel on 26 November
   - 2026-11-18 https://offrampt.net/intel/sec-stablecoin-draft-5-million-baht/ — Thai SEC stablecoin draft: 5 million baht a day in, 5 million out, own-wallet only, to 26 November
