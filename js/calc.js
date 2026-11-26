@@ -85,8 +85,9 @@
     if (best && on.length) {  // the home page's sign: the most baht, and the route that pays it
       var w = on[0];
       best.textContent = "฿" + f(w.q, 0);
-      if (via) via.innerHTML = t("via ", "ผ่าน ") + (w.r.ref || w.r.site ? '<a href="' + esc(w.r.ref || w.r.site) + '" rel="' + (w.r.ref ? "sponsored " : "") + 'noopener" target="_blank">' : "") +
-        esc(TH && w.r.label_th ? w.r.label_th : w.r.label) + (w.r.ref || w.r.site ? " ↗</a>" : "");
+      var nm = esc(TH && w.r.label_th ? w.r.label_th : w.r.label);
+      if (via) via.innerHTML = t("via ", "ผ่าน ") + (w.r.ref ? nm + ' <a class="btn sm sponsored" href="' + esc(w.r.ref) + '" rel="sponsored noopener" target="_blank">' + t("Sign up", "สมัคร") + "</a>"
+        : w.r.site ? '<a href="' + esc(w.r.site) + '" rel="noopener" target="_blank">' + nm + " ↗</a>" : nm);
     }
     bars.innerHTML = res.map(function (x, k) {
       var w = (x.q / mx * 100).toFixed(1), d = ref ? (x.q / ref - 1) * 100 : 0;

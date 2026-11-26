@@ -30,7 +30,7 @@ check("no downward arrows", not any(a in p.read_text() for p in SITE.rglob("*.ht
 check("every page has one h-level sign or h1", all(("class=\"sign" in t or "<h1" in t) for t in (p.read_text() for p in SITE.rglob("index.html"))))
 check("sources page lists what pages cite", (SITE / "sources" / "index.html").read_text().count("<li id=\"s") >= 11)
 check("no page links a referral without the disclosure",
-      all(("rel=\"sponsored" not in p.read_text()) or ("referral links" in p.read_text()) for p in SITE.rglob("index.html")))
+      all(("rel=\"sponsored" not in t) or ('class="disclose"' in t and ("referral links" in t or "ลิงก์แนะนำ" in t)) for t in (p.read_text() for p in SITE.rglob("index.html"))))
 check("notranslate on every page", all('translate="no"' in p.read_text() and 'content="notranslate"' in p.read_text() for p in SITE.rglob("*.html")))
 check("notranslate header", "X-Robots-Tag: notranslate" in (SITE / "_headers").read_text())
 check("llms.txt exists", (SITE / "llms.txt").exists())
