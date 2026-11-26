@@ -274,9 +274,9 @@ def aff(pid, text=None):
 
 
 def disclose():
-    return T('<p class="disclose">Links marked ↗ are referral links: an account opened through one pays this site a commission from the provider, '
+    return T('<p class="disclose">Sign up buttons are referral links: an account opened through one pays this site a commission from the provider, '
              'at no charge to the reader. Nothing here is advice about money.</p>',
-             '<p class="disclose">ลิงก์ที่มีเครื่องหมาย ↗ เป็นลิงก์แนะนำ: บัญชีที่เปิดผ่านลิงก์นั้นทำให้เว็บนี้ได้ค่าคอมมิชชันจากผู้ให้บริการ '
+             '<p class="disclose">ปุ่ม “สมัคร” เป็นลิงก์แนะนำ: บัญชีที่เปิดผ่านลิงก์นั้นทำให้เว็บนี้ได้ค่าคอมมิชชันจากผู้ให้บริการ '
              'โดยผู้อ่านไม่เสียค่าใช้จ่ายเพิ่ม เนื้อหาในเว็บนี้ไม่ใช่คำแนะนำทางการเงิน</p>')
 
 
@@ -579,6 +579,7 @@ def home():
 <div id="cbars" class="lim"></div>
 <button class="allrt" id="callrt" type="button" data-more="{T("All routes", "ทุกเส้นทาง")}" data-less="{T("Top 3", "3 อันดับแรก")}">{T("All routes", "ทุกเส้นทาง")}</button>
 <details class="fees"><summary>{T("Change the fees", "แก้ค่าธรรมเนียม")}</summary><div id="croutes"></div></details>
+{disclose() if REFS_ON else ""}
 <p class="small mute">{T(f"Over {n(Uu['days'])} days, USDT sold on Bitkub fetched a median {pct(Uu['vs_tt_median'])} against a dollar wired to a Thai bank.",
                          f"ตลอด {n(Uu['days'])} วัน การขาย USDT บน Bitkub ได้เงินบาทมากกว่าเงินดอลลาร์ที่โอนเข้าธนาคารไทย ค่ามัธยฐาน {pct(Uu['vs_tt_median'])}")}{cite("bitkub", "bot")}</p>
 <h2 id="help">{T("Get help", "ให้เราช่วย")}</h2>
@@ -594,7 +595,6 @@ def home():
 {tip()}
 <h2 id="guides">{T("Guides", "คู่มือ")}</h2>
 {guides()}
-{disclose() if REFS_ON else ""}
 </div>"""
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "description": T(TAG_EN, TAG_TH),
           "inLanguage": ["en", "th"], "license": "https://creativecommons.org/licenses/by/4.0/"}
