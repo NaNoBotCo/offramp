@@ -2,9 +2,13 @@
 
 Crypto in Thailand, and the ways out to baht. Ten exits, each a small site of its own:
 
-The home page leads with a financial-access wizard, the existing calculator, local services, and three
-interactive cost and resilience tools. Intel, the long view, and research remain available. The menu carries Intel and
-four exits; the other six are reference pages, linked from the footer.
+The home page is one tool, the calculator, drawn as an exit sign: USDT in, the most baht out, and the route
+that pays it. Below it: the routes ranked, paid help from Hongdam and the Visa Desk (prices read from
+hongdam.net at build), Paper Baht, the three newest intel notes with a follow form, the tip jar (Lightning,
+Ko-fi, Patreon) and the ten guides. The menu carries Baht, Paper Baht, Intel and Guides.
+
+On a phone, wide tables, long research cards and long timelines fold: a row or card shows its title and
+first line, and a tap opens it. Without JavaScript everything shows.
 
 ## Intel
 
@@ -50,25 +54,6 @@ Thailand, every fifteen minutes); the baked figures stand when it cannot be reac
 `data/money.json` holds receiving addresses and referral links. A null slot renders nothing; a
 filled one appears at the next build, with the disclosure beside it. A referral keyed by a route's
 `pid` in `data/routes.json` turns that calculator row's Open button into a Sign up link.
-
-## Commercial launch
-
-- The homepage wizard selects the calculator's bank filter and amount. A restricted account points to
-  the existing resolution guide, not a route around the restriction.
-- Existing Hongdam services use their existing purchase pages. Offrampt Landing, Pro and enterprise
-  are enquiry-only pilots; do not advertise subscriptions or collect payment until the delivery scope,
-  price, fulfilment and checkout are confirmed. Enquiries go to the existing public fleet email.
-- Commercial events are dispatched as `offrampt-commercial` and pushed into an existing `dataLayer`
-  if one is installed. The payload contains only event and category; no amount, visa or account status.
-  An analytics collector and conversion reporting still need configuration.
-- Activate approved partner URLs in `data/money.json`; do not use placeholder links. Field testing
-  should record provider, date, nationality/visa category, tested capability, evidence and limitations,
-  without retaining customer identifiers.
-- Run `./publish.sh` (or `./publish.sh --pages` with current build inputs), then `./deploy.sh` from an
-  authorized checkout. Confirm English and Thai mobile and desktop rendering, existing calculator
-  interaction, checkout links and enquiry email before promotion.
-- Next: search-intent landing pages, compact third-party embeds, verified passport/provider matrix,
-  subscriptions, attribution and paid-order reconciliation.
 
 ## Licence
 

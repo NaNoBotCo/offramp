@@ -47,7 +47,11 @@
     box.querySelectorAll("input").forEach(function (el) { el.addEventListener("input", calc); });
   }
   function val(i, k) { var el = document.getElementById("f" + i + k); return el ? num(el) : 0; }
-  var bank = "all", gap = document.getElementById("cgap");
+  var bank = "all", gap = document.getElementById("cgap"), best = document.getElementById("cbest"), via = document.getElementById("cvia"), all = document.getElementById("callrt");
+  if (all) all.addEventListener("click", function () {
+    var lim = bars.classList.toggle("lim");
+    all.textContent = lim ? all.dataset.more : all.dataset.less;
+  });
   document.querySelectorAll("[data-bank]").forEach(function (b) {
     b.addEventListener("click", function () {
       document.querySelectorAll("[data-bank]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
@@ -78,11 +82,17 @@
     var mx = Math.max.apply(null, res.map(function (x) { return x.q; }).concat([1])), ref = a * rate.mid;
     var on = res.filter(function (x) { return x.ok; });
     if (gap) gap.innerHTML = on.length > 1 && on[0].q > 0 ? t("The wrong route costs ", "เลือกเส้นทางผิด เสีย ") + "<b>฿" + f(on[0].q - on[on.length - 1].q, 0) + "</b>" + t(" on this amount.", " จากจำนวนนี้") : "";
+    if (best && on.length) {  // the home page's sign: the most baht, and the route that pays it
+      var w = on[0];
+      best.textContent = "฿" + f(w.q, 0);
+      if (via) via.innerHTML = t("via ", "ผ่าน ") + (w.r.ref || w.r.site ? '<a href="' + esc(w.r.ref || w.r.site) + '" rel="' + (w.r.ref ? "sponsored " : "") + 'noopener" target="_blank">' : "") +
+        esc(TH && w.r.label_th ? w.r.label_th : w.r.label) + (w.r.ref || w.r.site ? " ↗</a>" : "");
+    }
     bars.innerHTML = res.map(function (x, k) {
       var w = (x.q / mx * 100).toFixed(1), d = ref ? (x.q / ref - 1) * 100 : 0;
       var col = x.r.kind === "p2p" ? "var(--red)" : x.r.kind === "card" ? "var(--blue)" : "var(--go)";
       var need = x.r.thai_bank ? '<span class="pill go">' + t("Thai bank", "บัญชีไทย") + "</span>" : '<span class="pill amber">' + t("no Thai bank", "ไม่ต้องมีบัญชีไทย") + "</span>";
-      return '<div class="rt' + (x.ok ? "" : " off") + (x.ok && k === 0 ? " best" : "") + '"><div class="rt-h"><span>' + esc(TH && x.r.label_th ? x.r.label_th : x.r.label) + '</span><b class="num">฿' + f(x.q, 0) + "</b></div>" +
+      return '<div class="rt' + (x.ok ? "" : " off") + (x.ok && k === 0 ? " best" : "") + (k > 2 ? " more" : "") + '"><div class="rt-h"><span>' + esc(TH && x.r.label_th ? x.r.label_th : x.r.label) + '</span><b class="num">฿' + f(x.q, 0) + "</b></div>" +
         '<div class="rt-bar"><i style="width:' + w + "%;background:" + col + '"></i></div>' +
         '<div class="rt-f">' + need + '<span class="small mute num">' + (d >= 0 ? "+" : "") + f(d, 2) + t("% vs mid", "% เทียบอัตรากลาง") + "</span>" + cta(x.r) + "</div></div>";
     }).join("") + '<p class="small mute">' + t("Rates: ", "อัตรา: ") + esc(rate.when) + t(". Baht in hand after the fees below.", " เงินบาทที่ได้รับหลังหักค่าธรรมเนียมด้านล่าง") + "</p>";

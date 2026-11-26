@@ -471,13 +471,12 @@ def note_page(S, n):
 
 def index_page(S):
     head = (S.sign(None, "Intel", "ข่าวกรอง", "What is moving, its shape and its speed", "อะไรกำลังเปลี่ยน รูปทรงและความเร็วของมัน", cls="sm", tab="", alt_en="", alt_th="")
-            + f'<h1 class="q">{S.T("Intel", "ข่าวกรอง")}</h1>'
             + f'<p class="lede">{S.T("Crypto in Thailand, read for the long haul: dated notes with their sources, and trends computed from the data at every build.", "คริปโตในไทย อ่านแบบมองยาว: บันทึกลงวันที่พร้อมแหล่งที่มา และแนวโน้มที่คำนวณจากข้อมูลทุกครั้งที่สร้างหน้า")}</p>')
     cards = "".join(note_card(S, n, lead=(i == 0)) for i, n in enumerate(STATE["notes"]))
     body = S.band("hero.jpg", head, "top") + S.section(
         f'<h2>{S.T("Trends", "แนวโน้ม")}</h2>{signals_block(S, full=True)}'
         f'<h2>{S.T("Notes", "บันทึก")} <small>{len(STATE["notes"])}</small></h2><div class="ncards">{cards}</div>'
-        + follow(S))
+        + S.long_view() + follow(S))
     S.page(S.T("Intel", "ข่าวกรอง"), body + SHARE_JS, "intel/",
            S.T("Crypto intel for Thailand: hacks, rules, banks, markets and the long view, each with its trend's shape and speed.",
                "ข่าวกรองคริปโตสำหรับประเทศไทย: การแฮ็ก กฎ ธนาคาร ตลาด และมุมมองระยะยาว พร้อมรูปทรงและความเร็วของแนวโน้ม"))
