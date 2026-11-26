@@ -22,6 +22,7 @@ import fleet                                   # noqa: E402
 import frozen as FZ                            # noqa: E402
 import paper                                   # noqa: E402
 import intel                                   # noqa: E402
+import commercial                              # noqa: E402
 from css import CSS                            # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -352,7 +353,7 @@ def page(title, body, path, desc="", scripts=(), jsonld=None):
         lds.append(jsonld)
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     tag = T(TAG_EN, TAG_TH)
-    head_title = f"{title} — {NAME}" if path else T(f"{NAME} — crypto in Thailand, and the ways out to baht", f"{NAME} — คริปโตในไทย และทางออกสู่เงินบาท")
+    head_title = f"{title} — {NAME}" if path else T(f"{NAME} — Thai banking, crypto to baht and payment options", f"{NAME} — ธนาคารไทย แลกคริปโตเป็นบาท และทางเลือกการชำระเงิน")
     exits = "".join(f'<a href="{U(h)}"><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>' for h, en, th, *_r in MENU)
     refs = " · ".join(f'<a href="{U(h)}">{E(T(en, th))}</a>' for h, en, th, *_r in EXITS[HUMAN:])
     opath = "" if path == "404/" else path
@@ -489,24 +490,26 @@ def home():
         ("#help", T("Banking help", "ช่วยเรื่องธนาคาร")), (U("how/"), T("How it works", "ทำงานอย่างไร"))))
     top = band("hero.jpg", sign(None, "Offrampt", "Offrampt", "Crypto in Thailand · the ways out to baht", "คริปโตในไทย · ทางออกสู่เงินบาท",
                                 cls="sm", tab="", alt_en="", alt_th="")
-               + f'<h1 class="q">{T("Crypto in Thailand, for the long haul", H1TH)}</h1>'
-               + f'<p class="lede hl">{T("Banking here is hard for many people. Crypto is one tool for it: live prices, the routes to baht, and what is moving.", "การเปิดบัญชีและโอนเงินในไทยไม่ง่ายสำหรับหลายคน คริปโตเป็นเครื่องมือหนึ่ง: ราคาสด เส้นทางแลกเป็นบาท และสิ่งที่กำลังเปลี่ยน")}</p>'
-               + tick + intel.lead_strip(sys.modules[__name__]) + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
+               + f'<h1 class="q">{commercial.render(LANG, BASE, "heading")}</h1>'
+               + f'<p class="lede hl">{commercial.render(LANG, BASE, "lede")}</p>'
+               + commercial.render(LANG, BASE, "start") + tick + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
     S = sys.modules[__name__]
     newest = intel.STATE["notes"][0]["date"] if intel.STATE["notes"] else TODAY
     doors = "".join(door(h) for h, *_r in MENU)
     body = top + section(f"""
+<h2 id="calc">{T("How many baht for your crypto?", QTH)}</h2>
+{calc_block(fees_open=False)}
+<a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
+<h2 id="help">{T("Banking help", "ช่วยเรื่องธนาคาร")} <small>{T("Hongdam, Chiang Mai Visa Desk, Mot Dang", "Hongdam, Chiang Mai Visa Desk, Mot Dang")}</small></h2>
+<div class="ours">{intel.ours_cards(S)}</div>
+{commercial.render(LANG, BASE, "extras")}
 <h2 id="intel">{T("Intel", "ข่าวกรอง")} <small>{T("updated", "อัปเดต")} {newest}</small></h2>
+{intel.lead_strip(S)}
 {intel.signals_block(S)}
 <div class="ncards">{intel.latest(S, 3)}</div>
 <p><a href="{U('intel/')}">{T("All intel", "ข่าวกรองทั้งหมด")}{ARROW}</a></p>
 {intel.follow(S)}
-<h2 id="calc">{T("How many baht for your crypto?", QTH)}</h2>
-{calc_block(fees_open=False)}
 {tip()}
-<a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
-<h2 id="help">{T("Banking help", "ช่วยเรื่องธนาคาร")} <small>{T("Hongdam, Chiang Mai Visa Desk, Mot Dang", "Hongdam, Chiang Mai Visa Desk, Mot Dang")}</small></h2>
-<div class="ours">{intel.ours_cards(S)}</div>
 {long_view()}
 <details class="panel fold" id="check"><summary>{T("Address checker", "ตัวตรวจที่อยู่")}</summary>
 {checker(tries=True)}</details>
@@ -515,7 +518,7 @@ def home():
 """)
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "description": T(TAG_EN, TAG_TH),
           "inLanguage": ["en", "th"], "license": "https://creativecommons.org/licenses/by/4.0/"}
-    page(NAME, body + intel.SHARE_JS, "", scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
+    page(NAME, body + intel.SHARE_JS + commercial.SCRIPT, "", desc=T("Compare crypto-to-baht routes, Thai banking and payment options. Get practical local help, compare fees, and plan backup access to money.", "เปรียบเทียบเส้นทางแลกคริปโตเป็นบาท ธนาคารและการชำระเงินในไทย พร้อมความช่วยเหลือและเครื่องมือคำนวณค่าธรรมเนียม"), scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
 
 
 def recent_block():
