@@ -492,7 +492,7 @@ def home():
                                 cls="sm", tab="", alt_en="", alt_th="")
                + f'<h1 class="q">{commercial.render(LANG, BASE, "heading")}</h1>'
                + f'<p class="lede hl">{commercial.render(LANG, BASE, "lede")}</p>'
-               + commercial.render(LANG, BASE, "start") + tick + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
+               + commercial.render(LANG, BASE, "start", intel.STATE.get("hongdam"), TODAY) + tick + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
     S = sys.modules[__name__]
     newest = intel.STATE["notes"][0]["date"] if intel.STATE["notes"] else TODAY
     doors = "".join(door(h) for h, *_r in MENU)
@@ -502,7 +502,7 @@ def home():
 <a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
 <h2 id="help">{T("Banking help", "ช่วยเรื่องธนาคาร")} <small>{T("Hongdam, Chiang Mai Visa Desk, Mot Dang", "Hongdam, Chiang Mai Visa Desk, Mot Dang")}</small></h2>
 <div class="ours">{intel.ours_cards(S)}</div>
-{commercial.render(LANG, BASE, "extras")}
+{commercial.render(LANG, BASE, "extras", intel.STATE.get("hongdam"), TODAY)}
 <h2 id="intel">{T("Intel", "ข่าวกรอง")} <small>{T("updated", "อัปเดต")} {newest}</small></h2>
 {intel.lead_strip(S)}
 {intel.signals_block(S)}

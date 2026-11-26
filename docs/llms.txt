@@ -3,14 +3,14 @@
 > Crypto in Thailand: the routes out to baht, the Thai rules, the cards, the scams, and the market in baht, with the numbers computed.
 > คริปโตในประเทศไทย: เส้นทางแลกเป็นเงินบาท กฎของไทย บัตร กลโกง และตลาดในสกุลบาท พร้อมตัวเลขที่คำนวณจากข้อมูล
 
-https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-11-25  ·  CC BY 4.0, cite offrampt.net
+https://offrampt.net/ (English) · https://offrampt.net/th/ (Thai)  ·  built 2026-11-26  ·  CC BY 4.0, cite offrampt.net
 
 ## Computed findings
-- USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2915 days (2018-11-12 to 2026-11-25); above the bank rate on 80.8% of days
-- Bitcoin on Bitkub vs Binance x Bank of Thailand mid: median -0.03%; within 1% on 54.6% of 3114 days; hottest year 2021 (median +1.15%)
-- USDT = 54.8% of Bitkub's own-book baht volume (24h to 2026-11-25)
-- Stablecoins in circulation: $284.2B; USDT on Tron 52.5%
-- Bitcoin in baht: ฿2,025,262 on 2026-11-25; high ฿4,045,999 on 2025-10-06
+- USDT sold on Bitkub vs Thai banks' average buying rate for a dollar transfer: median +0.52% over 2916 days (2018-11-12 to 2026-11-26); above the bank rate on 80.8% of days
+- Bitcoin on Bitkub vs Binance x Bank of Thailand mid: median -0.03%; within 1% on 54.6% of 3115 days; hottest year 2021 (median +1.15%)
+- USDT = 47.8% of Bitkub's own-book baht volume (24h to 2026-11-26)
+- Stablecoins in circulation: $283.3B; USDT on Tron 52.6%
+- Bitcoin in baht: ฿2,074,473 on 2026-11-26; high ฿4,045,999 on 2025-10-06
 
 ## Pages
 - https://offrampt.net/tools/ · https://offrampt.net/th/tools/ — Tools / เครื่องมือ: Calculator, checker

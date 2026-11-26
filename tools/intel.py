@@ -271,6 +271,7 @@ def _read_ours():
                 live = {k["id"]: k for k in json.loads(r.read().decode("utf-8")).get("kinds", [])}
         except Exception:
             live = {}
+    STATE["hongdam"] = {i: k.get("price") for i, k in live.items() if k.get("price")}
     for o in ours:
         k = live.get(o.get("hongdam_id") or "")
         if k and k.get("price"):
