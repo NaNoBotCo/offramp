@@ -22,7 +22,6 @@ import fleet                                   # noqa: E402
 import frozen as FZ                            # noqa: E402
 import paper                                   # noqa: E402
 import intel                                   # noqa: E402
-import commercial                              # noqa: E402
 from css import CSS                            # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -229,7 +228,8 @@ def sign(no, en, th, sub_en="", sub_th="", cls="", tab=None, alt_en=None, alt_th
 
 
 def band(img, inner, cls=""):
-    return (f'<section class="band {cls}" style="background-image:url({BASE}img/{img})">'
+    """a full-width picture that stays put while the page slides over it"""
+    return (f'<section class="band {cls}"><div class="sky" style="background-image:url({BASE}img/{img})"></div>'
             f'<div class="in">{inner}</div></section>')
 
 
@@ -262,7 +262,8 @@ def table(head, rows, attrs=""):
         k = iter(range(len(labels)))
         return re.sub(r"<td(?=[\s>])", lambda m: f'<td data-l="{labels[next(k, len(labels) - 1)]}"', tr.group(0))
     body = re.sub(r"<tr\b.*?</tr>", label, "".join(rows), flags=re.S)
-    return f'<div class="tw"><table{attrs}><thead><tr>{th_}</tr></thead><tbody>{body}</tbody></table></div>'
+    cls = "tw folds" if len(head) >= 4 else "tw"  # on a phone, a wide table's rows open on a tap
+    return f'<div class="{cls}"><table{attrs}><thead><tr>{th_}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
 def aff(pid, text=None):
@@ -283,8 +284,8 @@ JS_NAV = """<script>(function(){var y=scrollY,b=document.body;addEventListener('
 b.classList.toggle('nav-away',n>y&&n>240);y=n},{passive:true})})();</script>"""
 
 
-def subscribe_form(source="offrampt", fid="subx"):
-    lab, bt = T("Email address", "อีเมล"), T("Send", "ส่ง")
+def subscribe_form(source="offrampt", fid="subx", lab=None, bt=None):
+    lab, bt = lab or T("Email address", "อีเมล"), bt or T("Send", "ส่ง")
     ok, bad, inc = T("On the list.", "ลงชื่อแล้ว"), T("That did not go through. Try again in a moment.", "ส่งไม่สำเร็จ ลองอีกครั้งในอีกสักครู่"), T("That address looks incomplete.", "อีเมลดูไม่ครบ")
     return f"""<div class="subf" id="{fid}"><form class="row" novalidate><label class="hp" aria-hidden="true" style="position:absolute;left:-9999px">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
 <div class="field" style="flex:1 1 14rem;margin:0"><input type="email" name="email" id="{fid}em" placeholder=" " autocomplete="email" required><label for="{fid}em">{lab}</label></div>
@@ -338,10 +339,36 @@ def og_tags(path):
             f'<meta name="twitter:image" content="{img}"><meta name="twitter:image:alt" content="{a}">')
 
 
+NAV = (("", "Baht", "แลกเป็นบาท"), ("paper/", "Paper Baht", "บาทกระดาษ"), ("intel/", "Intel", "ข่าวกรอง"), ("#guides", "Guides", "คู่มือ"))
+
+# The pilot enquiry address, as character codes the page's script turns into a mailto link: no address in the HTML.
+MAIL_CODES = "110,97,110,64,109,111,116,100,97,110,103,46,110,101,116"
+PAGE_JS = ("<script>(function(){var m=[" + MAIL_CODES + "].map(function(c){return String.fromCharCode(c)}).join('');"
+           "document.querySelectorAll('a[data-mail]').forEach(function(a){a.href='mailto:'+m+'?subject='+a.dataset.mail});"
+           "var ph=matchMedia('(max-width:640px)');document.querySelectorAll('.tw.folds tbody tr').forEach(function(r){"
+           "function t(e){if(!ph.matches||e.target.closest('a,button,input,select,summary'))return;r.classList.toggle('open')}"
+           "r.addEventListener('click',t);r.tabIndex=0;r.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t(e)}})});"
+           "if(ph.matches){document.querySelectorAll('.grid2>.cardx,.grid3>.cardx').forEach(function(c){if(c.children.length<3||c.querySelector('svg,input,select,canvas'))return;"
+           "var k=[].findIndex.call(c.children,function(x){return /^H[2-4]$/.test(x.tagName)});k=k<0?0:k;[].forEach.call(c.children,function(x,i){if(i>k+1)x.classList.add('fh');if(i===k+1)x.classList.add('fl')});"
+           "c.classList.add('fold1');c.tabIndex=0;function o(e){if(e.target.closest('a,button,input,select,summary'))return;c.classList.toggle('open')}"
+           "c.addEventListener('click',o);c.addEventListener('keydown',function(e){if(e.key==='Enter')o(e)})});"
+           "document.querySelectorAll('ol.tl').forEach(function(l){var n=l.children.length;if(n<14)return;l.classList.add('cut');var b=document.createElement('button');"
+           "b.type='button';b.className='allrt';b.textContent=(document.documentElement.lang==='th'?'ดูทั้งหมด ':'All ')+n;b.onclick=function(){l.classList.remove('cut');b.remove()};l.after(b)})}"
+           "document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){if(navigator.clipboard)"
+           "navigator.clipboard.writeText(b.dataset.copy).then(function(){b.textContent='✓'})})})})();</script>")
+
+
+def nav_current(h, path):
+    if h == "":
+        return path == ""
+    if h == "#guides":
+        return path in EX
+    return path.startswith(h)
+
+
 def page(title, body, path, desc="", scripts=(), jsonld=None):
-    nav = (f'<a href="{U("intel/")}"{" aria-current=page" if path.startswith("intel/") else ""}><i class="dot" aria-hidden="true"></i>{T("Intel", "ข่าวกรอง")}</a>'
-           + "".join(f'<a href="{U(h)}"{" aria-current=page" if path == h else ""}><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>'
-                     for h, en, th, *_r in MENU))
+    nav = "".join(f'<a href="{U() + h if h.startswith("#") else U(h)}"{" aria-current=page" if nav_current(h, path) else ""}>{E(T(en, th))}</a>'
+                  for h, en, th in NAV)
     js = "".join(f'<script src="{BASE}js/{s}?v={JSV[s]}" defer></script>' for s in scripts)
     url_en, url_th = SITE_URL + "/" + path, SITE_URL + "/th/" + path
     canon = url_th if LANG == "th" else url_en
@@ -354,8 +381,7 @@ def page(title, body, path, desc="", scripts=(), jsonld=None):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
     tag = T(TAG_EN, TAG_TH)
     head_title = f"{title} — {NAME}" if path else T(f"{NAME} — Thai banking, crypto to baht and payment options", f"{NAME} — ธนาคารไทย แลกคริปโตเป็นบาท และทางเลือกการชำระเงิน")
-    exits = "".join(f'<a href="{U(h)}"><i>{EXIT_NO[h]}</i>{E(T(en, th))}</a>' for h, en, th, *_r in MENU)
-    refs = " · ".join(f'<a href="{U(h)}">{E(T(en, th))}</a>' for h, en, th, *_r in EXITS[HUMAN:])
+    refs = " · ".join(f'<a href="{U(h)}">{E(T(en, th))}</a>' for h, en, th, *_r in EXITS)
     opath = "" if path == "404/" else path
     other = (BASE + opath) if LANG == "th" else (BASE + "th/" + opath)
     toggle = f'<a class="lang" href="{other}" hreflang="{T("th", "en")}" lang="{T("th", "en")}">{T("ไทย", "EN")}</a>'
@@ -378,7 +404,7 @@ Nothing here is advice about money, tax or law.""",
 <meta property="og:type" content="website"><meta property="og:site_name" content="{NAME}">
 <meta property="og:locale" content="{T('en_US', 'th_TH')}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#05070c">
+<meta name="theme-color" content="#f3efe6">
 <link rel="icon" href="{BASE}icon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="{T('Offrampt intel', 'ข่าวกรอง Offrampt')}" href="{U('intel/feed.xml')}">
 <style>{CSS}</style>{ld}
@@ -387,16 +413,16 @@ Nothing here is advice about money, tax or law.""",
 <a class="sr" href="#main">{T("Skip to the page", "ข้ามไปที่เนื้อหา")}</a>
 <header class="top"><div class="in">
 <a class="brand" href="{U()}" aria-label="{NAME}"><span class="plate">{PLATE}</span><b>OFFRAMPT</b></a>
-<nav aria-label="{T('Exits', 'ทางออก')}">{nav}</nav>{toggle}</div></header>
+<nav aria-label="{T('Main', 'เมนู')}">{nav}</nav>{toggle}</div></header>
 <main id="main" class="wide">{invite(path)}{body}</main>
 <footer class="bot"><div class="in">
-<div class="exits"><a href="{U('intel/')}"><i>●</i>{T("Intel", "ข่าวกรอง")}</a>{exits}<a href="{U('paper/')}"><i>▲</i>{T("Paper Baht", "บาทกระดาษ")}</a><a href="{U('support/')}"><i>฿</i>{T("Support", "สนับสนุน")}</a></div>
-<p class="fine"><a href="{U('intel/feed.xml')}">{T("Intel feed (RSS)", "ฟีดข่าวกรอง (RSS)")}</a> · {refs} · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · <a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a></p>
-<p class="fine"><b>{NAME}</b> — {E(tag)} {foot} · {toggle}</p>
-{fleet.row_html(SELF, label=T("Also ours", "เว็บอื่นของเรา"), roster=FLEET, ids=ALSO)}
+<p class="fine">{refs}</p>
+<p class="fine"><a href="{U('intel/')}">{T("Intel", "ข่าวกรอง")}</a> · <a href="{U('intel/feed.xml')}">RSS</a> · <a href="{U('paper/')}">{T("Paper Baht", "บาทกระดาษ")}</a> · <a href="{U('frozen/')}">{T("Frozen", "ถูกอายัด")}</a> · <a href="{U('support/')}">{T("Support", "สนับสนุน")}</a> · <a href="{U('sources/')}">{T("Sources", "แหล่งที่มา")}</a> · <a href="{U('data/')}">{T("Data", "ข้อมูล")}</a> · <a href="{U('for-agents/')}">{T("For agents", "สำหรับเอเจนต์")}</a> · <a href="{U('support/')}" data-mail="Offrampt%20business%20enquiry">{T("Business and data enquiries", "ติดต่อธุรกิจและข้อมูล")}</a></p>
+<p class="fine"><b>{NAME}</b> — {foot} · {toggle}</p>
+<details><summary>{T("Also ours", "เว็บอื่นของเรา")}</summary>{fleet.row_html(SELF, label="", roster=FLEET, ids=ALSO)}</details>
 {fleet.support_html(roster=FLEET, contact=False, self_id=SELF)}
 {fleet.maker_html(roster=FLEET, lang=LANG)}
-</div></footer>{js}{JS_NAV}
+</div></footer>{js}{PAGE_JS}{JS_NAV}
 </body></html>"""
     dest = SITE / ("th" if LANG == "th" else "") / path
     write(dest / "index.html", out)
@@ -436,15 +462,23 @@ def live_board():
 
 # ------------------------------------------------------------------ home
 REFS_ON = any((MONEY.get("referral") or {}).values())
+LN = (MONEY.get("receive") or {}).get("lightning")
 
 
 def tip():
+    """Ko-fi, Patreon and, when money.json has one, a Lightning address with its QR"""
     ko, pat = SUPPORT.get("ko-fi"), SUPPORT.get("patreon")
-    if not (ko or pat):
+    ln = ""
+    if LN:
+        ln = (f'<details class="ln"><summary>⚡ {T("Tip in sats", "ทิปเป็น sats")}</summary><div class="lnbox">'
+              f'<div class="qr">{qr_svg(LN)}</div><div><!--email_off--><code>{E(LN)}</code><!--/email_off--><div class="row">'
+              f'<a class="btn go sm" href="lightning:{E(LN)}">{T("Open wallet", "เปิดกระเป๋า")}</a>'
+              f'<button class="btn sm" type="button" data-copy="{E(LN)}">{T("Copy", "คัดลอก")}</button></div></div></div></details>')
+    b = ((f'<a class="btn" href="{E(ko)}" rel="noopener" target="_blank">Ko-fi</a>' if ko else "")
+         + (f'<a class="btn" href="{E(pat)}" rel="noopener" target="_blank">Patreon</a>' if pat else ""))
+    if not (ln or b):
         return ""
-    b = ((f'<a class="btn go" href="{E(ko)}" rel="noopener" target="_blank">{T("Tip on Ko-fi", "ให้ทิปผ่าน Ko-fi")}</a>' if ko else "")
-         + (f'<a class="btn" href="{E(pat)}" rel="noopener" target="_blank">{T("Join on Patreon", "เป็นสมาชิก Patreon")}</a>' if pat else ""))
-    return f'<div class="tip"><p>{T("Did this save you baht?", "เครื่องมือนี้ช่วยให้คุณได้เงินบาทมากขึ้นไหม")}</p><div class="row">{b}</div></div>'
+    return f'<div class="tip tipjar">{ln}{b}</div>'
 
 
 def first_clause(t):
@@ -452,7 +486,6 @@ def first_clause(t):
 
 
 QTH = '<span class="nw">คริปโตของคุณ</span> <span class="nw">แลกได้กี่บาท</span>'
-H1TH = '<span class="nw">คริปโตในไทย</span> <span class="nw">แบบมองยาว</span>'
 
 
 LONG_QUOTE = ("Crypto is not actually crypto. Why? Because everything leaks and computers are solving hard math problems faster than people realize.",
@@ -479,46 +512,95 @@ def long_view():
             f'<a href="https://nanobotco.github.io/factoring/">{T("Big Numbers, Split", "Big Numbers, Split")}</a> · <a href="{U("how/")}">{T("How crypto works", "คริปโตทำงานอย่างไร")}</a></p>')
 
 
+TH_MON = ("ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.")
+EN_MON = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def short_date(d):
+    y, m, dd = (int(x) for x in d[:10].split("-"))
+    return f"{dd} {T(EN_MON, TH_MON)[m - 1]}"
+
+
+def calc_data():
+    Uu, X, B = F["usdt"], F["fx"], F["btc"]
+    base = {"usdt_bid": Uu["last"]["bitkub"], "mid": X["mid"], "tt": X["tt"], "btc_bid": B["thb"], "date": Uu["last"]["date"]}
+    refs = MONEY.get("referral") or {}
+    routes = [dict(r, ref=refs.get(r.get("pid") or "") or None) for r in ROUTES]
+    return (f'<script type="application/json" id="ratebase">{json.dumps(base)}</script>'
+            f'<script type="application/json" id="routes">{json.dumps(routes, ensure_ascii=False)}</script>')
+
+
+def bank_seg():
+    return "".join(f'<button type="button" aria-pressed="{"true" if k == "all" else "false"}" data-bank="{k}">{E(v)}</button>' for k, v in
+                   (("all", T("All", "ทั้งหมด")), ("yes", T("Thai bank", "มีบัญชีไทย")), ("no", T("No Thai bank", "ไม่มีบัญชีไทย"))))
+
+
+def buy_cards(k=4):
+    """paid help from Hongdam and the Visa Desk, price first; prices read from hongdam.net at build"""
+    out = []
+    for o in intel.STATE["ours"][:k]:
+        href = o["href_th"] if LANG == "th" else o["href_en"]
+        price = f'฿{o["price"]:,}' if o.get("price") else T(o.get("price_en", ""), o.get("price_th", ""))
+        out.append(f'<a class="buy" href="{E(href)}" rel="noopener"><span class="p{"" if o.get("price") else " t"}">{E(price)}</span>'
+                   f'<b>{E(T(o["en"], o["th"]))}</b><span class="l">{E(T(o["line_en"], o["line_th"]))}</span>'
+                   f'<span class="s">{E(o["site"])}</span><span class="btn gold sm">{T("Book", "จอง")}{ARROW}</span></a>')
+    return "".join(out)
+
+
+def guides():
+    return ('<div class="guides">' + "".join(f'<a href="{U(h)}"><i>{EXIT_NO[h]}</i><b>{E(T(en, th))}</b><span>{E(T(se, st))}</span></a>'
+                                             for h, en, th, se, st, _p in EXITS) + "</div>")
+
+
 def home():
     Uu, X, B = F["usdt"], F["fx"], F["btc"]
+    S = sys.modules[__name__]
+    from og_alts import ALTS
     tick = (f'<p class="tick"><span class="live stale" id="livestate">{T("baked", "ค่าตอนสร้าง")}</span>'
             f'<span>1 USDT = ฿<b data-live="usdt_bid">{Uu["last"]["bitkub"]:.2f}</b></span>'
             f'<span>$1 = ฿<b data-live="bot_mid">{X["mid"]:.2f}</b></span>'
             f'<span>1 BTC = <b data-live="btc_bid">{thb(B["thb"])}</b></span></p>')
-    jumps = "".join(f'<a class="jump" href="{h}">{E(t)}</a>' for h, t in (
-        ("#calc", T("Baht for my crypto", "คริปโตของฉันได้กี่บาท")), ("#intel", T("Intel", "ข่าวกรอง")),
-        ("#help", T("Banking help", "ช่วยเรื่องธนาคาร")), (U("how/"), T("How it works", "ทำงานอย่างไร"))))
-    top = band("hero.jpg", sign(None, "Offrampt", "Offrampt", "Crypto in Thailand · the ways out to baht", "คริปโตในไทย · ทางออกสู่เงินบาท",
-                                cls="sm", tab="", alt_en="", alt_th="")
-               + f'<h1 class="q">{commercial.render(LANG, BASE, "heading")}</h1>'
-               + f'<p class="lede hl">{commercial.render(LANG, BASE, "lede")}</p>'
-               + commercial.render(LANG, BASE, "start", intel.STATE.get("hongdam"), TODAY) + tick + f'<nav class="jumps" aria-label="{T("On this page", "ในหน้านี้")}">{jumps}</nav>', "top")
-    S = sys.modules[__name__]
-    newest = intel.STATE["notes"][0]["date"] if intel.STATE["notes"] else TODAY
-    doors = "".join(door(h) for h, *_r in MENU)
-    body = top + section(f"""
-<h2 id="calc">{T("How many baht for your crypto?", QTH)}</h2>
-{calc_block(fees_open=False)}
-<a class="paperlink" href="{U('paper/')}"><span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}</span><b>{T("Paper Baht", "บาทกระดาษ")}{ARROW}</b></a>
-<h2 id="help">{T("Banking help", "ช่วยเรื่องธนาคาร")} <small>{T("Hongdam, Chiang Mai Visa Desk, Mot Dang", "Hongdam, Chiang Mai Visa Desk, Mot Dang")}</small></h2>
-<div class="ours">{intel.ours_cards(S)}</div>
-{commercial.render(LANG, BASE, "extras", intel.STATE.get("hongdam"), TODAY)}
-<h2 id="intel">{T("Intel", "ข่าวกรอง")} <small>{T("updated", "อัปเดต")} {newest}</small></h2>
+    exit_sign = (f'<form class="exit" id="calcbox" onsubmit="return false" aria-label="{T("Crypto to baht", "คริปโตเป็นเงินบาท")}">'
+                 f'<span class="tab" aria-hidden="true">{T("EXIT", "ทางออก")} ฿</span>'
+                 f'<label class="k" for="camt">{T("You have", "คุณมี")}</label>'
+                 f'<div class="amt"><input id="camt" inputmode="decimal" value="1000" autocomplete="off"><span>USDT</span></div>'
+                 f'<span class="k">{T("You get", "คุณได้")}</span>'
+                 f'<output id="cbest" for="camt" aria-live="polite">฿{1000 * Uu["last"]["bitkub"]:,.0f}</output>'
+                 f'<p class="via" id="cvia"></p>'
+                 f'<div class="seg" role="group" aria-label="{T("Your bank", "บัญชีธนาคารของคุณ")}">{bank_seg()}</div></form>')
+    top = band("hero.jpg", f'<h1>{T("Crypto to baht", "คริปโตเป็นเงินบาท")}</h1>' + exit_sign + tick, "hero")
+    notes = intel.STATE["notes"][:3]
+    items = "".join(f'<li><a href="{U("intel/" + intel.slug(n) + "/")}"><time datetime="{E(n["date"])}">{short_date(n["date"])}</time>'
+                    f'<b>{E(T(n["title_en"], n["title_th"]))}</b></a></li>' for n in notes)
+    pk = T("en", "th") + "-paper"
+    body = top + f"""<div class="in home">
+{calc_data()}
+<p class="gap" id="cgap" aria-live="polite"></p>
+<div id="cbars" class="lim"></div>
+<button class="allrt" id="callrt" type="button" data-more="{T("All routes", "ทุกเส้นทาง")}" data-less="{T("Top 3", "3 อันดับแรก")}">{T("All routes", "ทุกเส้นทาง")}</button>
+<details class="fees"><summary>{T("Change the fees", "แก้ค่าธรรมเนียม")}</summary><div id="croutes"></div></details>
+<p class="small mute">{T(f"Over {n(Uu['days'])} days, USDT sold on Bitkub fetched a median {pct(Uu['vs_tt_median'])} against a dollar wired to a Thai bank.",
+                         f"ตลอด {n(Uu['days'])} วัน การขาย USDT บน Bitkub ได้เงินบาทมากกว่าเงินดอลลาร์ที่โอนเข้าธนาคารไทย ค่ามัธยฐาน {pct(Uu['vs_tt_median'])}")}{cite("bitkub", "bot")}</p>
+<h2 id="help">{T("Get help", "ให้เราช่วย")}</h2>
+<div class="buys">{buy_cards()}</div>
+<a class="tilepic" href="{U('paper/')}"><img src="{BASE}img/og/{pk}.jpg" alt="{E(ALTS.get(pk, ""), quote=True)}" loading="lazy" width="1200" height="630">
+<span>{T("Trade ฿1,000,000 of paper money at live Bitkub prices.", "เทรดด้วยเงินกระดาษ ฿1,000,000 ที่ราคาสดจาก Bitkub")}<b>{T("Play", "เล่น")}{ARROW}</b></span></a>
+<h2 id="intel">{T("Intel", "ข่าวกรอง")}</h2>
 {intel.lead_strip(S)}
-{intel.signals_block(S)}
-<div class="ncards">{intel.latest(S, 3)}</div>
+<ol class="ilist">{items}</ol>
 <p><a href="{U('intel/')}">{T("All intel", "ข่าวกรองทั้งหมด")}{ARROW}</a></p>
-{intel.follow(S)}
+<div id="follow">{subscribe_form("offrampt-intel", "followf", T("Email for new intel", "อีเมลรับข่าวกรองใหม่"), T("Follow", "ติดตาม"))}</div>
+<h2 id="tip">{T("Saved you baht?", "ได้เงินบาทมากขึ้นไหม")}</h2>
 {tip()}
-{long_view()}
-<details class="panel fold" id="check"><summary>{T("Address checker", "ตัวตรวจที่อยู่")}</summary>
-{checker(tries=True)}</details>
-<div class="doors four">{doors}</div>
+<h2 id="guides">{T("Guides", "คู่มือ")}</h2>
+{guides()}
 {disclose() if REFS_ON else ""}
-""")
+</div>"""
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE_URL + "/", "description": T(TAG_EN, TAG_TH),
           "inLanguage": ["en", "th"], "license": "https://creativecommons.org/licenses/by/4.0/"}
-    page(NAME, body + intel.SHARE_JS + commercial.SCRIPT, "", desc=T("Compare crypto-to-baht routes, Thai banking and payment options. Get practical local help, compare fees, and plan backup access to money.", "เปรียบเทียบเส้นทางแลกคริปโตเป็นบาท ธนาคารและการชำระเงินในไทย พร้อมความช่วยเหลือและเครื่องมือคำนวณค่าธรรมเนียม"), scripts=("i18n.js", "live.js", "sha.js", "addr.js", "calc.js"), jsonld=ld)
+    page(NAME, body, "", desc=T("How many baht for your crypto: every route to a Thai bank or ATM, ranked live, with help in Chiang Mai.",
+                                "คริปโตของคุณแลกได้กี่บาท: ทุกเส้นทางเข้าบัญชีธนาคารไทยหรือตู้ ATM เรียงสด พร้อมคนช่วยที่เชียงใหม่"),
+         scripts=("i18n.js", "live.js", "calc.js"), jsonld=ld)
 
 
 def recent_block():
@@ -581,17 +663,9 @@ def ramp():
 
 
 def calc_block(fees_open=True):
-    Uu, X, B = F["usdt"], F["fx"], F["btc"]
-    base = {"usdt_bid": Uu["last"]["bitkub"], "mid": X["mid"], "tt": X["tt"], "btc_bid": B["thb"], "date": Uu["last"]["date"]}
-    refs = MONEY.get("referral") or {}
-    routes = [dict(r, ref=refs.get(r.get("pid") or "") or None) for r in ROUTES]
-    seg = "".join(f'<button type="button" aria-pressed="{"true" if k == "all" else "false"}" data-bank="{k}">{E(v)}</button>' for k, v in
-                  (("all", T("Everyone", "ทุกคน")), ("yes", T("Thai bank", "มีบัญชีไทย")), ("no", T("No Thai bank", "ไม่มีบัญชีไทย"))))
-    return (f'<script type="application/json" id="ratebase">{json.dumps(base)}</script>'
-            f'<script type="application/json" id="routes">{json.dumps(routes, ensure_ascii=False)}</script>'
-            f'<div class="panel calc" id="calcbox"><div class="field amt"><input id="camt" inputmode="decimal" placeholder=" " value="1000">'
+    return (calc_data() + f'<div class="panel calc" id="calcbox"><div class="field amt"><input id="camt" inputmode="decimal" placeholder=" " value="1000">'
             f'<label for="camt">{T("USDT to turn into baht", "จำนวน USDT ที่จะแลกเป็นบาท")}</label></div>'
-            f'<div class="seg" role="group" aria-label="{T("Your bank", "บัญชีธนาคารของคุณ")}">{seg}</div>'
+            f'<div class="seg" role="group" aria-label="{T("Your bank", "บัญชีธนาคารของคุณ")}">{bank_seg()}</div>'
             f'<p class="gap" id="cgap" aria-live="polite"></p><div id="cbars"></div>'
             f'<details class="fees"{" open" if fees_open else ""}><summary>{T("Fees, route by route", "ค่าธรรมเนียม แยกตามเส้นทาง")}</summary><div id="croutes"></div></details></div>')
 
@@ -840,7 +914,7 @@ def support():
             qr = qr_svg(("bitcoin:" + a) if key == "btc" else a)
             blocks.append(f'<div class="cardx"><h3>{E(label)}</h3><p class="small mute">{E(T(ne, nt))}</p>'
                           f'<div style="background:#fff;border-radius:12px;padding:10px;max-width:220px">{qr}</div>'
-                          f'<p><code style="word-break:break-all">{E(a)}</code></p></div>')
+                          f'<p><!--email_off--><code style="word-break:break-all">{E(a)}</code><!--/email_off--></p></div>')
     crypto = (f'<h2>{T("In crypto", "เป็นคริปโต")}</h2><div class="grid3">{"".join(blocks)}</div>'
               f'<p class="small mute">{T("The address checker on Tools reads any of these.", "ตัวตรวจที่อยู่ในหน้าเครื่องมืออ่านที่อยู่เหล่านี้ได้ทั้งหมด")}</p>') if blocks else ""
     refs = [v for v in (MONEY.get("referral") or {}).values() if v]

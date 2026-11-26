@@ -2,7 +2,7 @@
   "_what": "Receiving addresses and referral links. A slot left null renders nothing; a filled one appears on the site at the next build.",
   "receive": {
     "btc": null,
-    "lightning": null,
+    "lightning": "g77kszun@pig.gy",
     "evm": null,
     "tron": null,
     "sol": null

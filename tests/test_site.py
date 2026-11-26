@@ -21,12 +21,13 @@ home = (SITE / "index.html").read_text()
 mk = (SITE / "markets" / "index.html").read_text()
 check("home prints the USDT-vs-wire median", f'{F["usdt"]["vs_tt_median"]:+.2f}%' in home)
 check("markets prints the premium median", f'{F["premium"]["median"]:+.2f}%' in mk)
-check("intel and four human exits in the nav", home.count('<nav aria-label="Exits">') == 1 and len(re.findall(r"<nav aria-label=\"Exits\">(.*?)</nav>", home)[0].split("</a>")) == 6)
-check("home carries the calculator, the checker and a tip", all(x in home for x in ('id="calcbox"', 'id="addr"', 'class="tip"', 'src="/js/calc.js?v=', 'src="/js/addr.js?v=')))
+menu = re.findall(r'<nav aria-label="Main">(.*?)</nav>', home)
+check("the menu: Baht, Paper Baht, Intel, Guides", len(menu) == 1 and menu[0].count("</a>") == 4 and all(h in menu[0] for h in ('href="/"', 'href="/paper/"', 'href="/intel/"', 'href="/#guides"')))
+check("home carries the calculator sign and a tip", all(x in home for x in ('id="calcbox"', 'id="camt"', 'id="cbest"', 'id="cbars"', 'class="tip', 'src="/js/calc.js?v=')))
 check("every reference page opens with a way back", all('class="invite"' in (SITE / d / "index.html").read_text() for d in ("networks", "markets", "rules", "how", "history", "words", "sources", "data", "for-agents")))
 check("human pages carry no invite", not any('class="invite"' in (SITE / d / "index.html").read_text() for d in ("tools", "ramp", "cards", "scams", "support")) and 'class="invite"' not in home)
 check("no downward arrows", not any(a in p.read_text() for p in SITE.rglob("*.html") for a in ("↓", "↘", "↙", "⬇", "&darr;")))
-check("every page has one h-level sign or h1", all(("class=\"sign" in p.read_text()) for p in SITE.rglob("index.html")))
+check("every page has one h-level sign or h1", all(("class=\"sign" in t or "<h1" in t) for t in (p.read_text() for p in SITE.rglob("index.html"))))
 check("sources page lists what pages cite", (SITE / "sources" / "index.html").read_text().count("<li id=\"s") >= 11)
 check("no page links a referral without the disclosure",
       all(("rel=\"sponsored" not in p.read_text()) or ("referral links" in p.read_text()) for p in SITE.rglob("index.html")))
@@ -36,28 +37,16 @@ check("llms.txt exists", (SITE / "llms.txt").exists())
 check("data files copied", (SITE / "data" / "facts.json").exists() and (SITE / "data" / "series.json").exists())
 check("intel: index, a page per note, feeds and notes.json", all((SITE / p).exists() for p in ("intel/index.html", "th/intel/index.html", "intel/feed.xml", "th/intel/feed.xml", "intel/notes.json"))
       and len(list((SITE / "intel").glob("*/index.html"))) == len(json.loads((SITE / "intel" / "notes.json").read_text())["notes"]))
-check("home carries the intel, a follow form and banking help", all(x in home for x in ('id="intel"', 'class="sigs"', 'class="ncards"', 'id="follow"', 'id="help"')))
+check("home carries paid help, Paper Baht, the intel, a follow form and the guides", all(x in home for x in ('id="help"', 'class="buy"', 'href="/paper/"', 'id="intel"', 'class="ilist"', 'id="follow"', 'id="guides"')))
+for lang, file in (("en", SITE / "index.html"), ("th", SITE / "th" / "index.html")):
+    h = file.read_text()
+    check(f"{lang}: the sign, then help, then intel", h.index('id="calcbox"') < h.index('id="help"') < h.index('id="intel"') < h.index('id="guides"'))
+check("the intel page carries the long view", 'id="long"' in (SITE / "intel" / "index.html").read_text())
 check("intel feed is valid XML", __import__("xml.dom.minidom").dom.minidom.parse(str(SITE / "intel" / "feed.xml")) is not None)
 check("addr checker on networks and tools", all('src="/js/addr.js?v=' in (SITE / d / "index.html").read_text() for d in ("networks", "tools")))
 
 check("no page links a plain email address",
       not any(re.search(r'mailto:[^"?\s]*@', f.read_text(encoding="utf-8")) for f in SITE.rglob("*.html")))
-
-
-# Commercial entry points must survive both language builds.
-for lang, file in (("en", SITE / "index.html"), ("th", SITE / "th" / "index.html")):
-    commercial_home = file.read_text()
-    ids = ("ofr-start", "ofr-bank", "ofr-goal", "ofr-status", "ofr-compare",
-           "offramp-services", "offramp-lab", "ofr-fee-out", "ofr-boat-out", "ofr-network-out")
-    check(f"{lang}: financial access controls have unique IDs",
-          all(commercial_home.count('id="' + item + '"') == 1 for item in ids))
-    check(f"{lang}: access and calculator precede intel",
-          commercial_home.index('id="ofr-start"') < commercial_home.index('id="calc"') < commercial_home.index('id="intel"'))
-    check(f"{lang}: existing service links and pilot disclosures",
-          all(x in commercial_home for x in ("c=bank-account", "c=thai-plan",
-              "Offrampt%20Landing%20pilot", "Offrampt%20Pro%20enquiry")))
-    check(f"{lang}: conversion hooks",
-          "offrampt-commercial" in commercial_home and "offrampt_route_open" in commercial_home)
 
 
 if fails:
