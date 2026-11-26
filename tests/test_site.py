@@ -40,6 +40,10 @@ check("home carries the intel, a follow form and banking help", all(x in home fo
 check("intel feed is valid XML", __import__("xml.dom.minidom").dom.minidom.parse(str(SITE / "intel" / "feed.xml")) is not None)
 check("addr checker on networks and tools", all('src="/js/addr.js?v=' in (SITE / d / "index.html").read_text() for d in ("networks", "tools")))
 
+check("no page links a plain email address",
+      not any(re.search(r'mailto:[^"?\s]*@', f.read_text(encoding="utf-8")) for f in SITE.rglob("*.html")))
+
+
 # Commercial entry points must survive both language builds.
 for lang, file in (("en", SITE / "index.html"), ("th", SITE / "th" / "index.html")):
     commercial_home = file.read_text()
