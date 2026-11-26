@@ -40,6 +40,22 @@ check("home carries the intel, a follow form and banking help", all(x in home fo
 check("intel feed is valid XML", __import__("xml.dom.minidom").dom.minidom.parse(str(SITE / "intel" / "feed.xml")) is not None)
 check("addr checker on networks and tools", all('src="/js/addr.js?v=' in (SITE / d / "index.html").read_text() for d in ("networks", "tools")))
 
+# Commercial entry points must survive both language builds.
+for lang, file in (("en", SITE / "index.html"), ("th", SITE / "th" / "index.html")):
+    commercial_home = file.read_text()
+    ids = ("ofr-start", "ofr-bank", "ofr-goal", "ofr-status", "ofr-compare",
+           "offramp-services", "offramp-lab", "ofr-fee-out", "ofr-boat-out", "ofr-network-out")
+    check(f"{lang}: financial access controls have unique IDs",
+          all(commercial_home.count('id="' + item + '"') == 1 for item in ids))
+    check(f"{lang}: access and calculator precede intel",
+          commercial_home.index('id="ofr-start"') < commercial_home.index('id="calc"') < commercial_home.index('id="intel"'))
+    check(f"{lang}: existing service links and pilot disclosures",
+          all(x in commercial_home for x in ("c=bank-account", "c=thai-plan",
+              "Offrampt%20Landing%20pilot", "Offrampt%20Pro%20enquiry")))
+    check(f"{lang}: conversion hooks",
+          "offrampt-commercial" in commercial_home and "offrampt_route_open" in commercial_home)
+
+
 if fails:
     print(f"{len(fails)} failing")
     sys.exit(1)
