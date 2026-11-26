@@ -24,7 +24,7 @@ BUILD = Path(__file__).resolve().parent.parent / "build"
 
 SITE = BUILD / "site"
 REF = re.compile(r'(?:href|src|data-src)\s*=\s*"([^"]+)"|url\(([^)]+)\)')
-SKIP = ("http://", "https://", "//", "mailto:", "tel:", "data:", "javascript:", "#")
+SKIP = ("http://", "https://", "//", "mailto:", "tel:", "lightning:", "data:", "javascript:", "#")
 # script bodies build their hrefs by concatenation, so an attribute scanner reads
 # half an expression and calls it a path. Those links are checked by their base,
 # which is emitted into the page as a path like any other.
