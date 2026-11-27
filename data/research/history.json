@@ -2184,6 +2184,30 @@
     }
    ],
    "confidence": "confirmed"
+  },
+  {
+   "date": "2026-11-10",
+   "era": "now",
+   "title": "Glassnode: 35.4% of bitcoin behind visible keys",
+   "title_th": "Glassnode: บิตคอยน์ 35.4% อยู่หลังกุญแจที่โชว์บนเชน",
+   "what": "Glassnode counts 7.12 million BTC, 35.4% of supply, held behind public keys already visible on the chain, against 6.04 million (30.2%) in its 20 May 2026 paper; it puts 25.8% of supply in reused addresses and 11.6% on exchanges.",
+   "what_th": "Glassnode นับได้ 7.12 ล้าน BTC หรือ 35.4% ของเหรียญทั้งหมด อยู่หลังกุญแจสาธารณะที่โชว์บนเชนแล้ว เทียบกับ 6.04 ล้าน (30.2%) ในรายงานวันที่ 20 พฤษภาคม 2026 โดยระบุว่า 25.8% อยู่ในที่อยู่ที่ใช้ซ้ำ และ 11.6% อยู่บนศูนย์ซื้อขาย",
+   "thailand": false,
+   "sources": [
+    {
+     "title": "Bitcoin public-key exposure reaches 35.4%, reviving quantum debate",
+     "url": "https://crypto.news/bitcoin-public-key-exposure-quantum-risk/",
+     "publisher": "crypto.news",
+     "date": "2026-11-10"
+    },
+    {
+     "title": "Measuring Bitcoin's Quantum-Exposed Supply",
+     "url": "https://research.glassnode.com/measuring-bitcoins-quantum-exposed-supply/",
+     "publisher": "Glassnode Research",
+     "date": "2026-05-20"
+    }
+   ],
+   "confidence": "confirmed"
   }
  ],
  "prices": [
