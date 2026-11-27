@@ -1,0 +1,86 @@
+{
+ "id": "2026-11-27-bitcoin-visible-keys-35-percent",
+ "date": "2026-11-27",
+ "order": 1,
+ "kind": "long",
+ "title_en": "Bitcoin with its key in plain sight: 30.2% of supply in May, 35.4% in November",
+ "title_th": "บิตคอยน์ที่กุญแจสาธารณะโชว์อยู่บนเชน: 30.2% ของเหรียญทั้งหมดในเดือนพฤษภาคม 35.4% ในเดือนพฤศจิกายน",
+ "dek_en": "Glassnode counted 6.04 million BTC on 20 May and 7.12 million on 10 November. On 19 November IOSCO, the world body of securities regulators, said blockchains face a harder move to new locks than banks do.",
+ "dek_th": "Glassnode นับได้ 6.04 ล้าน BTC เมื่อ 20 พฤษภาคม และ 7.12 ล้านเมื่อ 10 พฤศจิกายน ส่วนวันที่ 19 พฤศจิกายน IOSCO องค์กรระดับโลกของหน่วยงานกำกับตลาดหลักทรัพย์ บอกว่าบล็อกเชนเปลี่ยนไปใช้กุญแจแบบใหม่ได้ยากกว่าธนาคาร",
+ "body_en": [
+  "A bitcoin address hides its public key behind a hash, a one-way fingerprint, until the coins in it are spent. Some addresses show the key from the start: the oldest kind, called P2PK, and Taproot. Once a key is visible, a large enough quantum computer could work back from it to the private key. Glassnode, a firm that reads the bitcoin chain, counts coins sitting behind visible keys. On 20 May 2026 it counted 6.04 million BTC, 30.2% of all bitcoin issued: 1.92 million exposed by the address type, 4.12 million by how owners and custodians used their addresses, reusing them or spending part of a balance.",
+  "On 10 November Glassnode posted a new count: 7.12 million BTC, 35.4% of supply, with 25.8% of supply exposed through address reuse and 11.6% on exchanges, part of the reuse figure. That is 1.08 million more BTC in under six months. The two counts come from the same firm, but the November post splits the total differently from the May paper, so part of the rise may be in the counting and not on the chain. Google's March estimate was about 6.9 million; the Quantum Horizon paper of June gave about 6 million. These are separate counts.",
+  "On 19 November IOSCO, which groups securities regulators from more than 130 jurisdictions, published its final report on quantum computing and financial markets. It gives conservative estimates of 2030 to 2035 for a machine that breaks today's public-key locks; several firms it consulted said to plan for one within five years. No surveyed jurisdiction reported quantum computers in use in regulated finance. On blockchains, the report says the change is harder than for banks: the locks sit in the core of each chain, a decentralised network cannot force its users to move, and coins left under old keys stay exposed after new locks arrive. A post-quantum signature of the kind NIST standardised, ML-DSA-44, is about 2,420 bytes against 64 bytes for bitcoin's signature today, 35 to 40 times larger. The report also names \"quantum washing\": firms overstating what their quantum products do.",
+  "Bitcoin has no post-quantum lock switched on. BIP-360, a draft first posted in December 2024, would add a new output type that hides the key; it is a draft. A coin on Bitkub or Binance TH sits under the exchange's addresses, and exchange coins are part of Glassnode's exposed count. A coin in one's own wallet sits under its address: hidden until it spends, unless the address is Taproot or has been used before."
+ ],
+ "body_th": [
+  "ที่อยู่บิตคอยน์ซ่อนกุญแจสาธารณะไว้หลังแฮช ซึ่งเป็นลายนิ้วมือทางเดียวที่ย้อนกลับไม่ได้ จนกว่าเหรียญในที่อยู่นั้นจะถูกใช้จ่ายออกไป แต่บางแบบโชว์กุญแจตั้งแต่แรก คือแบบเก่าที่สุดที่เรียกว่า P2PK และแบบ Taproot เมื่อกุญแจโชว์แล้ว ควอนตัมคอมพิวเตอร์ที่ใหญ่พอจะคำนวณย้อนจากกุญแจนั้นไปหากุญแจส่วนตัวได้ Glassnode บริษัทที่อ่านข้อมูลบนเชนบิตคอยน์ นับเหรียญที่อยู่หลังกุญแจที่โชว์แล้ว วันที่ 20 พฤษภาคม 2026 นับได้ 6.04 ล้าน BTC หรือ 30.2% ของบิตคอยน์ทั้งหมดที่ออกมาแล้ว แยกเป็น 1.92 ล้านที่โชว์เพราะชนิดของที่อยู่ และ 4.12 ล้านที่โชว์เพราะวิธีที่เจ้าของและผู้รับฝากใช้ที่อยู่ เช่น ใช้ที่อยู่เดิมซ้ำ หรือจ่ายออกไปแค่บางส่วน",
+  "วันที่ 10 พฤศจิกายน Glassnode โพสต์ตัวเลขใหม่: 7.12 ล้าน BTC หรือ 35.4% ของเหรียญทั้งหมด โดย 25.8% โชว์เพราะใช้ที่อยู่ซ้ำ และ 11.6% อยู่บนศูนย์ซื้อขาย ซึ่งเป็นส่วนหนึ่งของตัวเลขใช้ที่อยู่ซ้ำ เพิ่มขึ้น 1.08 ล้าน BTC ในเวลาไม่ถึงหกเดือน ตัวเลขทั้งสองมาจากบริษัทเดียวกัน แต่โพสต์เดือนพฤศจิกายนแบ่งกลุ่มต่างจากรายงานเดือนพฤษภาคม ส่วนหนึ่งของที่เพิ่มขึ้นจึงอาจมาจากวิธีนับ ไม่ใช่จากบนเชน ส่วนตัวเลขของ Google เมื่อมีนาคมอยู่ที่ราว 6.9 ล้าน และงานวิจัย Quantum Horizon เดือนมิถุนายนให้ราว 6 ล้าน เป็นการนับคนละชุดกัน",
+  "วันที่ 19 พฤศจิกายน IOSCO ซึ่งรวมหน่วยงานกำกับตลาดหลักทรัพย์จากกว่า 130 ประเทศและเขตปกครอง เผยแพร่รายงานฉบับสมบูรณ์เรื่องควอนตัมคอมพิวเตอร์กับตลาดการเงิน รายงานให้ประมาณการแบบระมัดระวังว่าเครื่องที่ถอดกุญแจสาธารณะแบบที่ใช้กันวันนี้ได้จะมาระหว่างปี 2030 ถึง 2035 ส่วนบริษัทหลายแห่งที่ให้ความเห็นบอกให้วางแผนรับภายในห้าปี ยังไม่มีประเทศไหนในการสำรวจรายงานว่าใช้ควอนตัมคอมพิวเตอร์จริงในธุรกิจการเงินที่มีการกำกับ เรื่องบล็อกเชน รายงานบอกว่าเปลี่ยนยากกว่าธนาคาร เพราะกุญแจฝังอยู่ในแกนของแต่ละเชน เครือข่ายที่ไม่มีศูนย์กลางบังคับให้ผู้ใช้ย้ายไม่ได้ และเหรียญที่ยังอยู่ใต้กุญแจเก่าก็ยังเปิดอยู่แม้มีกุญแจใหม่แล้ว ลายเซ็นหลังควอนตัมแบบที่ NIST รับรองเป็นมาตรฐาน คือ ML-DSA-44 มีขนาดราว 2,420 ไบต์ เทียบกับ 64 ไบต์ของลายเซ็นบิตคอยน์วันนี้ ใหญ่กว่า 35 ถึง 40 เท่า รายงานยังพูดถึง \"quantum washing\" คือบริษัทที่โฆษณาเกินจริงว่าผลิตภัณฑ์ควอนตัมของตนทำอะไรได้",
+  "บิตคอยน์ยังไม่ได้เปิดใช้กุญแจหลังควอนตัม BIP-360 ร่างข้อเสนอที่โพสต์ครั้งแรกเมื่อธันวาคม 2024 จะเพิ่มที่อยู่แบบใหม่ที่ซ่อนกุญแจไว้ ตอนนี้ยังเป็นร่าง เหรียญบน Bitkub หรือ Binance TH อยู่ใต้ที่อยู่ของศูนย์ซื้อขาย และเหรียญบนศูนย์ซื้อขายเป็นส่วนหนึ่งของตัวเลขที่ Glassnode นับว่าโชว์กุญแจ ส่วนเหรียญในกระเป๋าของตัวเองอยู่ใต้ที่อยู่ของมันเอง ซ่อนกุญแจไว้จนกว่าจะจ่ายออก เว้นแต่เป็นที่อยู่แบบ Taproot หรือเคยใช้มาก่อนแล้ว"
+ ],
+ "shape": "rising",
+ "speed": "months",
+ "read_en": "Rising, in months: 30.2% to 35.4% of supply between May and November, a gain of about 0.9 points a month if the two counts are read as one series. The guess: the share goes on rising until a hidden-key output type is switched on, because Taproot shows its key by design and exchanges reuse addresses, and both grow with use; at the May-to-November pace it would pass 40% around April 2027. The guess rests on two counts from one firm with different splits, so the pace is the softest number here. The dates on the other side: IOSCO's 2030 to 2035, firms' five years, and NIST's 2030, after which today's bitcoin signature type is deprecated in its standards. A bitcoin change has no date; BIP-360 is a draft.",
+ "read_th": "ขาขึ้น ในหลักเดือน: จาก 30.2% เป็น 35.4% ของเหรียญทั้งหมดระหว่างพฤษภาคมถึงพฤศจิกายน เพิ่มราว 0.9 จุดต่อเดือนถ้าอ่านสองตัวเลขเป็นชุดเดียวกัน การคาดเดา: สัดส่วนนี้จะขึ้นต่อไปจนกว่าจะเปิดใช้ที่อยู่แบบที่ซ่อนกุญแจ เพราะ Taproot โชว์กุญแจโดยการออกแบบ และศูนย์ซื้อขายใช้ที่อยู่ซ้ำ ทั้งสองอย่างโตไปตามการใช้งาน ถ้าเร็วเท่าช่วงพฤษภาคมถึงพฤศจิกายน จะเกิน 40% ราวเดือนเมษายน 2027 การคาดเดานี้วางอยู่บนตัวเลขสองชุดจากบริษัทเดียวที่แบ่งกลุ่มต่างกัน ความเร็วจึงเป็นตัวเลขที่อ่อนที่สุดในที่นี้ วันที่อีกฝั่ง: 2030 ถึง 2035 ของ IOSCO ห้าปีของบริษัทต่างๆ และ 2030 ของ NIST ที่ลายเซ็นแบบที่บิตคอยน์ใช้วันนี้จะถูกเลิกใช้ในมาตรฐานของ NIST ส่วนการเปลี่ยนของบิตคอยน์ยังไม่มีวันที่ BIP-360 ยังเป็นร่าง",
+ "sources": [
+  {
+   "title": "Measuring Bitcoin's Quantum-Exposed Supply",
+   "url": "https://research.glassnode.com/measuring-bitcoins-quantum-exposed-supply/",
+   "publisher": "Glassnode Research",
+   "date": "2026-05-20"
+  },
+  {
+   "title": "Bitcoin public-key exposure reaches 35.4%, reviving quantum debate",
+   "url": "https://crypto.news/bitcoin-public-key-exposure-quantum-risk/",
+   "publisher": "crypto.news",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Global Securities Watchdog Urges Immediate Action on Quantum Risks to Finance",
+   "url": "https://www.insurancejournal.com/news/international/2026/11/19/893142.htm",
+   "publisher": "Reuters, via Insurance Journal",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Quantum Upgrade Could Be 'Particularly Challenging' for Blockchains: IOSCO",
+   "url": "https://decrypt.co/383613/quantum-upgrade-could-be-particularly-challenging-for-blockchains-iosco",
+   "publisher": "Decrypt",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "Securities Regulators Warn That Slow Progress on Quantum Security is a Mistake",
+   "url": "https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake/",
+   "publisher": "The Quantum Insider",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "NIST IR 8547, Transition to Post-Quantum Cryptography Standards (final)",
+   "url": "https://csrc.nist.gov/pubs/ir/8547/final",
+   "publisher": "NIST",
+   "date": "2026-10-27"
+  }
+ ],
+ "links": [
+  {
+   "href": "how/",
+   "en": "How keys and hashes work",
+   "th": "กุญแจและแฮชทำงานอย่างไร"
+  },
+  {
+   "href": "intel/",
+   "en": "Intel, with the 13 November note on qubit counts",
+   "th": "บันทึกข่าวกรอง รวมบันทึก 13 พฤศจิกายน เรื่องจำนวนคิวบิต"
+  },
+  {
+   "href": "https://nanobotco.github.io/quantum-computing/",
+   "en": "Quantum Computing, plainly",
+   "th": "Quantum Computing, plainly"
+  },
+  {
+   "href": "history/",
+   "en": "History, 1976 to now",
+   "th": "ประวัติ ตั้งแต่ 1976 ถึงวันนี้"
+  }
+ ]
+}

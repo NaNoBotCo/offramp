@@ -1,90 +1,90 @@
 {
  "fetched": {
   "llama_usdc_chains": {
-   "at": "2026-11-26T04:44:38+00:00",
+   "at": "2026-11-27T00:32:26+00:00",
    "source": "DefiLlama stablecoins.llama.fi/stablecoin/2 (weekly sample)"
   },
   "mempool_fees": {
-   "at": "2026-11-26T04:44:42+00:00",
+   "at": "2026-11-27T00:32:29+00:00",
    "source": "mempool.space /api/v1/mining/blocks/fee-rates/all"
   },
   "mempool_hashrate": {
-   "at": "2026-11-26T04:44:43+00:00",
+   "at": "2026-11-27T00:32:30+00:00",
    "source": "mempool.space /api/v1/mining/hashrate/1m"
   },
   "bitkub_usdc_thb": {
-   "at": "2026-11-26T04:44:20+00:00",
+   "at": "2026-11-27T00:32:08+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, USDC_THB"
   },
   "bitkub_ticker": {
-   "at": "2026-11-26T04:44:22+00:00",
+   "at": "2026-11-27T00:32:09+00:00",
    "source": "Bitkub api/v3/market/ticker"
   },
   "bitkub_xrp_thb": {
-   "at": "2026-11-26T04:44:21+00:00",
+   "at": "2026-11-27T00:32:09+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, XRP_THB"
   },
   "bitkub_kub_thb": {
-   "at": "2026-11-26T04:44:21+00:00",
+   "at": "2026-11-27T00:32:09+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, KUB_THB"
   },
   "cg_global": {
-   "at": "2026-11-26T04:44:46+00:00",
+   "at": "2026-11-27T00:32:32+00:00",
    "source": "CoinGecko /global (demo key)"
   },
   "binance_btcusdt": {
-   "at": "2026-11-26T04:44:26+00:00",
+   "at": "2026-11-27T00:32:13+00:00",
    "source": "Binance data-api.binance.vision klines 1d BTCUSDT"
   },
   "bitkub_btc_thb": {
-   "at": "2026-11-26T04:44:20+00:00",
+   "at": "2026-11-27T00:32:08+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, BTC_THB"
   },
   "llama_usdt_chains": {
-   "at": "2026-11-26T04:44:36+00:00",
+   "at": "2026-11-27T00:32:23+00:00",
    "source": "DefiLlama stablecoins.llama.fi/stablecoin/1 (weekly sample)"
   },
   "llama_stablecoins": {
-   "at": "2026-11-26T04:44:33+00:00",
+   "at": "2026-11-27T00:32:19+00:00",
    "source": "DefiLlama stablecoins.llama.fi/stablecoins"
   },
   "llama_stable_total": {
-   "at": "2026-11-26T04:44:34+00:00",
+   "at": "2026-11-27T00:32:20+00:00",
    "source": "DefiLlama stablecoins.llama.fi/stablecoincharts/all"
   },
   "bitkub_eth_thb": {
-   "at": "2026-11-26T04:44:20+00:00",
+   "at": "2026-11-27T00:32:08+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, ETH_THB"
   },
   "bot_usd_thb": {
-   "at": "2026-11-26T04:44:33+00:00",
-   "source": "Bank of Thailand API Stat-ExchangeRate v2 DAILY_AVG_EXG_RATE, USD (3 calls)"
+   "at": "2026-11-27T00:32:18+00:00",
+   "source": "Bank of Thailand API Stat-ExchangeRate v2 DAILY_AVG_EXG_RATE, USD (1 calls)"
   },
   "mempool_hashrate_3y": {
-   "at": "2026-11-26T04:44:44+00:00",
+   "at": "2026-11-27T00:32:31+00:00",
    "source": "mempool.space /api/v1/mining/hashrate/3y"
   },
   "bitkub_usdt_thb": {
-   "at": "2026-11-26T04:44:20+00:00",
+   "at": "2026-11-27T00:32:08+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, USDT_THB"
   },
   "bitkub_sol_thb": {
-   "at": "2026-11-26T04:44:21+00:00",
+   "at": "2026-11-27T00:32:09+00:00",
    "source": "Bitkub tradingview/history, resolution 1D, SOL_THB"
   },
   "cg_markets": {
-   "at": "2026-11-26T04:44:45+00:00",
+   "at": "2026-11-27T00:32:32+00:00",
    "source": "CoinGecko /coins/markets vs_currency=thb (demo key)"
   },
   "binance_ethusdt": {
-   "at": "2026-11-26T04:44:31+00:00",
+   "at": "2026-11-27T00:32:17+00:00",
    "source": "Binance data-api.binance.vision klines 1d ETHUSDT"
   }
  },
  "premium": {
-  "days": 3115,
+  "days": 3116,
   "from": "2018-05-18",
-  "to": "2026-11-26",
+  "to": "2026-11-27",
   "median": -0.03,
   "p10": -1.89,
   "p90": 2.59,
@@ -139,10 +139,10 @@
     "days": 365
    },
    "2026": {
-    "median": -0.04,
+    "median": -0.05,
     "p10": -1.23,
     "p90": 1.13,
-    "days": 330
+    "days": 331
    }
   },
   "hot_year": {
@@ -154,9 +154,9 @@
   }
  },
  "usdt": {
-  "days": 2916,
+  "days": 2917,
   "from": "2018-11-12",
-  "to": "2026-11-26",
+  "to": "2026-11-27",
   "vs_mid_median": 0.03,
   "vs_tt_median": 0.52,
   "vs_tt_p10": -0.29,
@@ -207,40 +207,40 @@
    "2026": {
     "vs_tt": 0.42,
     "vs_mid": -0.08,
-    "days": 330
+    "days": 331
    }
   },
   "last": {
-   "date": "2026-11-26",
-   "bitkub": 33.99,
-   "mid": 33.9925,
-   "tt": 33.8292,
-   "thb_1000_usdt": 33990,
-   "thb_1000_wire": 33829
+   "date": "2026-11-27",
+   "bitkub": 34.04,
+   "mid": 34.0374,
+   "tt": 33.8733,
+   "thb_1000_usdt": 34040,
+   "thb_1000_wire": 33873
   },
   "year_vs_tt": 0.42,
   "year_thb_per_10k": 1376
  },
  "btc": {
-  "date": "2026-11-26",
-  "thb": 2074472.63,
+  "date": "2026-11-27",
+  "thb": 2062984.34,
   "first_date": "2018-05-18",
   "first_thb": 263800,
   "ath_thb": 4045998.95,
   "ath_date": "2025-10-06",
-  "from_ath_pct": -48.7,
-  "multiple_since_first": 7.9,
-  "year_ago_thb": 2833627.95
+  "from_ath_pct": -49.0,
+  "multiple_since_first": 7.8,
+  "year_ago_thb": 2945690.87
  },
  "eth": {
-  "date": "2026-11-26",
-  "thb": 57917.76
+  "date": "2026-11-27",
+  "thb": 57634.39
  },
  "fx": {
-  "date": "2026-11-25",
-  "mid": 33.9925,
-  "tt": 33.8292,
-  "selling": 34.1558,
+  "date": "2026-11-26",
+  "mid": 34.0374,
+  "tt": 33.8733,
+  "selling": 34.2015,
   "min": [
    29.804,
    "2020-12-18"
@@ -251,43 +251,43 @@
   ]
  },
  "stable": {
-  "total_usd": 283332691473,
+  "total_usd": 283265340131,
   "count": 459,
   "top": [
    {
     "symbol": "USDT",
     "name": "Tether",
-    "usd": 173527280274,
-    "share": 61.2,
+    "usd": 173551428243,
+    "share": 61.3,
     "chains": [
      [
       "Tron",
-      91361138817,
+      91367542742,
       52.6
      ],
      [
       "Ethereum",
-      65395674086,
+      65394797180,
       37.7
      ],
      [
       "BSC",
-      9172310907,
+      9173324417,
       5.3
      ],
      [
       "Solana",
-      1892269286,
+      1892401928,
       1.1
      ],
      [
       "Arbitrum",
-      1104473194,
+      1117564654,
       0.6
      ],
      [
       "Polygon",
-      858187523,
+      856274220,
       0.5
      ]
     ],
@@ -296,37 +296,37 @@
    {
     "symbol": "USDC",
     "name": "USD Coin",
-    "usd": 69297482012,
-    "share": 24.5,
+    "usd": 69206875248,
+    "share": 24.4,
     "chains": [
      [
       "Ethereum",
-      41520546114,
-      59.9
+      42148184361,
+      60.9
      ],
      [
       "Solana",
-      7003506464,
-      10.1
+      6436088639,
+      9.3
      ],
      [
       "Hyperliquid L1",
-      5767006529,
-      8.3
+      5810328103,
+      8.4
      ],
      [
       "Base",
-      4278489861,
+      4269443806,
       6.2
      ],
      [
       "Arbitrum",
-      2642730173,
+      2595755597,
       3.8
      ],
      [
       "Arc",
-      1706905743,
+      1698462374,
       2.5
      ]
     ],
@@ -335,37 +335,37 @@
    {
     "symbol": "USDe",
     "name": "Ethena USDe",
-    "usd": 4917628916,
+    "usd": 4919426937,
     "share": 1.7,
     "chains": [
      [
       "Ethereum",
-      3273646999,
+      3275459812,
       66.6
      ],
      [
       "Robinhood Chain",
-      341733060,
-      6.9
-     ],
-     [
-      "Plasma",
-      264599040,
-      5.4
+      335611067,
+      6.8
      ],
      [
       "Ink",
-      258725884,
-      5.3
+      265308172,
+      5.4
+     ],
+     [
+      "Plasma",
+      264841279,
+      5.4
      ],
      [
       "Solana",
-      242508914,
+      241490442,
       4.9
      ],
      [
       "Avalanche",
-      122915627,
+      122494389,
       2.5
      ]
     ],
@@ -374,37 +374,37 @@
    {
     "symbol": "DAI",
     "name": "Dai",
-    "usd": 4516577108,
+    "usd": 4522388388,
     "share": 1.6,
     "chains": [
      [
       "Ethereum",
-      4000702944,
+      4005621563,
       88.6
      ],
      [
       "Polygon",
-      432484019,
+      433358636,
       9.6
      ],
      [
       "BSC",
-      25995463,
+      25996038,
       0.6
      ],
      [
       "Arbitrum",
-      14719346,
+      14719672,
       0.3
      ],
      [
       "OP Mainnet",
-      13336592,
+      13336887,
       0.3
      ],
      [
       "PulseChain",
-      10233161,
+      10233641,
       0.2
      ]
     ],
@@ -413,32 +413,32 @@
    {
     "symbol": "USDS",
     "name": "Sky Dollar",
-    "usd": 3125111418,
+    "usd": 3123462219,
     "share": 1.1,
     "chains": [
      [
       "Ethereum",
-      3076268757,
+      3074577329,
       98.4
      ],
      [
       "Gnosis",
-      40321611,
+      40309472,
       1.3
      ],
      [
-      "Solana",
-      4057348,
+      "Base",
+      4075276,
       0.1
      ],
      [
-      "Base",
-      4022738,
+      "Solana",
+      4058999,
       0.1
      ],
      [
       "Arbitrum",
-      440221,
+      440400,
       0.0
      ],
      [
@@ -452,37 +452,37 @@
    {
     "symbol": "USD1",
     "name": "World Liberty Financial USD",
-    "usd": 2848152896,
+    "usd": 2849071265,
     "share": 1.0,
     "chains": [
      [
       "BSC",
-      1096798370,
+      1096382283,
       38.5
      ],
      [
       "Solana",
-      868137150,
+      869806668,
       30.5
      ],
      [
       "Ethereum",
-      833148401,
-      29.3
+      832832745,
+      29.2
      ],
      [
       "Aptos",
-      19123934,
+      19116679,
       0.7
      ],
      [
       "Abcore",
-      18574195,
+      18567045,
       0.7
      ],
      [
       "Tron",
-      10060677,
+      10056860,
       0.4
      ]
     ],
@@ -491,22 +491,22 @@
    {
     "symbol": "RLUSD",
     "name": "Ripple USD",
-    "usd": 2799014055,
+    "usd": 2800398978,
     "share": 1.0,
     "chains": [
      [
       "Ethereum",
-      2035802015,
+      2035819115,
       72.7
      ],
      [
       "XRPL",
-      746801005,
+      748168689,
       26.7
      ],
      [
       "Base",
-      16410617,
+      16410755,
       0.6
      ],
      [
@@ -530,37 +530,37 @@
    {
     "symbol": "USDG",
     "name": "Global Dollar",
-    "usd": 2573366387,
+    "usd": 2573715954,
     "share": 0.9,
     "chains": [
      [
       "X Layer",
-      1080353414,
-      42.0
+      1084331329,
+      42.1
      ],
      [
       "Robinhood Chain",
-      640000966,
+      641803107,
       24.9
      ],
      [
       "Solana",
-      387952217,
-      15.1
+      374967810,
+      14.6
      ],
      [
       "Ethereum",
-      354959816,
-      13.8
+      361633766,
+      14.1
      ],
      [
       "Arbitrum",
-      67881802,
-      2.6
+      68751694,
+      2.7
      ],
      [
       "Ink",
-      40732522,
+      40811221,
       1.6
      ]
     ],
@@ -569,37 +569,37 @@
    {
     "symbol": "PYUSD",
     "name": "PayPal USD",
-    "usd": 2372887502,
+    "usd": 2370923847,
     "share": 0.8,
     "chains": [
      [
       "Ethereum",
-      1380248414,
-      58.2
+      1382330039,
+      58.3
      ],
      [
       "Solana",
-      741090206,
-      31.2
+      735353620,
+      31.0
      ],
      [
       "Arbitrum",
-      163928682,
+      163908736,
       6.9
      ],
      [
       "Flow",
-      35123295,
+      35119285,
       1.5
      ],
      [
       "Stable",
-      19768344,
-      0.8
+      21241193,
+      0.9
      ],
      [
       "Stellar",
-      17909512,
+      17907445,
       0.8
      ]
     ],
@@ -608,27 +608,27 @@
    {
     "symbol": "U",
     "name": "United Stables",
-    "usd": 1597250864,
+    "usd": 1601289295,
     "share": 0.6,
     "chains": [
      [
       "BSC",
-      998309470,
-      62.5
+      1001645311,
+      62.6
      ],
      [
       "Ethereum",
-      514041666,
-      32.2
+      514715479,
+      32.1
      ],
      [
       "Tron",
-      54935060,
+      54953680,
       3.4
      ],
      [
       "Robinhood Chain",
-      29964669,
+      29974825,
       1.9
      ]
     ],
@@ -2518,7 +2518,7 @@
     282477385151
    ]
   ],
-  "year_growth_pct": -5.3,
+  "year_growth_pct": -5.4,
   "usdt_chain_hist": {
    "Tron": [
     [
@@ -12533,16 +12533,16 @@
   }
  },
  "fees": {
-  "points": 6532,
+  "points": 6533,
   "from": "2009-01-03",
-  "to": "2026-11-26",
+  "to": "2026-11-27",
   "last": 1,
   "max": [
    "2011-03-23",
    1979
   ],
   "median_last_year": 1.0,
-  "hashrate": 1.052185902674703e+21,
+  "hashrate": 1.029199570547752e+21,
   "difficulty": 134823837323272.7,
   "vb_typical": 141
  },
@@ -12552,543 +12552,543 @@
   "top": [
    {
     "sym": "USDT",
-    "last": 33.99,
+    "last": 34.04,
     "chg": -0.03,
-    "thb_vol": 545736420.42,
+    "thb_vol": 381369891.09,
     "shared": false
    },
    {
     "sym": "BTC",
-    "last": 2074472.63,
-    "chg": 3.29,
-    "thb_vol": 237367119.41,
-    "shared": false
-   },
-   {
-    "sym": "ETH",
-    "last": 57917.76,
-    "chg": 2.85,
-    "thb_vol": 64163456.14,
+    "last": 2062984.34,
+    "chg": -0.43,
+    "thb_vol": 84841542.88,
     "shared": false
    },
    {
     "sym": "NEAR",
-    "last": 104.17,
-    "chg": 7.34,
-    "thb_vol": 41332767.04,
+    "last": 104.04,
+    "chg": -0.63,
+    "thb_vol": 30128311.86,
     "shared": false
    },
    {
     "sym": "XRP",
-    "last": 32.6,
-    "chg": 4.45,
-    "thb_vol": 39090501.94,
+    "last": 32.11,
+    "chg": 0.12,
+    "thb_vol": 22287335.68,
     "shared": false
    },
    {
     "sym": "USDC",
-    "last": 34.02,
-    "chg": -0.12,
-    "thb_vol": 27073823.93,
+    "last": 34.08,
+    "chg": -0.06,
+    "thb_vol": 21549567.4,
     "shared": false
    },
    {
-    "sym": "DOGE",
-    "last": 1.9348,
-    "chg": 4.34,
-    "thb_vol": 25127797.35,
-    "shared": false
-   },
-   {
-    "sym": "SOL",
-    "last": 2421.32,
-    "chg": 3.51,
-    "thb_vol": 15762245.48,
+    "sym": "ETH",
+    "last": 57634.39,
+    "chg": -0.69,
+    "thb_vol": 18814670.67,
     "shared": false
    },
    {
     "sym": "LUNA",
-    "last": 0.001536,
-    "chg": 3.36,
-    "thb_vol": 15651796.72,
-    "shared": false
-   },
-   {
-    "sym": "KUB",
-    "last": 15.01,
-    "chg": 9.96,
-    "thb_vol": 14906424.08,
+    "last": 0.001537,
+    "chg": -0.97,
+    "thb_vol": 13865175.47,
     "shared": false
    },
    {
     "sym": "PIEVERSE",
-    "last": 126.6662,
-    "chg": 22.0,
-    "thb_vol": 12564247.98,
+    "last": 130.1291,
+    "chg": 7.13,
+    "thb_vol": 12096673.35,
     "shared": true
    },
    {
+    "sym": "DOGE",
+    "last": 1.9239,
+    "chg": -0.12,
+    "thb_vol": 10558339.42,
+    "shared": false
+   },
+   {
     "sym": "ADA",
-    "last": 5.075,
-    "chg": 4.7,
-    "thb_vol": 9090369.67,
-    "shared": false
-   },
-   {
-    "sym": "XAUT",
-    "last": 122113.26,
-    "chg": 1.27,
-    "thb_vol": 7215651.13,
-    "shared": false
-   },
-   {
-    "sym": "XLM",
-    "last": 4.381,
-    "chg": 4.38,
-    "thb_vol": 6857829.66,
-    "shared": false
-   },
-   {
-    "sym": "SUI",
-    "last": 22.9,
-    "chg": 4.85,
-    "thb_vol": 4869225.56,
+    "last": 5.071,
+    "chg": 1.36,
+    "thb_vol": 6973309.5,
     "shared": false
    },
    {
     "sym": "ELSA",
-    "last": 3.93459,
-    "chg": 55.44,
-    "thb_vol": 4500196.23,
+    "last": 3.40815,
+    "chg": 23.85,
+    "thb_vol": 5380873.46,
     "shared": true
    },
    {
-    "sym": "BNB",
-    "last": 19063.51,
-    "chg": 3.6,
-    "thb_vol": 3884000.15,
+    "sym": "KUB",
+    "last": 15.33,
+    "chg": 1.19,
+    "thb_vol": 4518172.18,
     "shared": false
    },
    {
-    "sym": "LIT",
-    "last": 83.876,
-    "chg": 7.0,
-    "thb_vol": 3357557.7,
-    "shared": true
-   },
-   {
-    "sym": "WLD",
-    "last": 8.28,
-    "chg": 4.85,
-    "thb_vol": 3216858.55,
+    "sym": "SOL",
+    "last": 2424.06,
+    "chg": 0.15,
+    "thb_vol": 3901444.04,
     "shared": false
    },
    {
-    "sym": "VVV",
-    "last": 926.049,
-    "chg": 9.69,
-    "thb_vol": 3035126.81,
-    "shared": true
-   },
-   {
-    "sym": "UNI",
-    "last": 161.97,
-    "chg": 3.17,
-    "thb_vol": 2774691.37,
+    "sym": "XLM",
+    "last": 4.314,
+    "chg": -1.75,
+    "thb_vol": 3292457.8,
     "shared": false
    },
    {
-    "sym": "CRV",
-    "last": 5.934,
-    "chg": -1.05,
-    "thb_vol": 2749577.23,
-    "shared": false
-   },
-   {
-    "sym": "SLX",
-    "last": 1.1669,
-    "chg": 2.84,
-    "thb_vol": 2055308.73,
+    "sym": "BIRB",
+    "last": 1.8431,
+    "chg": 1.68,
+    "thb_vol": 2646854.54,
     "shared": true
    },
    {
     "sym": "GALA",
-    "last": 0.04432,
-    "chg": 1.51,
-    "thb_vol": 2022295.61,
+    "last": 0.04588,
+    "chg": 4.06,
+    "thb_vol": 2406278.02,
     "shared": false
+   },
+   {
+    "sym": "WLD",
+    "last": 8.238,
+    "chg": 0.38,
+    "thb_vol": 2334248.52,
+    "shared": false
+   },
+   {
+    "sym": "OP",
+    "last": 2.375,
+    "chg": 0.64,
+    "thb_vol": 2200978.68,
+    "shared": false
+   },
+   {
+    "sym": "BNB",
+    "last": 18896.12,
+    "chg": -0.15,
+    "thb_vol": 2103202.34,
+    "shared": false
+   },
+   {
+    "sym": "SSV",
+    "last": 92.72,
+    "chg": 16.07,
+    "thb_vol": 2055916.84,
+    "shared": false
+   },
+   {
+    "sym": "XAUT",
+    "last": 121316.01,
+    "chg": -0.23,
+    "thb_vol": 1971116.11,
+    "shared": false
+   },
+   {
+    "sym": "REALX",
+    "last": 51.7,
+    "chg": 6.82,
+    "thb_vol": 1909584.83,
+    "shared": false
+   },
+   {
+    "sym": "VVV",
+    "last": 896.816,
+    "chg": -11.07,
+    "thb_vol": 1892783.94,
+    "shared": true
+   },
+   {
+    "sym": "LIT",
+    "last": 83.9,
+    "chg": 0.78,
+    "thb_vol": 1714374.15,
+    "shared": true
    }
   ],
-  "vol_total": 1141285997,
-  "usdt_share": 47.8
+  "vol_total": 673006968,
+  "usdt_share": 56.7
  },
  "world": [
   {
    "sym": "BTC",
    "name": "Bitcoin",
-   "thb": 2075557,
-   "cap_thb": 41754981937323,
-   "chg24": 3.33697,
-   "chg1y": -30.7477,
+   "thb": 2060918,
+   "cap_thb": 41461268795629,
+   "chg24": -0.33651,
+   "chg1y": -33.0815,
    "rank": 1
   },
   {
    "sym": "ETH",
    "name": "Ethereum",
-   "thb": 57959,
-   "cap_thb": 7085699053812,
-   "chg24": 2.9038,
-   "chg1y": -42.5977,
+   "thb": 57538,
+   "cap_thb": 7034268381582,
+   "chg24": -0.67508,
+   "chg1y": -44.238,
    "rank": 2
   },
   {
    "sym": "USDT",
    "name": "Tether",
-   "thb": 33.98,
-   "cap_thb": 5912765359679,
-   "chg24": -0.07632,
-   "chg1y": -0.0757,
+   "thb": 34.02,
+   "cap_thb": 5920693578351,
+   "chg24": 0.08386,
+   "chg1y": -0.0937,
    "rank": 3
   },
   {
    "sym": "BNB",
    "name": "BNB",
-   "thb": 19049.72,
-   "cap_thb": 2505227385052,
-   "chg24": 3.54817,
-   "chg1y": -35.4398,
+   "thb": 18869.93,
+   "cap_thb": 2481582581127,
+   "chg24": -0.2993,
+   "chg1y": -37.9991,
    "rank": 4
   },
   {
    "sym": "USDC",
    "name": "USDC",
-   "thb": 34.0,
-   "cap_thb": 2357387208838,
-   "chg24": -0.08307,
-   "chg1y": -0.015,
+   "thb": 34.04,
+   "cap_thb": 2357923558931,
+   "chg24": 0.09458,
+   "chg1y": -0.016,
    "rank": 5
   },
   {
    "sym": "XRP",
    "name": "XRP",
-   "thb": 32.59,
-   "cap_thb": 2070179488906,
-   "chg24": 4.38223,
-   "chg1y": -56.3102,
+   "thb": 32.1,
+   "cap_thb": 2038978759555,
+   "chg24": 0.19369,
+   "chg1y": -57.6088,
    "rank": 6
   },
   {
    "sym": "SOL",
    "name": "Solana",
-   "thb": 2421.75,
-   "cap_thb": 1434121018570,
-   "chg24": 3.52793,
-   "chg1y": -48.9788,
+   "thb": 2421.13,
+   "cap_thb": 1433753621869,
+   "chg24": 0.15474,
+   "chg1y": -50.3782,
    "rank": 7
+  },
+  {
+   "sym": "FIGR_HELOC",
+   "name": "Figure Heloc",
+   "thb": 36.29,
+   "cap_thb": 995398063832,
+   "chg24": 0.96256,
+   "chg1y": 5.9755,
+   "rank": 8
   },
   {
    "sym": "TRX",
    "name": "TRON",
    "thb": 10.34,
-   "cap_thb": 983197460267,
-   "chg24": -1.34088,
-   "chg1y": 10.7009,
-   "rank": 8
-  },
-  {
-   "sym": "FIGR_HELOC",
-   "name": "Figure Heloc",
-   "thb": 35.93,
-   "cap_thb": 982361170604,
-   "chg24": 1.26594,
-   "chg1y": 4.9081,
+   "cap_thb": 983131411092,
+   "chg24": 0.16087,
+   "chg1y": 9.8514,
    "rank": 9
   },
   {
    "sym": "HYPE",
    "name": "Hyperliquid",
-   "thb": 2108.39,
-   "cap_thb": 501065698413,
-   "chg24": 5.4482,
-   "chg1y": 80.9992,
+   "thb": 2133.93,
+   "cap_thb": 507135118018,
+   "chg24": 1.12226,
+   "chg1y": 71.5687,
    "rank": 10
   },
   {
    "sym": "ZEC",
    "name": "Zcash",
-   "thb": 26170,
-   "cap_thb": 446507179157,
-   "chg24": 5.36356,
-   "chg1y": 46.7235,
+   "thb": 23542,
+   "cap_thb": 401701738865,
+   "chg24": -10.77094,
+   "chg1y": 28.6125,
    "rank": 11
-  },
-  {
-   "sym": "XMR",
-   "name": "Monero",
-   "thb": 17668.85,
-   "cap_thb": 332807622659,
-   "chg24": 1.40108,
-   "chg1y": 33.0026,
-   "rank": 12
   },
   {
    "sym": "DOGE",
    "name": "Dogecoin",
-   "thb": 1.94,
-   "cap_thb": 303866262570,
-   "chg24": 4.39451,
-   "chg1y": -62.5507,
+   "thb": 1.92,
+   "cap_thb": 301676809638,
+   "chg24": 0.07533,
+   "chg1y": -63.6805,
+   "rank": 12
+  },
+  {
+   "sym": "XMR",
+   "name": "Monero",
+   "thb": 15577.8,
+   "cap_thb": 293427239156,
+   "chg24": -10.89857,
+   "chg1y": 15.4947,
    "rank": 13
   },
   {
    "sym": "LEO",
    "name": "LEO Token",
-   "thb": 305.39,
-   "cap_thb": 280915805890,
-   "chg24": -0.99575,
-   "chg1y": -6.9123,
+   "thb": 309.75,
+   "cap_thb": 284926681013,
+   "chg24": 0.95327,
+   "chg1y": -6.313,
    "rank": 14
-  },
-  {
-   "sym": "LINK",
-   "name": "Chainlink",
-   "thb": 314.33,
-   "cap_thb": 241044064452,
-   "chg24": 5.31179,
-   "chg1y": -29.6289,
-   "rank": 15
   },
   {
    "sym": "WBT",
    "name": "WhiteBIT Coin",
-   "thb": 2010.59,
-   "cap_thb": 238441873483,
-   "chg24": 5.32508,
-   "chg1y": 1.3026,
+   "thb": 2079.78,
+   "cap_thb": 246646768470,
+   "chg24": 3.71021,
+   "chg1y": 4.0379,
+   "rank": 15
+  },
+  {
+   "sym": "LINK",
+   "name": "Chainlink",
+   "thb": 317.32,
+   "cap_thb": 243338805793,
+   "chg24": 2.167,
+   "chg1y": -31.0001,
    "rank": 16
   },
   {
    "sym": "USDS",
    "name": "USDS",
-   "thb": 34.01,
-   "cap_thb": 214112023991,
-   "chg24": -0.07894,
-   "chg1y": 0.0489,
+   "thb": 34.06,
+   "cap_thb": 214112674494,
+   "chg24": 0.10686,
+   "chg1y": 0.0685,
    "rank": 17
   },
   {
    "sym": "ADA",
    "name": "Cardano",
-   "thb": 5.08,
-   "cap_thb": 190830663444,
-   "chg24": 4.53173,
-   "chg1y": -64.9656,
+   "thb": 5.06,
+   "cap_thb": 190242754498,
+   "chg24": 1.35754,
+   "chg1y": -65.8752,
    "rank": 18
   },
   {
    "sym": "USDE",
    "name": "Ethena USDe",
-   "thb": 34.01,
-   "cap_thb": 167267773913,
-   "chg24": -0.04899,
-   "chg1y": 0.1368,
+   "thb": 34.04,
+   "cap_thb": 167424477855,
+   "chg24": 0.03988,
+   "chg1y": -0.0065,
    "rank": 19
   },
   {
    "sym": "XLM",
    "name": "Stellar",
-   "thb": 4.39,
-   "cap_thb": 155565209647,
-   "chg24": 4.4435,
-   "chg1y": -48.8994,
+   "thb": 4.32,
+   "cap_thb": 153218841769,
+   "chg24": -1.75227,
+   "chg1y": -51.0755,
    "rank": 20
   },
   {
    "sym": "DAI",
    "name": "Dai",
-   "thb": 34.01,
-   "cap_thb": 147442826253,
-   "chg24": -0.06685,
-   "chg1y": 0.0172,
+   "thb": 34.06,
+   "cap_thb": 147798792059,
+   "chg24": 0.08545,
+   "chg1y": 0.0306,
    "rank": 21
   },
   {
    "sym": "BCH",
    "name": "Bitcoin Cash",
-   "thb": 7098.33,
-   "cap_thb": 142831113861,
-   "chg24": 6.53821,
-   "chg1y": -60.694,
+   "thb": 7137.62,
+   "cap_thb": 143624854570,
+   "chg24": 1.20586,
+   "chg1y": -61.6245,
    "rank": 22
   },
   {
    "sym": "NEAR",
    "name": "NEAR Protocol",
-   "thb": 104.3,
-   "cap_thb": 136917603236,
-   "chg24": 7.32916,
-   "chg1y": 60.7373,
+   "thb": 103.95,
+   "cap_thb": 136469149824,
+   "chg24": -0.61551,
+   "chg1y": 57.2401,
    "rank": 23
   },
   {
    "sym": "LTC",
    "name": "Litecoin",
-   "thb": 1492.49,
-   "cap_thb": 116215532194,
-   "chg24": 8.47171,
-   "chg1y": -48.5468,
+   "thb": 1495.05,
+   "cap_thb": 116420299222,
+   "chg24": 2.41087,
+   "chg1y": -49.6988,
    "rank": 24
   },
   {
    "sym": "CC",
    "name": "Canton",
-   "thb": 2.67,
-   "cap_thb": 107182700112,
-   "chg24": 6.33663,
-   "chg1y": -12.9419,
+   "thb": 2.55,
+   "cap_thb": 102381050715,
+   "chg24": -3.96906,
+   "chg1y": -15.0233,
    "rank": 25
   },
   {
    "sym": "AVAX",
    "name": "Avalanche",
-   "thb": 227.79,
-   "cap_thb": 101762585806,
-   "chg24": 2.99844,
-   "chg1y": -52.7295,
+   "thb": 224.62,
+   "cap_thb": 100348143293,
+   "chg24": -0.98451,
+   "chg1y": -55.1792,
    "rank": 26
   },
   {
    "sym": "XAUT",
    "name": "Tether Gold",
-   "thb": 122138,
-   "cap_thb": 98808583038,
-   "chg24": 1.3935,
-   "chg1y": -13.9763,
+   "thb": 121262,
+   "cap_thb": 98100130455,
+   "chg24": -0.13893,
+   "chg1y": -14.0721,
    "rank": 27
-  },
-  {
-   "sym": "UNI",
-   "name": "Uniswap",
-   "thb": 162.32,
-   "cap_thb": 98556200614,
-   "chg24": 3.7955,
-   "chg1y": -23.468,
-   "rank": 28
   },
   {
    "sym": "USD1",
    "name": "USD1",
-   "thb": 34.01,
-   "cap_thb": 96966662770,
-   "chg24": -0.06684,
-   "chg1y": 0.1171,
-   "rank": 29
+   "thb": 34.05,
+   "cap_thb": 97134728494,
+   "chg24": 0.05331,
+   "chg1y": 0.051,
+   "rank": 28
   },
   {
-   "sym": "GRAM",
-   "name": "Gram (prev. Toncoin)",
-   "thb": 33.21,
-   "cap_thb": 95582753203,
-   "chg24": 6.09067,
-   "chg1y": -37.3193,
-   "rank": 30
+   "sym": "UNI",
+   "name": "Uniswap",
+   "thb": 158.39,
+   "cap_thb": 96155035270,
+   "chg24": -2.10377,
+   "chg1y": -26.3183,
+   "rank": 29
   },
   {
    "sym": "RLUSD",
    "name": "Ripple USD",
-   "thb": 34.01,
-   "cap_thb": 95199988140,
-   "chg24": -0.07129,
-   "chg1y": 0.0195,
-   "rank": 31
+   "thb": 34.06,
+   "cap_thb": 95384594336,
+   "chg24": 0.09843,
+   "chg1y": 0.0102,
+   "rank": 30
   },
   {
    "sym": "SUI",
    "name": "Sui",
-   "thb": 22.89,
-   "cap_thb": 94757159573,
-   "chg24": 4.81676,
-   "chg1y": -56.0252,
+   "thb": 22.78,
+   "cap_thb": 94273372023,
+   "chg24": -0.57463,
+   "chg1y": -56.7664,
+   "rank": 31
+  },
+  {
+   "sym": "GRAM",
+   "name": "Gram (prev. Toncoin)",
+   "thb": 32.52,
+   "cap_thb": 94094873693,
+   "chg24": -0.79384,
+   "chg1y": -40.27,
    "rank": 32
   },
   {
    "sym": "USDG",
    "name": "Global Dollar",
-   "thb": 34.02,
-   "cap_thb": 87553873428,
-   "chg24": -0.05591,
-   "chg1y": 0.0539,
+   "thb": 34.06,
+   "cap_thb": 87663434636,
+   "chg24": 0.08482,
+   "chg1y": 0.0387,
    "rank": 33
   },
   {
    "sym": "HBAR",
    "name": "Hedera",
-   "thb": 1.82,
-   "cap_thb": 80840631148,
-   "chg24": 7.16128,
-   "chg1y": -63.3462,
+   "thb": 1.85,
+   "cap_thb": 81868362396,
+   "chg24": 2.95797,
+   "chg1y": -63.6862,
    "rank": 34
   },
   {
    "sym": "USDY",
    "name": "Ondo US Dollar Yield",
-   "thb": 39.23,
-   "cap_thb": 80716589161,
-   "chg24": -0.12403,
-   "chg1y": 5.0018,
+   "thb": 39.3,
+   "cap_thb": 80848603447,
+   "chg24": 0.25728,
+   "chg1y": 4.0021,
    "rank": 35
   },
   {
    "sym": "PYUSD",
    "name": "PayPal USD",
-   "thb": 34.01,
-   "cap_thb": 80404061584,
-   "chg24": -0.07365,
-   "chg1y": -0.0081,
+   "thb": 34.06,
+   "cap_thb": 80783956218,
+   "chg24": 0.11204,
+   "chg1y": 0.0279,
    "rank": 36
   },
   {
    "sym": "TAO",
    "name": "Bittensor",
-   "thb": 6267.36,
-   "cap_thb": 73535423765,
-   "chg24": 3.93702,
-   "chg1y": -40.0109,
+   "thb": 6251.31,
+   "cap_thb": 73347160651,
+   "chg24": 0.43973,
+   "chg1y": -40.6172,
    "rank": 37
-  },
-  {
-   "sym": "SHIB",
-   "name": "Shiba Inu",
-   "thb": 0.00012454,
-   "cap_thb": 73383960402,
-   "chg24": 4.17933,
-   "chg1y": -57.6462,
-   "rank": 38
-  },
-  {
-   "sym": "USYC",
-   "name": "Circle USYC",
-   "thb": 38.95,
-   "cap_thb": 72033670280,
-   "chg24": -0.04933,
-   "chg1y": 3.437,
-   "rank": 39
   },
   {
    "sym": "QNT",
    "name": "Quant",
-   "thb": 4948.37,
-   "cap_thb": 72029390397,
-   "chg24": 1.24166,
-   "chg1y": 63.7335,
+   "thb": 5033.72,
+   "cap_thb": 73271750441,
+   "chg24": 1.84475,
+   "chg1y": 74.1652,
+   "rank": 38
+  },
+  {
+   "sym": "SHIB",
+   "name": "Shiba Inu",
+   "thb": 0.00012345,
+   "cap_thb": 72742439601,
+   "chg24": 0.50929,
+   "chg1y": -58.091,
+   "rank": 39
+  },
+  {
+   "sym": "EURSAFO",
+   "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+   "thb": 38.03,
+   "cap_thb": 72166150974,
+   "chg24": 0.03766,
+   "chg1y": null,
    "rank": 40
   }
  ],
  "global": {
-  "cap_usd": 2110967661020,
+  "cap_usd": 2099151504464,
   "btc_dom": 57.9,
   "eth_dom": 9.8,
-  "coins": 21248
+  "coins": 21239
  },
  "supply": {
   "cap": 20999999.9769,
